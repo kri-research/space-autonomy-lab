@@ -1,0 +1,6 @@
+{
+  "id": "rpo-sensor-dropout",
+  "description": "Primary navigation observation becomes unavailable for a bounded interval.",
+  "initial_state": {"range_m": 100.0, "relative_velocity_mps": -0.15, "propellant": 1.0},
+  "fault": {"type": "sensor_dropout", "start_step": 150, "end_step": 175}
+}

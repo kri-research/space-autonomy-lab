@@ -1,0 +1,6 @@
+{
+  "id": "rpo-actuator-degradation",
+  "description": "Actuator effectiveness is reduced during the approach.",
+  "initial_state": {"range_m": 100.0, "relative_velocity_mps": -0.15, "propellant": 1.0},
+  "fault": {"type": "actuator_degradation", "start_step": 120, "end_step": 220, "effectiveness": 0.35}
+}

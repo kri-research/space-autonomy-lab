@@ -1,0 +1,6 @@
+{
+  "id": "rpo-sensor-bias",
+  "description": "Primary range sensor over-reports separation during approach.",
+  "initial_state": {"range_m": 100.0, "relative_velocity_mps": -0.15, "propellant": 1.0},
+  "fault": {"type": "sensor_bias", "start_step": 120, "end_step": 260, "range_bias_m": 30.0}
+}

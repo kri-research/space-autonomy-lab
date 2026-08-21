@@ -1,0 +1,6 @@
+{
+  "id": "rpo-nominal",
+  "description": "Nominal one-dimensional proximity approach.",
+  "initial_state": {"range_m": 100.0, "relative_velocity_mps": -0.15, "propellant": 1.0},
+  "fault": {"type": "none"}
+}

@@ -1,0 +1,6 @@
+{
+  "id": "rpo-model-seu",
+  "description": "A simulated single-event upset corrupts one learned-policy weight.",
+  "initial_state": {"range_m": 100.0, "relative_velocity_mps": -0.15, "propellant": 1.0},
+  "fault": {"type": "model_seu", "step": 150, "weight_index": 1, "delta": -7.0}
+}
