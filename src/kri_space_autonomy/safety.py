@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from .controllers import DeterministicSafetyController
-from .environment import EnvironmentConfig, ProximityEnvironment
+from .environment import ProximityEnvironment
 from .types import Action, GateDecision, Observation, PolicyDecision, SpacecraftState
 
 
