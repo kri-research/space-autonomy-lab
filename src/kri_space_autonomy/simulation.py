@@ -7,8 +7,8 @@ from pathlib import Path
 from .controllers import DeterministicSafetyController, LearnedPolicyController
 from .environment import EnvironmentConfig, ProximityEnvironment
 from .evidence import EvidenceLogger
-from .scenario import Scenario
 from .safety import RuntimeAssuranceMonitor, SafetyEnvelope
+from .scenario import Scenario
 from .types import GateDecision, SpacecraftState
 
 
