@@ -1,0 +1,34 @@
+{
+  "schema_version": "experiment-002c-numerical-1.0",
+  "amends_schema_version": "experiment-002b-amendment-1.0",
+  "historical_002b_freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+  "master_seed": 2002,
+  "replay_partition_code": 24,
+  "replay_seeds_per_stratum": 1,
+  "command_period_s": 1.0,
+  "observation_period_s": 1.0,
+  "reference_fine_rtol": 2.5e-14,
+  "reference_fine_atol": 1e-15,
+  "reference_fine_max_step_fraction": 0.125,
+  "reference_coarse_rtol": 1e-13,
+  "reference_coarse_atol": 4e-15,
+  "reference_coarse_max_step_fraction": 0.25,
+  "convergence_bound_fraction": 0.25,
+  "simultaneous_event_tolerance_s": 1e-12,
+  "replay_command_patterns": [
+    "pd_operational",
+    "maximum_closing",
+    "maximum_separating",
+    "alternating_extrema"
+  ],
+  "acceptance_bounds": {
+    "range_m": 1e-8,
+    "velocity_mps": 1e-10,
+    "achieved_acceleration_mps2": 1e-12,
+    "propellant_fraction": 1e-10,
+    "event_time_s": 2e-7,
+    "dwell_fraction": 1e-10,
+    "collision_residual_m": 1e-10,
+    "depletion_residual_fraction": 1e-12
+  }
+}

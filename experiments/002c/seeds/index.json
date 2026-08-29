@@ -1,0 +1,12 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "derivation": "SeedSequence([master, 002c_partition, stratum, replicate, stream])",
+  "historical_partition_codes_max": 23,
+  "manifest_sha256": "bf32dba3bd167f634d031b10369b7f26cfe7a5023416d501cf14781793b78597",
+  "master_seed": 2002,
+  "partition_code": 24,
+  "partition_rows": 6,
+  "replay_cases": 24,
+  "root_seed_ids_disjoint_from_experiments_002_and_002b": true,
+  "schema_version": "experiment-002c-numerical-1.0"
+}

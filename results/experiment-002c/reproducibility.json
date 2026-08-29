@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-08-29T23:53:26.430344+00:00",
+  "checks": [
+    {
+      "id": "freeze_verified",
+      "passed": true
+    },
+    {
+      "id": "seed_manifest_rederived",
+      "passed": true
+    },
+    {
+      "id": "case_identity_complete",
+      "passed": true
+    },
+    {
+      "id": "phase_chain",
+      "passed": true
+    },
+    {
+      "id": "primary_output_identity",
+      "passed": true
+    },
+    {
+      "id": "campaign_exclusions",
+      "passed": true
+    }
+  ],
+  "method": "read-only freeze, seed rederivation, case identity, phase-chain, output-hash, and campaign-exclusion checks; replay outcomes were not rerun",
+  "passed": true,
+  "phase": "reproducibility_check",
+  "phase_sequence": 5,
+  "schema_version": "experiment-002c-numerical-1.0",
+  "study_instance_id": "bed45dff-8b08-4f90-b89e-4a71630cb487"
+}

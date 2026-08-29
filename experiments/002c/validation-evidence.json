@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 1ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest",
+      "id": "pytest",
+      "passed": true,
+      "returncode": 0,
+      "summary": "48 passed in 9.66s"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "legacy_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "deterministic seed-manifest validation",
+      "id": "seed_manifest",
+      "observed": {
+        "errors_preview": [],
+        "historical_root_seed_ids_compared": 6878,
+        "manifest_sha256": "bf32dba3bd167f634d031b10369b7f26cfe7a5023416d501cf14781793b78597",
+        "partition_code_disjoint": true,
+        "passed": true,
+        "rows": 6,
+        "stratum_counts": {
+          "P0_nominal": 1,
+          "P1_primary_navigation": 1,
+          "P2_monitor_only": 1,
+          "P3_shared_cause_navigation": 1,
+          "P4_model_upset": 1,
+          "P5_actuator_degradation": 1
+        },
+        "unique_root_seed_ids": 6
+      },
+      "passed": true
+    },
+    {
+      "command": "historical freeze and checksum verification",
+      "id": "historical_integrity",
+      "observed": {
+        "errors_preview": [],
+        "experiment_002_freeze_id": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+        "experiment_002b_freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+        "known_preexisting_freeze_inconsistencies": [
+          {
+            "current_committed_sha256": "4168fa738e5023ef3d59b7b46f700e54ec4bf881e3144a63329be16b9a747a70",
+            "freeze_expected_sha256": "c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1",
+            "issue": "committed 002b validation hash does not match its earlier freeze entry",
+            "path": "experiments/002b/validation-evidence.json"
+          }
+        ],
+        "passed": true,
+        "protected_paths_match_committed_002b_baseline": true,
+        "source_hash_drift_expected_only_for_corrected_production_dynamics": true
+      },
+      "passed": true
+    },
+    {
+      "command": "bounded repository publication/privacy scan",
+      "id": "publication_privacy_scan",
+      "observed": {
+        "additional_matches": 0,
+        "additional_matches_preview": [],
+        "base_publication_scan": {
+          "files_scanned": 126,
+          "matches": 0,
+          "matches_preview": [],
+          "passed": true
+        },
+        "files_scanned": 126,
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "phase": "validate",
+  "phase_sequence": 1,
+  "schema_version": "experiment-002c-numerical-1.0",
+  "study_instance_id": "bed45dff-8b08-4f90-b89e-4a71630cb487",
+  "validated_at_utc": "2026-08-29T23:52:03.511429+00:00"
+}
