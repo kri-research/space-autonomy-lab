@@ -1,0 +1,14 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "derivation": "SeedSequence([master, partition, stratum, replicate, stream])",
+  "manifest_hashes": {
+    "future_confirmatory_reserved.json": "b1dc4ad9e0280820c8efe35521df3d60c01043581ef196d9e41b4c639d7d15da",
+    "metric_calibration.jsonl": "2399fc8b3c8fb6e37126865124fd45cce364023bc5ecef2c3268213be930e431",
+    "pilot.jsonl": "a54d3e6204131b7c797c6ebb6e0195748e0ffa2422403604cccef7dfd3390ec1",
+    "train_fit.jsonl": "398f3f3f3913d7215999673cb53eaede83262cf932d87e2b16b169740e7269d2",
+    "train_stop.jsonl": "45a23975e439e81e91297c2068a806d67afd4f2757e182c5027f6513600ea8d7",
+    "validation.jsonl": "af10d9246ff6546439258a8f47469b1fcaf7e91301fab58212c939954fdd0b4f"
+  },
+  "master_seed": 2002,
+  "schema_version": "experiment-002-pilot-1.0"
+}

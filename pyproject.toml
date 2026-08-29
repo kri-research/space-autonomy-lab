@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools==80.9.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,7 +7,7 @@ name = "kri-space-autonomy-lab"
 version = "0.1.0"
 description = "Research testbed for spacecraft autonomy under faults, uncertainty, and runtime safety constraints."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = "==3.11.16"
 license = {text = "Apache-2.0"}
 authors = [{name = "KRI"}]
 keywords = ["spacecraft", "autonomy", "runtime-assurance", "fault-injection", "space-ai"]
@@ -17,14 +17,12 @@ classifiers = [
   "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: 3.13",
   "Topic :: Scientific/Engineering",
 ]
-dependencies = ["numpy>=2.0,<3"]
+dependencies = ["numpy==2.4.6"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.3", "ruff>=0.9"]
+dev = ["pytest==9.1.1", "ruff==0.16.5"]
 
 [project.scripts]
 kri-space-lab = "kri_space_autonomy.cli:main"

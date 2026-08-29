@@ -1,0 +1,53 @@
+{
+  "schema_version": "experiment-002-pilot-1.0",
+  "validated_at_utc": "2026-08-29T21:23:09Z",
+  "environment_label": "local research environment",
+  "passed": true,
+  "checks": [
+    {
+      "id": "dependency_lock",
+      "command_label": "locked dependency resolution and frozen environment check",
+      "passed": true
+    },
+    {
+      "id": "ruff",
+      "command_label": "uv run ruff check .",
+      "passed": true,
+      "summary": "All checks passed"
+    },
+    {
+      "id": "pytest",
+      "command_label": "uv run pytest",
+      "passed": true,
+      "summary": "28 passed"
+    },
+    {
+      "id": "compileall",
+      "command_label": "compile project source and tests",
+      "passed": true
+    },
+    {
+      "id": "legacy_gate_regression",
+      "command_label": "uv run kri-space-lab verify-gate",
+      "passed": true,
+      "summary": "1,280 finite grid pairs; zero violations"
+    },
+    {
+      "id": "diff_whitespace",
+      "command_label": "git diff --check",
+      "passed": true
+    },
+    {
+      "id": "publication_boundary_privacy_scan",
+      "command_label": "fixed prohibited-name scan over repository excluding local runtime directories",
+      "passed": true,
+      "matches": 0
+    },
+    {
+      "id": "canonical_pilot_seed_text_scan",
+      "command_label": "conflicting pilot-size reference scan",
+      "passed": true,
+      "matches": 0
+    }
+  ]
+}

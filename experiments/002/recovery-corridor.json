@@ -1,0 +1,10 @@
+{
+  "calibration_method": "reference-arm truth at 0.25 s; range q0.001/q0.999 expanded by 0.25 m, absolute-speed q0.999 expanded by 0.02 m/s, propellant q0.001 reduced by 0.01 and floored at reserve; outward deterministic rounding",
+  "calibration_partition": "metric_calibration:500 disjoint seeds",
+  "calibration_sha256": "c2e74a43e658deb061b2b8c8f6fd475012c2d46aa9df1d2a1350bb153a1e883e",
+  "max_abs_velocity_mps": 0.402,
+  "max_range_m": 116.55,
+  "min_propellant": 0.388,
+  "min_range_m": 5.7,
+  "schema_version": "experiment-002-pilot-1.0"
+}
