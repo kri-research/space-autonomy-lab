@@ -1,0 +1,554 @@
+{
+  "checks": [
+    {
+      "id": "pre_outcome_validation_and_freeze",
+      "passed": true,
+      "threshold": "all pre-outcome checks pass and frozen hashes verify"
+    },
+    {
+      "id": "seed_partition",
+      "observed": {
+        "errors_preview": [],
+        "historical_root_seed_ids_compared": 5900,
+        "partition_codes_disjoint": true,
+        "partitions": {
+          "fixed_replay": {
+            "rows": 6,
+            "stratum_counts": {
+              "P0_nominal": 1,
+              "P1_primary_navigation": 1,
+              "P2_monitor_only": 1,
+              "P3_shared_cause_navigation": 1,
+              "P4_model_upset": 1,
+              "P5_actuator_degradation": 1
+            },
+            "subtype_counts": {
+              "P1_primary_navigation": {
+                "dropout": 0,
+                "range_bias": 1
+              },
+              "P2_monitor_only": {
+                "dropout": 0,
+                "range_bias": 1
+              },
+              "P3_shared_cause_navigation": {
+                "dropout": 0,
+                "range_bias": 1
+              }
+            }
+          },
+          "operational": {
+            "rows": 900,
+            "stratum_counts": {
+              "P0_nominal": 150,
+              "P1_primary_navigation": 150,
+              "P2_monitor_only": 150,
+              "P3_shared_cause_navigation": 150,
+              "P4_model_upset": 150,
+              "P5_actuator_degradation": 150
+            },
+            "subtype_counts": {
+              "P1_primary_navigation": {
+                "dropout": 75,
+                "range_bias": 75
+              },
+              "P2_monitor_only": {
+                "dropout": 75,
+                "range_bias": 75
+              },
+              "P3_shared_cause_navigation": {
+                "dropout": 75,
+                "range_bias": 75
+              }
+            }
+          },
+          "rate_decomposition": {
+            "rows": 72,
+            "stratum_counts": {
+              "P0_nominal": 12,
+              "P1_primary_navigation": 12,
+              "P2_monitor_only": 12,
+              "P3_shared_cause_navigation": 12,
+              "P4_model_upset": 12,
+              "P5_actuator_degradation": 12
+            },
+            "subtype_counts": {
+              "P1_primary_navigation": {
+                "dropout": 6,
+                "range_bias": 6
+              },
+              "P2_monitor_only": {
+                "dropout": 6,
+                "range_bias": 6
+              },
+              "P3_shared_cause_navigation": {
+                "dropout": 6,
+                "range_bias": 6
+              }
+            }
+          }
+        },
+        "passed": true,
+        "unique_002b_root_seed_ids": 978
+      },
+      "passed": true,
+      "threshold": "all 002b seeds are manifest-complete and disjoint from Experiment 002"
+    },
+    {
+      "id": "zero_controller_numerical_failures",
+      "passed": true,
+      "threshold": "zero controller, invalid-action, or numerical failures"
+    },
+    {
+      "id": "fixed_command_numerical_replay",
+      "observed": {
+        "all_classifications_match": true,
+        "cases": 24,
+        "maximum_state_or_metric_error": 7.445810297213029e-07
+      },
+      "passed": false,
+      "threshold": "full fixed-command max state/metric error <=1e-10 and identical collision, physical-hazard, depletion, and sustained-success classes"
+    },
+    {
+      "id": "operational_1s_safety",
+      "observed": {
+        "confidence": 0.95,
+        "episode_rows": 900,
+        "errors_preview": [],
+        "passed": true,
+        "strata": {
+          "P0_nominal": {
+            "collisions": 0,
+            "controller_or_numerical_failures": 0,
+            "episodes": 150,
+            "minimum_final_propellant": 0.707060153018555,
+            "passed": true,
+            "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+            "physical_hazards": 0,
+            "propellant_depletions": 0,
+            "reserve_failures": 0,
+            "sustained_success_rate": 0.7733333333333333,
+            "sustained_successes": 116
+          },
+          "P1_primary_navigation": {
+            "collisions": 0,
+            "controller_or_numerical_failures": 0,
+            "episodes": 150,
+            "minimum_final_propellant": 0.6719381552534478,
+            "passed": true,
+            "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+            "physical_hazards": 0,
+            "propellant_depletions": 0,
+            "reserve_failures": 0,
+            "sustained_success_rate": 0.34,
+            "sustained_successes": 51
+          },
+          "P2_monitor_only": {
+            "collisions": 0,
+            "controller_or_numerical_failures": 0,
+            "episodes": 150,
+            "minimum_final_propellant": 0.5063037996321239,
+            "passed": true,
+            "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+            "physical_hazards": 0,
+            "propellant_depletions": 0,
+            "reserve_failures": 0,
+            "sustained_success_rate": 0.44,
+            "sustained_successes": 66
+          },
+          "P3_shared_cause_navigation": {
+            "collisions": 0,
+            "controller_or_numerical_failures": 0,
+            "episodes": 150,
+            "minimum_final_propellant": 0.623422858942161,
+            "passed": true,
+            "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+            "physical_hazards": 0,
+            "propellant_depletions": 0,
+            "reserve_failures": 0,
+            "sustained_success_rate": 0.4066666666666667,
+            "sustained_successes": 61
+          },
+          "P4_model_upset": {
+            "collisions": 0,
+            "controller_or_numerical_failures": 0,
+            "episodes": 150,
+            "minimum_final_propellant": 0.4245453489434392,
+            "passed": true,
+            "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+            "physical_hazards": 0,
+            "propellant_depletions": 0,
+            "reserve_failures": 0,
+            "sustained_success_rate": 1.0,
+            "sustained_successes": 150
+          },
+          "P5_actuator_degradation": {
+            "collisions": 0,
+            "controller_or_numerical_failures": 0,
+            "episodes": 150,
+            "minimum_final_propellant": 0.7117033973001055,
+            "passed": true,
+            "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+            "physical_hazards": 0,
+            "propellant_depletions": 0,
+            "reserve_failures": 0,
+            "sustained_success_rate": 0.8,
+            "sustained_successes": 120
+          }
+        },
+        "unique_cells": 900,
+        "upper_margin": 0.02,
+        "zero_event_upper_at_frozen_n": 0.019773438164508494
+      },
+      "passed": true,
+      "threshold": "150 disjoint seeds/stratum, zero physical hazards/collisions, and one-sided exact 95% upper bound <0.02 in every stratum"
+    },
+    {
+      "id": "propellant_reserve",
+      "passed": true,
+      "threshold": "no depletion and final propellant >=0.10 in every 002b episode"
+    },
+    {
+      "id": "rate_decomposition_evidence",
+      "observed": {
+        "rate": {
+          "controller_or_numerical_failures": 0,
+          "episode_rows": 648,
+          "errors_preview": [],
+          "expected_episode_rows": 648,
+          "interpretation": "descriptive mechanism-identification grid only; no closed-loop trajectory identity or multi-rate noninferiority claim",
+          "passed_feasibility_qc": true,
+          "propellant_depletions": 0,
+          "reserve_failures": 0,
+          "support_claim": false,
+          "timing_cells": {
+            "command_0.25s__observation_0.25s": {
+              "collisions": 0,
+              "command_period_s": 0.25,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.24293646295200233,
+                "maximum_sensor_sample_latency": 0.24293646295200233,
+                "median_command_latency": 0.11345714054366596,
+                "median_override_latency_when_observed": 0.1644249939427027,
+                "median_sensor_sample_latency": 0.11345714054366596,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 17881,
+                "NONE": 153377,
+                "OBSERVATION_QUALITY": 1542
+              },
+              "minimum_final_propellant": 0.6061854109062937,
+              "observation_period_s": 0.25,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.3328621044379374,
+                "maximum_absolute_propellant_use_change_fraction": 0.20437993122641618,
+                "mean_minimum_range_change_m": 0.0845145794645239,
+                "mean_propellant_use_change_fraction": -0.048184050304746304,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.013888888888888888
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 43
+            },
+            "command_0.25s__observation_0.5s": {
+              "collisions": 0,
+              "command_period_s": 0.25,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.24293646295200233,
+                "maximum_sensor_sample_latency": 0.49293646295200233,
+                "median_command_latency": 0.11345714054366596,
+                "median_override_latency_when_observed": 0.21522731968809694,
+                "median_sensor_sample_latency": 0.28859746826492483,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 17881,
+                "NONE": 153379,
+                "OBSERVATION_QUALITY": 1540
+              },
+              "minimum_final_propellant": 0.5556080420129421,
+              "observation_period_s": 0.5,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.36802624846459153,
+                "maximum_absolute_propellant_use_change_fraction": 0.1406883980364283,
+                "mean_minimum_range_change_m": 0.045847397762371796,
+                "mean_propellant_use_change_fraction": -0.028732163295785026,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.013888888888888888
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 43
+            },
+            "command_0.25s__observation_1s": {
+              "collisions": 0,
+              "command_period_s": 0.25,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.24293646295200233,
+                "maximum_sensor_sample_latency": 0.9929364629520023,
+                "median_command_latency": 0.11345714054366596,
+                "median_override_latency_when_observed": 0.23970773221790864,
+                "median_sensor_sample_latency": 0.558096446872355,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 17881,
+                "NONE": 153375,
+                "OBSERVATION_QUALITY": 1544
+              },
+              "minimum_final_propellant": 0.434525065897663,
+              "observation_period_s": 1.0,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.008786545638999499,
+                "maximum_absolute_propellant_use_change_fraction": 0.006653447445192362,
+                "mean_minimum_range_change_m": -4.215711583451428e-05,
+                "mean_propellant_use_change_fraction": 8.028652640282297e-05,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.0
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 42
+            },
+            "command_0.5s__observation_0.25s": {
+              "collisions": 0,
+              "command_period_s": 0.5,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.49293646295200233,
+                "maximum_sensor_sample_latency": 0.24293646295200233,
+                "median_command_latency": 0.28859746826492483,
+                "median_override_latency_when_observed": 0.2683498423738797,
+                "median_sensor_sample_latency": 0.11345714054366596,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 8937,
+                "NONE": 76693,
+                "OBSERVATION_QUALITY": 770
+              },
+              "minimum_final_propellant": 0.5522061650033293,
+              "observation_period_s": 0.25,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.36802624846459153,
+                "maximum_absolute_propellant_use_change_fraction": 0.1406883980364283,
+                "mean_minimum_range_change_m": 0.04603175789195098,
+                "mean_propellant_use_change_fraction": -0.028706894388394546,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.013888888888888888
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 43
+            },
+            "command_0.5s__observation_0.5s": {
+              "collisions": 0,
+              "command_period_s": 0.5,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.49293646295200233,
+                "maximum_sensor_sample_latency": 0.49293646295200233,
+                "median_command_latency": 0.28859746826492483,
+                "median_override_latency_when_observed": 0.2683498423738797,
+                "median_sensor_sample_latency": 0.28859746826492483,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 8937,
+                "NONE": 76693,
+                "OBSERVATION_QUALITY": 770
+              },
+              "minimum_final_propellant": 0.5522061650033293,
+              "observation_period_s": 0.5,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.36802624846459153,
+                "maximum_absolute_propellant_use_change_fraction": 0.1406883980364283,
+                "mean_minimum_range_change_m": 0.04603175789195098,
+                "mean_propellant_use_change_fraction": -0.028706894388394546,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.013888888888888888
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 43
+            },
+            "command_0.5s__observation_1s": {
+              "collisions": 0,
+              "command_period_s": 0.5,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.49293646295200233,
+                "maximum_sensor_sample_latency": 0.9929364629520023,
+                "median_command_latency": 0.28859746826492483,
+                "median_override_latency_when_observed": 0.4448238848520134,
+                "median_sensor_sample_latency": 0.558096446872355,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 8937,
+                "NONE": 76691,
+                "OBSERVATION_QUALITY": 772
+              },
+              "minimum_final_propellant": 0.43655445444302315,
+              "observation_period_s": 1.0,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.006936556741861111,
+                "maximum_absolute_propellant_use_change_fraction": 0.005036879855409626,
+                "mean_minimum_range_change_m": 2.2345334555128203e-05,
+                "mean_propellant_use_change_fraction": -2.1274219770145123e-05,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.0
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 42
+            },
+            "command_1s__observation_0.25s": {
+              "collisions": 0,
+              "command_period_s": 1.0,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.9929364629520023,
+                "maximum_sensor_sample_latency": 0.24293646295200233,
+                "median_command_latency": 0.558096446872355,
+                "median_override_latency_when_observed": 0.7321402476522962,
+                "median_sensor_sample_latency": 0.11345714054366596,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 4464,
+                "NONE": 38350,
+                "OBSERVATION_QUALITY": 386
+              },
+              "minimum_final_propellant": 0.43151757458761353,
+              "observation_period_s": 0.25,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.0,
+                "maximum_absolute_propellant_use_change_fraction": 0.0,
+                "mean_minimum_range_change_m": 0.0,
+                "mean_propellant_use_change_fraction": 0.0,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.0
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 42
+            },
+            "command_1s__observation_0.5s": {
+              "collisions": 0,
+              "command_period_s": 1.0,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.9929364629520023,
+                "maximum_sensor_sample_latency": 0.49293646295200233,
+                "median_command_latency": 0.558096446872355,
+                "median_override_latency_when_observed": 0.7321402476522962,
+                "median_sensor_sample_latency": 0.28859746826492483,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 4464,
+                "NONE": 38350,
+                "OBSERVATION_QUALITY": 386
+              },
+              "minimum_final_propellant": 0.43151757458761353,
+              "observation_period_s": 0.5,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.0,
+                "maximum_absolute_propellant_use_change_fraction": 0.0,
+                "mean_minimum_range_change_m": 0.0,
+                "mean_propellant_use_change_fraction": 0.0,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.0
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 42
+            },
+            "command_1s__observation_1s": {
+              "collisions": 0,
+              "command_period_s": 1.0,
+              "controller_or_numerical_failures": 0,
+              "episodes": 72,
+              "fault_response_timing_s": {
+                "maximum_command_latency": 0.9929364629520023,
+                "maximum_sensor_sample_latency": 0.9929364629520023,
+                "median_command_latency": 0.558096446872355,
+                "median_override_latency_when_observed": 0.7321402476522962,
+                "median_sensor_sample_latency": 0.558096446872355,
+                "override_responses_observed": 31
+              },
+              "gate_reason_counts": {
+                "MODEL_INTEGRITY": 4464,
+                "NONE": 38350,
+                "OBSERVATION_QUALITY": 386
+              },
+              "minimum_final_propellant": 0.43151757458761353,
+              "observation_period_s": 1.0,
+              "paired_vs_1s_1s": {
+                "maximum_absolute_minimum_range_change_m": 0.0,
+                "maximum_absolute_propellant_use_change_fraction": 0.0,
+                "mean_minimum_range_change_m": 0.0,
+                "mean_propellant_use_change_fraction": 0.0,
+                "pairs": 72,
+                "physical_hazard_risk_difference": 0.0,
+                "sustained_success_risk_difference": 0.0
+              },
+              "physical_hazards": 0,
+              "propellant_depletions": 0,
+              "reserve_failures": 0,
+              "sustained_successes": 42
+            }
+          }
+        },
+        "trace_integrity": {
+          "all_episode_trace_digests_match": true,
+          "command_events": 907200,
+          "episodes": 648,
+          "errors_preview": [],
+          "passed": true
+        }
+      },
+      "passed": true,
+      "threshold": "complete 3x3 timing grid, intact command/sensor trace evidence, zero failures, and reserve retained; no multi-rate support claim"
+    },
+    {
+      "id": "confirmatory_campaign_blocked",
+      "passed": true,
+      "threshold": "full 32,000-episode campaign and combined-fault study are not executed"
+    }
+  ],
+  "decision": "fail",
+  "deviations": [],
+  "overall_passed": false,
+  "schema_version": "experiment-002b-amendment-1.0"
+}

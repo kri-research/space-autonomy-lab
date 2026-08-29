@@ -19,7 +19,10 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Topic :: Scientific/Engineering",
 ]
-dependencies = ["numpy==2.4.6"]
+dependencies = [
+    "numpy==2.4.6",
+    "scipy==1.17.0",
+]
 
 [project.optional-dependencies]
 dev = ["pytest==9.1.1", "ruff==0.16.5"]

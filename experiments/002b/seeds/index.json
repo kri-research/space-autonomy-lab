@@ -1,0 +1,23 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "derivation": "SeedSequence([master, 002b_partition, stratum, replicate, stream])",
+  "historical_partition_codes_max": 19,
+  "manifest_hashes": {
+    "fixed_replay.jsonl": "f51866d0218da3844dbd48a6bfb5e6b96b0fbfb33d28b9581504e91198cf4101",
+    "operational.jsonl": "74873a16884e23b7e05bfb0c5675539cc0df24572968bc0f7d5231e1075e5c57",
+    "rate_decomposition.jsonl": "f11bc43d9e1a7cf10d4341ffd0bc66dcb1bdba3f4eaf76b7f726d6a05acafafc"
+  },
+  "master_seed": 2002,
+  "partition_codes": {
+    "fixed_replay": 23,
+    "operational": 21,
+    "rate_decomposition": 22
+  },
+  "partition_rows": {
+    "fixed_replay": 6,
+    "operational": 900,
+    "rate_decomposition": 72
+  },
+  "root_seed_ids_disjoint_from_experiment_002": true,
+  "schema_version": "experiment-002b-amendment-1.0"
+}

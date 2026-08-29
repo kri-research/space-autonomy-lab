@@ -1,0 +1,27 @@
+{
+  "schema_version": "experiment-002b-amendment-1.0",
+  "amends_schema_version": "experiment-002-pilot-1.0",
+  "historical_freeze_id": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+  "master_seed": 2002,
+  "operational_partition_code": 21,
+  "rate_partition_code": 22,
+  "replay_partition_code": 23,
+  "operational_seeds_per_stratum": 150,
+  "rate_seeds_per_stratum": 12,
+  "replay_seeds_per_stratum": 1,
+  "operational_command_period_s": 1.0,
+  "operational_observation_period_s": 1.0,
+  "diagnostic_command_periods_s": [1.0, 0.5, 0.25],
+  "diagnostic_observation_periods_s": [1.0, 0.5, 0.25],
+  "one_sided_confidence": 0.95,
+  "zero_event_upper_margin": 0.02,
+  "numerical_error_tolerance": 1e-10,
+  "reference_rtol": 2.5e-14,
+  "reference_atol": 1e-15,
+  "replay_command_patterns": [
+    "pd_operational",
+    "maximum_closing",
+    "maximum_separating",
+    "alternating_extrema"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "combined_fault_study_executed": false,
+  "command_lines": [
+    "uv sync --frozen --extra dev",
+    "uv run python -m kri_space_autonomy.experiment_002b.workflow validate",
+    "uv run python -m kri_space_autonomy.experiment_002b.workflow freeze",
+    "uv run python -m kri_space_autonomy.experiment_002b.workflow run",
+    "uv run python -m kri_space_autonomy.experiment_002b.workflow analyze"
+  ],
+  "confirmatory_campaign_executed": false,
+  "created_at_utc": "2026-08-29T22:44:14.151952+00:00",
+  "decision": "fail",
+  "freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+  "input_hashes": {
+    "artifacts/experiment-002/policy-primary.manifest.json": "902be24612271d75fdcf72ae93b3badc2e9baab1b0ffc14fa0a1a34e304a1a2d",
+    "artifacts/experiment-002/policy-primary.npz": "142aab82e94ef4090d837ed9f0831bb639638f00f34d669cbc9ced9dd51c7c20",
+    "docs/experiment-002b.md": "9de1d7286df1552d6617752d3cb4a35fa2f9f2946ef7a7d6f1e52a8e6b50993e",
+    "experiments/002/config.json": "05f65a0fdf2695b00df076bb3b23b38f87d9623da10c9fb17f4616c61cd2f0fe",
+    "experiments/002/recovery-corridor.json": "d312d0d75a559d20812975cd0b71c68bd5ced1bd9cd51d01356e4404c3fe05f6",
+    "experiments/002b/config.json": "6cde992c822056a00de70b5f4b5f1b0edc0a5d536e06973318bdb960f914d062",
+    "experiments/002b/preregistration.md": "e75f5a4b4e562b0c113c65841114012018f7b1248d9cb4dea4f22199576f2c9a",
+    "experiments/002b/seeds/fixed_replay.jsonl": "f51866d0218da3844dbd48a6bfb5e6b96b0fbfb33d28b9581504e91198cf4101",
+    "experiments/002b/seeds/index.json": "be6970ffc44f4544da236fb45e8307187b7369dcbeb6a411d87a8e1df9fc3895",
+    "experiments/002b/seeds/operational.jsonl": "74873a16884e23b7e05bfb0c5675539cc0df24572968bc0f7d5231e1075e5c57",
+    "experiments/002b/seeds/rate_decomposition.jsonl": "f11bc43d9e1a7cf10d4341ffd0bc66dcb1bdba3f4eaf76b7f726d6a05acafafc",
+    "experiments/002b/validation-evidence.json": "c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1"
+  },
+  "multi_rate_support_claim": false,
+  "operational_command_period_s": 1.0,
+  "output_hashes": {
+    "results/experiment-002b/analysis.json": "5870454fedabe0f9200990107faf6784f597921c1ef76e6f38159bf97967d7d2",
+    "results/experiment-002b/execution-summary.json": "1957c4da2c2f993f1d67d8263c14321290d50d3c5842c43a699d3c235a8c1ce2",
+    "results/experiment-002b/fixed-command-replay.json": "f63485a6df2d9dacac099c8d3ae406521b4e2171da90abdd8d3361ff1c2ac3b5",
+    "results/experiment-002b/operational-episodes.jsonl": "d1940d07b8e9c5da53fdd299184c492cefafe0d9aababf650044cdcc189cf1ee",
+    "results/experiment-002b/qc.json": "aaef91bee8dfe8fbfeccf72010a843c67cef06b4212be95c6e3e619b49dc63b7",
+    "results/experiment-002b/rate-command-events.jsonl.gz": "d0da635b1a31c75be851c85ebc323d0faa19107639bd3cdc36dde8f36b989e5f",
+    "results/experiment-002b/rate-decomposition-episodes.jsonl": "df53fa58ceb7c1d6928877bec1c01b91c0bd610599f8e765e6aeab2367e97cc5",
+    "results/experiment-002b/report.md": "494fc3c36b06df4c6ce91e02ebd47c6e8052b65251880427257f9a7b26370a29"
+  },
+  "paths": "project-relative only",
+  "publication_boundary_scan": {
+    "files_scanned": 110,
+    "matches": 0,
+    "matches_preview": [],
+    "passed": true
+  },
+  "qc_overall_passed": false,
+  "runtime": {
+    "architecture": "arm64",
+    "blas_lapack_summary": [
+      "\"blas\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\",",
+      "\"lapack\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\","
+    ],
+    "implementation": "CPython",
+    "numpy_version": "2.4.6",
+    "os": "Darwin",
+    "python": "3.11.16"
+  },
+  "schema_version": "experiment-002b-amendment-1.0"
+}
