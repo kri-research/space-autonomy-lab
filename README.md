@@ -45,10 +45,11 @@ https://www.kri.org.uk/publications/trustworthy-onboard-ai-standard-for-space-sy
 
 ## Install
 
+The research environment is locked to the Python patch and package versions in
+`.python-version` and `uv.lock`.
+
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e '.[dev]'
+uv sync --frozen --extra dev
 ```
 
 ## Run an experiment
@@ -96,7 +97,9 @@ The first programme studies autonomy, faults, runtime safety and recovery in spa
 work will increase physical fidelity, move onto representative edge hardware, and investigate safe
 online adaptation and continual learning under enforced operational constraints.
 
-See [Experiment 001](docs/experiment-001.md) and [the research roadmap](docs/research-roadmap.md).
+See [Experiment 001](docs/experiment-001.md), the
+[Experiment 002 design-validation pilot](docs/experiment-002.md), and
+[the research roadmap](docs/research-roadmap.md).
 
 ## Citation
 

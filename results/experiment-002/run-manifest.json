@@ -1,0 +1,56 @@
+{
+  "command_lines": [
+    "uv sync --frozen --extra dev",
+    "uv run python -m kri_space_autonomy.experiment_002.workflow freeze",
+    "uv run python -m kri_space_autonomy.experiment_002.workflow run",
+    "uv run python -m kri_space_autonomy.experiment_002.workflow analyze"
+  ],
+  "confirmatory_campaign_executed": false,
+  "created_at_utc": "2026-08-29T21:30:44.421395+00:00",
+  "freeze_id": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+  "hashes": {
+    "analysis_code_sha256": "86ed970c4c580e89188e64b50627ff82b31639d715fa882fdc03720752bbbac0",
+    "analysis_sha256": "c81196b74136e3c09f2c1279b10d300613d860de2786621c7871bcffe0bea4fc",
+    "config_sha256": "05f65a0fdf2695b00df076bb3b23b38f87d9623da10c9fb17f4616c61cd2f0fe",
+    "episodes_sha256": "aaa9e826af86234d4b6bc2ee8c3d53a830e2ca10fc2b724981e9444728bb3c21",
+    "freeze_id": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+    "git_commit": "77088a3041c720deaaa504f3476bfb35cc2f509e",
+    "policy_artifact_sha256": "142aab82e94ef4090d837ed9f0831bb639638f00f34d669cbc9ced9dd51c7c20",
+    "policy_model_identity": "2454c9b947f512d8185be6ab0cdef13c39bceb912b37f6d15a164b2ce4931255",
+    "qc_sha256": "058b8dfb20b9e9f960eef36fd24008e5924b1a6dd3a79a8961b7d0a24e720289",
+    "report_sha256": "96f4c2f7de016cc962e4f07f718d30dc46c80e1cbfbfd612148910e8d374dcd9",
+    "seed_manifest_sha256": "a54d3e6204131b7c797c6ebb6e0195748e0ffa2422403604cccef7dfd3390ec1",
+    "source_tree_sha256": "66fbea22f2c9ba461489ce877abfbc91c5b1230032b88e057a6ee8cd9f790240"
+  },
+  "paths": "project-relative only",
+  "progression": {
+    "controller_favorability_used": false,
+    "decision": "do_not_proceed",
+    "failed_validity_gate_ids": [
+      "command_rate_sensitivity"
+    ],
+    "information_gate_passed": false,
+    "reason": "Pilot validity failures require correction before confirmation."
+  },
+  "qc_overall_passed": false,
+  "report_editorial_postprocessing": {
+    "applied": true,
+    "scope": "Corrected Markdown wrapping and added concise interpretation from frozen analysis/QC only; no episode, estimate, interval, QC result, or progression decision changed."
+  },
+  "runtime": {
+    "architecture": "arm64",
+    "blas_lapack_summary": [
+      "\"blas\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\",",
+      "\"lapack\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\","
+    ],
+    "implementation": "CPython",
+    "numpy_version": "2.4.6",
+    "os": "Darwin",
+    "python": "3.11.16"
+  },
+  "schema_version": "experiment-002-pilot-1.0"
+}

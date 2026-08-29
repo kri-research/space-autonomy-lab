@@ -1,0 +1,578 @@
+{
+  "checks": [
+    {
+      "category": "validity",
+      "id": "tests_lint_lock",
+      "observed": {
+        "checks": [
+          {
+            "command_label": "locked dependency resolution and frozen environment check",
+            "id": "dependency_lock",
+            "passed": true
+          },
+          {
+            "command_label": "uv run ruff check .",
+            "id": "ruff",
+            "passed": true,
+            "summary": "All checks passed"
+          },
+          {
+            "command_label": "uv run pytest",
+            "id": "pytest",
+            "passed": true,
+            "summary": "28 passed"
+          },
+          {
+            "command_label": "compile project source and tests",
+            "id": "compileall",
+            "passed": true
+          },
+          {
+            "command_label": "uv run kri-space-lab verify-gate",
+            "id": "legacy_gate_regression",
+            "passed": true,
+            "summary": "1,280 finite grid pairs; zero violations"
+          },
+          {
+            "command_label": "git diff --check",
+            "id": "diff_whitespace",
+            "passed": true
+          },
+          {
+            "command_label": "fixed prohibited-name scan over repository excluding local runtime directories",
+            "id": "publication_boundary_privacy_scan",
+            "matches": 0,
+            "passed": true
+          },
+          {
+            "command_label": "conflicting pilot-size reference scan",
+            "id": "canonical_pilot_seed_text_scan",
+            "matches": 0,
+            "passed": true
+          }
+        ],
+        "environment_label": "local research environment",
+        "passed": true,
+        "schema_version": "experiment-002-pilot-1.0",
+        "validated_at_utc": "2026-08-29T21:23:09Z"
+      },
+      "passed": true,
+      "threshold": "all frozen-install, test, lint, and source scans pass"
+    },
+    {
+      "category": "validity",
+      "id": "episode_cells",
+      "observed": {
+        "complete_blocks": 2400,
+        "episode_rows": 9600,
+        "incomplete_blocks": 0,
+        "stratum_episode_counts": {
+          "P0_nominal": 1600,
+          "P1_primary_navigation": 1600,
+          "P2_monitor_only": 1600,
+          "P3_shared_cause_navigation": 1600,
+          "P4_model_upset": 1600,
+          "P5_actuator_degradation": 1600
+        },
+        "unique_episode_cells": 9600,
+        "valid": true
+      },
+      "passed": true,
+      "threshold": "2,400 complete blocks and 9,600 unique episode cells"
+    },
+    {
+      "category": "validity",
+      "id": "seed_manifest",
+      "observed": {
+        "rows": 2400,
+        "scenario_hash_errors": 0,
+        "stratum_counts": {
+          "P0_nominal": 400,
+          "P1_primary_navigation": 400,
+          "P2_monitor_only": 400,
+          "P3_shared_cause_navigation": 400,
+          "P4_model_upset": 400,
+          "P5_actuator_degradation": 400
+        },
+        "subtype_counts": {
+          "P1_primary_navigation": {
+            "dropout": 200,
+            "range_bias": 200
+          },
+          "P2_monitor_only": {
+            "dropout": 200,
+            "range_bias": 200
+          },
+          "P3_shared_cause_navigation": {
+            "dropout": 200,
+            "range_bias": 200
+          }
+        },
+        "unique_root_seed_ids": 2400,
+        "valid": true
+      },
+      "passed": true,
+      "threshold": "400/stratum; exact 200/200 mixed components; zero hash drift"
+    },
+    {
+      "category": "validity",
+      "id": "same_platform_replay",
+      "observed": {
+        "episodes_compared": 960,
+        "failures_preview": [],
+        "passed": true
+      },
+      "passed": true,
+      "threshold": "40 frozen blocks/stratum; exact discrete and tolerance-bounded floats"
+    },
+    {
+      "category": "validity",
+      "id": "numerical_integration",
+      "observed": {
+        "command_times_changed": false,
+        "event_classifications_match": true,
+        "maximum_absolute_state_error": 8.391620731629246e-12,
+        "method": "fixed open-loop commands; exact propagator versus float64 RK4/4096",
+        "passed": true,
+        "tolerance": 1e-10
+      },
+      "passed": true,
+      "threshold": "fixed-command exact/RK4 max state error <=1e-10"
+    },
+    {
+      "category": "validity",
+      "id": "command_rate_sensitivity",
+      "observed": {
+        "classification_failures_preview": [
+          {
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 111,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "period_s": 0.25,
+            "replicate": 111,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "period_s": 0.25,
+            "replicate": 111,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 225,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "period_s": 0.25,
+            "replicate": 225,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "period_s": 0.25,
+            "replicate": 225,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.5,
+            "replicate": 333,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "period_s": 0.5,
+            "replicate": 333,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "period_s": 0.5,
+            "replicate": 333,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "period_s": 0.25,
+            "replicate": 338,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "period_s": 0.25,
+            "replicate": 338,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 338,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "period_s": 0.5,
+            "replicate": 51,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.5,
+            "replicate": 51,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "PS",
+            "period_s": 0.5,
+            "replicate": 51,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "PD",
+            "period_s": 0.25,
+            "replicate": 51,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 51,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "PS",
+            "period_s": 0.25,
+            "replicate": 51,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.5,
+            "replicate": 76,
+            "stratum": "P1_primary_navigation"
+          },
+          {
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 76,
+            "stratum": "P1_primary_navigation"
+          }
+        ],
+        "comparisons": 1920,
+        "maximum_minimum_range_change_m": 1.110969050493722,
+        "maximum_propellant_used_change_fraction": 0.28306719804934344,
+        "passed": false,
+        "propellant_failures_preview": [
+          {
+            "absolute_fraction_change": 0.018199712019043357,
+            "arm": "PD",
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.018199712019043357,
+            "arm": "PS",
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.018199712019043357,
+            "arm": "D",
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.1534992541743636,
+            "arm": "R",
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.02999731825271379,
+            "arm": "PD",
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.02999731825271379,
+            "arm": "PS",
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.02999731825271379,
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.23224788566090648,
+            "arm": "R",
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.012265733353097996,
+            "arm": "D",
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.012265733353097996,
+            "arm": "PD",
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.012265733353097996,
+            "arm": "PS",
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.0963024828873773,
+            "arm": "R",
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.027050869049865978,
+            "arm": "D",
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.027050869049865978,
+            "arm": "PD",
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.027050869049865978,
+            "arm": "PS",
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.1919519964060329,
+            "arm": "R",
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.011400860892124443,
+            "arm": "PD",
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.011400860892124443,
+            "arm": "PS",
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.011400860892124443,
+            "arm": "D",
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "absolute_fraction_change": 0.09761822323131353,
+            "arm": "R",
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          }
+        ],
+        "separation_failures_preview": [
+          {
+            "arm": "PD",
+            "change_m": 0.0624197400231008,
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "change_m": 0.0624197400231008,
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "change_m": 0.0624197400231008,
+            "period_s": 0.5,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "change_m": 0.10683223909411321,
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "change_m": 0.10683223909411321,
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "change_m": 0.10683223909411321,
+            "period_s": 0.25,
+            "replicate": 6,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "change_m": 0.21405921869375,
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "change_m": 0.21405921869375,
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "change_m": 0.21405921869375,
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "R",
+            "change_m": 0.13085856544472652,
+            "period_s": 0.5,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "change_m": 0.2424375526243603,
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "change_m": 0.2424375526243603,
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "change_m": 0.2424375526243603,
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "R",
+            "change_m": 0.13595843570458754,
+            "period_s": 0.25,
+            "replicate": 13,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "change_m": 0.07678205469223709,
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "change_m": 0.07678205469223709,
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "D",
+            "change_m": 0.07678205469223709,
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "R",
+            "change_m": 0.07291531189729916,
+            "period_s": 0.5,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PD",
+            "change_m": 0.23496826796864134,
+            "period_s": 0.25,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          },
+          {
+            "arm": "PS",
+            "change_m": 0.23496826796864134,
+            "period_s": 0.25,
+            "replicate": 34,
+            "stratum": "P0_nominal"
+          }
+        ],
+        "thresholds": {
+          "classification_changes": 0,
+          "minimum_range_absolute_change_m": "<0.05",
+          "propellant_used_absolute_fraction_change": "<0.01"
+        }
+      },
+      "passed": false,
+      "threshold": "separate 1/0.5/0.25 s closed-loop sensitivity gate"
+    }
+  ],
+  "corridor": {
+    "calibration_method": "reference-arm truth at 0.25 s; range q0.001/q0.999 expanded by 0.25 m, absolute-speed q0.999 expanded by 0.02 m/s, propellant q0.001 reduced by 0.01 and floored at reserve; outward deterministic rounding",
+    "calibration_partition": "metric_calibration:500 disjoint seeds",
+    "calibration_sha256": "c2e74a43e658deb061b2b8c8f6fd475012c2d46aa9df1d2a1350bb153a1e883e",
+    "max_abs_velocity_mps": 0.402,
+    "max_range_m": 116.55,
+    "min_propellant": 0.388,
+    "min_range_m": 5.7
+  },
+  "deviations": [],
+  "overall_passed": false,
+  "schema_version": "experiment-002-pilot-1.0"
+}

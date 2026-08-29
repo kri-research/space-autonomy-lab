@@ -1,0 +1,213 @@
+{
+  "action_transform": "0.05*tanh(features@weights) m/s^2",
+  "architecture": "float64 bounded smooth linear tanh; 9 parameters",
+  "artifact_sha256": "142aab82e94ef4090d837ed9f0831bb639638f00f34d669cbc9ced9dd51c7c20",
+  "byte_order": "little",
+  "dtype": "float64 little-endian",
+  "feature_schema": [
+    "bias",
+    "range_error_over_50_clipped",
+    "velocity_over_0p4_clipped",
+    "range_velocity_interaction",
+    "propellant_centered",
+    "sensor_quality_centered",
+    "range_missing",
+    "velocity_missing",
+    "both_missing"
+  ],
+  "feature_version": "exp002-observation-features-v1",
+  "missing_value_rule": "impute range=6.5 m and velocity=0; set explicit flags",
+  "model_identity": "2454c9b947f512d8185be6ab0cdef13c39bceb912b37f6d15a164b2ce4931255",
+  "model_selection_rule": "retain each generation mean; stop by train-stop loss patience=3; among retained candidates select on validation lexicographically by fewer collisions, more sustained successes, lower objective, then lower L2 norm; never refit on validation",
+  "optimizer": {
+    "early_stop_patience": 3,
+    "elite": 6,
+    "generations": 8,
+    "initial_sigma": 0.35,
+    "name": "deterministic cross-entropy method",
+    "population": 24,
+    "primary_optimizer_seed": 200212,
+    "sigma_floor": 0.02
+  },
+  "prohibited_training_inputs": [
+    "fallback actions",
+    "runtime gate labels",
+    "monitor-channel observations",
+    "pilot outcomes",
+    "future confirmatory outcomes"
+  ],
+  "schema_version": "experiment-002-pilot-1.0",
+  "selected_generation": 7,
+  "shape": [
+    9
+  ],
+  "source_identity": {
+    "git_commit": "77088a3041c720deaaa504f3476bfb35cc2f509e",
+    "paths": "project-relative only",
+    "source_tree_sha256": "66fbea22f2c9ba461489ce877abfbc91c5b1230032b88e057a6ee8cd9f790240",
+    "working_tree_diff_sha256": "360dc24d291f99c6a79a04f37107041473b0e6b5d80737b8754735911f5ff89b",
+    "working_tree_dirty": true
+  },
+  "train_stop_metrics": {
+    "collisions": 0,
+    "mean_goal_dwell_fraction": 0.9763666666666667,
+    "mean_propellant_used": 0.1226105605963813,
+    "objective": 0.9948684185322167,
+    "sustained_successes": 404
+  },
+  "training_history": [
+    {
+      "generation": 0,
+      "sigma_max": 0.3248476221703786,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.8790416666666667,
+        "mean_propellant_used": 0.14025109594148885,
+        "objective": 2.9494908272387375,
+        "sustained_successes": 998
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.03013333333333333,
+        "mean_propellant_used": 0.10485931953211458,
+        "objective": 19.92430706249389,
+        "sustained_successes": 0
+      }
+    },
+    {
+      "generation": 1,
+      "sigma_max": 0.38782225895702416,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.7708083333333334,
+        "mean_propellant_used": 0.10077884781947594,
+        "objective": 5.110700784124712,
+        "sustained_successes": 691
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9171666666666668,
+        "mean_propellant_used": 0.10667019348217026,
+        "objective": 2.1662817847413316,
+        "sustained_successes": 295
+      }
+    },
+    {
+      "generation": 2,
+      "sigma_max": 0.2696717094651496,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9605583333333334,
+        "mean_propellant_used": 0.11490488060030182,
+        "objective": 1.2753887987826364,
+        "sustained_successes": 1570
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.8570999999999999,
+        "mean_propellant_used": 0.10890791471749389,
+        "objective": 3.3651579064868766,
+        "sustained_successes": 258
+      }
+    },
+    {
+      "generation": 3,
+      "sigma_max": 0.19356896846099872,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9456916666666666,
+        "mean_propellant_used": 0.11579443106530919,
+        "objective": 1.5956708058527649,
+        "sustained_successes": 1403
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9275333333333333,
+        "mean_propellant_used": 0.11480263459182959,
+        "objective": 1.9642025395852662,
+        "sustained_successes": 321
+      }
+    },
+    {
+      "generation": 4,
+      "sigma_max": 0.16201611019580903,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.913,
+        "mean_propellant_used": 0.11459691473541432,
+        "objective": 2.2529984854415885,
+        "sustained_successes": 1224
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9052333333333333,
+        "mean_propellant_used": 0.11423918217525605,
+        "objective": 2.416272352423398,
+        "sustained_successes": 265
+      }
+    },
+    {
+      "generation": 5,
+      "sigma_max": 0.10470076427635248,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9443916666666666,
+        "mean_propellant_used": 0.12102955738710688,
+        "objective": 1.6320970576320688,
+        "sustained_successes": 1420
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9345333333333333,
+        "mean_propellant_used": 0.11658628833808,
+        "objective": 1.8308908001440263,
+        "sustained_successes": 309
+      }
+    },
+    {
+      "generation": 6,
+      "sigma_max": 0.07210927058798436,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9608666666666666,
+        "mean_propellant_used": 0.1209564798391509,
+        "objective": 1.3032732867536239,
+        "sustained_successes": 1451
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9536666666666668,
+        "mean_propellant_used": 0.11901003848295057,
+        "objective": 1.4489357903033215,
+        "sustained_successes": 340
+      }
+    },
+    {
+      "generation": 7,
+      "sigma_max": 0.05594986564753133,
+      "train_fit_best": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9760666666666666,
+        "mean_propellant_used": 0.12795520928656748,
+        "objective": 1.0066681841635685,
+        "sustained_successes": 1597
+      },
+      "train_stop_mean": {
+        "collisions": 0,
+        "mean_goal_dwell_fraction": 0.9763666666666667,
+        "mean_propellant_used": 0.1226105605963813,
+        "objective": 0.9948684185322167,
+        "sustained_successes": 404
+      }
+    }
+  ],
+  "training_objective": "nominal observation-only fixed-horizon rollout loss: 50*collision + 20*(1-final60_goal_dwell) + mean(abs(range-6.5)/100 clipped at 2) + 0.2*mean(abs(velocity)) + 2*propellant_used",
+  "upset_scale_rule": "max(abs(weight), 0.25); eligible indices 0..5",
+  "validation_metrics": {
+    "collisions": 0,
+    "mean_goal_dwell_fraction": 0.9734333333333334,
+    "mean_propellant_used": 0.12303421448798234,
+    "objective": 1.0559354734398068,
+    "sustained_successes": 394
+  }
+}

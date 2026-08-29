@@ -1,16 +1,25 @@
-.PHONY: install test lint benchmark verify
+.PHONY: install test lint benchmark verify pilot-freeze pilot-run pilot-analyze
 
 install:
-	python -m pip install -e '.[dev]'
+	uv sync --frozen --extra dev
 
 test:
-	pytest
+	uv run pytest
 
 lint:
-	ruff check .
+	uv run ruff check .
 
 benchmark:
-	kri-space-lab benchmark scenarios/*.json --output results/baseline.json
+	uv run kri-space-lab benchmark scenarios/*.json --output results/baseline.json
 
 verify:
-	kri-space-lab verify-gate
+	uv run kri-space-lab verify-gate
+
+pilot-freeze:
+	uv run python -m kri_space_autonomy.experiment_002.workflow freeze
+
+pilot-run:
+	uv run python -m kri_space_autonomy.experiment_002.workflow run
+
+pilot-analyze:
+	uv run python -m kri_space_autonomy.experiment_002.workflow analyze
