@@ -1,0 +1,220 @@
+{
+  "acceptance": {
+    "fixed_command_classifications_identical": [
+      "collision",
+      "physical_hazard_observed",
+      "propellant_depleted",
+      "sustained_success"
+    ],
+    "fixed_command_max_state_or_metric_error": 1e-10,
+    "minimum_final_propellant": 0.1,
+    "operational_one_sided_hazard_upper_below": 0.02,
+    "operational_physical_hazards_per_stratum": 0,
+    "rate_absolute_fuel_or_range_identity_gate": false,
+    "rate_success_identity_gate": false,
+    "rate_trajectory_identity_gate": false,
+    "zero_controller_or_numerical_failures": true
+  },
+  "amendment_scope": "corrective sampled-data validation; operational 1.0 s PD only; diagnostic 0.5/0.25 s timing grid; no confirmatory campaign",
+  "combined_fault_study_executed": false,
+  "confirmatory_campaign_executed": false,
+  "freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+  "frozen_artifact_hashes": {
+    "artifacts/experiment-002/policy-primary.manifest.json": "902be24612271d75fdcf72ae93b3badc2e9baab1b0ffc14fa0a1a34e304a1a2d",
+    "artifacts/experiment-002/policy-primary.npz": "142aab82e94ef4090d837ed9f0831bb639638f00f34d669cbc9ced9dd51c7c20",
+    "docs/experiment-002b.md": "9de1d7286df1552d6617752d3cb4a35fa2f9f2946ef7a7d6f1e52a8e6b50993e",
+    "experiments/002/config.json": "05f65a0fdf2695b00df076bb3b23b38f87d9623da10c9fb17f4616c61cd2f0fe",
+    "experiments/002/recovery-corridor.json": "d312d0d75a559d20812975cd0b71c68bd5ced1bd9cd51d01356e4404c3fe05f6",
+    "experiments/002b/config.json": "6cde992c822056a00de70b5f4b5f1b0edc0a5d536e06973318bdb960f914d062",
+    "experiments/002b/preregistration.md": "e75f5a4b4e562b0c113c65841114012018f7b1248d9cb4dea4f22199576f2c9a",
+    "experiments/002b/seeds/fixed_replay.jsonl": "f51866d0218da3844dbd48a6bfb5e6b96b0fbfb33d28b9581504e91198cf4101",
+    "experiments/002b/seeds/index.json": "be6970ffc44f4544da236fb45e8307187b7369dcbeb6a411d87a8e1df9fc3895",
+    "experiments/002b/seeds/operational.jsonl": "74873a16884e23b7e05bfb0c5675539cc0df24572968bc0f7d5231e1075e5c57",
+    "experiments/002b/seeds/rate_decomposition.jsonl": "f11bc43d9e1a7cf10d4341ffd0bc66dcb1bdba3f4eaf76b7f726d6a05acafafc",
+    "experiments/002b/validation-evidence.json": "c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1"
+  },
+  "frozen_at_utc": "2026-08-29T22:41:44.438042+00:00",
+  "historical_evidence_hashes": {
+    "experiments/002/deviations.md": "842c1ce849750662f01465ca5a4d4becf66ee30cd14ee3dc2b026d13c14bce1c",
+    "experiments/002/freeze-manifest.json": "9e354fa13987fd3e3ff6dc649fb62b66608445e6faa7c6f1c14bc34dd08a502d",
+    "experiments/002/preregistration.md": "2d99a3679af942e063affb45c0b541cb9c110537abc8c986355e81476c74cfad",
+    "results/experiment-002/analysis.json": "c81196b74136e3c09f2c1279b10d300613d860de2786621c7871bcffe0bea4fc",
+    "results/experiment-002/episodes.jsonl": "aaa9e826af86234d4b6bc2ee8c3d53a830e2ca10fc2b724981e9444728bb3c21",
+    "results/experiment-002/qc.json": "058b8dfb20b9e9f960eef36fd24008e5924b1a6dd3a79a8961b7d0a24e720289",
+    "results/experiment-002/report.md": "96f4c2f7de016cc962e4f07f718d30dc46c80e1cbfbfd612148910e8d374dcd9",
+    "results/experiment-002/run-manifest.json": "869207fa4b7fb25807adaa0270dcfc7dab17c8954a24a967468318e52c8bb067"
+  },
+  "runtime": {
+    "architecture": "arm64",
+    "blas_lapack_summary": [
+      "\"blas\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\",",
+      "\"lapack\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\","
+    ],
+    "implementation": "CPython",
+    "numpy_version": "2.4.6",
+    "os": "Darwin",
+    "python": "3.11.16"
+  },
+  "sample_size": {
+    "minimum_zero_event_n": 149,
+    "multi_rate_support_claim": false,
+    "one_sided_confidence": 0.95,
+    "operational_seeds_per_stratum": 150,
+    "rate_feasibility_seeds_per_stratum": 12,
+    "upper_margin": 0.02,
+    "zero_event_upper_at_n": 0.019773438164508494
+  },
+  "schema_version": "experiment-002b-amendment-1.0",
+  "seed_index": {
+    "bit_generator": "PCG64DXSM",
+    "derivation": "SeedSequence([master, 002b_partition, stratum, replicate, stream])",
+    "historical_partition_codes_max": 19,
+    "manifest_hashes": {
+      "fixed_replay.jsonl": "f51866d0218da3844dbd48a6bfb5e6b96b0fbfb33d28b9581504e91198cf4101",
+      "operational.jsonl": "74873a16884e23b7e05bfb0c5675539cc0df24572968bc0f7d5231e1075e5c57",
+      "rate_decomposition.jsonl": "f11bc43d9e1a7cf10d4341ffd0bc66dcb1bdba3f4eaf76b7f726d6a05acafafc"
+    },
+    "master_seed": 2002,
+    "partition_codes": {
+      "fixed_replay": 23,
+      "operational": 21,
+      "rate_decomposition": 22
+    },
+    "partition_rows": {
+      "fixed_replay": 6,
+      "operational": 900,
+      "rate_decomposition": 72
+    },
+    "root_seed_ids_disjoint_from_experiment_002": true,
+    "schema_version": "experiment-002b-amendment-1.0"
+  },
+  "seed_manifest_hashes": {
+    "experiments/002b/seeds/fixed_replay.jsonl": "f51866d0218da3844dbd48a6bfb5e6b96b0fbfb33d28b9581504e91198cf4101",
+    "experiments/002b/seeds/index.json": "be6970ffc44f4544da236fb45e8307187b7369dcbeb6a411d87a8e1df9fc3895",
+    "experiments/002b/seeds/operational.jsonl": "74873a16884e23b7e05bfb0c5675539cc0df24572968bc0f7d5231e1075e5c57",
+    "experiments/002b/seeds/rate_decomposition.jsonl": "f11bc43d9e1a7cf10d4341ffd0bc66dcb1bdba3f4eaf76b7f726d6a05acafafc"
+  },
+  "seed_validation": {
+    "errors_preview": [],
+    "historical_root_seed_ids_compared": 5900,
+    "partition_codes_disjoint": true,
+    "partitions": {
+      "fixed_replay": {
+        "rows": 6,
+        "stratum_counts": {
+          "P0_nominal": 1,
+          "P1_primary_navigation": 1,
+          "P2_monitor_only": 1,
+          "P3_shared_cause_navigation": 1,
+          "P4_model_upset": 1,
+          "P5_actuator_degradation": 1
+        },
+        "subtype_counts": {
+          "P1_primary_navigation": {
+            "dropout": 0,
+            "range_bias": 1
+          },
+          "P2_monitor_only": {
+            "dropout": 0,
+            "range_bias": 1
+          },
+          "P3_shared_cause_navigation": {
+            "dropout": 0,
+            "range_bias": 1
+          }
+        }
+      },
+      "operational": {
+        "rows": 900,
+        "stratum_counts": {
+          "P0_nominal": 150,
+          "P1_primary_navigation": 150,
+          "P2_monitor_only": 150,
+          "P3_shared_cause_navigation": 150,
+          "P4_model_upset": 150,
+          "P5_actuator_degradation": 150
+        },
+        "subtype_counts": {
+          "P1_primary_navigation": {
+            "dropout": 75,
+            "range_bias": 75
+          },
+          "P2_monitor_only": {
+            "dropout": 75,
+            "range_bias": 75
+          },
+          "P3_shared_cause_navigation": {
+            "dropout": 75,
+            "range_bias": 75
+          }
+        }
+      },
+      "rate_decomposition": {
+        "rows": 72,
+        "stratum_counts": {
+          "P0_nominal": 12,
+          "P1_primary_navigation": 12,
+          "P2_monitor_only": 12,
+          "P3_shared_cause_navigation": 12,
+          "P4_model_upset": 12,
+          "P5_actuator_degradation": 12
+        },
+        "subtype_counts": {
+          "P1_primary_navigation": {
+            "dropout": 6,
+            "range_bias": 6
+          },
+          "P2_monitor_only": {
+            "dropout": 6,
+            "range_bias": 6
+          },
+          "P3_shared_cause_navigation": {
+            "dropout": 6,
+            "range_bias": 6
+          }
+        }
+      }
+    },
+    "passed": true,
+    "unique_002b_root_seed_ids": 978
+  },
+  "source_file_hashes": {
+    ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+    "Makefile": "4908b9d33bdbce4a646e22c880ae1fc9060f183d71a1c62456593bd6ed07d0f4",
+    "README.md": "0e517e158d56eafdf5cfeb95504e0aa5789fff3ae33b3e7e1a2d5df82d1fd068",
+    "docs/experiment-002b.md": "9de1d7286df1552d6617752d3cb4a35fa2f9f2946ef7a7d6f1e52a8e6b50993e",
+    "experiments/002b/config.json": "6cde992c822056a00de70b5f4b5f1b0edc0a5d536e06973318bdb960f914d062",
+    "experiments/002b/preregistration.md": "e75f5a4b4e562b0c113c65841114012018f7b1248d9cb4dea4f22199576f2c9a",
+    "experiments/002b/validation-evidence.json": "c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1",
+    "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+    "src/kri_space_autonomy/experiment_002/config.py": "e8037c84ff45885f1010761a59fed185e8796f505aed68db6cccd59453f536d9",
+    "src/kri_space_autonomy/experiment_002/dynamics.py": "e05b4d743adc57e13cc3f315239f401159e64262100b02fb9215e25be93c80de",
+    "src/kri_space_autonomy/experiment_002/evaluator.py": "6278947cb2d06d9ae7175af46282450f7dfba8d92dc4a43e25cd8125332d952e",
+    "src/kri_space_autonomy/experiment_002/monitor.py": "37fb0d30cf57b52523921ab0e15a0233ce55f5d545d80ebcece3a79fdd2802cd",
+    "src/kri_space_autonomy/experiment_002/policy.py": "47d23c22248f59162d60f5d560052574e88d10b1c59e1ef0383b6946fd6e0f84",
+    "src/kri_space_autonomy/experiment_002/seeds.py": "0bb9c23b3fec6722d17c770c9b1d57437b86bce3c4e61dde8bbb42bb9cc24748",
+    "src/kri_space_autonomy/experiment_002b/__init__.py": "14ba6831a741e4ca2739701295d0cc8b4075ed123b89e693094c0558e3637d9e",
+    "src/kri_space_autonomy/experiment_002b/analysis.py": "67ea924ae0d2ee8b82fe3a284b95a1e2a03dc2b0f585b1ffa46dbde0cdb1ae82",
+    "src/kri_space_autonomy/experiment_002b/config.py": "f3d8fdb8bb4a249f06d25f7d119bdac017da3fa64b92b91cceb45cc9f406bae0",
+    "src/kri_space_autonomy/experiment_002b/numerical.py": "94ad21d8822f9514104d07672cb461e5232fa980c2ba5a3ce2e66b5c6cb7685e",
+    "src/kri_space_autonomy/experiment_002b/runner.py": "1269ab089f4f4fd022c807520a8066a8af8dcc6e5fd35eebad662eb6a041f3b8",
+    "src/kri_space_autonomy/experiment_002b/seeds.py": "5443b6254936399ceb80dc397b369980a9fa891a4b59074225f029a7238575c9",
+    "src/kri_space_autonomy/experiment_002b/workflow.py": "2809bf6aeabb1ba8fa2c6930291e8113291dee8c2a4b24f1bce58f2ded50fc74",
+    "tests/test_experiment_002b_design.py": "a41741fa2af16a43488459235fa97f235a52f9a92ba915e730c04c751ae512b5",
+    "tests/test_experiment_002b_numerical.py": "511e3b92228f563a48a1e2e7e4a2bc2b48bbcff825561c520fb1b7a8da0d9c1f",
+    "tests/test_experiment_002b_workflow.py": "c10c053865d1bb4f363919f1982ec99feb123e33035906504afe36c1e670f275",
+    "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+  },
+  "source_identity": {
+    "git_commit": "15879624c68b8cf93709f4c108735495e368e649",
+    "paths": "project-relative only",
+    "source_tree_sha256": "672692a1eaf366cc5a92d7b029b4a42e5dd6cc44df773ea66186e66beb0b2f03",
+    "working_tree_diff_sha256": "c254cf60e0fa166e4f1ff3a1ac209e1d74d1d713f8e064c945f36f92b44d4d30",
+    "working_tree_dirty": true
+  },
+  "source_tree_sha256": "672692a1eaf366cc5a92d7b029b4a42e5dd6cc44df773ea66186e66beb0b2f03"
+}

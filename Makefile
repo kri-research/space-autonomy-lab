@@ -1,4 +1,4 @@
-.PHONY: install test lint benchmark verify pilot-freeze pilot-run pilot-analyze
+.PHONY: install test lint benchmark verify pilot-freeze pilot-run pilot-analyze amendment-validate amendment-freeze amendment-run amendment-analyze amendment-scan
 
 install:
 	uv sync --frozen --extra dev
@@ -23,3 +23,18 @@ pilot-run:
 
 pilot-analyze:
 	uv run python -m kri_space_autonomy.experiment_002.workflow analyze
+
+amendment-validate:
+	uv run python -m kri_space_autonomy.experiment_002b.workflow validate
+
+amendment-freeze:
+	uv run python -m kri_space_autonomy.experiment_002b.workflow freeze
+
+amendment-run:
+	uv run python -m kri_space_autonomy.experiment_002b.workflow run
+
+amendment-analyze:
+	uv run python -m kri_space_autonomy.experiment_002b.workflow analyze
+
+amendment-scan:
+	uv run python -m kri_space_autonomy.experiment_002b.workflow release-scan

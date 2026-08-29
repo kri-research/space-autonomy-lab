@@ -1,0 +1,1285 @@
+{
+  "combined_fault_study_executed": false,
+  "confirmatory_campaign_executed": false,
+  "decision": "fail",
+  "fixed_command_numerical_replay": {
+    "all_classifications_match": true,
+    "case_count": 24,
+    "cases": [
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "21915499abb516bf750e5d1f12d0b251c603c75260293820ca4b129759a06905",
+        "maximum_metric_error": 3.474864840313785e-11,
+        "maximum_state_error": 7.152833880752496e-11,
+        "maximum_state_or_metric_error": 7.152833880752496e-11,
+        "metric_errors": {
+          "final_propellant": 3.474864840313785e-11,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 1.5578649481540197e-12,
+          "minimum_range_m": 1.5560885913146194e-12
+        },
+        "passed": true,
+        "pattern": "pd_operational",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P0_nominal:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P0_nominal"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "01c7eafa84ade46ea17a397318522577d24e14bac0f96a2eb7be31929975d979",
+        "maximum_metric_error": 2.1316282072803006e-13,
+        "maximum_state_error": 1.9895196601282805e-13,
+        "maximum_state_or_metric_error": 2.1316282072803006e-13,
+        "metric_errors": {
+          "final_propellant": 5.417888360170764e-14,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 3.552713678800501e-14,
+          "minimum_braking_margin_m": 2.1316282072803006e-13,
+          "minimum_range_m": 0.0
+        },
+        "passed": true,
+        "pattern": "maximum_closing",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P0_nominal:0000",
+        "source_controller_failure": null,
+        "state_records": 248,
+        "state_records_aligned": true,
+        "stratum_id": "P0_nominal"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "a9d4bc42e701de77af1dd84c935da8ac78720534ba75a2b525aa212b0f200c99",
+        "maximum_metric_error": 2.842170943040401e-14,
+        "maximum_state_error": 3.7862264434807e-09,
+        "maximum_state_or_metric_error": 3.7862264434807e-09,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 2.842170943040401e-14
+        },
+        "passed": false,
+        "pattern": "maximum_separating",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P0_nominal:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P0_nominal"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "921fa83ae02ff4039e189a7ab15b24a9496182091a7727f7e6cf2831a392a1f6",
+        "maximum_metric_error": 7.445810297213029e-07,
+        "maximum_state_error": 1.4024244610055803e-07,
+        "maximum_state_or_metric_error": 7.445810297213029e-07,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 7.445810297213029e-07,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 0.0
+        },
+        "passed": false,
+        "pattern": "alternating_extrema",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P0_nominal:0000",
+        "source_controller_failure": null,
+        "state_records": 2305,
+        "state_records_aligned": true,
+        "stratum_id": "P0_nominal"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "8dad4df4c50d608937f489b9dc62b4c4769d407295206414b3395ddb277bf60a",
+        "maximum_metric_error": 1.438863472813523e-10,
+        "maximum_state_error": 1.6137458036524777e-10,
+        "maximum_state_or_metric_error": 1.6137458036524777e-10,
+        "metric_errors": {
+          "final_propellant": 1.438863472813523e-10,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 5.648814749292796e-13,
+          "minimum_range_m": 5.666578317686799e-13
+        },
+        "passed": false,
+        "pattern": "pd_operational",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P1_primary_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P1_primary_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "01c7eafa84ade46ea17a397318522577d24e14bac0f96a2eb7be31929975d979",
+        "maximum_metric_error": 5.684341886080801e-13,
+        "maximum_state_error": 1.5987211554602254e-13,
+        "maximum_state_or_metric_error": 5.684341886080801e-13,
+        "metric_errors": {
+          "final_propellant": 4.773959005888173e-14,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 2.1316282072803006e-13,
+          "minimum_braking_margin_m": 5.684341886080801e-13,
+          "minimum_range_m": 0.0
+        },
+        "passed": true,
+        "pattern": "maximum_closing",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P1_primary_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 225,
+        "state_records_aligned": true,
+        "stratum_id": "P1_primary_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "a9d4bc42e701de77af1dd84c935da8ac78720534ba75a2b525aa212b0f200c99",
+        "maximum_metric_error": 2.842170943040401e-14,
+        "maximum_state_error": 4.022695065941662e-09,
+        "maximum_state_or_metric_error": 4.022695065941662e-09,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 2.842170943040401e-14
+        },
+        "passed": false,
+        "pattern": "maximum_separating",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P1_primary_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P1_primary_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "921fa83ae02ff4039e189a7ab15b24a9496182091a7727f7e6cf2831a392a1f6",
+        "maximum_metric_error": 2.601830146886641e-07,
+        "maximum_state_error": 4.148232757295034e-08,
+        "maximum_state_or_metric_error": 2.601830146886641e-07,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 2.601830146886641e-07,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 0.0
+        },
+        "passed": false,
+        "pattern": "alternating_extrema",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P1_primary_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 2293,
+        "state_records_aligned": true,
+        "stratum_id": "P1_primary_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "35709ad37adba8ab2f668c2c89f5a22cea83427f7b7fb039fd53a12e020fb47c",
+        "maximum_metric_error": 4.0396574974010946e-12,
+        "maximum_state_error": 3.508104917671062e-11,
+        "maximum_state_or_metric_error": 3.508104917671062e-11,
+        "metric_errors": {
+          "final_propellant": 4.0396574974010946e-12,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 4.813927034774679e-13,
+          "minimum_range_m": 4.813927034774679e-13
+        },
+        "passed": true,
+        "pattern": "pd_operational",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P2_monitor_only:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P2_monitor_only"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "01c7eafa84ade46ea17a397318522577d24e14bac0f96a2eb7be31929975d979",
+        "maximum_metric_error": 1.1510792319313623e-12,
+        "maximum_state_error": 2.722266856380884e-13,
+        "maximum_state_or_metric_error": 1.1510792319313623e-12,
+        "metric_errors": {
+          "final_propellant": 5.206945985491984e-14,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 6.394884621840902e-14,
+          "minimum_braking_margin_m": 1.1510792319313623e-12,
+          "minimum_range_m": 0.0
+        },
+        "passed": true,
+        "pattern": "maximum_closing",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P2_monitor_only:0000",
+        "source_controller_failure": null,
+        "state_records": 236,
+        "state_records_aligned": true,
+        "stratum_id": "P2_monitor_only"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "a9d4bc42e701de77af1dd84c935da8ac78720534ba75a2b525aa212b0f200c99",
+        "maximum_metric_error": 1.4210854715202004e-14,
+        "maximum_state_error": 1.6525518731214106e-09,
+        "maximum_state_or_metric_error": 1.6525518731214106e-09,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 1.4210854715202004e-14
+        },
+        "passed": false,
+        "pattern": "maximum_separating",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P2_monitor_only:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P2_monitor_only"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "921fa83ae02ff4039e189a7ab15b24a9496182091a7727f7e6cf2831a392a1f6",
+        "maximum_metric_error": 1.1459213311582062e-07,
+        "maximum_state_error": 1.1459213311582062e-07,
+        "maximum_state_or_metric_error": 1.1459213311582062e-07,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 1.1459213311582062e-07
+        },
+        "passed": false,
+        "pattern": "alternating_extrema",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P2_monitor_only:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P2_monitor_only"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "db862a111e142df1db41b902f26e7f0c7a49c166425cfc3d1d7fb7c687f34cd8",
+        "maximum_metric_error": 1.3704704038275395e-10,
+        "maximum_state_error": 1.4309753382235613e-10,
+        "maximum_state_or_metric_error": 1.4309753382235613e-10,
+        "metric_errors": {
+          "final_propellant": 1.3704704038275395e-10,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 1.4868106745780096e-12,
+          "minimum_range_m": 1.4832579608992091e-12
+        },
+        "passed": false,
+        "pattern": "pd_operational",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P3_shared_cause_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P3_shared_cause_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "01c7eafa84ade46ea17a397318522577d24e14bac0f96a2eb7be31929975d979",
+        "maximum_metric_error": 5.968558980384842e-13,
+        "maximum_state_error": 1.6342482922482304e-13,
+        "maximum_state_or_metric_error": 5.968558980384842e-13,
+        "metric_errors": {
+          "final_propellant": 5.706546346573305e-14,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 7.460698725481052e-14,
+          "minimum_braking_margin_m": 5.968558980384842e-13,
+          "minimum_range_m": 0.0
+        },
+        "passed": true,
+        "pattern": "maximum_closing",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P3_shared_cause_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 264,
+        "state_records_aligned": true,
+        "stratum_id": "P3_shared_cause_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "a9d4bc42e701de77af1dd84c935da8ac78720534ba75a2b525aa212b0f200c99",
+        "maximum_metric_error": 4.263256414560601e-14,
+        "maximum_state_error": 6.048139766789973e-10,
+        "maximum_state_or_metric_error": 6.048139766789973e-10,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 4.263256414560601e-14
+        },
+        "passed": false,
+        "pattern": "maximum_separating",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P3_shared_cause_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P3_shared_cause_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "921fa83ae02ff4039e189a7ab15b24a9496182091a7727f7e6cf2831a392a1f6",
+        "maximum_metric_error": 4.5358916622717516e-08,
+        "maximum_state_error": 4.5358916622717516e-08,
+        "maximum_state_or_metric_error": 4.5358916622717516e-08,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 4.5358916622717516e-08
+        },
+        "passed": false,
+        "pattern": "alternating_extrema",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P3_shared_cause_navigation:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P3_shared_cause_navigation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "576e806d251c9bf7a4e6b2f72fcb43c04cc58f5ec16a2eb1ab98a39c6eec9838",
+        "maximum_metric_error": 3.959799155239807e-11,
+        "maximum_state_error": 4.223077443299417e-11,
+        "maximum_state_or_metric_error": 4.223077443299417e-11,
+        "metric_errors": {
+          "final_propellant": 3.959799155239807e-11,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 7.815970093361102e-14,
+          "minimum_range_m": 7.904787935331115e-14
+        },
+        "passed": true,
+        "pattern": "pd_operational",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P4_model_upset:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P4_model_upset"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "01c7eafa84ade46ea17a397318522577d24e14bac0f96a2eb7be31929975d979",
+        "maximum_metric_error": 4.263256414560601e-13,
+        "maximum_state_error": 1.2789769243681803e-13,
+        "maximum_state_or_metric_error": 4.263256414560601e-13,
+        "metric_errors": {
+          "final_propellant": 5.5289106626332796e-14,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 1.7763568394002505e-14,
+          "minimum_braking_margin_m": 4.263256414560601e-13,
+          "minimum_range_m": 0.0
+        },
+        "passed": true,
+        "pattern": "maximum_closing",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P4_model_upset:0000",
+        "source_controller_failure": null,
+        "state_records": 258,
+        "state_records_aligned": true,
+        "stratum_id": "P4_model_upset"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "a9d4bc42e701de77af1dd84c935da8ac78720534ba75a2b525aa212b0f200c99",
+        "maximum_metric_error": 7.105427357601002e-14,
+        "maximum_state_error": 1.987245923373848e-09,
+        "maximum_state_or_metric_error": 1.987245923373848e-09,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 7.105427357601002e-14
+        },
+        "passed": false,
+        "pattern": "maximum_separating",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P4_model_upset:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P4_model_upset"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "921fa83ae02ff4039e189a7ab15b24a9496182091a7727f7e6cf2831a392a1f6",
+        "maximum_metric_error": 1.1095654883774841e-07,
+        "maximum_state_error": 1.1095654883774841e-07,
+        "maximum_state_or_metric_error": 1.1095654883774841e-07,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 1.1095654883774841e-07
+        },
+        "passed": false,
+        "pattern": "alternating_extrema",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P4_model_upset:0000",
+        "source_controller_failure": null,
+        "state_records": 2401,
+        "state_records_aligned": true,
+        "stratum_id": "P4_model_upset"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "462da09e5d9bcc695f8b0493acc21a9931720f0adb30338cc7da3064f809c601",
+        "maximum_metric_error": 8.685585584089495e-11,
+        "maximum_state_error": 8.686529273660426e-11,
+        "maximum_state_or_metric_error": 8.686529273660426e-11,
+        "metric_errors": {
+          "final_propellant": 8.685585584089495e-11,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 5.693223670277803e-13,
+          "minimum_range_m": 5.6754601018838e-13
+        },
+        "passed": true,
+        "pattern": "pd_operational",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": false,
+          "sustained_success": true
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P5_actuator_degradation:0000",
+        "source_controller_failure": null,
+        "state_records": 2403,
+        "state_records_aligned": true,
+        "stratum_id": "P5_actuator_degradation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "01c7eafa84ade46ea17a397318522577d24e14bac0f96a2eb7be31929975d979",
+        "maximum_metric_error": 1.4779288903810084e-12,
+        "maximum_state_error": 2.453592884421596e-13,
+        "maximum_state_or_metric_error": 1.4779288903810084e-12,
+        "metric_errors": {
+          "final_propellant": 5.4067861299245124e-14,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 5.684341886080802e-14,
+          "minimum_braking_margin_m": 1.4779288903810084e-12,
+          "minimum_range_m": 0.0
+        },
+        "passed": true,
+        "pattern": "maximum_closing",
+        "production_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": true,
+          "physical_hazard_observed": true,
+          "propellant_depleted": false,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P5_actuator_degradation:0000",
+        "source_controller_failure": null,
+        "state_records": 254,
+        "state_records_aligned": true,
+        "stratum_id": "P5_actuator_degradation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "a9d4bc42e701de77af1dd84c935da8ac78720534ba75a2b525aa212b0f200c99",
+        "maximum_metric_error": 4.263256414560601e-14,
+        "maximum_state_error": 2.029992174357176e-09,
+        "maximum_state_or_metric_error": 2.029992174357176e-09,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 4.263256414560601e-14
+        },
+        "passed": false,
+        "pattern": "maximum_separating",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": false,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P5_actuator_degradation:0000",
+        "source_controller_failure": null,
+        "state_records": 2403,
+        "state_records_aligned": true,
+        "stratum_id": "P5_actuator_degradation"
+      },
+      {
+        "classification_match": true,
+        "command_count": 600,
+        "command_trace_sha256": "921fa83ae02ff4039e189a7ab15b24a9496182091a7727f7e6cf2831a392a1f6",
+        "maximum_metric_error": 3.15584287591264e-08,
+        "maximum_state_error": 3.15584287591264e-08,
+        "maximum_state_or_metric_error": 3.15584287591264e-08,
+        "metric_errors": {
+          "final_propellant": 0.0,
+          "first_goal_entry_s": 0.0,
+          "goal_dwell_final60_fraction": 0.0,
+          "maximum_contiguous_negative_margin_s": 0.0,
+          "minimum_braking_margin_m": 0.0,
+          "minimum_range_m": 3.15584287591264e-08
+        },
+        "passed": false,
+        "pattern": "alternating_extrema",
+        "production_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "reference_classifications": {
+          "collision": false,
+          "physical_hazard_observed": true,
+          "propellant_depleted": true,
+          "sustained_success": false
+        },
+        "root_seed_id": "experiment-002b:fixed_replay:P5_actuator_degradation:0000",
+        "source_controller_failure": null,
+        "state_records": 2403,
+        "state_records_aligned": true,
+        "stratum_id": "P5_actuator_degradation"
+      }
+    ],
+    "maximum_state_or_metric_error": 7.445810297213029e-07,
+    "method": "complete 600 s identical timestamped command traces; production float64 exact propagator versus independent SciPy DOP853 adaptive ODE reference",
+    "passed": false,
+    "reference": {
+      "atol": 1e-15,
+      "implementation": "scipy.integrate.solve_ivp/DOP853",
+      "production_propagator_imported_by_reference": false,
+      "rtol": 2.5e-14
+    },
+    "schema_version": "experiment-002b-amendment-1.0",
+    "tolerance": 1e-10
+  },
+  "multi_rate_support_claim": false,
+  "next_step": "investigate_experiment_002b_failure",
+  "operational": {
+    "confidence": 0.95,
+    "episode_rows": 900,
+    "errors_preview": [],
+    "passed": true,
+    "strata": {
+      "P0_nominal": {
+        "collisions": 0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 150,
+        "minimum_final_propellant": 0.707060153018555,
+        "passed": true,
+        "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_success_rate": 0.7733333333333333,
+        "sustained_successes": 116
+      },
+      "P1_primary_navigation": {
+        "collisions": 0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 150,
+        "minimum_final_propellant": 0.6719381552534478,
+        "passed": true,
+        "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_success_rate": 0.34,
+        "sustained_successes": 51
+      },
+      "P2_monitor_only": {
+        "collisions": 0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 150,
+        "minimum_final_propellant": 0.5063037996321239,
+        "passed": true,
+        "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_success_rate": 0.44,
+        "sustained_successes": 66
+      },
+      "P3_shared_cause_navigation": {
+        "collisions": 0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 150,
+        "minimum_final_propellant": 0.623422858942161,
+        "passed": true,
+        "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_success_rate": 0.4066666666666667,
+        "sustained_successes": 61
+      },
+      "P4_model_upset": {
+        "collisions": 0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 150,
+        "minimum_final_propellant": 0.4245453489434392,
+        "passed": true,
+        "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_success_rate": 1.0,
+        "sustained_successes": 150
+      },
+      "P5_actuator_degradation": {
+        "collisions": 0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 150,
+        "minimum_final_propellant": 0.7117033973001055,
+        "passed": true,
+        "physical_hazard_one_sided_exact_95_upper": 0.01977343816450844,
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_success_rate": 0.8,
+        "sustained_successes": 120
+      }
+    },
+    "unique_cells": 900,
+    "upper_margin": 0.02,
+    "zero_event_upper_at_frozen_n": 0.019773438164508494
+  },
+  "operational_configuration": {
+    "command_period_s": 1.0,
+    "observation_period_s": 1.0,
+    "qualified": false
+  },
+  "rate_decomposition": {
+    "controller_or_numerical_failures": 0,
+    "episode_rows": 648,
+    "errors_preview": [],
+    "expected_episode_rows": 648,
+    "interpretation": "descriptive mechanism-identification grid only; no closed-loop trajectory identity or multi-rate noninferiority claim",
+    "passed_feasibility_qc": true,
+    "propellant_depletions": 0,
+    "reserve_failures": 0,
+    "support_claim": false,
+    "timing_cells": {
+      "command_0.25s__observation_0.25s": {
+        "collisions": 0,
+        "command_period_s": 0.25,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.24293646295200233,
+          "maximum_sensor_sample_latency": 0.24293646295200233,
+          "median_command_latency": 0.11345714054366596,
+          "median_override_latency_when_observed": 0.1644249939427027,
+          "median_sensor_sample_latency": 0.11345714054366596,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 17881,
+          "NONE": 153377,
+          "OBSERVATION_QUALITY": 1542
+        },
+        "minimum_final_propellant": 0.6061854109062937,
+        "observation_period_s": 0.25,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.3328621044379374,
+          "maximum_absolute_propellant_use_change_fraction": 0.20437993122641618,
+          "mean_minimum_range_change_m": 0.0845145794645239,
+          "mean_propellant_use_change_fraction": -0.048184050304746304,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.013888888888888888
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 43
+      },
+      "command_0.25s__observation_0.5s": {
+        "collisions": 0,
+        "command_period_s": 0.25,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.24293646295200233,
+          "maximum_sensor_sample_latency": 0.49293646295200233,
+          "median_command_latency": 0.11345714054366596,
+          "median_override_latency_when_observed": 0.21522731968809694,
+          "median_sensor_sample_latency": 0.28859746826492483,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 17881,
+          "NONE": 153379,
+          "OBSERVATION_QUALITY": 1540
+        },
+        "minimum_final_propellant": 0.5556080420129421,
+        "observation_period_s": 0.5,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.36802624846459153,
+          "maximum_absolute_propellant_use_change_fraction": 0.1406883980364283,
+          "mean_minimum_range_change_m": 0.045847397762371796,
+          "mean_propellant_use_change_fraction": -0.028732163295785026,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.013888888888888888
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 43
+      },
+      "command_0.25s__observation_1s": {
+        "collisions": 0,
+        "command_period_s": 0.25,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.24293646295200233,
+          "maximum_sensor_sample_latency": 0.9929364629520023,
+          "median_command_latency": 0.11345714054366596,
+          "median_override_latency_when_observed": 0.23970773221790864,
+          "median_sensor_sample_latency": 0.558096446872355,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 17881,
+          "NONE": 153375,
+          "OBSERVATION_QUALITY": 1544
+        },
+        "minimum_final_propellant": 0.434525065897663,
+        "observation_period_s": 1.0,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.008786545638999499,
+          "maximum_absolute_propellant_use_change_fraction": 0.006653447445192362,
+          "mean_minimum_range_change_m": -4.215711583451428e-05,
+          "mean_propellant_use_change_fraction": 8.028652640282297e-05,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.0
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 42
+      },
+      "command_0.5s__observation_0.25s": {
+        "collisions": 0,
+        "command_period_s": 0.5,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.49293646295200233,
+          "maximum_sensor_sample_latency": 0.24293646295200233,
+          "median_command_latency": 0.28859746826492483,
+          "median_override_latency_when_observed": 0.2683498423738797,
+          "median_sensor_sample_latency": 0.11345714054366596,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 8937,
+          "NONE": 76693,
+          "OBSERVATION_QUALITY": 770
+        },
+        "minimum_final_propellant": 0.5522061650033293,
+        "observation_period_s": 0.25,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.36802624846459153,
+          "maximum_absolute_propellant_use_change_fraction": 0.1406883980364283,
+          "mean_minimum_range_change_m": 0.04603175789195098,
+          "mean_propellant_use_change_fraction": -0.028706894388394546,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.013888888888888888
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 43
+      },
+      "command_0.5s__observation_0.5s": {
+        "collisions": 0,
+        "command_period_s": 0.5,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.49293646295200233,
+          "maximum_sensor_sample_latency": 0.49293646295200233,
+          "median_command_latency": 0.28859746826492483,
+          "median_override_latency_when_observed": 0.2683498423738797,
+          "median_sensor_sample_latency": 0.28859746826492483,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 8937,
+          "NONE": 76693,
+          "OBSERVATION_QUALITY": 770
+        },
+        "minimum_final_propellant": 0.5522061650033293,
+        "observation_period_s": 0.5,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.36802624846459153,
+          "maximum_absolute_propellant_use_change_fraction": 0.1406883980364283,
+          "mean_minimum_range_change_m": 0.04603175789195098,
+          "mean_propellant_use_change_fraction": -0.028706894388394546,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.013888888888888888
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 43
+      },
+      "command_0.5s__observation_1s": {
+        "collisions": 0,
+        "command_period_s": 0.5,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.49293646295200233,
+          "maximum_sensor_sample_latency": 0.9929364629520023,
+          "median_command_latency": 0.28859746826492483,
+          "median_override_latency_when_observed": 0.4448238848520134,
+          "median_sensor_sample_latency": 0.558096446872355,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 8937,
+          "NONE": 76691,
+          "OBSERVATION_QUALITY": 772
+        },
+        "minimum_final_propellant": 0.43655445444302315,
+        "observation_period_s": 1.0,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.006936556741861111,
+          "maximum_absolute_propellant_use_change_fraction": 0.005036879855409626,
+          "mean_minimum_range_change_m": 2.2345334555128203e-05,
+          "mean_propellant_use_change_fraction": -2.1274219770145123e-05,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.0
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 42
+      },
+      "command_1s__observation_0.25s": {
+        "collisions": 0,
+        "command_period_s": 1.0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.9929364629520023,
+          "maximum_sensor_sample_latency": 0.24293646295200233,
+          "median_command_latency": 0.558096446872355,
+          "median_override_latency_when_observed": 0.7321402476522962,
+          "median_sensor_sample_latency": 0.11345714054366596,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 4464,
+          "NONE": 38350,
+          "OBSERVATION_QUALITY": 386
+        },
+        "minimum_final_propellant": 0.43151757458761353,
+        "observation_period_s": 0.25,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.0,
+          "maximum_absolute_propellant_use_change_fraction": 0.0,
+          "mean_minimum_range_change_m": 0.0,
+          "mean_propellant_use_change_fraction": 0.0,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.0
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 42
+      },
+      "command_1s__observation_0.5s": {
+        "collisions": 0,
+        "command_period_s": 1.0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.9929364629520023,
+          "maximum_sensor_sample_latency": 0.49293646295200233,
+          "median_command_latency": 0.558096446872355,
+          "median_override_latency_when_observed": 0.7321402476522962,
+          "median_sensor_sample_latency": 0.28859746826492483,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 4464,
+          "NONE": 38350,
+          "OBSERVATION_QUALITY": 386
+        },
+        "minimum_final_propellant": 0.43151757458761353,
+        "observation_period_s": 0.5,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.0,
+          "maximum_absolute_propellant_use_change_fraction": 0.0,
+          "mean_minimum_range_change_m": 0.0,
+          "mean_propellant_use_change_fraction": 0.0,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.0
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 42
+      },
+      "command_1s__observation_1s": {
+        "collisions": 0,
+        "command_period_s": 1.0,
+        "controller_or_numerical_failures": 0,
+        "episodes": 72,
+        "fault_response_timing_s": {
+          "maximum_command_latency": 0.9929364629520023,
+          "maximum_sensor_sample_latency": 0.9929364629520023,
+          "median_command_latency": 0.558096446872355,
+          "median_override_latency_when_observed": 0.7321402476522962,
+          "median_sensor_sample_latency": 0.558096446872355,
+          "override_responses_observed": 31
+        },
+        "gate_reason_counts": {
+          "MODEL_INTEGRITY": 4464,
+          "NONE": 38350,
+          "OBSERVATION_QUALITY": 386
+        },
+        "minimum_final_propellant": 0.43151757458761353,
+        "observation_period_s": 1.0,
+        "paired_vs_1s_1s": {
+          "maximum_absolute_minimum_range_change_m": 0.0,
+          "maximum_absolute_propellant_use_change_fraction": 0.0,
+          "mean_minimum_range_change_m": 0.0,
+          "mean_propellant_use_change_fraction": 0.0,
+          "pairs": 72,
+          "physical_hazard_risk_difference": 0.0,
+          "sustained_success_risk_difference": 0.0
+        },
+        "physical_hazards": 0,
+        "propellant_depletions": 0,
+        "reserve_failures": 0,
+        "sustained_successes": 42
+      }
+    }
+  },
+  "schema_version": "experiment-002b-amendment-1.0",
+  "trace_integrity": {
+    "all_episode_trace_digests_match": true,
+    "command_events": 907200,
+    "episodes": 648,
+    "errors_preview": [],
+    "passed": true
+  }
+}

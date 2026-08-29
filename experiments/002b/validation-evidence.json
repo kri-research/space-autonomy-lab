@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 0.89ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest",
+      "id": "pytest",
+      "passed": true,
+      "returncode": 0,
+      "summary": "36 passed in 5.73s"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "legacy_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "bounded repository content scan",
+      "id": "publication_boundary_scan",
+      "observed": {
+        "files_scanned": 112,
+        "matches": 0,
+        "matches_preview": [],
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "schema_version": "experiment-002b-amendment-1.0",
+  "validated_at_utc": "2026-08-29T23:19:04.116127+00:00"
+}

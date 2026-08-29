@@ -98,7 +98,8 @@ work will increase physical fidelity, move onto representative edge hardware, an
 online adaptation and continual learning under enforced operational constraints.
 
 See [Experiment 001](docs/experiment-001.md), the
-[Experiment 002 design-validation pilot](docs/experiment-002.md), and
+[Experiment 002 design-validation pilot](docs/experiment-002.md), the
+[Experiment 002b corrective validation amendment](docs/experiment-002b.md), and
 [the research roadmap](docs/research-roadmap.md).
 
 ## Citation

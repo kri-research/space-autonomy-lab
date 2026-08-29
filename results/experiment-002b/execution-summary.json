@@ -1,0 +1,18 @@
+{
+  "fixed_command_cases": 24,
+  "freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+  "operational": {
+    "elapsed_wall_s": 28.215391159057617,
+    "episodes": 900,
+    "sha256": "d1940d07b8e9c5da53fdd299184c492cefafe0d9aababf650044cdcc189cf1ee"
+  },
+  "outputs_opened_by_execute": false,
+  "rate_decomposition": {
+    "command_events": 907200,
+    "elapsed_wall_s": 39.11619305610657,
+    "episodes": 648,
+    "episodes_sha256": "df53fa58ceb7c1d6928877bec1c01b91c0bd610599f8e765e6aeab2367e97cc5",
+    "events_gzip_sha256": "d0da635b1a31c75be851c85ebc323d0faa19107639bd3cdc36dde8f36b989e5f"
+  },
+  "schema_version": "experiment-002b-amendment-1.0"
+}
