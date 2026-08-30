@@ -1,0 +1,596 @@
+{
+  "commands": {
+    "build_and_open": "uv run python -m kri_space_autonomy.demo build --open",
+    "controller_guide": "docs/controller-adapter.md",
+    "rebuild_example": "uv run python -m kri_space_autonomy.demo build",
+    "try_own_controller": "uv run python -m kri_space_autonomy.demo build --controller my_controller:controller --output demo/my-controller"
+  },
+  "demo_fingerprint_sha256": "04d23ce0d2a05122cb87ab2bbce65c74b76397b01e0def24bfa6f3d641cc582d",
+  "evidence_boundary": "The harness example is illustrative product output, not scientific evidence. Frozen architecture results are historical synthetic-benchmark evidence and are not full GNC, formal verification, certification, operational prevalence, or flight-safety evidence.",
+  "frozen_architecture_evidence": {
+    "campaigns": [
+      {
+        "aggregate_scope": {
+          "complete": true,
+          "complete_four_arm_blocks": 8000,
+          "episode_rows": 32000,
+          "selection": "complete frozen aggregate; no historical root or episode selection"
+        },
+        "decision": "favorable",
+        "experiment_id": "experiment-002-confirmatory",
+        "freeze_id": "15eb6b3b552e130f7b983930fda10d7d1c0841943408ec8586b51619d9076c15",
+        "interpretation": "Favorable under the frozen serial gates in this direct-measurement benchmark. This does not establish the same result with navigation estimation in the loop.",
+        "label": "Experiment 002 final confirmatory",
+        "measurement_boundary": "Direct measurements in the simplified one-dimensional synthetic benchmark.",
+        "primary_gatekeeping": {
+          "H1": {
+            "endpoint": "analysis_hazard risk difference",
+            "estimate": -0.04125,
+            "passed": true,
+            "rule": "two-sided 95% upper bound below zero",
+            "stratum_estimates": {
+              "F0_nominal": 0.0,
+              "F1_primary_range_bias": -0.004,
+              "F2_primary_dropout": 0.0,
+              "F3_monitor_channel_fault": 0.0,
+              "F4_shared_cause_navigation": 0.0,
+              "F5_persistent_model_upset": -0.326,
+              "F6_actuator_degradation": 0.0,
+              "F7_combined_primary_dropout_actuator_degradation": 0.0
+            },
+            "two_sided_95_interval": [
+              -0.045,
+              -0.037625
+            ]
+          },
+          "H2": {
+            "endpoint": "sustained_success risk difference",
+            "estimate": 0.029250000000000005,
+            "margin": -0.03,
+            "passed": true,
+            "status": "tested",
+            "stratum_estimates": {
+              "F0_nominal": 0.0,
+              "F1_primary_range_bias": -0.003,
+              "F2_primary_dropout": 0.033,
+              "F3_monitor_channel_fault": -0.346,
+              "F4_shared_cause_navigation": -0.105,
+              "F5_persistent_model_upset": 0.74,
+              "F6_actuator_degradation": 0.0,
+              "F7_combined_primary_dropout_actuator_degradation": -0.085
+            },
+            "two_sided_95_interval": [
+              0.02125,
+              0.03725
+            ]
+          },
+          "contrast": "PD-D"
+        },
+        "traceability": {
+          "aggregate_result_path": "results/experiment-002-confirmatory/analysis.json",
+          "aggregate_result_sha256": "f59cebb40562e8af7c28a0ca39b56744d155a994b07c422935e0d18731f14898",
+          "checksums_path": "results/experiment-002-confirmatory/SHA256SUMS",
+          "checksums_sha256": "33db0bbc360ff88be895f096d388e740f1a43a54a60c5619d9333dbfa5dfdcc9",
+          "freeze_manifest_path": "experiments/002-confirmatory/freeze-manifest.json",
+          "freeze_manifest_sha256": "4cb63f8c25e3ef4539675cad8ed11c99b051048d0f77f74d206b0f4a4d99f0d0",
+          "run_manifest_path": "results/experiment-002-confirmatory/run-manifest.json",
+          "run_manifest_sha256": "7e9d88819b796aeeed743bf717c43b57ffcd7022689031b60463e059c7d72747"
+        }
+      },
+      {
+        "aggregate_scope": {
+          "complete": true,
+          "complete_four_arm_blocks": 5250,
+          "episode_rows": 21000,
+          "selection": "complete frozen aggregate; no historical root or episode selection"
+        },
+        "analysis_hazard_D_PD_by_stratum": [
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E0_nominal"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E1_primary_range_bias"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E2_primary_dropout"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E3_primary_stale"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E4_primary_covariance_underreporting"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E5_monitor_range_bias"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E6_shared_range_bias"
+          }
+        ],
+        "decision": "inconclusive",
+        "experiment_id": "experiment-003-confirmatory",
+        "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+        "interpretation": "Inconclusive. H1 did not pass because D and PD each had zero analysis-hazard risk in every E0-E6 stratum, giving PD-D = 0 with 95% interval [0, 0]. H2 was not tested under the serial gate. Its descriptive sustained-success estimate was strongly negative overall and concentrated in E5/E6.",
+        "label": "Experiment 003 final confirmatory",
+        "measurement_boundary": "Estimator in the loop in the simplified one-dimensional synthetic benchmark.",
+        "mission_success_stress": {
+          "E5_monitor_range_bias_PD_minus_D": -0.6893333333333334,
+          "E6_shared_range_bias_PD_minus_D": -0.6333333333333333,
+          "all_stratum_estimates": {
+            "E0_nominal": 0.006666666666666667,
+            "E1_primary_range_bias": 0.010666666666666666,
+            "E2_primary_dropout": 0.004,
+            "E3_primary_stale": 0.004,
+            "E4_primary_covariance_underreporting": 0.009333333333333334,
+            "E5_monitor_range_bias": -0.6893333333333334,
+            "E6_shared_range_bias": -0.6333333333333333
+          },
+          "overall_PD_minus_D": -0.184,
+          "status": "descriptive_only_H2_gate_closed"
+        },
+        "primary_gatekeeping": {
+          "H1": {
+            "endpoint": "analysis_hazard risk difference",
+            "estimate": 0.0,
+            "passed": false,
+            "rule": "two-sided 95% upper bound below zero",
+            "stratum_estimates": {
+              "E0_nominal": 0.0,
+              "E1_primary_range_bias": 0.0,
+              "E2_primary_dropout": 0.0,
+              "E3_primary_stale": 0.0,
+              "E4_primary_covariance_underreporting": 0.0,
+              "E5_monitor_range_bias": 0.0,
+              "E6_shared_range_bias": 0.0
+            },
+            "two_sided_95_interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "H2": {
+            "endpoint": "sustained_success risk difference",
+            "estimate": -0.184,
+            "margin": -0.03,
+            "passed": null,
+            "status": "not_tested_gate_closed",
+            "stratum_estimates": {
+              "E0_nominal": 0.006666666666666667,
+              "E1_primary_range_bias": 0.010666666666666666,
+              "E2_primary_dropout": 0.004,
+              "E3_primary_stale": 0.004,
+              "E4_primary_covariance_underreporting": 0.009333333333333334,
+              "E5_monitor_range_bias": -0.6893333333333334,
+              "E6_shared_range_bias": -0.6333333333333333
+            },
+            "two_sided_95_interval": [
+              -0.19257142857142856,
+              -0.17542857142857143
+            ]
+          },
+          "contrast": "PD-D"
+        },
+        "traceability": {
+          "aggregate_result_path": "results/experiment-003-confirmatory/analysis.json",
+          "aggregate_result_sha256": "daec0cd91683c709d4a56b06846ec96c025ec097030ad292c7dc481aec576516",
+          "checksums_path": "results/experiment-003-confirmatory/SHA256SUMS",
+          "checksums_sha256": "71718402754cb1054bda05830ca383716532d477e1f3f2205bcb1143158e91be",
+          "freeze_manifest_path": "experiments/003-confirmatory/freeze-manifest.json",
+          "freeze_manifest_sha256": "aee65481ca91ee5adf4f8201e94e1f539cf4a5ae34989ee3de16362d8d1dfc18",
+          "run_manifest_path": "results/experiment-003-confirmatory/run-manifest.json",
+          "run_manifest_sha256": "fe788dd57de5d76de3a578ba72c6db3e45b0088e9a7dd162b831aa839b4f7baf"
+        }
+      }
+    ],
+    "classification": "frozen_historical_complete_aggregate_evidence",
+    "comparison_rule": "Keep the direct-measurement and estimator-in-loop boundaries separate; do not combine decisions into a single safety or architecture claim."
+  },
+  "input_fingerprint_sha256": "1c9fbda6409baf7db49b57f5633b76d5ae2c92af53cfe67a44e06968edb56e9b",
+  "input_identity": {
+    "assessment_policy": {
+      "policy_id": "example-rpo-acceptance",
+      "policy_sha256": "6f20864f87a7070d97a2c96a72293577a33768b7fe0a8e92bd5e2548e59af82e"
+    },
+    "controller": {
+      "contract_version": "1.0",
+      "controller_id": "example.proportional",
+      "controller_version": "1.0.0",
+      "plugin_module_sha256": "701285be212fd4c748559c8feb9ccd36f64794fc7d4cc9b7110bfd3095651fcc",
+      "plugin_spec": "kri_space_autonomy.examples.proportional_controller:controller"
+    },
+    "fault_suite": {
+      "suite_id": "example-rpo-faults",
+      "suite_sha256": "74c97631f3003431403b060c99076258c68bbf895fff9655fa27f4af72ee0408"
+    },
+    "frozen_architecture_evidence": [
+      {
+        "aggregate_result_sha256": "f59cebb40562e8af7c28a0ca39b56744d155a994b07c422935e0d18731f14898",
+        "checksums_sha256": "33db0bbc360ff88be895f096d388e740f1a43a54a60c5619d9333dbfa5dfdcc9",
+        "experiment_id": "experiment-002-confirmatory",
+        "freeze_id": "15eb6b3b552e130f7b983930fda10d7d1c0841943408ec8586b51619d9076c15",
+        "freeze_manifest_sha256": "4cb63f8c25e3ef4539675cad8ed11c99b051048d0f77f74d206b0f4a4d99f0d0",
+        "run_manifest_sha256": "7e9d88819b796aeeed743bf717c43b57ffcd7022689031b60463e059c7d72747"
+      },
+      {
+        "aggregate_result_sha256": "daec0cd91683c709d4a56b06846ec96c025ec097030ad292c7dc481aec576516",
+        "checksums_sha256": "71718402754cb1054bda05830ca383716532d477e1f3f2205bcb1143158e91be",
+        "experiment_id": "experiment-003-confirmatory",
+        "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+        "freeze_manifest_sha256": "aee65481ca91ee5adf4f8201e94e1f539cf4a5ae34989ee3de16362d8d1dfc18",
+        "run_manifest_sha256": "fe788dd57de5d76de3a578ba72c6db3e45b0088e9a7dd162b831aa839b4f7baf"
+      }
+    ]
+  },
+  "limitations": [
+    "Simplified deterministic one-dimensional relative-motion environment; not a full GNC stack.",
+    "Fault cases are declared stress tests, not estimates of operational fault prevalence.",
+    "Local Python controllers run in process and should be trusted code.",
+    "A PASS means only that required cases met the checked-in policy in this harness.",
+    "Frozen Experiment 002 and 003 results have different measurement boundaries.",
+    "No formal verification, certification, hardware, timing, or flight-safety claim is made."
+  ],
+  "positioning": "A simplified autonomous rendezvous/proximity-operations controller test harness for repeatable faults and evidence reports.",
+  "schema_version": "kri-space-autonomy-demo/1.0",
+  "title": "Space Autonomy Lab deterministic RPO controller demo",
+  "try_the_harness": {
+    "classification": "illustrative_product_example_not_scientific_evidence",
+    "report": {
+      "assessment_policy": {
+        "policy_id": "example-rpo-acceptance",
+        "policy_sha256": "6f20864f87a7070d97a2c96a72293577a33768b7fe0a8e92bd5e2548e59af82e",
+        "schema_version": "kri-assessment-policy/1.0"
+      },
+      "cases": [
+        {
+          "assessment": "PASS",
+          "case_id": "nominal",
+          "case_result_sha256": "9c7f421e7499f1f591f3e4814cdbf490025be866d17feb26c8492fb7693de36f",
+          "case_sha256": "63e7310051947df26260fde95cdf2b3ba7a74206611e8395d8b890004922164b",
+          "command_trace_sha256": "6d78f218ab674bbb3ae4342cc1c799cfb07a97c1876895dd7f66168c30d7caa3",
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.999,
+              "observed": 0.9994146789340552,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 327,
+            "degraded_observation_steps": 0,
+            "final_range_m": 7.917475194193666,
+            "final_speed_mps": -0.05978595603691526,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9994146789340552,
+            "steps": 327,
+            "success": true
+          },
+          "fault_sequence": [],
+          "nominal_comparison": {
+            "available": false,
+            "reason": "case is the nominal reference"
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "range-bias",
+          "case_result_sha256": "4d66b043366c16181724b4072ca31438424a1676518bca6752e410e78b6062d6",
+          "case_sha256": "9b023d58412d41c044979c34ae8061f6e05f36404b952e96c20d95c34c2d546d",
+          "command_trace_sha256": "5a56c8f3895b10b8aee27fc1a6dfa4667cc5f4d3c7f4f16d663ad24131054393",
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9994131098488859,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 320,
+            "degraded_observation_steps": 51,
+            "final_range_m": 7.892674059664028,
+            "final_speed_mps": -0.05873989925748413,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9994131098488859,
+            "steps": 320,
+            "success": true
+          },
+          "fault_sequence": [
+            "biased-range"
+          ],
+          "nominal_comparison": {
+            "available": true,
+            "commands_delta": -7,
+            "final_range_delta_m": -0.02480113452963817,
+            "final_speed_delta_mps": 0.0010460567794311273,
+            "propellant_remaining_delta": -1.5690851693506147e-06,
+            "reference_case_id": "nominal",
+            "steps_delta": -7
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "navigation-dropout",
+          "case_result_sha256": "ef636d96914c055ec19db98b008d79e66ade6cc919cddf0bcadb8b7250028e38",
+          "case_sha256": "35a89d19a10e4e28ed2c7ceff9c2e39ced82632533aae24c722ace005ad316ad",
+          "command_trace_sha256": "253b5ec3a4667f45b712cdd312800f4b1cedaff0f0d72c265731abbd1def80b8",
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9970135737748353,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 370,
+            "degraded_observation_steps": 16,
+            "final_range_m": 7.900006924815725,
+            "final_speed_mps": -0.05904918322470058,
+            "missing_observation_steps": 16,
+            "propellant_remaining": 0.9970135737748353,
+            "steps": 370,
+            "success": true
+          },
+          "fault_sequence": [
+            "missing-navigation"
+          ],
+          "nominal_comparison": {
+            "available": true,
+            "commands_delta": 43,
+            "final_range_delta_m": -0.017468269377941326,
+            "final_speed_delta_mps": 0.0007367728122146741,
+            "propellant_remaining_delta": -0.002401105159219874,
+            "reference_case_id": "nominal",
+            "steps_delta": 43
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "actuator-degradation",
+          "case_result_sha256": "3230fa030df189ac1f220ac3c573c0ccc44323c546755255444662b17e7674eb",
+          "case_sha256": "6487d07b7e27ebc7559fea6aba84f4e6208bdfa192185aba7c9245b6d12ba195",
+          "command_trace_sha256": "ff4beb41dfc8d38d48693158b96e5626094a32782f795fc18bb6b0233b137507",
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9994143347608908,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 33,
+            "collision": false,
+            "commands": 324,
+            "degraded_observation_steps": 0,
+            "final_range_m": 7.910090214335009,
+            "final_speed_mps": -0.05955650726055165,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9994143347608908,
+            "steps": 324,
+            "success": true
+          },
+          "fault_sequence": [
+            "reduced-effectiveness"
+          ],
+          "nominal_comparison": {
+            "available": true,
+            "commands_delta": -3,
+            "final_range_delta_m": -0.007384979858657381,
+            "final_speed_delta_mps": 0.0002294487763636055,
+            "propellant_remaining_delta": -3.4417316441270884e-07,
+            "reference_case_id": "nominal",
+            "steps_delta": -3
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "INFORMATIONAL",
+          "case_id": "dropout-plus-degradation",
+          "case_result_sha256": "244554f77d9b48fcb24dc833d544203f42ed51e2e25a500d94f7b726fe7b2216",
+          "case_sha256": "cae2cb3046b2bbd2837c6c3cb2040e1568f3e566156672726b17670a05abd0cc",
+          "command_trace_sha256": "0dc4f2ca48869994736e1552f5d54aeadec0b213b7f2ff95d60568f8bea10224",
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9984546584612489,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 71,
+            "collision": false,
+            "commands": 343,
+            "degraded_observation_steps": 16,
+            "final_range_m": 7.917025900468212,
+            "final_speed_mps": -0.0597670058252801,
+            "missing_observation_steps": 16,
+            "propellant_remaining": 0.9984546584612489,
+            "steps": 343,
+            "success": true
+          },
+          "fault_sequence": [
+            "missing-navigation",
+            "reduced-effectiveness"
+          ],
+          "nominal_comparison": {
+            "available": true,
+            "commands_delta": 16,
+            "final_range_delta_m": -0.000449293725454325,
+            "final_speed_delta_mps": 1.8950211635157532e-05,
+            "propellant_remaining_delta": -0.0009600204728063,
+            "reference_case_id": "nominal",
+            "steps_delta": 16
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "informational"
+        }
+      ],
+      "controller": {
+        "contract_version": "1.0",
+        "controller_id": "example.proportional",
+        "controller_version": "1.0.0",
+        "deterministic": true,
+        "plugin_module_sha256": "701285be212fd4c748559c8feb9ccd36f64794fc7d4cc9b7110bfd3095651fcc",
+        "plugin_spec": "kri_space_autonomy.examples.proportional_controller:controller"
+      },
+      "evidence_boundary": "Evidence from a simplified one-dimensional RPO test harness; not a full GNC assessment, formal verification, certification, or a flight-safety claim.",
+      "failures": [],
+      "fault_suite": {
+        "result_schema_version": "kri-fault-suite-result/1.0",
+        "result_sha256": "22f48f4440eb9b2cb54e0a8dbbab36a9918499de11b5091fc39bedc2f7f4d0c4",
+        "runtime_profile": "simplified-rpo-v1",
+        "schema_version": "kri-fault-suite/1.0",
+        "suite_id": "example-rpo-faults",
+        "suite_sha256": "74c97631f3003431403b060c99076258c68bbf895fff9655fa27f4af72ee0408"
+      },
+      "informational_findings": [],
+      "limitations": [
+        "Evidence comes from the simplified one-dimensional RPO test harness.",
+        "The harness does not represent a full guidance, navigation, and control stack or operational fault prevalence.",
+        "The assessment is not formal verification, certification, or a flight-safety claim.",
+        "No runtime-assurance intervention counts or controller-internal/model-corruption evidence are reported for external controllers."
+      ],
+      "overall": {
+        "decision": "PASS",
+        "failed_required_case_count": 0,
+        "incomplete_case_count": 0,
+        "informational_case_count": 1,
+        "passed_required_case_count": 4,
+        "required_case_count": 4
+      },
+      "report_fingerprint_sha256": "552b26856976ebc3057fa220f3ab7b48c6f0d93f924cf2f800badcafcff948c9",
+      "schema_version": "kri-assurance-report/1.0"
+    }
+  },
+  "workflow": [
+    "bring an importable deterministic controller",
+    "validate the public observation/command contract",
+    "apply the checked-in deterministic fault suite",
+    "assess the declared policy and emit stable evidence"
+  ]
+}
