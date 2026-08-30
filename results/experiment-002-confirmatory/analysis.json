@@ -1,0 +1,3916 @@
+{
+  "arm_summaries": {
+    "F0_nominal": {
+      "D": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.97625,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8166666666666667,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.656642271922769,
+          "median": 4.65961839027198,
+          "n": 1000,
+          "p05": 3.863832466575462,
+          "p95": 5.439395523679872
+        },
+        "minimum_range_m": {
+          "mean": 5.671880759006097,
+          "median": 5.673934098786668,
+          "n": 1000,
+          "p05": 4.875688421623219,
+          "p95": 6.456264681459646
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.12601581726870015,
+          "median": 0.12582165131091833,
+          "n": 1000,
+          "p05": 0.11045296571315402,
+          "p95": 0.1422392710604137
+        },
+        "recovery_states": {
+          "NOT_APPLICABLE": 1000
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "p05": null,
+          "p95": null
+        },
+        "sustained_success": {
+          "events": 811,
+          "risk": 0.811
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.97625,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8166666666666667,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.656642271922769,
+          "median": 4.65961839027198,
+          "n": 1000,
+          "p05": 3.863832466575462,
+          "p95": 5.439395523679872
+        },
+        "minimum_range_m": {
+          "mean": 5.671880759006097,
+          "median": 5.673934098786668,
+          "n": 1000,
+          "p05": 4.875688421623219,
+          "p95": 6.456264681459646
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.12601581726870015,
+          "median": 0.12582165131091833,
+          "n": 1000,
+          "p05": 0.11045296571315402,
+          "p95": 0.1422392710604137
+        },
+        "recovery_states": {
+          "NOT_APPLICABLE": 1000
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "p05": null,
+          "p95": null
+        },
+        "sustained_success": {
+          "events": 811,
+          "risk": 0.811
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.97625,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8166666666666667,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.656642271922769,
+          "median": 4.65961839027198,
+          "n": 1000,
+          "p05": 3.863832466575462,
+          "p95": 5.439395523679872
+        },
+        "minimum_range_m": {
+          "mean": 5.671880759006097,
+          "median": 5.673934098786668,
+          "n": 1000,
+          "p05": 4.875688421623219,
+          "p95": 6.456264681459646
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.12601581726870015,
+          "median": 0.12582165131091833,
+          "n": 1000,
+          "p05": 0.11045296571315402,
+          "p95": 0.1422392710604137
+        },
+        "recovery_states": {
+          "NOT_APPLICABLE": 1000
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "p05": null,
+          "p95": null
+        },
+        "sustained_success": {
+          "events": 811,
+          "risk": 0.811
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9999874999999999,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.120955890712829,
+          "median": 5.129303032797925,
+          "n": 1000,
+          "p05": 4.968662435036368,
+          "p95": 5.249465039416007
+        },
+        "minimum_range_m": {
+          "mean": 6.121341363097712,
+          "median": 6.129728150481622,
+          "n": 1000,
+          "p05": 5.968680833243933,
+          "p95": 6.24935141543539
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.4495795325027159,
+          "median": 0.44913708259856117,
+          "n": 1000,
+          "p05": 0.41701951988802866,
+          "p95": 0.484763002382622
+        },
+        "recovery_states": {
+          "NOT_APPLICABLE": 1000
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "p05": null,
+          "p95": null
+        },
+        "sustained_success": {
+          "events": 999,
+          "risk": 0.999
+        }
+      }
+    },
+    "F1_primary_range_bias": {
+      "D": {
+        "analysis_hazard": {
+          "events": 4,
+          "risk": 0.004
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 4,
+          "one_sided_exact_95_upper": 0.009129952563871446,
+          "risk": 0.004
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.56255,
+          "median": 0.6395833333333334,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.546257112172505,
+          "median": 4.524756441810648,
+          "n": 1000,
+          "p05": 1.90928960457048,
+          "p95": 7.080925476162427
+        },
+        "minimum_range_m": {
+          "mean": 5.562589304525129,
+          "median": 5.537430064984497,
+          "n": 1000,
+          "p05": 2.914727213106604,
+          "p95": 8.112522481085627
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 4,
+          "risk": 0.004
+        },
+        "propellant_used_fraction": {
+          "mean": 0.13869851263829913,
+          "median": 0.138849749340329,
+          "n": 1000,
+          "p05": 0.11950826248904595,
+          "p95": 0.15802572626863373
+        },
+        "recovery_states": {
+          "FAILED": 4,
+          "NOT_RECOVERED": 521,
+          "RECOVERED": 5,
+          "UNAFFECTED": 470
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 94.715,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 278,
+          "risk": 0.278
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.006713333333333334,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.028333333333333332
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.5488875000000001,
+          "median": 0.6,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.183,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.3050624835785385,
+          "median": 4.319174745412771,
+          "n": 1000,
+          "p05": 1.6096903862753773,
+          "p95": 6.6991645939396705
+        },
+        "minimum_range_m": {
+          "mean": 5.319897347728122,
+          "median": 5.330534840687715,
+          "n": 1000,
+          "p05": 2.6160276623156906,
+          "p95": 7.717931952461796
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.14265051992647368,
+          "median": 0.1399409009756531,
+          "n": 1000,
+          "p05": 0.11978119844704338,
+          "p95": 0.17462579793656868
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 572,
+          "RECOVERED": 5,
+          "UNAFFECTED": 423
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 103.175,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 275,
+          "risk": 0.275
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 2,
+          "risk": 0.002
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 2,
+          "one_sided_exact_95_upper": 0.006282284546723471,
+          "risk": 0.002
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0019858794640389235,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.018333333333333333
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.5503625,
+          "median": 0.6166666666666667,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.201,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.661069786157199,
+          "median": 4.528341031425554,
+          "n": 1000,
+          "p05": 1.90928960457048,
+          "p95": 7.411017277059397
+        },
+        "minimum_range_m": {
+          "mean": 5.67862929041643,
+          "median": 5.540510860682684,
+          "n": 1000,
+          "p05": 2.914727213106604,
+          "p95": 8.444041463973063
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 2,
+          "risk": 0.002
+        },
+        "propellant_used_fraction": {
+          "mean": 0.14564849570588478,
+          "median": 0.14020596227069515,
+          "n": 1000,
+          "p05": 0.11959855559286359,
+          "p95": 0.20787144033136962
+        },
+        "recovery_states": {
+          "FAILED": 2,
+          "NOT_RECOVERED": 568,
+          "RECOVERED": 5,
+          "UNAFFECTED": 425
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 102.815,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 274,
+          "risk": 0.274
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 241,
+          "risk": 0.241
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 240,
+          "one_sided_exact_95_upper": 0.26326802513289904,
+          "risk": 0.24
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.7587,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 3.4654825595932053,
+          "median": 5.123854589455666,
+          "n": 1000,
+          "p05": -1.5488068930577914,
+          "p95": 5.367749468674708
+        },
+        "minimum_range_m": {
+          "mean": 4.759319387005964,
+          "median": 6.125553803793236,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 6.367750571127182
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 241,
+          "risk": 0.241
+        },
+        "propellant_used_fraction": {
+          "mean": 0.45338198950572584,
+          "median": 0.4678902180651695,
+          "n": 1000,
+          "p05": 0.19754612182723263,
+          "p95": 0.6880778947031374
+        },
+        "recovery_states": {
+          "FAILED": 241,
+          "NOT_RECOVERED": 90,
+          "RECOVERED": 227,
+          "UNAFFECTED": 442
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 71.862,
+          "median": 33.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 751,
+          "risk": 0.751
+        }
+      }
+    },
+    "F2_primary_dropout": {
+      "D": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.63725,
+          "median": 0.78125,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 3.6819544574242107,
+          "median": 3.718103443945819,
+          "n": 1000,
+          "p05": 2.302726420827527,
+          "p95": 4.883150461098425
+        },
+        "minimum_range_m": {
+          "mean": 4.694209143226828,
+          "median": 4.7285585458673225,
+          "n": 1000,
+          "p05": 3.313036643121909,
+          "p95": 5.899428471075491
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.1695264009233715,
+          "median": 0.17021493717055375,
+          "n": 1000,
+          "p05": 0.1356635889493928,
+          "p95": 0.20371633482227017
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 792,
+          "RECOVERED": 129,
+          "UNAFFECTED": 79
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 143.683,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 359,
+          "risk": 0.359
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.029808333333333333,
+          "median": 0.03,
+          "n": 1000,
+          "p05": 0.01,
+          "p95": 0.04833333333333333
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.6944874999999999,
+          "median": 0.8125,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 3.8092941665059183,
+          "median": 3.7644955382737586,
+          "n": 1000,
+          "p05": 2.7198002071121326,
+          "p95": 4.895014664625336
+        },
+        "minimum_range_m": {
+          "mean": 4.821963823586387,
+          "median": 4.776838066934578,
+          "n": 1000,
+          "p05": 3.724912799064543,
+          "p95": 5.917862694055055
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.16527754147717397,
+          "median": 0.16497241195737739,
+          "n": 1000,
+          "p05": 0.14704197246234693,
+          "p95": 0.18556888366052648
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 892,
+          "RECOVERED": 5,
+          "UNAFFECTED": 103
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 160.604,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 392,
+          "risk": 0.392
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.034431666666666666,
+          "median": 0.03,
+          "n": 1000,
+          "p05": 0.01,
+          "p95": 0.065
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.40675,
+          "median": 0.25416666666666665,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.011,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 6.974195139633147,
+          "median": 6.379394752490688,
+          "n": 1000,
+          "p05": 4.39598975670132,
+          "p95": 11.473118973463892
+        },
+        "minimum_range_m": {
+          "mean": 8.011802804826152,
+          "median": 7.4085498353638854,
+          "n": 1000,
+          "p05": 5.417244662921536,
+          "p95": 12.558653318491976
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.26609947915011445,
+          "median": 0.2697487861097033,
+          "n": 1000,
+          "p05": 0.16905270251921892,
+          "p95": 0.3598614127160707
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 781,
+          "RECOVERED": 32,
+          "UNAFFECTED": 187
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 140.758,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 196,
+          "risk": 0.196
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9999750000000001,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.181389455574057,
+          "median": 5.187978140664927,
+          "n": 1000,
+          "p05": 5.027037748454883,
+          "p95": 5.320851901346975
+        },
+        "minimum_range_m": {
+          "mean": 6.181879808439894,
+          "median": 6.188352659155932,
+          "n": 1000,
+          "p05": 6.027053123412926,
+          "p95": 6.320515545665827
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.57541717536088,
+          "median": 0.576667865954724,
+          "n": 1000,
+          "p05": 0.48624995225405077,
+          "p95": 0.6599466771606792
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 131,
+          "RECOVERED": 657,
+          "UNAFFECTED": 212
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 34.9,
+          "median": 16.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 998,
+          "risk": 0.998
+        }
+      }
+    },
+    "F3_monitor_channel_fault": {
+      "D": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9718333333333332,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.659273371614388,
+          "median": 4.672860060198602,
+          "n": 1000,
+          "p05": 3.8417889492664483,
+          "p95": 5.4648344257155195
+        },
+        "minimum_range_m": {
+          "mean": 5.67449118185107,
+          "median": 5.686235749721874,
+          "n": 1000,
+          "p05": 4.851879511489055,
+          "p95": 6.485577897779665
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.1262513499663257,
+          "median": 0.12586231785327523,
+          "n": 1000,
+          "p05": 0.11104042664504954,
+          "p95": 0.14262963048668265
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 513,
+          "UNAFFECTED": 487
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 92.34,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 794,
+          "risk": 0.794
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.01942333333333333,
+          "median": 0.013333333333333334,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.06333333333333334
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.6770916666666666,
+          "median": 0.95,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.116,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 4.0499999999999545
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.9040071498134665,
+          "median": 5.152699819498137,
+          "n": 1000,
+          "p05": 4.015210648234755,
+          "p95": 10.690005640695896
+        },
+        "minimum_range_m": {
+          "mean": 6.931330246286594,
+          "median": 6.167764280932306,
+          "n": 1000,
+          "p05": 5.026248399360414,
+          "p95": 11.764120028566081
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.2038404827866285,
+          "median": 0.18782806822764053,
+          "n": 1000,
+          "p05": 0.11463129628976032,
+          "p95": 0.35229290358948007
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 623,
+          "RECOVERED": 14,
+          "UNAFFECTED": 363
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 112.216,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 448,
+          "risk": 0.448
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9718333333333332,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.659273371614388,
+          "median": 4.672860060198602,
+          "n": 1000,
+          "p05": 3.8417889492664483,
+          "p95": 5.4648344257155195
+        },
+        "minimum_range_m": {
+          "mean": 5.67449118185107,
+          "median": 5.686235749721874,
+          "n": 1000,
+          "p05": 4.851879511489055,
+          "p95": 6.485577897779665
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.1262513499663257,
+          "median": 0.12586231785327523,
+          "n": 1000,
+          "p05": 0.11104042664504954,
+          "p95": 0.14262963048668265
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 513,
+          "UNAFFECTED": 487
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 92.34,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 794,
+          "risk": 0.794
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9999916666666667,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.125971426048111,
+          "median": 5.133421791084084,
+          "n": 1000,
+          "p05": 4.979440006676428,
+          "p95": 5.258866140698822
+        },
+        "minimum_range_m": {
+          "mean": 6.126453096955922,
+          "median": 6.133060886204836,
+          "n": 1000,
+          "p05": 5.979535607334018,
+          "p95": 6.2589648770581485
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.45064984603693276,
+          "median": 0.4494394051657393,
+          "n": 1000,
+          "p05": 0.42001814862301234,
+          "p95": 0.48410491657762894
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 20,
+          "RECOVERED": 1,
+          "UNAFFECTED": 979
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 3.601,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "sustained_success": {
+          "events": 999,
+          "risk": 0.999
+        }
+      }
+    },
+    "F4_shared_cause_navigation": {
+      "D": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.8149083333333333,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.02833333333333338,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.446895458654219,
+          "median": 4.379571629414766,
+          "n": 1000,
+          "p05": 3.0509625249492665,
+          "p95": 6.03874253097301
+        },
+        "minimum_range_m": {
+          "mean": 5.461645707035319,
+          "median": 5.392553210676164,
+          "n": 1000,
+          "p05": 4.063783304598551,
+          "p95": 7.052340793022268
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.14071336913861213,
+          "median": 0.14001968646869184,
+          "n": 1000,
+          "p05": 0.11943090950547722,
+          "p95": 0.16545454307818283
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 608,
+          "RECOVERED": 47,
+          "UNAFFECTED": 345
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 109.659,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 542,
+          "risk": 0.542
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.008363333333333334,
+          "median": 0.008333333333333333,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.023333333333333334
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.7798833333333334,
+          "median": 0.9416666666666667,
+          "n": 1000,
+          "p05": 0.01229166666666668,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.514,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.8450571294770866,
+          "median": 4.8862381392173155,
+          "n": 1000,
+          "p05": 3.1286524768351534,
+          "p95": 6.3443776377705605
+        },
+        "minimum_range_m": {
+          "mean": 5.862857234103425,
+          "median": 5.904648944169741,
+          "n": 1000,
+          "p05": 4.139227049646034,
+          "p95": 7.37304307624231
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.16622385358285516,
+          "median": 0.1543214230773171,
+          "n": 1000,
+          "p05": 0.11984023225675473,
+          "p95": 0.2308891753884231
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 496,
+          "RECOVERED": 41,
+          "UNAFFECTED": 463
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 89.401,
+          "median": 4.5,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 437,
+          "risk": 0.437
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.00837,
+          "median": 0.008333333333333333,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.023333333333333334
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.779875,
+          "median": 0.9416666666666667,
+          "n": 1000,
+          "p05": 0.01229166666666668,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.516,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.8450336812795305,
+          "median": 4.8862381392173155,
+          "n": 1000,
+          "p05": 3.1286524768351534,
+          "p95": 6.3443776377705605
+        },
+        "minimum_range_m": {
+          "mean": 5.862826977149618,
+          "median": 5.904648944169741,
+          "n": 1000,
+          "p05": 4.139227049646034,
+          "p95": 7.37304307624231
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.16623722869097396,
+          "median": 0.1543214230773171,
+          "n": 1000,
+          "p05": 0.11984023225675473,
+          "p95": 0.2308891753884231
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 496,
+          "RECOVERED": 41,
+          "UNAFFECTED": 463
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 89.401,
+          "median": 4.5,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 437,
+          "risk": 0.437
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 118,
+          "risk": 0.118
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 117,
+          "one_sided_exact_95_upper": 0.13506267815970846,
+          "risk": 0.117
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.8829958333333334,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.341288066505457,
+          "median": 5.139425689733914,
+          "n": 1000,
+          "p05": -1.15122094434293,
+          "p95": 5.295380953968783
+        },
+        "minimum_range_m": {
+          "mean": 5.44626626016256,
+          "median": 6.140160900446585,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 6.295900697802688
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 118,
+          "risk": 0.118
+        },
+        "propellant_used_fraction": {
+          "mean": 0.4870147256037904,
+          "median": 0.505492717468581,
+          "n": 1000,
+          "p05": 0.22518326485017956,
+          "p95": 0.6410162727946062
+        },
+        "recovery_states": {
+          "FAILED": 118,
+          "NOT_RECOVERED": 195,
+          "RECOVERED": 194,
+          "UNAFFECTED": 493
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 63.205,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 881,
+          "risk": 0.881
+        }
+      }
+    },
+    "F5_persistent_model_upset": {
+      "D": {
+        "analysis_hazard": {
+          "events": 326,
+          "risk": 0.326
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 254,
+          "one_sided_exact_95_upper": 0.27766337241241523,
+          "risk": 0.254
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.33967083333333337,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 7.0858874307521305,
+          "median": 4.678789561391676,
+          "n": 1000,
+          "p05": -33.50264430785904,
+          "p95": 35.059470119945665
+        },
+        "minimum_range_m": {
+          "mean": 11.373866145303278,
+          "median": 5.691309180307585,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 36.11642598128005
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 254,
+          "risk": 0.254
+        },
+        "propellant_used_fraction": {
+          "mean": 0.2283200916817744,
+          "median": 0.134636458140327,
+          "n": 1000,
+          "p05": 0.10126933875374955,
+          "p95": 0.9086023385133637
+        },
+        "recovery_states": {
+          "FAILED": 326,
+          "NOT_RECOVERED": 285,
+          "UNAFFECTED": 389
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 109.98,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 260,
+          "risk": 0.26
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.6451416666666666,
+          "median": 0.645,
+          "n": 1000,
+          "p05": 0.5165833333333334,
+          "p95": 0.7817499999999998
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.138663034646519,
+          "median": 5.145216766383857,
+          "n": 1000,
+          "p05": 4.987145496847244,
+          "p95": 5.270049402050684
+        },
+        "minimum_range_m": {
+          "mean": 6.139281575549014,
+          "median": 6.146720048628065,
+          "n": 1000,
+          "p05": 5.991613746130076,
+          "p95": 6.27065860462461
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.3799037632805733,
+          "median": 0.38018156924774665,
+          "n": 1000,
+          "p05": 0.3336152006147378,
+          "p95": 0.42879657567508156
+        },
+        "recovery_states": {
+          "GRACEFUL_DEGRADED": 20,
+          "UNAFFECTED": 980
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 3.6,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "sustained_success": {
+          "events": 1000,
+          "risk": 1.0
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.6451416666666666,
+          "median": 0.645,
+          "n": 1000,
+          "p05": 0.5165833333333334,
+          "p95": 0.7817499999999998
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9999708333333333,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.138039512903113,
+          "median": 5.144596726102767,
+          "n": 1000,
+          "p05": 4.987915506432019,
+          "p95": 5.270840994223819
+        },
+        "minimum_range_m": {
+          "mean": 6.138591951527915,
+          "median": 6.144714430200477,
+          "n": 1000,
+          "p05": 5.987655996672643,
+          "p95": 6.270847250795871
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.3795333229781943,
+          "median": 0.3794849491064709,
+          "n": 1000,
+          "p05": 0.33321617091332156,
+          "p95": 0.42459567400820686
+        },
+        "recovery_states": {
+          "GRACEFUL_DEGRADED": 23,
+          "UNAFFECTED": 977
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 4.14,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "sustained_success": {
+          "events": 998,
+          "risk": 0.998
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9999791666666666,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.120255671240531,
+          "median": 5.128212562220396,
+          "n": 1000,
+          "p05": 4.960860244408778,
+          "p95": 5.2572289067795825
+        },
+        "minimum_range_m": {
+          "mean": 6.1207494739038015,
+          "median": 6.128232549509235,
+          "n": 1000,
+          "p05": 5.962811320587551,
+          "p95": 6.25807991797535
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.45092991296250967,
+          "median": 0.4510111108940794,
+          "n": 1000,
+          "p05": 0.41826590890541926,
+          "p95": 0.48288949339432435
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 23,
+          "UNAFFECTED": 977
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 4.14,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "sustained_success": {
+          "events": 999,
+          "risk": 0.999
+        }
+      }
+    },
+    "F6_actuator_degradation": {
+      "D": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9726458333333332,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8166666666666667,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.633455279488191,
+          "median": 4.630109620700642,
+          "n": 1000,
+          "p05": 3.860594477321648,
+          "p95": 5.444930367689833
+        },
+        "minimum_range_m": {
+          "mean": 5.648268393219209,
+          "median": 5.6403975069809,
+          "n": 1000,
+          "p05": 4.873935196371401,
+          "p95": 6.462882014008662
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.12057326734983655,
+          "median": 0.1200737565445853,
+          "n": 1000,
+          "p05": 0.10401214707060912,
+          "p95": 0.13888588744176672
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 530,
+          "UNAFFECTED": 470
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 95.4,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 782,
+          "risk": 0.782
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9726458333333332,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8166666666666667,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.633455279488191,
+          "median": 4.630109620700642,
+          "n": 1000,
+          "p05": 3.860594477321648,
+          "p95": 5.444930367689833
+        },
+        "minimum_range_m": {
+          "mean": 5.648268393219209,
+          "median": 5.6403975069809,
+          "n": 1000,
+          "p05": 4.873935196371401,
+          "p95": 6.462882014008662
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.12057326734983655,
+          "median": 0.1200737565445853,
+          "n": 1000,
+          "p05": 0.10401214707060912,
+          "p95": 0.13888588744176672
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 530,
+          "UNAFFECTED": 470
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 95.4,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 782,
+          "risk": 0.782
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9726458333333332,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.8166666666666667,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 4.633455279488191,
+          "median": 4.630109620700642,
+          "n": 1000,
+          "p05": 3.860594477321648,
+          "p95": 5.444930367689833
+        },
+        "minimum_range_m": {
+          "mean": 5.648268393219209,
+          "median": 5.6403975069809,
+          "n": 1000,
+          "p05": 4.873935196371401,
+          "p95": 6.462882014008662
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.12057326734983655,
+          "median": 0.1200737565445853,
+          "n": 1000,
+          "p05": 0.10401214707060912,
+          "p95": 0.13888588744176672
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 530,
+          "UNAFFECTED": 470
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 95.4,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 782,
+          "risk": 0.782
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9999791666666668,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.110463053565372,
+          "median": 5.12136380295711,
+          "n": 1000,
+          "p05": 4.940992347020575,
+          "p95": 5.252937661450748
+        },
+        "minimum_range_m": {
+          "mean": 6.117507015919287,
+          "median": 6.123661309706149,
+          "n": 1000,
+          "p05": 5.953529549318668,
+          "p95": 6.254199084989749
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.41353761727546917,
+          "median": 0.4148380842845007,
+          "n": 1000,
+          "p05": 0.36986209957806093,
+          "p95": 0.45372993437633735
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 4,
+          "UNAFFECTED": 996
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 0.72,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "sustained_success": {
+          "events": 998,
+          "risk": 0.998
+        }
+      }
+    },
+    "F7_combined_primary_dropout_actuator_degradation": {
+      "D": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.7392124999999998,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 3.902450833040481,
+          "median": 4.0149641151526945,
+          "n": 1000,
+          "p05": 2.556658497189424,
+          "p95": 4.9727811871348
+        },
+        "minimum_range_m": {
+          "mean": 4.915885707345087,
+          "median": 5.027560754453971,
+          "n": 1000,
+          "p05": 3.565332338810794,
+          "p95": 5.991817725958634
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.14973352863629177,
+          "median": 0.1481494786605323,
+          "n": 1000,
+          "p05": 0.11955503055434638,
+          "p95": 0.18454845101978454
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 769,
+          "RECOVERED": 106,
+          "UNAFFECTED": 125
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 146.061,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 504,
+          "risk": 0.504
+        }
+      },
+      "PD": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.02876833333333333,
+          "median": 0.029166666666666667,
+          "n": 1000,
+          "p05": 0.01,
+          "p95": 0.04833333333333333
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.6800250000000001,
+          "median": 0.8875,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 3.779670579118383,
+          "median": 3.866875541403316,
+          "n": 1000,
+          "p05": 2.454885344579505,
+          "p95": 4.885889726685275
+        },
+        "minimum_range_m": {
+          "mean": 4.79186685663758,
+          "median": 4.87919056323674,
+          "n": 1000,
+          "p05": 3.4623951053212996,
+          "p95": 5.898258568139041
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.15424716968932137,
+          "median": 0.15399520536267763,
+          "n": 1000,
+          "p05": 0.13355917549201843,
+          "p95": 0.17502319280427242
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 887,
+          "RECOVERED": 3,
+          "UNAFFECTED": 110
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 160.035,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 419,
+          "risk": 0.419
+        }
+      },
+      "PS": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.030189999999999998,
+          "median": 0.029166666666666667,
+          "n": 1000,
+          "p05": 0.01,
+          "p95": 0.055083333333333255
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.4825625,
+          "median": 0.5166666666666667,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 1.005,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 6.710462015027525,
+          "median": 5.911443071148076,
+          "n": 1000,
+          "p05": 4.375944357297645,
+          "p95": 11.579240927730158
+        },
+        "minimum_range_m": {
+          "mean": 7.743706938893935,
+          "median": 6.927074465089433,
+          "n": 1000,
+          "p05": 5.393969658599776,
+          "p95": 12.670647117472708
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.2109641344987486,
+          "median": 0.20293886200018413,
+          "n": 1000,
+          "p05": 0.136088977006004,
+          "p95": 0.3090334885219758
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 562,
+          "RECOVERED": 10,
+          "UNAFFECTED": 428
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 101.99,
+          "median": 180.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 227,
+          "risk": 0.227
+        }
+      },
+      "R": {
+        "analysis_hazard": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "braking_unreachable": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "collision": {
+          "events": 0,
+          "one_sided_exact_95_upper": 0.0029912495450953314,
+          "risk": 0.0
+        },
+        "failure_classes": {},
+        "fallback_duty_cycle": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "goal_dwell_final60_fraction": {
+          "mean": 0.9996958333333335,
+          "median": 1.0,
+          "n": 1000,
+          "p05": 1.0,
+          "p95": 1.0
+        },
+        "handover_entries": {
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 0.0
+        },
+        "minimum_braking_margin_m": {
+          "mean": 5.167926528532713,
+          "median": 5.174470319479177,
+          "n": 1000,
+          "p05": 4.991357839535133,
+          "p95": 5.332368909396021
+        },
+        "minimum_range_m": {
+          "mean": 6.172880624045052,
+          "median": 6.1769587923008755,
+          "n": 1000,
+          "p05": 6.002656246266654,
+          "p95": 6.332359631524984
+        },
+        "n": 1000,
+        "physical_hazard_observed": {
+          "events": 0,
+          "risk": 0.0
+        },
+        "propellant_used_fraction": {
+          "mean": 0.4988593953856362,
+          "median": 0.49269370634869003,
+          "n": 1000,
+          "p05": 0.4120383213061881,
+          "p95": 0.5953516423716851
+        },
+        "recovery_states": {
+          "NOT_RECOVERED": 66,
+          "RECOVERED": 368,
+          "UNAFFECTED": 566
+        },
+        "restricted_time_unrecovered_s_180": {
+          "mean": 40.486,
+          "median": 0.0,
+          "n": 1000,
+          "p05": 0.0,
+          "p95": 180.0
+        },
+        "sustained_success": {
+          "events": 998,
+          "risk": 0.998
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "PD-D:analysis_hazard": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.04125,
+      "one_sided_97_5_lower": -0.045,
+      "one_sided_97_5_upper": -0.037625,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.004,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.326,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.045,
+        -0.037625
+      ]
+    },
+    "PD-D:braking_unreachable": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.0,
+      "one_sided_97_5_lower": 0.0,
+      "one_sided_97_5_upper": 0.0,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.0,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "PD-D:collision": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.03225,
+      "one_sided_97_5_lower": -0.03575,
+      "one_sided_97_5_upper": -0.028875,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.004,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.254,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.03575,
+        -0.028875
+      ]
+    },
+    "PD-D:fallback_duty_cycle": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.09227729166666665,
+      "one_sided_97_5_lower": 0.09154770833333334,
+      "one_sided_97_5_upper": 0.09301541666666667,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.006713333333333334,
+        "F2_primary_dropout": 0.029808333333333333,
+        "F3_monitor_channel_fault": 0.01942333333333333,
+        "F4_shared_cause_navigation": 0.008363333333333334,
+        "F5_persistent_model_upset": 0.6451416666666666,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.02876833333333333
+      },
+      "two_sided_95_interval": [
+        0.09154770833333334,
+        0.09301541666666667
+      ]
+    },
+    "PD-D:goal_dwell_final60_fraction": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.03936874999999999,
+      "one_sided_97_5_lower": 0.03361716145833333,
+      "one_sided_97_5_upper": 0.04506354166666667,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.013662500000000001,
+        "F2_primary_dropout": 0.0572375,
+        "F3_monitor_channel_fault": -0.2947416666666667,
+        "F4_shared_cause_navigation": -0.03502500000000001,
+        "F5_persistent_model_upset": 0.6603291666666666,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.05918749999999999
+      },
+      "two_sided_95_interval": [
+        0.03361716145833333,
+        0.04506354166666667
+      ]
+    },
+    "PD-D:handover_entries": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.6016250000000001,
+      "one_sided_97_5_lower": 0.581625,
+      "one_sided_97_5_upper": 0.6228750000000001,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.183,
+        "F2_primary_dropout": 1.0,
+        "F3_monitor_channel_fault": 1.116,
+        "F4_shared_cause_navigation": 0.514,
+        "F5_persistent_model_upset": 1.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 1.0
+      },
+      "two_sided_95_interval": [
+        0.581625,
+        0.6228750000000001
+      ]
+    },
+    "PD-D:minimum_braking_margin_m": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.06762051506475275,
+      "one_sided_97_5_lower": -0.20939319601347486,
+      "one_sided_97_5_upper": 0.07604335216507523,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.2411946285939658,
+        "F2_primary_dropout": 0.12733970908170741,
+        "F3_monitor_channel_fault": 1.2447337781990793,
+        "F4_shared_cause_navigation": 0.39816167082286713,
+        "F5_persistent_model_upset": -1.947224396105612,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.12278025392209789
+      },
+      "two_sided_95_interval": [
+        -0.20939319601347486,
+        0.07604335216507523
+      ]
+    },
+    "PD-D:minimum_range_m": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.4769362631744483,
+      "one_sided_97_5_lower": -0.5712556598328893,
+      "one_sided_97_5_upper": -0.3835660539897517,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.2426919567970075,
+        "F2_primary_dropout": 0.12775468035955886,
+        "F3_monitor_channel_fault": 1.2568390644355243,
+        "F4_shared_cause_navigation": 0.4012115270681058,
+        "F5_persistent_model_upset": -5.2345845697542615,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.1240188507075066
+      },
+      "two_sided_95_interval": [
+        -0.5712556598328893,
+        -0.3835660539897517
+      ]
+    },
+    "PD-D:physical_hazard_observed": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.03225,
+      "one_sided_97_5_lower": -0.03575,
+      "one_sided_97_5_upper": -0.028875,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.004,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.254,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.03575,
+        -0.028875
+      ]
+    },
+    "PD-D:propellant_used_fraction": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.032362509719793923,
+      "one_sided_97_5_lower": 0.0304289499288382,
+      "one_sided_97_5_upper": 0.034232111301897634,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.003952007288174595,
+        "F2_primary_dropout": -0.004248859446197534,
+        "F3_monitor_channel_fault": 0.07758913282030283,
+        "F4_shared_cause_navigation": 0.025510484444243028,
+        "F5_persistent_model_upset": 0.1515836715987989,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.004513641053029614
+      },
+      "two_sided_95_interval": [
+        0.0304289499288382,
+        0.034232111301897634
+      ]
+    },
+    "PD-D:recovery_favorable_180": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.046857142857142854,
+      "one_sided_97_5_lower": 0.03842857142857144,
+      "one_sided_97_5_upper": 0.05528571428571427,
+      "stratum_estimates": {
+        "F1_primary_range_bias": -0.047,
+        "F2_primary_dropout": -0.1,
+        "F3_monitor_channel_fault": -0.11,
+        "F4_shared_cause_navigation": 0.112,
+        "F5_persistent_model_upset": 0.591,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.118
+      },
+      "two_sided_95_interval": [
+        0.03842857142857144,
+        0.05528571428571427
+      ]
+    },
+    "PD-D:restricted_time_unrecovered_s_180": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -9.629571428571426,
+      "one_sided_97_5_lower": -11.121146428571429,
+      "one_sided_97_5_upper": -8.13327142857143,
+      "stratum_estimates": {
+        "F1_primary_range_bias": 8.46,
+        "F2_primary_dropout": 16.921,
+        "F3_monitor_channel_fault": 19.876,
+        "F4_shared_cause_navigation": -20.258,
+        "F5_persistent_model_upset": -106.38,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 13.974
+      },
+      "two_sided_95_interval": [
+        -11.121146428571429,
+        -8.13327142857143
+      ]
+    },
+    "PD-D:sustained_success": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.029250000000000005,
+      "one_sided_97_5_lower": 0.02125,
+      "one_sided_97_5_upper": 0.03725,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.003,
+        "F2_primary_dropout": 0.033,
+        "F3_monitor_channel_fault": -0.346,
+        "F4_shared_cause_navigation": -0.105,
+        "F5_persistent_model_upset": 0.74,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.085
+      },
+      "two_sided_95_interval": [
+        0.02125,
+        0.03725
+      ]
+    },
+    "PD-PS:analysis_hazard": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.00025,
+      "one_sided_97_5_lower": -0.000625,
+      "one_sided_97_5_upper": 0.0,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.000625,
+        0.0
+      ]
+    },
+    "PD-PS:braking_unreachable": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.0,
+      "one_sided_97_5_lower": 0.0,
+      "one_sided_97_5_upper": 0.0,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.0,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "PD-PS:collision": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.00025,
+      "one_sided_97_5_lower": -0.000625,
+      "one_sided_97_5_upper": 0.0,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.000625,
+        0.0
+      ]
+    },
+    "PD-PS:fallback_duty_cycle": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.0022623900669951347,
+      "one_sided_97_5_lower": 0.002008333045016423,
+      "one_sided_97_5_upper": 0.0025243637556405124,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.004727453869294409,
+        "F2_primary_dropout": -0.004623333333333334,
+        "F3_monitor_channel_fault": 0.01942333333333333,
+        "F4_shared_cause_navigation": -6.6666666666666675e-06,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.0014216666666666666
+      },
+      "two_sided_95_interval": [
+        0.002008333045016423,
+        0.0025243637556405124
+      ]
+    },
+    "PD-PS:goal_dwell_final60_fraction": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.02362760416666667,
+      "one_sided_97_5_lower": 0.017629127604166666,
+      "one_sided_97_5_upper": 0.029615638020833338,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.0014749999999999997,
+        "F2_primary_dropout": 0.28773750000000003,
+        "F3_monitor_channel_fault": -0.2947416666666667,
+        "F4_shared_cause_navigation": 8.333333333333303e-06,
+        "F5_persistent_model_upset": 2.9166666666666673e-05,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.1974625
+      },
+      "two_sided_95_interval": [
+        0.017629127604166666,
+        0.029615638020833338
+      ]
+    },
+    "PD-PS:handover_entries": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.13500000000000004,
+      "one_sided_97_5_lower": 0.116125,
+      "one_sided_97_5_upper": 0.155,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.018,
+        "F2_primary_dropout": -0.011,
+        "F3_monitor_channel_fault": 1.116,
+        "F4_shared_cause_navigation": -0.002,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.005
+      },
+      "two_sided_95_interval": [
+        0.116125,
+        0.155
+      ]
+    },
+    "PD-PS:minimum_braking_margin_m": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.6507898704343736,
+      "one_sided_97_5_lower": -0.6863748598166545,
+      "one_sided_97_5_upper": -0.6150899594319413,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.3560073025786612,
+        "F2_primary_dropout": -3.164900973127228,
+        "F3_monitor_channel_fault": 1.2447337781990793,
+        "F4_shared_cause_navigation": 2.344819755643224e-05,
+        "F5_persistent_model_upset": 0.0006235217434061546,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -2.930791435909142
+      },
+      "two_sided_95_interval": [
+        -0.6863748598166545,
+        -0.6150899594319413
+      ]
+    },
+    "PD-PS:minimum_range_m": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.6553565075967493,
+      "one_sided_97_5_lower": -0.6912439923034118,
+      "one_sided_97_5_upper": -0.6193458359227693,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.3587319426883088,
+        "F2_primary_dropout": -3.1898389812397654,
+        "F3_monitor_channel_fault": 1.2568390644355243,
+        "F4_shared_cause_navigation": 3.0256953807985985e-05,
+        "F5_persistent_model_upset": 0.0006896240211004096,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -2.9518400822563535
+      },
+      "two_sided_95_interval": [
+        -0.6912439923034118,
+        -0.6193458359227693
+      ]
+    },
+    "PD-PS:physical_hazard_observed": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.00025,
+      "one_sided_97_5_lower": -0.000625,
+      "one_sided_97_5_upper": 0.0,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.000625,
+        0.0
+      ]
+    },
+    "PD-PS:propellant_used_fraction": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.010323835030901968,
+      "one_sided_97_5_lower": -0.011199655990329533,
+      "one_sided_97_5_upper": -0.009459585305407086,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.0029979757794110578,
+        "F2_primary_dropout": -0.10082193767294052,
+        "F3_monitor_channel_fault": 0.07758913282030283,
+        "F4_shared_cause_navigation": -1.337510811879461e-05,
+        "F5_persistent_model_upset": 0.00037044030237904296,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.056716964809427235
+      },
+      "two_sided_95_interval": [
+        -0.011199655990329533,
+        -0.009459585305407086
+      ]
+    },
+    "PD-PS:recovery_favorable_180": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.07785714285714286,
+      "one_sided_97_5_lower": -0.08542857142857144,
+      "one_sided_97_5_upper": -0.07028571428571428,
+      "stratum_estimates": {
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": -0.111,
+        "F3_monitor_channel_fault": -0.11,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.003,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.325
+      },
+      "two_sided_95_interval": [
+        -0.08542857142857144,
+        -0.07028571428571428
+      ]
+    },
+    "PD-PS:restricted_time_unrecovered_s_180": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 13.941,
+      "one_sided_97_5_lower": 12.590274999999998,
+      "one_sided_97_5_upper": 15.298857142857141,
+      "stratum_estimates": {
+        "F1_primary_range_bias": 0.36,
+        "F2_primary_dropout": 19.846,
+        "F3_monitor_channel_fault": 19.876,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.54,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 58.045
+      },
+      "two_sided_95_interval": [
+        12.590274999999998,
+        15.298857142857141
+      ]
+    },
+    "PD-PS:sustained_success": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.005625000000000005,
+      "one_sided_97_5_lower": -0.002375000000000002,
+      "one_sided_97_5_upper": 0.013624999999999998,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.001,
+        "F2_primary_dropout": 0.196,
+        "F3_monitor_channel_fault": -0.346,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.002,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.192
+      },
+      "two_sided_95_interval": [
+        -0.002375000000000002,
+        0.013624999999999998
+      ]
+    },
+    "PS-D:analysis_hazard": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.041,
+      "one_sided_97_5_lower": -0.04475,
+      "one_sided_97_5_upper": -0.037375,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.326,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.04475,
+        -0.037375
+      ]
+    },
+    "PS-D:braking_unreachable": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.0,
+      "one_sided_97_5_lower": 0.0,
+      "one_sided_97_5_upper": 0.0,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.0,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": 0.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "PS-D:collision": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.032,
+      "one_sided_97_5_lower": -0.0355,
+      "one_sided_97_5_upper": -0.028625,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.254,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.0355,
+        -0.028625
+      ]
+    },
+    "PS-D:fallback_duty_cycle": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.09001490159967153,
+      "one_sided_97_5_lower": 0.08933094326633821,
+      "one_sided_97_5_upper": 0.09070190327368614,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.0019858794640389235,
+        "F2_primary_dropout": 0.034431666666666666,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.00837,
+        "F5_persistent_model_upset": 0.6451416666666666,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.030189999999999998
+      },
+      "two_sided_95_interval": [
+        0.08933094326633821,
+        0.09070190327368614
+      ]
+    },
+    "PS-D:goal_dwell_final60_fraction": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.015741145833333338,
+      "one_sided_97_5_lower": 0.009885390625000007,
+      "one_sided_97_5_upper": 0.021556783854166685,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.0121875,
+        "F2_primary_dropout": -0.2305,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": -0.03503333333333333,
+        "F5_persistent_model_upset": 0.6603,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.25665
+      },
+      "two_sided_95_interval": [
+        0.009885390625000007,
+        0.021556783854166685
+      ]
+    },
+    "PS-D:handover_entries": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.46662499999999996,
+      "one_sided_97_5_lower": 0.45875,
+      "one_sided_97_5_upper": 0.47524999999999995,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.201,
+        "F2_primary_dropout": 1.011,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.516,
+        "F5_persistent_model_upset": 1.0,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 1.005
+      },
+      "two_sided_95_interval": [
+        0.45875,
+        0.47524999999999995
+      ]
+    },
+    "PS-D:minimum_braking_margin_m": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.5831693553696209,
+      "one_sided_97_5_lower": 0.4387319881202538,
+      "one_sided_97_5_upper": 0.7287010653299824,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.11481267398469538,
+        "F2_primary_dropout": 3.2922406822089356,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.3981382226253107,
+        "F5_persistent_model_upset": -1.9478479178490182,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 2.8080111819870437
+      },
+      "two_sided_95_interval": [
+        0.4387319881202538,
+        0.7287010653299824
+      ]
+    },
+    "PS-D:minimum_range_m": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.17842024442230092,
+      "one_sided_97_5_lower": 0.08089286353744389,
+      "one_sided_97_5_upper": 0.27457554335964696,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.11603998589130131,
+        "F2_primary_dropout": 3.3175936615993242,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.40118127011429777,
+        "F5_persistent_model_upset": -5.235274193775363,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 2.8278212315488473
+      },
+      "two_sided_95_interval": [
+        0.08089286353744389,
+        0.27457554335964696
+      ]
+    },
+    "PS-D:physical_hazard_observed": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.032,
+      "one_sided_97_5_lower": -0.0355,
+      "one_sided_97_5_upper": -0.028625,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.002,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.254,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.0355,
+        -0.028625
+      ]
+    },
+    "PS-D:propellant_used_fraction": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.042686344750695895,
+      "one_sided_97_5_lower": 0.040802864447168435,
+      "one_sided_97_5_upper": 0.044475434482032214,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": 0.006949983067585652,
+        "F2_primary_dropout": 0.09657307822674299,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.025523859552361815,
+        "F5_persistent_model_upset": 0.15121323129641984,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.06123060586245685
+      },
+      "two_sided_95_interval": [
+        0.040802864447168435,
+        0.044475434482032214
+      ]
+    },
+    "PS-D:recovery_favorable_180": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.1247142857142857,
+      "one_sided_97_5_lower": 0.11585714285714285,
+      "one_sided_97_5_upper": 0.13357142857142856,
+      "stratum_estimates": {
+        "F1_primary_range_bias": -0.045,
+        "F2_primary_dropout": 0.011,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.112,
+        "F5_persistent_model_upset": 0.588,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.207
+      },
+      "two_sided_95_interval": [
+        0.11585714285714285,
+        0.13357142857142856
+      ]
+    },
+    "PS-D:restricted_time_unrecovered_s_180": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -23.57057142857143,
+      "one_sided_97_5_lower": -25.10885714285714,
+      "one_sided_97_5_upper": -22.03185,
+      "stratum_estimates": {
+        "F1_primary_range_bias": 8.1,
+        "F2_primary_dropout": -2.925,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": -20.258,
+        "F5_persistent_model_upset": -105.84,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -44.071
+      },
+      "two_sided_95_interval": [
+        -25.10885714285714,
+        -22.03185
+      ]
+    },
+    "PS-D:sustained_success": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.023624999999999993,
+      "one_sided_97_5_lower": 0.015499999999999993,
+      "one_sided_97_5_upper": 0.031875,
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.004,
+        "F2_primary_dropout": -0.163,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": -0.105,
+        "F5_persistent_model_upset": 0.738,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.277
+      },
+      "two_sided_95_interval": [
+        0.015499999999999993,
+        0.031875
+      ]
+    }
+  },
+  "counts": {
+    "complete_four_arm_blocks": 8000,
+    "completeness_passed": true,
+    "duplicate_cells_preview": [],
+    "episode_rows": 32000,
+    "exact_expected_cells": true,
+    "incomplete_fraction": 0.0,
+    "incomplete_fraction_by_stratum": {
+      "F0_nominal": 0.0,
+      "F1_primary_range_bias": 0.0,
+      "F2_primary_dropout": 0.0,
+      "F3_monitor_channel_fault": 0.0,
+      "F4_shared_cause_navigation": 0.0,
+      "F5_persistent_model_upset": 0.0,
+      "F6_actuator_degradation": 0.0,
+      "F7_combined_primary_dropout_actuator_degradation": 0.0
+    },
+    "incomplete_or_missing_blocks": 0,
+    "observed_blocks": 8000,
+    "structural_valid": true,
+    "unexpected_rows_preview": [],
+    "unique_episode_cells": 32000
+  },
+  "decision": "favorable",
+  "estimand_registry": {
+    "H1_endpoint": "adverse-coded analysis_hazard",
+    "H2_endpoint": "sustained_success",
+    "confirmatory_stratum_weight": 0.125,
+    "independent_unit": "stratum by root-seed four-arm block",
+    "primary_contrast": "PD-D",
+    "recovery_weight": 0.14285714285714285,
+    "resampling": "stratified paired complete-block percentile bootstrap"
+  },
+  "failure_classes": {},
+  "favorable_decision_gates": {
+    "H1": true,
+    "H2": true,
+    "absolute_and_relative_effect": true,
+    "four_stratum_harm_control": true,
+    "harm_control_upper_bounds": {
+      "F3_monitor_channel_fault": 0.0,
+      "F4_shared_cause_navigation": 0.0,
+      "F6_actuator_degradation": 0.0,
+      "F7_combined_primary_dropout_actuator_degradation": 0.0
+    },
+    "nominal_fallback": true,
+    "relative_hazard_reduction": 1.0,
+    "validity": true
+  },
+  "integrity": {
+    "historical_integrity": {
+      "errors_preview": [],
+      "experiment_002c_numerical_decision": "pass",
+      "experiment_002d_decision": "resolved_freeze_confirmatory_design",
+      "freeze_ids": {
+        "002": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+        "002b": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+        "002c": "8157fefc06ea1aec4121b475d0ffa068576c8f98807406205c8f47f2120e479a",
+        "002d": "0fc96ee320d25c2cec3c37ba9aa87467ca4a9ee62a138bd0bed37f3ad7dc053b"
+      },
+      "original_design_sha256": "ffd1dba3195edd583797181702125cff4a81456502dba5c2a652ce1aaa75b590",
+      "original_design_source_verified": true,
+      "passed": true,
+      "protected_paths_unchanged": true,
+      "recommended_confirmatory_episodes": 32000,
+      "recommended_confirmatory_seeds_per_stratum": 1000
+    },
+    "passed": true,
+    "phase_chain": true,
+    "same_platform_replay": {
+      "episodes_compared": 1280,
+      "expected_episodes": 1280,
+      "failures_preview": [],
+      "passed": true
+    },
+    "seed_validation": {
+      "errors_preview": [],
+      "historical_root_seed_ids_compared": 7183,
+      "manifest_sha256": "0b5ad85c2d2e14204716444576995c22a13ab404cfc8d09ecaf88904cf447f69",
+      "partition_code": 16,
+      "passed": true,
+      "replay_replicates_by_stratum": {
+        "F0_nominal": [
+          19,
+          25,
+          54,
+          164,
+          178,
+          193,
+          204,
+          210,
+          214,
+          241,
+          246,
+          247,
+          252,
+          261,
+          267,
+          299,
+          320,
+          325,
+          348,
+          351,
+          362,
+          442,
+          444,
+          478,
+          480,
+          529,
+          624,
+          639,
+          642,
+          648,
+          653,
+          665,
+          752,
+          811,
+          841,
+          878,
+          901,
+          965,
+          974,
+          991
+        ],
+        "F1_primary_range_bias": [
+          16,
+          23,
+          74,
+          96,
+          103,
+          104,
+          137,
+          148,
+          156,
+          157,
+          165,
+          180,
+          182,
+          226,
+          275,
+          276,
+          279,
+          281,
+          362,
+          376,
+          377,
+          388,
+          433,
+          477,
+          509,
+          540,
+          565,
+          612,
+          614,
+          616,
+          631,
+          808,
+          811,
+          817,
+          829,
+          830,
+          861,
+          928,
+          973,
+          974
+        ],
+        "F2_primary_dropout": [
+          7,
+          75,
+          86,
+          89,
+          105,
+          175,
+          191,
+          195,
+          196,
+          226,
+          227,
+          236,
+          258,
+          338,
+          355,
+          358,
+          374,
+          376,
+          380,
+          448,
+          457,
+          460,
+          486,
+          513,
+          632,
+          638,
+          639,
+          678,
+          696,
+          707,
+          726,
+          833,
+          852,
+          900,
+          902,
+          911,
+          918,
+          932,
+          945,
+          995
+        ],
+        "F3_monitor_channel_fault": [
+          13,
+          48,
+          77,
+          103,
+          131,
+          204,
+          209,
+          221,
+          234,
+          243,
+          291,
+          293,
+          294,
+          322,
+          333,
+          347,
+          368,
+          381,
+          408,
+          413,
+          420,
+          441,
+          442,
+          451,
+          469,
+          476,
+          506,
+          591,
+          623,
+          650,
+          663,
+          706,
+          723,
+          730,
+          758,
+          792,
+          847,
+          875,
+          930,
+          949
+        ],
+        "F4_shared_cause_navigation": [
+          1,
+          59,
+          98,
+          219,
+          239,
+          244,
+          259,
+          282,
+          313,
+          341,
+          347,
+          362,
+          369,
+          372,
+          388,
+          445,
+          446,
+          473,
+          496,
+          502,
+          565,
+          594,
+          595,
+          647,
+          656,
+          661,
+          677,
+          687,
+          703,
+          704,
+          769,
+          798,
+          815,
+          828,
+          841,
+          849,
+          867,
+          958,
+          962,
+          979
+        ],
+        "F5_persistent_model_upset": [
+          3,
+          18,
+          19,
+          46,
+          55,
+          58,
+          70,
+          97,
+          132,
+          188,
+          220,
+          223,
+          241,
+          256,
+          286,
+          324,
+          345,
+          374,
+          387,
+          427,
+          431,
+          451,
+          529,
+          535,
+          579,
+          582,
+          648,
+          653,
+          663,
+          674,
+          730,
+          753,
+          778,
+          846,
+          893,
+          911,
+          936,
+          949,
+          965,
+          973
+        ],
+        "F6_actuator_degradation": [
+          23,
+          60,
+          139,
+          145,
+          151,
+          152,
+          215,
+          268,
+          296,
+          321,
+          346,
+          378,
+          409,
+          417,
+          432,
+          466,
+          483,
+          484,
+          551,
+          568,
+          616,
+          650,
+          668,
+          702,
+          704,
+          708,
+          778,
+          782,
+          826,
+          863,
+          881,
+          883,
+          886,
+          887,
+          936,
+          939,
+          963,
+          966,
+          974,
+          980
+        ],
+        "F7_combined_primary_dropout_actuator_degradation": [
+          14,
+          32,
+          69,
+          91,
+          102,
+          147,
+          149,
+          237,
+          250,
+          281,
+          291,
+          292,
+          317,
+          320,
+          342,
+          351,
+          381,
+          387,
+          431,
+          506,
+          520,
+          590,
+          597,
+          636,
+          656,
+          687,
+          718,
+          764,
+          790,
+          817,
+          874,
+          914,
+          917,
+          923,
+          936,
+          938,
+          941,
+          948,
+          987,
+          995
+        ]
+      },
+      "rows": 8000,
+      "stratum_counts": {
+        "F0_nominal": 1000,
+        "F1_primary_range_bias": 1000,
+        "F2_primary_dropout": 1000,
+        "F3_monitor_channel_fault": 1000,
+        "F4_shared_cause_navigation": 1000,
+        "F5_persistent_model_upset": 1000,
+        "F6_actuator_degradation": 1000,
+        "F7_combined_primary_dropout_actuator_degradation": 1000
+      },
+      "subtype_counts": {
+        "F3_monitor_channel_fault": {
+          "dropout": 500,
+          "range_bias": 500
+        },
+        "F4_shared_cause_navigation": {
+          "dropout": 500,
+          "range_bias": 500
+        }
+      },
+      "unique_root_seed_ids": 8000
+    }
+  },
+  "predeclared_sensitivities": {
+    "all_available_D_PD_pairs": {
+      "analysis_hazard_risk_difference": -0.04125,
+      "pairs_by_stratum": {
+        "F0_nominal": 1000,
+        "F1_primary_range_bias": 1000,
+        "F2_primary_dropout": 1000,
+        "F3_monitor_channel_fault": 1000,
+        "F4_shared_cause_navigation": 1000,
+        "F5_persistent_model_upset": 1000,
+        "F6_actuator_degradation": 1000,
+        "F7_combined_primary_dropout_actuator_degradation": 1000
+      },
+      "sustained_success_risk_difference": 0.029250000000000005
+    },
+    "physical_hazard_only": {
+      "estimate": -0.03225,
+      "two_sided_95_interval": [
+        -0.03575,
+        -0.028875
+      ]
+    },
+    "worst_case_missing_primary_cells": {
+      "analysis_hazard_risk_difference": -0.04125,
+      "rule": "missing PD adverse; missing D favorable to D",
+      "sustained_success_risk_difference": 0.029250000000000005
+    }
+  },
+  "primary_gatekeeping": {
+    "H1": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": -0.04125,
+      "one_sided_97_5_lower": -0.045,
+      "one_sided_97_5_upper": -0.037625,
+      "passed": true,
+      "rule": "two-sided 95% upper bound below zero",
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.004,
+        "F2_primary_dropout": 0.0,
+        "F3_monitor_channel_fault": 0.0,
+        "F4_shared_cause_navigation": 0.0,
+        "F5_persistent_model_upset": -0.326,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": 0.0
+      },
+      "two_sided_95_interval": [
+        -0.045,
+        -0.037625
+      ]
+    },
+    "H2": {
+      "bootstrap_replicates": 50000,
+      "bootstrap_seed": 200217,
+      "estimate": 0.029250000000000005,
+      "margin": -0.03,
+      "one_sided_97_5_lower": 0.02125,
+      "one_sided_97_5_upper": 0.03725,
+      "passed": true,
+      "status": "tested",
+      "stratum_estimates": {
+        "F0_nominal": 0.0,
+        "F1_primary_range_bias": -0.003,
+        "F2_primary_dropout": 0.033,
+        "F3_monitor_channel_fault": -0.346,
+        "F4_shared_cause_navigation": -0.105,
+        "F5_persistent_model_upset": 0.74,
+        "F6_actuator_degradation": 0.0,
+        "F7_combined_primary_dropout_actuator_degradation": -0.085
+      },
+      "two_sided_95_interval": [
+        0.02125,
+        0.03725
+      ]
+    }
+  },
+  "schema_version": "experiment-002-confirmatory-1.0",
+  "secondary_family": {
+    "H5b_randomization": {
+      "draws": 200000,
+      "seed": 200219
+    },
+    "discordant_counts": {
+      "H3": {
+        "a0_b1": 328,
+        "a1_b0": 0
+      },
+      "H4": {
+        "a0_b1": 2,
+        "a1_b0": 0
+      },
+      "H5a": {
+        "a0_b1": 488,
+        "a1_b0": 816
+      }
+    },
+    "family": "four fixed one-sided tests with Holm adjustment",
+    "family_alpha": 0.05,
+    "tests": {
+      "H3_PS_minus_D_analysis_hazard": {
+        "holm_adjusted_p": 7.31511930420656e-99,
+        "raw_p": 1.82877982605164e-99,
+        "rejected": true
+      },
+      "H4_PD_minus_PS_analysis_hazard": {
+        "holm_adjusted_p": 0.25,
+        "raw_p": 0.25,
+        "rejected": false
+      },
+      "H5a_PD_minus_D_recovery_favorable": {
+        "holm_adjusted_p": 1.3132320387670231e-19,
+        "raw_p": 4.37744012922341e-20,
+        "rejected": true
+      },
+      "H5b_PD_minus_D_restricted_time": {
+        "holm_adjusted_p": 9.999950000249999e-06,
+        "raw_p": 4.9999750001249995e-06,
+        "rejected": true
+      }
+    }
+  },
+  "study_phase": "confirmatory"
+}

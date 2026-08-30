@@ -1,0 +1,25 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "freeze_id": "15eb6b3b552e130f7b983930fda10d7d1c0841943408ec8586b51619d9076c15",
+  "historical_root_seed_ids_compared": 7183,
+  "manifest_sha256": "0b5ad85c2d2e14204716444576995c22a13ab404cfc8d09ecaf88904cf447f69",
+  "master_seed": 2002,
+  "materialized_only_after_freeze_verification": true,
+  "partition": "future_confirmatory_reserved",
+  "partition_code": 16,
+  "partition_rows": 8000,
+  "planned_episodes": 32000,
+  "replay_subset_sha256": "b8ed699b55ce7435b16f2b25861d4ac64a2ace4a8f5d881c034e7e4cbe09061b",
+  "schema_version": "experiment-002-confirmatory-1.0",
+  "seed_contract_sha256": "716ef9f44828901ff38acc763bc7a85b2fcacb1758bab2a2b5813578143ba183",
+  "stratum_codes": {
+    "F0_nominal": 1,
+    "F1_primary_range_bias": 2,
+    "F2_primary_dropout": 3,
+    "F3_monitor_channel_fault": 4,
+    "F4_shared_cause_navigation": 5,
+    "F5_persistent_model_upset": 6,
+    "F6_actuator_degradation": 7,
+    "F7_combined_primary_dropout_actuator_degradation": 8
+  }
+}
