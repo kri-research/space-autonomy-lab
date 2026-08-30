@@ -1,0 +1,71 @@
+{
+  "schema_version": "kri-fault-suite/1.0",
+  "suite_id": "example-rpo-faults",
+  "description": "Small deterministic fault suite for the simplified RPO controller harness.",
+  "runtime_profile": "simplified-rpo-v1",
+  "initial_state": {
+    "range": {"value": 100.0, "unit": "m"},
+    "relative_velocity": {"value": -0.15, "unit": "m/s"},
+    "propellant_fraction": {"value": 1.0, "unit": "ratio"}
+  },
+  "cases": [
+    {
+      "id": "nominal",
+      "description": "No injected fault.",
+      "faults": []
+    },
+    {
+      "id": "range-bias",
+      "description": "Observed range is biased high during the approach.",
+      "faults": [
+        {
+          "id": "biased-range",
+          "type": "observed_range_bias",
+          "activation": {"start_step": 250, "end_step": 300},
+          "bias": {"value": 25.0, "unit": "m"},
+          "sensor_quality": {"value": 0.85, "unit": "ratio"}
+        }
+      ]
+    },
+    {
+      "id": "navigation-dropout",
+      "description": "Range and relative velocity are unavailable for a bounded interval.",
+      "faults": [
+        {
+          "id": "missing-navigation",
+          "type": "navigation_dropout",
+          "activation": {"start_step": 250, "end_step": 265}
+        }
+      ]
+    },
+    {
+      "id": "actuator-degradation",
+      "description": "Executed acceleration is reduced to 40 percent effectiveness.",
+      "faults": [
+        {
+          "id": "reduced-effectiveness",
+          "type": "actuator_effectiveness",
+          "activation": {"start_step": 250, "end_step": 320},
+          "effectiveness": {"value": 0.4, "unit": "ratio"}
+        }
+      ]
+    },
+    {
+      "id": "dropout-plus-degradation",
+      "description": "Navigation dropout composes with reduced actuator effectiveness.",
+      "faults": [
+        {
+          "id": "missing-navigation",
+          "type": "navigation_dropout",
+          "activation": {"start_step": 250, "end_step": 265}
+        },
+        {
+          "id": "reduced-effectiveness",
+          "type": "actuator_effectiveness",
+          "activation": {"start_step": 250, "end_step": 320},
+          "effectiveness": {"value": 0.4, "unit": "ratio"}
+        }
+      ]
+    }
+  ]
+}
