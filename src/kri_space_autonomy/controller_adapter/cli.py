@@ -10,6 +10,8 @@ from .adapter import validate_controller
 from .benchmark import replay_external_controller, run_external_controller
 from .errors import ControllerAdapterError
 
+_NAVIGATION_PROFILES = ("direct", "estimated")
+
 
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -26,10 +28,22 @@ def _parser() -> argparse.ArgumentParser:
     run = commands.add_parser("run", help="Run one scenario")
     run.add_argument("controller", help="Import spec in module.path:attribute form")
     run.add_argument("scenario", type=Path)
+    run.add_argument(
+        "--navigation-profile",
+        choices=_NAVIGATION_PROFILES,
+        default="direct",
+        help="Controller navigation source (default: direct)",
+    )
 
     replay = commands.add_parser("replay", help="Run a scenario twice and compare exact results")
     replay.add_argument("controller", help="Import spec in module.path:attribute form")
     replay.add_argument("scenario", type=Path)
+    replay.add_argument(
+        "--navigation-profile",
+        choices=_NAVIGATION_PROFILES,
+        default="direct",
+        help="Controller navigation source (default: direct)",
+    )
     return parser
 
 
@@ -39,9 +53,17 @@ def main(argv: Sequence[str] | None = None) -> int:
         if args.command == "validate":
             result = validate_controller(args.controller)
         elif args.command == "run":
-            result = run_external_controller(args.controller, args.scenario).to_dict()
+            result = run_external_controller(
+                args.controller,
+                args.scenario,
+                navigation_profile=args.navigation_profile,
+            ).to_dict()
         else:
-            result = replay_external_controller(args.controller, args.scenario)
+            result = replay_external_controller(
+                args.controller,
+                args.scenario,
+                navigation_profile=args.navigation_profile,
+            )
     except (ControllerAdapterError, OSError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2

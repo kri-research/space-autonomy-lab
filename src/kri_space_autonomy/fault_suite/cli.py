@@ -7,6 +7,7 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from kri_space_autonomy.controller_adapter import ControllerAdapterError
+from kri_space_autonomy.navigation_profiles import validate_navigation_fault_plan
 
 from .errors import FaultSuiteError
 from .manifest import validate_fault_suite
@@ -23,10 +24,27 @@ def _parser() -> argparse.ArgumentParser:
     validate = commands.add_parser("validate", help="Validate a versioned fault-suite JSON file")
     validate.add_argument("suite", type=Path)
 
+    validate_navigation = commands.add_parser(
+        "validate-navigation-plan",
+        help="Validate an illustrative estimated-profile packet-fault plan",
+    )
+    validate_navigation.add_argument("plan", type=Path)
+
     run = commands.add_parser("run-suite", help="Run every suite case with one controller")
     run.add_argument("controller", help="Import spec in module.path:attribute form")
     run.add_argument("suite", type=Path)
     run.add_argument("--output", type=Path, help="Also write the JSON result document")
+    run.add_argument(
+        "--navigation-profile",
+        choices=("direct", "estimated"),
+        default="direct",
+        help="Controller navigation source (default: direct)",
+    )
+    run.add_argument(
+        "--navigation-fault-plan",
+        type=Path,
+        help="Optional estimated-profile stale/covariance packet-fault plan",
+    )
 
     replay = commands.add_parser(
         "replay-suite", help="Run the complete suite twice and compare exact results"
@@ -34,6 +52,17 @@ def _parser() -> argparse.ArgumentParser:
     replay.add_argument("controller", help="Import spec in module.path:attribute form")
     replay.add_argument("suite", type=Path)
     replay.add_argument("--output", type=Path, help="Also write the JSON replay document")
+    replay.add_argument(
+        "--navigation-profile",
+        choices=("direct", "estimated"),
+        default="direct",
+        help="Controller navigation source (default: direct)",
+    )
+    replay.add_argument(
+        "--navigation-fault-plan",
+        type=Path,
+        help="Optional estimated-profile stale/covariance packet-fault plan",
+    )
     return parser
 
 
@@ -46,10 +75,22 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         if args.command == "validate":
             result = validate_fault_suite(args.suite)
+        elif args.command == "validate-navigation-plan":
+            result = validate_navigation_fault_plan(args.plan)
         elif args.command == "run-suite":
-            result = run_fault_suite(args.controller, args.suite).to_dict()
+            result = run_fault_suite(
+                args.controller,
+                args.suite,
+                navigation_profile=args.navigation_profile,
+                navigation_fault_plan=args.navigation_fault_plan,
+            ).to_dict()
         else:
-            result = replay_fault_suite(args.controller, args.suite)
+            result = replay_fault_suite(
+                args.controller,
+                args.suite,
+                navigation_profile=args.navigation_profile,
+                navigation_fault_plan=args.navigation_fault_plan,
+            )
         rendered = _render(result)
         output = getattr(args, "output", None)
         if output is not None:

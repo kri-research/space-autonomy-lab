@@ -26,6 +26,7 @@ from .manifest import (
 )
 from .pipeline import DeterministicFaultPipeline
 from .runner import (
+    ESTIMATED_RESULT_SCHEMA_VERSION,
     RESULT_SCHEMA_VERSION,
     FaultCaseResult,
     FaultSuiteRunResult,
@@ -35,6 +36,7 @@ from .runner import (
 )
 
 __all__ = [
+    "ESTIMATED_RESULT_SCHEMA_VERSION",
     "RESULT_SCHEMA_VERSION",
     "RUNTIME_PROFILE",
     "SCHEMA_VERSION",

@@ -22,6 +22,7 @@ from .policy import (
 )
 from .report import (
     ERROR_SCHEMA_VERSION,
+    ESTIMATED_REPORT_SCHEMA_VERSION,
     EVIDENCE_BOUNDARY,
     REPORT_SCHEMA_VERSION,
     AssuranceReport,
@@ -37,6 +38,7 @@ from .report import (
 
 __all__ = [
     "ERROR_SCHEMA_VERSION",
+    "ESTIMATED_REPORT_SCHEMA_VERSION",
     "EVIDENCE_BOUNDARY",
     "POLICY_SCHEMA_VERSION",
     "REPORT_SCHEMA_VERSION",

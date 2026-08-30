@@ -11,7 +11,18 @@ from kri_space_autonomy.assurance_report import AssuranceReportError
 from kri_space_autonomy.controller_adapter import ControllerAdapterError
 from kri_space_autonomy.fault_suite import FaultSuiteError
 
-from .bundle import DEFAULT_CONTROLLER, DEFAULT_OUTPUT, DemoBuildError, build_demo_bundle
+from .bundle import (
+    DEFAULT_CONTROLLER,
+    DEFAULT_ESTIMATED_FAULT_PLAN,
+    DEFAULT_ESTIMATED_OUTPUT,
+    DEFAULT_ESTIMATED_POLICY,
+    DEFAULT_ESTIMATED_SUITE,
+    DEFAULT_OUTPUT,
+    DEFAULT_POLICY,
+    DEFAULT_SUITE,
+    DemoBuildError,
+    build_demo_bundle,
+)
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -32,8 +43,16 @@ def _parser() -> argparse.ArgumentParser:
     build.add_argument(
         "--output",
         type=Path,
-        default=DEFAULT_OUTPUT,
-        help=f"Bundle directory (default: {DEFAULT_OUTPUT.as_posix()})",
+        help=(
+            f"Bundle directory (defaults: {DEFAULT_OUTPUT.as_posix()} for direct; "
+            f"{DEFAULT_ESTIMATED_OUTPUT.as_posix()} for estimated)"
+        ),
+    )
+    build.add_argument(
+        "--navigation-profile",
+        choices=("direct", "estimated"),
+        default="direct",
+        help="Controller navigation source (default: direct)",
     )
     build.add_argument(
         "--open",
@@ -46,14 +65,25 @@ def _parser() -> argparse.ArgumentParser:
 def main(argv: Sequence[str] | None = None) -> int:
     try:
         args = _parser().parse_args(argv)
-        manifest = build_demo_bundle(args.output, controller_spec=args.controller)
+        estimated = args.navigation_profile == "estimated"
+        output = args.output or (
+            DEFAULT_ESTIMATED_OUTPUT if estimated else DEFAULT_OUTPUT
+        )
+        manifest = build_demo_bundle(
+            output,
+            controller_spec=args.controller,
+            suite_path=DEFAULT_ESTIMATED_SUITE if estimated else DEFAULT_SUITE,
+            policy_path=DEFAULT_ESTIMATED_POLICY if estimated else DEFAULT_POLICY,
+            navigation_profile=args.navigation_profile,
+            navigation_fault_plan=(DEFAULT_ESTIMATED_FAULT_PLAN if estimated else None),
+        )
         if args.open:
-            webbrowser.open((args.output / "index.html").resolve().as_uri())
+            webbrowser.open((output / "index.html").resolve().as_uri())
         print(
             json.dumps(
                 {
                     "status": "built",
-                    "output": args.output.as_posix(),
+                    "output": output.as_posix(),
                     "demo_fingerprint_sha256": manifest["demo_fingerprint_sha256"],
                     "input_fingerprint_sha256": manifest["input_fingerprint_sha256"],
                     "files": [item["path"] for item in manifest["files"]],

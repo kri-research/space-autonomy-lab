@@ -15,10 +15,15 @@ From the repository root:
 ```bash
 uv sync --frozen --extra dev
 uv run python -m kri_space_autonomy.demo build --open
+
+# Same controller through the frozen-estimator product profile.
+uv run python -m kri_space_autonomy.demo build \
+  --navigation-profile estimated --open
 ```
 
-Without `--open`, view `demo/rpo-benchmark/index.html` directly with a browser. It works from
-directly from disk and has no external JavaScript, CSS, font, or network dependency.
+Without `--open`, view `demo/rpo-benchmark/index.html` for the direct profile or
+`demo/rpo-estimated/index.html` for the estimated profile. Each works directly from disk and has no
+external JavaScript, CSS, font, or network dependency.
 
 The build writes:
 
@@ -29,7 +34,8 @@ The build writes:
 | `demo/rpo-benchmark/demo.json` | Stable machine-readable payload |
 | `demo/rpo-benchmark/bundle-manifest.json` | Input/demo fingerprints plus file SHA-256 identities |
 
-No timestamps or local absolute paths enter the substantive payload or its fingerprints.
+The estimated bundle uses the same four filenames under `demo/rpo-estimated/`. No timestamps or
+local absolute paths enter either substantive payload or its fingerprints.
 
 ## What runs
 
@@ -43,19 +49,26 @@ external controller
   → stable report
 ```
 
-The default build uses:
+The default direct build uses:
 
 - controller: `kri_space_autonomy.examples.proportional_controller:controller`
 - suite: `fault-suites/example-rpo.json`
 - policy: `assessment-policies/example-rpo.json`
+
+The estimated build uses the same controller spec with
+`fault-suites/example-estimated-rpo.json`, its suite-bound navigation fault plan, and
+`assessment-policies/example-estimated-rpo.json`. It imports the frozen Experiment 003 primary
+filter without retuning it. Its output is an illustrative product engineering stress run, not new
+scientific evidence. Exact lifecycle, status, identity, and model-boundary semantics are in the
+[navigation profile guide](navigation-profiles.md).
 
 The demo generator calls the existing assessment-report API. That API performs exact replay through
 the existing fault-suite and controller-adapter APIs. The demo does not copy or redefine simulator,
 fault, evaluator, or report semantics.
 
 A harness `PASS` means only that every required example case met the checked-in criteria. It does not
-establish assurance or safety outside this harness. The composed dropout-plus-actuator case is
-informational by policy.
+establish assurance or safety outside this harness. In the direct example, the composed
+dropout-plus-actuator case is informational by policy.
 
 ## Try your controller
 
@@ -66,6 +79,11 @@ then run:
 uv run python -m kri_space_autonomy.demo build \
   --controller my_controller:controller \
   --output demo/my-controller
+
+uv run python -m kri_space_autonomy.demo build \
+  --navigation-profile estimated \
+  --controller my_controller:controller \
+  --output demo/my-estimated-controller
 ```
 
 Open `demo/my-controller/index.html`. The controller receives only the public

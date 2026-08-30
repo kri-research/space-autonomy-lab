@@ -72,6 +72,21 @@ uv run python -m kri_space_autonomy.fault_suite \
   fault-suites/example-rpo.json
 ```
 
+The same controller import spec can also run through the estimated navigation profile and the small
+illustrative estimator example set:
+
+```bash
+uv run python -m kri_space_autonomy.fault_suite \
+  replay-suite kri_space_autonomy.examples.proportional_controller:controller \
+  fault-suites/example-estimated-rpo.json \
+  --navigation-profile estimated \
+  --navigation-fault-plan navigation-fault-plans/example-estimated-rpo.json
+```
+
+This does not reproduce Experiment 003. See
+[`navigation-profiles.md`](navigation-profiles.md) for the exact frozen identity, status mapping,
+packet-fault semantics, and explicit estimator/product-plant model boundary.
+
 The same facade is available from Python:
 
 ```python
@@ -114,10 +129,12 @@ state, or case metadata is added to its arguments.
 
 ## Output and trust boundary
 
-`run-suite` emits `kri-fault-suite-result/1.0` JSON containing suite, case, controller-module, command
-trace, and complete-result hashes plus bounded per-case outcomes. Final range, speed, collision,
-success, and propellant are post-run evaluator outputs. They are not passed back to the controller.
-Raw simulator-state traces and polished assurance scoring are deliberately out of scope.
+Direct `run-suite` emits the backwards-compatible `kri-fault-suite-result/1.0` JSON containing
+suite, case, controller-module, command trace, and complete-result hashes plus bounded per-case
+outcomes. Estimated runs emit `kri-fault-suite-result/1.1`, adding frozen navigation identity and
+per-case packet/health/status diagnostics. Final range, speed, collision, success, and propellant are
+post-run evaluator outputs. They are not passed back to the controller. Offline truth error and NEES
+are not included in product results.
 
 Controllers are local in-process plugins. The adapter limits the arguments it supplies, but it is not
 a process sandbox; only trusted controller code should be loaded.

@@ -1,0 +1,60 @@
+{
+  "schema_version": "kri-fault-suite/1.0",
+  "suite_id": "example-estimated-rpo-faults",
+  "description": "Small illustrative product stress set for the estimated navigation profile; not scientific evidence or operational prevalence.",
+  "runtime_profile": "simplified-rpo-v1",
+  "initial_state": {
+    "range": {"value": 100.0, "unit": "m"},
+    "relative_velocity": {"value": -0.15, "unit": "m/s"},
+    "propellant_fraction": {"value": 1.0, "unit": "ratio"}
+  },
+  "cases": [
+    {
+      "id": "nominal",
+      "description": "No injected fault.",
+      "faults": []
+    },
+    {
+      "id": "range-bias",
+      "description": "Observed range is biased before primary-filter packet construction.",
+      "faults": [
+        {
+          "id": "biased-range",
+          "type": "observed_range_bias",
+          "activation": {"start_step": 250, "end_step": 300},
+          "bias": {"value": 25.0, "unit": "m"},
+          "sensor_quality": {"value": 0.85, "unit": "ratio"}
+        }
+      ]
+    },
+    {
+      "id": "navigation-dropout",
+      "description": "No primary packet is built for a bounded inclusive step interval.",
+      "faults": [
+        {
+          "id": "missing-navigation",
+          "type": "navigation_dropout",
+          "activation": {"start_step": 250, "end_step": 265}
+        }
+      ]
+    },
+    {
+      "id": "stale-packet",
+      "description": "The additive navigation plan repeats the prior packet identity and source epoch.",
+      "faults": []
+    },
+    {
+      "id": "biased-covariance-underreporting",
+      "description": "A small range bias is paired with the frozen covariance-underreporting factor.",
+      "faults": [
+        {
+          "id": "biased-range",
+          "type": "observed_range_bias",
+          "activation": {"start_step": 250, "end_step": 270},
+          "bias": {"value": 5.0, "unit": "m"},
+          "sensor_quality": {"value": 0.9, "unit": "ratio"}
+        }
+      ]
+    }
+  ]
+}

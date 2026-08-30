@@ -56,8 +56,27 @@ uv run python -m kri_space_autonomy.assurance_report \
   --stdout none
 ```
 
-`assess` executes two fresh fault-suite passes and requires exact replay before assessment. To assess
-an existing `kri-fault-suite-result/1.0` document without rerunning the controller:
+`assess` executes two fresh fault-suite passes and requires exact replay before assessment. The same
+controller can be assessed through the frozen-estimator product bridge:
+
+```bash
+uv run python -m kri_space_autonomy.assurance_report \
+  assess kri_space_autonomy.examples.proportional_controller:controller \
+  fault-suites/example-estimated-rpo.json \
+  assessment-policies/example-estimated-rpo.json \
+  --navigation-profile estimated \
+  --navigation-fault-plan navigation-fault-plans/example-estimated-rpo.json \
+  --stdout markdown
+```
+
+Estimated reports use `kri-assurance-report/1.1` and explicitly separate controller-input
+summaries, report-only navigation health/packet diagnostics, and truth-derived harness evaluator
+outputs. Direct reports remain byte-compatible `kri-assurance-report/1.0`. Estimated reports do not
+include offline truth error or NEES and revalidate the complete embedded navigation fault plan. See
+[`navigation-profiles.md`](navigation-profiles.md).
+
+To assess an existing `kri-fault-suite-result/1.0` direct document or
+`kri-fault-suite-result/1.1` estimated document without rerunning the controller:
 
 ```bash
 uv run python -m kri_space_autonomy.assurance_report \
@@ -171,6 +190,8 @@ markdown_text = render_report_markdown(offline_report)
 - The environment is a simplified one-dimensional RPO test harness, not a simulator of record
 - The controller boundary is local and in-process, not a process sandbox
 - The report does not establish full-GNC performance or operational fault prevalence
+- Estimated-profile reports are illustrative engineering stress runs, not new Experiment 003
+  evidence; they retain the frozen estimator on the explicitly different product plant
 - The report does not claim formal verification, certification, or flight safety
 - The external-controller result exposes no runtime-assurance intervention count or generic
   controller-internal corruption evidence, so the report does not invent either signal

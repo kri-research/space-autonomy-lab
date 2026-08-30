@@ -59,9 +59,14 @@ policy through the existing product APIs, and open a standalone local page:
 
 ```bash
 uv run python -m kri_space_autonomy.demo build --open
+
+# Reuse the same controller through the frozen-estimator product profile.
+uv run python -m kri_space_autonomy.demo build \
+  --navigation-profile estimated --open
 ```
 
-The shareable bundle is written to `demo/rpo-benchmark/` as stable JSON, concise Markdown, and
+The direct bundle is written to `demo/rpo-benchmark/`; the estimated bundle is written to
+`demo/rpo-estimated/`. Both contain stable JSON, concise Markdown, and
 self-contained HTML. It has two deliberately separate layers:
 
 1. **Try the harness:** an illustrative product run showing controller → deterministic faults →
@@ -72,8 +77,11 @@ self-contained HTML. It has two deliberately separate layers:
    interval `[0, 0]`, so H2 was not tested; descriptive mission-success degradation was concentrated
    in E5/E6.
 
-See the [public demo guide](docs/public-rpo-demo.md). This remains a simplified one-dimensional RPO
-controller test harness—not full GNC, formal verification, certification, or flight-safety evidence.
+See the [public demo guide](docs/public-rpo-demo.md) and
+[navigation profile guide](docs/navigation-profiles.md). Estimated-profile runs are illustrative
+engineering stress tests, not new Experiment 003 evidence. This remains a simplified one-dimensional
+RPO controller test harness—not full GNC, formal verification, certification, or flight-safety
+evidence.
 
 ## Bring your own controller
 
@@ -84,6 +92,10 @@ observation/command contract and validation commands.
 ```bash
 uv run python -m kri_space_autonomy.controller_adapter \
   validate kri_space_autonomy.examples.proportional_controller:controller
+
+uv run python -m kri_space_autonomy.controller_adapter \
+  replay kri_space_autonomy.examples.proportional_controller:controller \
+  scenarios/nominal.json --navigation-profile estimated
 ```
 
 ## Run a deterministic fault suite

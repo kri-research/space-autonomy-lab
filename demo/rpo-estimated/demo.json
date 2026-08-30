@@ -1,0 +1,1098 @@
+{
+  "commands": {
+    "build_and_open": "uv run python -m kri_space_autonomy.demo build --navigation-profile estimated --open",
+    "controller_guide": "docs/controller-adapter.md",
+    "rebuild_example": "uv run python -m kri_space_autonomy.demo build --navigation-profile estimated",
+    "try_own_controller": "uv run python -m kri_space_autonomy.demo build --navigation-profile estimated --controller my_controller:controller --output demo/my-estimated-controller"
+  },
+  "demo_fingerprint_sha256": "8dabf19bb7d40d0ad97efd3980c118d12f1755ed40e8bfb5762040b3f98c61df",
+  "evidence_boundary": "The harness example is illustrative product output, not scientific evidence. Frozen architecture results are historical synthetic-benchmark evidence and are not full GNC, formal verification, certification, operational prevalence, or flight-safety evidence.",
+  "frozen_architecture_evidence": {
+    "campaigns": [
+      {
+        "aggregate_scope": {
+          "complete": true,
+          "complete_four_arm_blocks": 8000,
+          "episode_rows": 32000,
+          "selection": "complete frozen aggregate; no historical root or episode selection"
+        },
+        "decision": "favorable",
+        "experiment_id": "experiment-002-confirmatory",
+        "freeze_id": "15eb6b3b552e130f7b983930fda10d7d1c0841943408ec8586b51619d9076c15",
+        "interpretation": "Favorable under the frozen serial gates in this direct-measurement benchmark. This does not establish the same result with navigation estimation in the loop.",
+        "label": "Experiment 002 final confirmatory",
+        "measurement_boundary": "Direct measurements in the simplified one-dimensional synthetic benchmark.",
+        "primary_gatekeeping": {
+          "H1": {
+            "endpoint": "analysis_hazard risk difference",
+            "estimate": -0.04125,
+            "passed": true,
+            "rule": "two-sided 95% upper bound below zero",
+            "stratum_estimates": {
+              "F0_nominal": 0.0,
+              "F1_primary_range_bias": -0.004,
+              "F2_primary_dropout": 0.0,
+              "F3_monitor_channel_fault": 0.0,
+              "F4_shared_cause_navigation": 0.0,
+              "F5_persistent_model_upset": -0.326,
+              "F6_actuator_degradation": 0.0,
+              "F7_combined_primary_dropout_actuator_degradation": 0.0
+            },
+            "two_sided_95_interval": [
+              -0.045,
+              -0.037625
+            ]
+          },
+          "H2": {
+            "endpoint": "sustained_success risk difference",
+            "estimate": 0.029250000000000005,
+            "margin": -0.03,
+            "passed": true,
+            "status": "tested",
+            "stratum_estimates": {
+              "F0_nominal": 0.0,
+              "F1_primary_range_bias": -0.003,
+              "F2_primary_dropout": 0.033,
+              "F3_monitor_channel_fault": -0.346,
+              "F4_shared_cause_navigation": -0.105,
+              "F5_persistent_model_upset": 0.74,
+              "F6_actuator_degradation": 0.0,
+              "F7_combined_primary_dropout_actuator_degradation": -0.085
+            },
+            "two_sided_95_interval": [
+              0.02125,
+              0.03725
+            ]
+          },
+          "contrast": "PD-D"
+        },
+        "traceability": {
+          "aggregate_result_path": "results/experiment-002-confirmatory/analysis.json",
+          "aggregate_result_sha256": "f59cebb40562e8af7c28a0ca39b56744d155a994b07c422935e0d18731f14898",
+          "checksums_path": "results/experiment-002-confirmatory/SHA256SUMS",
+          "checksums_sha256": "33db0bbc360ff88be895f096d388e740f1a43a54a60c5619d9333dbfa5dfdcc9",
+          "freeze_manifest_path": "experiments/002-confirmatory/freeze-manifest.json",
+          "freeze_manifest_sha256": "4cb63f8c25e3ef4539675cad8ed11c99b051048d0f77f74d206b0f4a4d99f0d0",
+          "run_manifest_path": "results/experiment-002-confirmatory/run-manifest.json",
+          "run_manifest_sha256": "7e9d88819b796aeeed743bf717c43b57ffcd7022689031b60463e059c7d72747"
+        }
+      },
+      {
+        "aggregate_scope": {
+          "complete": true,
+          "complete_four_arm_blocks": 5250,
+          "episode_rows": 21000,
+          "selection": "complete frozen aggregate; no historical root or episode selection"
+        },
+        "analysis_hazard_D_PD_by_stratum": [
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E0_nominal"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E1_primary_range_bias"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E2_primary_dropout"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E3_primary_stale"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E4_primary_covariance_underreporting"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E5_monitor_range_bias"
+          },
+          {
+            "D_risk": 0.0,
+            "PD_risk": 0.0,
+            "stratum_id": "E6_shared_range_bias"
+          }
+        ],
+        "decision": "inconclusive",
+        "experiment_id": "experiment-003-confirmatory",
+        "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+        "interpretation": "Inconclusive. H1 did not pass because D and PD each had zero analysis-hazard risk in every E0-E6 stratum, giving PD-D = 0 with 95% interval [0, 0]. H2 was not tested under the serial gate. Its descriptive sustained-success estimate was strongly negative overall and concentrated in E5/E6.",
+        "label": "Experiment 003 final confirmatory",
+        "measurement_boundary": "Estimator in the loop in the simplified one-dimensional synthetic benchmark.",
+        "mission_success_stress": {
+          "E5_monitor_range_bias_PD_minus_D": -0.6893333333333334,
+          "E6_shared_range_bias_PD_minus_D": -0.6333333333333333,
+          "all_stratum_estimates": {
+            "E0_nominal": 0.006666666666666667,
+            "E1_primary_range_bias": 0.010666666666666666,
+            "E2_primary_dropout": 0.004,
+            "E3_primary_stale": 0.004,
+            "E4_primary_covariance_underreporting": 0.009333333333333334,
+            "E5_monitor_range_bias": -0.6893333333333334,
+            "E6_shared_range_bias": -0.6333333333333333
+          },
+          "overall_PD_minus_D": -0.184,
+          "status": "descriptive_only_H2_gate_closed"
+        },
+        "primary_gatekeeping": {
+          "H1": {
+            "endpoint": "analysis_hazard risk difference",
+            "estimate": 0.0,
+            "passed": false,
+            "rule": "two-sided 95% upper bound below zero",
+            "stratum_estimates": {
+              "E0_nominal": 0.0,
+              "E1_primary_range_bias": 0.0,
+              "E2_primary_dropout": 0.0,
+              "E3_primary_stale": 0.0,
+              "E4_primary_covariance_underreporting": 0.0,
+              "E5_monitor_range_bias": 0.0,
+              "E6_shared_range_bias": 0.0
+            },
+            "two_sided_95_interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "H2": {
+            "endpoint": "sustained_success risk difference",
+            "estimate": -0.184,
+            "margin": -0.03,
+            "passed": null,
+            "status": "not_tested_gate_closed",
+            "stratum_estimates": {
+              "E0_nominal": 0.006666666666666667,
+              "E1_primary_range_bias": 0.010666666666666666,
+              "E2_primary_dropout": 0.004,
+              "E3_primary_stale": 0.004,
+              "E4_primary_covariance_underreporting": 0.009333333333333334,
+              "E5_monitor_range_bias": -0.6893333333333334,
+              "E6_shared_range_bias": -0.6333333333333333
+            },
+            "two_sided_95_interval": [
+              -0.19257142857142856,
+              -0.17542857142857143
+            ]
+          },
+          "contrast": "PD-D"
+        },
+        "traceability": {
+          "aggregate_result_path": "results/experiment-003-confirmatory/analysis.json",
+          "aggregate_result_sha256": "daec0cd91683c709d4a56b06846ec96c025ec097030ad292c7dc481aec576516",
+          "checksums_path": "results/experiment-003-confirmatory/SHA256SUMS",
+          "checksums_sha256": "71718402754cb1054bda05830ca383716532d477e1f3f2205bcb1143158e91be",
+          "freeze_manifest_path": "experiments/003-confirmatory/freeze-manifest.json",
+          "freeze_manifest_sha256": "aee65481ca91ee5adf4f8201e94e1f539cf4a5ae34989ee3de16362d8d1dfc18",
+          "run_manifest_path": "results/experiment-003-confirmatory/run-manifest.json",
+          "run_manifest_sha256": "fe788dd57de5d76de3a578ba72c6db3e45b0088e9a7dd162b831aa839b4f7baf"
+        }
+      }
+    ],
+    "classification": "frozen_historical_complete_aggregate_evidence",
+    "comparison_rule": "Keep the direct-measurement and estimator-in-loop boundaries separate; do not combine decisions into a single safety or architecture claim."
+  },
+  "input_fingerprint_sha256": "502708c30f852db40e0a08f2ee4fc34221cee3d00ce7308dd75cc8cd49f26aef",
+  "input_identity": {
+    "assessment_policy": {
+      "policy_id": "example-estimated-rpo-acceptance",
+      "policy_sha256": "a687128cfd053adfc85b3d889600f850d9d43f574e069f2efd85bb20382f5ada"
+    },
+    "controller": {
+      "contract_version": "1.0",
+      "controller_id": "example.proportional",
+      "controller_version": "1.0.0",
+      "plugin_module_sha256": "701285be212fd4c748559c8feb9ccd36f64794fc7d4cc9b7110bfd3095651fcc",
+      "plugin_spec": "kri_space_autonomy.examples.proportional_controller:controller"
+    },
+    "fault_suite": {
+      "suite_id": "example-estimated-rpo-faults",
+      "suite_sha256": "d2942ef8a80249e201f7c8733de3ed2d124da2457362e0e5e08e781752264882"
+    },
+    "frozen_architecture_evidence": [
+      {
+        "aggregate_result_sha256": "f59cebb40562e8af7c28a0ca39b56744d155a994b07c422935e0d18731f14898",
+        "checksums_sha256": "33db0bbc360ff88be895f096d388e740f1a43a54a60c5619d9333dbfa5dfdcc9",
+        "experiment_id": "experiment-002-confirmatory",
+        "freeze_id": "15eb6b3b552e130f7b983930fda10d7d1c0841943408ec8586b51619d9076c15",
+        "freeze_manifest_sha256": "4cb63f8c25e3ef4539675cad8ed11c99b051048d0f77f74d206b0f4a4d99f0d0",
+        "run_manifest_sha256": "7e9d88819b796aeeed743bf717c43b57ffcd7022689031b60463e059c7d72747"
+      },
+      {
+        "aggregate_result_sha256": "daec0cd91683c709d4a56b06846ec96c025ec097030ad292c7dc481aec576516",
+        "checksums_sha256": "71718402754cb1054bda05830ca383716532d477e1f3f2205bcb1143158e91be",
+        "experiment_id": "experiment-003-confirmatory",
+        "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+        "freeze_manifest_sha256": "aee65481ca91ee5adf4f8201e94e1f539cf4a5ae34989ee3de16362d8d1dfc18",
+        "run_manifest_sha256": "fe788dd57de5d76de3a578ba72c6db3e45b0088e9a7dd162b831aa839b4f7baf"
+      }
+    ],
+    "navigation": {
+      "fault_plan": {
+        "cases": [
+          {
+            "case_id": "biased-covariance-underreporting",
+            "packet_fault": {
+              "activation": {
+                "end_step": 270,
+                "start_step": 250
+              },
+              "id": "frozen-underreported-covariance",
+              "type": "covariance_underreporting"
+            }
+          },
+          {
+            "case_id": "stale-packet",
+            "packet_fault": {
+              "activation": {
+                "end_step": 265,
+                "start_step": 250
+              },
+              "id": "repeat-prior-packet",
+              "type": "stale_packet"
+            }
+          }
+        ],
+        "description": "Illustrative deterministic stale-packet and covariance-underreporting cases for the product estimated profile; not scientific evidence.",
+        "plan_id": "example-estimated-packet-faults",
+        "plan_sha256": "8708aca847ceec01c0b8d048b64efaa61cf5e1affbddee18c6df8ee3a1a476d2",
+        "schema_version": "kri-navigation-fault-plan/1.0",
+        "suite": {
+          "id": "example-estimated-rpo-faults",
+          "sha256": "d2942ef8a80249e201f7c8733de3ed2d124da2457362e0e5e08e781752264882"
+        }
+      },
+      "foundation_freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+      "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+      "profile": "estimated"
+    }
+  },
+  "limitations": [
+    "Simplified deterministic one-dimensional relative-motion environment; not a full GNC stack.",
+    "Fault cases are declared stress tests, not estimates of operational fault prevalence.",
+    "Local Python controllers run in process and should be trusted code.",
+    "A PASS means only that required cases met the checked-in policy in this harness.",
+    "Frozen Experiment 002 and 003 results have different measurement boundaries.",
+    "The estimated product profile reuses the frozen Experiment 003 estimator without retuning on a different instantaneous-actuation product plant.",
+    "Estimator health and packet diagnostics are harness outputs, while success, collision, and final state remain truth-derived evaluator outputs.",
+    "No formal verification, certification, hardware, timing, or flight-safety claim is made."
+  ],
+  "positioning": "A simplified autonomous rendezvous/proximity-operations controller test harness for repeatable faults and evidence reports.",
+  "schema_version": "kri-space-autonomy-demo/1.0",
+  "title": "Space Autonomy Lab estimated-navigation RPO controller demo",
+  "try_the_harness": {
+    "classification": "illustrative_product_example_not_scientific_evidence",
+    "report": {
+      "assessment_policy": {
+        "policy_id": "example-estimated-rpo-acceptance",
+        "policy_sha256": "a687128cfd053adfc85b3d889600f850d9d43f574e069f2efd85bb20382f5ada",
+        "schema_version": "kri-assessment-policy/1.0"
+      },
+      "cases": [
+        {
+          "assessment": "PASS",
+          "case_id": "nominal",
+          "case_result_sha256": "2b42528d9958492fd29d5675f737ded11f4170e907223e6a3c2e8e6ea6851232",
+          "case_sha256": "63e7310051947df26260fde95cdf2b3ba7a74206611e8395d8b890004922164b",
+          "command_trace_sha256": "699ad23e8eeecd68f48774e2563496120f4647d2a3026d6da3c4dae7592e0335",
+          "controller_inputs": {
+            "contract_fields": [
+              "step",
+              "time_s",
+              "range_m",
+              "relative_velocity_mps",
+              "propellant_fraction",
+              "sensor_quality"
+            ],
+            "delivered_status_counts": {
+              "degraded": 0,
+              "missing": 0,
+              "nominal": 328
+            },
+            "privileged_inputs_excluded": true
+          },
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.999,
+              "observed": 0.9993715027623375,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 328,
+            "degraded_observation_steps": 0,
+            "final_range_m": 7.883532244721641,
+            "final_speed_mps": -0.05905019256960533,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9993715027623375,
+            "steps": 328,
+            "success": true
+          },
+          "fault_sequence": [],
+          "harness_evaluator_outputs": {
+            "collision": false,
+            "final_range_m": 7.883532244721641,
+            "final_speed_mps": -0.05905019256960533,
+            "propellant_remaining": 0.9993715027623375,
+            "steps": 328,
+            "success": true
+          },
+          "navigation_diagnostics": {
+            "accepted_updates": 328,
+            "controller_observation_status_counts": {
+              "degraded": 0,
+              "missing": 0,
+              "nominal": 328
+            },
+            "estimator_health_counts": {
+              "degraded": 0,
+              "diverged": 0,
+              "valid": 328
+            },
+            "estimator_reason_counts": {
+              "covariance_not_positive_semidefinite": 0,
+              "covariance_trace_limit": 0,
+              "initial_prior": 0,
+              "innovation_condition_limit": 0,
+              "innovation_rejected": 0,
+              "invalid_packet": 0,
+              "none": 328,
+              "nonfinite_numerics": 0,
+              "prediction_only": 0,
+              "stale_or_duplicate_packet": 0,
+              "state_limit": 0
+            },
+            "final_health": "valid",
+            "final_prediction_only_age_s": 0.0,
+            "final_reason": "none",
+            "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+            "innovation_rejections": 0,
+            "invalid_packets": 0,
+            "missing_packet_steps": 0,
+            "navigation_trace_sha256": "da3ce36bf4f652ac3ed5ee0e8ae2724aafa354f9aeb4e738aea6208df6f03cc6",
+            "packet_disposition_counts": {
+              "accepted": 328,
+              "duplicate": 0,
+              "filter_diverged": 0,
+              "future_measurement": 0,
+              "innovation_rejected": 0,
+              "invalid": 0,
+              "missing": 0,
+              "too_old": 0
+            },
+            "packet_fault": null,
+            "profile": "estimated",
+            "raw_observation_status_counts": {
+              "degraded": 0,
+              "missing": 0,
+              "nominal": 328
+            }
+          },
+          "nominal_comparison": {
+            "available": false,
+            "reason": "suite does not declare exactly one fault-free nominal case"
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "range-bias",
+          "case_result_sha256": "cb8270a1ccc70d402d3e91e02a01ff0544c7f4b1666180ce2efaa576eb9ad104",
+          "case_sha256": "af78d72cdb8cfffeababc43cb6c4552513588ed5be8cc76fb83b82ce93e39ef4",
+          "command_trace_sha256": "71c34b006169df82f0b99b22b35ce1a118e02171ee470fd0e40cac7282ef4591",
+          "controller_inputs": {
+            "contract_fields": [
+              "step",
+              "time_s",
+              "range_m",
+              "relative_velocity_mps",
+              "propellant_fraction",
+              "sensor_quality"
+            ],
+            "delivered_status_counts": {
+              "degraded": 51,
+              "missing": 0,
+              "nominal": 277
+            },
+            "privileged_inputs_excluded": true
+          },
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9993735612693111,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 328,
+            "degraded_observation_steps": 51,
+            "final_range_m": 7.9042054823361765,
+            "final_speed_mps": -0.059732789598984495,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9993735612693111,
+            "steps": 328,
+            "success": true
+          },
+          "fault_sequence": [
+            "biased-range"
+          ],
+          "harness_evaluator_outputs": {
+            "collision": false,
+            "final_range_m": 7.9042054823361765,
+            "final_speed_mps": -0.059732789598984495,
+            "propellant_remaining": 0.9993735612693111,
+            "steps": 328,
+            "success": true
+          },
+          "navigation_diagnostics": {
+            "accepted_updates": 277,
+            "controller_observation_status_counts": {
+              "degraded": 51,
+              "missing": 0,
+              "nominal": 277
+            },
+            "estimator_health_counts": {
+              "degraded": 51,
+              "diverged": 0,
+              "valid": 277
+            },
+            "estimator_reason_counts": {
+              "covariance_not_positive_semidefinite": 0,
+              "covariance_trace_limit": 0,
+              "initial_prior": 0,
+              "innovation_condition_limit": 0,
+              "innovation_rejected": 51,
+              "invalid_packet": 0,
+              "none": 277,
+              "nonfinite_numerics": 0,
+              "prediction_only": 0,
+              "stale_or_duplicate_packet": 0,
+              "state_limit": 0
+            },
+            "final_health": "valid",
+            "final_prediction_only_age_s": 0.0,
+            "final_reason": "none",
+            "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+            "innovation_rejections": 51,
+            "invalid_packets": 0,
+            "missing_packet_steps": 0,
+            "navigation_trace_sha256": "e70d39a91e4dd38bcf72e64bfee3f9ff9077ecf05450bc0e666717971cfe0c30",
+            "packet_disposition_counts": {
+              "accepted": 277,
+              "duplicate": 0,
+              "filter_diverged": 0,
+              "future_measurement": 0,
+              "innovation_rejected": 51,
+              "invalid": 0,
+              "missing": 0,
+              "too_old": 0
+            },
+            "packet_fault": null,
+            "profile": "estimated",
+            "raw_observation_status_counts": {
+              "degraded": 51,
+              "missing": 0,
+              "nominal": 277
+            }
+          },
+          "nominal_comparison": {
+            "available": false,
+            "reason": "suite does not declare exactly one fault-free nominal case"
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "navigation-dropout",
+          "case_result_sha256": "7c38ad5c487dc886e7c1fc18028984bcc5497ed4db71cd5f6bb0334f58ebcefd",
+          "case_sha256": "7313c783a095ce7aa459d61b7fb0fb365c228453f23503570505b4bf8406abf8",
+          "command_trace_sha256": "212b4cb3782d6063745ac084de96a5485b2aa5e8bd70daeeeafcb9a878dd06b8",
+          "controller_inputs": {
+            "contract_fields": [
+              "step",
+              "time_s",
+              "range_m",
+              "relative_velocity_mps",
+              "propellant_fraction",
+              "sensor_quality"
+            ],
+            "delivered_status_counts": {
+              "degraded": 14,
+              "missing": 0,
+              "nominal": 314
+            },
+            "privileged_inputs_excluded": true
+          },
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.999371594628533,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 328,
+            "degraded_observation_steps": 14,
+            "final_range_m": 7.881739340321809,
+            "final_speed_mps": -0.05898886734005716,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.999371594628533,
+            "steps": 328,
+            "success": true
+          },
+          "fault_sequence": [
+            "missing-navigation"
+          ],
+          "harness_evaluator_outputs": {
+            "collision": false,
+            "final_range_m": 7.881739340321809,
+            "final_speed_mps": -0.05898886734005716,
+            "propellant_remaining": 0.999371594628533,
+            "steps": 328,
+            "success": true
+          },
+          "navigation_diagnostics": {
+            "accepted_updates": 312,
+            "controller_observation_status_counts": {
+              "degraded": 14,
+              "missing": 0,
+              "nominal": 314
+            },
+            "estimator_health_counts": {
+              "degraded": 14,
+              "diverged": 0,
+              "valid": 314
+            },
+            "estimator_reason_counts": {
+              "covariance_not_positive_semidefinite": 0,
+              "covariance_trace_limit": 0,
+              "initial_prior": 0,
+              "innovation_condition_limit": 0,
+              "innovation_rejected": 0,
+              "invalid_packet": 0,
+              "none": 314,
+              "nonfinite_numerics": 0,
+              "prediction_only": 14,
+              "stale_or_duplicate_packet": 0,
+              "state_limit": 0
+            },
+            "final_health": "valid",
+            "final_prediction_only_age_s": 0.0,
+            "final_reason": "none",
+            "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+            "innovation_rejections": 0,
+            "invalid_packets": 0,
+            "missing_packet_steps": 16,
+            "navigation_trace_sha256": "c437560ca2973b26cc1ea98d339f016837828d0ead514c2cb7d180531bb7d3c6",
+            "packet_disposition_counts": {
+              "accepted": 312,
+              "duplicate": 0,
+              "filter_diverged": 0,
+              "future_measurement": 0,
+              "innovation_rejected": 0,
+              "invalid": 0,
+              "missing": 16,
+              "too_old": 0
+            },
+            "packet_fault": null,
+            "profile": "estimated",
+            "raw_observation_status_counts": {
+              "degraded": 0,
+              "missing": 16,
+              "nominal": 312
+            }
+          },
+          "nominal_comparison": {
+            "available": false,
+            "reason": "suite does not declare exactly one fault-free nominal case"
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "stale-packet",
+          "case_result_sha256": "2d8e446cb79a2a9748761034e7d76d0247b89c7b24620cb5624531ea32ccbda9",
+          "case_sha256": "19566f1c75f4a861b65846d15485d24836c0043e041ea55abade4f7ceb7aadbe",
+          "command_trace_sha256": "e9f8393db0839e20dee319847c34cdebe99fbbbaeac2cd8f5f72491b1092981d",
+          "controller_inputs": {
+            "contract_fields": [
+              "step",
+              "time_s",
+              "range_m",
+              "relative_velocity_mps",
+              "propellant_fraction",
+              "sensor_quality"
+            ],
+            "delivered_status_counts": {
+              "degraded": 16,
+              "missing": 0,
+              "nominal": 312
+            },
+            "privileged_inputs_excluded": true
+          },
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9993714906465477,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 328,
+            "degraded_observation_steps": 16,
+            "final_range_m": 7.883508465385024,
+            "final_speed_mps": -0.058864958524749066,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9993714906465477,
+            "steps": 328,
+            "success": true
+          },
+          "fault_sequence": [],
+          "harness_evaluator_outputs": {
+            "collision": false,
+            "final_range_m": 7.883508465385024,
+            "final_speed_mps": -0.058864958524749066,
+            "propellant_remaining": 0.9993714906465477,
+            "steps": 328,
+            "success": true
+          },
+          "navigation_diagnostics": {
+            "accepted_updates": 312,
+            "controller_observation_status_counts": {
+              "degraded": 16,
+              "missing": 0,
+              "nominal": 312
+            },
+            "estimator_health_counts": {
+              "degraded": 16,
+              "diverged": 0,
+              "valid": 312
+            },
+            "estimator_reason_counts": {
+              "covariance_not_positive_semidefinite": 0,
+              "covariance_trace_limit": 0,
+              "initial_prior": 0,
+              "innovation_condition_limit": 0,
+              "innovation_rejected": 0,
+              "invalid_packet": 0,
+              "none": 312,
+              "nonfinite_numerics": 0,
+              "prediction_only": 0,
+              "stale_or_duplicate_packet": 16,
+              "state_limit": 0
+            },
+            "final_health": "valid",
+            "final_prediction_only_age_s": 0.0,
+            "final_reason": "none",
+            "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+            "innovation_rejections": 0,
+            "invalid_packets": 16,
+            "missing_packet_steps": 0,
+            "navigation_trace_sha256": "a55c829e70555c80609cc322b04b6914133b30cc1bcee234cab1b224644c136b",
+            "packet_disposition_counts": {
+              "accepted": 312,
+              "duplicate": 16,
+              "filter_diverged": 0,
+              "future_measurement": 0,
+              "innovation_rejected": 0,
+              "invalid": 0,
+              "missing": 0,
+              "too_old": 0
+            },
+            "packet_fault": {
+              "activation": {
+                "end_step": 265,
+                "start_step": 250
+              },
+              "id": "repeat-prior-packet",
+              "type": "stale_packet"
+            },
+            "profile": "estimated",
+            "raw_observation_status_counts": {
+              "degraded": 0,
+              "missing": 0,
+              "nominal": 328
+            }
+          },
+          "nominal_comparison": {
+            "available": false,
+            "reason": "suite does not declare exactly one fault-free nominal case"
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        },
+        {
+          "assessment": "PASS",
+          "case_id": "biased-covariance-underreporting",
+          "case_result_sha256": "ddfbe751f4b3049efafd18306081eba7919be84339bc32d9ec2f2326ce45f9c7",
+          "case_sha256": "836d1abd7c644ce5f43103c91a5058e1b9c76ab94b0f6db75437cfc65cc5a4c0",
+          "command_trace_sha256": "2df9f0d3e167f20a14efc909837256913df3db74904c1b157b0374dd7c00734e",
+          "controller_inputs": {
+            "contract_fields": [
+              "step",
+              "time_s",
+              "range_m",
+              "relative_velocity_mps",
+              "propellant_fraction",
+              "sensor_quality"
+            ],
+            "delivered_status_counts": {
+              "degraded": 21,
+              "missing": 0,
+              "nominal": 307
+            },
+            "privileged_inputs_excluded": true
+          },
+          "criteria": [
+            {
+              "criterion_id": "case_success",
+              "enabled": true,
+              "expected": true,
+              "observed": true,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "zero_collision",
+              "enabled": true,
+              "expected": false,
+              "observed": false,
+              "operator": "equals",
+              "passed": true
+            },
+            {
+              "criterion_id": "minimum_propellant_remaining",
+              "enabled": true,
+              "expected": 0.995,
+              "observed": 0.9993714492738308,
+              "operator": "greater_than_or_equal",
+              "passed": true
+            }
+          ],
+          "criteria_passed": true,
+          "evidence": {
+            "actuator_modified_steps": 0,
+            "collision": false,
+            "commands": 328,
+            "degraded_observation_steps": 21,
+            "final_range_m": 7.881745662101057,
+            "final_speed_mps": -0.05891482591829371,
+            "missing_observation_steps": 0,
+            "propellant_remaining": 0.9993714492738308,
+            "steps": 328,
+            "success": true
+          },
+          "fault_sequence": [
+            "biased-range"
+          ],
+          "harness_evaluator_outputs": {
+            "collision": false,
+            "final_range_m": 7.881745662101057,
+            "final_speed_mps": -0.05891482591829371,
+            "propellant_remaining": 0.9993714492738308,
+            "steps": 328,
+            "success": true
+          },
+          "navigation_diagnostics": {
+            "accepted_updates": 307,
+            "controller_observation_status_counts": {
+              "degraded": 21,
+              "missing": 0,
+              "nominal": 307
+            },
+            "estimator_health_counts": {
+              "degraded": 21,
+              "diverged": 0,
+              "valid": 307
+            },
+            "estimator_reason_counts": {
+              "covariance_not_positive_semidefinite": 0,
+              "covariance_trace_limit": 0,
+              "initial_prior": 0,
+              "innovation_condition_limit": 0,
+              "innovation_rejected": 21,
+              "invalid_packet": 0,
+              "none": 307,
+              "nonfinite_numerics": 0,
+              "prediction_only": 0,
+              "stale_or_duplicate_packet": 0,
+              "state_limit": 0
+            },
+            "final_health": "valid",
+            "final_prediction_only_age_s": 0.0,
+            "final_reason": "none",
+            "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+            "innovation_rejections": 21,
+            "invalid_packets": 0,
+            "missing_packet_steps": 0,
+            "navigation_trace_sha256": "b29b492459c56f023a95e51129b8dde9078022c2e4d398eb5c8cf96bec159799",
+            "packet_disposition_counts": {
+              "accepted": 307,
+              "duplicate": 0,
+              "filter_diverged": 0,
+              "future_measurement": 0,
+              "innovation_rejected": 21,
+              "invalid": 0,
+              "missing": 0,
+              "too_old": 0
+            },
+            "packet_fault": {
+              "activation": {
+                "end_step": 270,
+                "start_step": 250
+              },
+              "id": "frozen-underreported-covariance",
+              "type": "covariance_underreporting"
+            },
+            "profile": "estimated",
+            "raw_observation_status_counts": {
+              "degraded": 21,
+              "missing": 0,
+              "nominal": 307
+            }
+          },
+          "nominal_comparison": {
+            "available": false,
+            "reason": "suite does not declare exactly one fault-free nominal case"
+          },
+          "reason": "all enabled declared criteria passed",
+          "requirement": "required"
+        }
+      ],
+      "controller": {
+        "contract_version": "1.0",
+        "controller_id": "example.proportional",
+        "controller_version": "1.0.0",
+        "deterministic": true,
+        "plugin_module_sha256": "701285be212fd4c748559c8feb9ccd36f64794fc7d4cc9b7110bfd3095651fcc",
+        "plugin_spec": "kri_space_autonomy.examples.proportional_controller:controller"
+      },
+      "evidence_boundary": "Evidence from a simplified one-dimensional RPO test harness; not a full GNC assessment, formal verification, certification, or a flight-safety claim.",
+      "failures": [],
+      "fault_suite": {
+        "result_schema_version": "kri-fault-suite-result/1.1",
+        "result_sha256": "4bf37d084737e715e5160cbd2dbbef45755463194fb274a6986a9f266b891601",
+        "runtime_profile": "simplified-rpo-v1",
+        "schema_version": "kri-fault-suite/1.0",
+        "suite_id": "example-estimated-rpo-faults",
+        "suite_sha256": "d2942ef8a80249e201f7c8733de3ed2d124da2457362e0e5e08e781752264882"
+      },
+      "information_boundaries": {
+        "controller_inputs": "Only ControllerObservation step/time, estimated range/velocity, propellant telemetry, and deterministic health-derived sensor_quality.",
+        "harness_evaluator_outputs": "Truth-derived success, collision, final state, and propellant outputs are used only for harness scoring and are never controller inputs.",
+        "navigation_harness_diagnostics": "Estimator health/reason and packet dispositions are report-only diagnostics.",
+        "offline_truth_error_and_nees_reported": false
+      },
+      "informational_findings": [],
+      "limitations": [
+        "Evidence comes from the simplified one-dimensional RPO test harness.",
+        "The harness does not represent a full guidance, navigation, and control stack or operational fault prevalence.",
+        "The assessment is not formal verification, certification, or a flight-safety claim.",
+        "No runtime-assurance intervention counts or controller-internal/model-corruption evidence are reported for external controllers.",
+        "Nominal comparisons are unavailable because the suite does not contain exactly one fault-free case.",
+        "Estimated-profile runs are illustrative product engineering stress tests, not new Experiment 003 evidence or hypothesis tests.",
+        "The frozen Experiment 003 estimator retains its first-order actuator and process model while the product simplified-rpo-v1 plant applies acceleration instantaneously; this explicit model boundary was not retuned away.",
+        "Estimator covariance, health, and packet diagnostics are harness diagnostics; the external controller receives only the documented ControllerObservation."
+      ],
+      "navigation": {
+        "classification": "illustrative_product_stress_run_not_scientific_evidence",
+        "controller_input_contract": {
+          "excludes": [
+            "simulator truth",
+            "realized process disturbance",
+            "fault labels and schedules",
+            "evaluator outputs",
+            "covariance and NEES"
+          ],
+          "fields": [
+            "step",
+            "time_s",
+            "range_m",
+            "relative_velocity_mps",
+            "propellant_fraction",
+            "sensor_quality"
+          ]
+        },
+        "fault_plan": {
+          "cases": [
+            {
+              "case_id": "biased-covariance-underreporting",
+              "packet_fault": {
+                "activation": {
+                  "end_step": 270,
+                  "start_step": 250
+                },
+                "id": "frozen-underreported-covariance",
+                "type": "covariance_underreporting"
+              }
+            },
+            {
+              "case_id": "stale-packet",
+              "packet_fault": {
+                "activation": {
+                  "end_step": 265,
+                  "start_step": 250
+                },
+                "id": "repeat-prior-packet",
+                "type": "stale_packet"
+              }
+            }
+          ],
+          "description": "Illustrative deterministic stale-packet and covariance-underreporting cases for the product estimated profile; not scientific evidence.",
+          "plan_id": "example-estimated-packet-faults",
+          "plan_sha256": "8708aca847ceec01c0b8d048b64efaa61cf5e1affbddee18c6df8ee3a1a476d2",
+          "schema_version": "kri-navigation-fault-plan/1.0",
+          "suite": {
+            "id": "example-estimated-rpo-faults",
+            "sha256": "d2942ef8a80249e201f7c8733de3ed2d124da2457362e0e5e08e781752264882"
+          }
+        },
+        "harness_evaluator_outputs": [
+          "success",
+          "collision",
+          "final_range_m",
+          "final_speed_mps",
+          "propellant_remaining",
+          "steps"
+        ],
+        "identity": {
+          "bridge_model_boundary": "Frozen Experiment 003 first-order-actuator/process model applied without retuning to the product harness instantaneous-actuation plant; requested controller commands feed prediction and product observations feed measurement updates.",
+          "bridge_runtime_profile": "simplified-rpo-v1",
+          "estimator_class": "kri_space_autonomy.experiment_003.estimator.NavigationFilter",
+          "foundation_freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+          "freeze_manifest_sha256": "683a15f1b88a428607fb564b454ea519122607821eafe2206f388a7fd0ce6cba",
+          "frozen_file_sha256": {
+            "experiments/002/config.json": "05f65a0fdf2695b00df076bb3b23b38f87d9623da10c9fb17f4616c61cd2f0fe",
+            "experiments/003/config.json": "e83f59a5c3c86defab150285b1dc30d170b08f82c8f949a348944efe5963b4c9",
+            "src/kri_space_autonomy/experiment_002/config.py": "e8037c84ff45885f1010761a59fed185e8796f505aed68db6cccd59453f536d9",
+            "src/kri_space_autonomy/experiment_003/config.py": "01f69c04da4e2959c1c5397c737e3ae49f905a3e5ed81433f88860c009689503",
+            "src/kri_space_autonomy/experiment_003/estimator.py": "3502d00eef9a4a34417775ca1e20fc609a2726797c7a30ddb564d5fc58a3d481",
+            "src/kri_space_autonomy/experiment_003/interfaces.py": "06a0af5e1538dd139908ecdbd26d7efaade58e3b862dfba6e136a3a283320b10",
+            "src/kri_space_autonomy/experiment_003/measurements.py": "57573a90e559b9a74e4dd02fb7b2e783ee5d245eaddf59b1e204f1cff404d386",
+            "src/kri_space_autonomy/experiment_003/model.py": "073ae8eff0b14bee4d9bcc99f14c6a526521925549ffe8ac2dc44341b1420a48"
+          },
+          "identity_sha256": "c3ac7126041916d6d6d334dbec14513757c90624bb2e6701f778084c400af209",
+          "measurement_factory": "kri_space_autonomy.experiment_003.measurements.navigation_packet",
+          "profile": "estimated",
+          "schema_version": "kri-navigation-profile/1.0"
+        },
+        "profile": "estimated"
+      },
+      "overall": {
+        "decision": "PASS",
+        "failed_required_case_count": 0,
+        "incomplete_case_count": 0,
+        "informational_case_count": 0,
+        "passed_required_case_count": 5,
+        "required_case_count": 5
+      },
+      "report_fingerprint_sha256": "e7c30e80b2811cf85be7a6df8fc3f62d80e6a1913f4443d3f3082bfcb189f464",
+      "schema_version": "kri-assurance-report/1.1"
+    }
+  },
+  "workflow": [
+    "bring an importable deterministic controller",
+    "validate the public observation/command contract",
+    "apply the checked-in illustrative navigation fault examples",
+    "map frozen-estimator state and health into the public observation",
+    "assess the declared policy and emit stable product diagnostics"
+  ]
+}

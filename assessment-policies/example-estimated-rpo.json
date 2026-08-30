@@ -1,0 +1,24 @@
+{
+  "schema_version": "kri-assessment-policy/1.0",
+  "policy_id": "example-estimated-rpo-acceptance",
+  "description": "Illustrative product-harness criteria for the checked-in estimated-navigation stress examples; not a scientific or flight-safety claim.",
+  "suite": {
+    "id": "example-estimated-rpo-faults",
+    "sha256": "d2942ef8a80249e201f7c8733de3ed2d124da2457362e0e5e08e781752264882"
+  },
+  "default_case_requirement": "required",
+  "criteria": {
+    "require_success": true,
+    "require_zero_collision": true,
+    "minimum_propellant_remaining": {"value": 0.995, "unit": "ratio"}
+  },
+  "case_overrides": [
+    {
+      "case_id": "nominal",
+      "requirement": "required",
+      "criteria": {
+        "minimum_propellant_remaining": {"value": 0.999, "unit": "ratio"}
+      }
+    }
+  ]
+}
