@@ -52,6 +52,29 @@ The research environment is locked to the Python patch and package versions in
 uv sync --frozen --extra dev
 ```
 
+## Public RPO demo — start here
+
+Build the checked-in deterministic controller example, run the declared fault suite and assessment
+policy through the existing product APIs, and open a standalone local page:
+
+```bash
+uv run python -m kri_space_autonomy.demo build --open
+```
+
+The shareable bundle is written to `demo/rpo-benchmark/` as stable JSON, concise Markdown, and
+self-contained HTML. It has two deliberately separate layers:
+
+1. **Try the harness:** an illustrative product run showing controller → deterministic faults →
+   criteria report. It is not scientific evidence.
+2. **Frozen architecture evidence:** a traceable summary of complete final aggregate results. The
+   direct-measurement Experiment 002 campaign was favorable under its frozen gates. The
+   estimator-in-loop Experiment 003 campaign was inconclusive: H1 was exactly zero with 95%
+   interval `[0, 0]`, so H2 was not tested; descriptive mission-success degradation was concentrated
+   in E5/E6.
+
+See the [public demo guide](docs/public-rpo-demo.md). This remains a simplified one-dimensional RPO
+controller test harness—not full GNC, formal verification, certification, or flight-safety evidence.
+
 ## Bring your own controller
 
 External Python controllers can be loaded by import path without changing simulator or historical
@@ -135,8 +158,9 @@ formal verification or reachability analysis.
 src/kri_space_autonomy/   core environment, policies, safety, faults and evidence
 scenarios/                reproducible experiment definitions
 tests/                    regression and safety-property tests
-docs/                     KRI-STD-001 mapping and research roadmap
-results/                  checked-in baseline benchmark results
+docs/                     KRI-STD-001 mapping, product guides and research roadmap
+demo/rpo-benchmark/       deterministic public JSON/Markdown/HTML bundle
+results/                  checked-in benchmark and frozen campaign results
 ```
 
 ## Research direction
@@ -147,7 +171,9 @@ online adaptation and continual learning under enforced operational constraints.
 
 See [Experiment 001](docs/experiment-001.md), the
 [Experiment 002 design-validation pilot](docs/experiment-002.md), the
-[Experiment 002b corrective validation amendment](docs/experiment-002b.md), and
+[Experiment 002 final confirmatory campaign](docs/experiment-002-confirmatory.md), the
+[Experiment 003 estimator-in-loop programme](docs/experiment-003.md), the
+[Experiment 003 final confirmatory campaign](docs/experiment-003-confirmatory.md), and
 [the research roadmap](docs/research-roadmap.md).
 
 ## Citation

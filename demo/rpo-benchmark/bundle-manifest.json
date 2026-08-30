@@ -1,0 +1,22 @@
+{
+  "demo_fingerprint_sha256": "04d23ce0d2a05122cb87ab2bbce65c74b76397b01e0def24bfa6f3d641cc582d",
+  "files": [
+    {
+      "bytes": 25126,
+      "path": "demo.json",
+      "sha256": "50b297d504b9f20332d8a62e05e307b9a214155a3eeb028b66a999b492476b75"
+    },
+    {
+      "bytes": 5980,
+      "path": "demo.md",
+      "sha256": "3dbd80cc4410010244057c31bf5d0d5f247dadb0bbb2bc5ff9f9a66126567425"
+    },
+    {
+      "bytes": 13004,
+      "path": "index.html",
+      "sha256": "007caff90307cd9f41a7280a70cee641e404dbfee11a2a8cfd049c4b19a1a07b"
+    }
+  ],
+  "input_fingerprint_sha256": "1c9fbda6409baf7db49b57f5633b76d5ae2c92af53cfe67a44e06968edb56e9b",
+  "schema_version": "kri-space-autonomy-demo-bundle/1.0"
+}
