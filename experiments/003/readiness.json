@@ -1,0 +1,10 @@
+{
+  "freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+  "next_command": "uv run python -m kri_space_autonomy.experiment_003.workflow materialize-pilot-seeds",
+  "outcome_campaign_executed": false,
+  "outcome_seeds_materialized": false,
+  "readiness_id": "5751c8ba22178f2ada883510ca250b44c01cccfe1d52426e817191b96278b73e",
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "scope": "separate write-once Experiment 003 design-validation pilot execution",
+  "status": "READY"
+}

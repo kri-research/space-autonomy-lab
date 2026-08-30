@@ -1,0 +1,46 @@
+{
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 3003,
+  "derivation": "SeedSequence([master, partition, stratum, replicate, stream])",
+  "pilot_partition": {
+    "name": "experiment_003_design_validation_pilot_reserved",
+    "code": 31,
+    "status": "reserved_not_materialized_or_executed",
+    "roots_per_stratum": 64,
+    "expected_root_rows": 448,
+    "expected_episode_rows": 1792,
+    "replay_roots_per_stratum": 8
+  },
+  "confirmatory_partition": {
+    "name": "experiment_003_confirmatory_reserved",
+    "code": 32,
+    "status": "reserved_not_materialized_or_executed",
+    "candidate_roots_per_stratum": [250, 500, 750, 1000, 1500]
+  },
+  "test_fixture_partition": {
+    "name": "experiment_003_non_outcome_test_fixtures",
+    "code": 931
+  },
+  "stratum_codes": {
+    "E0_nominal": 1,
+    "E1_primary_range_bias": 2,
+    "E2_primary_dropout": 3,
+    "E3_primary_stale": 4,
+    "E4_primary_covariance_underreporting": 5,
+    "E5_monitor_range_bias": 6,
+    "E6_shared_range_bias": 7
+  },
+  "stream_codes": {
+    "initial_state": 101,
+    "process_disturbance": 102,
+    "primary_measurement": 103,
+    "monitor_measurement": 104,
+    "fault_parameters": 105,
+    "arm_run_order": 106
+  },
+  "arms": ["R", "D", "PS", "PD"],
+  "replacement_or_extension_allowed": false,
+  "generator_available_at_freeze": true,
+  "generator_invoked": false
+}
