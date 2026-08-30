@@ -1,0 +1,120 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 4ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest",
+      "id": "pytest",
+      "passed": true,
+      "returncode": 0,
+      "summary": "73 passed in 18.07s"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "legacy_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "read-only seed materialization contract validation",
+      "id": "seed_contract",
+      "observed": {
+        "contract_sha256": "716ef9f44828901ff38acc763bc7a85b2fcacb1758bab2a2b5813578143ba183",
+        "errors_preview": [],
+        "expected_episode_rows": 32000,
+        "expected_root_rows": 8000,
+        "partition_code": 16,
+        "passed": true,
+        "status_at_freeze": "reserved_not_materialized_or_executed"
+      },
+      "passed": true
+    },
+    {
+      "command": "historical freeze, checksum, numerical, and power verification",
+      "id": "historical_integrity",
+      "observed": {
+        "errors_preview": [],
+        "experiment_002c_numerical_decision": "pass",
+        "experiment_002d_decision": "resolved_freeze_confirmatory_design",
+        "freeze_ids": {
+          "002": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+          "002b": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+          "002c": "8157fefc06ea1aec4121b475d0ffa068576c8f98807406205c8f47f2120e479a",
+          "002d": "0fc96ee320d25c2cec3c37ba9aa87467ca4a9ee62a138bd0bed37f3ad7dc053b"
+        },
+        "original_design_sha256": "ffd1dba3195edd583797181702125cff4a81456502dba5c2a652ce1aaa75b590",
+        "original_design_source_verified": true,
+        "passed": true,
+        "protected_paths_unchanged": true,
+        "recommended_confirmatory_episodes": 32000,
+        "recommended_confirmatory_seeds_per_stratum": 1000
+      },
+      "passed": true
+    },
+    {
+      "command": "read-only partition reservation and output-absence verification",
+      "id": "reservation_unmaterialized",
+      "observed": {
+        "confirmatory_result_directory_exists": false,
+        "confirmatory_seed_directory_exists": false,
+        "errors_preview": [],
+        "partition": "future_confirmatory_reserved",
+        "partition_code": 16,
+        "passed": true,
+        "reservation_sha256": "b1dc4ad9e0280820c8efe35521df3d60c01043581ef196d9e41b4c639d7d15da",
+        "status": "reserved_not_materialized_or_executed"
+      },
+      "passed": true
+    },
+    {
+      "command": "bounded repository publication/privacy scan",
+      "id": "publication_privacy_scan",
+      "observed": {
+        "files_scanned": 178,
+        "matches": 0,
+        "matches_preview": [],
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "outcomes_opened": false,
+  "passed": true,
+  "phase": "validate",
+  "phase_sequence": 1,
+  "planned_blocks": 8000,
+  "planned_episodes": 32000,
+  "production_command_period_s": 1.0,
+  "production_horizon_s": 600.0,
+  "reserved_partition_materialized": false,
+  "schema_version": "experiment-002-confirmatory-1.0",
+  "study_instance_id": "0d39bec5-c2ca-4945-9539-75c99d5a81a4",
+  "validated_at_utc": "2026-08-30T01:01:24.401672+00:00"
+}

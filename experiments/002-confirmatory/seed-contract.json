@@ -1,0 +1,38 @@
+{
+  "schema_version": "experiment-002-confirmatory-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 2002,
+  "partition": "future_confirmatory_reserved",
+  "partition_code": 16,
+  "status_at_freeze": "reserved_not_materialized_or_executed",
+  "derivation": "SeedSequence([master, partition, stratum, replicate, stream])",
+  "stream_names": [
+    "initial_state",
+    "process_disturbance",
+    "primary_sensor",
+    "monitor_sensor",
+    "fault_parameters",
+    "arm_run_order"
+  ],
+  "strata": [
+    {"id": "F0_nominal", "code": 1, "roots": 1000, "weight": 0.125},
+    {"id": "F1_primary_range_bias", "code": 2, "roots": 1000, "weight": 0.125},
+    {"id": "F2_primary_dropout", "code": 3, "roots": 1000, "weight": 0.125},
+    {"id": "F3_monitor_channel_fault", "code": 4, "roots": 1000, "weight": 0.125, "subtype_balance": {"range_bias": 500, "dropout": 500}},
+    {"id": "F4_shared_cause_navigation", "code": 5, "roots": 1000, "weight": 0.125, "subtype_balance": {"range_bias": 500, "dropout": 500}},
+    {"id": "F5_persistent_model_upset", "code": 6, "roots": 1000, "weight": 0.125},
+    {"id": "F6_actuator_degradation", "code": 7, "roots": 1000, "weight": 0.125},
+    {"id": "F7_combined_primary_dropout_actuator_degradation", "code": 8, "roots": 1000, "weight": 0.125}
+  ],
+  "arms": ["R", "D", "PS", "PD"],
+  "expected_root_rows": 8000,
+  "expected_episode_rows": 32000,
+  "materialization_prerequisite": "The final freeze self-hash, every frozen input hash, historical integrity, and reservation metadata must verify in the materialization command before any partition-16 generator is invoked.",
+  "materialization_outputs": [
+    "experiments/002-confirmatory/seeds/confirmatory.jsonl",
+    "experiments/002-confirmatory/seeds/replay-subset.json",
+    "experiments/002-confirmatory/seeds/index.json"
+  ],
+  "replacement_or_extension_allowed": false,
+  "outcome_dependent_materialization_allowed": false
+}
