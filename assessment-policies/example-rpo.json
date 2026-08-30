@@ -1,0 +1,28 @@
+{
+  "schema_version": "kri-assessment-policy/1.0",
+  "policy_id": "example-rpo-acceptance",
+  "description": "Example user-declared acceptance criteria for the checked-in simplified RPO fault suite.",
+  "suite": {
+    "id": "example-rpo-faults",
+    "sha256": "74c97631f3003431403b060c99076258c68bbf895fff9655fa27f4af72ee0408"
+  },
+  "default_case_requirement": "required",
+  "criteria": {
+    "require_success": true,
+    "require_zero_collision": true,
+    "minimum_propellant_remaining": {"value": 0.995, "unit": "ratio"}
+  },
+  "case_overrides": [
+    {
+      "case_id": "nominal",
+      "requirement": "required",
+      "criteria": {
+        "minimum_propellant_remaining": {"value": 0.999, "unit": "ratio"}
+      }
+    },
+    {
+      "case_id": "dropout-plus-degradation",
+      "requirement": "informational"
+    }
+  ]
+}
