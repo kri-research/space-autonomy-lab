@@ -22,4 +22,18 @@ jobs:
       - run: uv run ruff check .
       - name: Materialize frozen Experiment 002 design source
         run: gzip -dc docs/experiment-002-research-plan.md.gz > ../experiment-002-research-plan.md
-      - run: uv run pytest
+      - name: Run phase-appropriate tests
+        shell: bash
+        run: |
+          if [[ -d experiments/002-confirmatory/seeds && -d results/experiment-002-confirmatory ]]; then
+            # These two tests are pre-materialization guards and are intentionally
+            # false once the frozen confirmatory partition has been executed.
+            uv run pytest \
+              --deselect=tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots \
+              --deselect=tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized
+            make confirmatory-verify-freeze
+            make confirmatory-verify-results
+            make confirmatory-scan
+          else
+            uv run pytest
+          fi

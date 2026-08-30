@@ -1,0 +1,15 @@
+{
+  "blocks": 8000,
+  "campaign_executions": 1,
+  "elapsed_wall_s": 818.9721251248848,
+  "episodes": 32000,
+  "episodes_sha256": "1d4c343d035af0fa9956cc72220ae55076c75aefc5d2d5c50ac5ab80ff4335a1",
+  "executed_at_utc": "2026-08-30T09:23:28.920155+00:00",
+  "freeze_id": "15eb6b3b552e130f7b983930fda10d7d1c0841943408ec8586b51619d9076c15",
+  "phase": "execute",
+  "phase_sequence": 4,
+  "previous_phase_artifact": "experiments/002-confirmatory/freeze-manifest.json",
+  "previous_phase_sha256": "4cb63f8c25e3ef4539675cad8ed11c99b051048d0f77f74d206b0f4a4d99f0d0",
+  "schema_version": "experiment-002-confirmatory-1.0",
+  "study_instance_id": "0d39bec5-c2ca-4945-9539-75c99d5a81a4"
+}
