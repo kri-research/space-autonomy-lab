@@ -63,6 +63,25 @@ uv run python -m kri_space_autonomy.controller_adapter \
   validate kri_space_autonomy.examples.proportional_controller:controller
 ```
 
+## Run a deterministic fault suite
+
+The product-facing [fault-suite facade](docs/fault-suite.md) applies repeatable observation and
+actuator faults to an external controller without editing simulator or historical experiment code.
+The checked-in example covers nominal, observed-range bias, navigation dropout, actuator
+effectiveness, and a composed case.
+
+```bash
+uv run python -m kri_space_autonomy.fault_suite \
+  validate fault-suites/example-rpo.json
+
+uv run python -m kri_space_autonomy.fault_suite \
+  run-suite kri_space_autonomy.examples.proportional_controller:controller \
+  fault-suites/example-rpo.json
+```
+
+This is a simplified RPO controller test harness, not a full GNC stack, flight-safety/certification
+system, or assurance-report product.
+
 ## Run an experiment
 
 ```bash
