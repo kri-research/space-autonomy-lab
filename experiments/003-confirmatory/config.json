@@ -1,0 +1,30 @@
+{
+  "schema_version": "experiment-003-confirmatory-1.0",
+  "foundation_schema_version": "experiment-003-navigation-estimation-1.0",
+  "foundation_freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+  "master_seed": 3003,
+  "partition_name": "experiment_003_confirmatory_reserved",
+  "partition_code": 32,
+  "roots_per_stratum": 750,
+  "stratum_count": 7,
+  "stratum_weight": 0.14285714285714285,
+  "arms": ["R", "D", "PS", "PD"],
+  "bootstrap_replicates": 50000,
+  "bootstrap_seed": 300318,
+  "secondary_randomization_replicates": 200000,
+  "secondary_randomization_seed": 300319,
+  "h1_two_sided_alpha": 0.05,
+  "h1_minimum_absolute_reduction": 0.02,
+  "h1_minimum_relative_reduction": 0.25,
+  "h2_one_sided_alpha": 0.025,
+  "h2_noninferiority_margin": -0.03,
+  "secondary_holm_alpha": 0.05,
+  "incomplete_block_limit": 0.01,
+  "replay_roots_per_stratum": 30,
+  "primary_sensitivities": [
+    "worst_case_missing_primary_cells",
+    "physical_hazard_only",
+    "all_available_D_PD_pairs"
+  ],
+  "infrastructure_retry_allowlist": []
+}
