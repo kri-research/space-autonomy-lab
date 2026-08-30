@@ -10,10 +10,10 @@ from pathlib import Path
 
 from kri_space_autonomy.environment import EnvironmentConfig, ProximityEnvironment
 from kri_space_autonomy.scenario import Scenario, load_scenario
-from kri_space_autonomy.types import Action, Observation
+from kri_space_autonomy.types import Action
 
 from .adapter import ControllerAdapter, load_controller
-from .contract import ControllerContext, ControllerObservation, ObservationStatus
+from .contract import ControllerContext, ObservationStatus
 from .errors import ControllerContractError, UnsupportedScenarioError
 
 
@@ -35,20 +35,13 @@ class ExternalEpisodeResult:
     final_speed_mps: float
     propellant_remaining: float
     command_trace_sha256: str
+    navigation: dict[str, object] | None = None
 
-    def to_dict(self) -> dict[str, str | bool | int | float]:
-        return asdict(self)
-
-
-def _controller_observation(observation: Observation, dt_s: float) -> ControllerObservation:
-    return ControllerObservation(
-        step=observation.step,
-        time_s=observation.step * dt_s,
-        range_m=observation.range_m,
-        relative_velocity_mps=observation.relative_velocity_mps,
-        propellant_fraction=observation.propellant,
-        sensor_quality=observation.sensor_quality,
-    )
+    def to_dict(self) -> dict[str, object]:
+        result = asdict(self)
+        if self.navigation is None:
+            result.pop("navigation")
+        return result
 
 
 def _trace_digest(trace: list[dict[str, int | float]]) -> str:
@@ -119,6 +112,9 @@ def run_loaded_controller(
     adapter: ControllerAdapter,
     scenario: Scenario,
     config: EnvironmentConfig | None = None,
+    *,
+    navigation_profile: str = "direct",
+    repository_root: str | Path = ".",
 ) -> ExternalEpisodeResult:
     """Run one simplified RPO episode without exposing internal state to the controller."""
 
@@ -140,6 +136,16 @@ def run_loaded_controller(
         minimum_acceleration_mps2=-cfg.max_acceleration_mps2,
         maximum_acceleration_mps2=cfg.max_acceleration_mps2,
     )
+    from kri_space_autonomy.navigation_profiles import build_navigation_profile
+
+    navigation = build_navigation_profile(
+        navigation_profile, repository_root=repository_root
+    )
+    navigation.validate_initial_navigation(
+        scenario.initial_state.range_m,
+        scenario.initial_state.relative_velocity_mps,
+    )
+    navigation.reset(context)
     adapter.reset(context)
 
     state = scenario.initial_state
@@ -150,12 +156,13 @@ def run_loaded_controller(
         if environment.is_collision(state) or environment.is_goal(state):
             break
         observable = fault.apply_observation(environment.observe(state))
-        public_observation = _controller_observation(observable, cfg.dt_s)
+        public_observation = navigation.observe(observable)
         if public_observation.status is not ObservationStatus.NOMINAL:
             degraded_steps += 1
         if public_observation.status is ObservationStatus.MISSING:
             missing_steps += 1
         command = adapter.command(public_observation)
+        navigation.accept_command(command.acceleration_mps2)
         command_trace.append(
             {
                 "step": public_observation.step,
@@ -166,6 +173,20 @@ def run_loaded_controller(
         state = environment.step(state, executed)
 
     identity = adapter.identity
+    navigation_diagnostics = navigation.diagnostics()
+    navigation_record = None
+    if navigation_diagnostics is not None and navigation.identity is not None:
+        navigation_record = {
+            "identity": navigation.identity.to_dict(),
+            "diagnostics": navigation_diagnostics.to_dict(),
+            "information_boundary": {
+                "controller_inputs": "ControllerObservation fields only",
+                "harness_evaluator_outputs": (
+                    "success, collision, final range/speed, propellant, and step counts; "
+                    "never passed to the controller"
+                ),
+            },
+        }
     return ExternalEpisodeResult(
         scenario_id=scenario.scenario_id,
         scenario_fault=fault_name,
@@ -183,6 +204,7 @@ def run_loaded_controller(
         final_speed_mps=state.relative_velocity_mps,
         propellant_remaining=state.propellant,
         command_trace_sha256=_trace_digest(command_trace),
+        navigation=navigation_record,
     )
 
 
@@ -190,23 +212,47 @@ def run_external_controller(
     plugin_spec: str,
     scenario_path: str | Path,
     config: EnvironmentConfig | None = None,
+    *,
+    navigation_profile: str = "direct",
+    repository_root: str | Path = ".",
 ) -> ExternalEpisodeResult:
     """Load an external controller and run one scenario through the public facade."""
 
     adapter = load_controller(plugin_spec)
     scenario = load_scenario(scenario_path)
-    return run_loaded_controller(adapter, scenario, config)
+    return run_loaded_controller(
+        adapter,
+        scenario,
+        config,
+        navigation_profile=navigation_profile,
+        repository_root=repository_root,
+    )
 
 
 def replay_external_controller(
     plugin_spec: str,
     scenario_path: str | Path,
     config: EnvironmentConfig | None = None,
+    *,
+    navigation_profile: str = "direct",
+    repository_root: str | Path = ".",
 ) -> dict[str, object]:
     """Run two load/reset passes and fail if deterministic episode results differ."""
 
-    first = run_external_controller(plugin_spec, scenario_path, config)
-    second = run_external_controller(plugin_spec, scenario_path, config)
+    first = run_external_controller(
+        plugin_spec,
+        scenario_path,
+        config,
+        navigation_profile=navigation_profile,
+        repository_root=repository_root,
+    )
+    second = run_external_controller(
+        plugin_spec,
+        scenario_path,
+        config,
+        navigation_profile=navigation_profile,
+        repository_root=repository_root,
+    )
     first_record = first.to_dict()
     if first_record != second.to_dict():
         raise ControllerContractError(

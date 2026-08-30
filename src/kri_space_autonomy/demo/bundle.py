@@ -18,6 +18,12 @@ DEFAULT_CONTROLLER = "kri_space_autonomy.examples.proportional_controller:contro
 DEFAULT_SUITE = Path("fault-suites/example-rpo.json")
 DEFAULT_POLICY = Path("assessment-policies/example-rpo.json")
 DEFAULT_OUTPUT = Path("demo/rpo-benchmark")
+DEFAULT_ESTIMATED_SUITE = Path("fault-suites/example-estimated-rpo.json")
+DEFAULT_ESTIMATED_POLICY = Path("assessment-policies/example-estimated-rpo.json")
+DEFAULT_ESTIMATED_FAULT_PLAN = Path(
+    "navigation-fault-plans/example-estimated-rpo.json"
+)
+DEFAULT_ESTIMATED_OUTPUT = Path("demo/rpo-estimated")
 
 _CAMPAIGNS = (
     {
@@ -298,7 +304,7 @@ def _input_identity(report: Mapping[str, Any], evidence: list[dict[str, object]]
     controller = _mapping(report.get("controller"), "report.controller")
     suite = _mapping(report.get("fault_suite"), "report.fault_suite")
     policy = _mapping(report.get("assessment_policy"), "report.assessment_policy")
-    return {
+    result: dict[str, object] = {
         "controller": {
             "plugin_spec": controller["plugin_spec"],
             "controller_id": controller["controller_id"],
@@ -326,28 +332,68 @@ def _input_identity(report: Mapping[str, Any], evidence: list[dict[str, object]]
             for item in evidence
         ],
     }
+    navigation = report.get("navigation")
+    if isinstance(navigation, Mapping):
+        identity = _mapping(navigation.get("identity"), "report.navigation.identity")
+        result["navigation"] = {
+            "profile": navigation["profile"],
+            "identity_sha256": identity["identity_sha256"],
+            "foundation_freeze_id": identity["foundation_freeze_id"],
+            "fault_plan": navigation.get("fault_plan"),
+        }
+    return result
 
 
 def build_demo_payload(
     controller_spec: str = DEFAULT_CONTROLLER,
     *,
     repository_root: str | Path = ".",
-    suite_path: str | Path = DEFAULT_SUITE,
-    policy_path: str | Path = DEFAULT_POLICY,
+    suite_path: str | Path | None = None,
+    policy_path: str | Path | None = None,
+    navigation_profile: str = "direct",
+    navigation_fault_plan: str | Path | None = None,
 ) -> dict[str, object]:
     """Run the public product APIs and combine them with read-only frozen aggregate evidence."""
 
     root = Path(repository_root)
-    suite_relative = Path(suite_path)
-    policy_relative = Path(policy_path)
-    report = assess_controller(controller_spec, root / suite_relative, root / policy_relative)
+    estimated = navigation_profile == "estimated"
+    suite_relative = Path(
+        (DEFAULT_ESTIMATED_SUITE if estimated else DEFAULT_SUITE)
+        if suite_path is None
+        else suite_path
+    )
+    policy_relative = Path(
+        (DEFAULT_ESTIMATED_POLICY if estimated else DEFAULT_POLICY)
+        if policy_path is None
+        else policy_path
+    )
+    selected_plan = (
+        DEFAULT_ESTIMATED_FAULT_PLAN
+        if estimated and navigation_fault_plan is None
+        else navigation_fault_plan
+    )
+    plan_relative = None if selected_plan is None else Path(selected_plan)
+    report = assess_controller(
+        controller_spec,
+        root / suite_relative,
+        root / policy_relative,
+        navigation_profile=navigation_profile,
+        navigation_fault_plan=(
+            None if plan_relative is None else root / plan_relative
+        ),
+        repository_root=root,
+    )
     report_payload = report.to_dict()
     evidence = load_frozen_architecture_evidence(root)
     inputs = _input_identity(report_payload, evidence)
     input_fingerprint = _fingerprint(inputs)
     unsigned: dict[str, object] = {
         "schema_version": DEMO_SCHEMA_VERSION,
-        "title": "Space Autonomy Lab deterministic RPO controller demo",
+        "title": (
+            "Space Autonomy Lab estimated-navigation RPO controller demo"
+            if estimated
+            else "Space Autonomy Lab deterministic RPO controller demo"
+        ),
         "positioning": (
             "A simplified autonomous rendezvous/proximity-operations controller test harness "
             "for repeatable faults and evidence reports."
@@ -359,12 +405,22 @@ def build_demo_payload(
         ),
         "input_identity": inputs,
         "input_fingerprint_sha256": input_fingerprint,
-        "workflow": [
-            "bring an importable deterministic controller",
-            "validate the public observation/command contract",
-            "apply the checked-in deterministic fault suite",
-            "assess the declared policy and emit stable evidence",
-        ],
+        "workflow": (
+            [
+                "bring an importable deterministic controller",
+                "validate the public observation/command contract",
+                "apply the checked-in illustrative navigation fault examples",
+                "map frozen-estimator state and health into the public observation",
+                "assess the declared policy and emit stable product diagnostics",
+            ]
+            if estimated
+            else [
+                "bring an importable deterministic controller",
+                "validate the public observation/command contract",
+                "apply the checked-in deterministic fault suite",
+                "assess the declared policy and emit stable evidence",
+            ]
+        ),
         "try_the_harness": {
             "classification": "illustrative_product_example_not_scientific_evidence",
             "report": report_payload,
@@ -377,21 +433,50 @@ def build_demo_payload(
             ),
             "campaigns": evidence,
         },
-        "commands": {
-            "rebuild_example": "uv run python -m kri_space_autonomy.demo build",
-            "build_and_open": "uv run python -m kri_space_autonomy.demo build --open",
-            "try_own_controller": (
-                "uv run python -m kri_space_autonomy.demo build "
-                "--controller my_controller:controller --output demo/my-controller"
-            ),
-            "controller_guide": "docs/controller-adapter.md",
-        },
+        "commands": (
+            {
+                "rebuild_example": (
+                    "uv run python -m kri_space_autonomy.demo build "
+                    "--navigation-profile estimated"
+                ),
+                "build_and_open": (
+                    "uv run python -m kri_space_autonomy.demo build "
+                    "--navigation-profile estimated --open"
+                ),
+                "try_own_controller": (
+                    "uv run python -m kri_space_autonomy.demo build "
+                    "--navigation-profile estimated --controller "
+                    "my_controller:controller --output demo/my-estimated-controller"
+                ),
+                "controller_guide": "docs/controller-adapter.md",
+            }
+            if estimated
+            else {
+                "rebuild_example": "uv run python -m kri_space_autonomy.demo build",
+                "build_and_open": "uv run python -m kri_space_autonomy.demo build --open",
+                "try_own_controller": (
+                    "uv run python -m kri_space_autonomy.demo build "
+                    "--controller my_controller:controller --output demo/my-controller"
+                ),
+                "controller_guide": "docs/controller-adapter.md",
+            }
+        ),
         "limitations": [
             "Simplified deterministic one-dimensional relative-motion environment; not a full GNC stack.",
             "Fault cases are declared stress tests, not estimates of operational fault prevalence.",
             "Local Python controllers run in process and should be trusted code.",
             "A PASS means only that required cases met the checked-in policy in this harness.",
             "Frozen Experiment 002 and 003 results have different measurement boundaries.",
+            *(
+                [
+                    "The estimated product profile reuses the frozen Experiment 003 estimator "
+                    "without retuning on a different instantaneous-actuation product plant.",
+                    "Estimator health and packet diagnostics are harness outputs, while success, "
+                    "collision, and final state remain truth-derived evaluator outputs.",
+                ]
+                if estimated
+                else []
+            ),
             "No formal verification, certification, hardware, timing, or flight-safety claim is made.",
         ],
     }
@@ -435,13 +520,27 @@ def render_demo_markdown(payload: Mapping[str, object]) -> str:
     controller = _mapping(report.get("controller"), "report.controller")
     suite = _mapping(report.get("fault_suite"), "report.fault_suite")
     policy = _mapping(report.get("assessment_policy"), "report.assessment_policy")
+    navigation = report.get("navigation")
+    estimated = isinstance(navigation, Mapping)
     cases = report.get("cases")
     if not isinstance(cases, list):
         raise DemoBuildError("report cases must be an array")
     campaigns = _campaigns(payload)
+    navigation_lines: list[str] = []
+    if estimated:
+        navigation_record = _mapping(navigation, "report.navigation")
+        identity = _mapping(navigation_record.get("identity"), "report.navigation.identity")
+        navigation_lines = [
+            f"- **Navigation profile:** `estimated` · `{identity['identity_sha256']}`",
+            f"- **Frozen estimator foundation:** `{identity['foundation_freeze_id']}`",
+        ]
 
     lines = [
-        "# Space Autonomy Lab: deterministic RPO controller demo",
+        (
+            "# Space Autonomy Lab: estimated-navigation RPO controller demo"
+            if estimated
+            else "# Space Autonomy Lab: deterministic RPO controller demo"
+        ),
         "",
         "A compact, repeatable path from **your controller** to **declared faults** to a "
         "**traceable criteria report** in a simplified one-dimensional rendezvous/proximity-operations "
@@ -460,6 +559,7 @@ def render_demo_markdown(payload: Mapping[str, object]) -> str:
         f"- **Controller:** `{controller['controller_id']}` v`{controller['controller_version']}`",
         f"- **Fault suite:** `{suite['suite_id']}` · `{suite['suite_sha256']}`",
         f"- **Assessment policy:** `{policy['policy_id']}` · `{policy['policy_sha256']}`",
+        *navigation_lines,
         f"- **Harness report fingerprint:** `{report['report_fingerprint_sha256']}`",
         "",
         "| Case | Faults | Role / result | Success | Collision | Final range (m) | "
@@ -480,11 +580,49 @@ def render_demo_markdown(payload: Mapping[str, object]) -> str:
             f"{evidence['actuator_modified_steps']} |"
         )
 
+    if estimated:
+        lines.extend(
+            [
+                "",
+                "### Estimated navigation diagnostics",
+                "",
+                "Packet dispositions and estimator health are harness diagnostics, not controller "
+                "inputs. Success, collision, and final state remain truth-derived evaluator "
+                "outputs. Offline truth error and NEES are not reported.",
+                "",
+                "| Case | Final health / reason | Accepted / rejected / invalid | "
+                "Missing packets | Delivered nominal / degraded / missing |",
+                "| --- | --- | ---: | ---: | ---: |",
+            ]
+        )
+        for case in cases:
+            row = _mapping(case, "report case")
+            diagnostic = _mapping(
+                row.get("navigation_diagnostics"),
+                f"case {row.get('case_id')} navigation diagnostics",
+            )
+            delivered = _mapping(
+                diagnostic.get("controller_observation_status_counts"),
+                f"case {row.get('case_id')} delivered statuses",
+            )
+            lines.append(
+                f"| `{row['case_id']}` | {diagnostic['final_health']} / "
+                f"{diagnostic['final_reason']} | {diagnostic['accepted_updates']} / "
+                f"{diagnostic['innovation_rejections']} / {diagnostic['invalid_packets']} | "
+                f"{diagnostic['missing_packet_steps']} | {delivered['nominal']} / "
+                f"{delivered['degraded']} / {delivered['missing']} |"
+            )
+
     lines.extend(
         [
             "",
-            "A `PASS` here means only that every required example case met the checked-in criteria. "
-            "The composed case is explicitly informational.",
+            (
+                "A `PASS` here means only that every required estimated-profile example met the "
+                "checked-in criteria. This illustrative result is not scientific evidence."
+                if estimated
+                else "A `PASS` here means only that every required example case met the checked-in "
+                "criteria. The composed case is explicitly informational."
+            ),
             "",
             "## Frozen architecture evidence — keep the boundaries separate",
             "",
@@ -554,12 +692,22 @@ def render_demo_markdown(payload: Mapping[str, object]) -> str:
             "",
             "```bash",
             "uv run python -m kri_space_autonomy.demo build \\",
+            *(["  --navigation-profile estimated \\"] if estimated else []),
             "  --controller my_controller:controller \\",
-            "  --output demo/my-controller",
+            (
+                "  --output demo/my-estimated-controller"
+                if estimated
+                else "  --output demo/my-controller"
+            ),
             "```",
             "",
-            "Open `demo/my-controller/index.html`. The command reuses the same public adapter, fault-suite, "
-            "and assessment-report APIs.",
+            (
+                "Open `demo/my-estimated-controller/index.html`. The command reuses the same public "
+                "adapter, frozen-estimator bridge, illustrative fault set, and assessment-report APIs."
+                if estimated
+                else "Open `demo/my-controller/index.html`. The command reuses the same public adapter, "
+                "fault-suite, and assessment-report APIs."
+            ),
             "",
             "## Limitations",
             "",
@@ -591,6 +739,8 @@ def render_demo_html(payload: Mapping[str, object]) -> str:
     controller = _mapping(report.get("controller"), "report.controller")
     suite = _mapping(report.get("fault_suite"), "report.fault_suite")
     policy = _mapping(report.get("assessment_policy"), "report.assessment_policy")
+    navigation = report.get("navigation")
+    estimated = isinstance(navigation, Mapping)
     cases = report.get("cases")
     if not isinstance(cases, list):
         raise DemoBuildError("report cases must be an array")
@@ -619,6 +769,32 @@ def render_demo_html(payload: Mapping[str, object]) -> str:
             f"<td>{_esc(evidence['actuator_modified_steps'])}</td>"
             "</tr>"
         )
+
+    navigation_rows: list[str] = []
+    if estimated:
+        for case in cases:
+            row = _mapping(case, "report case")
+            diagnostic = _mapping(
+                row.get("navigation_diagnostics"),
+                f"case {row.get('case_id')} navigation diagnostics",
+            )
+            delivered = _mapping(
+                diagnostic.get("controller_observation_status_counts"),
+                f"case {row.get('case_id')} delivered statuses",
+            )
+            navigation_rows.append(
+                "<tr>"
+                f"<td><code>{_esc(row['case_id'])}</code></td>"
+                f"<td>{_esc(diagnostic['final_health'])}<small>"
+                f"{_esc(diagnostic['final_reason'])}</small></td>"
+                f"<td>{_esc(diagnostic['accepted_updates'])} / "
+                f"{_esc(diagnostic['innovation_rejections'])} / "
+                f"{_esc(diagnostic['invalid_packets'])}</td>"
+                f"<td>{_esc(diagnostic['missing_packet_steps'])}</td>"
+                f"<td>{_esc(delivered['nominal'])} / {_esc(delivered['degraded'])} / "
+                f"{_esc(delivered['missing'])}</td>"
+                "</tr>"
+            )
 
     campaign_rows: list[str] = []
     cards: list[str] = []
@@ -667,13 +843,66 @@ def render_demo_html(payload: Mapping[str, object]) -> str:
     if not isinstance(limitations, list):
         raise DemoBuildError("limitations must be an array")
     limitation_items = "".join(f"<li>{_esc(item)}</li>" for item in limitations)
+    page_title = (
+        "Space Autonomy Lab · Estimated-navigation RPO demo"
+        if estimated
+        else "Space Autonomy Lab · Deterministic RPO demo"
+    )
+    hero_lead = (
+        "A deterministic, simplified RPO test harness that maps the frozen Experiment 003 "
+        "primary navigation filter into the unchanged public controller observation and emits "
+        "separated navigation diagnostics and evaluator outputs."
+        if estimated
+        else "A deterministic, simplified RPO test harness that turns an importable controller, "
+        "declared observation/actuator faults, and an explicit policy into a traceable report."
+    )
+    pass_note = (
+        "every required estimated-profile example met the checked-in policy in this harness. "
+        "This illustrative engineering result is not new scientific evidence or a safety claim."
+        if estimated
+        else "every required example case met the checked-in policy in this harness. The composed "
+        "case is informational. This result is not a safety claim."
+    )
+    navigation_section = ""
+    if estimated:
+        navigation_record = _mapping(navigation, "report.navigation")
+        identity = _mapping(navigation_record.get("identity"), "report.navigation.identity")
+        navigation_section = (
+            "<section><p class='eyebrow'>Estimated profile · harness diagnostics</p>"
+            "<h2>Navigation health and packet handling</h2>"
+            "<p>These health, reason, and packet counts are report-only diagnostics. The "
+            "controller receives only the documented public observation; success, collision, "
+            "and final state remain truth-derived evaluator outputs. Offline truth error and "
+            "NEES are not reported.</p>"
+            f"<p class='mono-label'>Navigation identity <code>{_esc(identity['identity_sha256'])}"
+            "</code></p>"
+            "<div class='table-wrap'><table><thead><tr><th>Case</th><th>Final health / "
+            "reason</th><th>Accepted / rejected / invalid</th><th>Missing packets</th>"
+            "<th>Delivered nominal / degraded / missing</th></tr></thead><tbody>"
+            f"{''.join(navigation_rows)}</tbody></table></div></section>"
+        )
+    try_command = (
+        "uv run python -m kri_space_autonomy.demo build \\\n  --navigation-profile estimated "
+        "\\\n  --controller my_controller:controller \\\n  --output demo/my-estimated-controller"
+        if estimated
+        else "uv run python -m kri_space_autonomy.demo build \\\n  --controller "
+        "my_controller:controller \\\n  --output demo/my-controller"
+    )
+    try_output = "demo/my-estimated-controller" if estimated else "demo/my-controller"
+    try_description = (
+        "The same public adapter, frozen-estimator bridge, illustrative fault set, and "
+        "assessment-report APIs generate the result."
+        if estimated
+        else "The same controller adapter, fault-suite, and assessment-report APIs generate "
+        "the result."
+    )
 
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Space Autonomy Lab · Deterministic RPO demo</title>
+<title>{_esc(page_title)}</title>
 <style>
 :root{{--ink:#172033;--muted:#5d6878;--line:#dce2ea;--paper:#f5f7fa;--card:#fff;--navy:#0b2948;--cyan:#34c6c8;--lime:#b8d96b;--amber:#f3b64e;--red:#bb4d55}}
 *{{box-sizing:border-box}} body{{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}}
@@ -692,19 +921,17 @@ h1{{max-width:820px;margin:.15em 0;font-size:clamp(2.15rem,5vw,4.35rem);line-hei
 </style>
 </head>
 <body>
-<header class="hero"><div class="hero-grid"><div><p class="eyebrow">Space Autonomy Lab</p><h1>Bring a controller.<br>Stress the boundary.</h1><p class="lead">A deterministic, simplified RPO test harness that turns an importable controller, declared observation/actuator faults, and an explicit policy into a traceable report.</p><span class="badge">Product example · not scientific evidence</span></div><div class="fingerprint"><strong>Substantive demo identity</strong><br><code>{_esc(payload['demo_fingerprint_sha256'])}</code></div></div></header>
+<header class="hero"><div class="hero-grid"><div><p class="eyebrow">Space Autonomy Lab</p><h1>Bring a controller.<br>Stress the boundary.</h1><p class="lead">{_esc(hero_lead)}</p><span class="badge">Product example · not scientific evidence</span></div><div class="fingerprint"><strong>Substantive demo identity</strong><br><code>{_esc(payload['demo_fingerprint_sha256'])}</code></div></div></header>
 <main class="shell">
 <div class="boundary"><strong>Evidence boundary.</strong> The example run is illustrative product output. Frozen architecture results below are historical synthetic-benchmark evidence. This is not full GNC, formal verification, certification, operational fault-prevalence, or flight-safety evidence.</div>
 <section><p class="eyebrow">Layer A · run it</p><h2>Try the harness</h2><div class="flow"><div>1 · Controller plugin</div><div>2 · Public adapter</div><div>3 · Deterministic faults</div><div>4 · Criteria report</div></div>
 <div class="summary"><div class="metric"><small>Example result</small><strong>{_esc(overall['decision'])}</strong></div><div class="metric"><small>Controller</small><strong>{_esc(controller['controller_id'])} v{_esc(controller['controller_version'])}</strong></div><div class="metric"><small>Suite</small><strong>{_esc(suite['suite_id'])}</strong></div><div class="metric"><small>Policy</small><strong>{_esc(policy['policy_id'])}</strong></div></div>
 <div class="table-wrap"><table><thead><tr><th>Case / faults</th><th>Role / result</th><th>Success / collision</th><th>Final range / speed</th><th>Propellant</th><th>Degraded / missing obs.</th><th>Actuator-modified</th></tr></thead><tbody>{''.join(case_rows)}</tbody></table></div>
-<p class="note"><strong>Read PASS narrowly:</strong> every required example case met the checked-in policy in this harness. The composed case is informational. This result is not a safety claim.</p></section>
+<p class="note"><strong>Read PASS narrowly:</strong> {_esc(pass_note)}</p></section>{navigation_section}
 <section><p class="eyebrow">Layer B · what is known</p><h2>Frozen architecture evidence</h2><p>Two final confirmatory campaigns, two different measurement boundaries. Each summary uses the complete frozen aggregate result—no historical root or episode selection—and the decisions are not combined into one claim.</p><div class="cards">{''.join(cards)}</div>
 <div class="table-wrap"><table><thead><tr><th>Campaign</th><th>Measurement boundary</th><th>Decision</th><th>H1 · PD-D hazard RD</th><th>H2 · PD-D sustained-success RD</th></tr></thead><tbody>{''.join(campaign_rows)}</tbody></table></div></section>
 <section class="two-col"><div><h2>Where Experiment 003 stressed</h2><p>H1 produced exactly zero PD-D risk difference with 95% interval [0, 0], so it did not pass. H2 was therefore not tested under the serial gate. The table shows every descriptive sustained-success stratum estimate; E5/E6 contain the strong negative effect.</p></div><div class="table-wrap"><table><thead><tr><th>Experiment 003 stratum</th><th>PD-D sustained success</th></tr></thead><tbody>{stratum_rows}</tbody></table></div></section>
-<section><h2>Try your controller</h2><p>Implement the small public contract in <code>docs/controller-adapter.md</code>, then run:</p><pre>uv run python -m kri_space_autonomy.demo build \\
-  --controller my_controller:controller \\
-  --output demo/my-controller</pre><p>Open <code>demo/my-controller/index.html</code>. The same controller adapter, fault-suite, and assessment-report APIs generate the result.</p></section>
+<section><h2>Try your controller</h2><p>Implement the small public contract in <code>docs/controller-adapter.md</code>, then run:</p><pre>{_esc(try_command)}</pre><p>Open <code>{_esc(try_output)}/index.html</code>. {_esc(try_description)}</p></section>
 <section><h2>Traceability</h2><div class="table-wrap"><table><thead><tr><th>Campaign</th><th>Freeze ID</th><th>Aggregate SHA-256</th><th>Source</th></tr></thead><tbody>{''.join(trace_rows)}</tbody></table></div><p class="mono-label">Input fingerprint <code>{_esc(payload['input_fingerprint_sha256'])}</code><br>Harness report fingerprint <code>{_esc(report['report_fingerprint_sha256'])}</code><br>Demo substantive fingerprint <code>{_esc(payload['demo_fingerprint_sha256'])}</code></p></section>
 <section><h2>Limitations</h2><ul>{limitation_items}</ul></section>
 <footer><a href="demo.json">Stable JSON</a> · <a href="demo.md">Concise Markdown</a><br>Generated deterministically with no timestamps or external page dependencies.</footer>
@@ -735,17 +962,24 @@ def _atomic_write(path: Path, content: str) -> None:
 
 
 def build_demo_bundle(
-    output_dir: str | Path = DEFAULT_OUTPUT,
+    output_dir: str | Path | None = None,
     *,
     controller_spec: str = DEFAULT_CONTROLLER,
     repository_root: str | Path = ".",
-    suite_path: str | Path = DEFAULT_SUITE,
-    policy_path: str | Path = DEFAULT_POLICY,
+    suite_path: str | Path | None = None,
+    policy_path: str | Path | None = None,
+    navigation_profile: str = "direct",
+    navigation_fault_plan: str | Path | None = None,
 ) -> dict[str, object]:
     """Build deterministic JSON, Markdown, HTML, and a file-identity manifest."""
 
     root = Path(repository_root)
-    destination = Path(output_dir)
+    selected_output = (
+        DEFAULT_ESTIMATED_OUTPUT
+        if output_dir is None and navigation_profile == "estimated"
+        else (DEFAULT_OUTPUT if output_dir is None else Path(output_dir))
+    )
+    destination = Path(selected_output)
     if not destination.is_absolute():
         destination = root / destination
     payload = build_demo_payload(
@@ -753,6 +987,8 @@ def build_demo_bundle(
         repository_root=root,
         suite_path=suite_path,
         policy_path=policy_path,
+        navigation_profile=navigation_profile,
+        navigation_fault_plan=navigation_fault_plan,
     )
     rendered = {
         "demo.json": render_demo_json(payload),

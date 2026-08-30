@@ -1,0 +1,27 @@
+{
+  "schema_version": "kri-navigation-fault-plan/1.0",
+  "plan_id": "example-estimated-packet-faults",
+  "description": "Illustrative deterministic stale-packet and covariance-underreporting cases for the product estimated profile; not scientific evidence.",
+  "suite": {
+    "id": "example-estimated-rpo-faults",
+    "sha256": "d2942ef8a80249e201f7c8733de3ed2d124da2457362e0e5e08e781752264882"
+  },
+  "cases": [
+    {
+      "case_id": "stale-packet",
+      "packet_fault": {
+        "id": "repeat-prior-packet",
+        "type": "stale_packet",
+        "activation": {"start_step": 250, "end_step": 265}
+      }
+    },
+    {
+      "case_id": "biased-covariance-underreporting",
+      "packet_fault": {
+        "id": "frozen-underreported-covariance",
+        "type": "covariance_underreporting",
+        "activation": {"start_step": 250, "end_step": 270}
+      }
+    }
+  ]
+}

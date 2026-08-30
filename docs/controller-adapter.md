@@ -61,6 +61,11 @@ uv run python -m kri_space_autonomy.controller_adapter \
 
 uv run python -m kri_space_autonomy.controller_adapter \
   replay my_controller:controller scenarios/nominal.json
+
+# The same import spec through the frozen-estimator product bridge.
+uv run python -m kri_space_autonomy.controller_adapter \
+  replay my_controller:controller scenarios/nominal.json \
+  --navigation-profile estimated
 ```
 
 The checked-in example can be exercised directly:
@@ -114,7 +119,10 @@ artifact manifest: imported modules and external files are outside that digest i
 `observation.status` is derived as `nominal`, `degraded`, or `missing`; `missing_fields` identifies
 unavailable navigation fields. Missing values are never filled from simulator truth. Internal state,
 achieved actuation, fault state, evaluator state, and monitor state are not passed through the
-contract.
+contract. The optional estimated navigation profile does not change these fields; it maps the frozen
+Experiment 003 primary-filter estimate and coarse health into the same contract. Exact mapping,
+identity, and model-boundary semantics are documented in
+[`navigation-profiles.md`](navigation-profiles.md).
 
 Python plugins run in-process and are trusted local code. The adapter controls its arguments but is
 not a process sandbox.
@@ -135,7 +143,8 @@ the boundary accidentally.
 ## Current scope
 
 The facade reuses the simplified deterministic environment and supports nominal, sensor bias, sensor
-dropout, and actuator-degradation scenario behavior. The existing `model-seu` scenario targets the
-built-in learned-policy representation and is rejected for external controllers. Generic controller
-fault injection, independent runtime assurance, richer dynamics, timeouts/process isolation, and
-assurance-report generation are later productization layers.
+dropout, and actuator-degradation scenario behavior. `direct` remains the default; `estimated`
+imports and verifies the frozen Experiment 003 estimator without retuning it. The existing
+`model-seu` scenario targets the built-in learned-policy representation and is rejected for external
+controllers. Generic controller fault injection, an independent product monitor, richer dynamics,
+and timeouts/process isolation remain out of scope.

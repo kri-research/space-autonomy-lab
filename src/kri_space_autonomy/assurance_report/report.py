@@ -14,6 +14,7 @@ from typing import Any
 
 from kri_space_autonomy.controller_adapter import CONTRACT_VERSION, ControllerIdentity
 from kri_space_autonomy.fault_suite import (
+    ESTIMATED_RESULT_SCHEMA_VERSION,
     RESULT_SCHEMA_VERSION,
     FaultCaseResult,
     FaultSuite,
@@ -22,6 +23,18 @@ from kri_space_autonomy.fault_suite import (
     fault_suite_from_dict,
     load_fault_suite,
     replay_fault_suite,
+)
+from kri_space_autonomy.navigation_profiles import (
+    BRIDGE_MODEL_BOUNDARY,
+    BRIDGE_RUNTIME_PROFILE,
+    ESTIMATOR_CLASS_ID,
+    EXPECTED_FROZEN_FILE_SHA256,
+    FOUNDATION_FREEZE_ID,
+    FOUNDATION_MANIFEST_SHA256,
+    MEASUREMENT_FACTORY_ID,
+    NAVIGATION_PROFILE_SCHEMA_VERSION,
+    NavigationFaultPlanError,
+    navigation_fault_plan_from_dict,
 )
 
 from .errors import (
@@ -37,6 +50,7 @@ from .policy import (
 )
 
 REPORT_SCHEMA_VERSION = "kri-assurance-report/1.0"
+ESTIMATED_REPORT_SCHEMA_VERSION = "kri-assurance-report/1.1"
 ERROR_SCHEMA_VERSION = "kri-assurance-error/1.0"
 EVIDENCE_BOUNDARY = (
     "Evidence from a simplified one-dimensional RPO test harness; not a full GNC assessment, "
@@ -62,9 +76,12 @@ class AssuranceReport:
 
     def __post_init__(self) -> None:
         payload = copy.deepcopy(self._payload)
-        if payload.get("schema_version") != REPORT_SCHEMA_VERSION:
+        if payload.get("schema_version") not in {
+            REPORT_SCHEMA_VERSION,
+            ESTIMATED_REPORT_SCHEMA_VERSION,
+        }:
             raise AssessmentResultSpecError(
-                f"report schema_version must be {REPORT_SCHEMA_VERSION!r}"
+                "report schema_version must be a supported direct or estimated schema"
             )
         fingerprint = payload.get("report_fingerprint_sha256")
         if not isinstance(fingerprint, str) or not _SHA256.fullmatch(fingerprint):
@@ -97,14 +114,16 @@ def _mapping(
     path: str,
     *,
     required: set[str],
+    optional: set[str] | None = None,
 ) -> dict[str, Any]:
     if type(value) is not dict:
         raise AssessmentResultSpecError(f"{path} must be an object")
     result: dict[str, Any] = value
     if any(not isinstance(key, str) for key in result):
         raise AssessmentResultSpecError(f"{path} keys must be strings")
+    allowed = required | (optional or set())
     missing = sorted(required - result.keys())
-    extra = sorted(result.keys() - required)
+    extra = sorted(result.keys() - allowed)
     if missing:
         raise AssessmentResultSpecError(
             f"{path} is missing required keys: {', '.join(missing)}"
@@ -165,6 +184,234 @@ def _finite(value: object, path: str) -> float:
     if not math.isfinite(result):
         raise AssessmentResultSpecError(f"{path} must be finite")
     return result
+
+
+def _count_mapping(
+    value: object,
+    path: str,
+    expected_keys: set[str],
+) -> dict[str, int]:
+    data = _mapping(value, path, required=expected_keys)
+    return {key: _integer(data[key], f"{path}.{key}") for key in sorted(data)}
+
+
+def _navigation_case_diagnostics(
+    value: object,
+    path: str,
+    *,
+    commands: int,
+    degraded_steps: int,
+    missing_steps: int,
+) -> dict[str, object]:
+    data = _mapping(
+        value,
+        path,
+        required={
+            "profile",
+            "identity_sha256",
+            "raw_observation_status_counts",
+            "controller_observation_status_counts",
+            "estimator_health_counts",
+            "estimator_reason_counts",
+            "packet_disposition_counts",
+            "missing_packet_steps",
+            "final_health",
+            "final_reason",
+            "accepted_updates",
+            "innovation_rejections",
+            "invalid_packets",
+            "final_prediction_only_age_s",
+            "navigation_trace_sha256",
+            "packet_fault",
+        },
+    )
+    if data["profile"] != "estimated":
+        raise AssessmentResultSpecError(f"{path}.profile must be 'estimated'")
+    _sha256(data["identity_sha256"], f"{path}.identity_sha256")
+    statuses = {"nominal", "degraded", "missing"}
+    raw_counts = _count_mapping(
+        data["raw_observation_status_counts"],
+        f"{path}.raw_observation_status_counts",
+        statuses,
+    )
+    controller_counts = _count_mapping(
+        data["controller_observation_status_counts"],
+        f"{path}.controller_observation_status_counts",
+        statuses,
+    )
+    health_counts = _count_mapping(
+        data["estimator_health_counts"],
+        f"{path}.estimator_health_counts",
+        {"valid", "degraded", "diverged"},
+    )
+    reason_counts = data["estimator_reason_counts"]
+    if type(reason_counts) is not dict or not reason_counts:
+        raise AssessmentResultSpecError(f"{path}.estimator_reason_counts must be an object")
+    checked_reasons = {
+        _string(key, f"{path}.estimator_reason_counts key", maximum=100): _integer(
+            count, f"{path}.estimator_reason_counts.{key}"
+        )
+        for key, count in reason_counts.items()
+    }
+    disposition_counts = data["packet_disposition_counts"]
+    if type(disposition_counts) is not dict or not disposition_counts:
+        raise AssessmentResultSpecError(f"{path}.packet_disposition_counts must be an object")
+    checked_dispositions = {
+        _string(key, f"{path}.packet_disposition_counts key", maximum=100): _integer(
+            count, f"{path}.packet_disposition_counts.{key}"
+        )
+        for key, count in disposition_counts.items()
+    }
+    if (
+        sum(raw_counts.values()) != commands
+        or sum(controller_counts.values()) != commands
+        or sum(health_counts.values()) != commands
+        or sum(checked_reasons.values()) != commands
+        or sum(checked_dispositions.values()) != commands
+    ):
+        raise AssessmentResultSpecError(
+            f"{path} diagnostic counts must each sum to commands"
+        )
+    if controller_counts["degraded"] + controller_counts["missing"] != degraded_steps:
+        raise AssessmentResultSpecError(
+            f"{path} delivered status counts do not match degraded_observation_steps"
+        )
+    if controller_counts["missing"] != missing_steps:
+        raise AssessmentResultSpecError(
+            f"{path} delivered missing count does not match missing_observation_steps"
+        )
+    missing_packets = _integer(data["missing_packet_steps"], f"{path}.missing_packet_steps")
+    if checked_dispositions.get("missing") != missing_packets:
+        raise AssessmentResultSpecError(
+            f"{path}.missing_packet_steps does not match packet dispositions"
+        )
+    final_health = _string(data["final_health"], f"{path}.final_health", maximum=64)
+    if final_health not in {"valid", "degraded", "diverged"}:
+        raise AssessmentResultSpecError(f"{path}.final_health is invalid")
+    final_reason = _string(data["final_reason"], f"{path}.final_reason", maximum=100)
+    age_value = data["final_prediction_only_age_s"]
+    age = None if age_value is None else _finite(age_value, f"{path}.final_prediction_only_age_s")
+    if age is not None and age < 0.0:
+        raise AssessmentResultSpecError(
+            f"{path}.final_prediction_only_age_s must be non-negative"
+        )
+    packet_fault = data["packet_fault"]
+    if packet_fault is not None and type(packet_fault) is not dict:
+        raise AssessmentResultSpecError(f"{path}.packet_fault must be an object or null")
+    return {
+        "profile": "estimated",
+        "identity_sha256": data["identity_sha256"],
+        "raw_observation_status_counts": raw_counts,
+        "controller_observation_status_counts": controller_counts,
+        "estimator_health_counts": health_counts,
+        "estimator_reason_counts": checked_reasons,
+        "packet_disposition_counts": checked_dispositions,
+        "missing_packet_steps": missing_packets,
+        "final_health": final_health,
+        "final_reason": final_reason,
+        "accepted_updates": _integer(data["accepted_updates"], f"{path}.accepted_updates"),
+        "innovation_rejections": _integer(
+            data["innovation_rejections"], f"{path}.innovation_rejections"
+        ),
+        "invalid_packets": _integer(data["invalid_packets"], f"{path}.invalid_packets"),
+        "final_prediction_only_age_s": age,
+        "navigation_trace_sha256": _sha256(
+            data["navigation_trace_sha256"], f"{path}.navigation_trace_sha256"
+        ),
+        "packet_fault": copy.deepcopy(packet_fault),
+    }
+
+
+def _navigation_result_identity(value: object) -> dict[str, object]:
+    data = _mapping(
+        value,
+        "result.navigation",
+        required={
+            "profile",
+            "identity",
+            "fault_plan",
+            "controller_input_contract",
+            "harness_evaluator_outputs",
+            "classification",
+        },
+    )
+    if data["profile"] != "estimated":
+        raise AssessmentResultSpecError("result.navigation.profile must be 'estimated'")
+    identity = _mapping(
+        data["identity"],
+        "result.navigation.identity",
+        required={
+            "schema_version",
+            "profile",
+            "foundation_freeze_id",
+            "freeze_manifest_sha256",
+            "frozen_file_sha256",
+            "estimator_class",
+            "measurement_factory",
+            "bridge_runtime_profile",
+            "bridge_model_boundary",
+            "identity_sha256",
+        },
+    )
+    expected_identity_fields = {
+        "schema_version": NAVIGATION_PROFILE_SCHEMA_VERSION,
+        "profile": "estimated",
+        "foundation_freeze_id": FOUNDATION_FREEZE_ID,
+        "freeze_manifest_sha256": FOUNDATION_MANIFEST_SHA256,
+        "estimator_class": ESTIMATOR_CLASS_ID,
+        "measurement_factory": MEASUREMENT_FACTORY_ID,
+        "bridge_runtime_profile": BRIDGE_RUNTIME_PROFILE,
+        "bridge_model_boundary": BRIDGE_MODEL_BOUNDARY,
+    }
+    for key, expected in expected_identity_fields.items():
+        if identity[key] != expected:
+            raise AssessmentResultSpecError(
+                f"result.navigation.identity.{key} does not match the supported frozen profile"
+            )
+    claimed_identity = _sha256(
+        identity["identity_sha256"], "result.navigation.identity.identity_sha256"
+    )
+    unsigned_identity = dict(identity)
+    unsigned_identity.pop("identity_sha256")
+    observed_identity = hashlib.sha256(canonical_json(unsigned_identity)).hexdigest()
+    if claimed_identity != observed_identity:
+        raise AssessmentResultSpecError("navigation identity SHA-256 does not match payload")
+    frozen_files = identity["frozen_file_sha256"]
+    if frozen_files != EXPECTED_FROZEN_FILE_SHA256:
+        raise AssessmentResultSpecError(
+            "result.navigation.identity.frozen_file_sha256 does not match the supported profile"
+        )
+    fault_plan = data["fault_plan"]
+    if fault_plan is not None:
+        if type(fault_plan) is not dict:
+            raise AssessmentResultSpecError(
+                "result.navigation.fault_plan must be an object or null"
+            )
+        unsigned_plan = dict(fault_plan)
+        claimed_plan_sha256 = _sha256(
+            unsigned_plan.pop("plan_sha256", None),
+            "result.navigation.fault_plan.plan_sha256",
+        )
+        try:
+            parsed_plan = navigation_fault_plan_from_dict(unsigned_plan)
+        except NavigationFaultPlanError as exc:
+            raise AssessmentResultSpecError(
+                f"result.navigation.fault_plan is invalid: {exc}"
+            ) from exc
+        if parsed_plan.sha256 != claimed_plan_sha256:
+            raise AssessmentResultSpecError(
+                "result.navigation.fault_plan SHA-256 does not match payload"
+            )
+    if type(data["controller_input_contract"]) is not dict:
+        raise AssessmentResultSpecError(
+            "result.navigation.controller_input_contract must be an object"
+        )
+    if type(data["harness_evaluator_outputs"]) is not list:
+        raise AssessmentResultSpecError(
+            "result.navigation.harness_evaluator_outputs must be an array"
+        )
+    _string(data["classification"], "result.navigation.classification")
+    return copy.deepcopy(data)
 
 
 def _controller_identity(value: object) -> ControllerIdentity:
@@ -234,6 +481,7 @@ def _case_result(value: object, index: int) -> FaultCaseResult:
             "propellant_remaining",
             "command_trace_sha256",
         },
+        optional={"navigation"},
     )
     fault_sequence = tuple(
         _identifier(item, f"{path}.fault_sequence[{fault_index}]")
@@ -275,6 +523,17 @@ def _case_result(value: object, index: int) -> FaultCaseResult:
         raise AssessmentResultSpecError(
             f"{path}.propellant_remaining must be in [0, 1]"
         )
+    navigation = (
+        None
+        if "navigation" not in data
+        else _navigation_case_diagnostics(
+            data["navigation"],
+            f"{path}.navigation",
+            commands=commands,
+            degraded_steps=degraded,
+            missing_steps=missing,
+        )
+    )
     return FaultCaseResult(
         case_id=_identifier(data["case_id"], f"{path}.case_id"),
         case_sha256=_sha256(data["case_sha256"], f"{path}.case_sha256"),
@@ -292,11 +551,62 @@ def _case_result(value: object, index: int) -> FaultCaseResult:
         command_trace_sha256=_sha256(
             data["command_trace_sha256"], f"{path}.command_trace_sha256"
         ),
+        navigation=navigation,
     )
 
 
+def _validate_navigation_crosslinks(
+    navigation: dict[str, object],
+    cases: tuple[FaultCaseResult, ...],
+    *,
+    suite_id: str,
+    suite_sha256: str,
+) -> None:
+    identity = navigation["identity"]
+    assert isinstance(identity, dict)
+    identity_sha256 = identity["identity_sha256"]
+    for case in cases:
+        assert case.navigation is not None
+        if case.navigation["identity_sha256"] != identity_sha256:
+            raise AssessmentResultSpecError(
+                f"case {case.case_id} navigation identity does not match result identity"
+            )
+    plan_payload = navigation["fault_plan"]
+    if plan_payload is None:
+        if any(case.navigation["packet_fault"] is not None for case in cases):
+            raise AssessmentResultSpecError(
+                "case packet faults require a bound navigation fault plan"
+            )
+        return
+    assert isinstance(plan_payload, dict)
+    unsigned_plan = dict(plan_payload)
+    claimed = unsigned_plan.pop("plan_sha256")
+    try:
+        plan = navigation_fault_plan_from_dict(unsigned_plan)
+        plan.validate_suite(
+            suite_id=suite_id,
+            suite_sha256=suite_sha256,
+            case_ids={case.case_id for case in cases},
+        )
+    except NavigationFaultPlanError as exc:
+        raise AssessmentResultSpecError(
+            f"result navigation fault plan is incompatible: {exc}"
+        ) from exc
+    if plan.sha256 != claimed:
+        raise AssessmentResultSpecError(
+            "result navigation fault plan SHA-256 does not match payload"
+        )
+    for case in cases:
+        expected = plan.fault_for(case.case_id)
+        expected_payload = None if expected is None else expected.to_dict()
+        if case.navigation["packet_fault"] != expected_payload:
+            raise AssessmentResultSpecError(
+                f"case {case.case_id} packet fault does not match navigation plan"
+            )
+
+
 def fault_suite_result_from_dict(value: object) -> FaultSuiteRunResult:
-    """Strictly validate a decoded `kri-fault-suite-result/1.0` document."""
+    """Strictly validate a decoded direct v1.0 or estimated v1.1 result."""
 
     data = _mapping(
         value,
@@ -310,24 +620,62 @@ def fault_suite_result_from_dict(value: object) -> FaultSuiteRunResult:
             "cases",
             "result_sha256",
         },
+        optional={"navigation"},
     )
-    if data["result_schema_version"] != RESULT_SCHEMA_VERSION:
+    schema_version = data["result_schema_version"]
+    if schema_version not in {RESULT_SCHEMA_VERSION, ESTIMATED_RESULT_SCHEMA_VERSION}:
         raise AssessmentResultSpecError(
-            f"result_schema_version must be {RESULT_SCHEMA_VERSION!r}"
+            "result_schema_version must be a supported direct or estimated result schema"
+        )
+    if schema_version == RESULT_SCHEMA_VERSION and "navigation" in data:
+        raise AssessmentResultSpecError(
+            "direct result schema must not contain estimated navigation metadata"
+        )
+    if schema_version == ESTIMATED_RESULT_SCHEMA_VERSION and "navigation" not in data:
+        raise AssessmentResultSpecError(
+            "estimated result schema requires navigation metadata"
         )
     raw_cases = _array(data["cases"], "result.cases")
     cases = tuple(_case_result(item, index) for index, item in enumerate(raw_cases))
     case_ids = [case.case_id for case in cases]
     if len(case_ids) != len(set(case_ids)):
         raise AssessmentResultSpecError("result.cases contains duplicate case ids")
+    navigation = (
+        None
+        if "navigation" not in data
+        else _navigation_result_identity(data["navigation"])
+    )
+    if schema_version == RESULT_SCHEMA_VERSION and any(
+        case.navigation is not None for case in cases
+    ):
+        raise AssessmentResultSpecError(
+            "direct result schema must not contain case navigation diagnostics"
+        )
+    if schema_version == ESTIMATED_RESULT_SCHEMA_VERSION and any(
+        case.navigation is None for case in cases
+    ):
+        raise AssessmentResultSpecError(
+            "estimated result schema requires navigation diagnostics for every case"
+        )
+    suite_id = _identifier(data["suite_id"], "result.suite_id")
+    suite_sha256 = _sha256(data["suite_sha256"], "result.suite_sha256")
+    if navigation is not None:
+        _validate_navigation_crosslinks(
+            navigation,
+            cases,
+            suite_id=suite_id,
+            suite_sha256=suite_sha256,
+        )
     result = FaultSuiteRunResult(
-        suite_id=_identifier(data["suite_id"], "result.suite_id"),
-        suite_sha256=_sha256(data["suite_sha256"], "result.suite_sha256"),
+        suite_id=suite_id,
+        suite_sha256=suite_sha256,
         runtime_profile=_identifier(
             data["runtime_profile"], "result.runtime_profile"
         ),
         controller=_controller_identity(data["controller"]),
         cases=cases,
+        navigation=navigation,
+        result_schema_version=schema_version,
     )
     claimed = _sha256(data["result_sha256"], "result.result_sha256")
     if claimed != result.result_sha256:
@@ -559,6 +907,36 @@ def _case_evidence(result: FaultCaseResult) -> dict[str, object]:
     }
 
 
+def _estimated_information_sections(result: FaultCaseResult) -> dict[str, object]:
+    if result.navigation is None:
+        return {}
+    navigation = copy.deepcopy(result.navigation)
+    delivered = navigation["controller_observation_status_counts"]
+    return {
+        "controller_inputs": {
+            "contract_fields": [
+                "step",
+                "time_s",
+                "range_m",
+                "relative_velocity_mps",
+                "propellant_fraction",
+                "sensor_quality",
+            ],
+            "delivered_status_counts": delivered,
+            "privileged_inputs_excluded": True,
+        },
+        "navigation_diagnostics": navigation,
+        "harness_evaluator_outputs": {
+            "success": result.success,
+            "collision": result.collision,
+            "final_range_m": result.final_range_m,
+            "final_speed_mps": result.final_speed_mps,
+            "propellant_remaining": result.propellant_remaining,
+            "steps": result.steps,
+        },
+    }
+
+
 def assess_fault_suite_result(
     result: FaultSuiteRunResult | str | Path,
     suite: FaultSuite | str | Path,
@@ -677,6 +1055,7 @@ def assess_fault_suite_result(
                     if enabled_passed
                     else "one or more enabled declared criteria failed"
                 ),
+                **_estimated_information_sections(case_result),
             }
         )
 
@@ -697,9 +1076,25 @@ def assess_fault_suite_result(
         limitations.append(
             "Nominal comparisons are unavailable because the nominal result is missing."
         )
+    if checked_result.navigation is not None:
+        limitations.extend(
+            [
+                "Estimated-profile runs are illustrative product engineering stress tests, not "
+                "new Experiment 003 evidence or hypothesis tests.",
+                "The frozen Experiment 003 estimator retains its first-order actuator and process "
+                "model while the product simplified-rpo-v1 plant applies acceleration "
+                "instantaneously; this explicit model boundary was not retuned away.",
+                "Estimator covariance, health, and packet diagnostics are harness diagnostics; "
+                "the external controller receives only the documented ControllerObservation.",
+            ]
+        )
 
     unsigned: dict[str, object] = {
-        "schema_version": REPORT_SCHEMA_VERSION,
+        "schema_version": (
+            ESTIMATED_REPORT_SCHEMA_VERSION
+            if checked_result.navigation is not None
+            else REPORT_SCHEMA_VERSION
+        ),
         "evidence_boundary": EVIDENCE_BOUNDARY,
         "overall": {
             "decision": decision,
@@ -728,6 +1123,22 @@ def assess_fault_suite_result(
         "informational_findings": informational_findings,
         "limitations": limitations,
     }
+    if checked_result.navigation is not None:
+        unsigned["navigation"] = copy.deepcopy(checked_result.navigation)
+        unsigned["information_boundaries"] = {
+            "controller_inputs": (
+                "Only ControllerObservation step/time, estimated range/velocity, propellant "
+                "telemetry, and deterministic health-derived sensor_quality."
+            ),
+            "navigation_harness_diagnostics": (
+                "Estimator health/reason and packet dispositions are report-only diagnostics."
+            ),
+            "harness_evaluator_outputs": (
+                "Truth-derived success, collision, final state, and propellant outputs are used "
+                "only for harness scoring and are never controller inputs."
+            ),
+            "offline_truth_error_and_nees_reported": False,
+        }
     payload = {
         **unsigned,
         "report_fingerprint_sha256": hashlib.sha256(
@@ -741,6 +1152,10 @@ def assess_controller(
     controller_spec: str,
     suite: FaultSuite | str | Path,
     policy: AssessmentPolicy | str | Path,
+    *,
+    navigation_profile: str = "direct",
+    navigation_fault_plan=None,
+    repository_root: str | Path = ".",
 ) -> AssuranceReport:
     """Replay a controller on a declared suite, then generate its deterministic report."""
 
@@ -753,7 +1168,13 @@ def assess_controller(
         raise AssessmentCompatibilityError(
             "assessment policy does not identify the supplied fault suite"
         )
-    replay = replay_fault_suite(controller_spec, checked_suite)
+    replay = replay_fault_suite(
+        controller_spec,
+        checked_suite,
+        navigation_profile=navigation_profile,
+        navigation_fault_plan=navigation_fault_plan,
+        repository_root=repository_root,
+    )
     result = fault_suite_result_from_dict(replay["result"])
     return assess_fault_suite_result(result, checked_suite, checked_policy)
 
@@ -786,6 +1207,16 @@ def render_report_markdown(report: AssuranceReport) -> str:
     assert isinstance(controller, dict)
     assert isinstance(suite, dict)
     assert isinstance(policy, dict)
+    navigation = data.get("navigation")
+    navigation_lines: list[str] = []
+    if isinstance(navigation, dict):
+        identity = navigation.get("identity")
+        if isinstance(identity, dict):
+            navigation_lines = [
+                f"- **Navigation profile:** `estimated` "
+                f"(identity SHA-256 `{identity['identity_sha256']}`)",
+                f"- **Frozen estimator foundation:** `{identity['foundation_freeze_id']}`",
+            ]
 
     lines = [
         f"# Test-harness assessment: {overall['decision']}",
@@ -796,6 +1227,7 @@ def render_report_markdown(report: AssuranceReport) -> str:
         f"- **Assessment policy:** `{policy['policy_id']}` "
         f"(SHA-256 `{policy['policy_sha256']}`)",
         f"- **Runtime profile:** `{suite['runtime_profile']}`",
+        *navigation_lines,
         f"- **Report fingerprint:** `{data['report_fingerprint_sha256']}`",
         "",
         f"> **Evidence boundary:** {data['evidence_boundary']}",
@@ -836,6 +1268,38 @@ def render_report_markdown(report: AssuranceReport) -> str:
             + " | ".join(values)
             + " |"
         )
+
+    if isinstance(navigation, dict):
+        lines.extend(
+            [
+                "",
+                "## Estimated navigation diagnostics",
+                "",
+                "These are harness diagnostics, not controller inputs. Truth-derived final "
+                "state and success/collision values remain evaluator outputs only. Offline "
+                "truth error and NEES are not reported here.",
+                "",
+                "| Case | Final health / reason | Accepted / innovation-rejected / invalid | "
+                "Missing packets | Delivered nominal / degraded / missing | "
+                "Navigation trace SHA-256 |",
+                "| --- | --- | ---: | ---: | ---: | --- |",
+            ]
+        )
+        for case in cases:
+            assert isinstance(case, dict)
+            diagnostic = case.get("navigation_diagnostics")
+            if not isinstance(diagnostic, dict):
+                continue
+            delivered = diagnostic["controller_observation_status_counts"]
+            assert isinstance(delivered, dict)
+            lines.append(
+                f"| `{case['case_id']}` | {diagnostic['final_health']} / "
+                f"{diagnostic['final_reason']} | {diagnostic['accepted_updates']} / "
+                f"{diagnostic['innovation_rejections']} / {diagnostic['invalid_packets']} | "
+                f"{diagnostic['missing_packet_steps']} | {delivered['nominal']} / "
+                f"{delivered['degraded']} / {delivered['missing']} | "
+                f"`{diagnostic['navigation_trace_sha256']}` |"
+            )
 
     failures = data["failures"]
     findings = data["informational_findings"]

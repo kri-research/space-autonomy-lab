@@ -12,6 +12,10 @@ from kri_space_autonomy.fault_suite import (
     FaultSpecError,
     FaultSuiteLoadError,
 )
+from kri_space_autonomy.navigation_profiles import (
+    NavigationFaultPlanError,
+    NavigationProfileError,
+)
 
 from .errors import (
     AssessmentCompatibilityError,
@@ -81,6 +85,17 @@ def _parser() -> argparse.ArgumentParser:
     assess.add_argument("controller", help="Import spec in module.path:attribute form")
     assess.add_argument("suite", type=Path)
     assess.add_argument("policy", type=Path)
+    assess.add_argument(
+        "--navigation-profile",
+        choices=("direct", "estimated"),
+        default="direct",
+        help="Controller navigation source (default: direct)",
+    )
+    assess.add_argument(
+        "--navigation-fault-plan",
+        type=Path,
+        help="Optional estimated-profile stale/covariance packet-fault plan",
+    )
     _output_arguments(assess)
 
     report = commands.add_parser(
@@ -103,6 +118,8 @@ def _error_type(exc: Exception) -> str:
         return "invalid_fault_suite"
     if isinstance(exc, FaultApplicationError):
         return "execution"
+    if isinstance(exc, (NavigationFaultPlanError, NavigationProfileError)):
+        return "invalid_navigation_profile"
     if isinstance(exc, (AssessmentPolicyLoadError, AssessmentPolicySpecError)):
         return "invalid_assessment_policy"
     if isinstance(exc, (AssessmentResultLoadError, AssessmentResultSpecError)):
@@ -155,7 +172,13 @@ def main(argv: Sequence[str] | None = None) -> int:
             )
             return 0
         if args.command == "assess":
-            report = assess_controller(args.controller, args.suite, args.policy)
+            report = assess_controller(
+                args.controller,
+                args.suite,
+                args.policy,
+                navigation_profile=args.navigation_profile,
+                navigation_fault_plan=args.navigation_fault_plan,
+            )
         else:
             report = assess_fault_suite_result(args.result, args.suite, args.policy)
         return _emit_report(args, report)
