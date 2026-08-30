@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "id": "pre_outcome_validation",
+      "passed": true,
+      "threshold": "all pre-outcome tests, lint, lock, source, and scan checks pass"
+    },
+    {
+      "id": "historical_integrity",
+      "passed": true,
+      "threshold": "Experiments 002, 002b, and 002c remain unchanged and verified"
+    },
+    {
+      "id": "freeze_verified",
+      "passed": true,
+      "threshold": "all frozen inputs verify before and after execution"
+    },
+    {
+      "id": "seed_manifest",
+      "passed": true,
+      "threshold": "299 disjoint F7 roots in partition 25; partition 16 untouched"
+    },
+    {
+      "id": "paired_cells",
+      "observed": {
+        "blocks": 299,
+        "complete_blocks": 299,
+        "episode_rows": 598,
+        "incomplete_blocks": 0,
+        "incomplete_fraction": 0.0,
+        "incomplete_limit": 0.01,
+        "unexpected_rows": 0,
+        "unique_episode_cells": 598,
+        "valid": true
+      },
+      "passed": true,
+      "threshold": "299 complete D/PD blocks; incomplete fraction <=1%"
+    },
+    {
+      "id": "same_platform_replay",
+      "observed": {
+        "episodes_compared": 40,
+        "failures_preview": [],
+        "passed": true
+      },
+      "passed": true,
+      "threshold": "20 frozen roots reproduce both episode rows exactly"
+    },
+    {
+      "id": "bounded_scope",
+      "passed": true,
+      "threshold": "only the F7 information study ran; no confirmatory campaign"
+    },
+    {
+      "id": "h1_h2_information",
+      "passed": true,
+      "threshold": "smallest 1,000-2,000 candidate has H1 and H2 marginal power lower Monte Carlo bounds >=95% in both planning scenarios"
+    }
+  ],
+  "decision": "resolved_freeze_confirmatory_design",
+  "overall_passed": true,
+  "schema_version": "experiment-002d-combined-information-1.0"
+}

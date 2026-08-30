@@ -1,0 +1,122 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 1ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest",
+      "id": "pytest",
+      "passed": true,
+      "returncode": 0,
+      "summary": "61 passed in 13.97s"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "legacy_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "deterministic disjoint seed-manifest validation",
+      "id": "seed_manifest",
+      "observed": {
+        "confirmatory_partition_untouched": true,
+        "errors_preview": [],
+        "historical_root_seed_ids_compared": 6884,
+        "manifest_sha256": "ffd6382dc57b851dccc4cdcda82ac3f38e3d07b171e4d1a34faff30c5ce18be7",
+        "partition_code_disjoint": true,
+        "passed": true,
+        "replay_replicates": [
+          43,
+          57,
+          58,
+          64,
+          73,
+          107,
+          143,
+          146,
+          148,
+          155,
+          163,
+          175,
+          187,
+          228,
+          239,
+          264,
+          268,
+          274,
+          290,
+          293
+        ],
+        "rows": 299,
+        "unique_root_seed_ids": 299
+      },
+      "passed": true
+    },
+    {
+      "command": "historical freeze, checksum, and source-map verification",
+      "id": "historical_integrity",
+      "observed": {
+        "errors_preview": [],
+        "experiment_002_freeze_id": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+        "experiment_002b_freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+        "experiment_002c_freeze_id": "8157fefc06ea1aec4121b475d0ffa068576c8f98807406205c8f47f2120e479a",
+        "original_design_sha256": "ffd1dba3195edd583797181702125cff4a81456502dba5c2a652ce1aaa75b590",
+        "original_design_source_verified_before_freeze": true,
+        "passed": true,
+        "protected_paths_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "command": "bounded repository publication/privacy scan",
+      "id": "publication_privacy_scan",
+      "observed": {
+        "additional_matches": 0,
+        "additional_matches_preview": [],
+        "base_publication_scan": {
+          "files_scanned": 153,
+          "matches": 0,
+          "matches_preview": [],
+          "passed": true
+        },
+        "files_scanned": 153,
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "outcomes_opened": false,
+  "passed": true,
+  "phase": "validate",
+  "phase_sequence": 1,
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "study_instance_id": "b31b5420-4401-498f-b235-6caedf8e30cf",
+  "validated_at_utc": "2026-08-30T00:19:51.309316+00:00"
+}

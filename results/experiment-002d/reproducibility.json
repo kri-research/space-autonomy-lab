@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-08-30T00:20:48.710417+00:00",
+  "checks": [
+    {
+      "id": "phase_chain",
+      "passed": true
+    },
+    {
+      "id": "primary_output_identity",
+      "passed": true
+    },
+    {
+      "id": "seed_manifest_rederived",
+      "passed": true
+    },
+    {
+      "id": "same_platform_replay",
+      "passed": true
+    },
+    {
+      "id": "campaign_exclusions",
+      "passed": true
+    }
+  ],
+  "method": "freeze, seed rederivation, phase-chain, output-hash, and frozen-root replay",
+  "passed": true,
+  "phase": "reproducibility_check",
+  "phase_sequence": 5,
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "study_instance_id": "b31b5420-4401-498f-b235-6caedf8e30cf"
+}

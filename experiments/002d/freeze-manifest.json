@@ -1,0 +1,305 @@
+{
+  "amendment_scope": "299-root F7 paired D/PD nuisance study only; no confirmatory campaign",
+  "confirmatory_campaign_executed": false,
+  "corrected_production_dynamics": {
+    "experiment_002c_numerical_decision": "pass",
+    "merged_base": "4da0ade",
+    "source": "src/kri_space_autonomy/experiment_002/dynamics.py"
+  },
+  "freeze_id": "0fc96ee320d25c2cec3c37ba9aa87467ca4a9ee62a138bd0bed37f3ad7dc053b",
+  "frozen_artifact_hashes": {
+    "artifacts/experiment-002/policy-primary.manifest.json": "902be24612271d75fdcf72ae93b3badc2e9baab1b0ffc14fa0a1a34e304a1a2d",
+    "artifacts/experiment-002/policy-primary.npz": "142aab82e94ef4090d837ed9f0831bb639638f00f34d669cbc9ced9dd51c7c20",
+    "docs/experiment-002d.md": "5f02dd81cf6f90fcaa5783099c6122510a355554b6acae12fcf458970a0c2032",
+    "experiments/002/config.json": "05f65a0fdf2695b00df076bb3b23b38f87d9623da10c9fb17f4616c61cd2f0fe",
+    "experiments/002/recovery-corridor.json": "d312d0d75a559d20812975cd0b71c68bd5ced1bd9cd51d01356e4404c3fe05f6",
+    "experiments/002d/config.json": "41c4ad3a053e868c3389daaa7f4cd97e98d2f1b7f9ef77f21c24a4358c7dfb30",
+    "experiments/002d/confirmatory-stratum-map.json": "33813fa14e9c1250aa1c48a3179056c8c03864f91e91d253bc49fad223408c40",
+    "experiments/002d/preregistration.md": "105236b5f42533bdf89e17b656da4afa3012c6c2759c631e8164d0e39e7e0f71",
+    "experiments/002d/seeds/combined_information.jsonl": "ffd6382dc57b851dccc4cdcda82ac3f38e3d07b171e4d1a34faff30c5ce18be7",
+    "experiments/002d/seeds/index.json": "8fa018fd1421b0c4696b56dc30b7f3e4f196db7fdd8ea965e1546b65ec68f6fb",
+    "experiments/002d/seeds/replay_subset.json": "ffe96b244134fe0f1f9cdd869ba54e1772fa8d241ea7ee8f9aeaa7fdd9d5cdc5",
+    "experiments/002d/validation-evidence.json": "266b1616f0b429cd19ee27ad721e7018486bd49196efd161d9cd3ac47a0682b4"
+  },
+  "frozen_at_utc": "2026-08-30T00:20:07.510136+00:00",
+  "historical_evidence_hashes": {
+    "artifacts/experiment-002/policy-primary.manifest.json": "902be24612271d75fdcf72ae93b3badc2e9baab1b0ffc14fa0a1a34e304a1a2d",
+    "artifacts/experiment-002/policy-primary.npz": "142aab82e94ef4090d837ed9f0831bb639638f00f34d669cbc9ced9dd51c7c20",
+    "docs/experiment-002.md": "5dd2f077a409b21ea31b6ba6b9df9048df390f11a15c7d6fb8c340d095469059",
+    "docs/experiment-002b.md": "9de1d7286df1552d6617752d3cb4a35fa2f9f2946ef7a7d6f1e52a8e6b50993e",
+    "docs/experiment-002c.md": "dbe1512be5060c6431300536979e4054a8216c65922ffa21bf9a1d4587729b3b",
+    "experiments/002/config.json": "05f65a0fdf2695b00df076bb3b23b38f87d9623da10c9fb17f4616c61cd2f0fe",
+    "experiments/002/deviations.md": "842c1ce849750662f01465ca5a4d4becf66ee30cd14ee3dc2b026d13c14bce1c",
+    "experiments/002/freeze-manifest.json": "9e354fa13987fd3e3ff6dc649fb62b66608445e6faa7c6f1c14bc34dd08a502d",
+    "experiments/002/preregistration.md": "2d99a3679af942e063affb45c0b541cb9c110537abc8c986355e81476c74cfad",
+    "experiments/002/qc-subsets.json": "c4c36c075ecb9a254932a41438700cc75c787e31c72ceb7962fa7f97a5c8459a",
+    "experiments/002/recovery-corridor.json": "d312d0d75a559d20812975cd0b71c68bd5ced1bd9cd51d01356e4404c3fe05f6",
+    "experiments/002/seeds/future_confirmatory_reserved.json": "b1dc4ad9e0280820c8efe35521df3d60c01043581ef196d9e41b4c639d7d15da",
+    "experiments/002/seeds/index.json": "38f905b3d9b5b28be9f7cc51f1f0c976354b585e919e906501594c33d74fbfb5",
+    "experiments/002/seeds/metric_calibration.jsonl": "2399fc8b3c8fb6e37126865124fd45cce364023bc5ecef2c3268213be930e431",
+    "experiments/002/seeds/pilot.jsonl": "a54d3e6204131b7c797c6ebb6e0195748e0ffa2422403604cccef7dfd3390ec1",
+    "experiments/002/seeds/train_fit.jsonl": "398f3f3f3913d7215999673cb53eaede83262cf932d87e2b16b169740e7269d2",
+    "experiments/002/seeds/train_stop.jsonl": "45a23975e439e81e91297c2068a806d67afd4f2757e182c5027f6513600ea8d7",
+    "experiments/002/seeds/validation.jsonl": "af10d9246ff6546439258a8f47469b1fcaf7e91301fab58212c939954fdd0b4f",
+    "experiments/002/validation-evidence.json": "ae17a64ca54e1284d43a25dc3454b4e3e2ffd1feda617dfa003670ade1c15cb0",
+    "experiments/002b/config.json": "6cde992c822056a00de70b5f4b5f1b0edc0a5d536e06973318bdb960f914d062",
+    "experiments/002b/freeze-manifest.json": "f9e0bfddd47fd3a06c53d30fa5b71016e09e6b01183630a5b0493811f76a6ed0",
+    "experiments/002b/preregistration.md": "e75f5a4b4e562b0c113c65841114012018f7b1248d9cb4dea4f22199576f2c9a",
+    "experiments/002b/seeds/fixed_replay.jsonl": "f51866d0218da3844dbd48a6bfb5e6b96b0fbfb33d28b9581504e91198cf4101",
+    "experiments/002b/seeds/index.json": "be6970ffc44f4544da236fb45e8307187b7369dcbeb6a411d87a8e1df9fc3895",
+    "experiments/002b/seeds/operational.jsonl": "74873a16884e23b7e05bfb0c5675539cc0df24572968bc0f7d5231e1075e5c57",
+    "experiments/002b/seeds/rate_decomposition.jsonl": "f11bc43d9e1a7cf10d4341ffd0bc66dcb1bdba3f4eaf76b7f726d6a05acafafc",
+    "experiments/002b/validation-evidence.json": "4168fa738e5023ef3d59b7b46f700e54ec4bf881e3144a63329be16b9a747a70",
+    "experiments/002c/config.json": "e57268a2026ba8d0a7ecad186ff20564ae151d2187b028390df3aad32b5da9d7",
+    "experiments/002c/freeze-manifest.json": "27c964c505f19845ba5843f740eef7916bfde80491ed121dfa12f4b622b7a51d",
+    "experiments/002c/preregistration.md": "f8f86c376e2bf225a9a72588c9a5f17bdc7a5901f4bf1940b6c75257fdec5e46",
+    "experiments/002c/seeds/fixed_replay.jsonl": "bf32dba3bd167f634d031b10369b7f26cfe7a5023416d501cf14781793b78597",
+    "experiments/002c/seeds/index.json": "2db6ec0c993325da357fd0b804e140709f9d58a197f96e2428150a7b8ffc7cb0",
+    "experiments/002c/validation-evidence.json": "a5bf8c3d26de88d4a1c69612a0c0fedef9c9d0e1d6b7e1e8a62d624516def0b0",
+    "results/experiment-002/SHA256SUMS": "3251f5fc4d02ce67f41ad9a35744ba83e1cdb0a9857114ff187c143864b7a6b7",
+    "results/experiment-002/analysis.json": "c81196b74136e3c09f2c1279b10d300613d860de2786621c7871bcffe0bea4fc",
+    "results/experiment-002/episodes.jsonl": "aaa9e826af86234d4b6bc2ee8c3d53a830e2ca10fc2b724981e9444728bb3c21",
+    "results/experiment-002/qc.json": "058b8dfb20b9e9f960eef36fd24008e5924b1a6dd3a79a8961b7d0a24e720289",
+    "results/experiment-002/report.md": "96f4c2f7de016cc962e4f07f718d30dc46c80e1cbfbfd612148910e8d374dcd9",
+    "results/experiment-002/run-manifest.json": "869207fa4b7fb25807adaa0270dcfc7dab17c8954a24a967468318e52c8bb067",
+    "results/experiment-002b/SHA256SUMS": "1aeef0bf50efdf0041aa25f56daa3bf0493ee5c2151479ebb5dffb4e8bf97540",
+    "results/experiment-002b/analysis.json": "5870454fedabe0f9200990107faf6784f597921c1ef76e6f38159bf97967d7d2",
+    "results/experiment-002b/execution-summary.json": "1957c4da2c2f993f1d67d8263c14321290d50d3c5842c43a699d3c235a8c1ce2",
+    "results/experiment-002b/fixed-command-replay.json": "f63485a6df2d9dacac099c8d3ae406521b4e2171da90abdd8d3361ff1c2ac3b5",
+    "results/experiment-002b/operational-episodes.jsonl": "d1940d07b8e9c5da53fdd299184c492cefafe0d9aababf650044cdcc189cf1ee",
+    "results/experiment-002b/qc.json": "aaef91bee8dfe8fbfeccf72010a843c67cef06b4212be95c6e3e619b49dc63b7",
+    "results/experiment-002b/rate-command-events.jsonl.gz": "d0da635b1a31c75be851c85ebc323d0faa19107639bd3cdc36dde8f36b989e5f",
+    "results/experiment-002b/rate-decomposition-episodes.jsonl": "df53fa58ceb7c1d6928877bec1c01b91c0bd610599f8e765e6aeab2367e97cc5",
+    "results/experiment-002b/report.md": "494fc3c36b06df4c6ce91e02ebd47c6e8052b65251880427257f9a7b26370a29",
+    "results/experiment-002b/run-manifest.json": "2b184e7331fb132599e9a5db60cf437e9847064406498f4d545eced207a75b6c",
+    "results/experiment-002c/SHA256SUMS": "5a931673581cccfde427ce1152a438a432cc29b6ddbd9e45948f6b5c9fa48fe6",
+    "results/experiment-002c/analysis.json": "cdcab7b87ecc68092fb6b16bc51d85a453e7c2a19e4f958b5fe135e785550f35",
+    "results/experiment-002c/execution-summary.json": "10c8c32fca5ba84a520a9ef9414e36a706c7a1afbb298bd82cd290177513cb45",
+    "results/experiment-002c/fixed-command-replay.json": "37cf885320b3558af10ded511d1cb2647083ab9aafcdc3e702e3867e0901e543",
+    "results/experiment-002c/qc.json": "27c2b6ad9f1ae11d4e84577277c05f3ed7012b6fcdc5f2558c2cdfa53e9161ca",
+    "results/experiment-002c/report.md": "698aca34a520bb707ced78da9df7045b154ed8aec36704241f049f4af6ec9593",
+    "results/experiment-002c/reproducibility.json": "8e4bc429e023e45985977da63504e51092ad5af1eb2029f7ac2a8e3bbe8c308e",
+    "results/experiment-002c/run-manifest.json": "14c526c4680563ecca8426d125d89a5906ea34e0fe67da59b884d24918c17d7b"
+  },
+  "historical_integrity": {
+    "errors_preview": [],
+    "experiment_002_freeze_id": "5c8da46ae99ab0951d017e4a28409efc0befb7c1fac8571c0876af82997ef1ce",
+    "experiment_002b_freeze_id": "4bb93ac705f29108b06fc080fde5a8d944ebd3bac00137d60063128b5e79bfb7",
+    "experiment_002c_freeze_id": "8157fefc06ea1aec4121b475d0ffa068576c8f98807406205c8f47f2120e479a",
+    "original_design_sha256": "ffd1dba3195edd583797181702125cff4a81456502dba5c2a652ce1aaa75b590",
+    "original_design_source_verified_before_freeze": true,
+    "passed": true,
+    "protected_paths_unchanged": true
+  },
+  "original_design_sha256": "ffd1dba3195edd583797181702125cff4a81456502dba5c2a652ce1aaa75b590",
+  "phase": "freeze",
+  "phase_sequence": 2,
+  "previous_phase_artifact": "experiments/002d/validation-evidence.json",
+  "previous_phase_sha256": "266b1616f0b429cd19ee27ad721e7018486bd49196efd161d9cd3ac47a0682b4",
+  "prospective_worst_case_power": {
+    "candidate_confirmatory_seeds_per_stratum": {
+      "1000": {
+        "assumed_hazard_deltas_by_stratum": {
+          "F0_nominal": -0.02,
+          "F1_primary_range_bias": -0.02,
+          "F2_primary_dropout": -0.02,
+          "F3_monitor_channel_fault": -0.02,
+          "F4_shared_cause_navigation": -0.02,
+          "F5_persistent_model_upset": -0.06376794064272767,
+          "F6_actuator_degradation": -0.02,
+          "F7_combined_primary_dropout_actuator_degradation": -0.02
+        },
+        "h1_marginal_power": 0.99969,
+        "h1_monte_carlo_95_interval": [
+          0.9996026566672782,
+          0.9997581483158249
+        ],
+        "h2_marginal_power": 0.995675,
+        "h2_monte_carlo_95_interval": [
+          0.9953777274365833,
+          0.9959532317781293
+        ],
+        "meets_target_by_monte_carlo_lower_bounds": true
+      },
+      "1500": {
+        "assumed_hazard_deltas_by_stratum": {
+          "F0_nominal": -0.02,
+          "F1_primary_range_bias": -0.02,
+          "F2_primary_dropout": -0.02,
+          "F3_monitor_channel_fault": -0.02,
+          "F4_shared_cause_navigation": -0.02,
+          "F5_persistent_model_upset": -0.06376794064272767,
+          "F6_actuator_degradation": -0.02,
+          "F7_combined_primary_dropout_actuator_degradation": -0.02
+        },
+        "h1_marginal_power": 1.0,
+        "h1_monte_carlo_95_interval": [
+          0.9999807930748098,
+          1.0
+        ],
+        "h2_marginal_power": 0.999855,
+        "h2_monte_carlo_95_interval": [
+          0.9997917637620296,
+          0.9998990348827884
+        ],
+        "meets_target_by_monte_carlo_lower_bounds": true
+      },
+      "2000": {
+        "assumed_hazard_deltas_by_stratum": {
+          "F0_nominal": -0.02,
+          "F1_primary_range_bias": -0.02,
+          "F2_primary_dropout": -0.02,
+          "F3_monitor_channel_fault": -0.02,
+          "F4_shared_cause_navigation": -0.02,
+          "F5_persistent_model_upset": -0.06376794064272767,
+          "F6_actuator_degradation": -0.02,
+          "F7_combined_primary_dropout_actuator_degradation": -0.02
+        },
+        "h1_marginal_power": 1.0,
+        "h1_monte_carlo_95_interval": [
+          0.9999807930748098,
+          1.0
+        ],
+        "h2_marginal_power": 0.999995,
+        "h2_monte_carlo_95_interval": [
+          0.9999716758901989,
+          0.9999991173766802
+        ],
+        "meets_target_by_monte_carlo_lower_bounds": true
+      }
+    },
+    "critical_value": 1.959963984540054,
+    "method": "eight-stratum equal-weight paired multinomial simulation; separate one-sided 95% discordance bounds; H1 requirements alternative and H2 zero-difference alternative; 1.96 critical value; marginal endpoint power only",
+    "simulations": 200000
+  },
+  "reserved_confirmatory_partition_materialized": false,
+  "runtime": {
+    "architecture": "arm64",
+    "blas_lapack_summary": [
+      "\"blas\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\",",
+      "\"lapack\": {",
+      "\"name\": \"accelerate\",",
+      "\"openblas configuration\": \"unknown\","
+    ],
+    "implementation": "CPython",
+    "locale": [
+      "en_GB",
+      "UTF-8"
+    ],
+    "numpy_version": "2.4.6",
+    "os": "Darwin",
+    "processor": "arm",
+    "python": "3.11.16",
+    "scipy_version": "1.17.0",
+    "thread_variables": {},
+    "uv_version": "uv 0.12.5 (Homebrew 2026-08-14 aarch64-apple-darwin)"
+  },
+  "sample_size": {
+    "adaptive_enlargement_allowed": false,
+    "arms": [
+      "D",
+      "PD"
+    ],
+    "combined_fault_root_seeds": 299,
+    "episodes": 598,
+    "maximum_permitted_roots_not_exceeded": true,
+    "minimum_exact_zero_incomplete_upper_below_one_percent": true
+  },
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "seed_manifest_hashes": {
+    "experiments/002d/seeds/combined_information.jsonl": "ffd6382dc57b851dccc4cdcda82ac3f38e3d07b171e4d1a34faff30c5ce18be7",
+    "experiments/002d/seeds/index.json": "8fa018fd1421b0c4696b56dc30b7f3e4f196db7fdd8ea965e1546b65ec68f6fb",
+    "experiments/002d/seeds/replay_subset.json": "ffe96b244134fe0f1f9cdd869ba54e1772fa8d241ea7ee8f9aeaa7fdd9d5cdc5"
+  },
+  "seed_validation": {
+    "confirmatory_partition_untouched": true,
+    "errors_preview": [],
+    "historical_root_seed_ids_compared": 6884,
+    "manifest_sha256": "ffd6382dc57b851dccc4cdcda82ac3f38e3d07b171e4d1a34faff30c5ce18be7",
+    "partition_code_disjoint": true,
+    "passed": true,
+    "replay_replicates": [
+      43,
+      57,
+      58,
+      64,
+      73,
+      107,
+      143,
+      146,
+      148,
+      155,
+      163,
+      175,
+      187,
+      228,
+      239,
+      264,
+      268,
+      274,
+      290,
+      293
+    ],
+    "rows": 299,
+    "unique_root_seed_ids": 299
+  },
+  "source_file_hashes": {
+    ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+    "docs/experiment-002d.md": "5f02dd81cf6f90fcaa5783099c6122510a355554b6acae12fcf458970a0c2032",
+    "experiments/002d/config.json": "41c4ad3a053e868c3389daaa7f4cd97e98d2f1b7f9ef77f21c24a4358c7dfb30",
+    "experiments/002d/confirmatory-stratum-map.json": "33813fa14e9c1250aa1c48a3179056c8c03864f91e91d253bc49fad223408c40",
+    "experiments/002d/preregistration.md": "105236b5f42533bdf89e17b656da4afa3012c6c2759c631e8164d0e39e7e0f71",
+    "experiments/002d/validation-evidence.json": "266b1616f0b429cd19ee27ad721e7018486bd49196efd161d9cd3ac47a0682b4",
+    "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+    "src/kri_space_autonomy/experiment_002/analysis.py": "86ed970c4c580e89188e64b50627ff82b31639d715fa882fdc03720752bbbac0",
+    "src/kri_space_autonomy/experiment_002/dynamics.py": "3c833eb857fe9a75005394e4f1f6ddf70bdfb4230eabc55cf54f8efd67b3a49c",
+    "src/kri_space_autonomy/experiment_002/evaluator.py": "6278947cb2d06d9ae7175af46282450f7dfba8d92dc4a43e25cd8125332d952e",
+    "src/kri_space_autonomy/experiment_002/monitor.py": "37fb0d30cf57b52523921ab0e15a0233ce55f5d545d80ebcece3a79fdd2802cd",
+    "src/kri_space_autonomy/experiment_002/policy.py": "47d23c22248f59162d60f5d560052574e88d10b1c59e1ef0383b6946fd6e0f84",
+    "src/kri_space_autonomy/experiment_002d/__init__.py": "f1e5eed0c7a560ff90a2c6cbc2410c4c5de5a6944ddc610af710414bb3a5233e",
+    "src/kri_space_autonomy/experiment_002d/analysis.py": "1af366cc14ba38ec80de0f44a6923c2205bba0fcd54dcf6ef53abb6c4f4ff7be",
+    "src/kri_space_autonomy/experiment_002d/config.py": "fee7d9180dadb97a70cdcfce460e5c1a287e80290d46f3dd81bfb4d16161db7d",
+    "src/kri_space_autonomy/experiment_002d/runner.py": "bd82a81f2cf2d5f6e4a0c6cba7c12e00584a96f5a88cf28acef04267f02d6e58",
+    "src/kri_space_autonomy/experiment_002d/seeds.py": "4033c145122562be78454c65657591b7e4b436f96016f3a0d13eb5696e0ed0cc",
+    "src/kri_space_autonomy/experiment_002d/workflow.py": "8cdff7d5872638c33feeedbcca31e2dc16945972c8a4b1ca701d1356f64ae527",
+    "tests/test_experiment_002d_analysis.py": "caa173a331e4b085843c830d808592de4e97392c68fd7ae64b9fa36413d471dc",
+    "tests/test_experiment_002d_design.py": "98438f4f78626ca181da990d62f7d5459044e322c7dfbec26a8125a8c7961446",
+    "tests/test_experiment_002d_runner.py": "311423c365c730f3bf999806745faec5194b0c9ffabe7ebc2ad0d3d63f776802",
+    "tests/test_experiment_002d_workflow.py": "e553d09ae1c824522164e385c8e629b6e3aedbbdf7939d367de7b1b8d82289d3",
+    "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+  },
+  "source_identity": {
+    "branch": "experiment-002d-combined-fault-info",
+    "git_commit": "4da0adee11163a6919ec69f86cfade81371e00ac",
+    "no_commit_created_by_experiment_002d": true,
+    "paths": "project-relative only",
+    "source_files_individually_hashed": true,
+    "source_tree_sha256": "efaf0b3a8e4187e67067f1c0b0b6a5aab960f7ab76e98a7fb3f400f59b3c7729",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "working_tree_dirty": true,
+    "working_tree_status": [
+      "?? docs/experiment-002d.md",
+      "?? experiments/002d/config.json",
+      "?? experiments/002d/confirmatory-stratum-map.json",
+      "?? experiments/002d/preregistration.md",
+      "?? experiments/002d/seeds/combined_information.jsonl",
+      "?? experiments/002d/seeds/index.json",
+      "?? experiments/002d/seeds/replay_subset.json",
+      "?? experiments/002d/validation-evidence.json",
+      "?? src/kri_space_autonomy/experiment_002d/__init__.py",
+      "?? src/kri_space_autonomy/experiment_002d/analysis.py",
+      "?? src/kri_space_autonomy/experiment_002d/config.py",
+      "?? src/kri_space_autonomy/experiment_002d/runner.py",
+      "?? src/kri_space_autonomy/experiment_002d/seeds.py",
+      "?? src/kri_space_autonomy/experiment_002d/workflow.py",
+      "?? tests/test_experiment_002d_analysis.py",
+      "?? tests/test_experiment_002d_design.py",
+      "?? tests/test_experiment_002d_runner.py",
+      "?? tests/test_experiment_002d_workflow.py"
+    ]
+  },
+  "source_tree_sha256": "efaf0b3a8e4187e67067f1c0b0b6a5aab960f7ab76e98a7fb3f400f59b3c7729",
+  "study_instance_id": "b31b5420-4401-498f-b235-6caedf8e30cf"
+}

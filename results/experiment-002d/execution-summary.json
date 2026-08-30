@@ -1,0 +1,16 @@
+{
+  "blocks": 299,
+  "confirmatory_campaign_executed": false,
+  "elapsed_wall_s": 15.887289958074689,
+  "episodes": 598,
+  "episodes_sha256": "a65de1c0390e77029248bdbe013e4d62c2e6db96c4f5ae7f3e0e1329a1933a3e",
+  "executed_at_utc": "2026-08-30T00:20:41.732173+00:00",
+  "freeze_id": "0fc96ee320d25c2cec3c37ba9aa87467ca4a9ee62a138bd0bed37f3ad7dc053b",
+  "phase": "execute",
+  "phase_sequence": 3,
+  "previous_phase_artifact": "experiments/002d/freeze-manifest.json",
+  "previous_phase_sha256": "79aec0f810ed5e89495f497178aecb4fb0607d78a5b5829b9608f4c661ca0fd1",
+  "reserved_confirmatory_partition_materialized": false,
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "study_instance_id": "b31b5420-4401-498f-b235-6caedf8e30cf"
+}
