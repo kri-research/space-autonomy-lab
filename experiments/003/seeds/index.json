@@ -1,0 +1,13 @@
+{
+  "freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+  "historical_root_ids_compared": 15183,
+  "manifest_sha256": "f95386b8047fc5ed0227912f8a1958793c5043f5fd24891b869873149c4f1549",
+  "materialized_only_after_freeze_verification": true,
+  "partition_code": 31,
+  "planned_episode_rows": 1792,
+  "replacement_or_extension_allowed": false,
+  "replay_subset_sha256": "41aa113359a1b376572bcd12983b08a6370d6d31b9795414a3a9d1f78c1d0b6e",
+  "root_rows": 448,
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "seed_contract_sha256": "971336656212bcce3b2ea00ce65ca2411c6a2c454116244688e4e1fed7844f31"
+}

@@ -1,0 +1,28 @@
+{
+  "blocks": 448,
+  "campaign_executions": 1,
+  "elapsed_wall_s": 227.07068705558777,
+  "episodes": 1792,
+  "episodes_sha256": "52fe58cbb8dbcd94bf3d3f5acf00d71661445423bfb5838a338a9079f9a06d04",
+  "executed_at_utc": "2026-08-30T15:42:47.985038+00:00",
+  "freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+  "phase": "design_validation_pilot_execution",
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "seed_validation": {
+    "errors_preview": [],
+    "manifest_sha256": "f95386b8047fc5ed0227912f8a1958793c5043f5fd24891b869873149c4f1549",
+    "passed": true,
+    "rows": 448,
+    "scenario_hash_errors": 0,
+    "stratum_counts": {
+      "E0_nominal": 64,
+      "E1_primary_range_bias": 64,
+      "E2_primary_dropout": 64,
+      "E3_primary_stale": 64,
+      "E4_primary_covariance_underreporting": 64,
+      "E5_monitor_range_bias": 64,
+      "E6_shared_range_bias": 64
+    },
+    "unique_root_ids": 448
+  }
+}

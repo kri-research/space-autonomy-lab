@@ -1,0 +1,32 @@
+{
+  "campaign_executions": 1,
+  "created_at_utc": "2026-08-30T15:44:13.610656+00:00",
+  "freeze_id": "d032ed6b22ff3bb74bc5b03caf2b287a8310b16eb8d76665020a66d98eab2297",
+  "output_hashes": {
+    "results/experiment-003/analysis.json": "36881e8c02b7982e20cebf00cb0b7de2060c88c7c302b858ebc9ce5dccaef9b8",
+    "results/experiment-003/execution-summary.json": "cdc24792f8a3f22a72965acde79b0bd429c59e932bacbdc91885f9928342fe7c",
+    "results/experiment-003/pilot-episodes.jsonl": "52fe58cbb8dbcd94bf3d3f5acf00d71661445423bfb5838a338a9079f9a06d04",
+    "results/experiment-003/qc.json": "7be94adeaa25c4e48e9fdf0515d1e48f67ef1b1ff1c50842a10cfc9941aa79b9",
+    "results/experiment-003/report.md": "9784c4cb5554f72533f619e5cfb45185ab013358cc028c061eff4a64aedc3295",
+    "results/experiment-003/reproducibility.json": "61dd47a2d2f0077ea26a03960f8eb71be29a459403bb7e3f11cd034164995b9f"
+  },
+  "paths": "project-relative only",
+  "phase": "pilot_analysis",
+  "primary_hypotheses_tested": false,
+  "progression": {
+    "decision": "ready_to_freeze_separate_confirmatory_design",
+    "passed": true
+  },
+  "publication_privacy_scan": {
+    "enumeration": "tracked plus untracked nonignored files",
+    "files_scanned": 247,
+    "matches": 0,
+    "matches_preview": [],
+    "opaque_files": 0,
+    "opaque_files_preview": [],
+    "passed": true
+  },
+  "replay_executions": 1,
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "seed_manifest_sha256": "f95386b8047fc5ed0227912f8a1958793c5043f5fd24891b869873149c4f1549"
+}
