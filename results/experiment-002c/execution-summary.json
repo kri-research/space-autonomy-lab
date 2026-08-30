@@ -1,0 +1,18 @@
+{
+  "combined_fault_study_executed": false,
+  "confirmatory_campaign_executed": false,
+  "elapsed_wall_s": 53.61945991683751,
+  "executed_at_utc": "2026-08-29T23:53:19.898544+00:00",
+  "fixed_command_cases": 24,
+  "freeze_id": "8157fefc06ea1aec4121b475d0ffa068576c8f98807406205c8f47f2120e479a",
+  "numerical_output_sha256": "37cf885320b3558af10ded511d1cb2647083ab9aafcdc3e702e3867e0901e543",
+  "operational_campaign_rerun": false,
+  "outputs_opened_by_execute": false,
+  "phase": "execute",
+  "phase_sequence": 3,
+  "previous_phase_artifact": "experiments/002c/freeze-manifest.json",
+  "previous_phase_sha256": "27c964c505f19845ba5843f740eef7916bfde80491ed121dfa12f4b622b7a51d",
+  "rate_campaign_rerun": false,
+  "schema_version": "experiment-002c-numerical-1.0",
+  "study_instance_id": "bed45dff-8b08-4f90-b89e-4a71630cb487"
+}

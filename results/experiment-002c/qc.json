@@ -1,0 +1,111 @@
+{
+  "checks": [
+    {
+      "id": "pre_outcome_validation_and_freeze",
+      "passed": true,
+      "threshold": "all pre-outcome checks pass and every frozen hash verifies"
+    },
+    {
+      "id": "seed_partition",
+      "observed": {
+        "errors_preview": [],
+        "historical_root_seed_ids_compared": 6878,
+        "manifest_sha256": "bf32dba3bd167f634d031b10369b7f26cfe7a5023416d501cf14781793b78597",
+        "partition_code_disjoint": true,
+        "passed": true,
+        "rows": 6,
+        "stratum_counts": {
+          "P0_nominal": 1,
+          "P1_primary_navigation": 1,
+          "P2_monitor_only": 1,
+          "P3_shared_cause_navigation": 1,
+          "P4_model_upset": 1,
+          "P5_actuator_degradation": 1
+        },
+        "unique_root_seed_ids": 6
+      },
+      "passed": true,
+      "threshold": "partition 24 contains six manifest-complete roots disjoint from all Experiment 002 and 002b roots"
+    },
+    {
+      "id": "historical_evidence_boundary",
+      "observed": {
+        "all_classifications_matched": true,
+        "historical_decision_preserved": true,
+        "pattern_summary": {
+          "alternating_extrema": {
+            "cases": 6,
+            "maximum_metric_error": 7.445810297213029e-07,
+            "maximum_state_error": 1.4024244610055803e-07,
+            "passed": 0
+          },
+          "maximum_closing": {
+            "cases": 6,
+            "maximum_metric_error": 1.4779288903810084e-12,
+            "maximum_state_error": 2.722266856380884e-13,
+            "passed": 6
+          },
+          "maximum_separating": {
+            "cases": 6,
+            "maximum_metric_error": 7.105427357601002e-14,
+            "maximum_state_error": 4.022695065941662e-09,
+            "passed": 0
+          },
+          "pd_operational": {
+            "cases": 6,
+            "maximum_metric_error": 1.438863472813523e-10,
+            "maximum_state_error": 1.6137458036524777e-10,
+            "passed": 4
+          }
+        },
+        "reversal_and_depletion_cases_dominated_failure": true,
+        "smooth_maximum_closing_cases_all_passed": true,
+        "source": "results/experiment-002b/fixed-command-replay.json",
+        "supports_completed_diagnosis": true
+      },
+      "passed": true,
+      "threshold": "002b remains failed; passing operational/rate evidence is referenced only; completed numerical diagnosis is independently supported"
+    },
+    {
+      "id": "fixed_command_numerical_replay",
+      "observed": {
+        "all_braking_unreachable_match": true,
+        "all_classifications_match": true,
+        "all_event_orderings_match": true,
+        "all_reference_convergence_checks_pass": true,
+        "case_count": 24,
+        "coarse_vs_fine_category_maxima": {
+          "achieved_acceleration_mps2": 3.0314292742694704e-15,
+          "collision_residual_m": 6.661338147750939e-16,
+          "depletion_residual_fraction": 2.236166980751353e-19,
+          "dwell_fraction": 0.0,
+          "event_time_s": 3.529976311256178e-11,
+          "propellant_fraction": 1.5654144647214707e-13,
+          "range_m": 6.539266905747354e-10,
+          "velocity_mps": 1.922018100231071e-12
+        },
+        "production_vs_reference_category_maxima": {
+          "achieved_acceleration_mps2": 4.85722573273506e-17,
+          "collision_residual_m": 9.459100169806334e-13,
+          "depletion_residual_fraction": 8.159136615035895e-13,
+          "dwell_fraction": 0.0,
+          "event_time_s": 4.5918113755760714e-10,
+          "propellant_fraction": 1.2090328738167955e-13,
+          "range_m": 4.605681169778109e-09,
+          "velocity_mps": 1.212541178574611e-11
+        }
+      },
+      "passed": true,
+      "threshold": "all 24 traces pass unit-specific production/reference bounds, identical event ordering and classifications, explicit evaluator/extrema checks, raw residual bounds, and 25%-of-bound coarse/fine convergence"
+    },
+    {
+      "id": "campaigns_remain_blocked",
+      "passed": true,
+      "threshold": "operational, rate, combined-fault, and 32,000-episode confirmatory campaigns are not executed by Experiment 002c"
+    }
+  ],
+  "decision": "pass",
+  "deviations": [],
+  "overall_passed": true,
+  "schema_version": "experiment-002c-numerical-1.0"
+}
