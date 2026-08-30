@@ -1,0 +1,23 @@
+{
+  "blocks": 5250,
+  "campaign_executions": 1,
+  "elapsed_wall_s": 2590.7957623004913,
+  "episodes": 21000,
+  "episodes_sha256": "f30c5f3a94353fee072993b916a7ebf8455f6acedf65967711e742f6705e3cac",
+  "executed_at_utc": "2026-08-30T20:06:14.031902+00:00",
+  "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+  "passed": true,
+  "phase": "confirmatory_execution",
+  "schema_version": "experiment-003-confirmatory-1.0",
+  "seed_validation": {
+    "deterministic_rederivation_errors": 0,
+    "errors_preview": [],
+    "manifest_sha256": "ca1e7e0d8c541152f253cf7a9ffa43051ddb5a46794466e28da3ae6eb9a18033",
+    "passed": true,
+    "prior_root_overlap": 0,
+    "replay_episode_rows": 840,
+    "replay_root_rows": 210,
+    "rows": 5250,
+    "unique_root_ids": 5250
+  }
+}

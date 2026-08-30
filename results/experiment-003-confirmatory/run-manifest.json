@@ -1,0 +1,29 @@
+{
+  "campaign_executions": 1,
+  "created_at_utc": "2026-08-30T20:09:51.433436+00:00",
+  "decision": "inconclusive",
+  "episodes": 21000,
+  "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+  "output_hashes": {
+    "results/experiment-003-confirmatory/analysis.json": "daec0cd91683c709d4a56b06846ec96c025ec097030ad292c7dc481aec576516",
+    "results/experiment-003-confirmatory/confirmatory-episodes.jsonl": "f30c5f3a94353fee072993b916a7ebf8455f6acedf65967711e742f6705e3cac",
+    "results/experiment-003-confirmatory/execution-summary.json": "82a9c74566c4f5e67967256e7e517f3fb2af3611959f5cf5517ae6aae2ced1ae",
+    "results/experiment-003-confirmatory/qc.json": "a05d81e6b80435293b0a08e010e5d31eaa973eacdf9c34b8465c3902e1f71f1c",
+    "results/experiment-003-confirmatory/report.md": "98d63415dd372d477cbb20cf180cf7c02f3382547184068cefa68c753898fbe6",
+    "results/experiment-003-confirmatory/reproducibility.json": "1e5a484bfa4a2dbadc553f59a8cb6f3147a51e9b5fb00578ba6cd0143dd4be6e"
+  },
+  "paths": "project-relative only",
+  "phase": "confirmatory_analysis",
+  "publication_privacy_scan": {
+    "enumeration": "tracked plus untracked nonignored files",
+    "files_scanned": 275,
+    "matches": 0,
+    "matches_preview": [],
+    "opaque_files": 0,
+    "opaque_files_preview": [],
+    "passed": true
+  },
+  "replay_executions": 1,
+  "schema_version": "experiment-003-confirmatory-1.0",
+  "seed_manifest_sha256": "ca1e7e0d8c541152f253cf7a9ffa43051ddb5a46794466e28da3ae6eb9a18033"
+}
