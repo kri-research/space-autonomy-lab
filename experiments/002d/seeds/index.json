@@ -1,0 +1,15 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "derivation": "SeedSequence([master, 002d_partition, F7, replicate, stream])",
+  "historical_partition_codes_max": 24,
+  "manifest_sha256": "ffd6382dc57b851dccc4cdcda82ac3f38e3d07b171e4d1a34faff30c5ce18be7",
+  "master_seed": 2002,
+  "partition_code": 25,
+  "partition_rows": 299,
+  "planned_episodes": 598,
+  "replay_subset_sha256": "ffe96b244134fe0f1f9cdd869ba54e1772fa8d241ea7ee8f9aeaa7fdd9d5cdc5",
+  "reserved_confirmatory_partition_code": 16,
+  "root_seed_ids_disjoint_from_experiments_002_002b_002c": true,
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "stratum_code": 8
+}

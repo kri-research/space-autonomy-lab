@@ -1,0 +1,47 @@
+{
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "source_document_sha256": "ffd1dba3195edd583797181702125cff4a81456502dba5c2a652ce1aaa75b590",
+  "confirmatory_weight_per_stratum": 0.125,
+  "strata": [
+    {
+      "confirmatory_id": "F0_nominal",
+      "pilot_source": "P0_nominal",
+      "pilot_subtype": null
+    },
+    {
+      "confirmatory_id": "F1_primary_range_bias",
+      "pilot_source": "P1_primary_navigation",
+      "pilot_subtype": "range_bias"
+    },
+    {
+      "confirmatory_id": "F2_primary_dropout",
+      "pilot_source": "P1_primary_navigation",
+      "pilot_subtype": "dropout"
+    },
+    {
+      "confirmatory_id": "F3_monitor_channel_fault",
+      "pilot_source": "P2_monitor_only",
+      "pilot_subtype": "frozen_50_50_range_bias_dropout_mixture"
+    },
+    {
+      "confirmatory_id": "F4_shared_cause_navigation",
+      "pilot_source": "P3_shared_cause_navigation",
+      "pilot_subtype": "frozen_50_50_range_bias_dropout_mixture"
+    },
+    {
+      "confirmatory_id": "F5_persistent_model_upset",
+      "pilot_source": "P4_model_upset",
+      "pilot_subtype": null
+    },
+    {
+      "confirmatory_id": "F6_actuator_degradation",
+      "pilot_source": "P5_actuator_degradation",
+      "pilot_subtype": null
+    },
+    {
+      "confirmatory_id": "F7_combined_primary_dropout_actuator_degradation",
+      "pilot_source": null,
+      "pilot_subtype": null
+    }
+  ]
+}

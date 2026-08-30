@@ -1,0 +1,442 @@
+{
+  "combined_fault_stratum": "F7_combined_primary_dropout_actuator_degradation",
+  "confirmatory_campaign_executed": false,
+  "confirmatory_stratum_weights": {
+    "F0_nominal": 0.125,
+    "F1_primary_range_bias": 0.125,
+    "F2_primary_dropout": 0.125,
+    "F3_monitor_channel_fault": 0.125,
+    "F4_shared_cause_navigation": 0.125,
+    "F5_persistent_model_upset": 0.125,
+    "F6_actuator_degradation": 0.125,
+    "F7_combined_primary_dropout_actuator_degradation": 0.125
+  },
+  "decision": "resolved_freeze_confirmatory_design",
+  "failure_classes": {},
+  "information_counts": {
+    "blocks": 299,
+    "complete_blocks": 299,
+    "episode_rows": 598,
+    "incomplete_blocks": 0,
+    "incomplete_fraction": 0.0,
+    "incomplete_limit": 0.01,
+    "unexpected_rows": 0,
+    "unique_episode_cells": 598,
+    "valid": true
+  },
+  "information_requirement_resolved": true,
+  "next_action": "freeze_separate_eight_stratum_confirmatory_preregistration_without_materializing_or_opening_reserved_seeds",
+  "nuisance": {
+    "F0_nominal": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.003737662826100663,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 0,
+      "direct_hazard_lower95": 0.0,
+      "direct_hazard_risk": 0.0,
+      "direct_hazard_upper95": 0.0074613555287995625,
+      "direct_success_events": 316,
+      "direct_success_risk": 0.79,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.0074613555287995625,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      },
+      "paired_blocks": 400,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 316,
+      "protected_success_risk": 0.79,
+      "success_discordance": {
+        "one_sided_95_upper": 0.0074613555287995625,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      }
+    },
+    "F1_primary_range_bias": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.0074613555287995625,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 1,
+      "direct_hazard_lower95": 0.0002564335872234924,
+      "direct_hazard_risk": 0.005,
+      "direct_hazard_upper95": 0.023498470434950736,
+      "direct_success_events": 49,
+      "direct_success_risk": 0.245,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.023498470434950736,
+        "pd0_d1": 1,
+        "pd1_d0": 0,
+        "risk": 0.005,
+        "total": 1
+      },
+      "paired_blocks": 200,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 49,
+      "protected_success_risk": 0.245,
+      "success_discordance": {
+        "one_sided_95_upper": 0.03114259941408376,
+        "pd0_d1": 1,
+        "pd1_d0": 1,
+        "risk": 0.01,
+        "total": 2
+      }
+    },
+    "F2_primary_dropout": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.0074613555287995625,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 0,
+      "direct_hazard_lower95": 0.0,
+      "direct_hazard_risk": 0.0,
+      "direct_hazard_upper95": 0.014867039231272083,
+      "direct_success_events": 64,
+      "direct_success_risk": 0.32,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.014867039231272083,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      },
+      "paired_blocks": 200,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 71,
+      "protected_success_risk": 0.355,
+      "success_discordance": {
+        "one_sided_95_upper": 0.2252413553683334,
+        "pd0_d1": 14,
+        "pd1_d0": 21,
+        "risk": 0.175,
+        "total": 35
+      }
+    },
+    "F3_monitor_channel_fault": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.003737662826100663,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 0,
+      "direct_hazard_lower95": 0.0,
+      "direct_hazard_risk": 0.0,
+      "direct_hazard_upper95": 0.0074613555287995625,
+      "direct_success_events": 323,
+      "direct_success_risk": 0.8075,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.0074613555287995625,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      },
+      "paired_blocks": 400,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 178,
+      "protected_success_risk": 0.445,
+      "success_discordance": {
+        "one_sided_95_upper": 0.419200763821301,
+        "pd0_d1": 148,
+        "pd1_d0": 3,
+        "risk": 0.3775,
+        "total": 151
+      }
+    },
+    "F4_shared_cause_navigation": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.003737662826100663,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 0,
+      "direct_hazard_lower95": 0.0,
+      "direct_hazard_risk": 0.0,
+      "direct_hazard_upper95": 0.0074613555287995625,
+      "direct_success_events": 227,
+      "direct_success_risk": 0.5675,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.0074613555287995625,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      },
+      "paired_blocks": 400,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 160,
+      "protected_success_risk": 0.4,
+      "success_discordance": {
+        "one_sided_95_upper": 0.2907820780551945,
+        "pd0_d1": 84,
+        "pd1_d0": 17,
+        "risk": 0.2525,
+        "total": 101
+      }
+    },
+    "F5_persistent_model_upset": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.003737662826100663,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 117,
+      "direct_hazard_lower95": 0.2550717625709107,
+      "direct_hazard_risk": 0.2925,
+      "direct_hazard_upper95": 0.3322316842077059,
+      "direct_success_events": 115,
+      "direct_success_risk": 0.2875,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.3322316842077059,
+        "pd0_d1": 117,
+        "pd1_d0": 0,
+        "risk": 0.2925,
+        "total": 117
+      },
+      "paired_blocks": 400,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 400,
+      "protected_success_risk": 1.0,
+      "success_discordance": {
+        "one_sided_95_upper": 0.7497109206217893,
+        "pd0_d1": 0,
+        "pd1_d0": 285,
+        "risk": 0.7125,
+        "total": 285
+      }
+    },
+    "F6_actuator_degradation": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.003737662826100663,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 0,
+      "direct_hazard_lower95": 0.0,
+      "direct_hazard_risk": 0.0,
+      "direct_hazard_upper95": 0.0074613555287995625,
+      "direct_success_events": 325,
+      "direct_success_risk": 0.8125,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.0074613555287995625,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      },
+      "paired_blocks": 400,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 325,
+      "protected_success_risk": 0.8125,
+      "success_discordance": {
+        "one_sided_95_upper": 0.0074613555287995625,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      }
+    },
+    "F7_combined_primary_dropout_actuator_degradation": {
+      "adverse_coded_failure_cell_risk": 0.0,
+      "adverse_coded_failure_cell_upper95": 0.004997058694246492,
+      "adverse_coded_failure_cells": 0,
+      "direct_hazard_events": 0,
+      "direct_hazard_lower95": 0.0,
+      "direct_hazard_risk": 0.0,
+      "direct_hazard_upper95": 0.009969146792899286,
+      "direct_success_events": 135,
+      "direct_success_risk": 0.451505016722408,
+      "hazard_discordance": {
+        "one_sided_95_upper": 0.009969146792899286,
+        "pd0_d1": 0,
+        "pd1_d0": 0,
+        "risk": 0.0,
+        "total": 0
+      },
+      "paired_blocks": 299,
+      "protected_hazard_events": 0,
+      "protected_hazard_risk": 0.0,
+      "protected_success_events": 118,
+      "protected_success_risk": 0.39464882943143814,
+      "success_discordance": {
+        "one_sided_95_upper": 0.2032279267789719,
+        "pd0_d1": 33,
+        "pd1_d0": 16,
+        "risk": 0.16387959866220736,
+        "total": 49
+      }
+    }
+  },
+  "power": {
+    "conservative_direct_risk_lower95": {
+      "candidate_confirmatory_seeds_per_stratum": {
+        "1000": {
+          "assumed_hazard_deltas_by_stratum": {
+            "F0_nominal": -0.02,
+            "F1_primary_range_bias": -0.02,
+            "F2_primary_dropout": -0.02,
+            "F3_monitor_channel_fault": -0.02,
+            "F4_shared_cause_navigation": -0.02,
+            "F5_persistent_model_upset": -0.06376794064272767,
+            "F6_actuator_degradation": -0.02,
+            "F7_combined_primary_dropout_actuator_degradation": -0.02
+          },
+          "h1_marginal_power": 1.0,
+          "h1_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "h2_marginal_power": 0.99979,
+          "h2_monte_carlo_95_interval": [
+            0.9997161763051613,
+            0.9998446248365568
+          ],
+          "meets_target_by_monte_carlo_lower_bounds": true
+        },
+        "1500": {
+          "assumed_hazard_deltas_by_stratum": {
+            "F0_nominal": -0.02,
+            "F1_primary_range_bias": -0.02,
+            "F2_primary_dropout": -0.02,
+            "F3_monitor_channel_fault": -0.02,
+            "F4_shared_cause_navigation": -0.02,
+            "F5_persistent_model_upset": -0.06376794064272767,
+            "F6_actuator_degradation": -0.02,
+            "F7_combined_primary_dropout_actuator_degradation": -0.02
+          },
+          "h1_marginal_power": 1.0,
+          "h1_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "h2_marginal_power": 1.0,
+          "h2_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "meets_target_by_monte_carlo_lower_bounds": true
+        },
+        "2000": {
+          "assumed_hazard_deltas_by_stratum": {
+            "F0_nominal": -0.02,
+            "F1_primary_range_bias": -0.02,
+            "F2_primary_dropout": -0.02,
+            "F3_monitor_channel_fault": -0.02,
+            "F4_shared_cause_navigation": -0.02,
+            "F5_persistent_model_upset": -0.06376794064272767,
+            "F6_actuator_degradation": -0.02,
+            "F7_combined_primary_dropout_actuator_degradation": -0.02
+          },
+          "h1_marginal_power": 1.0,
+          "h1_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "h2_marginal_power": 1.0,
+          "h2_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "meets_target_by_monte_carlo_lower_bounds": true
+        }
+      },
+      "critical_value": 1.959963984540054,
+      "method": "eight-stratum equal-weight paired multinomial simulation; separate one-sided 95% discordance bounds; H1 requirements alternative and H2 zero-difference alternative; 1.96 critical value; marginal endpoint power only",
+      "simulations": 200000
+    },
+    "endpoint_power_interpretation": "marginal, not joint",
+    "historical_compatible_point_direct_risk": {
+      "candidate_confirmatory_seeds_per_stratum": {
+        "1000": {
+          "assumed_hazard_deltas_by_stratum": {
+            "F0_nominal": -0.02,
+            "F1_primary_range_bias": -0.02,
+            "F2_primary_dropout": -0.02,
+            "F3_monitor_channel_fault": -0.02,
+            "F4_shared_cause_navigation": -0.02,
+            "F5_persistent_model_upset": -0.073125,
+            "F6_actuator_degradation": -0.02,
+            "F7_combined_primary_dropout_actuator_degradation": -0.02
+          },
+          "h1_marginal_power": 1.0,
+          "h1_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "h2_marginal_power": 0.999805,
+          "h2_monte_carlo_95_interval": [
+            0.9997334585791947,
+            0.9998573419863158
+          ],
+          "meets_target_by_monte_carlo_lower_bounds": true
+        },
+        "1500": {
+          "assumed_hazard_deltas_by_stratum": {
+            "F0_nominal": -0.02,
+            "F1_primary_range_bias": -0.02,
+            "F2_primary_dropout": -0.02,
+            "F3_monitor_channel_fault": -0.02,
+            "F4_shared_cause_navigation": -0.02,
+            "F5_persistent_model_upset": -0.073125,
+            "F6_actuator_degradation": -0.02,
+            "F7_combined_primary_dropout_actuator_degradation": -0.02
+          },
+          "h1_marginal_power": 1.0,
+          "h1_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "h2_marginal_power": 1.0,
+          "h2_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "meets_target_by_monte_carlo_lower_bounds": true
+        },
+        "2000": {
+          "assumed_hazard_deltas_by_stratum": {
+            "F0_nominal": -0.02,
+            "F1_primary_range_bias": -0.02,
+            "F2_primary_dropout": -0.02,
+            "F3_monitor_channel_fault": -0.02,
+            "F4_shared_cause_navigation": -0.02,
+            "F5_persistent_model_upset": -0.073125,
+            "F6_actuator_degradation": -0.02,
+            "F7_combined_primary_dropout_actuator_degradation": -0.02
+          },
+          "h1_marginal_power": 1.0,
+          "h1_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "h2_marginal_power": 1.0,
+          "h2_monte_carlo_95_interval": [
+            0.9999807930748098,
+            1.0
+          ],
+          "meets_target_by_monte_carlo_lower_bounds": true
+        }
+      },
+      "critical_value": 1.959963984540054,
+      "method": "eight-stratum equal-weight paired multinomial simulation; separate one-sided 95% discordance bounds; H1 requirements alternative and H2 zero-difference alternative; 1.96 critical value; marginal endpoint power only",
+      "simulations": 200000
+    },
+    "nuisance_bound_interpretation": "separate one-sided 95% bounds; no simultaneous-coverage claim",
+    "recommended_confirmatory_episodes": 32000,
+    "recommended_confirmatory_seeds_per_stratum": 1000
+  },
+  "qc_check_ids": [
+    "pre_outcome_validation",
+    "historical_integrity",
+    "freeze_verified",
+    "seed_manifest",
+    "paired_cells",
+    "same_platform_replay",
+    "bounded_scope",
+    "h1_h2_information"
+  ],
+  "reserved_confirmatory_partition_materialized": false,
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "study_phase": "bounded_combined_fault_information"
+}

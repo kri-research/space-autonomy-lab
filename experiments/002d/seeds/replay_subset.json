@@ -1,0 +1,26 @@
+{
+  "replicates": [
+    43,
+    57,
+    58,
+    64,
+    73,
+    107,
+    143,
+    146,
+    148,
+    155,
+    163,
+    175,
+    187,
+    228,
+    239,
+    264,
+    268,
+    274,
+    290,
+    293
+  ],
+  "schema_version": "experiment-002d-combined-information-1.0",
+  "selection": "fixed outcome-blind subset of combined-information roots"
+}
