@@ -79,8 +79,26 @@ uv run python -m kri_space_autonomy.fault_suite \
   fault-suites/example-rpo.json
 ```
 
-This is a simplified RPO controller test harness, not a full GNC stack, flight-safety/certification
-system, or assurance-report product.
+This is a simplified RPO controller test harness, not a full GNC stack or flight-safety/
+certification system.
+
+## Produce an assurance evidence report
+
+The product-facing [assessment report layer](docs/assurance-report.md) implements the workflow
+**run controller → inject repeatable faults → produce assurance evidence report**. Acceptance
+criteria are declared in a strict versioned policy; output is stable JSON plus concise Markdown.
+
+```bash
+uv run python -m kri_space_autonomy.assurance_report \
+  assess kri_space_autonomy.examples.proportional_controller:controller \
+  fault-suites/example-rpo.json assessment-policies/example-rpo.json \
+  --json-output reports/example-rpo-assessment.json \
+  --markdown-output reports/example-rpo-assessment.md \
+  --stdout none
+```
+
+The report is evidence from this simplified test harness. It is not formal assurance,
+certification, or a flight-safety claim.
 
 ## Run an experiment
 

@@ -130,5 +130,6 @@ change. Reserved internal-upset types fail closed with `UnsupportedFaultError`; 
 with a misleading observation or actuator fault. A later contract version may add an explicit,
 controller-declared capability with controller-specific validation.
 
-The next product layer can consume these deterministic result documents to build reviewed assurance
-summaries without changing suite execution semantics.
+The [assessment report layer](assurance-report.md) consumes these deterministic results to produce
+stable JSON and concise Markdown against an explicit user-declared policy, without changing suite
+execution semantics.
