@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "completeness": true,
+    "integrity": true,
+    "structural_cells": true
+  },
+  "decision": "inconclusive",
+  "overall_passed": true,
+  "schema_version": "experiment-003-confirmatory-1.0"
+}

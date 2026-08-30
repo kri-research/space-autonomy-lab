@@ -1,0 +1,15 @@
+{
+  "confirmatory_freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+  "manifest_sha256": "ca1e7e0d8c541152f253cf7a9ffa43051ddb5a46794466e28da3ae6eb9a18033",
+  "materialized_only_after_confirmatory_freeze_verification": true,
+  "partition_code": 32,
+  "planned_episode_rows": 21000,
+  "prior_root_ids_compared": 15631,
+  "replacement_or_extension_allowed": false,
+  "replay_episode_rows": 840,
+  "replay_root_rows": 210,
+  "replay_subset_sha256": "1c128b50feb967b2328374bc0c1eed558ac51884a81deb748266dd7678b26499",
+  "root_rows": 5250,
+  "schema_version": "experiment-003-confirmatory-1.0",
+  "seed_contract_sha256": "b5a07cc6d4a6fa277cd0397c779b70c5f8d912c1ed493938cbe373a4c43b30c9"
+}
