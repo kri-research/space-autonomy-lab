@@ -52,6 +52,17 @@ The research environment is locked to the Python patch and package versions in
 uv sync --frozen --extra dev
 ```
 
+## Bring your own controller
+
+External Python controllers can be loaded by import path without changing simulator or historical
+experiment source. See the [controller adapter guide](docs/controller-adapter.md) for the small
+observation/command contract and validation commands.
+
+```bash
+uv run python -m kri_space_autonomy.controller_adapter \
+  validate kri_space_autonomy.examples.proportional_controller:controller
+```
+
 ## Run an experiment
 
 ```bash
