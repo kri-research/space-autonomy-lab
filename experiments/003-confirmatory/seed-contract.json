@@ -1,0 +1,39 @@
+{
+  "schema_version": "experiment-003-confirmatory-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 3003,
+  "partition": "experiment_003_confirmatory_reserved",
+  "partition_code": 32,
+  "status_at_freeze": "reserved_not_materialized_or_executed",
+  "derivation": "SeedSequence([master, partition, stratum, replicate, stream])",
+  "strata": [
+    {"id": "E0_nominal", "code": 1, "roots": 750, "weight": 0.14285714285714285},
+    {"id": "E1_primary_range_bias", "code": 2, "roots": 750, "weight": 0.14285714285714285},
+    {"id": "E2_primary_dropout", "code": 3, "roots": 750, "weight": 0.14285714285714285},
+    {"id": "E3_primary_stale", "code": 4, "roots": 750, "weight": 0.14285714285714285},
+    {"id": "E4_primary_covariance_underreporting", "code": 5, "roots": 750, "weight": 0.14285714285714285},
+    {"id": "E5_monitor_range_bias", "code": 6, "roots": 750, "weight": 0.14285714285714285},
+    {"id": "E6_shared_range_bias", "code": 7, "roots": 750, "weight": 0.14285714285714285}
+  ],
+  "streams": {
+    "initial_state": 101,
+    "process_disturbance": 102,
+    "primary_measurement": 103,
+    "monitor_measurement": 104,
+    "fault_parameters": 105,
+    "arm_run_order": 106
+  },
+  "arms": ["R", "D", "PS", "PD"],
+  "expected_root_rows": 5250,
+  "expected_episode_rows": 21000,
+  "replay_roots_per_stratum": 30,
+  "expected_replay_episode_rows": 840,
+  "materialization_prerequisite": "Successful internal verification of the Experiment 003 confirmatory freeze and readiness identities before any partition-32 generator invocation.",
+  "materialization_outputs": [
+    "experiments/003-confirmatory/seeds/confirmatory.jsonl",
+    "experiments/003-confirmatory/seeds/replay-subset.json",
+    "experiments/003-confirmatory/seeds/index.json"
+  ],
+  "replacement_or_extension_allowed": false,
+  "outcome_dependent_materialization_allowed": false
+}

@@ -1,0 +1,13 @@
+{
+  "confirmatory_outcomes_executed": false,
+  "confirmatory_seeds_materialized": false,
+  "freeze_id": "61d9f5b9657875b24759b4cad8eb83f60a655c09ef68d6892c49731887d505e6",
+  "next_command": "uv run python -m kri_space_autonomy.experiment_003_confirmatory.workflow materialize-confirmatory-seeds",
+  "next_task": "one-time 21,000-episode Experiment 003 confirmatory campaign",
+  "partition_code": 32,
+  "partition_state": "reserved_not_materialized_or_executed",
+  "readiness_id": "456b3971d0e8c2a1d26e3b3c5c7c292f523e9cd2fe9f4a42f2d790e974bb1368",
+  "schema_version": "experiment-003-confirmatory-1.0",
+  "scope": "one-time 21,000-episode Experiment 003 confirmatory campaign",
+  "status": "READY"
+}
