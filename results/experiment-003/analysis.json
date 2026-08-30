@@ -1,0 +1,581 @@
+{
+  "arm_summaries": {
+    "E0_nominal": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.24630845407033827,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "sustained_success": 0.828125
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0009114583333333333,
+        "mean_primary_max_abs_range_error_m": 0.246316319371149,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "sustained_success": 0.828125
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0008072916666666667,
+        "mean_primary_max_abs_range_error_m": 0.24638517807378713,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "sustained_success": 0.8125
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.24681735927841303,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "sustained_success": 1.0
+        }
+      }
+    },
+    "E1_primary_range_bias": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.4682079975095375,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.640625,
+          "sustained_success": 0.640625
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0008333333333333333,
+        "mean_primary_max_abs_range_error_m": 0.4677729150693923,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.65625,
+          "sustained_success": 0.65625
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.12953125,
+        "mean_primary_max_abs_range_error_m": 0.4682585497184227,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.078125,
+          "sustained_success": 0.078125
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.47135271415399727,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 1.0,
+          "sustained_success": 1.0
+        }
+      }
+    },
+    "E2_primary_dropout": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.23824712250404312,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.765625,
+          "sustained_success": 0.765625
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0011458333333333333,
+        "mean_primary_max_abs_range_error_m": 0.23851567432666754,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.75,
+          "sustained_success": 0.75
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.02919270833333333,
+        "mean_primary_max_abs_range_error_m": 0.2381089445093143,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.5625,
+          "sustained_success": 0.5625
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.2376116506873211,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 1.0,
+          "sustained_success": 1.0
+        }
+      }
+    },
+    "E3_primary_stale": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.25154971813339244,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.734375,
+          "sustained_success": 0.734375
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0009114583333333333,
+        "mean_primary_max_abs_range_error_m": 0.2515455561121192,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.734375,
+          "sustained_success": 0.734375
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.025885416666666668,
+        "mean_primary_max_abs_range_error_m": 0.25186336618232424,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.5625,
+          "sustained_success": 0.5625
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.25230662182199026,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 1.0,
+          "sustained_success": 1.0
+        }
+      }
+    },
+    "E4_primary_covariance_underreporting": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.27199377838616706,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.8125,
+          "sustained_success": 0.8125
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0011197916666666667,
+        "mean_primary_max_abs_range_error_m": 0.2720044114382472,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.828125,
+          "sustained_success": 0.828125
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.02015625,
+        "mean_primary_max_abs_range_error_m": 0.2731306010830209,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.4375,
+          "sustained_success": 0.4375
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.2734740737804733,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 1.0,
+          "sustained_success": 1.0
+        }
+      }
+    },
+    "E5_monitor_range_bias": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.26107777453319836,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.953125,
+          "sustained_success": 0.828125
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.12244791666666666,
+        "mean_primary_max_abs_range_error_m": 0.2610101394821759,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.078125,
+          "sustained_success": 0.078125
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0007291666666666667,
+        "mean_primary_max_abs_range_error_m": 0.2608356723794727,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.953125,
+          "sustained_success": 0.828125
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.260818590538644,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 1.0,
+          "sustained_success": 1.0
+        }
+      }
+    },
+    "E6_shared_range_bias": {
+      "D": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.4208400460795909,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.78125,
+          "sustained_success": 0.78125
+        }
+      },
+      "PD": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.12122395833333333,
+        "mean_primary_max_abs_range_error_m": 0.41987636862086697,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.0625,
+          "sustained_success": 0.0625
+        }
+      },
+      "PS": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.12145833333333333,
+        "mean_primary_max_abs_range_error_m": 0.42175317856731137,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 0.0625,
+          "sustained_success": 0.0625
+        }
+      },
+      "R": {
+        "episodes": 64,
+        "failure_classes": {},
+        "mean_fallback_duty_cycle": 0.0,
+        "mean_primary_max_abs_range_error_m": 0.419144744499153,
+        "risks": {
+          "analysis_hazard": 0.0,
+          "collision": 0.0,
+          "physical_hazard_observed": 0.0,
+          "recovery_favorable_180": 1.0,
+          "sustained_success": 1.0
+        }
+      }
+    }
+  },
+  "future_sample_size_resolution": {
+    "candidate_results": [
+      {
+        "H1_marginal_power": 0.97975,
+        "H1_monte_carlo_95_lower": 0.9777016883594024,
+        "H2_marginal_power": 0.64175,
+        "H2_monte_carlo_95_lower": 0.6350595563312401,
+        "passes": false,
+        "planned_episodes": 7000,
+        "roots_per_stratum": 250,
+        "total_roots": 1750
+      },
+      {
+        "H1_marginal_power": 0.9999,
+        "H1_monte_carlo_95_lower": 0.9996388127969551,
+        "H2_marginal_power": 0.9069,
+        "H2_monte_carlo_95_lower": 0.9027885715087166,
+        "passes": false,
+        "planned_episodes": 14000,
+        "roots_per_stratum": 500,
+        "total_roots": 3500
+      },
+      {
+        "H1_marginal_power": 1.0,
+        "H1_monte_carlo_95_lower": 0.9998155730360381,
+        "H2_marginal_power": 0.98095,
+        "H2_monte_carlo_95_lower": 0.9789590110806136,
+        "passes": true,
+        "planned_episodes": 21000,
+        "roots_per_stratum": 750,
+        "total_roots": 5250
+      },
+      {
+        "H1_marginal_power": 1.0,
+        "H1_monte_carlo_95_lower": 0.9998155730360381,
+        "H2_marginal_power": 0.9958,
+        "H2_monte_carlo_95_lower": 0.9948027156336768,
+        "passes": true,
+        "planned_episodes": 28000,
+        "roots_per_stratum": 1000,
+        "total_roots": 7000
+      },
+      {
+        "H1_marginal_power": 1.0,
+        "H1_monte_carlo_95_lower": 0.9998155730360381,
+        "H2_marginal_power": 0.99995,
+        "H2_monte_carlo_95_lower": 0.9997214496678255,
+        "passes": true,
+        "planned_episodes": 42000,
+        "roots_per_stratum": 1500,
+        "total_roots": 10500
+      }
+    ],
+    "marginal_not_joint_power": true,
+    "method": "paired risk-difference normal-bound simulation using conservative per-stratum discordance upper bounds; fixed H1=-0.02 and H2=0 alternatives",
+    "observed_pilot_effect_used_as_alternative": false,
+    "seed": 300317,
+    "selected_roots_per_stratum": 750,
+    "simulations": 20000,
+    "target_lower_bound": 0.95
+  },
+  "inferential_unit": "stratum by root-seed four-arm block",
+  "paired_nuisance": {
+    "analysis_hazard": {
+      "E0_nominal": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E1_primary_range_bias": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E2_primary_dropout": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E3_primary_stale": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E4_primary_covariance_underreporting": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E5_monitor_range_bias": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E6_shared_range_bias": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      }
+    },
+    "sustained_success": {
+      "E0_nominal": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E1_primary_range_bias": {
+        "PD_adverse_discordances": 1,
+        "PD_favorable_discordances": 0,
+        "discordance": 1,
+        "discordance_one_sided_95_upper": 0.07198975489470939,
+        "discordance_rate": 0.015625,
+        "paired_risk_difference": 0.015625,
+        "pairs": 64
+      },
+      "E2_primary_dropout": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 1,
+        "discordance": 1,
+        "discordance_one_sided_95_upper": 0.07198975489470939,
+        "discordance_rate": 0.015625,
+        "paired_risk_difference": -0.015625,
+        "pairs": 64
+      },
+      "E3_primary_stale": {
+        "PD_adverse_discordances": 0,
+        "PD_favorable_discordances": 0,
+        "discordance": 0,
+        "discordance_one_sided_95_upper": 0.04572970233076244,
+        "discordance_rate": 0.0,
+        "paired_risk_difference": 0.0,
+        "pairs": 64
+      },
+      "E4_primary_covariance_underreporting": {
+        "PD_adverse_discordances": 1,
+        "PD_favorable_discordances": 0,
+        "discordance": 1,
+        "discordance_one_sided_95_upper": 0.07198975489470939,
+        "discordance_rate": 0.015625,
+        "paired_risk_difference": 0.015625,
+        "pairs": 64
+      },
+      "E5_monitor_range_bias": {
+        "PD_adverse_discordances": 1,
+        "PD_favorable_discordances": 49,
+        "discordance": 50,
+        "discordance_one_sided_95_upper": 0.8626304116823931,
+        "discordance_rate": 0.78125,
+        "paired_risk_difference": -0.75,
+        "pairs": 64
+      },
+      "E6_shared_range_bias": {
+        "PD_adverse_discordances": 3,
+        "PD_favorable_discordances": 49,
+        "discordance": 52,
+        "discordance_one_sided_95_upper": 0.888091886499616,
+        "discordance_rate": 0.8125,
+        "paired_risk_difference": -0.71875,
+        "pairs": 64
+      }
+    }
+  },
+  "phase": "design_validation_pilot",
+  "primary_effect_direction_used_for_progression": false,
+  "primary_hypotheses_tested": false,
+  "progression": {
+    "decision": "ready_to_freeze_separate_confirmatory_design",
+    "passed": true
+  },
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "stratum_weight": 0.14285714285714285
+}

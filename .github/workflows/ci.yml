@@ -25,7 +25,19 @@ jobs:
       - name: Run phase-appropriate tests
         shell: bash
         run: |
-          if [[ -d experiments/002-confirmatory/seeds && -d results/experiment-002-confirmatory ]]; then
+          if [[ -d experiments/003/seeds && -d results/experiment-003 ]]; then
+            # These guards assert that outcome partitions have not yet been materialized.
+            # They are intentionally false after the corresponding frozen campaigns run.
+            uv run pytest \
+              --deselect=tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots \
+              --deselect=tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized \
+              --deselect=tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them
+            uv run python -m kri_space_autonomy.experiment_003.workflow verify-results
+            uv run python -m kri_space_autonomy.experiment_003.workflow release-scan
+            make confirmatory-verify-freeze
+            make confirmatory-verify-results
+            make confirmatory-scan
+          elif [[ -d experiments/002-confirmatory/seeds && -d results/experiment-002-confirmatory ]]; then
             # These two tests are pre-materialization guards and are intentionally
             # false once the frozen confirmatory partition has been executed.
             uv run pytest \

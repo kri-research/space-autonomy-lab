@@ -1,0 +1,76 @@
+{
+  "replicates_by_stratum": {
+    "E0_nominal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "E1_primary_range_bias": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "E2_primary_dropout": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "E3_primary_stale": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "E4_primary_covariance_underreporting": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "E5_monitor_range_bias": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "E6_shared_range_bias": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "schema_version": "experiment-003-navigation-estimation-1.0",
+  "selection": "first eight replicate indices in every stratum; outcome-blind"
+}
