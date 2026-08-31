@@ -1,0 +1,52 @@
+{
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "gate_policy": "conjunctive fail-closed; thresholds may not be changed after partition-43 materialization",
+  "gates": {
+    "foundation_identity": {
+      "required": true,
+      "expected_freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+      "expected_readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404"
+    },
+    "complete_cells": {
+      "expected_cases": 11,
+      "expected_roots_per_case": 4,
+      "expected_blocks": 44,
+      "expected_configurations_per_block": 2,
+      "expected_episodes": 88,
+      "duplicates_allowed": 0,
+      "missing_allowed": 0,
+      "extra_allowed": 0
+    },
+    "forced_events": {
+      "P01_forced_collision": "collision=true and unauthorized_keep_out_entry=true in every episode",
+      "P02_forced_keep_out_only": "collision=false and unauthorized_keep_out_entry=true in every episode",
+      "P03_forced_corridor_departure": "collision=false, unauthorized_keep_out_entry=false, and corridor_departure=true in every episode"
+    },
+    "nominal_feasibility": "every nominal episode is free of physical events, finite, and acquires the frozen hold dwell",
+    "fault_activation": "every scheduled fault is activated; unaffected channel/domain flags remain false; monitor-logic trip is authoritative only for independent_monitor_gate",
+    "estimator_covariance": {
+      "all_finite": true,
+      "minimum_eigenvalue_lower_bound": -1e-12,
+      "maximum_trace_exclusive_upper_bound": 1000000.0
+    },
+    "information_boundary": "controller receives only primary estimate/covariance/health; monitor receives only its independent estimate/covariance/health and proposed command; neither receives truth, root identity, fault label, or evaluator state",
+    "infrastructure": {
+      "maximum_failure_rate": 0.01,
+      "complete_block_requirement": true,
+      "retry_or_replacement_allowed": false
+    },
+    "replay": {
+      "selection": "replicate 0 in every case, fixed before outcomes",
+      "expected_blocks": 11,
+      "expected_episodes": 22,
+      "required_identity": "byte-identical canonical episode rows and trace digests on the frozen runtime/platform"
+    },
+    "analysis": {
+      "mode": "descriptive_mechanistic_gate_only",
+      "p_values_allowed": false,
+      "superiority_or_noninferiority_tests_allowed": false,
+      "architecture_effect_claims_allowed": false,
+      "multiplicity_family_defined": false
+    }
+  }
+}

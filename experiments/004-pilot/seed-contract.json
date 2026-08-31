@@ -1,0 +1,58 @@
+{
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 4004,
+  "derivation": "SeedSequence([master, partition, geometry_case, fault_case, replicate, stream])",
+  "case_identity": "case_code = 100 * geometry_case + fault_case; root identity is experiment004:<partition>:<case_code>:<replicate>",
+  "partitions": {
+    "dynamics_metric_calibration": {
+      "code": 41,
+      "status": "prospective_noninferential_calibration_only",
+      "permitted_use": "event reachability, fault activation, numerical tolerance, scenario envelope, nuisance and runtime mechanics",
+      "architecture_treatment_effect_use_allowed": false
+    },
+    "controller_policy_fit": {
+      "code": 42,
+      "status": "reserved_unused",
+      "generator_available": false
+    },
+    "design_validation_pilot": {
+      "code": 43,
+      "status": "reserved_not_materialized_or_executed",
+      "roots_per_case": 4,
+      "case_count": 11,
+      "expected_root_rows": 44,
+      "configurations_per_root": 2,
+      "expected_episode_rows": 88,
+      "replay_roots_per_case": 1,
+      "generator_available_only_after_verified_design_freeze": true,
+      "generator_invoked": false
+    },
+    "future_confirmatory": {
+      "code": 44,
+      "status": "reserved_unmaterialized_hypothesis_and_sample_size_not_set",
+      "generator_available": false
+    },
+    "non_outcome_test_fixtures": {
+      "code": 941,
+      "status": "available_for_deterministic_tests_only"
+    }
+  },
+  "stream_codes": {
+    "initial_state": 101,
+    "process_disturbance_radial": 102,
+    "process_disturbance_alongtrack": 103,
+    "primary_measurement": 104,
+    "monitor_measurement": 105,
+    "fault_parameters": 106,
+    "actuator_uncertainty": 107,
+    "configuration_run_order": 108
+  },
+  "configuration_order": "case-specific partition stream 108 chooses the first configuration for replicate 0; order alternates by replicate, yielding two appearances in each position per case",
+  "replay_subset": "replicate 0 in every case; outcome-blind and frozen before materialization",
+  "historical_master_domains": [1001, 2002, 3003],
+  "forbidden_overlap_partitions": [41, 42, 44, 941],
+  "replacement_extension_or_count_drift_allowed": false,
+  "outcome_dependent_threshold_or_case_selection_allowed": false,
+  "partition_44_generator_available": false
+}

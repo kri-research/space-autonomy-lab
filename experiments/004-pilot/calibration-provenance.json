@@ -1,0 +1,31 @@
+{
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "partition_code": 41,
+  "attempts": [
+    {
+      "artifact": "experiments/004-pilot/calibration-attempt-001.json",
+      "calibration_id": "89a854eafe7fe1195b955165fa610128716907a67a9cfe7b972910eb0222d872",
+      "standard_horizon_s": 240.0,
+      "result": "failed_nominal_feasibility_only",
+      "detail": "one of four bounded nominal roots did not complete the frozen 60-second hold dwell by 240 seconds; no physical event or numerical defect occurred",
+      "all_other_mechanics_checks_passed": true,
+      "architecture_configuration_difference_computed": false
+    }
+  ],
+  "calibration_decision": {
+    "change": "increase standard mechanics and future pilot horizon from 240 to 300 seconds",
+    "basis": "nominal event reachability and frozen dwell feasibility only",
+    "controller_monitor_fault_matrix_count_or_gate_changed": false,
+    "architecture_effect_or_hazard_discordance_used": false,
+    "requires_fresh_partition_41_recalibration": false
+  },
+  "final_calibration": {
+    "artifact": "experiments/004-pilot/calibration-evidence.json",
+    "calibration_id": "bacede943bbbd8cc67ab55d76ad537203bc87badf058682d2d13da4111ba04b1",
+    "standard_horizon_s": 300.0,
+    "result": "passed_all_prespecified_mechanics_checks",
+    "selected_roots_per_case": 4,
+    "selected_blocks": 44,
+    "selected_episodes": 88
+  }
+}

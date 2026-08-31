@@ -1,0 +1,136 @@
+{
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "case_code_rule": "case_code = 100 * geometry_code + fault_code; every matrix row has a unique pair",
+  "configurations": [
+    {
+      "id": "primary_reference",
+      "controller_input": "primary navigation snapshot",
+      "monitor_input": "processed for channel diagnostics but has no command authority",
+      "command_path": "frozen deterministic vector LQR reference"
+    },
+    {
+      "id": "independent_monitor_gate",
+      "controller_input": "primary navigation snapshot",
+      "monitor_input": "independent monitor navigation snapshot",
+      "command_path": "frozen deterministic vector LQR reference through frozen estimated-geometry monitor and vector fallback"
+    }
+  ],
+  "cases": [
+    {
+      "id": "P00_nominal_feasibility",
+      "geometry_code": 0,
+      "fault_code": 0,
+      "case_code": 0,
+      "domain": "mission_feasibility",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "none",
+      "intended_activation": "safe approach and hold acquisition"
+    },
+    {
+      "id": "P01_forced_collision",
+      "geometry_code": 1,
+      "fault_code": 0,
+      "case_code": 100,
+      "domain": "physical_geometry",
+      "fixture": "open_loop_exact_arc",
+      "initial_state": [5.0, 0.0, -10.0, 0.0],
+      "fixture_command_mps2": [0.0, 0.0],
+      "fault": "none",
+      "intended_activation": "collision and keep-out entry"
+    },
+    {
+      "id": "P02_forced_keep_out_only",
+      "geometry_code": 2,
+      "fault_code": 0,
+      "case_code": 200,
+      "domain": "physical_geometry",
+      "fixture": "open_loop_exact_arc",
+      "initial_state": [0.0, -12.0, 0.0, 4.0],
+      "fixture_command_mps2": [0.0, 0.0],
+      "fault": "none",
+      "intended_activation": "keep-out entry without collision"
+    },
+    {
+      "id": "P03_forced_corridor_departure",
+      "geometry_code": 3,
+      "fault_code": 0,
+      "case_code": 300,
+      "domain": "physical_geometry",
+      "fixture": "open_loop_exact_arc",
+      "initial_state": [8.0, -50.0, 0.0, 0.0],
+      "fixture_command_mps2": [0.0, 0.0],
+      "fault": "none",
+      "intended_activation": "corridor departure without keep-out entry"
+    },
+    {
+      "id": "P04_primary_navigation_bias",
+      "geometry_code": 0,
+      "fault_code": 1,
+      "case_code": 1,
+      "domain": "primary_estimator",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "primary bias",
+      "intended_activation": "primary-only innovation disposition and health response"
+    },
+    {
+      "id": "P05_primary_navigation_dropout",
+      "geometry_code": 0,
+      "fault_code": 2,
+      "case_code": 2,
+      "domain": "primary_estimator",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "primary dropout",
+      "intended_activation": "primary-only prediction-only and degraded-health response"
+    },
+    {
+      "id": "P06_monitor_navigation_bias",
+      "geometry_code": 0,
+      "fault_code": 3,
+      "case_code": 3,
+      "domain": "monitor_estimator",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "monitor bias",
+      "intended_activation": "monitor-only innovation disposition and health response"
+    },
+    {
+      "id": "P07_monitor_logic_false_trip",
+      "geometry_code": 0,
+      "fault_code": 4,
+      "case_code": 4,
+      "domain": "monitor_logic",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "monitor logic forced trip",
+      "intended_activation": "forced monitor override only in the monitor-gated configuration"
+    },
+    {
+      "id": "P08_shared_navigation_bias",
+      "geometry_code": 0,
+      "fault_code": 5,
+      "case_code": 5,
+      "domain": "shared_cause",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "shared bias",
+      "intended_activation": "both navigation channels affected by one shared-cause schedule"
+    },
+    {
+      "id": "P09_actuation_degradation",
+      "geometry_code": 0,
+      "fault_code": 6,
+      "case_code": 6,
+      "domain": "actuation",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "fifty-percent vector-command effectiveness",
+      "intended_activation": "realized acceleration differs from the observable commanded vector"
+    },
+    {
+      "id": "P10_disturbance_burst",
+      "geometry_code": 0,
+      "fault_code": 7,
+      "case_code": 7,
+      "domain": "disturbance",
+      "fixture": "stochastic_bounded_initial_state",
+      "fault": "bounded additive acceleration disturbance",
+      "intended_activation": "truth propagation receives a bounded exogenous vector disturbance"
+    }
+  ]
+}
