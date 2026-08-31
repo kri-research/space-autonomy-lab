@@ -1,0 +1,22 @@
+{
+  "freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+  "future_confirmatory_generator_available": false,
+  "future_confirmatory_partition_code": 44,
+  "future_confirmatory_partition_state": "reserved_unmaterialized_hypothesis_and_sample_size_not_set",
+  "next_task": "one-time noninferential Experiment 004 design-validation pilot execution on partition 43",
+  "outcome_blind_replay_blocks": 11,
+  "outcome_blind_replay_episodes": 22,
+  "partition_43_executed": false,
+  "partition_43_materialized": false,
+  "partition_44_materialized": false,
+  "pilot_complete_blocks": 44,
+  "pilot_episode_rows": 88,
+  "pilot_partition_code": 43,
+  "pilot_partition_state": "reserved_not_materialized_or_executed",
+  "pilot_root_rows": 44,
+  "readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809",
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "scientific_findings_claimed": false,
+  "scope": "one-time noninferential Experiment 004 design-validation pilot execution",
+  "status": "READY_FOR_PILOT_EXECUTION"
+}

@@ -1,0 +1,460 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 1ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest -q --deselect tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots --deselect tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized --deselect tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them --deselect tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization --deselect tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": "...........                                                              [100%]"
+    },
+    {
+      "command": "uv run pytest -q -k experiment_004",
+      "id": "experiment_004_foundation_and_pilot_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": "..........................................                               [100%]"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "id": "pilot_design_fail_closed_checks",
+      "observed": {
+        "checks": {
+          "controller_monitor_information_boundary": {
+            "control_function_parameters": [
+              "primary_snapshot",
+              "monitor_snapshot",
+              "controller",
+              "monitor",
+              "configuration_id"
+            ],
+            "controller_inputs": "primary navigation snapshot only",
+            "monitor_inputs": "monitor navigation snapshot and proposed vector command only",
+            "passed": true,
+            "prohibited_names_found": []
+          },
+          "dependency_runtime_identity": {
+            "dependency_file_hashes": {
+              ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+              "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+              "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+            },
+            "exact_platform_match_required_for_replay": true,
+            "foundation_expected_observed": {
+              "architecture": "arm64",
+              "implementation": "CPython",
+              "numpy_version": "2.4.6",
+              "os": "Darwin",
+              "python": "3.11.16",
+              "scipy_version": "1.17.0",
+              "thread_variables": {}
+            },
+            "mismatches": [],
+            "observed": {
+              "architecture": "arm64",
+              "implementation": "CPython",
+              "numpy_version": "2.4.6",
+              "os": "Darwin",
+              "python": "3.11.16",
+              "scipy_version": "1.17.0",
+              "thread_variables": {}
+            },
+            "passed": true,
+            "uv_version": "uv 0.12.5 (Homebrew 2026-08-14 aarch64-apple-darwin)"
+          },
+          "deterministic_runner_replay_fixture": {
+            "configuration_order": [
+              "independent_monitor_gate",
+              "primary_reference"
+            ],
+            "first_digest": "61c44b02f989ab608a5fa48fb05510f5dbe7c7e6b786c4ea27165bc204e62a29",
+            "future_complete_cell_validator_expected_rows": 88,
+            "partition_code": 941,
+            "passed": true,
+            "root_seed_id": "experiment004:941:100:0000",
+            "second_digest": "61c44b02f989ab608a5fa48fb05510f5dbe7c7e6b786c4ea27165bc204e62a29"
+          },
+          "forced_event_and_hcw_foundation": {
+            "checks": {
+              "continuous_geometry_events": {
+                "boundary_semantics": "collision and keep-out disks are closed sets",
+                "checks": {
+                  "boundary_is_closed": true,
+                  "corridor_departure_detected": true,
+                  "dense_arc_reference": true,
+                  "interior_crossing_detected": true,
+                  "nominal_corridor_segment_inside": true,
+                  "safe_segment_not_hazard": true
+                },
+                "dense_reference_minimum_m": 0.0028284169105819066,
+                "event_path": "exact HCW arc split at intervals no longer than one second",
+                "interior_crossing_minimum_m": 0.0028284168602992583,
+                "passed": true
+              },
+              "deterministic_replay_and_mission_sanity": {
+                "first": {
+                  "controller_identity": "experiment-004-reference:648275e25324681e5d8989fb540d0ca4d5020bdcc4d43fa0c514c1f13949f91e",
+                  "digest": "10077fa02e58a9b9bd0a47486b11cdbbaada153d98287e778c9825f0654a875c",
+                  "final_state": [
+                    -3.020922603660005e-09,
+                    -30.000000006162466,
+                    3.615200750102322e-10,
+                    5.612422642946896e-10
+                  ],
+                  "interpretation": "deterministic numerical and mission-feasibility fixture only",
+                  "maximum_command_norm_mps2": 0.020000000000000004,
+                  "mission": {
+                    "hold_acquired": true,
+                    "hold_lost_after_acquisition": false,
+                    "maximum_contiguous_hold_dwell_s": 425.0,
+                    "safe_incomplete": false
+                  },
+                  "passed": true,
+                  "physical": {
+                    "collision": false,
+                    "corridor_departure": false,
+                    "maximum_corridor_excess_m": -2.5239140632880828,
+                    "minimum_separation_m": 23.020845161861065,
+                    "unauthorized_keep_out_entry": false
+                  }
+                },
+                "passed": true,
+                "second_digest": "10077fa02e58a9b9bd0a47486b11cdbbaada153d98287e778c9825f0654a875c"
+              },
+              "exact_dynamics_reference": {
+                "acceptance": {
+                  "closed_form_max_abs": 2e-12,
+                  "position_m": 1e-10,
+                  "velocity_mps": 1e-12
+                },
+                "augmented_exponential_vs_closed_form_max_abs_error": 8.881784197001252e-16,
+                "dop853_position_max_abs_error_m": 3.552713678800501e-15,
+                "dop853_velocity_max_abs_error_mps": 1.3877787807814457e-17,
+                "fixtures": 3,
+                "passed": true,
+                "references": [
+                  "independent analytical HCW state and input matrices",
+                  "independent scalar-equation DOP853 integration"
+                ]
+              },
+              "observability_and_covariance": {
+                "checks": {
+                  "divergence_fails_closed": true,
+                  "fixed_lag_covariance": true,
+                  "fixed_lag_mean": true,
+                  "full_measurement_observability": true,
+                  "long_replay_finite_psd": true,
+                  "position_only_observability": true,
+                  "process_covariance_psd": true,
+                  "process_covariance_symmetric": true
+                },
+                "covariance_long_replay": {
+                  "maximum_asymmetry": 0.0,
+                  "maximum_trace": 0.06257822122319501,
+                  "minimum_eigenvalue": 1.2112064180799668e-06,
+                  "steps": 601
+                },
+                "divergence_reason": "state_limit",
+                "fixed_lag_maximum_covariance_difference": 0.0,
+                "fixed_lag_maximum_mean_difference": 0.0,
+                "full_observability": {
+                  "rank": 4,
+                  "scaled_condition_number": 333.33964404005656,
+                  "smallest_scaled_singular_value": 0.5999953728740413
+                },
+                "passed": true,
+                "position_only_observability": {
+                  "rank": 4,
+                  "scaled_condition_number": 447.2225243268039,
+                  "smallest_scaled_singular_value": 0.4472096844963275
+                },
+                "process_covariance_minimum_eigenvalue": 3.855550431344955e-09
+              },
+              "online_information_boundary": {
+                "offline_only": [
+                  "physical trajectory",
+                  "fault identity and schedule",
+                  "geometric outcome summary",
+                  "estimation error diagnostics"
+                ],
+                "online_inputs": [
+                  "timestamped navigation estimate",
+                  "estimate covariance and health",
+                  "proposed vector command",
+                  "frozen controller identity"
+                ],
+                "passed": true,
+                "prohibited_tokens_found": []
+              },
+              "outcome_domain_separation": {
+                "aggregate_primary_endpoint_defined": false,
+                "fields": {
+                  "controller_fault": false,
+                  "invalid_action": false,
+                  "monitor_estimator_fault": false,
+                  "monitor_logic_fault": true,
+                  "numerical_failure": false,
+                  "primary_estimator_fault": true,
+                  "shared_cause_fault": false
+                },
+                "passed": true
+              },
+              "units_signs_and_structure": {
+                "action_order": [
+                  "ax_radial_mps2",
+                  "ay_alongtrack_mps2"
+                ],
+                "action_units": [
+                  "m/s^2",
+                  "m/s^2"
+                ],
+                "checks": {
+                  "alongtrack_to_radial_coriolis_sign": true,
+                  "continuous_shape": true,
+                  "input_axes": true,
+                  "radial_gravity_gradient_sign": true,
+                  "radial_to_alongtrack_coriolis_sign": true,
+                  "semigroup_command": true,
+                  "semigroup_transition": true,
+                  "unforced_invariant": true
+                },
+                "derived_mean_motion_rad_s": 0.0011313666536110223,
+                "mean_motion_rad_s": 0.0011313666536110223,
+                "orbital_period_s": 5553.624271252229,
+                "passed": true,
+                "state_order": [
+                  "x_radial_m",
+                  "y_alongtrack_m",
+                  "vx_radial_mps",
+                  "vy_alongtrack_mps"
+                ],
+                "state_units": [
+                  "m",
+                  "m",
+                  "m/s",
+                  "m/s"
+                ],
+                "unforced_invariant_abs_error_mps": 5.204170427930421e-17
+              }
+            },
+            "future_confirmatory_partition_used": false,
+            "outcome_campaign_executed": false,
+            "passed": true,
+            "pilot_partition_used": false,
+            "scientific_findings_claimed": false
+          },
+          "foundation_freeze_readiness_identity": {
+            "errors_preview": [],
+            "forbidden_outcome_paths_present": [],
+            "foundation_commit_ancestor": true,
+            "foundation_commit_object_present": true,
+            "freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+            "git_changed_frozen_paths": [],
+            "head": "5b2e5fe7346c60ac407b11b47b31693077ee25b1",
+            "materialized_partition_root_rows": [],
+            "passed": true,
+            "pilot_or_confirmatory_outcomes_materialized": false,
+            "readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+            "source_files_verified": 23,
+            "source_mismatches": [],
+            "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+          },
+          "historical_experiment_001_003_integrity": {
+            "changed_paths": [],
+            "checksum_directories_verified": 7,
+            "checksum_errors": [],
+            "historical_verifiers": [
+              {
+                "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+                "passed": true,
+                "returncode": 0
+              },
+              {
+                "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+                "passed": true,
+                "returncode": 0
+              },
+              {
+                "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+                "passed": true,
+                "returncode": 0
+              },
+              {
+                "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003_confirmatory.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+                "passed": true,
+                "returncode": 0
+              }
+            ],
+            "passed": true,
+            "paths_compared_to_foundation_commit": 184
+          },
+          "partition_41_calibration_provenance": {
+            "architecture_configuration_difference_computed": false,
+            "calibration_id": "bacede943bbbd8cc67ab55d76ad537203bc87badf058682d2d13da4111ba04b1",
+            "errors_preview": [],
+            "evidence_sha256": "b6f5da90af0eb9ae0e1f3368d34cf5f44891134cacc3416b47524a229f67c42b",
+            "passed": true,
+            "pilot_outcomes_generated": false,
+            "selected_roots_per_case": 4
+          },
+          "partition_44_reserved_inert": {
+            "forbidden_symbols_found": [],
+            "passed": true,
+            "paths_present": [],
+            "state": {
+              "code": 44,
+              "generator_available": false,
+              "status": "reserved_unmaterialized_hypothesis_and_sample_size_not_set"
+            }
+          },
+          "publication_privacy": {
+            "enumeration": "tracked plus untracked nonignored files",
+            "files_scanned": 343,
+            "matches": 0,
+            "matches_preview": [],
+            "opaque_files": 0,
+            "opaque_files_are_fatal": true,
+            "opaque_files_preview": [],
+            "passed": true
+          },
+          "sample_count_matrix_and_gates": {
+            "blocks": 44,
+            "case_ids": [
+              "P00_nominal_feasibility",
+              "P01_forced_collision",
+              "P02_forced_keep_out_only",
+              "P03_forced_corridor_departure",
+              "P04_primary_navigation_bias",
+              "P05_primary_navigation_dropout",
+              "P06_monitor_navigation_bias",
+              "P07_monitor_logic_false_trip",
+              "P08_shared_navigation_bias",
+              "P09_actuation_degradation",
+              "P10_disturbance_burst"
+            ],
+            "configuration_ids": [
+              "primary_reference",
+              "independent_monitor_gate"
+            ],
+            "domains": [
+              "actuation",
+              "disturbance",
+              "mission_feasibility",
+              "monitor_estimator",
+              "monitor_logic",
+              "physical_geometry",
+              "primary_estimator",
+              "shared_cause"
+            ],
+            "episodes": 88,
+            "passed": true,
+            "replay_blocks": 11,
+            "replay_episodes": 22
+          },
+          "seed_domain_and_materialization_contract": {
+            "contract_sha256": "d553c52b6437b1a0525dd8d91f77977553030f91c881d6967aee37e2062b4653",
+            "errors_preview": [],
+            "expected_episode_rows": 88,
+            "expected_root_rows": 44,
+            "forbidden_paths_present": [],
+            "historical_partition_43_overlap": 0,
+            "historical_root_ids_compared": 20881,
+            "partition_43_materialized": false,
+            "partition_44_materialized": false,
+            "passed": true
+          }
+        },
+        "confirmatory_inference_enabled": false,
+        "partition_43_executed": false,
+        "partition_43_materialized": false,
+        "partition_44_materialized": false,
+        "passed": true,
+        "scientific_findings_claimed": false
+      },
+      "passed": true
+    },
+    {
+      "id": "foundation_native_verifier_context",
+      "observed": {
+        "expected_post_merge_context_limitation": true,
+        "explanation": "the foundation verifier was authored before its own additions were committed and treats those committed additions as diffs from the pre-foundation parent; exact self-hashes, source hashes, merged-commit anchor, and historical bytes are verified independently",
+        "independent_foundation_identity": {
+          "errors_preview": [],
+          "forbidden_outcome_paths_present": [],
+          "foundation_commit_ancestor": true,
+          "foundation_commit_object_present": true,
+          "freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+          "git_changed_frozen_paths": [],
+          "head": "5b2e5fe7346c60ac407b11b47b31693077ee25b1",
+          "materialized_partition_root_rows": [],
+          "passed": true,
+          "pilot_or_confirmatory_outcomes_materialized": false,
+          "readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+          "source_files_verified": 23,
+          "source_mismatches": [],
+          "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+        },
+        "native_errors": [
+          "merged_base_integrity"
+        ],
+        "native_verifier_passed": false,
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "confirmatory_inference_enabled": false,
+  "partition_41_use": "prospective_noninferential_mechanics_only",
+  "partition_43_executed": false,
+  "partition_43_materialized": false,
+  "partition_44_materialized": false,
+  "passed": true,
+  "phase": "pre_partition_43_pilot_design_validation",
+  "phase_appropriate_exclusions": {
+    "reason": "historical pre-materialization assertions are superseded by frozen completed-campaign result verifiers; no Experiment 004 pilot test is excluded",
+    "tests": [
+      "tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots",
+      "tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized",
+      "tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them",
+      "tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization",
+      "tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent"
+    ]
+  },
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "scientific_findings_claimed": false,
+  "status": "READY_TO_FREEZE_PILOT_DESIGN",
+  "validated_at_utc": "2026-08-31T08:28:36.913389+00:00"
+}

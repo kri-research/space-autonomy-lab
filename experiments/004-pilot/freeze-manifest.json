@@ -1,0 +1,225 @@
+{
+  "analysis": {
+    "architecture_effect_claims_enabled": false,
+    "mode": "descriptive_mechanistic_gate_only",
+    "multiplicity_family_defined": false,
+    "p_values_enabled": false,
+    "superiority_noninferiority_enabled": false
+  },
+  "calibration": {
+    "architecture_configuration_difference_computed": false,
+    "calibration_id": "bacede943bbbd8cc67ab55d76ad537203bc87badf058682d2d13da4111ba04b1",
+    "errors_preview": [],
+    "evidence_sha256": "b6f5da90af0eb9ae0e1f3368d34cf5f44891134cacc3416b47524a229f67c42b",
+    "passed": true,
+    "pilot_outcomes_generated": false,
+    "selected_roots_per_case": 4
+  },
+  "confirmatory_inference_enabled": false,
+  "controller_policy": {
+    "architecture_benefit_hypothesis_defined": false,
+    "family": "frozen deterministic vector LQR reference and frozen vector monitor/fallback",
+    "learned_policy_trained": false
+  },
+  "dependency_runtime_identity": {
+    "dependency_file_hashes": {
+      ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+      "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+      "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+    },
+    "exact_platform_match_required_for_replay": true,
+    "foundation_expected_observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "mismatches": [],
+    "observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "passed": true,
+    "uv_version": "uv 0.12.5 (Homebrew 2026-08-14 aarch64-apple-darwin)"
+  },
+  "foundation_identity": {
+    "errors_preview": [],
+    "forbidden_outcome_paths_present": [],
+    "foundation_commit_ancestor": true,
+    "foundation_commit_object_present": true,
+    "freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+    "git_changed_frozen_paths": [],
+    "head": "5b2e5fe7346c60ac407b11b47b31693077ee25b1",
+    "materialized_partition_root_rows": [],
+    "passed": true,
+    "pilot_or_confirmatory_outcomes_materialized": false,
+    "readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+    "source_files_verified": 23,
+    "source_mismatches": [],
+    "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+  },
+  "foundation_native_verifier_context": {
+    "expected_post_merge_context_limitation": true,
+    "explanation": "the foundation verifier was authored before its own additions were committed and treats those committed additions as diffs from the pre-foundation parent; exact self-hashes, source hashes, merged-commit anchor, and historical bytes are verified independently",
+    "independent_foundation_identity": {
+      "errors_preview": [],
+      "forbidden_outcome_paths_present": [],
+      "foundation_commit_ancestor": true,
+      "foundation_commit_object_present": true,
+      "freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+      "git_changed_frozen_paths": [],
+      "head": "5b2e5fe7346c60ac407b11b47b31693077ee25b1",
+      "materialized_partition_root_rows": [],
+      "passed": true,
+      "pilot_or_confirmatory_outcomes_materialized": false,
+      "readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+      "source_files_verified": 23,
+      "source_mismatches": [],
+      "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+    },
+    "native_errors": [
+      "merged_base_integrity"
+    ],
+    "native_verifier_passed": false,
+    "passed": true
+  },
+  "freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+  "frozen_at_utc": "2026-08-31T08:31:13.947701+00:00",
+  "gates_sha256": "efdca3a934d97f59845f4fda7efd7bff138df9a90a68b9dd7de25bf4b1e694d5",
+  "historical_integrity": {
+    "changed_paths": [],
+    "checksum_directories_verified": 7,
+    "checksum_errors": [],
+    "historical_verifiers": [
+      {
+        "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003_confirmatory.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+        "passed": true,
+        "returncode": 0
+      }
+    ],
+    "passed": true,
+    "paths_compared_to_foundation_commit": 184
+  },
+  "matrix": {
+    "case_ids": [
+      "P00_nominal_feasibility",
+      "P01_forced_collision",
+      "P02_forced_keep_out_only",
+      "P03_forced_corridor_departure",
+      "P04_primary_navigation_bias",
+      "P05_primary_navigation_dropout",
+      "P06_monitor_navigation_bias",
+      "P07_monitor_logic_false_trip",
+      "P08_shared_navigation_bias",
+      "P09_actuation_degradation",
+      "P10_disturbance_burst"
+    ],
+    "complete_blocks": 44,
+    "configuration_ids": [
+      "primary_reference",
+      "independent_monitor_gate"
+    ],
+    "episodes": 88,
+    "replay_blocks": 11,
+    "replay_episodes": 22,
+    "roots_per_case": 4
+  },
+  "partition_43_executed": false,
+  "partition_43_materialized": false,
+  "partition_44_materialized": false,
+  "partition_states": {
+    "41": "calibration_complete_noninferential_mechanics_only",
+    "42": "reserved_unused",
+    "43": "reserved_not_materialized_or_executed_write_once_generator_available",
+    "44": "reserved_unmaterialized_hypothesis_and_sample_size_not_set_no_generator",
+    "941": "deterministic_tests_only"
+  },
+  "phase": "pre_partition_43_pilot_design_freeze",
+  "publication_privacy_scan": {
+    "enumeration": "tracked plus untracked nonignored files",
+    "files_scanned": 343,
+    "matches": 0,
+    "matches_preview": [],
+    "opaque_files": 0,
+    "opaque_files_are_fatal": true,
+    "opaque_files_preview": [],
+    "passed": true
+  },
+  "readiness_policy": "fail closed; no critical-check waiver",
+  "sample_count_basis": "smallest candidate passing partition-41 mechanics and at least two appearances of each diagnostic configuration in each within-block order position; not power",
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "scientific_findings_claimed": false,
+  "scope": "noninferential Experiment 004 planar HCW design-validation pilot",
+  "seed_contract": {
+    "contract_sha256": "d553c52b6437b1a0525dd8d91f77977553030f91c881d6967aee37e2062b4653",
+    "errors_preview": [],
+    "expected_episode_rows": 88,
+    "expected_root_rows": 44,
+    "forbidden_paths_present": [],
+    "historical_partition_43_overlap": 0,
+    "historical_root_ids_compared": 20881,
+    "partition_43_materialized": false,
+    "partition_44_materialized": false,
+    "passed": true
+  },
+  "source_file_hashes": {
+    ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+    "docs/experiment-004-pilot.md": "5908e06b4f957c3c6af30168e81269663f16cd35603e60fd7ba802ac8fd66ff4",
+    "experiments/004-pilot/calibration-attempt-001.json": "57275aee65f31ada375487b8f6541935c5ac15fa2e822582262336f601193b38",
+    "experiments/004-pilot/calibration-evidence.json": "b6f5da90af0eb9ae0e1f3368d34cf5f44891134cacc3416b47524a229f67c42b",
+    "experiments/004-pilot/calibration-provenance.json": "fcba51b9b455940eb4bbe7bfee3a6256d0806bd5be2e1fad2d3913c3e4bcd8f0",
+    "experiments/004-pilot/case-matrix.json": "a79b267a4df216592ed4bf4008cb313229b1db8a2eaa46b8648d0b6e4508263f",
+    "experiments/004-pilot/config.json": "5e0b2b5e275b433844fca7a7853557029d12800adf6a042d272cc1bd93e13f24",
+    "experiments/004-pilot/gates.json": "efdca3a934d97f59845f4fda7efd7bff138df9a90a68b9dd7de25bf4b1e694d5",
+    "experiments/004-pilot/preregistration.md": "604d1aca2a3584f806e24672d4e16cb39487700902beb018c554dbf9d04bfd94",
+    "experiments/004-pilot/seed-contract.json": "d553c52b6437b1a0525dd8d91f77977553030f91c881d6967aee37e2062b4653",
+    "experiments/004-pilot/validation-evidence.json": "78f6aa6677f33455a125ba452a15bf9146199d9f5d91e1732acb1a8e2e5cfb7a",
+    "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+    "src/kri_space_autonomy/experiment_004_pilot/__init__.py": "01da9b840c9c476c2470afcf2ea7f879ef351e97ce9085b5321b69a16a6d723a",
+    "src/kri_space_autonomy/experiment_004_pilot/analysis.py": "acfd1bf18f599a6e2cddb138402414f9264956fcd21f211439d1a57fb5075a05",
+    "src/kri_space_autonomy/experiment_004_pilot/calibration.py": "e70bba88293ccb7b1ae04a5f61e33578ff502322f40f866597d2606e9b4d8e2a",
+    "src/kri_space_autonomy/experiment_004_pilot/config.py": "241d3ac54f78d4ff495df8cea0b2455cf61e832e07fad49b9e6b45ee6bf006af",
+    "src/kri_space_autonomy/experiment_004_pilot/runner.py": "99e6674b50bd471965b600b772d06ed55ce1d6eadd292afc21dd643b2199eac3",
+    "src/kri_space_autonomy/experiment_004_pilot/seeds.py": "0b9840a573df783792597f59f2594c98773f8e30a38b13701b11d27090e2f51c",
+    "src/kri_space_autonomy/experiment_004_pilot/validation.py": "ebe05d104d821467c0b7ead06defb36ece38d852f2ac2efd674c4cf9ac29e901",
+    "src/kri_space_autonomy/experiment_004_pilot/workflow.py": "674c4c08ab3df8e1d56989be17a90d9c4cdb836d127c2ce02ea1b741a24862a6",
+    "tests/test_experiment_004_pilot_calibration.py": "25efeb7d131df579caace46db8bf22e5114c931dd620a1bde3d4042c2277135c",
+    "tests/test_experiment_004_pilot_design.py": "5d045ed0c4b8e98294f5c66de33bfca0d26cb6ccabe1a86ffca2e8f8b4335861",
+    "tests/test_experiment_004_pilot_runner.py": "e52c6398e535d8a7d4cdeb6e7fba3b1c48565f1f471c197e53ab4da09686201d",
+    "tests/test_experiment_004_pilot_seeds.py": "6256a4059538d08c9cabb3581435a66e793c4e6d7027c2f8637753ecbdcd787d",
+    "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+  },
+  "source_identity": {
+    "branch": "experiment-004-pilot-design",
+    "commit_created": false,
+    "head": "5b2e5fe7346c60ac407b11b47b31693077ee25b1",
+    "paths": "project-relative only",
+    "working_tree_dirty": true
+  },
+  "source_tree_sha256": "f0d4a5585a8e710c70268ce4f84acb91ab9b3ea6adc3534478bb2bd746a5a522",
+  "status": "READY_FOR_PILOT_EXECUTION",
+  "validation_sha256": "78f6aa6677f33455a125ba452a15bf9146199d9f5d91e1732acb1a8e2e5cfb7a"
+}
