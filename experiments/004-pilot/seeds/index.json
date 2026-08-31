@@ -1,0 +1,19 @@
+{
+  "design_freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+  "design_readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809",
+  "disjoint_from_partitions": [
+    41,
+    42,
+    44,
+    941
+  ],
+  "historical_root_ids_compared": 20881,
+  "manifest_sha256": "bb01acd3426f1e2e5c948cbb3d48c6aa48141ca261cf885c63b6a292f94eff5e",
+  "materialized_only_after_design_freeze_verification": true,
+  "partition_code": 43,
+  "planned_episode_rows": 88,
+  "replacement_extension_or_count_drift_allowed": false,
+  "replay_subset_sha256": "0f8dd812d43623793b62ec29e44234e9165d51db1619549f8f1351ec1de80a7b",
+  "root_rows": 44,
+  "schema_version": "experiment-004-design-validation-pilot-1.0"
+}

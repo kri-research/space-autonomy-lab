@@ -1,0 +1,123 @@
+{
+  "artifacts": [
+    {
+      "bytes": 737,
+      "path": "experiments/004-pilot/seeds/index.json",
+      "role": "seed_index",
+      "sha256": "064dd22bf5edfedde8581cc8b5f55f4226128b0797a29a670bae54593d32cd1f"
+    },
+    {
+      "bytes": 70804,
+      "path": "experiments/004-pilot/seeds/pilot.jsonl",
+      "role": "seed_manifest",
+      "sha256": "bb01acd3426f1e2e5c948cbb3d48c6aa48141ca261cf885c63b6a292f94eff5e"
+    },
+    {
+      "bytes": 568,
+      "path": "experiments/004-pilot/seeds/replay-subset.json",
+      "role": "replay_selection",
+      "sha256": "0f8dd812d43623793b62ec29e44234e9165d51db1619549f8f1351ec1de80a7b"
+    },
+    {
+      "bytes": 11506,
+      "path": "results/experiment-004-pilot/analysis.json",
+      "role": "descriptive_analysis",
+      "sha256": "e1190f0ec534a70caf89a0986e92b69ed8d9006a57f74bd0062e417162f5d47d"
+    },
+    {
+      "bytes": 5441,
+      "path": "results/experiment-004-pilot/design-integrity-postexecution.json",
+      "role": "design_integrity",
+      "sha256": "caf3d0f89cc13257cad34c50deae53d3e09a8410bb5f29e11648d5861ae28b20"
+    },
+    {
+      "bytes": 889,
+      "path": "results/experiment-004-pilot/execution-ledger.json",
+      "role": "execution_ledger",
+      "sha256": "2f158a60e645242180397d02ac41a007292bc188e30ad6fcca7d1f2c5ed734fc"
+    },
+    {
+      "bytes": 7454,
+      "path": "results/experiment-004-pilot/execution-report.md",
+      "role": "execution_report",
+      "sha256": "8fd77fe5341fde5f9b697d3102b90b7ac9822bb852e0b310f2bee27ceb14e929"
+    },
+    {
+      "bytes": 166,
+      "path": "results/experiment-004-pilot/execution-summary.json",
+      "role": "execution_summary",
+      "sha256": "d8c3b776bb299afc87ade495770121cbb96ea73a1ee7b1120f2775ed689f398b"
+    },
+    {
+      "bytes": 7203,
+      "path": "results/experiment-004-pilot/phase-validation.json",
+      "role": "phase_validation",
+      "sha256": "d1306d1f440142a38f34a96a8cd7bc511711c313db32aa48d73ff455bee87093"
+    },
+    {
+      "bytes": 220136,
+      "path": "results/experiment-004-pilot/pilot-episodes.jsonl",
+      "role": "episode_results",
+      "sha256": "eb23f9ee42118f91f01d77a2dd55ee5ca9678b2a9eb731a9a57b732b2770bcdc"
+    },
+    {
+      "bytes": 7641,
+      "path": "results/experiment-004-pilot/qc.json",
+      "role": "pilot_qc",
+      "sha256": "b3be8585b5544180f1df2e59fbd7999d6b3196e51908e7430d47b02eb5f00c30"
+    },
+    {
+      "bytes": 231,
+      "path": "results/experiment-004-pilot/release-scan.json",
+      "role": "release_scan",
+      "sha256": "4f4af0855db4e87865c60f864b6251553a503c5321e2967d98bc292137fbed95"
+    },
+    {
+      "bytes": 1799,
+      "path": "results/experiment-004-pilot/reproducibility.json",
+      "role": "reproducibility",
+      "sha256": "e361ca1dad43e8850d2553e36b60c759b48e5ce65034f9010d09d2f4e6644627"
+    },
+    {
+      "bytes": 1700,
+      "path": "results/experiment-004-pilot/result-verification.json",
+      "role": "result_verification",
+      "sha256": "7b8151cbfbb15b4be5bc9058a06d846c773b3540eaafd2a646955b0bef3b21aa"
+    }
+  ],
+  "checksums_path": "results/experiment-004-pilot/checksums.sha256",
+  "confirmatory_design_created_or_enabled": false,
+  "counts": {
+    "complete_blocks": 44,
+    "episode_rows": 88,
+    "infrastructure_failures": 0,
+    "replay_blocks": 11,
+    "replay_episodes": 22,
+    "root_rows": 44
+  },
+  "created_at_utc": "2026-08-31T09:36:50.215385+00:00",
+  "embedded_hash_exclusions": [
+    {
+      "path": "results/experiment-004-pilot/manifest.json",
+      "reason": "self-referential; covered by checksums.sha256"
+    },
+    {
+      "path": "results/experiment-004-pilot/checksums.sha256",
+      "reason": "checksum file cannot hash itself"
+    }
+  ],
+  "identities": {
+    "branch": "experiment-004-pilot-run",
+    "foundation_freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+    "foundation_readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+    "head": "1415b3490315501bb1a33bc6e51b48347db191f1",
+    "pilot_freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+    "pilot_readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809"
+  },
+  "overall_decision": "pilot_design_gates_passed",
+  "overall_passed": true,
+  "partition_44_state": "reserved_unmaterialized_hypothesis_and_sample_size_not_set_no_generator",
+  "phase": "completed_noninferential_partition_43_pilot",
+  "project_relative_paths": true,
+  "schema_version": "experiment-004-design-validation-pilot-artifact-manifest-1.0"
+}

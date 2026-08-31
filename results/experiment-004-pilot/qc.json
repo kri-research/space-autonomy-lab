@@ -1,0 +1,211 @@
+{
+  "checks": {
+    "complete_cells": {
+      "complete_blocks": 44,
+      "duplicates": 0,
+      "expected_blocks": 44,
+      "expected_rows": 88,
+      "extra": 0,
+      "extra_preview": [],
+      "missing": 0,
+      "missing_preview": [],
+      "passed": true,
+      "rows": 88
+    },
+    "design_integrity": {
+      "checks": {
+        "branch_and_base": true,
+        "episode_freeze_seed_order_binding": true,
+        "foundation_freeze_self_hash": true,
+        "foundation_readiness_self_hash": true,
+        "foundation_source_hashes": true,
+        "historical_experiment_001_003_integrity": true,
+        "information_boundary": true,
+        "materialized_seed_validation": true,
+        "partition_44_inert": true,
+        "pilot_freeze_self_hash": true,
+        "pilot_readiness_self_hash": true,
+        "pilot_source_hashes": true,
+        "publication_privacy": true,
+        "runtime_identity": true
+      },
+      "frozen_readiness_treated_as_identity_artifact_not_mutable_execution_ledger": true,
+      "historical_integrity": {
+        "changed_paths": [],
+        "checksum_directories_verified": 7,
+        "checksum_errors": [],
+        "historical_verifiers": [
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+            "passed": true,
+            "returncode": 0
+          },
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+            "passed": true,
+            "returncode": 0
+          },
+          {
+            "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+            "passed": true,
+            "returncode": 0
+          },
+          {
+            "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003_confirmatory.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+            "passed": true,
+            "returncode": 0
+          }
+        ],
+        "passed": true,
+        "paths_compared_to_foundation_commit": 184
+      },
+      "identities": {
+        "branch": "experiment-004-pilot-run",
+        "foundation_freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+        "foundation_readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+        "head": "1415b3490315501bb1a33bc6e51b48347db191f1",
+        "pilot_freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+        "pilot_readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809"
+      },
+      "information_boundary": {
+        "control_function_parameters": [
+          "primary_snapshot",
+          "monitor_snapshot",
+          "controller",
+          "monitor",
+          "configuration_id"
+        ],
+        "controller_inputs": "primary navigation snapshot only",
+        "monitor_inputs": "monitor navigation snapshot and proposed vector command only",
+        "passed": true,
+        "prohibited_names_found": []
+      },
+      "materialized_seed_validation": {
+        "disjoint_from_partitions": [
+          41,
+          42,
+          44,
+          941
+        ],
+        "errors_preview": [],
+        "historical_root_ids_compared": 20881,
+        "manifest_sha256": "bb01acd3426f1e2e5c948cbb3d48c6aa48141ca261cf885c63b6a292f94eff5e",
+        "passed": true,
+        "replacement_extension_or_count_drift_allowed": false,
+        "replay_subset_sha256": "0f8dd812d43623793b62ec29e44234e9165d51db1619549f8f1351ec1de80a7b",
+        "rows": 44,
+        "scenario_mismatches": 0,
+        "unique_root_ids": 44
+      },
+      "partition_44": {
+        "forbidden_symbols_found": [],
+        "passed": true,
+        "paths_present": [],
+        "state": {
+          "code": 44,
+          "generator_available": false,
+          "status": "reserved_unmaterialized_hypothesis_and_sample_size_not_set"
+        }
+      },
+      "passed": true,
+      "phase": "post_partition_43_execution_phase_appropriate_design_integrity",
+      "pre_materialization_assertions_applied": false,
+      "pre_materialization_assertions_phase_inapplicable": [
+        "partition_43_seed_path_absent",
+        "partition_43_result_path_absent",
+        "partition_43_root_rows_absent",
+        "readiness_partition_43_materialized_false_as_current_state"
+      ],
+      "publication_privacy": {
+        "enumeration": "tracked plus untracked nonignored files",
+        "files_scanned": 350,
+        "matches": 0,
+        "matches_preview": [],
+        "opaque_files": 0,
+        "opaque_files_are_fatal": true,
+        "opaque_files_preview": [],
+        "passed": true
+      },
+      "result_binding": {
+        "episodes": 88,
+        "episodes_sha256": "eb23f9ee42118f91f01d77a2dd55ee5ca9678b2a9eb731a9a57b732b2770bcdc",
+        "passed": true
+      },
+      "runtime_identity": {
+        "dependency_file_hashes": {
+          ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+          "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+          "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+        },
+        "exact_platform_match_required_for_replay": true,
+        "foundation_expected_observed": {
+          "architecture": "arm64",
+          "implementation": "CPython",
+          "numpy_version": "2.4.6",
+          "os": "Darwin",
+          "python": "3.11.16",
+          "scipy_version": "1.17.0",
+          "thread_variables": {}
+        },
+        "mismatches": [],
+        "observed": {
+          "architecture": "arm64",
+          "implementation": "CPython",
+          "numpy_version": "2.4.6",
+          "os": "Darwin",
+          "python": "3.11.16",
+          "scipy_version": "1.17.0",
+          "thread_variables": {}
+        },
+        "passed": true,
+        "uv_version": "uv 0.12.5 (Homebrew 2026-08-14 aarch64-apple-darwin)"
+      },
+      "source_mismatches": {
+        "foundation": [],
+        "pilot": []
+      }
+    },
+    "deterministic_replay": {
+      "blocks": 11,
+      "episodes": 22,
+      "original_digest": "7b630fbdc1e4a3d8971a05d7766b51dc21dff3a41eef2a44e4d1c7d159f70dfa",
+      "passed": true,
+      "replay_digest": "7b630fbdc1e4a3d8971a05d7766b51dc21dff3a41eef2a44e4d1c7d159f70dfa"
+    },
+    "fault_activation_and_separation": {
+      "checks": {
+        "actuation": true,
+        "disturbance": true,
+        "monitor_bias": true,
+        "monitor_logic": true,
+        "primary_bias": true,
+        "primary_dropout": true,
+        "shared": true
+      },
+      "passed": true
+    },
+    "forced_events": {
+      "checks": {
+        "collision": true,
+        "corridor_only": true,
+        "keep_out_only": true
+      },
+      "passed": true
+    },
+    "nominal_feasibility": {
+      "episodes": 8,
+      "passed": true
+    },
+    "numerical_covariance_infrastructure": {
+      "complete_blocks_make_any_infrastructure_failure_fatal": true,
+      "infrastructure_failure_rate": 0.0,
+      "infrastructure_failures": 0,
+      "maximum_allowed_rate": 0.01,
+      "numerical_and_covariance_valid": true,
+      "passed": true
+    }
+  },
+  "overall_passed": true,
+  "phase": "noninferential_design_validation_pilot",
+  "schema_version": "experiment-004-design-validation-pilot-1.0"
+}

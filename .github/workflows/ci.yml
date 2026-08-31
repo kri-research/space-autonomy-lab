@@ -25,7 +25,74 @@ jobs:
       - name: Run phase-appropriate tests
         shell: bash
         run: |
-          if [[ -d experiments/003-confirmatory/seeds && -d results/experiment-003-confirmatory ]]; then
+          if [[ -d experiments/004-pilot/seeds && -d results/experiment-004-pilot ]]; then
+            # Experiment 004 partition 43 has executed. Pre-materialization absence
+            # assertions are intentionally phase-inapplicable; frozen source is unchanged.
+            uv run pytest \
+              --deselect=tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots \
+              --deselect=tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized \
+              --deselect=tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them \
+              --deselect=tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization \
+              --deselect=tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent \
+              --deselect=tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains \
+              --deselect=tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44 \
+              --deselect=tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free \
+              --deselect=tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains \
+              --deselect=tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests
+            uv run python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path.cwd()
+          result = root / "results/experiment-004-pilot"
+          seeds = root / "experiments/004-pilot/seeds"
+          digest = lambda path: hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+          qc = json.loads((result / "qc.json").read_text())
+          analysis = json.loads((result / "analysis.json").read_text())
+          reproducibility = json.loads((result / "reproducibility.json").read_text())
+          execution = json.loads((result / "execution-summary.json").read_text())
+          ledger = json.loads((result / "execution-ledger.json").read_text())
+          index = json.loads((seeds / "index.json").read_text())
+          manifest = json.loads((result / "manifest.json").read_text())
+
+          assert qc["overall_passed"] is True
+          assert all(check["passed"] for check in qc["checks"].values())
+          assert analysis["progression"]["decision"] == "pilot_design_gates_passed"
+          assert reproducibility["passed"] is True
+          replay = reproducibility["same_platform_replay"]
+          assert replay["passed"] is True and replay["blocks"] == 11 and replay["episodes"] == 22
+          assert replay["original_digest"] == replay["replay_digest"]
+          assert execution["blocks"] == 44 and execution["episodes"] == 88
+          assert digest(result / "pilot-episodes.jsonl") == execution["episodes_sha256"]
+          assert ledger["materializer_successful_invocations_observed"] == 1
+          assert ledger["pilot_runner_invocations_observed"] == 1
+          assert ledger["prespecified_replay_invocations_observed"] == 1
+          assert ledger["retries_observed"] == 0 and ledger["replacement_roots_observed"] == 0
+          assert index["partition_code"] == 43 and index["root_rows"] == 44
+          assert index["planned_episode_rows"] == 88
+          assert index["design_freeze_id"] == "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079"
+          assert not (root / "experiments/004-confirmatory").exists()
+          assert not (root / "results/experiment-004-confirmatory").exists()
+
+          for entry in manifest["artifacts"]:
+              path = root / entry["path"]
+              assert path.is_file() and digest(path) == entry["sha256"], entry["path"]
+          for line in (result / "checksums.sha256").read_text().splitlines():
+              expected, name = line.split("  ", 1)
+              assert digest(result / name) == expected, name
+          for freeze_path in (
+              root / "experiments/004/freeze-manifest.json",
+              root / "experiments/004-pilot/freeze-manifest.json",
+          ):
+              freeze = json.loads(freeze_path.read_text())
+              for relative, expected in freeze["source_file_hashes"].items():
+                  assert digest(root / relative) == expected, relative
+          print(json.dumps({"passed": True, "phase": "post-partition-43 artifact verification"}, sort_keys=True))
+          PY
+            uv run python -m kri_space_autonomy.experiment_004_pilot.workflow release-scan
+          elif [[ -d experiments/003-confirmatory/seeds && -d results/experiment-003-confirmatory ]]; then
             # These guards are pre-materialization assertions and are intentionally
             # false after their corresponding frozen outcome partitions execute.
             uv run pytest \

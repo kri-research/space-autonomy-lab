@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "all_frozen_pilot_gates": true,
+    "descriptive_only": true,
+    "episode_hash": true,
+    "execution_counts": true,
+    "four_roots_per_case": true,
+    "no_retry_replacement_extension": true,
+    "partition_44_inert": true,
+    "phase_validation": true,
+    "postexecution_integrity": true,
+    "replay_identity": true,
+    "replay_selection": true,
+    "seed_index_counts": true,
+    "seed_manifest_hash": true,
+    "seed_rows_unique": true
+  },
+  "confirmatory_design_created_or_enabled": false,
+  "counts": {
+    "complete_blocks": 44,
+    "episode_rows": 88,
+    "infrastructure_failures": 0,
+    "replay_blocks": 11,
+    "replay_episodes": 22,
+    "root_rows": 44
+  },
+  "digests": {
+    "episodes_sha256": "eb23f9ee42118f91f01d77a2dd55ee5ca9678b2a9eb731a9a57b732b2770bcdc",
+    "replay_digest": "7b630fbdc1e4a3d8971a05d7766b51dc21dff3a41eef2a44e4d1c7d159f70dfa",
+    "seed_manifest_sha256": "bb01acd3426f1e2e5c948cbb3d48c6aa48141ca261cf885c63b6a292f94eff5e"
+  },
+  "identities": {
+    "branch": "experiment-004-pilot-run",
+    "foundation_freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+    "foundation_readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+    "head": "1415b3490315501bb1a33bc6e51b48347db191f1",
+    "pilot_freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+    "pilot_readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809"
+  },
+  "overall_decision": "pilot_design_gates_passed",
+  "passed": true,
+  "phase": "post_partition_43_result_verification",
+  "schema_version": "experiment-004-design-validation-pilot-result-verification-1.0"
+}
