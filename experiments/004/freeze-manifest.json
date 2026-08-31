@@ -1,0 +1,257 @@
+{
+  "dependency_runtime_identity": {
+    "dependency_file_hashes": {
+      ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+      "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+      "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+    },
+    "expected_versions": {
+      "numpy_version": "2.4.6",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0"
+    },
+    "mismatches": [],
+    "observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "passed": true,
+    "platform_match_required_for_future_replay": true
+  },
+  "experiment_004_outcome_campaign_executed": false,
+  "freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+  "frozen_at_utc": "2026-08-30T23:59:04.748052+00:00",
+  "future_confirmatory_hypothesis_frozen": false,
+  "future_confirmatory_partition_materialized": false,
+  "geometry": {
+    "approach_radial_halfwidth_m": [
+      10.0,
+      3.0
+    ],
+    "approach_y_bounds_m": [
+      -100.0,
+      -30.0
+    ],
+    "event_semantics": "exact HCW arcs split at intervals no longer than one second",
+    "hard_body_definition": "closed center-to-center separation threshold",
+    "hard_body_radius_m": 2.0,
+    "hold_center_m": [
+      0.0,
+      -30.0
+    ],
+    "hold_max_speed_mps": 0.05,
+    "hold_position_halfwidth_m": [
+      2.0,
+      3.0
+    ],
+    "keep_out_radius_m": 10.0
+  },
+  "historical_final_verifiers": {
+    "checks": [
+      {
+        "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+        "id": "experiment_002_final_freeze",
+        "passed": true,
+        "returncode": 0,
+        "summary": "}"
+      },
+      {
+        "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+        "id": "experiment_002_final_results",
+        "passed": true,
+        "returncode": 0,
+        "summary": "}"
+      },
+      {
+        "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze, verify_results; r=Path.cwd(); assert verify_freeze(r, require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+        "id": "experiment_003_pilot_freeze_and_results",
+        "passed": true,
+        "returncode": 0,
+        "summary": ""
+      },
+      {
+        "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003_confirmatory.workflow import verify_freeze, verify_results; r=Path.cwd(); assert verify_freeze(r, require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+        "id": "experiment_003_confirmatory_freeze_and_results",
+        "passed": true,
+        "returncode": 0,
+        "summary": ""
+      }
+    ],
+    "passed": true
+  },
+  "historical_scientific_context": {
+    "experiment_002_final": {
+      "H1_passed": true,
+      "H2_passed": true,
+      "decision": "favorable"
+    },
+    "experiment_003_final": {
+      "D_and_PD_zero_analysis_hazard_in_every_stratum": true,
+      "E5_descriptive_sustained_success_difference": -0.6893333333333334,
+      "E6_descriptive_sustained_success_difference": -0.6333333333333333,
+      "H1_PD_minus_D_estimate": 0.0,
+      "H1_two_sided_95_interval": [
+        0.0,
+        0.0
+      ],
+      "H2_status": "not_tested_gate_closed",
+      "decision": "inconclusive",
+      "descriptive_PD_minus_D_sustained_success": -0.184
+    },
+    "passed": true
+  },
+  "merged_base_integrity": {
+    "base_blob_map_sha256": "adf5cc103e0f2e800760650a3ccea1122ed9079fe31038fd1fa1fba24c19dc87",
+    "base_commit": "bef9bb4d34efd23767e3f247de11ff58ffba3876",
+    "base_tracked_files_total": 299,
+    "base_tracked_files_verified": 299,
+    "base_tree_git_id": "a58824222c8332ce04fb8e9ffc358f49a3d9b50f",
+    "historical_experiments_001_003_included": true,
+    "mismatches": 0,
+    "mismatches_preview": [],
+    "observed_head": "bef9bb4d34efd23767e3f247de11ff58ffba3876",
+    "passed": true,
+    "scope": "every file tracked at merged main commit bef9bb4"
+  },
+  "navigation_and_control": {
+    "filter_state": [
+      "x_radial_m",
+      "y_alongtrack_m",
+      "vx_radial_mps",
+      "vy_alongtrack_mps"
+    ],
+    "fixed_lag_s": 1.0,
+    "future_inferential_arm_family_frozen": false,
+    "measurement_covariance_shape": [
+      4,
+      4
+    ],
+    "measurement_order": [
+      "x_radial_m",
+      "y_alongtrack_m",
+      "vx_radial_mps",
+      "vy_alongtrack_mps"
+    ],
+    "product_scalar_contract_changed": false,
+    "reference_controller": "deterministic bounded discrete LQR hold controller",
+    "reference_only_not_fitted": true
+  },
+  "orbital_model": {
+    "action_order": [
+      "ax_radial_mps2",
+      "ay_alongtrack_mps2"
+    ],
+    "central_body": "Earth",
+    "coordinate_frame": "target-centered LVLH rotating with a circular chief orbit",
+    "gravitational_parameter_m3_s2": 398600441800000.0,
+    "limitation": "local circular-orbit linear model; not nonlinear orbital mechanics",
+    "mean_motion_rad_s": 0.0011313666536110223,
+    "model": "planar linear Hill-Clohessy-Wiltshire relative motion",
+    "orbital_period_s": 5553.624271252229,
+    "propagation": "exact zero-order-hold augmented matrix exponential",
+    "reference_radius_m": 6778137.0,
+    "state_order": [
+      "x_radial_m",
+      "y_alongtrack_m",
+      "vx_radial_mps",
+      "vy_alongtrack_mps"
+    ],
+    "x_axis_convention": "+x radial outward from Earth",
+    "y_axis_convention": "+y along-track in the chief velocity direction"
+  },
+  "outcome_domains": {
+    "aggregate_primary_endpoint_frozen": false,
+    "mission": [
+      "hold_acquired",
+      "hold_dwell",
+      "safe_incomplete"
+    ],
+    "physical": [
+      "collision",
+      "unauthorized_keep_out_entry",
+      "corridor_departure"
+    ],
+    "technical": [
+      "primary_estimator_fault",
+      "monitor_estimator_fault",
+      "monitor_logic_fault",
+      "shared_cause_fault",
+      "controller_fault",
+      "invalid_action",
+      "numerical_failure"
+    ]
+  },
+  "phase": "pre_outcome_foundation_freeze",
+  "pilot_seeds_materialized": false,
+  "publication_privacy_scan": {
+    "enumeration": "tracked plus untracked nonignored files",
+    "files_scanned": 319,
+    "matches": 0,
+    "matches_preview": [],
+    "opaque_files": 0,
+    "opaque_files_preview": [],
+    "passed": true
+  },
+  "readiness_policy": "fail closed; no critical-check waiver",
+  "schema_version": "experiment-004-planar-hcw-foundation-1.0",
+  "scientific_findings_claimed": false,
+  "scope": "Experiment 004 planar HCW pre-outcome foundation",
+  "seed_partition_contract": {
+    "contract_sha256": "f6219c3d6a8fc4e0e7c2153b83faad929512da8ee5d382de8d7154483145861a",
+    "errors_preview": [],
+    "forbidden_paths_present": [],
+    "future_confirmatory_materialized": false,
+    "historical_namespace_overlap": 0,
+    "historical_root_ids_compared": 20881,
+    "master_seed": 4004,
+    "partition_codes": [
+      41,
+      42,
+      43,
+      44,
+      941
+    ],
+    "passed": true,
+    "pilot_materialized": false
+  },
+  "source_file_hashes": {
+    ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+    "docs/experiment-004.md": "5d869a4b1a4569155e77ed3e9a57e34542d2011a7ae7f52dfb1b766d58174a23",
+    "experiments/004/config.json": "e408d7b5ca09583293537ca8120c06eef755b7649b7f90ca1c054c4fae6a74d1",
+    "experiments/004/preregistration.md": "b252e4833a27c9b582b1eb02994ffbb024621c5a04621372ce43d0a85b0de6a6",
+    "experiments/004/seed-contract.json": "f6219c3d6a8fc4e0e7c2153b83faad929512da8ee5d382de8d7154483145861a",
+    "experiments/004/validation-evidence.json": "f9d019c2eee26e421f0efd963fd5e8a0e07fc31df57f94f220fbdc555424eabd",
+    "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+    "src/kri_space_autonomy/experiment_004/__init__.py": "085258fb213c9f7f41461ab522b88bc3cbd61256cf87559dd447f1bc6b94edfd",
+    "src/kri_space_autonomy/experiment_004/config.py": "7445feae76256ca3b481ac47bef9bd3611974994a740949d49a1341203c63376",
+    "src/kri_space_autonomy/experiment_004/control.py": "2b244fc85932156dee4c4d4f08a9878f1ae86578209c4cdc324a073beb9760e2",
+    "src/kri_space_autonomy/experiment_004/dynamics.py": "4ecf8c95ad9c47526064b97c16bd26d363e9d28d5c97a84a0042e2b4a4197aa2",
+    "src/kri_space_autonomy/experiment_004/estimator.py": "d15a81842e6c55724aeb5fe7b4ea8246d2f6a45670babf1991767ea2f0aae424",
+    "src/kri_space_autonomy/experiment_004/evaluation.py": "f2464b1b9b19df45ea7dc8037bf976b1fa62d7d13d11cf386400307745fc73bc",
+    "src/kri_space_autonomy/experiment_004/geometry.py": "35c121ed0e8d2662f5f9a4fd60a2c375f6e96c2403105ab8c6a7c3869d64f4f0",
+    "src/kri_space_autonomy/experiment_004/measurements.py": "b6a92cc3e42a68487a6a8fc6653683490663fd0089dc1e817bbae0d3598268f8",
+    "src/kri_space_autonomy/experiment_004/seeds.py": "fcd44e830ffd23581c548a2b7c1a121421f1cdaff4247c00a132085c80b33f17",
+    "src/kri_space_autonomy/experiment_004/validation.py": "753a1cf8890e670c712277548d8d2cabbcfa6f64c394664a15a5994749abcb8a",
+    "src/kri_space_autonomy/experiment_004/workflow.py": "282184e8c873004895115f9528fce0a367d17ce5f83afc3763ba6140e91fc087",
+    "tests/test_experiment_004_dynamics.py": "cb6e2859f8d486335d069f8b04e7ec08af4a3b0a2c045aeff388b653f8518a29",
+    "tests/test_experiment_004_estimator.py": "cdd3d6f508f16987d67a1fd7bf372cf00e59b743647d9acf2ef0961e89876f2d",
+    "tests/test_experiment_004_foundation.py": "10e81ac934e1f03ee5112ea041c0c4bcc2870820e0bdc5011f949b12baa2c1b0",
+    "tests/test_experiment_004_geometry.py": "70bfa2a7ecae4cee36b6255d8751466e7692269285a0f7dc541be3a14db585f0",
+    "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+  },
+  "source_identity": {
+    "base_commit": "bef9bb4d34efd23767e3f247de11ff58ffba3876",
+    "branch": "experiment-004-hcw-foundation",
+    "commit_created": false,
+    "paths": "project-relative only",
+    "working_tree_dirty": true
+  },
+  "source_tree_sha256": "92e28d93c0f60953babc0ded0b16e141c98fd0340c5f485dda3c716a4bf99b58",
+  "status": "READY_FOR_DESIGN_VALIDATION_PILOT",
+  "validation_sha256": "f9d019c2eee26e421f0efd963fd5e8a0e07fc31df57f94f220fbdc555424eabd"
+}

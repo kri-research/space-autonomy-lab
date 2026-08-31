@@ -1,0 +1,15 @@
+{
+  "freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+  "future_confirmatory_partition_code": 44,
+  "future_confirmatory_partition_state": "reserved_not_materialized_size_and_hypothesis_not_set",
+  "next_task": "freeze one non-inferential pilot matrix and sample count using only partition-41 calibration; validate nominal feasibility, forced event coding, channel topology, actuation cases, completeness, and replay before enabling a partition-43 generator",
+  "outcome_campaign_executed": false,
+  "pilot_generator_available": false,
+  "pilot_partition_code": 43,
+  "pilot_partition_state": "reserved_not_materialized_or_executed",
+  "readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+  "schema_version": "experiment-004-planar-hcw-foundation-1.0",
+  "scientific_findings_claimed": false,
+  "scope": "separate non-inferential Experiment 004 design-validation pilot design",
+  "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+}
