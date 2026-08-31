@@ -1,0 +1,80 @@
+{
+  "schema_version": "experiment-004-confirmatory-assurance-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 4004,
+  "partition_code": 44,
+  "status_at_freeze": "reserved_not_materialized_or_executed",
+  "derivation": "SeedSequence([master, partition, geometry_case, fault_case, replicate, stream])",
+  "strata": [
+    {
+      "id": "P00_nominal_feasibility",
+      "roots": 64,
+      "primary_weight": null
+    },
+    {
+      "id": "P04_primary_navigation_bias",
+      "roots": 534,
+      "primary_weight": 0.5
+    },
+    {
+      "id": "P05_primary_navigation_dropout",
+      "roots": 534,
+      "primary_weight": 0.5
+    },
+    {
+      "id": "P06_monitor_navigation_bias",
+      "roots": 64,
+      "primary_weight": null
+    },
+    {
+      "id": "P07_monitor_logic_false_trip",
+      "roots": 64,
+      "primary_weight": null
+    },
+    {
+      "id": "P08_shared_navigation_bias",
+      "roots": 64,
+      "primary_weight": null
+    },
+    {
+      "id": "P09_actuation_degradation",
+      "roots": 64,
+      "primary_weight": null
+    },
+    {
+      "id": "P10_disturbance_burst",
+      "roots": 64,
+      "primary_weight": null
+    }
+  ],
+  "stream_codes": {
+    "initial_state": 101,
+    "process_disturbance_radial": 102,
+    "process_disturbance_alongtrack": 103,
+    "primary_measurement": 104,
+    "monitor_measurement": 105,
+    "fault_parameters": 106,
+    "actuator_uncertainty": 107,
+    "configuration_run_order": 108
+  },
+  "configurations": [
+    "primary_reference",
+    "independent_monitor_gate"
+  ],
+  "expected_root_rows": 1452,
+  "expected_episode_rows": 2904,
+  "replay_selection": "replicates 0 through 7 in every stratum; outcome-blind",
+  "replay_roots_per_stratum": 8,
+  "expected_replay_root_rows": 64,
+  "expected_replay_episode_rows": 128,
+  "materialization_prerequisite": "Exact Experiment 004 confirmatory freeze and readiness self-hashes must verify before the partition-44 generator is invoked.",
+  "materialization_outputs": [
+    "experiments/004-confirmatory/seeds/confirmatory.jsonl",
+    "experiments/004-confirmatory/seeds/replay-subset.json",
+    "experiments/004-confirmatory/seeds/index.json"
+  ],
+  "generator_available_after_verified_freeze": true,
+  "generator_invoked": false,
+  "replacement_extension_or_count_drift_allowed": false,
+  "outcome_dependent_materialization_allowed": false
+}

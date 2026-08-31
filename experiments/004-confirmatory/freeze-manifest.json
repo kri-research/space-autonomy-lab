@@ -1,0 +1,240 @@
+{
+  "analysis_contract": {
+    "H1": "exact one-sided paired discordance superiority at alpha 0.025 plus observed risk difference <= -0.05",
+    "H2": "gatekept exact one-sided gate-induced hold-loss risk below 0.05 at alpha 0.025",
+    "missing_or_infrastructure_failure": "any occurrence invalidates inference; no retry, replacement, extension, or imputation",
+    "primary_estimand": "equal-weight P04/P05 gate-minus-reference risk difference for collision OR unauthorized keep-out entry OR corridor departure",
+    "secondary_inferential_family": null
+  },
+  "confirmatory_outcome_rows_created": false,
+  "confirmatory_outcomes_executed": false,
+  "dependency_runtime_identity": {
+    "dependency_file_hashes": {
+      ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+      "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+      "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+    },
+    "exact_platform_match_required_for_replay": true,
+    "foundation_expected_observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "mismatches": [],
+    "observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "passed": true,
+    "uv_version": "uv 0.12.5 (Homebrew 2026-08-14 aarch64-apple-darwin)"
+  },
+  "design": {
+    "configurations": [
+      "primary_reference",
+      "independent_monitor_gate"
+    ],
+    "episodes": 2904,
+    "paired_blocks": 1452,
+    "primary_strata": [
+      "P04_primary_navigation_bias",
+      "P05_primary_navigation_dropout"
+    ],
+    "replay_blocks": 64,
+    "replay_episodes": 128,
+    "roots_by_stratum": {
+      "P00_nominal_feasibility": 64,
+      "P04_primary_navigation_bias": 534,
+      "P05_primary_navigation_dropout": 534,
+      "P06_monitor_navigation_bias": 64,
+      "P07_monitor_logic_false_trip": 64,
+      "P08_shared_navigation_bias": 64,
+      "P09_actuation_degradation": 64,
+      "P10_disturbance_burst": 64
+    },
+    "strata": [
+      "P00_nominal_feasibility",
+      "P04_primary_navigation_bias",
+      "P05_primary_navigation_dropout",
+      "P06_monitor_navigation_bias",
+      "P07_monitor_logic_false_trip",
+      "P08_shared_navigation_bias",
+      "P09_actuation_degradation",
+      "P10_disturbance_burst"
+    ]
+  },
+  "evidence_chain": {
+    "all_frozen_pilot_gates_passed": true,
+    "changed_frozen_paths_from_base": [],
+    "errors_preview": [],
+    "frozen_source_files_verified": {
+      "foundation": 23,
+      "pilot_design": 25
+    },
+    "frozen_source_mismatches": {
+      "foundation": [],
+      "pilot_design": []
+    },
+    "historical_integrity": {
+      "changed_paths": [],
+      "checksum_directories_verified": 7,
+      "checksum_errors": [],
+      "historical_verifiers": [
+        {
+          "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+          "passed": true,
+          "returncode": 0
+        },
+        {
+          "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+          "passed": true,
+          "returncode": 0
+        },
+        {
+          "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+          "passed": true,
+          "returncode": 0
+        },
+        {
+          "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003_confirmatory.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+          "passed": true,
+          "returncode": 0
+        }
+      ],
+      "passed": true,
+      "paths_compared_to_foundation_commit": 184
+    },
+    "identities": {
+      "foundation_freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+      "foundation_readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+      "pilot_freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+      "pilot_readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809"
+    },
+    "passed": true,
+    "pilot_counts": {
+      "cases": 11,
+      "complete_blocks": 44,
+      "episodes": 88,
+      "infrastructure_failures": 0
+    },
+    "pilot_gate_decision": "pilot_design_gates_passed",
+    "pilot_replay": {
+      "blocks": 11,
+      "episodes": 22,
+      "original_digest": "7b630fbdc1e4a3d8971a05d7766b51dc21dff3a41eef2a44e4d1c7d159f70dfa",
+      "passed": true,
+      "replay_digest": "7b630fbdc1e4a3d8971a05d7766b51dc21dff3a41eef2a44e4d1c7d159f70dfa"
+    },
+    "pilot_result_checksum_errors": [],
+    "pilot_result_checksum_files_verified": 15
+  },
+  "freeze_id": "f2632de9c371eeb4ce80ae7cdf054d49e9cf3f46a80fd30313b5e094c029d441",
+  "frozen_at_utc": "2026-08-31T14:21:03.136766+00:00",
+  "learned_policy_trained_or_claimed": false,
+  "partition_43_effect_estimate_used": false,
+  "partition_44": {
+    "generator_invoked": false,
+    "materialized_root_rows": [],
+    "outcomes_executed": false,
+    "partition_code": 44,
+    "passed": true,
+    "seed_or_result_paths_present": []
+  },
+  "partition_44_materialized": false,
+  "phase": "pre_outcome_confirmatory_design_freeze",
+  "publication_privacy_scan": {
+    "enumeration": "tracked plus untracked nonignored files",
+    "files_scanned": 377,
+    "matches": 0,
+    "matches_preview": [],
+    "opaque_files": 0,
+    "opaque_files_are_fatal": true,
+    "opaque_files_preview": [],
+    "passed": true
+  },
+  "readiness_policy": "fail closed; no critical-check waiver",
+  "sample_size": {
+    "passed": true,
+    "pilot_configuration_direction_used": false,
+    "pilot_outcome_effect_used": false,
+    "planning_basis": "exact worst-case all-discordant paired binary calculation at a prospective 10 percentage-point net reduction",
+    "resolution": {
+      "achieved_alpha": 0.023327050024457185,
+      "achieved_power": 0.9005869214221006,
+      "critical_beneficial_discordances_if_all_discordant": 567,
+      "null_beneficial_probability": 0.5,
+      "planning_beneficial_probability": 0.55,
+      "roots": 1068,
+      "worst_case_discordance_fraction": 1.0
+    },
+    "roots_per_primary_stratum": 534
+  },
+  "schema_version": "experiment-004-confirmatory-assurance-1.0",
+  "scientific_readiness": {
+    "architecture_discordance_capable": true,
+    "claim_boundary": "deterministic planar HCW assurance; no AI-policy, prevalence, flight-safety, 6-DoF, or HIL claim",
+    "forced_physical_fixtures_in_scientific_population": false,
+    "question": "Does the independent-monitor gate reduce physical adverse events in the equal-weight primary-bias/dropout challenge population without exceeding a 5% gate-induced hold-loss probability?"
+  },
+  "scope": "deterministic planar HCW independent-monitor assurance comparison",
+  "seed_reservation": {
+    "contract_sha256": "f90f888b4ed17bd4e6cecae302aac9a86ba8b050231c5d686db5fdf1b7818ceb",
+    "errors_preview": [],
+    "expected_episode_rows": 2904,
+    "expected_replay_episode_rows": 128,
+    "expected_replay_root_rows": 64,
+    "expected_root_rows": 1452,
+    "generator_available": true,
+    "generator_invoked": false,
+    "historical_partition_44_overlap": 0,
+    "historical_root_ids_compared": 20925,
+    "materialization_requires_exact_freeze_and_readiness": true,
+    "partition_code": 44,
+    "passed": true,
+    "result_directory_present": false,
+    "seed_directory_present": false,
+    "state": "reserved_not_materialized_or_executed",
+    "state_at_freeze": "reserved_not_materialized_or_executed"
+  },
+  "source_file_hashes": {
+    ".github/workflows/ci.yml": "1a89df5f487ca38fee84ac29b007fcad77db96759e14eff4cec489072eae8b46",
+    ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+    "docs/experiment-004-confirmatory.md": "332782072c7a4c14fa1b137dc7482220e4273dfbd08c85a0a10a7b2e95108704",
+    "experiments/004-confirmatory/config.json": "d2f542d68ff23187928795ff73058a84b1fe3385efedc7d6f8dcfc55eb12898b",
+    "experiments/004-confirmatory/preregistration.md": "d3186274cf4eda717efb6e5916e93e4e4aa2eafa60a751f8cd55a03b1679b8c7",
+    "experiments/004-confirmatory/seed-contract.json": "f90f888b4ed17bd4e6cecae302aac9a86ba8b050231c5d686db5fdf1b7818ceb",
+    "experiments/004-confirmatory/strata.json": "26243254819f7f0b5351f57c4971f229bd057d980a9895a33c38b3a1b265f665",
+    "experiments/004-confirmatory/validation-evidence.json": "09e6552cb264275a4b4521613d014443c707db5978a05c07712748e0ad16cff7",
+    "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+    "src/kri_space_autonomy/experiment_004_confirmatory/__init__.py": "a5682a115c4c510a61b8df7ed4f35350edf07046de105803d921d9b221e719ae",
+    "src/kri_space_autonomy/experiment_004_confirmatory/analysis.py": "1bec2aaaf71549deb506639bd63f44af4f94cabd7c9b9f8accb6429fe10fa0d7",
+    "src/kri_space_autonomy/experiment_004_confirmatory/config.py": "f24365d9d6d42b7386a83955dbadbf0c0eab9d46d58b8fc68b21473305ddb26a",
+    "src/kri_space_autonomy/experiment_004_confirmatory/runner.py": "7bc5dbcf0b81067946f5556da8db516d34586de980d834bb877058f8cb26b0b4",
+    "src/kri_space_autonomy/experiment_004_confirmatory/seeds.py": "13e9e98c6bbe7f38657873242439bc0ddff5271eaad23447e6301046d57fc35f",
+    "src/kri_space_autonomy/experiment_004_confirmatory/validation.py": "83165ff3989cbcf64f62356c829fe389a4b04c9e0d9575972bba9d5c40407d57",
+    "src/kri_space_autonomy/experiment_004_confirmatory/workflow.py": "8c7964ddb6cb01277959659f88188feae501ee1738e77a76e1d3cb8516fe4853",
+    "tests/test_experiment_004_confirmatory_analysis.py": "43dbc2a3ad014708a5812e4b85ca62c9114c70806148bca4002555ed0aa03833",
+    "tests/test_experiment_004_confirmatory_design.py": "590515998e1fae7f7f5a2d007780cb1789fad520a638a7da8d0825c36e686363",
+    "tests/test_experiment_004_confirmatory_seeds.py": "eff3000ff5ff60e3b6dd1431d31a5a5b94b1af3218b14579cad73e356e14bd71",
+    "tests/test_experiment_004_confirmatory_validation.py": "84cd66fd33f1259624cd407609c91aacaef6f4bc1b9755144319ad687c7e45d2",
+    "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+  },
+  "source_identity": {
+    "base_commit": "57c1a272136e2e5a30afd01eea6f6adc45007bb3",
+    "branch": "experiment-004-confirmatory-design",
+    "commit_created": false,
+    "paths": "project-relative only",
+    "working_tree_dirty": true
+  },
+  "source_tree_sha256": "c24f780a7bfac76d44bdff287d50174b0b068a29a7d13eac1ec338d917e89e1d",
+  "status": "READY_FOR_CONFIRMATORY_EXECUTION",
+  "validation_sha256": "09e6552cb264275a4b4521613d014443c707db5978a05c07712748e0ad16cff7"
+}
