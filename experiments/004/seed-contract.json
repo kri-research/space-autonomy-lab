@@ -1,0 +1,48 @@
+{
+  "schema_version": "experiment-004-planar-hcw-foundation-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 4004,
+  "derivation": "SeedSequence([master, partition, geometry_case, fault_case, replicate, stream])",
+  "partitions": {
+    "dynamics_metric_calibration": {
+      "code": 41,
+      "status": "reserved_not_materialized_or_executed",
+      "permitted_use": "prospective dynamics, geometry, and metric calibration only"
+    },
+    "controller_policy_fit": {
+      "code": 42,
+      "status": "reserved_not_materialized_or_executed",
+      "permitted_use": "future fitting only; unused by deterministic reference controller"
+    },
+    "design_validation_pilot": {
+      "code": 43,
+      "status": "reserved_not_materialized_or_executed",
+      "sample_size": "not_set_in_foundation"
+    },
+    "future_confirmatory": {
+      "code": 44,
+      "status": "reserved_not_materialized_size_and_hypothesis_not_set",
+      "generator_available": false
+    },
+    "non_outcome_test_fixtures": {
+      "code": 941,
+      "status": "available_for_deterministic_validation_only"
+    }
+  },
+  "stream_codes": {
+    "initial_state": 101,
+    "process_disturbance_radial": 102,
+    "process_disturbance_alongtrack": 103,
+    "primary_measurement": 104,
+    "monitor_measurement": 105,
+    "fault_parameters": 106,
+    "actuator_uncertainty": 107,
+    "configuration_run_order": 108
+  },
+  "root_identity_namespace": "experiment004:<partition>:<case>:<replicate>",
+  "historical_master_domains": [1001, 2002, 3003],
+  "replacement_or_extension_allowed": false,
+  "outcome_dependent_threshold_selection_allowed": false,
+  "pilot_generator_available_at_foundation_freeze": false,
+  "future_confirmatory_generator_available_at_foundation_freeze": false
+}
