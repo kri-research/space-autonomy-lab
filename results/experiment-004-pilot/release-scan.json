@@ -1,0 +1,10 @@
+{
+  "enumeration": "tracked plus untracked nonignored files",
+  "files_scanned": 358,
+  "matches": 0,
+  "matches_preview": [],
+  "opaque_files": 0,
+  "opaque_files_are_fatal": true,
+  "opaque_files_preview": [],
+  "passed": true
+}

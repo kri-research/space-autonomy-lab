@@ -1,0 +1,413 @@
+{
+  "analysis_mode": "descriptive_mechanistic_gate_only",
+  "architecture_effect_estimated": false,
+  "descriptive_mechanistic_summary": {
+    "P00_nominal_feasibility": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 2
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P01_forced_collision": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 4,
+          "corridor_departure": 0,
+          "hold_acquired": 0,
+          "keep_out_entry": 4
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 4
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 4,
+          "corridor_departure": 0,
+          "hold_acquired": 0,
+          "keep_out_entry": 4
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P02_forced_keep_out_only": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 0,
+          "keep_out_entry": 4
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 4
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 0,
+          "keep_out_entry": 4
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P03_forced_corridor_departure": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 4,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 4
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 4,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P04_primary_navigation_bias": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 120
+        },
+        "monitor_override_commands": 3
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 120
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P05_primary_navigation_dropout": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 24
+        },
+        "monitor_override_commands": 2
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 24
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P06_monitor_navigation_bias": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 120,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 121
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 120,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P07_monitor_logic_false_trip": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 24,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 25
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P08_shared_navigation_bias": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 120,
+          "primary_packets": 120
+        },
+        "monitor_override_commands": 123
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 4,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 120,
+          "primary_packets": 120
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P09_actuation_degradation": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 0,
+          "keep_out_entry": 4
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 240,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 916
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 0,
+          "hold_acquired": 0,
+          "keep_out_entry": 4
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 240,
+          "disturbance_substeps": 0,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    },
+    "P10_disturbance_burst": {
+      "independent_monitor_gate": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 4,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 960,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 804
+      },
+      "primary_reference": {
+        "episodes": 4,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 4,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_counts": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 960,
+          "logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "monitor_override_commands": 0
+      }
+    }
+  },
+  "multiplicity_family_defined": false,
+  "p_values_computed": false,
+  "phase": "noninferential_design_validation_pilot",
+  "progression": {
+    "confirmatory_design_enabled": false,
+    "decision": "pilot_design_gates_passed",
+    "passed": true
+  },
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "scientific_hypothesis_tested": false,
+  "superiority_or_noninferiority_tested": false
+}

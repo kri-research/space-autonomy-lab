@@ -1,0 +1,19 @@
+{
+  "expected_blocks": 11,
+  "expected_episodes": 22,
+  "root_seed_ids": [
+    "experiment004:43:000:0000",
+    "experiment004:43:100:0000",
+    "experiment004:43:200:0000",
+    "experiment004:43:300:0000",
+    "experiment004:43:001:0000",
+    "experiment004:43:002:0000",
+    "experiment004:43:003:0000",
+    "experiment004:43:004:0000",
+    "experiment004:43:005:0000",
+    "experiment004:43:006:0000",
+    "experiment004:43:007:0000"
+  ],
+  "schema_version": "experiment-004-design-validation-pilot-1.0",
+  "selection": "replicate 0 in every case; outcome-blind"
+}

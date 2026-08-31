@@ -1,0 +1,143 @@
+{
+  "commands": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 1ms",
+      "tail": [
+        "Checked 9 packages in 1ms"
+      ]
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!",
+      "tail": [
+        "All checks passed!"
+      ]
+    },
+    {
+      "command": "uv run pytest -q --deselect tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots --deselect tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized --deselect tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them --deselect tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization --deselect tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent --deselect tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains --deselect tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44 --deselect tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free --deselect tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains --deselect tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": "......                                                                   [100%]",
+      "tail": [
+        "........................................................................ [ 32%]",
+        "........................................................................ [ 64%]",
+        "........................................................................ [ 97%]",
+        "......                                                                   [100%]"
+      ]
+    },
+    {
+      "command": "uv run pytest -q -k experiment_004 --deselect tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains --deselect tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44 --deselect tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free --deselect tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains --deselect tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests",
+      "id": "phase_appropriate_experiment_004_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": ".....................................                                    [100%]",
+      "tail": [
+        ".....................................                                    [100%]"
+      ]
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": "",
+      "tail": []
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}",
+      "tail": [
+        "{",
+        "  \"checked_state_action_pairs\": 1280,",
+        "  \"overridden_pairs\": 379,",
+        "  \"passed\": true,",
+        "  \"permitted_pairs\": 901,",
+        "  \"scope\": \"finite bounded grid; not formal verification\",",
+        "  \"violations\": []",
+        "}"
+      ]
+    },
+    {
+      "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+      "id": "experiment_002_final_results",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}",
+      "tail": [
+        "    \"matches\": 0,",
+        "    \"matches_preview\": [],",
+        "    \"passed\": true",
+        "  },",
+        "  \"result_files_verified\": 6,",
+        "  \"schema_version\": \"experiment-002-confirmatory-1.0\",",
+        "  \"verified_at_utc\": \"2026-08-31T09:30:46.301551+00:00\"",
+        "}"
+      ]
+    },
+    {
+      "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_results; assert verify_results(Path.cwd())['passed']",
+      "id": "experiment_003_pilot_results",
+      "passed": true,
+      "returncode": 0,
+      "summary": "",
+      "tail": []
+    },
+    {
+      "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003_confirmatory.workflow import verify_results; assert verify_results(Path.cwd())['passed']",
+      "id": "experiment_003_final_results",
+      "passed": true,
+      "returncode": 0,
+      "summary": "",
+      "tail": []
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": "",
+      "tail": []
+    }
+  ],
+  "passed": true,
+  "phase": "post_partition_43_execution_phase_appropriate_validation",
+  "phase_inapplicable_reason": "pre-materialization absence assertions are intentionally false after authorized partition-43 materialization; frozen source was not changed",
+  "phase_inapplicable_tests": [
+    "tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots",
+    "tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized",
+    "tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them",
+    "tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization",
+    "tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent",
+    "tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains",
+    "tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44",
+    "tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free",
+    "tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains",
+    "tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests"
+  ],
+  "source_hashes": {
+    "foundation": {
+      "mismatches": [],
+      "passed": true,
+      "verified": 23
+    },
+    "pilot_design": {
+      "mismatches": [],
+      "passed": true,
+      "verified": 25
+    }
+  },
+  "tracked_status": [],
+  "tracked_worktree_clean": true,
+  "validated_at_utc": "2026-08-31T09:31:47.259636+00:00"
+}
