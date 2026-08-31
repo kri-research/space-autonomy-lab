@@ -1,0 +1,68 @@
+{
+  "schema_version": "experiment-004-confirmatory-assurance-1.0",
+  "population_kind": "synthetic planar HCW challenge population; weights are design weights, not operational prevalence",
+  "forced_physical_fixtures_in_scientific_population": false,
+  "strata": [
+    {
+      "id": "P00_nominal_feasibility",
+      "roots": 64,
+      "role": "descriptive concurrent nominal control",
+      "mechanism": "no scheduled fault",
+      "justification": "separates nominal integration behavior from fault responses"
+    },
+    {
+      "id": "P04_primary_navigation_bias",
+      "roots": 534,
+      "role": "primary inferential population; weight 0.5",
+      "mechanism": "frozen +8 m primary-only radial measurement bias for 30 s with independent monitor channel unaffected",
+      "justification": "the monitor architecture can identify and alter a primary-derived command only when information is not shared"
+    },
+    {
+      "id": "P05_primary_navigation_dropout",
+      "roots": 534,
+      "role": "primary inferential population; weight 0.5",
+      "mechanism": "frozen 6 s primary-only packet dropout with independent monitor channel unaffected",
+      "justification": "tests loss of primary information separately from biased information"
+    },
+    {
+      "id": "P06_monitor_navigation_bias",
+      "roots": 64,
+      "role": "descriptive monitor-side negative-control stratum",
+      "mechanism": "frozen monitor-only navigation bias",
+      "justification": "detects harm introduced by the monitor path without conflating it with primary-estimator faults"
+    },
+    {
+      "id": "P07_monitor_logic_false_trip",
+      "roots": 64,
+      "role": "descriptive monitor-logic negative-control stratum",
+      "mechanism": "frozen monitor-logic false trip",
+      "justification": "separates monitor logic failure from monitor estimator failure"
+    },
+    {
+      "id": "P08_shared_navigation_bias",
+      "roots": 64,
+      "role": "descriptive shared-cause claim-boundary stratum",
+      "mechanism": "frozen bias shared by primary and monitor navigation channels",
+      "justification": "an independent monitor cannot be credited for protection when both information channels share the same corruption"
+    },
+    {
+      "id": "P09_actuation_degradation",
+      "roots": 64,
+      "role": "descriptive actuation claim-boundary stratum",
+      "mechanism": "frozen 50% command effectiveness with actuator uncertainty",
+      "justification": "actuation loss occurs after both command paths and must not be mislabeled as estimator or monitor failure"
+    },
+    {
+      "id": "P10_disturbance_burst",
+      "roots": 64,
+      "role": "descriptive disturbance claim-boundary stratum",
+      "mechanism": "frozen bounded additive acceleration disturbance",
+      "justification": "physical disturbance enters truth propagation independently of navigation and monitor logic"
+    }
+  ],
+  "technical_failure_policy": {
+    "estimator_and_monitor_fault_flags": "reported mechanism-specifically and never relabeled as physical collision, keep-out entry, or corridor departure",
+    "invalid_action_or_numerical_failure": "separate technical invalidity; any occurrence closes confirmatory inference",
+    "infrastructure_failure_or_missing_cell": "no retry, replacement, imputation, or extension; any occurrence closes confirmatory inference"
+  }
+}
