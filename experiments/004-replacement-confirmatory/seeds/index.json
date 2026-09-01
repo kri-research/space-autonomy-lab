@@ -1,0 +1,16 @@
+{
+  "design_freeze_id": "fb64b2620f5ead91f5ed3fed20b6d312664fd42f69de5157566d0ba83e7b3ae6",
+  "design_readiness_id": "98088ffe90e517d8ff7d404fa8f6394969af1279680eed6b6c5be1d7da539416",
+  "historical_root_ids_compared": 20925,
+  "manifest_sha256": "c3a1ff86124dbba83137b2c5ebf2e4a6d38aa12657853ddad925150a39ec1e5a",
+  "materialized_only_after_exact_freeze_and_readiness_verification": true,
+  "partition_code": 45,
+  "planned_episode_rows": 2904,
+  "replacement_extension_or_count_drift_allowed": false,
+  "replay_episode_rows": 128,
+  "replay_root_rows": 64,
+  "replay_subset_sha256": "d937d6078001759163e7d6a9db79506141d3fbc1fd543de1d9a9d0eb8203f5aa",
+  "root_rows": 1452,
+  "schema_version": "experiment-004-replacement-confirmatory-1.0",
+  "seed_contract_sha256": "f74383c3d6707b9021210b540a55289e40e51f92578f7939281282e8e115db28"
+}

@@ -1,0 +1,13 @@
+{
+  "enumeration": "tracked plus untracked nonignored files",
+  "files_scanned": 410,
+  "matches": 0,
+  "matches_preview": [],
+  "opaque_files": 3,
+  "opaque_files_preview": [
+    "artifacts/experiment-002/policy-primary.npz",
+    "docs/experiment-002-research-plan.md.gz",
+    "results/experiment-002b/rate-command-events.jsonl.gz"
+  ],
+  "passed": true
+}

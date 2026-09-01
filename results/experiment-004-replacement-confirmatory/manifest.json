@@ -1,0 +1,112 @@
+{
+  "artifacts": [
+    {
+      "bytes": 836,
+      "path": "experiments/004-replacement-confirmatory/seeds/index.json",
+      "role": "seed_index",
+      "sha256": "363db45631d172d9bb9a9a21cad4af1ae9f118a406c8c9399c527031d14773a5"
+    },
+    {
+      "bytes": 2385128,
+      "path": "experiments/004-replacement-confirmatory/seeds/confirmatory.jsonl",
+      "role": "seed_manifest",
+      "sha256": "c3a1ff86124dbba83137b2c5ebf2e4a6d38aa12657853ddad925150a39ec1e5a"
+    },
+    {
+      "bytes": 2333,
+      "path": "experiments/004-replacement-confirmatory/seeds/replay-subset.json",
+      "role": "replay_selection",
+      "sha256": "d937d6078001759163e7d6a9db79506141d3fbc1fd543de1d9a9d0eb8203f5aa"
+    },
+    {
+      "bytes": 11193,
+      "path": "results/experiment-004-replacement-confirmatory/analysis.json",
+      "role": "confirmatory_analysis",
+      "sha256": "79aed29d445b62693db12b480778bbb49bb91bdcbb1f7bc2c203ae0d26dae9a7"
+    },
+    {
+      "bytes": 7279143,
+      "path": "results/experiment-004-replacement-confirmatory/confirmatory-episodes.jsonl",
+      "role": "episode_results",
+      "sha256": "bf1754d89edc2bb06f9b3176e3b29a99bb610412a0437404ddc7b1286432233e"
+    },
+    {
+      "bytes": 1094,
+      "path": "results/experiment-004-replacement-confirmatory/execution-summary.json",
+      "role": "execution_summary",
+      "sha256": "f34b1414bf83bc17a56986242452d7170ffb1b16ee760d6e21c565a74ad7dbb7"
+    },
+    {
+      "bytes": 990,
+      "path": "results/experiment-004-replacement-confirmatory/reproducibility.json",
+      "role": "reproducibility",
+      "sha256": "3b0375afa9790e7e273d08dadae1c1f6fc473f52f87fab0b5421f3fc49743015"
+    },
+    {
+      "bytes": 1314,
+      "path": "results/experiment-004-replacement-confirmatory/design-integrity-postexecution.json",
+      "role": "design_integrity",
+      "sha256": "b4f74de7f3223a8a7e30eca0877ed117eae71238e8bc3ac190f20b50410a0e29"
+    },
+    {
+      "bytes": 730,
+      "path": "results/experiment-004-replacement-confirmatory/execution-ledger.json",
+      "role": "execution_ledger",
+      "sha256": "555bd72b951071fa02bf05cf36796f483073386a2fd8c3483e161a3fb969ca4e"
+    },
+    {
+      "bytes": 1327,
+      "path": "results/experiment-004-replacement-confirmatory/execution-report.md",
+      "role": "execution_report",
+      "sha256": "dc6bfad7bd54ea64c6617f701cd2fcdb7b675c14408bea5afdcca8a669eb75e9"
+    },
+    {
+      "bytes": 5583,
+      "path": "results/experiment-004-replacement-confirmatory/phase-validation.json",
+      "role": "phase_validation",
+      "sha256": "74be937f4229d9d5c2ea2eaf3254e6fb1d575092ddb30f9f78154132537437ae"
+    },
+    {
+      "bytes": 942,
+      "path": "results/experiment-004-replacement-confirmatory/qc.json",
+      "role": "quality_control",
+      "sha256": "491af2932a8e428fe8e9e48c925ab3f3cea5094ff1d90c5b80d42812b2c8d4b1"
+    },
+    {
+      "bytes": 357,
+      "path": "results/experiment-004-replacement-confirmatory/release-scan.json",
+      "role": "release_scan",
+      "sha256": "681c0b04b4205af9a5ad84b33c73fa38fe2e5d8751df4bf72ab79fae0b9dc159"
+    },
+    {
+      "bytes": 1370,
+      "path": "results/experiment-004-replacement-confirmatory/result-verification.json",
+      "role": "result_verification",
+      "sha256": "f025e5956ad4f2562c784030c94b47b460add6bbf9edce8cca2c6a8afbc86fff"
+    }
+  ],
+  "counts": {
+    "episode_rows": 2904,
+    "infrastructure_failures": 0,
+    "paired_blocks": 1452,
+    "replay_blocks": 64,
+    "replay_episodes": 128
+  },
+  "decision": "inconclusive",
+  "embedded_hash_exclusions": [
+    {
+      "path": "results/experiment-004-replacement-confirmatory/manifest.json",
+      "reason": "self-referential; covered by checksums"
+    },
+    {
+      "path": "results/experiment-004-replacement-confirmatory/checksums.sha256",
+      "reason": "checksum file cannot hash itself"
+    }
+  ],
+  "freeze_id": "fb64b2620f5ead91f5ed3fed20b6d312664fd42f69de5157566d0ba83e7b3ae6",
+  "partition_code": 45,
+  "phase": "completed_partition_45_confirmatory",
+  "readiness_id": "98088ffe90e517d8ff7d404fa8f6394969af1279680eed6b6c5be1d7da539416",
+  "retired_partition_code": 44,
+  "schema_version": "experiment-004-replacement-confirmatory-publication-manifest-1.0"
+}

@@ -25,6 +25,14 @@ calibration, and statistical reporting.
 Introduce replaceable policy adapters and higher-fidelity relative dynamics. Compare multiple
 learning approaches under identical faults and safety boundaries.
 
+## Current evidence status
+
+Experiments 001-004 are complete. Experiment 004 advanced the testbed to planar HCW dynamics and
+estimator-aware vector control; its valid replacement confirmatory campaign was reproducible but
+inconclusive because both compared configurations had zero primary physical adverse events. The next
+fidelity question is transfer from linear HCW truth to a prospectively defined nonlinear orbital truth
+model before any 6-DoF or hardware-in-the-loop claim.
+
 ## v0.4 Hardware evidence
 
 Measure runtime-assurance overhead and recovery behaviour on representative edge hardware.

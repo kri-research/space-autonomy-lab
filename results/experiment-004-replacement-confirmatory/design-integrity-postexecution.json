@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "episode_hash": true,
+    "exact_cells": true,
+    "freeze_identity": true,
+    "frozen_inconclusive_decision": true,
+    "invalid_partition_44_audited": true,
+    "materialized_seed_integrity": true,
+    "replay_reproducible": true,
+    "seed_index_identity": true,
+    "single_complete_execution": true,
+    "valid_cells": true
+  },
+  "claim_boundary": "deterministic planar HCW assurance only; no AI-policy, operational prevalence, flight-safety, 6-DoF, or HIL claim",
+  "freeze_id": "fb64b2620f5ead91f5ed3fed20b6d312664fd42f69de5157566d0ba83e7b3ae6",
+  "partition_44": "infrastructure_invalid_permanently_retired",
+  "partition_45": "sole_valid_replacement_confirmatory_execution",
+  "passed": true,
+  "phase": "post_partition_45_execution_design_integrity",
+  "readiness_id": "98088ffe90e517d8ff7d404fa8f6394969af1279680eed6b6c5be1d7da539416",
+  "seed_validation": {
+    "deterministic_rederivation_errors": 0,
+    "errors_preview": [],
+    "historical_root_overlap": 0,
+    "manifest_sha256": "c3a1ff86124dbba83137b2c5ebf2e4a6d38aa12657853ddad925150a39ec1e5a",
+    "passed": true,
+    "replacement_extension_or_count_drift_allowed": false,
+    "replay_subset_sha256": "d937d6078001759163e7d6a9db79506141d3fbc1fd543de1d9a9d0eb8203f5aa",
+    "rows": 1452,
+    "unique_root_ids": 1452
+  }
+}

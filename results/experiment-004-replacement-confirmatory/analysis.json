@@ -1,0 +1,348 @@
+{
+  "claim_boundary": "deterministic planar HCW assurance only; no AI-policy, operational prevalence, flight-safety, 6-DoF, or HIL claim",
+  "decision": "inconclusive",
+  "estimand": {
+    "independent_unit": "complete case-by-root paired two-configuration block",
+    "mission": "probability that reference acquires hold while monitor-gated arm does not",
+    "primary": "gate-minus-reference risk difference for independent-evaluator physical adverse endpoint",
+    "target_population": "equal-weight mixture of frozen primary-navigation bias and dropout challenge strata"
+  },
+  "mechanism_specific_descriptive_summary": {
+    "P00_nominal_feasibility": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      }
+    },
+    "P04_primary_navigation_bias": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 534,
+        "hold_acquired": 534,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 534,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 534,
+        "hold_acquired": 534,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 534,
+          "shared_cause_fault": 0
+        }
+      }
+    },
+    "P05_primary_navigation_dropout": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 534,
+        "hold_acquired": 534,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 534,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 534,
+        "hold_acquired": 534,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 534,
+          "shared_cause_fault": 0
+        }
+      }
+    },
+    "P06_monitor_navigation_bias": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 64,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 64,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      }
+    },
+    "P07_monitor_logic_false_trip": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 64,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 64,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      }
+    },
+    "P08_shared_navigation_bias": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 64
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 64,
+        "keep_out_entry": 0,
+        "physical_adverse": 0,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 64
+        }
+      }
+    },
+    "P09_actuation_degradation": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 0,
+        "keep_out_entry": 64,
+        "physical_adverse": 64,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 64,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 0,
+        "episodes": 64,
+        "hold_acquired": 0,
+        "keep_out_entry": 64,
+        "physical_adverse": 64,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 64,
+          "disturbance_scheduled": 0,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      }
+    },
+    "P10_disturbance_burst": {
+      "independent_monitor_gate": {
+        "collision": 0,
+        "corridor_departure": 64,
+        "episodes": 64,
+        "hold_acquired": 0,
+        "keep_out_entry": 0,
+        "physical_adverse": 64,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 64,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      },
+      "primary_reference": {
+        "collision": 0,
+        "corridor_departure": 64,
+        "episodes": 64,
+        "hold_acquired": 0,
+        "keep_out_entry": 0,
+        "physical_adverse": 64,
+        "technical_flags": {
+          "actuation_degradation_scheduled": 0,
+          "disturbance_scheduled": 64,
+          "infrastructure_failure": 0,
+          "monitor_estimator_fault": 0,
+          "monitor_logic_fault": 0,
+          "primary_estimator_fault": 0,
+          "shared_cause_fault": 0
+        }
+      }
+    }
+  },
+  "no_retry_replacement_extension_or_imputation": true,
+  "primary_gatekeeping": {
+    "H1_physical_safety": {
+      "alpha": 0.025,
+      "discordant_pairs": 0,
+      "endpoint": "collision OR unauthorized keep-out entry OR corridor departure, from the independent physical truth evaluator",
+      "gate_adverse_reference_safe": 0,
+      "gate_minus_reference_risk_difference": 0.0,
+      "hypothesis": "H0: gate physical-adverse risk minus reference physical-adverse risk >= 0; H1: the paired difference is < 0",
+      "minimum_reportable_net_reduction": 0.05,
+      "one_sided_exact_p": 1.0,
+      "paired_roots": 1068,
+      "passed": false,
+      "reference_adverse_gate_safe": 0,
+      "test": "exact one-sided paired discordance (McNemar/sign) test"
+    },
+    "H2_mission": {
+      "alpha": 0.025,
+      "endpoint": "gate-induced loss of frozen hold acquisition",
+      "harm_rate": 0.0,
+      "harmful_pairs": 0,
+      "hypothesis": "H0: P(reference acquires hold and gate does not) >= 0.05; H1: probability is below that margin",
+      "margin": 0.05,
+      "one_sided_exact_p": null,
+      "paired_roots": 1068,
+      "passed": null,
+      "status": "not_tested_primary_gate_closed",
+      "test": "exact one-sided binomial risk-limit test"
+    }
+  },
+  "schema_version": "experiment-004-replacement-confirmatory-1.0",
+  "secondary_inferential_family": null,
+  "validity": {
+    "duplicates": 0,
+    "episode_rows": 2904,
+    "expected_episode_rows": 2904,
+    "extra_cells": 0,
+    "extra_preview": [],
+    "infrastructure_failures": 0,
+    "malformed_rows": 0,
+    "missing_cells": 0,
+    "missing_preview": [],
+    "numerical_failures": 0,
+    "passed": true,
+    "retry_replacement_or_imputation_used": false,
+    "scheduled_blocks": 1452,
+    "seed_count_valid": true
+  }
+}
