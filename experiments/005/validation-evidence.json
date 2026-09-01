@@ -1,0 +1,432 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 0.97ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest -q tests/test_experiment_005_dynamics.py tests/test_experiment_005_geometry.py tests/test_experiment_005_runner.py tests/test_experiment_005_foundation.py",
+      "id": "experiment_005_focused_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": "...............                                                          [100%]"
+    },
+    {
+      "command": "uv run pytest -q --deselect tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots --deselect tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized --deselect tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them --deselect tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization --deselect tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent --deselect tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains --deselect tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44 --deselect tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free --deselect tests/test_experiment_004_pilot_design.py::test_partition_44_remains_reserved_unmaterialized_and_has_no_generator --deselect tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains --deselect tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests --deselect tests/test_experiment_004_confirmatory_design.py::test_partition_44_contract_is_fixed_and_unmaterialized --deselect tests/test_experiment_004_confirmatory_seeds.py::test_generator_is_exact_freeze_gated_but_not_invoked_by_design_tests --deselect tests/test_experiment_004_confirmatory_validation.py::test_partition_44_has_no_seed_result_or_root_rows --deselect tests/test_experiment_004_replacement.py::test_replacement_preserves_science_and_reserves_fresh_partition --deselect tests/test_experiment_004_replacement.py::test_worker_policy_and_pre_freeze_validation",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": "....................................                                     [100%]"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "id": "nonlinear_truth_foundation",
+      "observed": {
+        "checks": {
+          "autonomy_assurance_mechanics_fixture": {
+            "controller_estimator_prediction_model": "Experiment 004 planar HCW",
+            "interpretation": "deterministic interface fixture only; no mission outcome evaluated",
+            "maximum_one_step_position_model_residual_m": 3.178023222344724e-09,
+            "maximum_one_step_velocity_model_residual_mps": 2.829025839864951e-09,
+            "monitor_overrides": 0,
+            "passed": true,
+            "physical_truth_model": "nonlinear central-gravity two-body inertial Cartesian",
+            "primary_monitor_filter_instances_distinct": true,
+            "scientific_partition_accessed": false,
+            "steps": 8,
+            "truth_model_mismatch_hidden": false
+          },
+          "circular_orbit_invariants": {
+            "acceptance": {
+              "coincident_state_abs": 0.0,
+              "radius_m": 0.0001,
+              "relative_invariant_drift": 1e-11,
+              "speed_mps": 1e-07
+            },
+            "analytic_position_error_m": 1.13300281209838e-08,
+            "analytic_velocity_error_mps": 8.134767913360665e-12,
+            "angular_momentum_relative_drift": 1.0274579445841483e-15,
+            "coincident_deputy_max_abs_error": 0.0,
+            "horizon_s": 600.0,
+            "passed": true,
+            "radius_error_m": 9.313225746154785e-09,
+            "specific_energy_relative_drift": 2.2805268458155703e-15,
+            "speed_error_mps": 1.8189894035458565e-12
+          },
+          "command_mapping": {
+            "acceptance_mps2": 1e-15,
+            "constant_inertial_vector_used": false,
+            "fixtures": 12,
+            "held_quantity": "LVLH command components",
+            "inertial_mapping": "recomputed from instantaneous chief frame at every RK4 stage",
+            "maximum_mapping_error_mps2": 3.469446951953614e-18,
+            "minimum_one_interval_inertial_direction_change_mps2": 2.2627331865437717e-05,
+            "passed": true
+          },
+          "frame_roundtrips": {
+            "acceptance": {
+              "basis_abs": 5e-15,
+              "position_m": 5e-09,
+              "velocity_mps": 5e-12
+            },
+            "fixtures": 12,
+            "includes_nonplanar_roundtrip_fixture": true,
+            "maximum_basis_orthonormality_error": 2.220446049250313e-16,
+            "maximum_position_error_m": 3.5436187317827716e-10,
+            "maximum_right_handed_determinant_error": 2.220446049250313e-16,
+            "maximum_velocity_error_mps": 7.960854198074685e-13,
+            "orbital_phases": 4,
+            "passed": true,
+            "velocity_transform": "includes omega cross relative-position term"
+          },
+          "future_runner_fixture": {
+            "architecture": {
+              "canonical_order": "ascending frozen cell index",
+              "checkpoint_publication": "same-directory no-clobber hard-link publication",
+              "corruption": "fail closed without automatic recomputation",
+              "durability": "file and containing-directory fsync where supported",
+              "orchestrator_concurrency": "exclusive campaign lock; stale lock fails closed",
+              "parallelism": "process pool",
+              "restart": "validate completed shards then execute missing frozen cells only"
+            },
+            "checks": {
+              "corrupt_fixture_was_incomplete": true,
+              "corrupt_shard_fails_closed": true,
+              "interruption_left_incomplete": true,
+              "no_scientific_partition_access": true,
+              "parallel_complete": true,
+              "resume_matches_fresh": true,
+              "resume_missing_cells_only": true,
+              "serial_complete": true,
+              "serial_parallel_byte_equivalent": true
+            },
+            "outcome_campaign_executed": false,
+            "parallel_sha256": "6885b572213438101356cf337666041751798447c9a04a7ea803cfd7c2d38fce",
+            "passed": true,
+            "resumed_sha256": "6885b572213438101356cf337666041751798447c9a04a7ea803cfd7c2d38fce",
+            "serial_sha256": "6885b572213438101356cf337666041751798447c9a04a7ea803cfd7c2d38fce"
+          },
+          "local_hcw_limit_and_mismatch": {
+            "absolute_mismatch_acceptance_threshold": null,
+            "fixtures": 80,
+            "interpretation": "descriptive truth/model discrepancy; no outcome or favorable absolute gate",
+            "maximum_position_mismatch_m": 3.1309931749317815e-09,
+            "maximum_position_mismatch_over_keep_out_radius": 3.1309931749317813e-10,
+            "maximum_velocity_mismatch_mps": 2.8374979201079533e-09,
+            "passed": true,
+            "prospective_envelope": {
+              "alongtrack_m": [
+                -100.0,
+                -27.0
+              ],
+              "command_norm_max_mps2": 0.02,
+              "interval_s": 1.0,
+              "radial_m": [
+                -10.0,
+                10.0
+              ],
+              "velocity_abs_mps": 0.14,
+              "velocity_derivation": "max(E004 initial speed, E004 hold speed) plus one maximum command increment"
+            },
+            "quadratic_local_limit_gate": true,
+            "scaled_observed_orders": [
+              1.995383800916045,
+              1.9404985997818338
+            ],
+            "scaled_unforced_60s_position_mismatch_m": {
+              "0.25": 3.528175861871102e-07,
+              "0.5": 1.3542489560642187e-06,
+              "1.0": 5.399690733934442e-06
+            }
+          },
+          "online_offline_evidence_boundary": {
+            "evaluator_online_tokens_found": [],
+            "offline_truth_only": [
+              "chief and deputy inertial Cartesian states",
+              "LVLH truth transform",
+              "physical event geometry",
+              "truth-versus-HCW discrepancy"
+            ],
+            "online_inputs": [
+              "timestamped HCW navigation estimate",
+              "estimate covariance and health",
+              "proposed LVLH acceleration",
+              "controller identity"
+            ],
+            "online_truth_tokens_found": [],
+            "passed": true,
+            "physical_evidence_returned_online": false
+          },
+          "production_rk4_vs_dop853": {
+            "acceptance": {
+              "position_m": 1e-05,
+              "velocity_mps": 1e-08
+            },
+            "durations_s": [
+              600.0,
+              60.0,
+              1.0
+            ],
+            "fixtures": 3,
+            "independent_reference": {
+              "method": "DOP853",
+              "position_atol_m": 1e-09,
+              "rtol": 1e-12,
+              "velocity_atol_mps": 1e-12
+            },
+            "maximum_position_error_m": 2.0615704004819183e-08,
+            "maximum_velocity_error_mps": 1.5883642114725243e-11,
+            "passed": true,
+            "production": {
+              "endpoint_and_command_discontinuity_split": true,
+              "maximum_step_s": 0.1,
+              "method": "fixed-step-rk4"
+            }
+          },
+          "truth_space_event_geometry": {
+            "admissible_position_set": "closed approach corridor union closed hold ellipse",
+            "checks": {
+              "closed_collision_boundary": true,
+              "evaluator_uses_truth_crossing": true,
+              "hold_fixture_inside": true,
+              "hold_union_is_admissible": true,
+              "interior_collision_crossing_detected": true,
+              "lower_longitudinal_exit_departure": true,
+              "planar_truth_remains_planar": true,
+              "radial_corridor_departure": true,
+              "safe_approach_segment": true,
+              "upper_longitudinal_exit_departure": true
+            },
+            "crossing_minimum_separation_m": 0.00282841685983984,
+            "crossing_minimum_time_s": 0.4999999465444351,
+            "event_source": "nonlinear chief/deputy inertial truth transformed to LVLH offline",
+            "evidence_returned_to_online_components": false,
+            "historical_false_safe_behavior_reused": false,
+            "lower_exit_excess_m": 1.0000000000002558,
+            "passed": true,
+            "upper_exit_excess_m": 0.6666666666668277
+          }
+        },
+        "evidence_boundary": {
+          "online_controller_estimator": "Experiment 004 planar HCW only",
+          "physical_evaluator": "offline nonlinear inertial truth only",
+          "physical_evidence_returned_online": false
+        },
+        "experiment_004_outcomes_used_for_design": false,
+        "experiment_005_calibration_partition_used": false,
+        "experiment_005_confirmatory_partition_used": false,
+        "experiment_005_pilot_partition_used": false,
+        "online_model": "Experiment 004 planar HCW",
+        "outcome_campaign_executed": false,
+        "passed": true,
+        "phase": "pre_outcome_nonlinear_truth_foundation",
+        "scientific_findings_claimed": false,
+        "smallest_scientific_blocker": null,
+        "truth_model": "nonlinear central-gravity two-body inertial Cartesian"
+      },
+      "passed": true
+    },
+    {
+      "id": "seed_partition_contract",
+      "observed": {
+        "contract_sha256": "a2782898048b2c6645833df752b6048a66324fa0eacc5beffcbb3e3364302ef2",
+        "errors_preview": [],
+        "forbidden_paths_present": [],
+        "future_confirmatory_materialized": false,
+        "historical_namespace_overlap": 0,
+        "historical_root_ids_compared": 22377,
+        "master_seed": 5005,
+        "mechanics_calibration_materialized": false,
+        "partition_codes": [
+          51,
+          52,
+          53,
+          951
+        ],
+        "passed": true,
+        "pilot_materialized": false
+      },
+      "passed": true
+    },
+    {
+      "id": "historical_base_byte_identity",
+      "observed": {
+        "allowed_base_file_changes": [
+          ".github/workflows/ci.yml"
+        ],
+        "base_commit": "ce50129946a40c36dc89ece88130ba6e90707605",
+        "historical_experiments_001_004_and_results_included": true,
+        "mismatches": 0,
+        "mismatches_preview": [],
+        "observed_head": "ce50129946a40c36dc89ece88130ba6e90707605",
+        "passed": true,
+        "protected_blob_map_sha256": "c6e1ea7679574f0d9ef8524d64da8f292dcb85557d9ffaa8beb7dd530d7f310f",
+        "protected_files": 415,
+        "scope": "every file tracked at ce50129 except phase-aware CI"
+      },
+      "passed": true
+    },
+    {
+      "id": "historical_campaign_result_integrity",
+      "observed": {
+        "checks": [
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+            "id": "experiment_002_freeze",
+            "passed": true,
+            "returncode": 0,
+            "summary": "}"
+          },
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+            "id": "experiment_002_results",
+            "passed": true,
+            "returncode": 0,
+            "summary": "}"
+          },
+          {
+            "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+            "id": "experiment_003_pilot",
+            "passed": true,
+            "returncode": 0,
+            "summary": ""
+          },
+          {
+            "command": "cross-platform-aware frozen E003 confirmatory verification",
+            "details": {
+              "freeze_passed": true,
+              "results_passed": true
+            },
+            "id": "experiment_003_confirmatory",
+            "passed": true,
+            "returncode": 0,
+            "summary": "native deterministic rederivation"
+          },
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_004_closeout verify",
+            "id": "experiment_004_closeout",
+            "passed": true,
+            "returncode": 0,
+            "summary": "}"
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "dependency_runtime_identity",
+      "observed": {
+        "dependency_file_hashes": {
+          ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+          "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+          "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+        },
+        "expected_versions": {
+          "numpy_version": "2.4.6",
+          "python": "3.11.16",
+          "scipy_version": "1.17.0"
+        },
+        "mismatches": [],
+        "observed": {
+          "architecture": "arm64",
+          "implementation": "CPython",
+          "numpy_version": "2.4.6",
+          "os": "Darwin",
+          "python": "3.11.16",
+          "scipy_version": "1.17.0",
+          "thread_variables": {}
+        },
+        "passed": true,
+        "platform_match_required_for_future_replay": true
+      },
+      "passed": true
+    },
+    {
+      "id": "publication_privacy_secrets",
+      "observed": {
+        "base_opaque_files_grandfathered_by_ce50129_identity": true,
+        "enumeration": "tracked plus untracked nonignored public files",
+        "files_scanned": 432,
+        "new_opaque_files": 0,
+        "new_opaque_files_preview": [],
+        "passed": true,
+        "provenance_privacy_scan": {
+          "enumeration": "tracked plus untracked nonignored files",
+          "files_scanned": 432,
+          "matches": 0,
+          "matches_preview": [],
+          "opaque_files": 0,
+          "opaque_files_preview": [],
+          "passed": true
+        },
+        "secret_matches": 0,
+        "secret_matches_preview": []
+      },
+      "passed": true
+    }
+  ],
+  "experiment_004_outcomes_used_for_design": false,
+  "experiment_005_calibration_partition_materialized": false,
+  "experiment_005_confirmatory_partition_materialized": false,
+  "experiment_005_pilot_partition_materialized": false,
+  "outcome_campaign_executed": false,
+  "passed": true,
+  "phase": "pre_outcome_nonlinear_truth_foundation_validation",
+  "phase_appropriate_exclusions": {
+    "reason": "historical pre-materialization assertions are phase-inapplicable after the completed frozen campaigns; result verifiers remain mandatory",
+    "tests": [
+      "tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots",
+      "tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized",
+      "tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them",
+      "tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization",
+      "tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent",
+      "tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains",
+      "tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44",
+      "tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free",
+      "tests/test_experiment_004_pilot_design.py::test_partition_44_remains_reserved_unmaterialized_and_has_no_generator",
+      "tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains",
+      "tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests",
+      "tests/test_experiment_004_confirmatory_design.py::test_partition_44_contract_is_fixed_and_unmaterialized",
+      "tests/test_experiment_004_confirmatory_seeds.py::test_generator_is_exact_freeze_gated_but_not_invoked_by_design_tests",
+      "tests/test_experiment_004_confirmatory_validation.py::test_partition_44_has_no_seed_result_or_root_rows",
+      "tests/test_experiment_004_replacement.py::test_replacement_preserves_science_and_reserves_fresh_partition",
+      "tests/test_experiment_004_replacement.py::test_worker_policy_and_pre_freeze_validation"
+    ]
+  },
+  "schema_version": "experiment-005-nonlinear-truth-foundation-1.0",
+  "scientific_findings_claimed": false,
+  "smallest_scientific_blocker": null,
+  "status": "READY_FOR_DESIGN_VALIDATION_PILOT",
+  "validated_at_utc": "2026-09-01T17:04:56.505219+00:00"
+}

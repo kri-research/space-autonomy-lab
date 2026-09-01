@@ -1,0 +1,44 @@
+{
+  "schema_version": "experiment-005-nonlinear-truth-foundation-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 5005,
+  "derivation": "SeedSequence([master, partition, geometry_case, challenge_case, replicate, stream])",
+  "partitions": {
+    "mechanics_calibration": {
+      "code": 51,
+      "status": "reserved_not_materialized_or_executed",
+      "permitted_use": "future prospective mechanics-envelope and metric calibration only"
+    },
+    "design_validation_pilot": {
+      "code": 52,
+      "status": "reserved_not_materialized_size_and_design_not_set",
+      "generator_available": false
+    },
+    "future_confirmatory": {
+      "code": 53,
+      "status": "reserved_not_materialized_size_hypothesis_and_design_not_set",
+      "generator_available": false
+    },
+    "non_outcome_test_fixtures": {
+      "code": 951,
+      "status": "available_for_deterministic_validation_only"
+    }
+  },
+  "stream_codes": {
+    "initial_truth_state": 201,
+    "mechanics_perturbation": 202,
+    "primary_navigation": 203,
+    "monitor_navigation": 204,
+    "challenge_parameters": 205,
+    "actuation": 206,
+    "cell_order": 207
+  },
+  "root_identity_namespace": "experiment005:<partition>:<case>:<replicate>",
+  "historical_master_domains": [1001, 2002, 3003, 4004],
+  "historical_experiment004_partition_codes": [41, 42, 43, 44, 45, 941],
+  "replacement_extension_or_outcome_tuning_allowed": false,
+  "experiment004_outcomes_permitted_for_design_selection": false,
+  "mechanics_calibration_generator_available_at_foundation_freeze": false,
+  "pilot_generator_available_at_foundation_freeze": false,
+  "future_confirmatory_generator_available_at_foundation_freeze": false
+}
