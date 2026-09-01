@@ -25,7 +25,28 @@ jobs:
       - name: Run phase-appropriate tests
         shell: bash
         run: |
-          if [[ -f experiments/004-replacement-confirmatory/freeze-manifest.json && ! -d experiments/004-replacement-confirmatory/seeds && ! -d results/experiment-004-replacement-confirmatory ]]; then
+          if [[ -f results/experiment-004-replacement-confirmatory/result-verification.json ]]; then
+            # Completed replacement confirmatory phase. Historical pre-materialization
+            # absence assertions are phase-inapplicable; immutable freeze bytes remain checked.
+            uv run pytest \
+              --deselect=tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots \
+              --deselect=tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized \
+              --deselect=tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them \
+              --deselect=tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization \
+              --deselect=tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent \
+              --deselect=tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains \
+              --deselect=tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44 \
+              --deselect=tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free \
+              --deselect=tests/test_experiment_004_pilot_design.py::test_partition_44_remains_reserved_unmaterialized_and_has_no_generator \
+              --deselect=tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains \
+              --deselect=tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests \
+              --deselect=tests/test_experiment_004_confirmatory_design.py::test_partition_44_contract_is_fixed_and_unmaterialized \
+              --deselect=tests/test_experiment_004_confirmatory_seeds.py::test_generator_is_exact_freeze_gated_but_not_invoked_by_design_tests \
+              --deselect=tests/test_experiment_004_confirmatory_validation.py::test_partition_44_has_no_seed_result_or_root_rows \
+              --deselect=tests/test_experiment_004_replacement.py::test_replacement_preserves_science_and_reserves_fresh_partition \
+              --deselect=tests/test_experiment_004_replacement.py::test_worker_policy_and_pre_freeze_validation
+            uv run python -m kri_space_autonomy.experiment_004_closeout verify
+          elif [[ -f experiments/004-replacement-confirmatory/freeze-manifest.json && ! -d experiments/004-replacement-confirmatory/seeds && ! -d results/experiment-004-replacement-confirmatory ]]; then
             # Partition 44 is a permanently invalid infrastructure-interrupted historical attempt.
             # Replacement partition 45 is frozen and remains prospectively unmaterialized.
             uv run pytest \

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "replay": {
+    "blocks": 64,
+    "campaign_id": "b1046f269d0ebf2b5bf70f7d4b261d08d2e0ec8e96620a58bb8b71e06fe5eab9",
+    "canonical_assembly": true,
+    "complete": true,
+    "completed_shards_reused": 0,
+    "elapsed_wall_s": 475.62732925009914,
+    "episodes": 128,
+    "episodes_sha256": "2ca810ce40aa63e8de00f35b8ee55547896d2e44b0aedfc46fd0de01696e0c05",
+    "new_shards_written": 64,
+    "passed": true,
+    "planned_blocks": 64,
+    "remaining_blocks": 0,
+    "workers": 8
+  },
+  "replay_byte_equivalent_rows": true,
+  "seed_validation": {
+    "deterministic_rederivation_errors": 0,
+    "errors_preview": [],
+    "historical_root_overlap": 0,
+    "manifest_sha256": "c3a1ff86124dbba83137b2c5ebf2e4a6d38aa12657853ddad925150a39ec1e5a",
+    "passed": true,
+    "replacement_extension_or_count_drift_allowed": false,
+    "replay_subset_sha256": "d937d6078001759163e7d6a9db79506141d3fbc1fd543de1d9a9d0eb8203f5aa",
+    "rows": 1452,
+    "unique_root_ids": 1452
+  }
+}

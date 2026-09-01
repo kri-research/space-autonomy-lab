@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "episode_hash": true,
+    "exact_cells": true,
+    "freeze_identity": true,
+    "frozen_inconclusive_decision": true,
+    "invalid_partition_44_audited": true,
+    "materialized_seed_integrity": true,
+    "replay_reproducible": true,
+    "seed_index_identity": true,
+    "single_complete_execution": true,
+    "valid_cells": true
+  },
+  "counts": {
+    "episode_rows": 2904,
+    "infrastructure_failures": 0,
+    "paired_blocks": 1452,
+    "replay_blocks": 64,
+    "replay_episodes": 128
+  },
+  "decision": "inconclusive",
+  "digests": {
+    "episodes_sha256": "bf1754d89edc2bb06f9b3176e3b29a99bb610412a0437404ddc7b1286432233e",
+    "replay_subset_sha256": "d937d6078001759163e7d6a9db79506141d3fbc1fd543de1d9a9d0eb8203f5aa",
+    "seed_manifest_sha256": "c3a1ff86124dbba83137b2c5ebf2e4a6d38aa12657853ddad925150a39ec1e5a"
+  },
+  "h1": {
+    "discordant_pairs": 0,
+    "one_sided_exact_p": 1.0,
+    "paired_roots": 1068,
+    "passed": false,
+    "risk_difference": 0.0
+  },
+  "h2": {
+    "status": "not_tested_primary_gate_closed"
+  },
+  "partition_44": "infrastructure_invalid_permanently_retired",
+  "partition_45": "sole_valid_replacement_confirmatory_execution",
+  "passed": true,
+  "phase": "post_partition_45_result_verification",
+  "phase_validation": true,
+  "schema_version": "experiment-004-replacement-confirmatory-result-verification-1.0"
+}
