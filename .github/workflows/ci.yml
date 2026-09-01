@@ -46,6 +46,11 @@ jobs:
               --deselect=tests/test_experiment_004_replacement.py::test_replacement_preserves_science_and_reserves_fresh_partition \
               --deselect=tests/test_experiment_004_replacement.py::test_worker_policy_and_pre_freeze_validation
             uv run python -m kri_space_autonomy.experiment_004_closeout verify
+            # Experiment 005 is a separate pre-outcome nonlinear-truth foundation.
+            # Its verifier is shallow-checkout safe and executes no scientific partition.
+            if [[ -f experiments/005/freeze-manifest.json ]]; then
+              uv run python -m kri_space_autonomy.experiment_005.workflow verify-freeze
+            fi
           elif [[ -f experiments/004-replacement-confirmatory/freeze-manifest.json && ! -d experiments/004-replacement-confirmatory/seeds && ! -d results/experiment-004-replacement-confirmatory ]]; then
             # Partition 44 is a permanently invalid infrastructure-interrupted historical attempt.
             # Replacement partition 45 is frozen and remains prospectively unmaterialized.

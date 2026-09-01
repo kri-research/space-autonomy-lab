@@ -1,0 +1,19 @@
+{
+  "confirmatory_generator_available": false,
+  "freeze_id": "921c481726d6f078621ff3a355a7803af803bdc61a8a2da07ffb974a433b3be8",
+  "future_confirmatory_partition_code": 53,
+  "future_confirmatory_partition_state": "reserved_not_materialized_size_hypothesis_and_design_not_set",
+  "mechanics_calibration_partition_code": 51,
+  "mechanics_calibration_partition_state": "reserved_not_materialized_or_executed",
+  "next_task": "prospectively design one non-inferential model-fidelity transfer pilot using only partition-51 mechanics calibration; freeze cases and sample count before enabling partition 52; leave partition 53 untouched",
+  "outcome_campaign_executed": false,
+  "pilot_generator_available": false,
+  "pilot_partition_code": 52,
+  "pilot_partition_state": "reserved_not_materialized_size_and_design_not_set",
+  "readiness_id": "9ec734543fd3580e9a2990a16dc56747a0f75334f76bd2c7ae1fdc3647732e67",
+  "schema_version": "experiment-005-nonlinear-truth-foundation-1.0",
+  "scientific_findings_claimed": false,
+  "scope": "separate non-inferential Experiment 005 design-validation pilot design",
+  "smallest_scientific_blocker": null,
+  "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+}
