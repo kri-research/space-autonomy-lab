@@ -1,0 +1,63 @@
+{
+  "analysis_contract": {
+    "H1_H2_unchanged": true,
+    "case_matrix_unchanged": true,
+    "copied_without_scientific_change_from": "f2632de9c371eeb4ce80ae7cdf054d49e9cf3f46a80fd30313b5e094c029d441",
+    "sample_size_unchanged": true,
+    "thresholds_unchanged": true
+  },
+  "base_commit": "cfb56b2a5510916e5295ae9b654b3849f4a8d7e1",
+  "benchmark_sha256": "61d2a7ed04757810c21a71f2b6ded6f4bb7b91d95745f99df466e80b14cd0e7f",
+  "episodes": 2904,
+  "execution_protocol": {
+    "checkpoint_continuation": "verify existing shards; execute missing blocks only",
+    "completed_block_storage": "atomic content-hashed shard",
+    "completed_valid_blocks_recomputed": false,
+    "default_workers_on_validation_host": 8,
+    "final_assembly": "canonical ascending frozen block index",
+    "finite_outer_shell_timeout_allowed": false,
+    "outcome_driven_retry_or_replacement_allowed": false,
+    "parallelism": "process pool",
+    "work_unit": "paired root block"
+  },
+  "freeze_id": "fb64b2620f5ead91f5ed3fed20b6d312664fd42f69de5157566d0ba83e7b3ae6",
+  "frozen_at_utc": "2026-09-01T10:26:38.901863+00:00",
+  "invalid_attempt_audit_sha256": "742d1a67e20425ad59a8f746d4136f5b23f32af176e136f8f8e3bf0b25db9278",
+  "original_invalid_attempt": {
+    "decision": "inconclusive_invalid",
+    "freeze_id": "f2632de9c371eeb4ce80ae7cdf054d49e9cf3f46a80fd30313b5e094c029d441",
+    "partial_outcomes_used": false,
+    "partition": 44,
+    "reusable": false
+  },
+  "paired_blocks": 1452,
+  "phase": "pre_outcome_replacement_confirmatory_freeze",
+  "replacement_partition": 45,
+  "replacement_partition_state": "reserved_not_materialized_or_executed",
+  "replay_blocks": 64,
+  "replay_episodes": 128,
+  "schema_version": "experiment-004-replacement-confirmatory-1.0",
+  "scientific_design_unchanged": true,
+  "source_file_hashes": {
+    "docs/experiment-004-replacement-confirmatory.md": "9feb935f86cac935101c8de58e972debaf315eb93fe069d8491bd11479d53e95",
+    "experiments/004-confirmatory/config.json": "d2f542d68ff23187928795ff73058a84b1fe3385efedc7d6f8dcfc55eb12898b",
+    "experiments/004-confirmatory/freeze-manifest.json": "aafa72d48cfd90f0596ba0d97b79d4b79a83717ede22bd50800a6cb759c053d4",
+    "experiments/004-confirmatory/preregistration.md": "d3186274cf4eda717efb6e5916e93e4e4aa2eafa60a751f8cd55a03b1679b8c7",
+    "experiments/004-confirmatory/readiness.json": "5fb290a85b4e66105b1d093d76d8493957aef03e81aa0336ee18ea80c875194e",
+    "experiments/004-invalid-partition-44/audit.json": "742d1a67e20425ad59a8f746d4136f5b23f32af176e136f8f8e3bf0b25db9278",
+    "experiments/004-replacement-confirmatory/config.json": "d355f232d20036747bb38ca2e96d8ebf534bb57fa004bfb1259edc161f17e0bf",
+    "experiments/004-replacement-confirmatory/parallel-benchmark.json": "61d2a7ed04757810c21a71f2b6ded6f4bb7b91d95745f99df466e80b14cd0e7f",
+    "experiments/004-replacement-confirmatory/preregistration.md": "cb6622f548696f28a90145eaffcf19346cfabc16213abb1f8d7e0983c12bb861",
+    "experiments/004-replacement-confirmatory/seed-contract.json": "f74383c3d6707b9021210b540a55289e40e51f92578f7939281282e8e115db28",
+    "experiments/004-replacement-confirmatory/strata.json": "a35db2d6a737a9e76fa02d4d27ae5d5000cfba444a7a199c52a46bc83474230b",
+    "src/kri_space_autonomy/experiment_004_replacement/__init__.py": "abdfdb6cfddd986f7b8cf755bb2219cc40919fe7829b604c9ed6ec964b7fe533",
+    "src/kri_space_autonomy/experiment_004_replacement/benchmark.py": "53b0654c3c28e7093f003fa9138168129a266bd5f1f85ee2e39f462efd867c6a",
+    "src/kri_space_autonomy/experiment_004_replacement/config.py": "80ea94a7fc57acdbe9b890b66e7e76fffd5d25547dee5b6a2a498e81e307683a",
+    "src/kri_space_autonomy/experiment_004_replacement/runner.py": "8cfeb6e058a46150b43ae5c81d7607a7edc8e804afe55725f9b0971055389fdd",
+    "src/kri_space_autonomy/experiment_004_replacement/seeds.py": "f202a6503ce563ba984352c7ad357792da981f5eacd4c9475ca1a4f650c86c2b",
+    "src/kri_space_autonomy/experiment_004_replacement/workflow.py": "b593e2adeb507d9ed2c06adcbec2eb4dd61e6f756356087316851af562b37fd9",
+    "tests/test_experiment_004_replacement.py": "cf4d6680a411df8a5f5dd9cc42141c1d889d6206e3d124001f1f193483b77b7b"
+  },
+  "source_tree_sha256": "b901e738c8e9f8cfaa258327b66b65564be3e5c9b88875a837e595084dc58521",
+  "status": "READY_FOR_FRESH_PARALLEL_CONFIRMATORY_EXECUTION"
+}

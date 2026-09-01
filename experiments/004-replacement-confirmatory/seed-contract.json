@@ -1,0 +1,80 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "configurations": [
+    "primary_reference",
+    "independent_monitor_gate"
+  ],
+  "derivation": "SeedSequence([master, partition, geometry_case, fault_case, replicate, stream])",
+  "expected_episode_rows": 2904,
+  "expected_replay_episode_rows": 128,
+  "expected_replay_root_rows": 64,
+  "expected_root_rows": 1452,
+  "generator_available_after_verified_freeze": true,
+  "generator_invoked": false,
+  "master_seed": 4004,
+  "materialization_outputs": [
+    "experiments/004-replacement-confirmatory/seeds/confirmatory.jsonl",
+    "experiments/004-replacement-confirmatory/seeds/replay-subset.json",
+    "experiments/004-replacement-confirmatory/seeds/index.json"
+  ],
+  "materialization_prerequisite": "Exact Experiment 004 confirmatory freeze and readiness self-hashes must verify before the partition-45 generator is invoked.",
+  "outcome_dependent_materialization_allowed": false,
+  "partition_code": 45,
+  "replacement_extension_or_count_drift_allowed": false,
+  "replay_roots_per_stratum": 8,
+  "replay_selection": "replicates 0 through 7 in every stratum; outcome-blind",
+  "schema_version": "experiment-004-replacement-confirmatory-1.0",
+  "status_at_freeze": "reserved_not_materialized_or_executed",
+  "strata": [
+    {
+      "id": "P00_nominal_feasibility",
+      "primary_weight": null,
+      "roots": 64
+    },
+    {
+      "id": "P04_primary_navigation_bias",
+      "primary_weight": 0.5,
+      "roots": 534
+    },
+    {
+      "id": "P05_primary_navigation_dropout",
+      "primary_weight": 0.5,
+      "roots": 534
+    },
+    {
+      "id": "P06_monitor_navigation_bias",
+      "primary_weight": null,
+      "roots": 64
+    },
+    {
+      "id": "P07_monitor_logic_false_trip",
+      "primary_weight": null,
+      "roots": 64
+    },
+    {
+      "id": "P08_shared_navigation_bias",
+      "primary_weight": null,
+      "roots": 64
+    },
+    {
+      "id": "P09_actuation_degradation",
+      "primary_weight": null,
+      "roots": 64
+    },
+    {
+      "id": "P10_disturbance_burst",
+      "primary_weight": null,
+      "roots": 64
+    }
+  ],
+  "stream_codes": {
+    "actuator_uncertainty": 107,
+    "configuration_run_order": 108,
+    "fault_parameters": 106,
+    "initial_state": 101,
+    "monitor_measurement": 105,
+    "primary_measurement": 104,
+    "process_disturbance_alongtrack": 103,
+    "process_disturbance_radial": 102
+  }
+}

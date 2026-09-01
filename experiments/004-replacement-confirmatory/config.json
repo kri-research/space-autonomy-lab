@@ -1,0 +1,51 @@
+{
+  "base_commit": "cfb56b2a5510916e5295ae9b654b3849f4a8d7e1",
+  "configurations": [
+    "primary_reference",
+    "independent_monitor_gate"
+  ],
+  "confirmatory_partition_code": 45,
+  "foundation_freeze_id": "54a0f1a8dc985fba02973c09ac994fbc76a2ef1abbc7dfe5def82585c85aaa14",
+  "foundation_readiness_id": "fd0ea450e8b5f53a4447cf3910e7e3b494ed6bace33da0055f64e77fd9049404",
+  "learned_policy_claim_allowed": false,
+  "master_seed": 4004,
+  "maximum_infrastructure_failures": 0,
+  "mission_harm_margin": 0.05,
+  "mission_harm_planning_rate": 0.01,
+  "pilot_freeze_id": "8f0867a4eaa34c3fb1aef1d8fff62fb579e3099391c5c722b87a3dc6b0746079",
+  "pilot_readiness_id": "5c39bbdc231f7355b9afc79387816b604dbca2f16015e0d179b48f77b6d0d809",
+  "primary_minimum_reportable_net_reduction": 0.05,
+  "primary_one_sided_alpha": 0.025,
+  "primary_planning_net_reduction": 0.1,
+  "primary_strata": [
+    "P04_primary_navigation_bias",
+    "P05_primary_navigation_dropout"
+  ],
+  "primary_target_power": 0.9,
+  "replacement_extension_or_retry_allowed": false,
+  "replay_roots_per_stratum": 8,
+  "roots_by_stratum": {
+    "P00_nominal_feasibility": 64,
+    "P04_primary_navigation_bias": 534,
+    "P05_primary_navigation_dropout": 534,
+    "P06_monitor_navigation_bias": 64,
+    "P07_monitor_logic_false_trip": 64,
+    "P08_shared_navigation_bias": 64,
+    "P09_actuation_degradation": 64,
+    "P10_disturbance_burst": 64
+  },
+  "schema_version": "experiment-004-replacement-confirmatory-1.0",
+  "secondary_inferential_family_defined": false,
+  "standard_horizon_s": 300.0,
+  "strata": [
+    "P00_nominal_feasibility",
+    "P04_primary_navigation_bias",
+    "P05_primary_navigation_dropout",
+    "P06_monitor_navigation_bias",
+    "P07_monitor_logic_false_trip",
+    "P08_shared_navigation_bias",
+    "P09_actuation_degradation",
+    "P10_disturbance_burst"
+  ],
+  "test_fixture_partition_code": 941
+}

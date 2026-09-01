@@ -1,0 +1,15 @@
+{
+  "default_workers": 8,
+  "episodes": 2904,
+  "freeze_id": "fb64b2620f5ead91f5ed3fed20b6d312664fd42f69de5157566d0ba83e7b3ae6",
+  "next_command": "uv run python -m kri_space_autonomy.experiment_004_replacement.workflow execute --workers 8",
+  "outer_shell_timeout": null,
+  "paired_blocks": 1452,
+  "partition_code": 45,
+  "partition_state": "reserved_not_materialized_or_executed",
+  "readiness_id": "98088ffe90e517d8ff7d404fa8f6394969af1279680eed6b6c5be1d7da539416",
+  "replay_blocks": 64,
+  "replay_episodes": 128,
+  "schema_version": "experiment-004-replacement-confirmatory-1.0",
+  "status": "READY_FOR_FRESH_PARALLEL_CONFIRMATORY_EXECUTION"
+}

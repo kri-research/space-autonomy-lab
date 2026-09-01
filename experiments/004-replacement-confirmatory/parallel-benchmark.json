@@ -1,0 +1,94 @@
+{
+  "host_logical_cpu_count": 15,
+  "numerical_fixture": {
+    "canonical_output_sha256": "ca7a6271326870d9acad00e55f81452c898c87c0998f764179eb7518565d7a10",
+    "confirmatory_outcomes_used": false,
+    "fixture": "outcome-blind deterministic integer CPU fixture",
+    "iterations_per_task": 1500000,
+    "measurements": [
+      {
+        "blocks": 24,
+        "elapsed_wall_s": 3.0515196251217276,
+        "episodes": 48,
+        "output_sha256": "ca7a6271326870d9acad00e55f81452c898c87c0998f764179eb7518565d7a10",
+        "passed": true,
+        "speedup_vs_serial": 1.0,
+        "workers": 1
+      },
+      {
+        "blocks": 24,
+        "elapsed_wall_s": 1.0989022909197956,
+        "episodes": 48,
+        "output_sha256": "ca7a6271326870d9acad00e55f81452c898c87c0998f764179eb7518565d7a10",
+        "passed": true,
+        "speedup_vs_serial": 2.776879846676419,
+        "workers": 4
+      },
+      {
+        "blocks": 24,
+        "elapsed_wall_s": 0.7760650829877704,
+        "episodes": 48,
+        "output_sha256": "ca7a6271326870d9acad00e55f81452c898c87c0998f764179eb7518565d7a10",
+        "passed": true,
+        "speedup_vs_serial": 3.932040871332198,
+        "workers": 8
+      },
+      {
+        "blocks": 24,
+        "elapsed_wall_s": 0.7921279580332339,
+        "episodes": 48,
+        "output_sha256": "ca7a6271326870d9acad00e55f81452c898c87c0998f764179eb7518565d7a10",
+        "passed": true,
+        "speedup_vs_serial": 3.8523064287470845,
+        "workers": 10
+      }
+    ],
+    "partition_44_outcomes_used": false,
+    "passed": true,
+    "task_count": 24,
+    "worker_count_invariant": true
+  },
+  "outcome_selection_used": false,
+  "partition_44_outcomes_used": false,
+  "passed": true,
+  "pilot_rows_selected_prospectively_by_position": [
+    0,
+    1
+  ],
+  "representative_scientific_8_worker_throughput": {
+    "blocks": 8,
+    "elapsed_wall_s": 62.28635329194367,
+    "episodes": 16,
+    "episodes_sha256": "4ddcef2936cc564ed90cc171f757e7db3cc92f04eb7cbed30270ea546347ce20",
+    "partition_44_outcomes_used": false,
+    "passed": true,
+    "pilot_partition": 43,
+    "projected_1452_block_wall_s_at_observed_throughput": 11304.973122487776,
+    "projection_is_operational_estimate_not_scientific_result": true,
+    "selection": "first eight manifest rows whose case belongs to the confirmatory case registry; selected without outcome inspection",
+    "workers": 8
+  },
+  "schema_version": "experiment-004-parallel-benchmark-1.0",
+  "scientific_serial_parallel_equivalence": {
+    "byte_identical": true,
+    "measurements": [
+      {
+        "elapsed_wall_s": 70.21070804214105,
+        "episodes_sha256": "acca10febdc5f290beeb006f4127cbb49fb5797328a8e0a5ec2a887a6c2a7c77",
+        "passed": true,
+        "speedup_vs_serial": 1.0,
+        "workers": 1
+      },
+      {
+        "elapsed_wall_s": 38.013407833175734,
+        "episodes_sha256": "acca10febdc5f290beeb006f4127cbb49fb5797328a8e0a5ec2a887a6c2a7c77",
+        "passed": true,
+        "speedup_vs_serial": 1.8469985208972903,
+        "workers": 2
+      }
+    ],
+    "passed": true
+  },
+  "selected_default_workers": 8,
+  "worker_policy": "min(8, max(1, logical_cpu_count - 3)); explicit --workers override allowed"
+}
