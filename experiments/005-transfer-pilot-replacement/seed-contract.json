@@ -1,0 +1,31 @@
+{
+  "bit_generator": "PCG64DXSM",
+  "case_count": 10,
+  "configurations_per_root": 2,
+  "derivation": "SeedSequence([master, partition, geometry_case, challenge_case, replicate, stream])",
+  "expected_episode_rows": 40,
+  "expected_replay_episode_rows": 20,
+  "expected_replay_root_rows": 10,
+  "expected_root_rows": 20,
+  "future_confirmatory_partition_code": 53,
+  "generator_available_only_after_verified_amendment_freeze": true,
+  "generator_invoked": false,
+  "invalid_partition_code": 52,
+  "master_seed": 5005,
+  "materialization_outputs": [
+    "experiments/005-transfer-pilot-replacement/seeds/pilot.jsonl",
+    "experiments/005-transfer-pilot-replacement/seeds/replay-subset.json",
+    "experiments/005-transfer-pilot-replacement/seeds/index.json"
+  ],
+  "maximum_replacement_roots": 0,
+  "maximum_retries": 0,
+  "outcome_dependent_materialization_allowed": false,
+  "replacement_extension_or_count_drift_allowed": false,
+  "replacement_partition_code": 54,
+  "replay_roots_per_case": 1,
+  "replay_selection": "replicate 0 in every frozen case; outcome-blind and unchanged",
+  "roots_per_case": 2,
+  "schema_version": "experiment-005-transfer-pilot-replacement-amendment-1.0",
+  "status_at_freeze": "reserved_not_materialized_or_executed",
+  "test_fixture_partition_code": 951
+}

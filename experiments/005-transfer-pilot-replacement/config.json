@@ -1,0 +1,15 @@
+{
+  "base_commit": "90de438624556f4890444105fe3c0c19667d5bfa",
+  "default_worker_cap": 8,
+  "future_confirmatory_partition_code": 53,
+  "invalid_attempt_decision": "pilot_invalid_infrastructure_failure",
+  "invalid_partition_code": 52,
+  "module_entrypoint": "kri_space_autonomy.experiment_005_transfer_pilot_replacement.workflow",
+  "original_design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+  "original_design_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3",
+  "process_start_method": "spawn",
+  "replacement_partition_code": 54,
+  "schema_version": "experiment-005-transfer-pilot-replacement-amendment-1.0",
+  "test_fixture_partition_code": 951,
+  "worker_policy": "max(1, min(8, logical_cpu_count - 3))"
+}
