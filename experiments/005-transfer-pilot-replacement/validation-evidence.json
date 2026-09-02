@@ -1,0 +1,205 @@
+{
+  "checks": {
+    "fixture_spawn_validation": true,
+    "invalid_partition_52_closeout": true,
+    "merged_closeout_base": true,
+    "partition_53_untouched": true,
+    "partition_54_reserved_unmaterialized": true,
+    "phase_commands": true,
+    "publication_privacy_and_secret_scan": true,
+    "requested_branch": true,
+    "scientific_design_unchanged": true,
+    "seed_contract": true
+  },
+  "commands": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run pytest -q",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "decision": "READY",
+  "fixture_validation": {
+    "evidence": {
+      "architecture": "arm64",
+      "checks": {
+        "canonical_block_and_episode_order": true,
+        "checkpoint_continuation_byte_identical": true,
+        "checkpoint_continuation_missing_only": true,
+        "corrupt_checkpoint_fails_closed": true,
+        "deterministic_replay_bytes_identical": true,
+        "fixture_partition_only": true,
+        "interruption_incomplete": true,
+        "parallel_spawn_complete": true,
+        "partition_52_not_accessed": true,
+        "partition_53_not_accessed": true,
+        "replacement_partition_not_accessed": true,
+        "serial_complete": true,
+        "serial_parallel_scientific_bytes_identical": true,
+        "strict_zero_retry_and_replacement_counts": true
+      },
+      "fixture_blocks": 2,
+      "fixture_episode_rows": 4,
+      "fixture_partition_code": 951,
+      "invocation_mode": "importable_module_cli",
+      "module_entrypoint": "kri_space_autonomy.experiment_005_transfer_pilot_replacement.workflow",
+      "outcomes_used_for_design_or_acceptance_changes": false,
+      "parallel_output_sha256": "8e9e826959b4266bd8f7635fc6629cd458341a9bfc18b81c9535001d4d759e7b",
+      "passed": true,
+      "platform": "Darwin",
+      "process_start_method": "spawn",
+      "python": "3.11.16",
+      "replacement_partition_executed": false,
+      "replacement_partition_materialized": false,
+      "replay_output_sha256": "8e9e826959b4266bd8f7635fc6629cd458341a9bfc18b81c9535001d4d759e7b",
+      "resumed_output_sha256": "8e9e826959b4266bd8f7635fc6629cd458341a9bfc18b81c9535001d4d759e7b",
+      "schema_version": "experiment-005-transfer-pilot-replacement-amendment-1.0",
+      "scientific_endpoints_evaluated": false,
+      "serial_output_sha256": "8e9e826959b4266bd8f7635fc6629cd458341a9bfc18b81c9535001d4d759e7b",
+      "status": "FIXTURE_SPAWN_VALIDATED",
+      "validation_scope": "partition-951 non-outcome deterministic fixtures only"
+    },
+    "fixture_validation_sha256": "927d0d9569656acd96fed4392025242f65f6b703d72ba726fa6aa50bfa94944c",
+    "passed": true,
+    "recorded_matches_fresh_validation": true
+  },
+  "invalid_attempt": {
+    "audit_sha256": "66ad8dfb592ce5129459f0fda6c7b10c32390592e4960e95278168e97e5e3807",
+    "campaign_sha256": "90ab09451bbe9d336b18212bfecb1828ef0fbc0bbc5181eb4e7d9726a6d227a4",
+    "checks": {
+      "campaign_identity": true,
+      "closeout_verifier": true,
+      "decision": true,
+      "failure_identity": true,
+      "no_partial_outcomes_used": true,
+      "no_retries_replacements_or_extensions": true,
+      "no_scientific_claims": true,
+      "one_terminal_infrastructure_failure": true,
+      "partition_53_untouched": true,
+      "retired_partition": true,
+      "zero_completed_blocks": true,
+      "zero_episode_rows": true
+    },
+    "completed_blocks": 0,
+    "durable_episode_rows": 0,
+    "outcomes_used_for_amendment": false,
+    "passed": true,
+    "scientific_endpoints_evaluated": false,
+    "terminal_failure_sha256": "50ece4ca8fbc71e0049c47b104b541bc32d93a8be1d176d36bce70c97ce2b2b2"
+  },
+  "outcomes_used_for_amendment": false,
+  "partition_52_reused": false,
+  "partition_53_touched": false,
+  "partition_54_executed": false,
+  "partition_54_materialized": false,
+  "passed": true,
+  "phase": "pre_materialization_replacement_pilot_amendment",
+  "publication_privacy": {
+    "base_opaque_files_grandfathered_by_ce50129_identity": true,
+    "enumeration": "tracked plus untracked nonignored public files",
+    "files_scanned": 494,
+    "new_opaque_files": 0,
+    "new_opaque_files_preview": [],
+    "passed": true,
+    "provenance_privacy_scan": {
+      "enumeration": "tracked plus untracked nonignored files",
+      "files_scanned": 494,
+      "matches": 0,
+      "matches_preview": [],
+      "opaque_files": 0,
+      "opaque_files_preview": [],
+      "passed": true
+    },
+    "secret_matches": 0,
+    "secret_matches_preview": []
+  },
+  "replacement_partition": {
+    "historical_root_overlap": 0,
+    "overlap_preview": [],
+    "partition_code": 54,
+    "passed": true,
+    "seed_or_result_paths_present": [],
+    "state": "reserved_not_materialized_or_executed"
+  },
+  "schema_version": "experiment-005-transfer-pilot-replacement-amendment-1.0",
+  "scientific_design": {
+    "cases": 10,
+    "changed_execution_identity_fields": [
+      "pilot_partition_code"
+    ],
+    "complete_blocks": 20,
+    "episodes": 40,
+    "metrics_thresholds_gates_changed": false,
+    "original_design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+    "original_design_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3",
+    "passed": true,
+    "protected_design_hashes": {
+      "case_matrix": true,
+      "config": true,
+      "gates": true,
+      "preregistration": true,
+      "seed_contract": true
+    },
+    "replay_blocks": 10,
+    "replay_episodes": 20,
+    "scientific_claims_enabled": false,
+    "scientific_field_count_compared": 39,
+    "scientific_field_drift": []
+  },
+  "scientific_endpoints_evaluated": false,
+  "seed_contract": {
+    "contract_sha256": "a0c89b947cdcc05348de28b2d58ae8bd0d3ae0d65e347ffd23fa05b4d6642e26",
+    "errors_preview": [],
+    "expected_episode_rows": 40,
+    "expected_replay_episode_rows": 20,
+    "expected_replay_root_rows": 10,
+    "expected_root_rows": 20,
+    "partition": {
+      "historical_root_overlap": 0,
+      "overlap_preview": [],
+      "partition_code": 54,
+      "passed": true,
+      "seed_or_result_paths_present": [],
+      "state": "reserved_not_materialized_or_executed"
+    },
+    "passed": true
+  },
+  "smallest_blocker": null,
+  "source_identity": {
+    "branch": "experiment-005-transfer-pilot-replacement",
+    "head": "90de438624556f4890444105fe3c0c19667d5bfa"
+  },
+  "status": "READY_TO_FREEZE",
+  "validated_at_utc": "2026-09-02T20:15:42.871528+00:00"
+}
