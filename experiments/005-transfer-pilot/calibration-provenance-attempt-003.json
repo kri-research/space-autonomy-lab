@@ -1,0 +1,29 @@
+{
+  "architecture_comparisons_used": false,
+  "attempts": [
+    {
+      "artifact": "experiments/005-transfer-pilot/calibration-attempt-001.json",
+      "preserved": true,
+      "sha256": "f97d831b08a418007cce438e2ee46d05873e560cabdee20002820d9482fde63b",
+      "status": "CALIBRATION_EXCEPTION_TERMINAL"
+    },
+    {
+      "artifact": "experiments/005-transfer-pilot/calibration-attempt-002.json",
+      "preserved": true,
+      "sha256": "ffb26182fed480bff0c04ee8bdd7aaae3f2e894a64258341f2d256b87142378f",
+      "status": "CALIBRATION_EXCEPTION_TERMINAL"
+    },
+    {
+      "artifact": "experiments/005-transfer-pilot/calibration-attempt-003.json",
+      "preserved": true,
+      "sha256": "1aeb23f20323882300335dd3cae270b4ddd05553f9146d67da2b67d673f8bf51",
+      "status": "CALIBRATION_FAIL"
+    }
+  ],
+  "failed_attempts_deleted_or_retried": false,
+  "final_evidence": null,
+  "partition_52_materialized": false,
+  "partition_53_touched": false,
+  "partition_code": 51,
+  "schema_version": "experiment-005-transfer-pilot-design-1.0"
+}

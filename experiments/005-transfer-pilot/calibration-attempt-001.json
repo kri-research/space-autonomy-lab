@@ -1,0 +1,18 @@
+{
+  "architecture": "arm64",
+  "attempt_number": 1,
+  "calibration_id": "fa9e89ae0662955659a9722fe817761bd645b23d2367322d25bf2515b6cd8592",
+  "exception_class": "ValueError",
+  "exception_message_sha256": "ba3dfbb068f537f3b55e079ecf7292eb9a45f965fa0032c0ce692ff8632e68d0",
+  "execution_began": true,
+  "partition_52_materialized": false,
+  "partition_53_touched": false,
+  "partition_code": 51,
+  "passed": false,
+  "phase": "prospective_partition_51_mechanics_calibration",
+  "platform": "Darwin",
+  "python": "3.11.16",
+  "retry_or_replacement_allowed": false,
+  "schema_version": "experiment-005-transfer-pilot-design-1.0",
+  "status": "CALIBRATION_EXCEPTION_TERMINAL"
+}
