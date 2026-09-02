@@ -1,0 +1,154 @@
+{
+  "schema_version": "experiment-005-transfer-pilot-design-1.0",
+  "case_code_rule": "case_code = 100 * geometry_code + challenge_code; every matrix row has a unique pair",
+  "configuration_role": "paired diagnostic execution only; no architecture contrast, ranking, superiority, or noninferiority interpretation",
+  "configurations": [
+    {
+      "id": "primary_reference",
+      "controller_input": "primary HCW navigation snapshot",
+      "monitor_input": "processed for channel diagnostics but has no command authority",
+      "command_path": "frozen Experiment 004 deterministic vector LQR reference"
+    },
+    {
+      "id": "independent_monitor_gate",
+      "controller_input": "primary HCW navigation snapshot",
+      "monitor_input": "independent monitor HCW navigation snapshot",
+      "command_path": "frozen Experiment 004 deterministic vector LQR through frozen estimated-geometry monitor and fallback"
+    }
+  ],
+  "cases": [
+    {
+      "id": "T00_nominal_transfer",
+      "geometry_code": 0,
+      "challenge_code": 0,
+      "case_code": 0,
+      "domain": "nominal_transfer",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "none",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "nonlinear truth, HCW estimation/control, independent monitor plumbing, truth geometry, and hold-event bookkeeping all execute"
+    },
+    {
+      "id": "T01_truth_model_mismatch_stress",
+      "geometry_code": 1,
+      "challenge_code": 0,
+      "case_code": 100,
+      "domain": "model_mismatch",
+      "fixture": "fixed_transfer_envelope_corner",
+      "horizon_kind": "model_mismatch",
+      "initial_relative_state": [10.0, -100.0, 0.0, 0.14, -0.14, 0.0],
+      "fault": "none",
+      "mechanics_noise_enabled": false,
+      "navigation_noise_enabled": false,
+      "intended_activation": "finite nonzero nonlinear-truth versus commanded-input HCW one-step residuals without injected sensor, actuation, or disturbance faults"
+    },
+    {
+      "id": "T02_truth_keep_out_crossing_fixture",
+      "geometry_code": 2,
+      "challenge_code": 0,
+      "case_code": 200,
+      "domain": "truth_event_geometry",
+      "fixture": "open_loop_truth_arc",
+      "horizon_kind": "truth_event_fixture",
+      "initial_relative_state": [0.0, -12.0, 0.0, 0.0, 4.0, 0.0],
+      "fixture_command_mps2": [0.0, 0.0],
+      "fault": "none",
+      "mechanics_noise_enabled": false,
+      "navigation_noise_enabled": false,
+      "intended_activation": "continuous nonlinear truth arc enters the closed keep-out set without entering the closed hard-body set"
+    },
+    {
+      "id": "T03_primary_navigation_bias",
+      "geometry_code": 0,
+      "challenge_code": 1,
+      "case_code": 1,
+      "domain": "primary_estimator",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "primary bias",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "primary-only innovation disposition and health plumbing; monitor channel remains unaffected"
+    },
+    {
+      "id": "T04_primary_navigation_dropout",
+      "geometry_code": 0,
+      "challenge_code": 2,
+      "case_code": 2,
+      "domain": "primary_estimator",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "primary dropout",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "primary-only prediction-only and degraded-health plumbing; monitor channel remains unaffected"
+    },
+    {
+      "id": "T05_monitor_navigation_bias",
+      "geometry_code": 0,
+      "challenge_code": 3,
+      "case_code": 3,
+      "domain": "monitor_estimator",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "monitor bias",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "monitor-only innovation disposition and health plumbing; primary controller input remains unaffected"
+    },
+    {
+      "id": "T06_monitor_logic_false_trip",
+      "geometry_code": 0,
+      "challenge_code": 4,
+      "case_code": 4,
+      "domain": "monitor_logic",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "monitor logic forced trip",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "forced monitor override has authority only in independent_monitor_gate"
+    },
+    {
+      "id": "T07_shared_navigation_bias",
+      "geometry_code": 0,
+      "challenge_code": 5,
+      "case_code": 5,
+      "domain": "shared_cause",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "shared bias",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "one shared-cause schedule affects both navigation channels"
+    },
+    {
+      "id": "T08_actuation_degradation",
+      "geometry_code": 0,
+      "challenge_code": 6,
+      "case_code": 6,
+      "domain": "actuation",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "fifty-percent vector-command effectiveness",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "realized nonlinear-truth acceleration differs from the observable commanded vector during the frozen schedule"
+    },
+    {
+      "id": "T09_disturbance_burst",
+      "geometry_code": 0,
+      "challenge_code": 7,
+      "case_code": 7,
+      "domain": "disturbance",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "fault": "bounded additive LVLH acceleration disturbance",
+      "mechanics_noise_enabled": true,
+      "navigation_noise_enabled": true,
+      "intended_activation": "nonlinear truth receives the frozen bounded exogenous LVLH disturbance during the frozen schedule"
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "architecture_benefit_or_hazard_discordance_computed": false,
+  "architecture_configuration_difference_computed": false,
+  "attempt_number": 4,
+  "calibration_id": "10bb3cd830011c6c806a5f20aa1086a0d6896ff704b0e758952202e56902e5af",
+  "checks": {
+    "actuation_disturbance_path": {
+      "actuation_effectiveness": 0.5,
+      "degraded_pair_state_delta_norm": 0.0014084184414525592,
+      "disturbance_bias_mps2": [
+        0.0015,
+        -0.001
+      ],
+      "disturbed_pair_state_delta_norm": 0.0004542014268457942,
+      "passed": true,
+      "reference_command_mps2": [
+        0.005,
+        0.01,
+        0.0
+      ]
+    },
+    "fault_domain_activation": {
+      "passed": true,
+      "records": [
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T03_primary_navigation_bias",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 138.46607628184407,
+          "fault_channel": "primary",
+          "fault_kind": "bias",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 108.46607628184407,
+          "primary_active": true,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:001:0000",
+          "sample_time_s": 109.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T03_primary_navigation_bias",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 138.38348638950248,
+          "fault_channel": "primary",
+          "fault_kind": "bias",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 108.38348638950248,
+          "primary_active": true,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:001:0001",
+          "sample_time_s": 109.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T04_primary_navigation_dropout",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 103.4476196838715,
+          "fault_channel": "primary",
+          "fault_kind": "dropout",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 97.4476196838715,
+          "primary_active": true,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:002:0000",
+          "sample_time_s": 98.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T04_primary_navigation_dropout",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 103.08050898601121,
+          "fault_channel": "primary",
+          "fault_kind": "dropout",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 97.08050898601121,
+          "primary_active": true,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:002:0001",
+          "sample_time_s": 98.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T05_monitor_navigation_bias",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 126.4378646783788,
+          "fault_channel": "monitor",
+          "fault_kind": "bias",
+          "monitor_active": true,
+          "monitor_logic_fault": false,
+          "onset_s": 96.4378646783788,
+          "primary_active": false,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:003:0000",
+          "sample_time_s": 97.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T05_monitor_navigation_bias",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 122.53806055297919,
+          "fault_channel": "monitor",
+          "fault_kind": "bias",
+          "monitor_active": true,
+          "monitor_logic_fault": false,
+          "onset_s": 92.53806055297919,
+          "primary_active": false,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:003:0001",
+          "sample_time_s": 93.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T06_monitor_logic_false_trip",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 82.56015761072076,
+          "fault_channel": "none",
+          "fault_kind": "none",
+          "monitor_active": false,
+          "monitor_logic_fault": true,
+          "onset_s": 76.56015761072076,
+          "primary_active": false,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:004:0000",
+          "sample_time_s": 77.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T06_monitor_logic_false_trip",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 83.02976885233517,
+          "fault_channel": "none",
+          "fault_kind": "none",
+          "monitor_active": false,
+          "monitor_logic_fault": true,
+          "onset_s": 77.02976885233517,
+          "primary_active": false,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:004:0001",
+          "sample_time_s": 78.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T07_shared_navigation_bias",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 127.28005635488759,
+          "fault_channel": "shared",
+          "fault_kind": "bias",
+          "monitor_active": true,
+          "monitor_logic_fault": false,
+          "onset_s": 97.28005635488759,
+          "primary_active": true,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:005:0000",
+          "sample_time_s": 98.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T07_shared_navigation_bias",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 123.82863848977713,
+          "fault_channel": "shared",
+          "fault_kind": "bias",
+          "monitor_active": true,
+          "monitor_logic_fault": false,
+          "onset_s": 93.82863848977713,
+          "primary_active": true,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:005:0001",
+          "sample_time_s": 94.0
+        },
+        {
+          "actuation_effectiveness": 0.5,
+          "case_id": "T08_actuation_degradation",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 135.23676880010342,
+          "fault_channel": "none",
+          "fault_kind": "none",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 75.23676880010342,
+          "primary_active": false,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:006:0000",
+          "sample_time_s": 76.0
+        },
+        {
+          "actuation_effectiveness": 0.5,
+          "case_id": "T08_actuation_degradation",
+          "disturbance_bias_mps2": [
+            0.0,
+            0.0
+          ],
+          "end_s": 133.48377382568353,
+          "fault_channel": "none",
+          "fault_kind": "none",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 73.48377382568353,
+          "primary_active": false,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:006:0001",
+          "sample_time_s": 74.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T09_disturbance_burst",
+          "disturbance_bias_mps2": [
+            0.0015,
+            -0.001
+          ],
+          "end_s": 135.14840112133027,
+          "fault_channel": "none",
+          "fault_kind": "none",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 75.14840112133028,
+          "primary_active": false,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:007:0000",
+          "sample_time_s": 76.0
+        },
+        {
+          "actuation_effectiveness": 1.0,
+          "case_id": "T09_disturbance_burst",
+          "disturbance_bias_mps2": [
+            0.0015,
+            -0.001
+          ],
+          "end_s": 122.82403418157583,
+          "fault_channel": "none",
+          "fault_kind": "none",
+          "monitor_active": false,
+          "monitor_logic_fault": false,
+          "onset_s": 62.82403418157583,
+          "primary_active": false,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:007:0001",
+          "sample_time_s": 63.0
+        }
+      ]
+    },
+    "filter_fault_plumbing": {
+      "bias_disposition": "innovation_rejected",
+      "dropout_health_after_four_seconds": "degraded",
+      "dropout_prediction_only_age_s": 4.0,
+      "passed": true
+    },
+    "model_mismatch_observability": {
+      "absolute_favorable_or_unfavorable_threshold": null,
+      "horizon_s": 120.0,
+      "injected_sensor_fault": false,
+      "interpretation": "descriptive observability diagnostic only",
+      "maximum_hcw_position_residual_m": 5.8676083287274905e-09,
+      "maximum_hcw_velocity_residual_mps": 2.861792458987395e-09,
+      "mechanics_noise_enabled": false,
+      "navigation_noise_enabled": false,
+      "observations": 120,
+      "passed": true,
+      "root_seed_id": "experiment005:51:100:0000"
+    },
+    "nominal_transfer_feasibility": {
+      "configuration_used": "primary_reference only; no configuration contrast computed",
+      "deterministic_replay": {
+        "first_digest": "2640ce9ce58a971071e5f7f7acb698c2f5f5295dfad025ef743af11b7879a4aa",
+        "passed": true,
+        "replay_digest": "2640ce9ce58a971071e5f7f7acb698c2f5f5295dfad025ef743af11b7879a4aa",
+        "root_seed_id": "experiment005:51:000:0000"
+      },
+      "horizon_s": 300.0,
+      "passed": true,
+      "physical_events_reported_but_not_used_as_a_favorable_gate": true,
+      "roots": [
+        {
+          "collision": false,
+          "corridor_departure": true,
+          "hold_acquired": true,
+          "keep_out_entry": false,
+          "maximum_contiguous_hold_dwell_s": 133.0,
+          "maximum_covariance_trace": 0.12494753777680447,
+          "maximum_hcw_position_residual_m": 0.0005156589530431516,
+          "maximum_hcw_velocity_residual_mps": 0.0011140556728195556,
+          "minimum_covariance_eigenvalue": 1.211207191760569e-06,
+          "minimum_separation_m": 24.012267961530597,
+          "model_mismatch_observations": 300,
+          "nonlinear_truth_numerical_valid": true,
+          "replicate": 0,
+          "root_seed_id": "experiment005:51:000:0000",
+          "trace_digest": "2640ce9ce58a971071e5f7f7acb698c2f5f5295dfad025ef743af11b7879a4aa"
+        },
+        {
+          "collision": false,
+          "corridor_departure": true,
+          "hold_acquired": true,
+          "keep_out_entry": false,
+          "maximum_contiguous_hold_dwell_s": 129.25,
+          "maximum_covariance_trace": 0.12494753777680447,
+          "maximum_hcw_position_residual_m": 0.0006504294745592153,
+          "maximum_hcw_velocity_residual_mps": 0.0010278555719972298,
+          "minimum_covariance_eigenvalue": 1.211207191760569e-06,
+          "minimum_separation_m": 23.698129832420864,
+          "model_mismatch_observations": 300,
+          "nonlinear_truth_numerical_valid": true,
+          "replicate": 1,
+          "root_seed_id": "experiment005:51:000:0001",
+          "trace_digest": "2b9aab5848e08aee31bf7de7ac5164f35518d3e16de6fbe21ba4ce4df45dbbf9"
+        }
+      ]
+    },
+    "outcome_blind_order_and_count_coverage": {
+      "candidate_evaluations": [
+        {
+          "order_appearances_per_position": 0,
+          "passes": false,
+          "reason": "cannot place both diagnostic configurations in both order positions",
+          "roots_per_case": 1
+        },
+        {
+          "order_appearances_per_position": 1,
+          "passes": true,
+          "reason": "smallest count covering every case and both within-block order positions",
+          "roots_per_case": 2
+        }
+      ],
+      "passed": true,
+      "per_case_first_position_counts": {
+        "T00_nominal_transfer": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T01_truth_model_mismatch_stress": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T02_truth_keep_out_crossing_fixture": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T03_primary_navigation_bias": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T04_primary_navigation_dropout": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T05_monitor_navigation_bias": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T06_monitor_logic_false_trip": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T07_shared_navigation_bias": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T08_actuation_degradation": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        },
+        "T09_disturbance_burst": {
+          "independent_monitor_gate": 1,
+          "primary_reference": 1
+        }
+      },
+      "selected_blocks": 20,
+      "selected_episodes": 40,
+      "selected_roots_per_case": 2,
+      "statistical_power_interpretation": false
+    },
+    "truth_event_geometry_stability": {
+      "DOP853_reference": {
+        "endpoint_max_abs_spread": 6.51925802230835e-09,
+        "loose_minimum_separation_m": 8.000004693295617,
+        "loose_rtol": 1e-11,
+        "minimum_spread_m": 1.0677680961634906e-11,
+        "tight_minimum_separation_m": 8.000004693306295,
+        "tight_minimum_time_s": 1.0,
+        "tight_rtol": 1e-12
+      },
+      "certification_claimed": false,
+      "classification_margin_m": 1.9999953066937053,
+      "closed_approach_hold_union_seam": true,
+      "closed_keep_out_boundary": true,
+      "empirical_numerical_enclosure_m": 6.51925802230835e-08,
+      "expected_pattern": {
+        "collision": false,
+        "keep_out_entry": true
+      },
+      "fail_closed_departures": {
+        "lower": true,
+        "radial": true,
+        "upper": true
+      },
+      "interpretation": "independent step/tolerance stability and large-margin classification; not a formal interval-arithmetic certificate",
+      "numerically_ambiguous": false,
+      "passed": true,
+      "production_minimum_spread_m": 3.835154416265141e-12,
+      "root_seed_id": "experiment005:51:200:0000",
+      "step_refinement": {
+        "0.05": {
+          "collision": false,
+          "final_pair_sha256": "5bc2fb1bf955967fa41b885f7961ca49167b0479db669e181cefaad8f87a0d7e",
+          "keep_out_entry": true,
+          "minimum_separation_m": 8.000004693298587,
+          "minimum_separation_time_s": 1.0
+        },
+        "0.1": {
+          "collision": false,
+          "final_pair_sha256": "1cefa11b574be7a869179f7e9fa6b4f61eef05668299190fdfc002e33c7022ee",
+          "keep_out_entry": true,
+          "minimum_separation_m": 8.00000469329993,
+          "minimum_separation_time_s": 1.0
+        },
+        "0.2": {
+          "collision": false,
+          "final_pair_sha256": "fe94d2407bf9cbfd2e85d11ce8535a3fbf27c7471629e6cd903dccace8babce1",
+          "keep_out_entry": true,
+          "minimum_separation_m": 8.000004693296095,
+          "minimum_separation_time_s": 1.0
+        }
+      }
+    }
+  },
+  "controller_or_policy_selected_or_fitted": false,
+  "experiment_004_outcomes_used": false,
+  "partition_52_executed": false,
+  "partition_52_materialized": false,
+  "partition_53_touched": false,
+  "partition_code": 51,
+  "passed": true,
+  "permitted_information_used": [
+    "nonlinear nominal feasibility and horizon practicality",
+    "finite estimator covariance",
+    "descriptive nonlinear-truth versus HCW residual observability",
+    "truth-event classification under step and reference refinement",
+    "closed event-boundary and admissible-union behavior",
+    "navigation, monitor-logic, shared-cause, actuation, and disturbance activation",
+    "deterministic mechanics replay",
+    "within-block order and design-validation coverage"
+  ],
+  "phase": "prospective_partition_51_mechanics_calibration",
+  "pilot_outcomes_generated": false,
+  "prohibited_information_used": [],
+  "sample_count_selection": {
+    "basis": "design-validation coverage and one appearance in each order position",
+    "selected_blocks": 20,
+    "selected_episodes": 40,
+    "selected_roots_per_case": 2,
+    "statistical_power_interpretation": false
+  },
+  "schema_version": "experiment-005-transfer-pilot-design-1.0",
+  "scientific_hypothesis_selected": false,
+  "status": "CALIBRATION_PASS"
+}

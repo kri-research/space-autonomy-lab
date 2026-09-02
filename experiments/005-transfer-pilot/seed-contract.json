@@ -1,0 +1,53 @@
+{
+  "schema_version": "experiment-005-transfer-pilot-design-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 5005,
+  "derivation": "SeedSequence([master, partition, geometry_case, challenge_case, replicate, stream])",
+  "case_identity": "case_code = 100 * geometry_case + challenge_case; root identity is experiment005:<partition>:<case_code>:<replicate>",
+  "partitions": {
+    "mechanics_calibration": {
+      "code": 51,
+      "status": "prospective_noninferential_mechanics_calibration_complete",
+      "permitted_use": "feasibility, numerical and event sensitivity, horizon practicality, estimator/controller plumbing, model-mismatch observability, and intended domain activation",
+      "architecture_effect_or_comparative_outcome_use_allowed": false
+    },
+    "design_validation_pilot": {
+      "code": 52,
+      "status": "reserved_not_materialized_or_executed",
+      "roots_per_case": 2,
+      "case_count": 10,
+      "expected_root_rows": 20,
+      "configurations_per_root": 2,
+      "expected_episode_rows": 40,
+      "replay_roots_per_case": 1,
+      "generator_authorized_only_after_verified_design_freeze": true,
+      "generator_invoked": false
+    },
+    "future_confirmatory": {
+      "code": 53,
+      "status": "reserved_untouched_unmaterialized_hypothesis_sample_size_and_design_not_set",
+      "generator_available": false
+    },
+    "non_outcome_test_fixtures": {
+      "code": 951,
+      "status": "available_for_deterministic_validation_only"
+    }
+  },
+  "stream_codes": {
+    "initial_truth_state": 201,
+    "mechanics_perturbation": 202,
+    "primary_navigation": 203,
+    "monitor_navigation": 204,
+    "challenge_parameters": 205,
+    "actuation": 206,
+    "cell_order": 207
+  },
+  "configuration_order": "partition-specific cell_order stream chooses the first configuration for replicate 0; order alternates by replicate, yielding one appearance in each position per case",
+  "replay_subset": "replicate 0 in every case; outcome-blind and frozen before materialization",
+  "historical_master_domains": [1001, 2002, 3003, 4004],
+  "forbidden_overlap_partitions": [51, 53, 951],
+  "replacement_extension_or_count_drift_allowed": false,
+  "outcome_dependent_threshold_case_or_count_selection_allowed": false,
+  "experiment_004_outcomes_permitted_for_design_selection": false,
+  "partition_53_generator_available": false
+}

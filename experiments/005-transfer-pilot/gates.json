@@ -1,0 +1,88 @@
+{
+  "schema_version": "experiment-005-transfer-pilot-design-1.0",
+  "gate_policy": "conjunctive fail-closed; frozen after partition-51 mechanics calibration and before any partition-52 materialization",
+  "gates": {
+    "foundation_identity": {
+      "required": true,
+      "expected_freeze_id": "921c481726d6f078621ff3a355a7803af803bdc61a8a2da07ffb974a433b3be8",
+      "expected_readiness_id": "9ec734543fd3580e9a2990a16dc56747a0f75334f76bd2c7ae1fdc3647732e67",
+      "expected_status": "READY_FOR_DESIGN_VALIDATION_PILOT",
+      "all_frozen_source_hashes_must_match": true
+    },
+    "complete_cells": {
+      "expected_cases": 10,
+      "expected_roots_per_case": 2,
+      "expected_blocks": 20,
+      "expected_configurations_per_block": 2,
+      "expected_episodes": 40,
+      "duplicates_allowed": 0,
+      "missing_allowed": 0,
+      "extra_allowed": 0
+    },
+    "root_identity": {
+      "expected_namespace": "experiment005:52:",
+      "unique_roots": 20,
+      "historical_overlap_allowed": 0,
+      "partition_51_overlap_allowed": 0,
+      "partition_53_roots_allowed": 0
+    },
+    "nonlinear_truth_numerical_validity": {
+      "all_truth_states_finite": true,
+      "all_relative_states_finite": true,
+      "production_integrator": "fixed-step-rk4",
+      "maximum_step_s": 0.1,
+      "invalid_episodes_allowed": 0
+    },
+    "estimator_covariance": {
+      "all_finite": true,
+      "minimum_eigenvalue_lower_bound": -1e-12,
+      "maximum_trace_exclusive_upper_bound": 1000000.0
+    },
+    "truth_event_geometry": {
+      "T02_truth_keep_out_crossing_fixture": "physical_collision=false and physical_keep_out_entry=true in every episode",
+      "event_source": "offline nonlinear inertial truth transformed to LVLH and evaluated continuously",
+      "online_truth_evidence_allowed": false
+    },
+    "model_mismatch_observability": {
+      "case": "T01_truth_model_mismatch_stress",
+      "required_observations_per_episode": 120,
+      "all_residuals_finite": true,
+      "positive_residual_observed": true,
+      "absolute_favorable_or_unfavorable_threshold": null,
+      "interpretation": "descriptive mechanics diagnostic only"
+    },
+    "fault_and_domain_activation": {
+      "every_scheduled_fault_or_domain": "must activate in every applicable episode",
+      "unaffected_navigation_channel_active_packets": 0,
+      "monitor_false_trip_authority": "positive only in independent_monitor_gate and zero in primary_reference",
+      "actuation_degradation_active_commands": 60,
+      "disturbance_active_substeps": 240
+    },
+    "information_boundary": "controller receives only primary HCW estimate/covariance/health; monitor receives only independent monitor HCW estimate/covariance/health and proposed command; neither receives nonlinear truth, truth event state, root identity, challenge label, or evaluator state",
+    "infrastructure": {
+      "maximum_infrastructure_failures": 0,
+      "maximum_retries": 0,
+      "maximum_replacement_roots": 0,
+      "checkpoint_continuation_of_missing_unpublished_cells": "allowed after validation of every existing shard; not classified as retry or replacement",
+      "complete_block_requirement": true,
+      "foreign_corrupt_duplicate_or_noncanonical_evidence": "fail closed"
+    },
+    "replay": {
+      "selection": "replicate 0 in every case, fixed before partition-52 materialization",
+      "expected_blocks": 10,
+      "expected_episodes": 20,
+      "required_identity": "byte-identical canonical episode rows and trace digests on the frozen runtime/platform"
+    },
+    "analysis": {
+      "mode": "descriptive_mechanistic_gate_only",
+      "p_values_allowed": false,
+      "confidence_intervals_for_architecture_effects_allowed": false,
+      "superiority_or_noninferiority_tests_allowed": false,
+      "hazard_rate_claims_allowed": false,
+      "architecture_effect_claims_allowed": false,
+      "architecture_ranking_allowed": false,
+      "multiplicity_family_defined": false,
+      "model_mismatch_sign_interpreted_as_favorable_or_unfavorable": false
+    }
+  }
+}
