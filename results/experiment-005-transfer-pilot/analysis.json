@@ -1,0 +1,15 @@
+{
+  "analysis_mode": "descriptive_mechanistic_gate_only",
+  "architecture_benefit_claimed": false,
+  "architecture_confidence_intervals_computed": false,
+  "decision": "pilot_invalid_infrastructure_failure",
+  "design_gates_passed": false,
+  "hazard_rate_claimed": false,
+  "p_values_computed": false,
+  "partial_outcomes_used": false,
+  "schema_version": "experiment-005-transfer-pilot-analysis-1.0",
+  "scientific_endpoints_evaluated": false,
+  "smallest_next_task": "separately freeze an outcome-blind replacement-pilot execution amendment with an importable process-pool entry point, phase-aware validation, and a fresh disjoint diagnostic partition while leaving partition 53 untouched",
+  "status": "NOT_ANALYZED_INVALID_CAMPAIGN",
+  "superiority_or_noninferiority_claimed": false
+}

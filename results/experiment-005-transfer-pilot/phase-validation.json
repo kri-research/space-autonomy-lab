@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run pytest -q --ignore=tests/test_experiment_005_transfer_pilot_closeout.py",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "e005_pre_materialization_tests_deselected": 5,
+  "historical_phase_policy_applied": true,
+  "passed": true,
+  "phase": "invalid_partition_52_terminal_infrastructure_closeout",
+  "reason": "their absence assertions are false after the recorded write-once materialization"
+}

@@ -1,0 +1,64 @@
+{
+  "artifacts": [
+    {
+      "path": "results/experiment-005-transfer-pilot/analysis.json",
+      "sha256": "ecde54013128493670f99fae8dfea6de6420b3804c3359330ca6d81ea3dfac10"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/execution-ledger.json",
+      "sha256": "66af46b2b5905e15b2fae7cdb082e728b004898283cc96cbaeef56c40985bbdb"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/execution-report.md",
+      "sha256": "06aa1029473e93edb3f3c833155c7b0bffcef33c7b21e6e18c642de7871727b3"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/invalid-attempt-audit.json",
+      "sha256": "66ad8dfb592ce5129459f0fda6c7b10c32390592e4960e95278168e97e5e3807"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/invalid-attempt-evidence/campaign.json",
+      "sha256": "90ab09451bbe9d336b18212bfecb1828ef0fbc0bbc5181eb4e7d9726a6d227a4"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/invalid-attempt-evidence/terminal-failure.json",
+      "sha256": "50ece4ca8fbc71e0049c47b104b541bc32d93a8be1d176d36bce70c97ce2b2b2"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/materialized-seeds/index.json",
+      "sha256": "172d36f44d14cf26bcf4716d37ced9f2b09465e623051d9c381dfe2aad532479"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/materialized-seeds/pilot.jsonl",
+      "sha256": "0c1b50b37f2e588d263f958ed12666e0cf547ad114736b30342bb445219f525e"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/materialized-seeds/replay-subset.json",
+      "sha256": "d1b890c268425d62fcde88af39677a121521a6e75c9396b57f129efffbf2c79a"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/phase-validation.json",
+      "sha256": "31328e0537792bf36beb84aff4557195047fec202798f2bc181ce01cf3bd8f42"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/qc.json",
+      "sha256": "38bff2dc7c971f2f83b213c8b93b82feba65a40051869c72d7bb4e33a48f7dec"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/release-scan.json",
+      "sha256": "0960a50d83f88a57977fdffe28acaf820ff09669ad7aa89df3414d45da4eff39"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/reproducibility.json",
+      "sha256": "bb3b89fefd23ce5d22bda3cbf30eb197f400c32858eb826c3f94d3cacd7b0cfe"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot/result-verification.json",
+      "sha256": "7c952ddc716a84a9d4e729f4f80d81eccbecbfe229606f2ed5f3a560a162bbe8"
+    }
+  ],
+  "design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+  "partition_code": 52,
+  "schema_version": "experiment-005-transfer-pilot-invalid-manifest-1.0",
+  "status": "INVALID_ATTEMPT_VERIFIED"
+}
