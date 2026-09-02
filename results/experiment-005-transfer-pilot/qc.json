@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "controller_monitor_information_boundary": true,
+    "descriptive_noninferential_boundary": true,
+    "deterministic_replay": false,
+    "estimator_covariance_validity": false,
+    "exact_complete_cells": false,
+    "fault_and_domain_activation": false,
+    "frozen_identity": true,
+    "nonlinear_truth_numerical_validity": false,
+    "partition_53_untouched": true,
+    "truth_event_geometry": false,
+    "write_once_materialization": true,
+    "zero_infrastructure_failures": false,
+    "zero_retries_and_replacements": true
+  },
+  "decision": "pilot_invalid_infrastructure_failure",
+  "gate_policy": "conjunctive_fail_closed",
+  "not_evaluated_due_to_invalid_campaign": [
+    "exact_complete_cells",
+    "nonlinear_truth_numerical_validity",
+    "estimator_covariance_validity",
+    "truth_event_geometry",
+    "fault_and_domain_activation",
+    "deterministic_replay"
+  ],
+  "overall_passed": false,
+  "schema_version": "experiment-005-transfer-pilot-qc-1.0"
+}

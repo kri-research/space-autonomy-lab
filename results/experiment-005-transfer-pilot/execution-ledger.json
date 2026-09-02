@@ -1,0 +1,15 @@
+{
+  "campaign_id": "7ffec887e937af837c3eef360cc861bd3fe456445e7210f7e6bd032e83b2fb4d",
+  "checkpoint_continuation_invocations_observed": 0,
+  "completed_blocks": 0,
+  "episode_rows": 0,
+  "extensions_observed": 0,
+  "materializer_successful_invocations_observed": 1,
+  "partition_code": 52,
+  "pilot_runner_invocations_observed": 1,
+  "prespecified_replay_invocations_observed": 0,
+  "replacement_roots_observed": 0,
+  "retries_observed": 0,
+  "schema_version": "experiment-005-transfer-pilot-execution-ledger-1.0",
+  "terminal_failures": 1
+}

@@ -1,0 +1,18 @@
+{
+  "expected_blocks": 10,
+  "expected_episodes": 20,
+  "root_seed_ids": [
+    "experiment005:52:000:0000",
+    "experiment005:52:100:0000",
+    "experiment005:52:200:0000",
+    "experiment005:52:001:0000",
+    "experiment005:52:002:0000",
+    "experiment005:52:003:0000",
+    "experiment005:52:004:0000",
+    "experiment005:52:005:0000",
+    "experiment005:52:006:0000",
+    "experiment005:52:007:0000"
+  ],
+  "schema_version": "experiment-005-transfer-pilot-design-1.0",
+  "selection": "replicate 0 in every case; outcome-blind"
+}

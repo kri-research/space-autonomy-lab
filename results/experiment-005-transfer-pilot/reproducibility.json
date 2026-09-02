@@ -1,0 +1,34 @@
+{
+  "passed": false,
+  "prespecified_replay_blocks": 10,
+  "prespecified_replay_episodes": 20,
+  "reason": "the complete original campaign was never assembled and terminal failure semantics prohibit further execution of the failed partition",
+  "replay_invocations": 0,
+  "runtime_identity": {
+    "dependency_file_hashes": {
+      ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+      "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+      "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+    },
+    "expected_versions": {
+      "numpy_version": "2.4.6",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0"
+    },
+    "mismatches": [],
+    "observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "passed": true,
+    "platform_match_required_for_future_replay": true
+  },
+  "same_platform_replay_performed": false,
+  "same_platform_replay_required": true,
+  "schema_version": "experiment-005-transfer-pilot-reproducibility-1.0"
+}

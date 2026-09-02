@@ -1,0 +1,19 @@
+{
+  "design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+  "design_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3",
+  "disjoint_from_partitions": [
+    51,
+    53,
+    951
+  ],
+  "generator_invocations": 1,
+  "historical_root_ids_compared": 22377,
+  "manifest_sha256": "0c1b50b37f2e588d263f958ed12666e0cf547ad114736b30342bb445219f525e",
+  "materialized_only_after_design_freeze_verification": true,
+  "partition_code": 52,
+  "planned_episode_rows": 40,
+  "replacement_extension_or_count_drift_allowed": false,
+  "replay_subset_sha256": "d1b890c268425d62fcde88af39677a121521a6e75c9396b57f129efffbf2c79a",
+  "root_rows": 20,
+  "schema_version": "experiment-005-transfer-pilot-design-1.0"
+}
