@@ -1,0 +1,288 @@
+{
+  "amendment_freeze_id": "01504ff16ccf8a79dad67f88c4d40920be39dfa929169ccb72fdfcede18b34c1",
+  "artifacts": [
+    {
+      "bytes": 901,
+      "path": "docs/experiment-005-transfer-pilot-results.md",
+      "sha256": "e1434aae71a40c58abca9571ad30dc3a80f7f74b67b6960ac99b1ed48181abbf"
+    },
+    {
+      "bytes": 1998,
+      "path": "docs/research-roadmap.md",
+      "sha256": "ad4566d90f5ecb26a9d2be86f64bb2f0be1e4e3175d29311fbea6f169bdbcc48"
+    },
+    {
+      "bytes": 995,
+      "path": "experiments/005-transfer-pilot-replacement/seeds/index.json",
+      "sha256": "818ee087d144385d6e75919d10406701fe9acb1831622802a696fe96984173e9"
+    },
+    {
+      "bytes": 31589,
+      "path": "experiments/005-transfer-pilot-replacement/seeds/pilot.jsonl",
+      "sha256": "45aa70402ee19586c14c24e4f75dedfd572d8cced9e8d9c51969c801e6704fab"
+    },
+    {
+      "bytes": 569,
+      "path": "experiments/005-transfer-pilot-replacement/seeds/replay-subset.json",
+      "sha256": "405801069294307513f86239f9b218b77ec62cc84a490fc34d759f17798b5aab"
+    },
+    {
+      "bytes": 14866,
+      "path": "results/experiment-005-transfer-pilot-replacement/analysis.json",
+      "sha256": "71af2e560e9b4c033c9c65e1c600685aa45137065dc3d6cbbac7596d45441edf"
+    },
+    {
+      "bytes": 103403,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/pilot-episodes.jsonl",
+      "sha256": "0a890fce567b0a6138c487b8ce34da5ed63ee8343a222e110434c832e05de338"
+    },
+    {
+      "bytes": 887,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/campaign.json",
+      "sha256": "bd0ce57fbd8b05cc7e9d623df18fa543e403a82a3f39f89c3d9d91a866f2034c"
+    },
+    {
+      "bytes": 5786,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000000.json",
+      "sha256": "c3e248bc178a74eb22a6af537d295473b294d7f0ebed35b9f55ba3cd5ce0c7a2"
+    },
+    {
+      "bytes": 5736,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000001.json",
+      "sha256": "7da396cd4978511ab3a6454b191ac0b55c189f07459cf962550933618f1b4c7e"
+    },
+    {
+      "bytes": 5826,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000002.json",
+      "sha256": "f0e41c01c638f25b696e34c78a05513795c8009fe07207cda41e753183dfb9aa"
+    },
+    {
+      "bytes": 5826,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000003.json",
+      "sha256": "fafdfefb49d3f5e557dbcf260f21c93bacb82c7924faaed18b12fc1b7abc62a7"
+    },
+    {
+      "bytes": 5828,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000004.json",
+      "sha256": "2e6fc250bcf4f8dd4312f603b6b98d3756c704732a8e0b6f69d8127e9efaaebf"
+    },
+    {
+      "bytes": 5828,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000005.json",
+      "sha256": "f375daa9453e198cd0f7942ce2eeacfaf52e0ef1978a94d7ef83498fcec01653"
+    },
+    {
+      "bytes": 5876,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000006.json",
+      "sha256": "9862837a78925c62c51e53cbedf94db17b0dee0c0e969c1d3450e7e2ec71a404"
+    },
+    {
+      "bytes": 5809,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000007.json",
+      "sha256": "1d5ed77102b1e188fec22de3082496e317a07b86a3c1ff281b004319a91fb3cb"
+    },
+    {
+      "bytes": 5788,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000008.json",
+      "sha256": "456af4cb8776c112b4fe443ed2477d84aafdd3ccb4efca5fdfcdd8c84361d403"
+    },
+    {
+      "bytes": 5832,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000009.json",
+      "sha256": "6ac165e1b97dc450d8ab7798babce464ff2c7ac20fba697ae5171389f8528926"
+    },
+    {
+      "bytes": 5830,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000010.json",
+      "sha256": "33c6fedc23b6aee3e30b458b88ba99c7f8ea8fbc5cfc8222d9dacc87c98935dc"
+    },
+    {
+      "bytes": 5835,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000011.json",
+      "sha256": "88cd2ecb678be5bf8470cec20ee260183d59e26b95203b8acbd717618ceae1f4"
+    },
+    {
+      "bytes": 5781,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000012.json",
+      "sha256": "9345e7d39c5e8605de373c6d1d2680d14963ccaeff1b036afdec770ad7fdef32"
+    },
+    {
+      "bytes": 5778,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000013.json",
+      "sha256": "30d223ebef5558ec1d698fc1514c6fe473d189b38ce7d5088fa551a1c5d39f44"
+    },
+    {
+      "bytes": 5877,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000014.json",
+      "sha256": "b6695aaf1658bce62f9493643f7f74f3fa96d6ca72d3c0c8e483bc143c360885"
+    },
+    {
+      "bytes": 5869,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000015.json",
+      "sha256": "fad0225b8deeae2e8b5f5a4f2746e7aaf113342d9d11e5665428577219298e7f"
+    },
+    {
+      "bytes": 5831,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000016.json",
+      "sha256": "8a1f8f8fd665884ca9b202707e08f5324dce2d9540198e09977abca55b427154"
+    },
+    {
+      "bytes": 5830,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000017.json",
+      "sha256": "3534c69f9c914d683f4352f276b5a6016be0baf81735ea80fa08c42ca21c91aa"
+    },
+    {
+      "bytes": 5841,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000018.json",
+      "sha256": "da3f77a06727cd491b6b1e754a8b71e3a5b6d7b90ff24ca978dcec09a998d40b"
+    },
+    {
+      "bytes": 5846,
+      "path": "results/experiment-005-transfer-pilot-replacement/campaign/shards/cell-000019.json",
+      "sha256": "04c651b36fea7d7901a9c1fc05f20abce88b627df6917fe79201695a04202cf6"
+    },
+    {
+      "bytes": 9918,
+      "path": "results/experiment-005-transfer-pilot-replacement/design-integrity-postexecution.json",
+      "sha256": "f1aca26e9e160ef903b2c0833bb2751ff42beae3ca749e8f7594b26845992ce9"
+    },
+    {
+      "bytes": 885,
+      "path": "results/experiment-005-transfer-pilot-replacement/execution-ledger.json",
+      "sha256": "e155800d69002fa66f5a6eb5f01d6a6486cc1bf21654fecbe973476cabb5bf3c"
+    },
+    {
+      "bytes": 2939,
+      "path": "results/experiment-005-transfer-pilot-replacement/execution-report.md",
+      "sha256": "4eac71f6107fb02e948f0227f1e8a4cc4f2bf3c96b0f855834fa48359afee98b"
+    },
+    {
+      "bytes": 2067,
+      "path": "results/experiment-005-transfer-pilot-replacement/execution-summary.json",
+      "sha256": "14e45aad15b1de8b7a43efeeea45b3c6a220ddfd1a25e399e063f16ca54584d4"
+    },
+    {
+      "bytes": 1004,
+      "path": "results/experiment-005-transfer-pilot-replacement/phase-validation.json",
+      "sha256": "5f3c410b3d8517c14412336406bbd1ee480817ac153016bf600bdaad3060ccd8"
+    },
+    {
+      "bytes": 2787,
+      "path": "results/experiment-005-transfer-pilot-replacement/qc.json",
+      "sha256": "34971c9f7acc02009b7ec8ddce5dfc5ead1db4834bcbfb6304ea237cc78c0602"
+    },
+    {
+      "bytes": 532,
+      "path": "results/experiment-005-transfer-pilot-replacement/release-scan.json",
+      "sha256": "1ca727014779b59dfb229ccba7ea2d43c79a4283108301c8e85134e489c34622"
+    },
+    {
+      "bytes": 51739,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/pilot-episodes.jsonl",
+      "sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb"
+    },
+    {
+      "bytes": 887,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/campaign.json",
+      "sha256": "9f3f92f44bd83f5b67eb3de64fc0f9aadd2083eb966808eea64cc402328b0d3b"
+    },
+    {
+      "bytes": 5786,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000000.json",
+      "sha256": "bd732fd8ed3fc6c0e5dd26cfccda64ae587ad2e9b444373ca8c40ebe535ea57d"
+    },
+    {
+      "bytes": 5826,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000001.json",
+      "sha256": "8c1a3a5b45076e91970f76829374c5ca1001d52504a85294d44a4930277dba16"
+    },
+    {
+      "bytes": 5828,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000002.json",
+      "sha256": "e2a2e0c32f1911eda7fcb5afed552eac06689777aca40aea44b7305fe9c9a2d5"
+    },
+    {
+      "bytes": 5876,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000003.json",
+      "sha256": "e31186d509c8a65b44123b506237178344c6d55791611a37828b208e626ad8f0"
+    },
+    {
+      "bytes": 5788,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000004.json",
+      "sha256": "74e303f08c4d8598693c4876180b188427e25bf7c1308d6e12b8db0a19954369"
+    },
+    {
+      "bytes": 5829,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000005.json",
+      "sha256": "57b0137c8bbe725bb076d8ce9134f9c7de2d26f595122c876b7a9f52919b6c3c"
+    },
+    {
+      "bytes": 5780,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000006.json",
+      "sha256": "24ed9c4b480ac18e2ccd63cc54550d2109fca34279b8288402b1f4cf3171ca04"
+    },
+    {
+      "bytes": 5876,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000007.json",
+      "sha256": "4c6c7a3ef6333b97af2b1793dd949c81cae01eebf5bcdc52946de213b17c989c"
+    },
+    {
+      "bytes": 5830,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000008.json",
+      "sha256": "a6268d0e6efffb51f887efba10e9ee6511992e0472e3da79123887d7e355b1a1"
+    },
+    {
+      "bytes": 5840,
+      "path": "results/experiment-005-transfer-pilot-replacement/replay/shards/cell-000009.json",
+      "sha256": "3e347fb1e7d585b9e78873f52aa4e889bb4bd19d98474cd8e2878e5e1ce21470"
+    },
+    {
+      "bytes": 1159,
+      "path": "results/experiment-005-transfer-pilot-replacement/reproducibility.json",
+      "sha256": "79addb6583a0129fb871776d026a87345093959cb5495a0d43188ae6fce1b5f1"
+    },
+    {
+      "bytes": 991,
+      "path": "results/experiment-005-transfer-pilot-replacement/result-verification.json",
+      "sha256": "5e3cbf07d78f4d02b2f5c95e26b5d7e6fe0932e68b7bd5382231346890fec782"
+    },
+    {
+      "bytes": 51116,
+      "path": "src/kri_space_autonomy/experiment_005_transfer_pilot_replacement_closeout.py",
+      "sha256": "e1bee058a1bb726a4b2c8e939ead49de91f0bbf05870a08e49034b1249793723"
+    },
+    {
+      "bytes": 2427,
+      "path": "tests/conftest.py",
+      "sha256": "91921f510d65a7f208af8104e9b6c6345171cc37aedfe6eb1ed3b3e093b22cb1"
+    },
+    {
+      "bytes": 2021,
+      "path": "tests/test_experiment_005_transfer_pilot_replacement_closeout.py",
+      "sha256": "ace97d26c80c2fbd12866f1e6f9cf037a097c4cd5c4656dddca3f4bbc34834d6"
+    }
+  ],
+  "counts": {
+    "complete_blocks": 20,
+    "episode_rows": 40,
+    "replay_blocks": 10,
+    "replay_episode_rows": 20,
+    "root_rows": 20
+  },
+  "decision": "pilot_design_gates_passed",
+  "embedded_hash_exclusions": [
+    {
+      "path": "results/experiment-005-transfer-pilot-replacement/manifest.json",
+      "reason": "self-referential; covered by checksums"
+    },
+    {
+      "path": "results/experiment-005-transfer-pilot-replacement/checksums.sha256",
+      "reason": "checksum file cannot hash itself"
+    }
+  ],
+  "future_confirmatory_partition_code": 53,
+  "partition_code": 54,
+  "phase": "completed_partition_54_design_validation_pilot",
+  "retired_partition_code": 52,
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0"
+}

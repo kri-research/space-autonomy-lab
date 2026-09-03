@@ -28,6 +28,16 @@ E005_PREMATERIALIZATION_TESTS = {
         "test_case_matrix_loads_without_materializing_any_future_partition"
     ),
 }
+E005_REPLACEMENT_PREMATERIALIZATION_TESTS = {
+    (
+        "tests/test_experiment_005_transfer_pilot_replacement.py::"
+        "test_partition_54_is_fresh_reserved_and_only_execution_identity_changes"
+    ),
+    (
+        "tests/test_experiment_005_transfer_pilot_replacement.py::"
+        "test_frozen_amendment_verifies_when_present"
+    ),
+}
 PHASE_INAPPLICABLE_TESTS = set(PRE_OUTCOME_DESELECTS) | E005_PREMATERIALIZATION_TESTS
 
 
@@ -43,10 +53,17 @@ def pytest_collection_modifyitems(
     ).is_file()
     if not closed_attempt:
         return
+    phase_inapplicable = set(PHASE_INAPPLICABLE_TESTS)
+    replacement_executed = (
+        root
+        / "results/experiment-005-transfer-pilot-replacement/execution-summary.json"
+    ).is_file()
+    if replacement_executed:
+        phase_inapplicable.update(E005_REPLACEMENT_PREMATERIALIZATION_TESTS)
     selected: list[pytest.Item] = []
     deselected: list[pytest.Item] = []
     for item in items:
-        if item.nodeid in PHASE_INAPPLICABLE_TESTS:
+        if item.nodeid in phase_inapplicable:
             deselected.append(item)
         else:
             selected.append(item)

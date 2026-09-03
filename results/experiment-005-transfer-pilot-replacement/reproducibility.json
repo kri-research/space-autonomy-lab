@@ -1,0 +1,33 @@
+{
+  "blocks": 10,
+  "episodes": 20,
+  "original_subset_sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb",
+  "passed": true,
+  "replay_sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb",
+  "runtime_identity": {
+    "dependency_file_hashes": {
+      ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+      "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+      "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+    },
+    "expected_versions": {
+      "numpy_version": "2.4.6",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0"
+    },
+    "mismatches": [],
+    "observed": {
+      "architecture": "arm64",
+      "implementation": "CPython",
+      "numpy_version": "2.4.6",
+      "os": "Darwin",
+      "python": "3.11.16",
+      "scipy_version": "1.17.0",
+      "thread_variables": {}
+    },
+    "passed": true,
+    "platform_match_required_for_future_replay": true
+  },
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0",
+  "selection": "replicate 0 in every frozen case"
+}

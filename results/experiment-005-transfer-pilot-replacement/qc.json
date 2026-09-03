@@ -1,0 +1,98 @@
+{
+  "checks": {
+    "complete_cells": {
+      "duplicates": 0,
+      "expected_rows": 40,
+      "extra": 0,
+      "missing": 0,
+      "observed_rows": 40,
+      "passed": true,
+      "unique_roots": 20
+    },
+    "descriptive_analysis_boundary": {
+      "passed": true
+    },
+    "deterministic_replay": {
+      "blocks": 10,
+      "episodes": 20,
+      "passed": true,
+      "replay_sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb"
+    },
+    "estimator_covariance": {
+      "maximum_observed_trace": 123.70066437813364,
+      "maximum_trace_exclusive_upper_bound": 1000000.0,
+      "minimum_allowed_eigenvalue": -1e-12,
+      "minimum_observed_eigenvalue": 1.211207191760569e-06,
+      "passed": true
+    },
+    "fault_and_domain_activation": {
+      "checks": {
+        "actuation": true,
+        "disturbance": true,
+        "monitor_bias": true,
+        "monitor_logic": true,
+        "primary_bias": true,
+        "primary_dropout": true,
+        "shared_navigation": true,
+        "unaffected_channels_inactive": true
+      },
+      "passed": true
+    },
+    "foundation_and_freeze_identity": {
+      "passed": true
+    },
+    "information_boundary": {
+      "control_function_parameters": [
+        "primary_snapshot",
+        "monitor_snapshot",
+        "controller",
+        "monitor",
+        "configuration_id"
+      ],
+      "controller_inputs": "primary HCW navigation snapshot only",
+      "monitor_inputs": "monitor HCW navigation snapshot and proposed command only",
+      "passed": true,
+      "physical_truth_or_event_evidence_returned_online": false,
+      "prohibited_names_found": []
+    },
+    "infrastructure": {
+      "infrastructure_failures": 0,
+      "passed": true,
+      "replacement_roots": 0,
+      "retries": 0
+    },
+    "model_mismatch_observability": {
+      "absolute_favorable_or_unfavorable_threshold": null,
+      "episodes": 4,
+      "maximum_position_residual_m": 5.8676083287274905e-09,
+      "maximum_velocity_residual_mps": 2.861792458987395e-09,
+      "observations_per_episode": [
+        120
+      ],
+      "passed": true
+    },
+    "nonlinear_truth_numerical_validity": {
+      "passed": true
+    },
+    "partition_53_untouched": {
+      "passed": true
+    },
+    "root_identity": {
+      "episode_seed_and_run_order_binding": true,
+      "historical_overlap": 0,
+      "partition_52_scenario_hash_overlap": 0,
+      "passed": true,
+      "unique_roots": 20
+    },
+    "truth_event_geometry": {
+      "collision_count": 0,
+      "episodes": 4,
+      "keep_out_entry_count": 4,
+      "passed": true
+    }
+  },
+  "gate_policy": "conjunctive_fail_closed",
+  "overall_passed": true,
+  "phase": "noninferential_design_validation_pilot",
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0"
+}

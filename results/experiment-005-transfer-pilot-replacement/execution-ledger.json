@@ -1,0 +1,22 @@
+{
+  "authorization": "one frozen replacement design-validation pilot on partition 54",
+  "campaign_invocations_recorded": 1,
+  "complete_blocks": 20,
+  "completed_campaign_shards_reused": 0,
+  "completed_replay_shards_reused": 0,
+  "episode_rows": 40,
+  "extensions_recorded": 0,
+  "infrastructure_failures_recorded": 0,
+  "partition_code": 54,
+  "replacement_roots_recorded": 0,
+  "replay_invocations_recorded": 1,
+  "retired_partition_code": 52,
+  "retries_recorded": 0,
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0",
+  "workers": 8,
+  "write_once_evidence": {
+    "campaign_rows_sha256": "0a890fce567b0a6138c487b8ce34da5ed63ee8343a222e110434c832e05de338",
+    "replay_rows_sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb",
+    "seed_manifest_sha256": "45aa70402ee19586c14c24e4f75dedfd572d8cced9e8d9c51969c801e6704fab"
+  }
+}

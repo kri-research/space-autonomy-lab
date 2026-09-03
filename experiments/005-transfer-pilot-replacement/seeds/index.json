@@ -1,0 +1,19 @@
+{
+  "amendment_freeze_id": "01504ff16ccf8a79dad67f88c4d40920be39dfa929169ccb72fdfcede18b34c1",
+  "amendment_readiness_id": "3181e1a9b40c3ab32b684934d8c975b3eeeee44c2b38cd9dc80e0f0c589328c0",
+  "historical_root_ids_compared": 22397,
+  "manifest_sha256": "45aa70402ee19586c14c24e4f75dedfd572d8cced9e8d9c51969c801e6704fab",
+  "materialized_only_after_exact_amendment_verification": true,
+  "maximum_replacement_roots": 0,
+  "maximum_retries": 0,
+  "original_design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+  "partition_code": 54,
+  "planned_episode_rows": 40,
+  "replacement_extension_or_count_drift_allowed": false,
+  "replay_episode_rows": 20,
+  "replay_root_rows": 10,
+  "replay_subset_sha256": "405801069294307513f86239f9b218b77ec62cc84a490fc34d759f17798b5aab",
+  "root_rows": 20,
+  "schema_version": "experiment-005-transfer-pilot-replacement-amendment-1.0",
+  "seed_contract_sha256": "a0c89b947cdcc05348de28b2d58ae8bd0d3ae0d65e347ffd23fa05b4d6642e26"
+}

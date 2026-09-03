@@ -29,9 +29,11 @@ learning approaches under identical faults and safety boundaries.
 
 Experiments 001-004 are complete. Experiment 004 advanced the testbed to planar HCW dynamics and
 estimator-aware vector control; its valid replacement confirmatory campaign was reproducible but
-inconclusive because both compared configurations had zero primary physical adverse events. The next
-fidelity question is transfer from linear HCW truth to a prospectively defined nonlinear orbital truth
-model before any 6-DoF or hardware-in-the-loop claim.
+inconclusive because both compared configurations had zero primary physical adverse events.
+Experiment 005 has now completed a valid noninferential transfer pilot from linear HCW online
+mechanics to nonlinear two-body physical truth. All frozen design-validation gates passed, supporting
+a separate prospective confirmatory-design freeze while leaving the confirmatory partition
+unmaterialized and unexecuted. No 6-DoF or hardware-in-the-loop claim is supported.
 
 ## v0.4 Hardware evidence
 

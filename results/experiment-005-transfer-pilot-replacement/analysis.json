@@ -1,0 +1,437 @@
+{
+  "aggregate_observations": {
+    "collision_count": 0,
+    "corridor_departure_count": 40,
+    "episodes": 40,
+    "hold_acquired_count": 24,
+    "keep_out_entry_count": 8
+  },
+  "analysis_mode": "descriptive_mechanistic_gate_only",
+  "architecture_confidence_intervals_computed": false,
+  "architecture_effect_estimated": false,
+  "architecture_ranking_performed": false,
+  "descriptive_mechanistic_summary": {
+    "T00_nominal_transfer": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0006085194043700472,
+        "maximum_hcw_velocity_residual_mps": 0.0012180964362191705,
+        "minimum_separation_m": 23.6614077436006
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0006085194043700472,
+        "maximum_hcw_velocity_residual_mps": 0.0012180964362191705,
+        "minimum_separation_m": 23.6614077436006
+      }
+    },
+    "T01_truth_model_mismatch_stress": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 5.8676083287274905e-09,
+        "maximum_hcw_velocity_residual_mps": 2.861792458987395e-09,
+        "minimum_separation_m": 58.035471112059355
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 5.8676083287274905e-09,
+        "maximum_hcw_velocity_residual_mps": 2.861792458987395e-09,
+        "minimum_separation_m": 58.035471112059355
+      }
+    },
+    "T02_truth_keep_out_crossing_fixture": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 2
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 2.084247635829645e-10,
+        "maximum_hcw_velocity_residual_mps": 2.872544782393599e-11,
+        "minimum_separation_m": 8.000004693297676
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 2
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 2.084247635829645e-10,
+        "maximum_hcw_velocity_residual_mps": 2.872544782393599e-11,
+        "minimum_separation_m": 8.000004693297676
+      }
+    },
+    "T03_primary_navigation_bias": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 60
+        },
+        "maximum_hcw_position_residual_m": 0.000631837682441774,
+        "maximum_hcw_velocity_residual_mps": 0.0011264263892683808,
+        "minimum_separation_m": 23.502755218978017
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 60
+        },
+        "maximum_hcw_position_residual_m": 0.000631837682441774,
+        "maximum_hcw_velocity_residual_mps": 0.0011264263892683808,
+        "minimum_separation_m": 23.502755218978017
+      }
+    },
+    "T04_primary_navigation_dropout": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 12
+        },
+        "maximum_hcw_position_residual_m": 0.000673128313637703,
+        "maximum_hcw_velocity_residual_mps": 0.001340429614852086,
+        "minimum_separation_m": 23.53842883232377
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 12
+        },
+        "maximum_hcw_position_residual_m": 0.000673128313637703,
+        "maximum_hcw_velocity_residual_mps": 0.001340429614852086,
+        "minimum_separation_m": 23.53842883232377
+      }
+    },
+    "T05_monitor_navigation_bias": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 60,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0007440761769669905,
+        "maximum_hcw_velocity_residual_mps": 0.0013819622133155584,
+        "minimum_separation_m": 23.46495220145047
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 60,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0007440761769669905,
+        "maximum_hcw_velocity_residual_mps": 0.0013819622133155584,
+        "minimum_separation_m": 23.46393469961201
+      }
+    },
+    "T06_monitor_logic_false_trip": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 12,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0007926020416207778,
+        "maximum_hcw_velocity_residual_mps": 0.0013528611449186738,
+        "minimum_separation_m": 23.21780993599522
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0007926018004229303,
+        "maximum_hcw_velocity_residual_mps": 0.0013528611415550413,
+        "minimum_separation_m": 23.218780427577386
+      }
+    },
+    "T07_shared_navigation_bias": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 60,
+          "primary_packets": 60
+        },
+        "maximum_hcw_position_residual_m": 0.0006401598746644182,
+        "maximum_hcw_velocity_residual_mps": 0.0010965530759405409,
+        "minimum_separation_m": 23.367686002616868
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 2,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 60,
+          "primary_packets": 60
+        },
+        "maximum_hcw_position_residual_m": 0.0006401614841297797,
+        "maximum_hcw_velocity_residual_mps": 0.0010965530745067032,
+        "minimum_separation_m": 23.37182942320906
+      }
+    },
+    "T08_actuation_degradation": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 2
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 120,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.005430701423282431,
+        "maximum_hcw_velocity_residual_mps": 0.010714828874738475,
+        "minimum_separation_m": 2.952911670948955
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 2
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 120,
+          "disturbance_substeps": 0,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.005431470321888168,
+        "maximum_hcw_velocity_residual_mps": 0.01071604723282155,
+        "minimum_separation_m": 2.92607815911879
+      }
+    },
+    "T09_disturbance_burst": {
+      "independent_monitor_gate": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 480,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0013237103775941357,
+        "maximum_hcw_velocity_residual_mps": 0.0025252780667943406,
+        "minimum_separation_m": 24.762344285992267
+      },
+      "primary_reference": {
+        "episodes": 2,
+        "event_counts": {
+          "collision": 0,
+          "corridor_departure": 2,
+          "hold_acquired": 0,
+          "keep_out_entry": 0
+        },
+        "fault_activation_totals": {
+          "actuation_commands": 0,
+          "disturbance_substeps": 480,
+          "monitor_logic_commands": 0,
+          "monitor_packets": 0,
+          "primary_packets": 0
+        },
+        "maximum_hcw_position_residual_m": 0.0013237087781480313,
+        "maximum_hcw_velocity_residual_mps": 0.0025252780672904832,
+        "minimum_separation_m": 24.763138060984854
+      }
+    }
+  },
+  "hazard_rate_claimed": false,
+  "limitations": [
+    "The pilot was selected for mechanics coverage rather than statistical power.",
+    "Event counts are descriptive and do not estimate operational rates or architecture effects.",
+    "Every episode recorded corridor departure; corridor outcome was not a frozen favorable or unfavorable progression gate.",
+    "The result does not authorize partition-53 materialization or execution."
+  ],
+  "p_values_computed": false,
+  "phase": "noninferential_design_validation_pilot",
+  "progression": {
+    "basis": "frozen_conjunctive_design_validation_gates_only",
+    "confirmatory_design_freeze_scientifically_justified": true,
+    "confirmatory_partition_53_campaign_authorized": false,
+    "decision": "pilot_design_gates_passed",
+    "descriptive_outcomes_used_to_change_progression": false,
+    "partition_53_materialized_or_executed": false,
+    "passed": true,
+    "smallest_next_task": "freeze a separate prospective partition-53 confirmatory design that defines its scientific question, estimands, case matrix, sample size and power basis, gatekeeping and multiplicity, analysis, replay subset, seed contract, and write-once execution protocol while leaving partition 53 unmaterialized and unexecuted"
+  },
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0",
+  "scientific_hypothesis_tested": false,
+  "superiority_or_noninferiority_tested": false
+}

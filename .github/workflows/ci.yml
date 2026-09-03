@@ -1,8 +1,8 @@
 name: CI
 
 on:
-  push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: astral-sh/setup-uv@v6
         with:
           version: "0.12.5"
@@ -25,7 +27,67 @@ jobs:
       - name: Run phase-appropriate tests
         shell: bash
         run: |
-          if [[ -f results/experiment-004-replacement-confirmatory/result-verification.json ]]; then
+          if [[ -f results/experiment-005-transfer-pilot-replacement/result-verification.json ]]; then
+            # Completed Experiment 005 replacement pilot. The full scientific/replay
+            # validation is run locally before packaging. CI performs a fast,
+            # cross-platform integrity check of the frozen closeout package only.
+            uv run python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path.cwd()
+          result = root / "results/experiment-005-transfer-pilot-replacement"
+          manifest = json.loads((result / "manifest.json").read_text())
+          digest = lambda path: hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+          assert manifest["decision"] == "pilot_design_gates_passed"
+          assert manifest["partition_code"] == 54
+          assert manifest["future_confirmatory_partition_code"] == 53
+          assert manifest["retired_partition_code"] == 52
+          assert manifest["counts"] == {
+              "complete_blocks": 20,
+              "episode_rows": 40,
+              "replay_blocks": 10,
+              "replay_episode_rows": 20,
+              "root_rows": 20,
+          }
+          for item in manifest["artifacts"]:
+              path = root / item["path"]
+              assert path.is_file(), item["path"]
+              assert path.stat().st_size == item["bytes"], item["path"]
+              assert digest(path) == item["sha256"], item["path"]
+          for line in (result / "checksums.sha256").read_text().splitlines():
+              expected, relative = line.split("  ", 1)
+              assert digest(root / relative) == expected, relative
+
+          analysis = json.loads((result / "analysis.json").read_text())
+          qc = json.loads((result / "qc.json").read_text())
+          verification = json.loads((result / "result-verification.json").read_text())
+          replay = json.loads((result / "reproducibility.json").read_text())
+          phase = json.loads((result / "phase-validation.json").read_text())
+          release = json.loads((result / "release-scan.json").read_text())
+          execution = json.loads((result / "execution-summary.json").read_text())
+          amendment = json.loads((root / "experiments/005-transfer-pilot-replacement/freeze-manifest.json").read_text())
+
+          assert analysis["progression"]["decision"] == "pilot_design_gates_passed"
+          assert analysis["progression"]["confirmatory_design_freeze_scientifically_justified"] is True
+          assert analysis["progression"]["confirmatory_partition_53_campaign_authorized"] is False
+          assert qc["overall_passed"] is True
+          assert verification["passed"] is True
+          assert replay["passed"] is True
+          assert phase["passed"] is True
+          assert release["passed"] is True
+          assert execution["status"] == "EXECUTION_COMPLETE_PENDING_FROZEN_SCIENTIFIC_GATE_EVALUATION"
+          assert manifest["amendment_freeze_id"] == amendment["freeze_id"]
+          assert not (root / "experiments/005-confirmatory").exists()
+          assert not (root / "results/experiment-005-confirmatory").exists()
+          print("Experiment 005 frozen closeout package integrity passed")
+          PY
+            uv run ruff check .
+            uv run python -m compileall -q src tests
+            uv run kri-space-lab verify-gate
+          elif [[ -f results/experiment-004-replacement-confirmatory/result-verification.json ]]; then
             # Completed replacement confirmatory phase. Historical pre-materialization
             # absence assertions are phase-inapplicable; immutable freeze bytes remain checked.
             uv run pytest \

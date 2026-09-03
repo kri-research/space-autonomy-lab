@@ -1,0 +1,27 @@
+{
+  "all_frozen_gates": true,
+  "checkpoint_integrity": true,
+  "confirmatory_design_freeze_scientifically_justified": true,
+  "confirmatory_partition_53_campaign_authorized": false,
+  "counts": {
+    "complete_blocks": 20,
+    "episode_rows": 40,
+    "replay_blocks": 10,
+    "replay_episode_rows": 20,
+    "root_rows": 20
+  },
+  "decision": "pilot_design_gates_passed",
+  "digests": {
+    "campaign_rows_sha256": "0a890fce567b0a6138c487b8ce34da5ed63ee8343a222e110434c832e05de338",
+    "replay_rows_sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb",
+    "seed_manifest_sha256": "45aa70402ee19586c14c24e4f75dedfd572d8cced9e8d9c51969c801e6704fab"
+  },
+  "frozen_identity": true,
+  "partition_52_invalid_attempt_preserved": true,
+  "partition_53_untouched": true,
+  "passed": true,
+  "phase": "post_partition_54_result_verification",
+  "phase_validation": true,
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0",
+  "seed_integrity": true
+}
