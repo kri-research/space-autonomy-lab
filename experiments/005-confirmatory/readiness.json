@@ -1,0 +1,22 @@
+{
+  "confirmatory_outcomes_executed": false,
+  "confirmatory_seeds_materialized": false,
+  "decision": "READY",
+  "episode_rows": 2136,
+  "freeze_id": "1acd0af2246fb5ba1e86da0302f6b7f3cda57e59018068186375507000d264ca",
+  "generator_authorized": true,
+  "generator_invoked": false,
+  "maximum_replacement_roots": 0,
+  "maximum_retries": 0,
+  "next_command": "uv run python -m kri_space_autonomy.experiment_005_confirmatory.workflow execute --workers 8",
+  "next_task": "one write-once partition-53 confirmatory execution after independent review",
+  "paired_blocks": 1068,
+  "partition_code": 53,
+  "partition_state": "reserved_not_materialized_or_executed",
+  "readiness_id": "5f8d50cea51501c08d83c22a08ed9625014c5ee933ae9a4e95b65069ff05f4f4",
+  "replay_blocks": 16,
+  "replay_episode_rows": 32,
+  "schema_version": "experiment-005-confirmatory-assurance-1.0",
+  "scope": "one write-once 2,136-episode partition-53 confirmatory campaign",
+  "status": "READY_FOR_PARTITION_53_EXECUTION"
+}

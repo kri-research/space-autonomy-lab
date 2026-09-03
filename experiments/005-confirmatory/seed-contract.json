@@ -1,0 +1,72 @@
+{
+  "schema_version": "experiment-005-confirmatory-assurance-1.0",
+  "bit_generator": "PCG64DXSM",
+  "master_seed": 5005,
+  "partition_code": 53,
+  "status_at_freeze": "reserved_not_materialized_or_executed",
+  "derivation": "SeedSequence([master, partition, geometry_case, challenge_case, replicate, stream])",
+  "cases": [
+    {
+      "id": "T03_primary_navigation_bias",
+      "roots": 534,
+      "primary_weight": 0.5
+    },
+    {
+      "id": "T04_primary_navigation_dropout",
+      "roots": 534,
+      "primary_weight": 0.5
+    }
+  ],
+  "stream_codes": {
+    "initial_truth_state": 201,
+    "mechanics_perturbation": 202,
+    "primary_navigation": 203,
+    "monitor_navigation": 204,
+    "challenge_parameters": 205,
+    "actuation": 206,
+    "cell_order": 207
+  },
+  "root_identity_namespace": "experiment005:53:<case_code>:<replicate>",
+  "configurations": [
+    "primary_reference",
+    "independent_monitor_gate"
+  ],
+  "configuration_order": "the partition-53 cell_order stream chooses the first configuration at replicate 0 and order alternates thereafter; each even case count is exactly balanced",
+  "expected_root_rows": 1068,
+  "expected_episode_rows": 2136,
+  "replay_selection": "replicates 0 through 7 in each frozen case; outcome-blind",
+  "replay_roots_per_case": 8,
+  "expected_replay_root_rows": 16,
+  "expected_replay_episode_rows": 32,
+  "materialization_prerequisite": "exact Experiment 005 confirmatory freeze, readiness, lineage, and seed-contract identities must verify before the partition-53 generator is invoked",
+  "materialization_outputs": [
+    "experiments/005-confirmatory/seeds/confirmatory.jsonl",
+    "experiments/005-confirmatory/seeds/replay-subset.json",
+    "experiments/005-confirmatory/seeds/index.json"
+  ],
+  "execution_outputs": [
+    "results/experiment-005-confirmatory/campaign/confirmatory-episodes.jsonl",
+    "results/experiment-005-confirmatory/replay/confirmatory-episodes.jsonl"
+  ],
+  "generator_available_after_verified_freeze": true,
+  "generator_invoked": false,
+  "write_once_materialization": true,
+  "disjoint_from_partitions": [
+    51,
+    52,
+    54,
+    951
+  ],
+  "historical_master_domains": [
+    1001,
+    2002,
+    3003,
+    4004
+  ],
+  "checkpoint_continuation": "after interruption only, validate every completed shard and execute missing unpublished paired blocks",
+  "completed_valid_blocks_recomputed": false,
+  "maximum_retries": 0,
+  "maximum_replacement_roots": 0,
+  "replacement_extension_or_count_drift_allowed": false,
+  "outcome_dependent_materialization_allowed": false
+}
