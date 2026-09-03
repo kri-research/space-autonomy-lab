@@ -1,0 +1,34 @@
+{
+  "schema_version": "experiment-005-confirmatory-assurance-1.0",
+  "recorded_at_utc": "2026-09-03T12:19:19Z",
+  "audited_head": "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8",
+  "audited_branch": "experiment-005-confirmatory-design-v2",
+  "verifier_phase": "complete_verifier_run_before_partition_53_design_creation",
+  "complete_closeout_verifier": {
+    "command": "uv run python -m kri_space_autonomy.experiment_005_transfer_pilot_replacement_closeout verify",
+    "passed": true,
+    "evidence_passed": true,
+    "decision": "pilot_design_gates_passed",
+    "errors_preview": [],
+    "missing": [],
+    "transient_execution_files": [],
+    "confirmatory_design_freeze_scientifically_justified": true,
+    "confirmatory_partition_53_campaign_authorized": false
+  },
+  "commit_chain": [
+    "344dfe4251e6b7aa654fc57c4f0cf9af21f6c342",
+    "27993dcd6b3f45aa3283798f34c2a9160767697d",
+    "90de438624556f4890444105fe3c0c19667d5bfa",
+    "a311c4f6439c13666a1df6b102fd0fd2bbd35a55",
+    "cf007e1cd7e44002069a8a5812867201d349f292",
+    "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8"
+  ],
+  "linear_ancestry_passed": true,
+  "foundation_workflow_sha256": "bc033a3ddc0114964059760a6372b8da233b8aac1026d24af2a795c5b607f420",
+  "partition_53_seed_directory_present": false,
+  "partition_53_result_directory_present": false,
+  "partition_53_materialized_root_rows": 0,
+  "partition_53_executed": false,
+  "blocker_audit_preserved": true,
+  "blocker_audit_sha256": "8780e06580187cc4c6f7a1307ebf7c36e94040c3ddcb5a9133b4166adf33f96f"
+}

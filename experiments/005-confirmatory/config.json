@@ -1,0 +1,48 @@
+{
+  "schema_version": "experiment-005-confirmatory-assurance-1.0",
+  "base_commit": "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8",
+  "foundation_freeze_id": "921c481726d6f078621ff3a355a7803af803bdc61a8a2da07ffb974a433b3be8",
+  "foundation_readiness_id": "9ec734543fd3580e9a2990a16dc56747a0f75334f76bd2c7ae1fdc3647732e67",
+  "transfer_pilot_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+  "transfer_pilot_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3",
+  "replacement_amendment_freeze_id": "01504ff16ccf8a79dad67f88c4d40920be39dfa929169ccb72fdfcede18b34c1",
+  "replacement_amendment_readiness_id": "3181e1a9b40c3ab32b684934d8c975b3eeeee44c2b38cd9dc80e0f0c589328c0",
+  "partition_54_closeout_manifest_sha256": "5c33237028e0ea23f52413c19fe419aa1bead2fbc7378c2e8f1b30d904d1d804",
+  "partition_54_result_verification_sha256": "5e3cbf07d78f4d02b2f5c95e26b5d7e6fe0932e68b7bd5382231346890fec782",
+  "master_seed": 5005,
+  "confirmatory_partition_code": 53,
+  "test_fixture_partition_code": 951,
+  "configurations": [
+    "primary_reference",
+    "independent_monitor_gate"
+  ],
+  "cases": [
+    "T03_primary_navigation_bias",
+    "T04_primary_navigation_dropout"
+  ],
+  "case_weights": {
+    "T03_primary_navigation_bias": 0.5,
+    "T04_primary_navigation_dropout": 0.5
+  },
+  "roots_by_case": {
+    "T03_primary_navigation_bias": 534,
+    "T04_primary_navigation_dropout": 534
+  },
+  "standard_horizon_s": 300.0,
+  "minimum_covariance_eigenvalue_lower_bound": -1e-12,
+  "maximum_covariance_trace_exclusive_upper_bound": 1000000.0,
+  "primary_one_sided_alpha": 0.025,
+  "primary_planning_net_reduction": 0.1,
+  "primary_minimum_reportable_net_reduction": 0.05,
+  "primary_target_power": 0.9,
+  "mission_harm_margin": 0.05,
+  "mission_harm_planning_rate": 0.01,
+  "replay_roots_per_case": 8,
+  "maximum_infrastructure_failures": 0,
+  "maximum_retries": 0,
+  "maximum_replacement_roots": 0,
+  "secondary_inferential_family_defined": false,
+  "outcome_dependent_design_change_permitted": false,
+  "partition_54_outcomes_used_for_design": false,
+  "learned_policy_claim_allowed": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "experiment-005-confirmatory-assurance-1.0",
+  "population_kind": "equal-weight synthetic nonlinear-truth primary-navigation challenge population; weights are design weights, not operational prevalence",
+  "source_design": {
+    "case_matrix": "experiments/005-transfer-pilot/case-matrix.json",
+    "config": "experiments/005-transfer-pilot/config.json",
+    "cases_and_challenge_values_changed": false
+  },
+  "forced_physical_fixtures_in_scientific_population": false,
+  "cases": [
+    {
+      "id": "T03_primary_navigation_bias",
+      "geometry_code": 0,
+      "challenge_code": 1,
+      "case_code": 1,
+      "roots": 534,
+      "primary_weight": 0.5,
+      "role": "primary inferential population",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "mechanism": "frozen +8 m primary-only radial navigation bias for 30 s with the independent monitor channel unaffected",
+      "justification": "tests whether independent monitor information can alter a command corrupted by biased primary navigation"
+    },
+    {
+      "id": "T04_primary_navigation_dropout",
+      "geometry_code": 0,
+      "challenge_code": 2,
+      "case_code": 2,
+      "roots": 534,
+      "primary_weight": 0.5,
+      "role": "primary inferential population",
+      "fixture": "stochastic_bounded_initial_state",
+      "horizon_kind": "standard",
+      "mechanism": "frozen 6 s primary-only packet dropout with the independent monitor channel unaffected",
+      "justification": "tests loss of primary information separately from biased primary information"
+    }
+  ],
+  "configuration_comparison": [
+    {
+      "id": "primary_reference",
+      "controller_input": "primary HCW navigation snapshot",
+      "monitor_input": "processed for channel diagnostics but has no command authority",
+      "command_path": "frozen deterministic vector LQR reference"
+    },
+    {
+      "id": "independent_monitor_gate",
+      "controller_input": "primary HCW navigation snapshot",
+      "monitor_input": "independent monitor HCW navigation snapshot",
+      "command_path": "the same frozen deterministic vector LQR proposal through the frozen estimated-geometry gate and fallback"
+    }
+  ],
+  "technical_failure_policy": {
+    "estimator_or_monitor_fault_flags": "report mechanism-specifically; never relabel as a physical event",
+    "invalid_action_or_numerical_failure": "separate technical invalidity; any occurrence closes confirmatory inference",
+    "infrastructure_failure_or_missing_cell": "no retry, replacement, imputation, or extension; any occurrence closes confirmatory inference"
+  }
+}

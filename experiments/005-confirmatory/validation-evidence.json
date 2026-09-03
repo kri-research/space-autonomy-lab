@@ -1,0 +1,414 @@
+{
+  "checks": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0,
+      "summary": "Checked 9 packages in 2ms"
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0,
+      "summary": "All checks passed!"
+    },
+    {
+      "command": "uv run pytest -q tests/test_experiment_005_dynamics.py tests/test_experiment_005_geometry.py tests/test_experiment_005_runner.py tests/test_experiment_005_confirmatory_design.py tests/test_experiment_005_confirmatory_analysis.py tests/test_experiment_005_confirmatory_seeds.py tests/test_experiment_005_confirmatory_validation.py",
+      "id": "experiment_005_confirmatory_focused_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": "........................                                                 [100%]"
+    },
+    {
+      "command": "uv run pytest -q --deselect tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots --deselect tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized --deselect tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them --deselect tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization --deselect tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent --deselect tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains --deselect tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44 --deselect tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free --deselect tests/test_experiment_004_pilot_design.py::test_partition_44_remains_reserved_unmaterialized_and_has_no_generator --deselect tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains --deselect tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests --deselect tests/test_experiment_004_confirmatory_design.py::test_partition_44_contract_is_fixed_and_unmaterialized --deselect tests/test_experiment_004_confirmatory_seeds.py::test_generator_is_exact_freeze_gated_but_not_invoked_by_design_tests --deselect tests/test_experiment_004_confirmatory_validation.py::test_partition_44_has_no_seed_result_or_root_rows --deselect tests/test_experiment_004_replacement.py::test_replacement_preserves_science_and_reserves_fresh_partition --deselect tests/test_experiment_004_replacement.py::test_worker_policy_and_pre_freeze_validation --deselect tests/test_experiment_005_transfer_pilot_workflow.py::test_partition_53_is_untouched_and_has_no_generator_or_roots --deselect tests/test_experiment_005_transfer_pilot_closeout.py::test_invalid_partition_52_attempt_is_preserved_and_verified --deselect tests/test_experiment_005_transfer_pilot_replacement.py::test_amendment_preserves_invalid_closeout_and_scientific_design --deselect tests/test_experiment_005_transfer_pilot_replacement_closeout.py::test_partition_54_execution_and_frozen_gates_validate --deselect tests/test_experiment_005_transfer_pilot_replacement_closeout.py::test_closeout_is_descriptive_and_leaves_partition_53_untouched --deselect tests/test_experiment_005_transfer_pilot_replacement_closeout.py::test_public_closeout_package_verifies_when_materialized",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0,
+      "summary": ".....................................................................    [100%]"
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0,
+      "summary": "}"
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0,
+      "summary": ""
+    },
+    {
+      "id": "confirmatory_design_fail_closed_checks",
+      "observed": {
+        "checks": {
+          "case_matrix_and_outcome_boundary": {
+            "cases": [
+              "T03_primary_navigation_bias",
+              "T04_primary_navigation_dropout"
+            ],
+            "checks": {
+              "configuration_semantics_frozen": true,
+              "equal_fixed_weights": true,
+              "exact_two_primary_cases": true,
+              "forced_fixtures_excluded": true,
+              "frozen_covariance_validity_gates": true,
+              "frozen_transfer_challenges": true,
+              "no_observed_outcome_fields_imported": true,
+              "partition_54_outcomes_used_for_design": true,
+              "pre_outcome_analysis_contract_inherited": true
+            },
+            "outcome_fields_present": [],
+            "partition_54_effect_rate_direction_or_discordance_used": false,
+            "partition_54_permitted_use": "mechanics, feasibility, process launch, checkpoint, replay, and integrity only",
+            "passed": true
+          },
+          "complete_experiment_005_lineage": {
+            "base_commit": "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8",
+            "blocker_audit_preserved": true,
+            "errors_preview": [],
+            "foundation_source_identity": {
+              "errors_preview": [],
+              "foundation_commit": "344dfe4251e6b7aa654fc57c4f0cf9af21f6c342",
+              "foundation_commit_ancestor": true,
+              "foundation_commit_object_present": true,
+              "freeze_id": "921c481726d6f078621ff3a355a7803af803bdc61a8a2da07ffb974a433b3be8",
+              "passed": true,
+              "phase_transition": {
+                "current_partition_51_state_owned_by": "experiments/005-transfer-pilot/calibration-evidence.json",
+                "foundation_files_modified": false,
+                "historical_partition_state_is_not_reasserted_as_current": true,
+                "historical_readiness_is_byte_identity_anchor": true
+              },
+              "readiness_id": "9ec734543fd3580e9a2990a16dc56747a0f75334f76bd2c7ae1fdc3647732e67",
+              "source_files_verified": 21,
+              "source_mismatches": [],
+              "status": "READY_FOR_DESIGN_VALIDATION_PILOT"
+            },
+            "foundation_workflow_restored": true,
+            "frozen_hashes": {
+              ".github/workflows/ci.yml": "bc033a3ddc0114964059760a6372b8da233b8aac1026d24af2a795c5b607f420",
+              "docs/experiment-005-confirmatory-design-blocker.md": "8780e06580187cc4c6f7a1307ebf7c36e94040c3ddcb5a9133b4166adf33f96f",
+              "experiments/005-transfer-pilot-replacement/freeze-manifest.json": "ab754552f8beabbbad5c6e43cccd23c0e658a2f2783fa2dcaed1f9afe7bd38eb",
+              "experiments/005-transfer-pilot-replacement/readiness.json": "e1733fda8bb388dabdfc2fd5494d65411b32e4b89a0e72ddf2d0d9a363b4dd7c",
+              "experiments/005-transfer-pilot/freeze-manifest.json": "871baad028464a074030ef572870172167bd7d0b7ade70b578c6c30f5b3349ff",
+              "experiments/005-transfer-pilot/readiness.json": "6d62df08b7a835370a404800cdd32fa1829e297985f9f5f01d13e9c4ed4a248d",
+              "experiments/005/freeze-manifest.json": "2a32494b4db71a7bec908426f0ec8e0f60a63a853bc220e63b481ddc8939131e",
+              "experiments/005/readiness.json": "7a4a4abdb2fe068b794a1b4dfa6e4c62c037f31563c26df536fb9495c45e539d",
+              "results/experiment-005-transfer-pilot-replacement/checksums.sha256": "1799c0a00fa49b21eb7dc8cf363031960de998ed457597930c4bc845e569c975",
+              "results/experiment-005-transfer-pilot-replacement/design-integrity-postexecution.json": "f1aca26e9e160ef903b2c0833bb2751ff42beae3ca749e8f7594b26845992ce9",
+              "results/experiment-005-transfer-pilot-replacement/manifest.json": "5c33237028e0ea23f52413c19fe419aa1bead2fbc7378c2e8f1b30d904d1d804",
+              "results/experiment-005-transfer-pilot-replacement/reproducibility.json": "79addb6583a0129fb871776d026a87345093959cb5495a0d43188ae6fce1b5f1",
+              "results/experiment-005-transfer-pilot-replacement/result-verification.json": "5e3cbf07d78f4d02b2f5c95e26b5d7e6fe0932e68b7bd5382231346890fec782",
+              "results/experiment-005-transfer-pilot/invalid-attempt-audit.json": "66ad8dfb592ce5129459f0fda6c7b10c32390592e4960e95278168e97e5e3807"
+            },
+            "head": "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8",
+            "historical_campaign_result_integrity": {
+              "checks": [
+                {
+                  "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+                  "id": "experiment_002_freeze",
+                  "passed": true,
+                  "returncode": 0,
+                  "summary": "}"
+                },
+                {
+                  "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+                  "id": "experiment_002_results",
+                  "passed": true,
+                  "returncode": 0,
+                  "summary": "}"
+                },
+                {
+                  "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+                  "id": "experiment_003_pilot",
+                  "passed": true,
+                  "returncode": 0,
+                  "summary": ""
+                },
+                {
+                  "command": "cross-platform-aware frozen E003 confirmatory verification",
+                  "details": {
+                    "freeze_passed": true,
+                    "results_passed": true
+                  },
+                  "id": "experiment_003_confirmatory",
+                  "passed": true,
+                  "returncode": 0,
+                  "summary": "native deterministic rederivation"
+                },
+                {
+                  "command": "uv run python -m kri_space_autonomy.experiment_004_closeout verify",
+                  "id": "experiment_004_closeout",
+                  "passed": true,
+                  "returncode": 0,
+                  "summary": "}"
+                }
+              ],
+              "passed": true
+            },
+            "historical_snapshot": {
+              "allowed_completed_partition_54_change": [
+                "docs/research-roadmap.md"
+              ],
+              "historical_experiments_001_004_and_results_included": true,
+              "mismatches": 1,
+              "mismatches_preview": [
+                "docs/research-roadmap.md"
+              ],
+              "passed": false,
+              "phase_appropriate_passed": true,
+              "protected_files": 415
+            },
+            "identities": {
+              "foundation_freeze_id": "921c481726d6f078621ff3a355a7803af803bdc61a8a2da07ffb974a433b3be8",
+              "foundation_readiness_id": "9ec734543fd3580e9a2990a16dc56747a0f75334f76bd2c7ae1fdc3647732e67",
+              "replacement_amendment_freeze_id": "01504ff16ccf8a79dad67f88c4d40920be39dfa929169ccb72fdfcede18b34c1",
+              "replacement_amendment_readiness_id": "3181e1a9b40c3ab32b684934d8c975b3eeeee44c2b38cd9dc80e0f0c589328c0",
+              "transfer_pilot_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+              "transfer_pilot_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3"
+            },
+            "invalid_partition_52_preserved": true,
+            "linear_chain": [
+              "344dfe4251e6b7aa654fc57c4f0cf9af21f6c342",
+              "27993dcd6b3f45aa3283798f34c2a9160767697d",
+              "90de438624556f4890444105fe3c0c19667d5bfa",
+              "a311c4f6439c13666a1df6b102fd0fd2bbd35a55",
+              "cf007e1cd7e44002069a8a5812867201d349f292",
+              "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8"
+            ],
+            "partition_54_closeout": {
+              "campaign_rows_sha256": "0a890fce567b0a6138c487b8ce34da5ed63ee8343a222e110434c832e05de338",
+              "errors_preview": [],
+              "manifest_artifacts_verified": 52,
+              "partition_52_invalid_attempt_preserved": true,
+              "partition_53_campaign_authorized": false,
+              "passed": true,
+              "replay_byte_identical": true,
+              "replay_rows_sha256": "88435a577419c3e426ede0f1fd9191fcc40b30d041900fcabef117b54e4e21cb"
+            },
+            "passed": true,
+            "pre_design_complete_verifier": true,
+            "source_manifests": [
+              {
+                "manifest": "experiments/005/freeze-manifest.json",
+                "passed": true,
+                "source_files_verified": 21,
+                "source_mismatches": []
+              },
+              {
+                "manifest": "experiments/005-transfer-pilot/freeze-manifest.json",
+                "passed": true,
+                "source_files_verified": 29,
+                "source_mismatches": []
+              },
+              {
+                "manifest": "experiments/005-transfer-pilot-replacement/freeze-manifest.json",
+                "passed": true,
+                "source_files_verified": 30,
+                "source_mismatches": []
+              }
+            ]
+          },
+          "controller_monitor_information_boundary": {
+            "control_function_parameters": [
+              "primary_snapshot",
+              "monitor_snapshot",
+              "controller",
+              "monitor",
+              "configuration_id"
+            ],
+            "controller_inputs": "primary HCW navigation snapshot only",
+            "monitor_inputs": "monitor HCW navigation snapshot and proposed command only",
+            "passed": true,
+            "physical_truth_or_event_evidence_returned_online": false,
+            "prohibited_names_found": []
+          },
+          "dependency_runtime_identity": {
+            "dependency_file_hashes": {
+              ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+              "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+              "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+            },
+            "expected_versions": {
+              "numpy_version": "2.4.6",
+              "python": "3.11.16",
+              "scipy_version": "1.17.0"
+            },
+            "mismatches": [],
+            "observed": {
+              "architecture": "arm64",
+              "implementation": "CPython",
+              "numpy_version": "2.4.6",
+              "os": "Darwin",
+              "python": "3.11.16",
+              "scipy_version": "1.17.0",
+              "thread_variables": {}
+            },
+            "passed": true,
+            "platform_match_required_for_future_replay": true
+          },
+          "execution_and_generator_protocol": {
+            "checks": {
+              "complete_schedule_required": true,
+              "exact_freeze_gate": true,
+              "explicit_spawn": true,
+              "frozen_initial_state_generator_reused": true,
+              "generator_not_invoked": true,
+              "importable_entrypoint": true,
+              "missing_only_continuation": true,
+              "no_replacement_counter": true,
+              "no_retry_counter": true,
+              "partition_53_only": true,
+              "terminal_failure_record": true,
+              "write_once_target_guard": true
+            },
+            "passed": true
+          },
+          "partition_53_unmaterialized_unexecuted": {
+            "generator_invoked": false,
+            "historical_root_overlap": 0,
+            "outcomes_executed": false,
+            "overlap_preview": [],
+            "partition_code": 53,
+            "passed": true,
+            "seed_or_result_paths_present": [],
+            "state": "reserved_not_materialized_or_executed"
+          },
+          "publication_privacy_secrets": {
+            "base_opaque_files_grandfathered_by_ce50129_identity": true,
+            "enumeration": "tracked plus untracked nonignored public files",
+            "files_scanned": 567,
+            "new_opaque_files": 0,
+            "new_opaque_files_preview": [],
+            "passed": true,
+            "provenance_privacy_scan": {
+              "enumeration": "tracked plus untracked nonignored files",
+              "files_scanned": 567,
+              "matches": 0,
+              "matches_preview": [],
+              "opaque_files": 0,
+              "opaque_files_preview": [],
+              "passed": true
+            },
+            "secret_matches": 0,
+            "secret_matches_preview": []
+          },
+          "sample_size_and_analysis": {
+            "minimum_even_count": true,
+            "mission": {
+              "achieved_alpha": 0.021699966453092114,
+              "achieved_power": 0.9999999999964628,
+              "margin": 0.05,
+              "maximum_harms_for_rejection": 39,
+              "planning_rate": 0.01,
+              "roots": 1068
+            },
+            "partition_54_outcome_used": false,
+            "passed": true,
+            "previous_even_count_power": 0.8997209066804859,
+            "primary": {
+              "achieved_alpha": 0.023327050024457185,
+              "achieved_power": 0.9005869214221006,
+              "critical_beneficial_discordances_if_all_discordant": 567,
+              "null_beneficial_probability": 0.5,
+              "planning_beneficial_probability": 0.55,
+              "roots": 1068,
+              "worst_case_discordance_fraction": 1.0
+            }
+          },
+          "seed_contract_and_partition_53_absence": {
+            "contract_sha256": "6ad4a2ad1344bf8455490271c4ae94b7fc9be6b9e19cedd3748676bc48391dfa",
+            "errors_preview": [],
+            "expected_episode_rows": 2136,
+            "expected_replay_episode_rows": 32,
+            "expected_replay_root_rows": 16,
+            "expected_root_rows": 1068,
+            "partition": {
+              "generator_invoked": false,
+              "historical_root_overlap": 0,
+              "outcomes_executed": false,
+              "overlap_preview": [],
+              "partition_code": 53,
+              "passed": true,
+              "seed_or_result_paths_present": [],
+              "state": "reserved_not_materialized_or_executed"
+            },
+            "passed": true
+          },
+          "synthetic_analysis_signs": {
+            "checks": {
+              "beneficial_fixture_favorable": true,
+              "covariance_failure_invalidates_inference": true,
+              "fault_activation_failure_invalidates_inference": true,
+              "mission_harm_gate_closes": true,
+              "reversed_fixture_inconclusive": true,
+              "saturated_endpoint_inconclusive": true
+            },
+            "fixtures_are_synthetic_non_outcome_rows": true,
+            "partition_53_used": false,
+            "passed": true
+          }
+        },
+        "partition_53_executed": false,
+        "partition_53_generator_authorized_after_freeze": true,
+        "partition_53_generator_invoked": false,
+        "partition_53_materialized": false,
+        "partition_54_outcomes_used_for_design": false,
+        "passed": true,
+        "scientific_findings_claimed": false
+      },
+      "passed": true
+    }
+  ],
+  "partition_53_executed": false,
+  "partition_53_generator_invoked": false,
+  "partition_53_materialized": false,
+  "partition_54_outcomes_used_for_design": false,
+  "partition_54_use": "mechanics, feasibility, process launch, checkpoint, replay, and integrity only",
+  "passed": true,
+  "phase": "pre_partition_53_confirmatory_design_validation",
+  "phase_appropriate_exclusions": {
+    "reason": "historical absence assertions are superseded by the prospective design phase; immutable source, result, replay, and checksum identities remain mandatory",
+    "tests": [
+      "tests/test_experiment_002_confirmatory_design.py::test_seed_contract_has_exact_eight_strata_without_materialized_roots",
+      "tests/test_experiment_002_confirmatory_workflow.py::test_freeze_phase_requires_partition_16_to_remain_unmaterialized",
+      "tests/test_experiment_003_design.py::test_seed_contract_reserves_outcome_partitions_without_materializing_them",
+      "tests/test_experiment_003_confirmatory_design.py::test_analysis_and_seed_contract_are_frozen_without_partition_32_materialization",
+      "tests/test_experiment_003_confirmatory_workflow.py::test_runtime_dependencies_match_frozen_foundation_and_partition_32_is_absent",
+      "tests/test_experiment_004_foundation.py::test_seed_contract_separates_all_pre_outcome_and_future_domains",
+      "tests/test_experiment_004_pilot_calibration.py::test_calibration_evidence_does_not_materialize_partition_43_or_44",
+      "tests/test_experiment_004_pilot_design.py::test_exact_foundation_identity_is_anchored_and_outcome_free",
+      "tests/test_experiment_004_pilot_design.py::test_partition_44_remains_reserved_unmaterialized_and_has_no_generator",
+      "tests/test_experiment_004_pilot_seeds.py::test_seed_contract_freezes_counts_replay_and_disjoint_reserved_domains",
+      "tests/test_experiment_004_pilot_seeds.py::test_no_reserved_output_is_created_by_design_or_tests",
+      "tests/test_experiment_004_confirmatory_design.py::test_partition_44_contract_is_fixed_and_unmaterialized",
+      "tests/test_experiment_004_confirmatory_seeds.py::test_generator_is_exact_freeze_gated_but_not_invoked_by_design_tests",
+      "tests/test_experiment_004_confirmatory_validation.py::test_partition_44_has_no_seed_result_or_root_rows",
+      "tests/test_experiment_004_replacement.py::test_replacement_preserves_science_and_reserves_fresh_partition",
+      "tests/test_experiment_004_replacement.py::test_worker_policy_and_pre_freeze_validation",
+      "tests/test_experiment_005_transfer_pilot_workflow.py::test_partition_53_is_untouched_and_has_no_generator_or_roots",
+      "tests/test_experiment_005_transfer_pilot_closeout.py::test_invalid_partition_52_attempt_is_preserved_and_verified",
+      "tests/test_experiment_005_transfer_pilot_replacement.py::test_amendment_preserves_invalid_closeout_and_scientific_design",
+      "tests/test_experiment_005_transfer_pilot_replacement_closeout.py::test_partition_54_execution_and_frozen_gates_validate",
+      "tests/test_experiment_005_transfer_pilot_replacement_closeout.py::test_closeout_is_descriptive_and_leaves_partition_53_untouched",
+      "tests/test_experiment_005_transfer_pilot_replacement_closeout.py::test_public_closeout_package_verifies_when_materialized"
+    ]
+  },
+  "schema_version": "experiment-005-confirmatory-assurance-1.0",
+  "scientific_findings_claimed": false,
+  "smallest_blocker": null,
+  "status": "READY_TO_FREEZE_PARTITION_53_DESIGN",
+  "validated_at_utc": "2026-09-03T14:35:32.692737+00:00"
+}
