@@ -1,0 +1,44 @@
+{
+  "commands": [
+    {
+      "command": "uv sync --frozen --extra dev",
+      "id": "dependency_lock",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run ruff check .",
+      "id": "ruff",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run pytest -q",
+      "id": "phase_appropriate_repository_tests",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run python -m compileall -q src tests",
+      "id": "compileall",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "uv run kri-space-lab verify-gate",
+      "id": "stable_gate",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "command": "git diff --check",
+      "id": "diff_whitespace",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "passed": true,
+  "phase": "post_partition_54_pilot_closeout",
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0",
+  "scientific_cells_executed": 0
+}

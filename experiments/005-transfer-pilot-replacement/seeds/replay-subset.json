@@ -1,0 +1,18 @@
+{
+  "expected_blocks": 10,
+  "expected_episodes": 20,
+  "root_seed_ids": [
+    "experiment005:54:000:0000",
+    "experiment005:54:100:0000",
+    "experiment005:54:200:0000",
+    "experiment005:54:001:0000",
+    "experiment005:54:002:0000",
+    "experiment005:54:003:0000",
+    "experiment005:54:004:0000",
+    "experiment005:54:005:0000",
+    "experiment005:54:006:0000",
+    "experiment005:54:007:0000"
+  ],
+  "schema_version": "experiment-005-transfer-pilot-replacement-amendment-1.0",
+  "selection": "replicate 0 in every frozen case; outcome-blind and unchanged"
+}

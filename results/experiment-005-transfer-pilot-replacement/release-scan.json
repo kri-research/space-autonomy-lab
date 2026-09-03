@@ -1,0 +1,19 @@
+{
+  "base_opaque_files_grandfathered_by_ce50129_identity": true,
+  "enumeration": "tracked plus untracked nonignored public files",
+  "files_scanned": 545,
+  "new_opaque_files": 0,
+  "new_opaque_files_preview": [],
+  "passed": true,
+  "provenance_privacy_scan": {
+    "enumeration": "tracked plus untracked nonignored files",
+    "files_scanned": 545,
+    "matches": 0,
+    "matches_preview": [],
+    "opaque_files": 0,
+    "opaque_files_preview": [],
+    "passed": true
+  },
+  "secret_matches": 0,
+  "secret_matches_preview": []
+}

@@ -1,0 +1,261 @@
+{
+  "frozen_identity": {
+    "amendment_freeze_id": "01504ff16ccf8a79dad67f88c4d40920be39dfa929169ccb72fdfcede18b34c1",
+    "amendment_readiness_id": "3181e1a9b40c3ab32b684934d8c975b3eeeee44c2b38cd9dc80e0f0c589328c0",
+    "checks": {
+      "amendment_freeze": true,
+      "closeout_base_is_ancestor": true,
+      "invalid_partition_52_preserved": true,
+      "partition_53_untouched": true,
+      "runtime_identity": true
+    },
+    "closeout_base_commit": "a311c4f6439c13666a1df6b102fd0fd2bbd35a55",
+    "invalid_partition_52": {
+      "decision": "pilot_invalid_infrastructure_failure",
+      "errors_preview": [],
+      "frozen_identity": {
+        "design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+        "design_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3",
+        "foundation_freeze_id": "921c481726d6f078621ff3a355a7803af803bdc61a8a2da07ffb974a433b3be8",
+        "foundation_readiness_id": "9ec734543fd3580e9a2990a16dc56747a0f75334f76bd2c7ae1fdc3647732e67",
+        "passed": true,
+        "source_files_verified": 47,
+        "source_mismatches": []
+      },
+      "historical_campaign_result_integrity": {
+        "checks": [
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-freeze",
+            "id": "experiment_002_freeze",
+            "passed": true,
+            "returncode": 0,
+            "summary": "}"
+          },
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_002_confirmatory.workflow verify-results",
+            "id": "experiment_002_results",
+            "passed": true,
+            "returncode": 0,
+            "summary": "}"
+          },
+          {
+            "command": "uv run python -c from pathlib import Path; from kri_space_autonomy.experiment_003.workflow import verify_freeze,verify_results; r=Path.cwd(); assert verify_freeze(r,require_unmaterialized=False)['passed']; assert verify_results(r)['passed']",
+            "id": "experiment_003_pilot",
+            "passed": true,
+            "returncode": 0,
+            "summary": ""
+          },
+          {
+            "command": "cross-platform-aware frozen E003 confirmatory verification",
+            "details": {
+              "freeze_passed": true,
+              "results_passed": true
+            },
+            "id": "experiment_003_confirmatory",
+            "passed": true,
+            "returncode": 0,
+            "summary": "native deterministic rederivation"
+          },
+          {
+            "command": "uv run python -m kri_space_autonomy.experiment_004_closeout verify",
+            "id": "experiment_004_closeout",
+            "passed": true,
+            "returncode": 0,
+            "summary": "}"
+          }
+        ],
+        "passed": true
+      },
+      "information_boundary": {
+        "control_function_parameters": [
+          "primary_snapshot",
+          "monitor_snapshot",
+          "controller",
+          "monitor",
+          "configuration_id"
+        ],
+        "controller_inputs": "primary HCW navigation snapshot only",
+        "monitor_inputs": "monitor HCW navigation snapshot and proposed command only",
+        "passed": true,
+        "physical_truth_or_event_evidence_returned_online": false,
+        "prohibited_names_found": []
+      },
+      "materialization": {
+        "checks": {
+          "canonical_rows": true,
+          "deterministic_order": true,
+          "freeze_binding": true,
+          "frozen_counts": true,
+          "index_identity": true,
+          "manifest_hash": true,
+          "replay_hash": true,
+          "replay_selection": true,
+          "unique_partition_roots": true,
+          "within_case_order_balance": true
+        },
+        "generator_invocations": 1,
+        "manifest_sha256": "0c1b50b37f2e588d263f958ed12666e0cf547ad114736b30342bb445219f525e",
+        "passed": true,
+        "planned_episode_rows": 40,
+        "replay_subset_sha256": "d1b890c268425d62fcde88af39677a121521a6e75c9396b57f129efffbf2c79a",
+        "root_rows": 20,
+        "unique_roots": 20
+      },
+      "partition_53": {
+        "forbidden_symbols_found": [],
+        "passed": true,
+        "paths_present": [],
+        "root_rows": [],
+        "state": {
+          "code": 53,
+          "generator_available": false,
+          "status": "reserved_untouched_unmaterialized_hypothesis_sample_size_and_design_not_set"
+        }
+      },
+      "passed": true,
+      "publication_privacy": {
+        "base_opaque_files_grandfathered_by_ce50129_identity": true,
+        "enumeration": "tracked plus untracked nonignored public files",
+        "files_scanned": 537,
+        "new_opaque_files": 0,
+        "new_opaque_files_preview": [],
+        "passed": true,
+        "provenance_privacy_scan": {
+          "enumeration": "tracked plus untracked nonignored files",
+          "files_scanned": 537,
+          "matches": 0,
+          "matches_preview": [],
+          "opaque_files": 0,
+          "opaque_files_preview": [],
+          "passed": true
+        },
+        "secret_matches": 0,
+        "secret_matches_preview": []
+      },
+      "schema_version": "experiment-005-transfer-pilot-result-verification-1.0",
+      "status": "INVALID_ATTEMPT_VERIFIED",
+      "terminal_failure": {
+        "campaign_id": "7ffec887e937af837c3eef360cc861bd3fe456445e7210f7e6bd032e83b2fb4d",
+        "campaign_sha256": "90ab09451bbe9d336b18212bfecb1828ef0fbc0bbc5181eb4e7d9726a6d227a4",
+        "checks": {
+          "campaign_hash": true,
+          "campaign_identity": true,
+          "failure_hash": true,
+          "no_assembled_episode_output": true,
+          "no_completed_cells": true,
+          "no_transient_checkpoint_files": true,
+          "terminal_failure_identity": true
+        },
+        "completed_blocks": 0,
+        "durable_episode_rows": 0,
+        "failure_id": "07afccd053367767e5aa7b99db22974ee9722b492aa6589a592e945cee9f0474",
+        "passed": true,
+        "terminal_failure_sha256": "50ece4ca8fbc71e0049c47b104b541bc32d93a8be1d176d36bce70c97ce2b2b2",
+        "terminal_failures": 1,
+        "transient_paths": []
+      }
+    },
+    "original_design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+    "partition_53": {
+      "forbidden_symbols_found": [],
+      "passed": true,
+      "paths_present": [],
+      "root_rows": [],
+      "state": {
+        "code": 53,
+        "generator_available": false,
+        "status": "reserved_untouched_unmaterialized_hypothesis_sample_size_and_design_not_set"
+      }
+    },
+    "passed": true,
+    "runtime_identity": {
+      "dependency_file_hashes": {
+        ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+        "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+        "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+      },
+      "expected_versions": {
+        "numpy_version": "2.4.6",
+        "python": "3.11.16",
+        "scipy_version": "1.17.0"
+      },
+      "mismatches": [],
+      "observed": {
+        "architecture": "arm64",
+        "implementation": "CPython",
+        "numpy_version": "2.4.6",
+        "os": "Darwin",
+        "python": "3.11.16",
+        "scipy_version": "1.17.0",
+        "thread_variables": {}
+      },
+      "passed": true,
+      "platform_match_required_for_future_replay": true
+    },
+    "scientific_design": {
+      "cases": 10,
+      "changed_execution_identity_fields": [
+        "pilot_partition_code"
+      ],
+      "complete_blocks": 20,
+      "episodes": 40,
+      "metrics_thresholds_gates_changed": false,
+      "original_design_freeze_id": "3fa9fd6e9e4d3146af6495c07599ed792cfb52ce16e90d0dca234ed64295be8b",
+      "original_design_readiness_id": "ebc98c9eb9b14d2dc85351d68ca3c5c84791e050f2be038c7fdd9067ef6ce2f3",
+      "passed": true,
+      "protected_design_hashes": {
+        "case_matrix": true,
+        "config": true,
+        "gates": true,
+        "preregistration": true,
+        "seed_contract": true
+      },
+      "replay_blocks": 10,
+      "replay_episodes": 20,
+      "scientific_claims_enabled": false,
+      "scientific_field_count_compared": 39,
+      "scientific_field_drift": []
+    }
+  },
+  "materialized_seed_evidence": {
+    "checks": {
+      "amendment_freeze_binding": true,
+      "canonical_manifest": true,
+      "deterministic_rederivation": true,
+      "exact_frozen_order": true,
+      "frozen_hashes": true,
+      "historical_root_overlap_zero": true,
+      "index_identity": true,
+      "partition_52_scenario_reuse_zero": true,
+      "replay_selection_frozen": true,
+      "twenty_unique_partition_54_roots": true,
+      "within_case_order_balance": true
+    },
+    "historical_root_overlap": 0,
+    "index_sha256": "818ee087d144385d6e75919d10406701fe9acb1831622802a696fe96984173e9",
+    "manifest_sha256": "45aa70402ee19586c14c24e4f75dedfd572d8cced9e8d9c51969c801e6704fab",
+    "partition_52_scenario_hash_overlap": 0,
+    "passed": true,
+    "replay_root_ids": [
+      "experiment005:54:000:0000",
+      "experiment005:54:100:0000",
+      "experiment005:54:200:0000",
+      "experiment005:54:001:0000",
+      "experiment005:54:002:0000",
+      "experiment005:54:003:0000",
+      "experiment005:54:004:0000",
+      "experiment005:54:005:0000",
+      "experiment005:54:006:0000",
+      "experiment005:54:007:0000"
+    ],
+    "replay_spec_sha256": "405801069294307513f86239f9b218b77ec62cc84a490fc34d759f17798b5aab",
+    "root_rows": 20,
+    "unique_roots": 20
+  },
+  "partition_52": "infrastructure_invalid_permanently_retired",
+  "partition_53": "reserved_untouched_unmaterialized_and_unexecuted",
+  "partition_54": "sole_valid_replacement_design_validation_pilot",
+  "passed": true,
+  "phase": "post_partition_54_execution_design_integrity",
+  "schema_version": "experiment-005-transfer-pilot-replacement-closeout-1.0"
+}
