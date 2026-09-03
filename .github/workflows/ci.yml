@@ -1,8 +1,8 @@
 name: CI
 
 on:
-  push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: astral-sh/setup-uv@v6
         with:
           version: "0.12.5"
@@ -25,7 +27,15 @@ jobs:
       - name: Run phase-appropriate tests
         shell: bash
         run: |
-          if [[ -f results/experiment-004-replacement-confirmatory/result-verification.json ]]; then
+          if [[ -f results/experiment-005-transfer-pilot-replacement/result-verification.json ]]; then
+            # Completed Experiment 005 replacement pilot. Full historical validation is
+            # performed locally before packaging; CI re-checks the frozen closeout package
+            # and stable gate without replaying the entire historical test suite.
+            uv run pytest -q tests/test_experiment_005_transfer_pilot_replacement_closeout.py
+            uv run python -m kri_space_autonomy.experiment_005_transfer_pilot_replacement_closeout verify
+            uv run python -m kri_space_autonomy.experiment_005_transfer_pilot_replacement.workflow verify-freeze
+            uv run kri-space-lab verify-gate
+          elif [[ -f results/experiment-004-replacement-confirmatory/result-verification.json ]]; then
             # Completed replacement confirmatory phase. Historical pre-materialization
             # absence assertions are phase-inapplicable; immutable freeze bytes remain checked.
             uv run pytest \
