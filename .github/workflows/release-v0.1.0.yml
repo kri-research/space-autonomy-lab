@@ -1,0 +1,45 @@
+name: Release v0.1.0
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - release/v0.1.0.json
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate release metadata
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("release/v0.1.0.json").read_text())
+          citation = Path("CITATION.cff").read_text()
+          assert manifest["version"] == "0.1.0"
+          assert manifest["tag"] == "v0.1.0"
+          assert manifest["status"] == "stable_citable_research_release"
+          assert "version: 0.1.0" in citation
+          assert "date-released: 2026-09-08" in citation
+          assert Path(manifest["release_notes"]).is_file()
+          print("release metadata validated")
+          PY
+      - name: Create stable GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view v0.1.0 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "v0.1.0 release already exists"
+          else
+            gh release create v0.1.0 \
+              --repo "$GITHUB_REPOSITORY" \
+              --target "$GITHUB_SHA" \
+              --title "KRI Space Autonomy Lab v0.1.0" \
+              --notes-file docs/release-v0.1.0.md
+          fi
