@@ -1,0 +1,14 @@
+{
+  "schema": "kri-space-autonomy-lab-release/1.0",
+  "project": "KRI Space Autonomy Lab",
+  "version": "0.1.0",
+  "tag": "v0.1.0",
+  "release_date": "2026-09-08",
+  "status": "stable_citable_research_release",
+  "experiment_series": "001-005 complete",
+  "release_notes": "docs/release-v0.1.0.md",
+  "citation_file": "CITATION.cff",
+  "license": "Apache-2.0",
+  "scientific_rerun_required": false,
+  "claim_boundary": "Research software only; no flight-safety, operational-prevalence, 6-DoF, HIL, certification, regulatory, or KRI-STD-001 conformance claim."
+}
