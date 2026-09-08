@@ -1,0 +1,47 @@
+{
+  "schema": "kri-space-autonomy.experiment-005-confirmatory.closeout.v1",
+  "status": "closed_valid_inconclusive",
+  "partition_code": 53,
+  "campaign": {
+    "paired_blocks": 1068,
+    "episode_rows": 2136,
+    "validity_passed": true
+  },
+  "reproducibility": {
+    "replay_byte_identical": true
+  },
+  "decision": "inconclusive",
+  "primary_gatekeeping": {
+    "H1_physical_safety": {
+      "passed": false,
+      "reference_adverse_gate_safe": 0,
+      "gate_adverse_reference_safe": 0,
+      "discordant_pairs": 0,
+      "paired_roots": 1068,
+      "gate_minus_reference_risk_difference": 0.0,
+      "minimum_reportable_net_reduction": 0.05,
+      "one_sided_exact_p": 1.0,
+      "alpha": 0.025
+    },
+    "H2_mission": {
+      "status": "not_tested_primary_gate_closed",
+      "passed": null,
+      "harmful_pairs": 0,
+      "paired_roots": 1068,
+      "harm_rate": 0.0,
+      "margin": 0.05,
+      "alpha": 0.025
+    }
+  },
+  "integrity": {
+    "execution_summary_present": true,
+    "retries_used": 0,
+    "replacement_roots_used": 0,
+    "adaptive_extension_used": false,
+    "outcome_driven_tuning_used": false,
+    "endpoint_switching_used": false
+  },
+  "interpretation": "The frozen confirmatory study did not demonstrate a reduction in physical adverse-event risk because neither configuration produced a physical adverse event. No physical-safety degradation or observed monitor-induced hold loss was seen in the tested population.",
+  "claim_boundary": "Two-case synthetic nonlinear central-gravity assurance only; no operational prevalence, flight-safety, six-degree-of-freedom, hardware, or learned-policy claim.",
+  "rerun_authorized": false
+}
