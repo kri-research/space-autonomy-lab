@@ -6,6 +6,8 @@ Space Autonomy Lab is KRI's open-source testbed for studying spacecraft autonomy
 uncertainty, model mismatch, and runtime safety constraints. It is a technical companion to
 **KRI-STD-001, Trustworthy Onboard AI Standard for Safety-Critical Space Systems**.
 
+**Stable citable research release:** `v0.1.0`
+
 > **Research software only.** This repository is not flight software, a simulator of record,
 > certification evidence, or proof of KRI-STD-001 conformance.
 
@@ -192,8 +194,9 @@ fault prevalence, flight qualification, certification, or regulatory conformance
 
 ## Citation
 
-A `CITATION.cff` file is provided for citation tooling. The stable citable release is prepared as a
-separate release step so the final tag can bind an exact repository state.
+Use `CITATION.cff` or cite the stable GitHub release tagged `v0.1.0`. Release notes are in
+[`docs/release-v0.1.0.md`](docs/release-v0.1.0.md). Cite KRI-STD-001 separately where its assurance
+framework is used.
 
 ## Licence
 

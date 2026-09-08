@@ -1,13 +1,14 @@
 cff-version: 1.2.0
-message: "If you use this software in research, please cite the repository and KRI-STD-001 where relevant."
+message: "If you use Space Autonomy Lab v0.1.0 in research, please cite this software release and KRI-STD-001 where relevant."
 title: "KRI Space Autonomy Lab"
 type: software
 version: 0.1.0
-date-released: 2026-08-21
+date-released: 2026-09-08
 authors:
   - name: KRI
 license: Apache-2.0
 repository-code: "https://github.com/kri-research/space-autonomy-lab"
+repository-artifact: "https://github.com/kri-research/space-autonomy-lab/releases/tag/v0.1.0"
 references:
   - type: report
     title: "KRI-STD-001 Trustworthy Onboard AI Standard for Safety-Critical Space Systems"
