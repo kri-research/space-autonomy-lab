@@ -2,92 +2,81 @@
 
 **Executable research for trustworthy spacecraft autonomy.**
 
-Space Autonomy Lab is KRI's open-source research testbed for studying how onboard autonomy behaves
-under faults, uncertainty, and runtime safety constraints. It is designed as a technical companion
-to **KRI-STD-001, Trustworthy Onboard AI Standard for Safety-Critical Space Systems**.
+Space Autonomy Lab is KRI's open-source testbed for studying spacecraft autonomy under faults,
+uncertainty, model mismatch, and runtime safety constraints. It is a technical companion to
+**KRI-STD-001, Trustworthy Onboard AI Standard for Safety-Critical Space Systems**.
 
-KRI-STD-001 defines a written assurance framework. This repository makes selected concepts
-executable so they can be tested, measured, challenged, and improved.
+> **Research software only.** This repository is not flight software, a simulator of record,
+> certification evidence, or proof of KRI-STD-001 conformance.
 
-> **Research software only.** This is not flight software, a spacecraft simulator of record, a
-> regulatory tool, or evidence of KRI-STD-001 conformance.
+## Current status
 
-## What v0.1 tests
+The first Space Autonomy Lab experimental programme is complete through **Experiment 005**. The
+programme progressed from a compact one-dimensional proximity-operations harness to estimator-in-loop
+experiments, planar HCW dynamics, and a nonlinear central-gravity truth model.
 
-The initial experiment models a simplified autonomous proximity operation. A learned policy attempts
-to approach and hold near a target while KRI injects faults and compares three configurations:
+| Experiment | Evidence boundary | Final status |
+| --- | --- | --- |
+| 001 | Initial executable assurance concepts | Exploratory baseline |
+| 002 | Direct-measurement 1-D confirmatory benchmark | **Favorable** under its frozen gates |
+| 003 | Estimator-in-loop 1-D confirmatory benchmark | **Inconclusive** |
+| 004 | Planar HCW confirmatory assurance study | **Valid, reproducible, inconclusive** |
+| 005 | Nonlinear two-body-truth confirmatory transfer study | **Valid, reproducible, inconclusive** |
 
-1. deterministic baseline;
-2. learned policy without runtime protection;
-3. learned policy behind an independent runtime-assurance monitor and deterministic fallback.
+Experiments 004 and 005 both reached a saturated primary endpoint: neither compared configuration
+produced a physical adverse event in the frozen primary population, so superiority could not be
+established. Those results are retained as valid inconclusive evidence and are not rerun or tuned.
 
-Fault scenarios include range-sensor bias, sensor dropout, model corruption representing an SEU-like
-event, and actuator degradation.
+See the [benchmark guide](docs/benchmark-guide.md) for the evidence layers and the
+[research roadmap](docs/research-roadmap.md) for what comes next.
 
-The benchmark records mission success, collisions, unsafe-state exposure, safety interventions,
-recovery, final state, and propellant use.
+## Benchmark layers
 
-## KRI-STD-001 connection
+Space Autonomy Lab deliberately separates three things that are easy to confuse:
 
-The testbed currently exercises selected ideas from:
+1. **Public deterministic harness**: bring a controller, inject declared faults, and produce a stable
+   assessment report. This is an engineering example, not a scientific result.
+2. **Frozen confirmatory evidence**: prospectively designed experiments with immutable analysis and
+   replay evidence.
+3. **Higher-fidelity research evidence**: planar HCW and nonlinear central-gravity studies used to
+   test whether conclusions survive stronger dynamics and model mismatch.
 
-- **§4.1** Simplex architecture, deterministic safety controller, decision gate and Safe Flight Envelope;
-- **§4.2** bounded constraint checking, with an explicit limitation that this is not formal reachability proof;
-- **§4.3** model identity/integrity evidence and unexpected-hash handover;
-- **§4.4** fault injection and graceful-degradation experiments;
-- **§5.1** independent runtime assurance and handover;
-- **§5.2** reconstructable decision evidence with a hash-chained event log.
-
-See [the detailed mapping](docs/kri-std-001-mapping.md).
-
-KRI-STD-001 v1.3 is available at:
-https://www.kri.org.uk/publications/trustworthy-onboard-ai-standard-for-space-systems
+The public demo embeds Experiments 002 and 003 because they share the one-dimensional product-harness
+boundary. Experiments 004 and 005 are linked separately rather than collapsed into the same claim.
 
 ## Install
 
-The research environment is locked to the Python patch and package versions in
-`.python-version` and `uv.lock`.
+The environment is locked to the Python patch and package versions in `.python-version` and
+`uv.lock`.
 
 ```bash
 uv sync --frozen --extra dev
 ```
 
-## Public RPO demo — start here
+## Public RPO demo
 
-Build the checked-in deterministic controller example, run the declared fault suite and assessment
-policy through the existing product APIs, and open a standalone local page:
+Build the checked-in controller example, deterministic fault suite, assessment policy, and standalone
+local report:
 
 ```bash
 uv run python -m kri_space_autonomy.demo build --open
 
-# Reuse the same controller through the frozen-estimator product profile.
+# Same controller through the frozen-estimator product profile.
 uv run python -m kri_space_autonomy.demo build \
   --navigation-profile estimated --open
 ```
 
 The direct bundle is written to `demo/rpo-benchmark/`; the estimated bundle is written to
-`demo/rpo-estimated/`. Both contain stable JSON, concise Markdown, and
-self-contained HTML. It has two deliberately separate layers:
-
-1. **Try the harness:** an illustrative product run showing controller → deterministic faults →
-   criteria report. It is not scientific evidence.
-2. **Frozen architecture evidence:** a traceable summary of complete final aggregate results. The
-   direct-measurement Experiment 002 campaign was favorable under its frozen gates. The
-   estimator-in-loop Experiment 003 campaign was inconclusive: H1 was exactly zero with 95%
-   interval `[0, 0]`, so H2 was not tested; descriptive mission-success degradation was concentrated
-   in E5/E6.
+`demo/rpo-estimated/`. Each contains stable JSON, concise Markdown, a self-contained HTML view, and a
+bundle manifest with SHA-256 identities.
 
 See the [public demo guide](docs/public-rpo-demo.md) and
-[navigation profile guide](docs/navigation-profiles.md). Estimated-profile runs are illustrative
-engineering stress tests, not new Experiment 003 evidence. This remains a simplified one-dimensional
-RPO controller test harness—not full GNC, formal verification, certification, or flight-safety
-evidence.
+[navigation profile guide](docs/navigation-profiles.md).
 
 ## Bring your own controller
 
-External Python controllers can be loaded by import path without changing simulator or historical
-experiment source. See the [controller adapter guide](docs/controller-adapter.md) for the small
-observation/command contract and validation commands.
+External Python controllers can be loaded by import path without modifying simulator or frozen
+experiment source.
 
 ```bash
 uv run python -m kri_space_autonomy.controller_adapter \
@@ -98,12 +87,10 @@ uv run python -m kri_space_autonomy.controller_adapter \
   scenarios/nominal.json --navigation-profile estimated
 ```
 
-## Run a deterministic fault suite
+See the [controller adapter guide](docs/controller-adapter.md) for the observation/command contract.
+Local plugins execute in process, so load only trusted controller code.
 
-The product-facing [fault-suite facade](docs/fault-suite.md) applies repeatable observation and
-actuator faults to an external controller without editing simulator or historical experiment code.
-The checked-in example covers nominal, observed-range bias, navigation dropout, actuator
-effectiveness, and a composed case.
+## Run a deterministic fault suite
 
 ```bash
 uv run python -m kri_space_autonomy.fault_suite \
@@ -114,14 +101,10 @@ uv run python -m kri_space_autonomy.fault_suite \
   fault-suites/example-rpo.json
 ```
 
-This is a simplified RPO controller test harness, not a full GNC stack or flight-safety/
-certification system.
+The checked-in example covers nominal behaviour, observed-range bias, navigation dropout, actuator
+effectiveness, and a composed case. See the [fault-suite guide](docs/fault-suite.md).
 
 ## Produce an assurance evidence report
-
-The product-facing [assessment report layer](docs/assurance-report.md) implements the workflow
-**run controller → inject repeatable faults → produce assurance evidence report**. Acceptance
-criteria are declared in a strict versioned policy; output is stable JSON plus concise Markdown.
 
 ```bash
 uv run python -m kri_space_autonomy.assurance_report \
@@ -132,66 +115,85 @@ uv run python -m kri_space_autonomy.assurance_report \
   --stdout none
 ```
 
-The report is evidence from this simplified test harness. It is not formal assurance,
-certification, or a flight-safety claim.
+The output is evidence from this simplified harness. It is not formal assurance, certification, or a
+flight-safety claim. See the [assurance report guide](docs/assurance-report.md).
 
-## Run an experiment
+## Core benchmark CLI
+
+Run one scenario and write a hash-chained evidence log:
 
 ```bash
 kri-space-lab run scenarios/sensor-dropout.json \
   --controller protected \
   --evidence results/sensor-dropout.jsonl
-```
 
-Verify the evidence hash chain:
-
-```bash
 kri-space-lab verify-evidence results/sensor-dropout.jsonl
 ```
 
-## Compare controllers
+Compare the built-in controller fixtures across scenarios:
 
 ```bash
 kri-space-lab benchmark scenarios/*.json --output results/baseline.json
 ```
 
-## Check the bounded safety envelope
+Check the bounded safety envelope:
 
 ```bash
 kri-space-lab verify-gate
 ```
 
-This finite property check is useful for regression testing. It is deliberately **not** described as
-formal verification or reachability analysis.
+The gate check is a finite regression property check, not formal reachability analysis.
+
+## Completed confirmatory evidence
+
+The later studies deliberately preserve null and inconclusive outcomes.
+
+- [Experiment 002 final confirmatory](docs/experiment-002-confirmatory.md)
+- [Experiment 003 final confirmatory](docs/experiment-003-confirmatory.md)
+- [Experiment 004 final result](docs/experiment-004-results.md)
+- [Experiment 005 confirmatory design](docs/experiment-005-confirmatory.md)
+- [Experiment 005 final closeout](docs/experiment-005-confirmatory-closeout.md)
+
+Experiment 005 completed 1,068 paired blocks and 2,136 episodes. Fixed-cell validity passed and its
+prespecified replay was byte-identical. The primary physical-safety test was inconclusive because
+both configurations recorded zero physical adverse events; H2 was not formally tested after H1
+closed the gate.
+
+## KRI-STD-001 connection
+
+The repository exercises selected concepts around independent runtime assurance, bounded safety
+constraints, model identity, fault injection, graceful degradation, and reconstructable evidence.
+The mapping now spans the completed experimental programme rather than only the original v0.1
+fixture.
+
+See [the detailed KRI-STD-001 mapping](docs/kri-std-001-mapping.md).
+
+KRI-STD-001 v1.3 is available at:
+https://www.kri.org.uk/publications/trustworthy-onboard-ai-standard-for-space-systems
 
 ## Repository structure
 
 ```text
-src/kri_space_autonomy/   core environment, policies, safety, faults and evidence
-scenarios/                reproducible experiment definitions
-tests/                    regression and safety-property tests
-docs/                     KRI-STD-001 mapping, product guides and research roadmap
-demo/rpo-benchmark/       deterministic public JSON/Markdown/HTML bundle
-results/                  checked-in benchmark and frozen campaign results
+src/kri_space_autonomy/   environment, controllers, adapters, faults, reports and experiment code
+scenarios/                reproducible public scenario definitions
+fault-suites/             deterministic product-facing fault suites
+assessment-policies/      explicit assessment criteria
+tests/                    regression, integrity and safety-property tests
+docs/                     benchmark guides, experiment records and standard mapping
+demo/                     deterministic public JSON/Markdown/HTML bundles
+results/                  checked-in benchmark and frozen campaign evidence
 ```
 
-## Research direction
+## Scope and non-claims
 
-The first programme studies autonomy, faults, runtime safety and recovery in space systems. Later
-work will increase physical fidelity, move onto representative edge hardware, and investigate safe
-online adaptation and continual learning under enforced operational constraints.
-
-See [Experiment 001](docs/experiment-001.md), the
-[Experiment 002 design-validation pilot](docs/experiment-002.md), the
-[Experiment 002 final confirmatory campaign](docs/experiment-002-confirmatory.md), the
-[Experiment 003 estimator-in-loop programme](docs/experiment-003.md), the
-[Experiment 003 final confirmatory campaign](docs/experiment-003-confirmatory.md), and
-[the research roadmap](docs/research-roadmap.md).
+The repository contains simplified one-dimensional, planar HCW, and nonlinear central-gravity
+research models. It does **not** establish 6-DoF validity, hardware-in-the-loop validity, operational
+fault prevalence, flight qualification, certification, or regulatory conformance.
 
 ## Citation
 
-If this software contributes to published work, cite the repository and KRI-STD-001 where relevant.
-A `CITATION.cff` file is provided for citation tooling.
+A `CITATION.cff` file is provided for citation tooling. The stable citable release is prepared as a
+separate release step so the final tag can bind an exact repository state.
 
 ## Licence
 

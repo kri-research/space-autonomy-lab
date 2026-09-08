@@ -1,46 +1,69 @@
 # Research roadmap
 
-## v0.1 Executable assurance concepts
+## Completed programme
 
-Research question: **What changes when a learned spacecraft-autonomy policy is placed behind an
-independent runtime safety monitor and deterministic fallback controller?**
+The first Space Autonomy Lab experimental programme is complete through **Experiment 005**.
 
-Deliverables:
+The programme progressed in stages:
 
-- reproducible proximity-operation environment;
-- deterministic and learned controller fixtures;
-- Safe Flight Envelope decision gate;
-- runtime-confidence handover;
-- sensor, model and actuator fault injection;
-- minimum evidence bundle with a tamper-evident hash chain;
-- baseline benchmark across controllers and fault scenarios.
+1. executable runtime-assurance concepts and deterministic fault injection;
+2. direct-measurement confirmatory benchmarking;
+3. estimator-in-loop confirmatory benchmarking;
+4. planar HCW dynamics with an independent physical adverse-event endpoint;
+5. nonlinear central-gravity physical truth and model-mismatch transfer testing.
 
-## v0.2 Robustness campaign
-
-Add Monte Carlo sensor noise, combined faults, shared-cause failures, stronger metrics, confidence
-calibration, and statistical reporting.
-
-## v0.3 Higher-fidelity autonomy
-
-Introduce replaceable policy adapters and higher-fidelity relative dynamics. Compare multiple
-learning approaches under identical faults and safety boundaries.
+The current experimental series ends at Experiment 005. No additional experiment is required to
+close this programme.
 
 ## Current evidence status
 
-Experiments 001-004 are complete. Experiment 004 advanced the testbed to planar HCW dynamics and
-estimator-aware vector control; its valid replacement confirmatory campaign was reproducible but
-inconclusive because both compared configurations had zero primary physical adverse events.
-Experiment 005 has now completed a valid noninferential transfer pilot from linear HCW online
-mechanics to nonlinear two-body physical truth. All frozen design-validation gates passed, supporting
-a separate prospective confirmatory-design freeze while leaving the confirmatory partition
-unmaterialized and unexecuted. No 6-DoF or hardware-in-the-loop claim is supported.
+| Experiment | Main boundary | Status |
+| --- | --- | --- |
+| 001 | Initial executable assurance concepts | Exploratory baseline |
+| 002 | Direct-measurement 1-D confirmatory benchmark | **Favorable** under frozen gates |
+| 003 | Estimator-in-loop 1-D confirmatory benchmark | **Inconclusive** |
+| 004 | Planar HCW confirmatory assurance study | **Valid, reproducible, inconclusive** |
+| 005 | Nonlinear central-gravity confirmatory transfer study | **Valid, reproducible, inconclusive** |
 
-## v0.4 Hardware evidence
+Experiment 004 completed a valid replacement campaign after the original infrastructure-interrupted
+partition was permanently retired. Its 1,068 primary paired roots contained zero physical adverse
+events in both compared configurations, so the primary superiority hypothesis did not pass.
 
-Measure runtime-assurance overhead and recovery behaviour on representative edge hardware.
+Experiment 005 completed 1,068 paired blocks and 2,136 episodes under its prospectively frozen
+design. Fixed-cell validity passed and the prespecified replay was byte-identical. The primary
+physical-safety comparison again had zero physical adverse events in both configurations, so H1 was
+inconclusive and H2 was not formally tested after the gate closed.
 
-## v0.5 Safe adaptation
+These outcomes are retained as valid inconclusive evidence. They are not a basis for outcome-driven
+retuning, replacement roots, adaptive sample extension, or a new experiment intended to manufacture
+a favorable result.
+
+No 6-DoF, hardware-in-the-loop, flight-safety, operational-prevalence, or certification claim is
+supported.
+
+## Immediate next work
+
+1. Finalise the public benchmark, demo, and documentation.
+2. Create a stable citable Space Autonomy Lab release.
+3. Use the completed evidence to inform KRI-STD-001 v2.0 and its reference tests.
+4. Publish the main peer-reviewed research paper.
+5. Seek independent validation or adoption with a spacecraft/autonomy team.
+
+## Future research beyond the completed series
+
+### Representative hardware evidence
+
+Measure runtime-assurance latency, compute overhead, recovery behaviour, and evidence-generation cost
+on representative edge hardware. This would be a new research programme, not a continuation needed
+to rescue Experiment 005.
+
+### External flight-software and simulation integration
+
+Connect the public controller/fault/report interfaces to established spacecraft autonomy or
+simulation environments while preserving explicit evidence boundaries.
+
+### Safe adaptation
 
 Study whether an onboard learner can update after deployment while remaining inside an enforced
-safety envelope. This is the bridge from the current space-autonomy programme to KRI's future
-continual-intelligence research.
+safety envelope. This is future work and requires a separately frozen design before any inferential
+campaign.
