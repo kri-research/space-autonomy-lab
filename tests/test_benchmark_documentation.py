@@ -20,6 +20,6 @@ def test_demo_and_scientific_evidence_boundaries_remain_separate() -> None:
     guide = Path("docs/benchmark-guide.md").read_text(encoding="utf-8")
     demo = Path("docs/public-rpo-demo.md").read_text(encoding="utf-8")
 
-    assert "engineering example, not a scientific result" in guide
+    assert "engineering examples, frozen experiments" in guide
     assert "Later programme evidence" in demo
     assert "Do not pool" in guide
