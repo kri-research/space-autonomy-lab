@@ -1,0 +1,342 @@
+{
+  "analysis_created_utc": "2026-09-09T07:45:01.548499+00:00",
+  "computation": {
+    "design_readiness_id": "5f8d50cea51501c08d83c22a08ed9625014c5ee933ae9a4e95b65069ff05f4f4",
+    "frozen_analysis_result": {
+      "claim_boundary": "two-case synthetic nonlinear central-gravity assurance only; no operational prevalence, flight-safety, six-degree-of-freedom, hardware, or learned-policy claim",
+      "decision": "inconclusive",
+      "estimand": {
+        "independent_unit": "complete case-by-root paired two-configuration block",
+        "mission": "probability of gate-induced loss of frozen hold acquisition",
+        "primary": "gate-minus-reference risk difference for the independent-evaluator physical adverse endpoint",
+        "target_population": "equal-weight frozen primary-navigation bias and dropout challenge mixture"
+      },
+      "no_retry_replacement_extension_or_imputation": true,
+      "primary_gatekeeping": {
+        "H1_physical_safety": {
+          "alpha": 0.025,
+          "discordant_pairs": 0,
+          "endpoint": "collision OR unauthorized keep-out entry OR corridor departure from the independent nonlinear-truth evaluator",
+          "gate_adverse_reference_safe": 0,
+          "gate_minus_reference_risk_difference": 0.0,
+          "hypothesis": "H0: gate-minus-reference physical-adverse risk >= 0; H1: the paired difference is < 0",
+          "minimum_reportable_net_reduction": 0.05,
+          "one_sided_exact_p": 1.0,
+          "paired_roots": 1068,
+          "passed": false,
+          "reference_adverse_gate_safe": 0,
+          "test": "exact one-sided paired-discordance (McNemar/sign) test"
+        },
+        "H2_mission": {
+          "alpha": 0.025,
+          "endpoint": "reference acquires the frozen hold and monitor-gated does not",
+          "harm_rate": 0.0,
+          "harmful_pairs": 0,
+          "hypothesis": "H0: gate-induced hold-loss probability >= 0.05; H1: probability is below the margin",
+          "margin": 0.05,
+          "one_sided_exact_p": null,
+          "paired_roots": 1068,
+          "passed": null,
+          "status": "not_tested_primary_gate_closed",
+          "test": "exact one-sided binomial risk-limit test"
+        }
+      },
+      "schema_version": "experiment-005-confirmatory-assurance-1.0",
+      "secondary_descriptive_summary": {
+        "T03_primary_navigation_bias": {
+          "independent_monitor_gate": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "monitor_override_commands": 163,
+            "physical_adverse": 534
+          },
+          "primary_reference": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "monitor_override_commands": 0,
+            "physical_adverse": 534
+          }
+        },
+        "T04_primary_navigation_dropout": {
+          "independent_monitor_gate": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "monitor_override_commands": 146,
+            "physical_adverse": 534
+          },
+          "primary_reference": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "monitor_override_commands": 0,
+            "physical_adverse": 534
+          }
+        }
+      },
+      "secondary_inferential_family": null,
+      "validity": {
+        "covariance_validity_failures": 0,
+        "duplicates": 0,
+        "episode_rows": 2136,
+        "expected_episode_rows": 2136,
+        "extra_cells": 0,
+        "extra_preview": [],
+        "fault_activation_failures": 0,
+        "infrastructure_failures": 0,
+        "invalid_attempts": 0,
+        "malformed_rows": 0,
+        "missing_cells": 0,
+        "missing_preview": [],
+        "numerical_failures": 0,
+        "passed": true,
+        "retry_replacement_extension_or_imputation_used": false,
+        "scheduled_blocks": 1068,
+        "seed_count_valid": true
+      }
+    },
+    "independent_counts": {
+      "by_case": {
+        "T03_primary_navigation_bias": {
+          "independent_monitor_gate": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "physical_adverse": 534
+          },
+          "primary_reference": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "physical_adverse": 534
+          }
+        },
+        "T04_primary_navigation_dropout": {
+          "independent_monitor_gate": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "physical_adverse": 534
+          },
+          "primary_reference": {
+            "collision": 0,
+            "corridor_departure": 534,
+            "episodes": 534,
+            "hold_acquired": 534,
+            "keep_out_entry": 0,
+            "physical_adverse": 534
+          }
+        }
+      },
+      "observed_gate_induced_hold_loss_pairs": 0,
+      "paired_adverse_table": {
+        "both_adverse": 1068,
+        "both_safe": 0,
+        "gate_adverse_reference_safe": 0,
+        "reference_adverse_gate_safe": 0
+      },
+      "paired_roots": 1068,
+      "totals_by_configuration": {
+        "independent_monitor_gate": {
+          "collision": 0,
+          "corridor_departure": 1068,
+          "episodes": 1068,
+          "hold_acquired": 1068,
+          "keep_out_entry": 0,
+          "physical_adverse": 1068
+        },
+        "primary_reference": {
+          "collision": 0,
+          "corridor_departure": 1068,
+          "episodes": 1068,
+          "hold_acquired": 1068,
+          "keep_out_entry": 0,
+          "physical_adverse": 1068
+        }
+      }
+    },
+    "initial_position_checks": {
+      "method": "closed-corridor/hold-union algebra on stored positions; no trajectory generation",
+      "outside_by_case": {
+        "T03_primary_navigation_bias": 0,
+        "T04_primary_navigation_dropout": 0
+      },
+      "stored_initial_positions_checked": 1068
+    },
+    "inputs_sha256": {
+      "experiments/005-confirmatory/seeds/confirmatory.jsonl": "06b2697cb2b7e5223cf69fa1e365c6788d726cff12fa1437a798b838f652c31b",
+      "experiments/005-confirmatory/seeds/index.json": "d31e18ae92fa9db05b268295c39c12b801c2278fa5e6dc329f51536ab91bbee2",
+      "experiments/005-confirmatory/seeds/replay-subset.json": "fef32951cf478781e7e9358426324ff70b261c4e871a305d5d5e9d95b530ec8e",
+      "results/experiment-005-confirmatory/campaign/confirmatory-episodes.jsonl": "d27d53e71ec28ffd7ab830f870226f6231ddf7c0d1e4df8a872d88678d12798a",
+      "results/experiment-005-confirmatory/execution-summary.json": "d3aaacbee5ac6b72e9846b01a473b1357e8e66ce7335bfe2cd203fe23f02a590",
+      "results/experiment-005-confirmatory/replay/confirmatory-episodes.jsonl": "9b9f2b9631af13d00a0461455e61cb2308881d084d65cc5742dc6ccf7fff64cb"
+    },
+    "method_script_sha256": "ae0094f52e2dada872e4a03550a9c52392a153c3ee75d3c03a0c7ff8e489db50",
+    "original_execution_status": "EXECUTION_COMPLETE_PENDING_FROZEN_CONFIRMATORY_ANALYSIS",
+    "readiness_sha256": "2e51dde3c66ad863a18ce9a12eb321c0b52e4fcdce7d6be60ffa0a0b0c883a4c",
+    "recorded_diagnostic_ranges": {
+      "T03_primary_navigation_bias": {
+        "independent_monitor_gate": {
+          "maximum_abs_crosstrack_m": {
+            "max": 0.0,
+            "min": 0.0
+          },
+          "maximum_admissible_position_excess_m": {
+            "max": 2.9034347133159537,
+            "min": 1.3994332486969943
+          },
+          "maximum_contiguous_hold_dwell_s": {
+            "max": 138.0,
+            "min": 122.0
+          },
+          "minimum_separation_m": {
+            "max": 24.99240050059428,
+            "min": 22.684151404985787
+          },
+          "monitor_override_commands": {
+            "max": 3,
+            "min": 0
+          }
+        },
+        "primary_reference": {
+          "maximum_abs_crosstrack_m": {
+            "max": 0.0,
+            "min": 0.0
+          },
+          "maximum_admissible_position_excess_m": {
+            "max": 2.9034347133159537,
+            "min": 1.3994332486969943
+          },
+          "maximum_contiguous_hold_dwell_s": {
+            "max": 138.0,
+            "min": 122.0
+          },
+          "minimum_separation_m": {
+            "max": 24.99240050059428,
+            "min": 22.684151404985787
+          },
+          "monitor_override_commands": {
+            "max": 0,
+            "min": 0
+          }
+        }
+      },
+      "T04_primary_navigation_dropout": {
+        "independent_monitor_gate": {
+          "maximum_abs_crosstrack_m": {
+            "max": 0.0,
+            "min": 0.0
+          },
+          "maximum_admissible_position_excess_m": {
+            "max": 2.924904207831786,
+            "min": 1.4232855610192447
+          },
+          "maximum_contiguous_hold_dwell_s": {
+            "max": 137.25,
+            "min": 122.5
+          },
+          "minimum_separation_m": {
+            "max": 24.95561479365768,
+            "min": 22.640187642515272
+          },
+          "monitor_override_commands": {
+            "max": 3,
+            "min": 0
+          }
+        },
+        "primary_reference": {
+          "maximum_abs_crosstrack_m": {
+            "max": 0.0,
+            "min": 0.0
+          },
+          "maximum_admissible_position_excess_m": {
+            "max": 2.924904207831786,
+            "min": 1.4232855610192447
+          },
+          "maximum_contiguous_hold_dwell_s": {
+            "max": 137.25,
+            "min": 122.5
+          },
+          "minimum_separation_m": {
+            "max": 24.95561479365768,
+            "min": 22.640187642515272
+          },
+          "monitor_override_commands": {
+            "max": 0,
+            "min": 0
+          }
+        }
+      }
+    },
+    "source": {
+      "design_freeze_id": "1acd0af2246fb5ba1e86da0302f6b7f3cda57e59018068186375507000d264ca",
+      "freeze_manifest_sha256": "66f1d5819282d3c11f1b86cd76175b736d06f0120c2a49df76186b8a8d141f63",
+      "frozen_file_sha256": {
+        ".github/workflows/ci.yml": "bc033a3ddc0114964059760a6372b8da233b8aac1026d24af2a795c5b607f420",
+        ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+        "docs/experiment-005-confirmatory-design-blocker.md": "8780e06580187cc4c6f7a1307ebf7c36e94040c3ddcb5a9133b4166adf33f96f",
+        "docs/experiment-005-confirmatory.md": "c0f27400b059325b115e3e4463156510ee1863f19131265e831cb585c210b31a",
+        "experiments/005-confirmatory/case-matrix.json": "963488c944d153b542e4b54a87b1afb57493e20b27178f47feabdb710d1e056c",
+        "experiments/005-confirmatory/config.json": "53b6810e8208ec1b7cd70def86ef4c4c303b2e5846ec4a88b5db952384d8b735",
+        "experiments/005-confirmatory/lineage-audit.json": "9f1840c979c564b23aa5c68f4f8364c53a289040790f69a6277e756f98f8b208",
+        "experiments/005-confirmatory/preregistration.md": "f21a3ee1a5fcd612709eb49ab1c6e588ee166da4e1c3c355e5979ccd6949de8d",
+        "experiments/005-confirmatory/seed-contract.json": "6ad4a2ad1344bf8455490271c4ae94b7fc9be6b9e19cedd3748676bc48391dfa",
+        "experiments/005-confirmatory/validation-evidence.json": "6d34596110ec2585bd59d8a4dc116b9784f0d6b4962a80bbada2be90c841b1e1",
+        "pyproject.toml": "254a3a3f56c7a63996a6ddc48445100177ae689327ec067a416ff9a201d19f22",
+        "src/kri_space_autonomy/experiment_005_confirmatory/__init__.py": "dcf8bae8b93749b678e0064d8566c04dbaea455f796fd6766feb6fa0327b4515",
+        "src/kri_space_autonomy/experiment_005_confirmatory/analysis.py": "9285abf9aca52507a38c9a8426bad1a6cf120946d6764c637f84b6f7e8e30ee1",
+        "src/kri_space_autonomy/experiment_005_confirmatory/config.py": "ad19f6023637b65da5678a4edf07940f9e46d4019e4677cc5e057a909cbbe9ad",
+        "src/kri_space_autonomy/experiment_005_confirmatory/runner.py": "197999ffb90f4b2605533cc0cd240213ea4f7cf4ec873c21f13677d619e97ecf",
+        "src/kri_space_autonomy/experiment_005_confirmatory/seeds.py": "5f7c543cf246735aaaeb135ff7dae4a9b66d47adcd6999590d3def89d5515141",
+        "src/kri_space_autonomy/experiment_005_confirmatory/validation.py": "ceaa2e475dbdd55bcd65f8ca02791492ad1ceb9e7cfaa50d5f083fec0e9274f5",
+        "src/kri_space_autonomy/experiment_005_confirmatory/workflow.py": "1f7cc7f983b38c7f20fd43817e8f9922b16f16440aa9f19ac4aecb346f31966c",
+        "tests/test_experiment_005_confirmatory_analysis.py": "0e882b578e097d1dfc4d09f9d13ca8590bbabe80284e9a7bc84006620855bd4d",
+        "tests/test_experiment_005_confirmatory_design.py": "af6dd39761787ea8f85e3c587f65535dc7b655323b1e504f1a555bd4d3601bfb",
+        "tests/test_experiment_005_confirmatory_seeds.py": "26ac2dc282e11d8e707a8449dbf8a2a9321cebde0eff2bb5f76523b9d63d1296",
+        "tests/test_experiment_005_confirmatory_validation.py": "61bee023d432d13769a01169b11cf7ea0079606b252ae022689734ced88a7e29",
+        "uv.lock": "0336162769d0542d8c22d07a694cecf89f8ff652186138414f2214fbbc1e91b7"
+      },
+      "source_commit": "d841a016361974734bd28b27ff39e9df0e2cbaed"
+    },
+    "static_review_source_sha256": {
+      "experiments/004/config.json": "e408d7b5ca09583293537ca8120c06eef755b7649b7f90ca1c054c4fae6a74d1",
+      "experiments/005/config.json": "ec76f109c293ae724609e8c56e67cd0e13b5c15c1ea47ad5535845d802fe0e2c",
+      "src/kri_space_autonomy/experiment_005/dynamics.py": "83ca0dc61d515bc21d826e540f9767291a4dfd1e423dc4cf4e75f029fe51015f",
+      "src/kri_space_autonomy/experiment_005/geometry.py": "8c0601c670ccf7ef7d7c7a6aeaa43bb33fe77c51a8527939255ff9ce8364651a",
+      "src/kri_space_autonomy/experiment_005_confirmatory/runner.py": "197999ffb90f4b2605533cc0cd240213ea4f7cf4ec873c21f13677d619e97ecf",
+      "src/kri_space_autonomy/experiment_005_transfer_pilot/runner.py": "c1aa0ddbc3f6b9e73144548417f1c9d63fc5a9c1c6e416fddfa359f40a215862"
+    },
+    "stored_checkpoint_and_replay_comparison_passed": true,
+    "stored_replay_blocks": 16,
+    "stored_replay_rows": 32,
+    "strict_type_and_membership_checks_passed": true
+  },
+  "environment": {
+    "architecture": "arm64",
+    "implementation": "CPython",
+    "numpy": "2.4.6",
+    "os": "Darwin",
+    "python": "3.11.16",
+    "scipy": "1.17.0"
+  },
+  "governance_limit": "Frozen no-retry booleans are code constants, not independent custody evidence.",
+  "method": "unchanged analyze_confirmatory_rows on recovered rows; no simulation execution",
+  "physical_limit": "Recorded evaluator flags, not independently revalidated physical trajectories.",
+  "record_kind": "post-release recomputation, not recovered original final analysis"
+}

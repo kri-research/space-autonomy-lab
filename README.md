@@ -8,6 +8,13 @@ uncertainty, model mismatch, and runtime safety constraints. It is a technical c
 
 **Stable citable research release:** `v0.1.0`
 
+> **E005 correction, 9 September 2026.** The earlier zero-adverse-event explanation was incorrect.
+> Recovered records contain 1,068 corridor-departure flags per configuration, with zero collisions
+> or keep-out entries. The frozen comparative result remains INCONCLUSIVE. Read the
+> [dated corrigendum](docs/e005-corrigendum-2026-09-09.md) and
+> [verified evidence supplement](supplements/2026-09-09-evidence-reconciliation/README.md)
+> before citing E005. The original scientific snapshot remains preserved.
+
 For current installation checks, file roles and known archive/verification limitations, see
 [post-release maintenance](docs/post-release-maintenance.md). The scientific release remains pinned.
 
@@ -28,9 +35,12 @@ experiments, planar HCW dynamics, and a nonlinear central-gravity truth model.
 | 004 | Planar HCW confirmatory assurance study | **Valid, reproducible, inconclusive** |
 | 005 | Nonlinear two-body-truth confirmatory transfer study | **Valid, reproducible, inconclusive** |
 
-Experiments 004 and 005 both reached a saturated primary endpoint: neither compared configuration
-produced a physical adverse event in the frozen primary population, so superiority could not be
-established. Those results are retained as valid inconclusive evidence and are not rerun or tuned.
+Experiment 004 recorded zero physical adverse events in its frozen primary population.
+For Experiment 005, recovered records show the composite adverse endpoint in every episode of
+both configurations, consisting of corridor-departure flags. Both studies have zero primary
+paired discordances and remain INCONCLUSIVE. The E005 absolute-count correction and its
+physical-interpretation limits are documented in the dated corrigendum above. No campaign was
+rerun or tuned.
 
 See the [benchmark guide](docs/benchmark-guide.md) for the evidence layers and the
 [research roadmap](docs/research-roadmap.md) for what comes next.
@@ -157,12 +167,15 @@ The later studies deliberately preserve null and inconclusive outcomes.
 - [Experiment 003 final confirmatory](docs/experiment-003-confirmatory.md)
 - [Experiment 004 final result](docs/experiment-004-results.md)
 - [Experiment 005 confirmatory design](docs/experiment-005-confirmatory.md)
-- [Experiment 005 final closeout](docs/experiment-005-confirmatory-closeout.md)
+- [Experiment 005 original closeout](docs/experiment-005-confirmatory-closeout.md), read with the
+  [9 September 2026 correction](docs/e005-corrigendum-2026-09-09.md).
 
-Experiment 005 completed 1,068 paired blocks and 2,136 episodes. Fixed-cell validity passed and its
-prespecified replay was byte-identical. The primary physical-safety test was inconclusive because
-both configurations recorded zero physical adverse events; H2 was not formally tested after H1
-closed the gate.
+Experiment 005 has 1,068 paired blocks and 2,136 recovered episode records. The post-release
+recomputation of the unchanged frozen analysis passes its fixed-cell checks and remains
+INCONCLUSIVE: 1,068 pairs are adverse in both configurations, with zero discordances, a risk
+difference of 0.0 and one-sided p = 1.0. H2 is not formally tested after H1 closes the gate.
+Stored replay records match the corresponding campaign records; no new simulation replay was
+executed. See the corrigendum and supplement for absolute counts, source/data identities and limits.
 
 ## KRI-STD-001 connection
 

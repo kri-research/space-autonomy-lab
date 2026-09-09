@@ -1,0 +1,11 @@
+{
+  "captured_utc": "2026-09-09T07:24:13.034748+00:00",
+  "original_notes_preserved_without_text_changes": true,
+  "record_kind": "new pre-correction release-body capture",
+  "release_body_bytes": 3268,
+  "release_body_sha256": "c8f8d522efdaa203565b406e4deddb477ecc5c37c9fd04d54935c3f4599f6770",
+  "release_id": 384755025,
+  "release_updated_at_observed": "2026-09-08T13:29:39Z",
+  "tag_name": "v0.1.0",
+  "target_commitish": "f0e9e5d8c140ca3d5eea71cee97fd29f23bffe12"
+}
