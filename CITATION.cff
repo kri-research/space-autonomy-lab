@@ -11,6 +11,8 @@ repository-code: "https://github.com/kri-research/space-autonomy-lab"
 repository-artifact: "https://github.com/kri-research/space-autonomy-lab/releases/tag/v0.1.0"
 references:
   - type: report
+    authors:
+      - name: KRI
     title: "KRI-STD-001 Trustworthy Onboard AI Standard for Safety-Critical Space Systems"
     institution:
       name: KRI

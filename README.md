@@ -8,6 +8,9 @@ uncertainty, model mismatch, and runtime safety constraints. It is a technical c
 
 **Stable citable research release:** `v0.1.0`
 
+For current installation checks, file roles and known archive/verification limitations, see
+[post-release maintenance](docs/post-release-maintenance.md). The scientific release remains pinned.
+
 > **Research software only.** This repository is not flight software, a simulator of record,
 > certification evidence, or proof of KRI-STD-001 conformance.
 

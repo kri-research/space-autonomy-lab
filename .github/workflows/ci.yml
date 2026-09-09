@@ -2,42 +2,35 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 permissions:
   contents: read
 
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
-      - uses: astral-sh/setup-uv@v6
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
         with:
           version: "0.12.5"
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version-file: ".python-version"
+      - name: Verify published snapshot preservation before installation
+        run: python tools/check_release_preservation.py
       - run: uv sync --frozen --extra dev
-      - run: uv run ruff check .
-      - name: Materialize frozen Experiment 002 design source
-        run: gzip -dc docs/experiment-002-research-plan.md.gz > ../experiment-002-research-plan.md
-      - name: Run post-Experiment-005 checks
-        shell: bash
-        run: |
-          uv run pytest -q \
-            tests/test_environment.py \
-            tests/test_evidence.py \
-            tests/test_controller_adapter.py \
-            tests/test_demo.py \
-            tests/test_assurance_report.py \
-            tests/test_benchmark_documentation.py \
-            tests/test_release_metadata.py \
-            tests/test_experiment_005_confirmatory_analysis.py \
-            tests/test_experiment_005_confirmatory_closeout.py
-          uv run kri-space-lab verify-gate
-          uv run python -m kri_space_autonomy.experiment_004_closeout verify
-          uv run python -m kri_space_autonomy.experiment_005_confirmatory.workflow release-scan
-          git diff --check
+      - name: Validate citation schema
+        run: uvx --python 3.11.16 --from cffconvert==2.0.0 cffconvert --validate
+      - name: Run maintained post-release checks
+        run: uv run python tools/run_post_release_checks.py

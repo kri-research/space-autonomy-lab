@@ -1,45 +1,21 @@
-name: Release v0.1.0
+name: Verify published v0.1.0
 
+# The publication task is retired. This workflow has no release-writing capability.
 on:
-  push:
-    branches: [main]
-    paths:
-      - release/v0.1.0.json
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  release:
+  verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - name: Validate release metadata
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          manifest = json.loads(Path("release/v0.1.0.json").read_text())
-          citation = Path("CITATION.cff").read_text()
-          assert manifest["version"] == "0.1.0"
-          assert manifest["tag"] == "v0.1.0"
-          assert manifest["status"] == "stable_citable_research_release"
-          assert "version: 0.1.0" in citation
-          assert "date-released: 2026-09-08" in citation
-          assert Path(manifest["release_notes"]).is_file()
-          print("release metadata validated")
-          PY
-      - name: Create stable GitHub release
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Verify existing tag and published release identity
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if gh release view v0.1.0 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "v0.1.0 release already exists"
-          else
-            gh release create v0.1.0 \
-              --repo "$GITHUB_REPOSITORY" \
-              --target "$GITHUB_SHA" \
-              --title "KRI Space Autonomy Lab v0.1.0" \
-              --notes-file docs/release-v0.1.0.md
-          fi
+        run: python tools/verify_published_release.py
