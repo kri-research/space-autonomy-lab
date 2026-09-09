@@ -70,8 +70,10 @@ uv run python tools/verify_published_release.py
 
 It checks the existing lightweight tag and published release against the fixed commit. Missing,
 unavailable or mismatched metadata fails; there is no creation or repair fallback. The existing
-release is not marked immutable in GitHub metadata. Administrative tag/release protection remains
-a separate decision; the read-only workflow does not establish that protection by itself.
+release is not marked immutable in GitHub metadata. A separate active tag ruleset,
+`Preserve published v0.1.0 tag` (22598130), now restricts updates and deletions of the exact
+`refs/tags/v0.1.0` ref with no bypass actors. It does not match main or make the release body
+immutable. The read-only workflow verifies identity; it does not administer that ruleset.
 
 ## Demonstration checks without overwriting published bundles
 
@@ -120,7 +122,9 @@ fetched Git history. In particular:
   `c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1` for
   `experiments/002b/validation-evidence.json`. The released bytes have SHA-256
   `4168fa738e5023ef3d59b7b46f700e54ec4bf881e3144a63329be16b9a747a70`. The expected version was
-  not located in fetched branch history. Its origin needs archival clarification, not a new freeze.
+  not located in fetched branch history. A subsequent authorised local archival search recovered
+  the exact 1,372-byte expected payload from existing records. Its controlled publication and
+  provenance supplement remain pending; no historical manifest or published file was replaced.
 
 Across eleven checksum catalogues, 145 of 147 entries matched the release checkout. The two
 mismatches are the replacement-pilot roadmap and `conftest.py` entries above. That catalogue uses
@@ -130,6 +134,56 @@ paths. Both public demo manifests matched all listed file hashes and sizes.
 The compressed E002 planning document also references an unavailable
 `experiment-001-reproduction/REPORT.md`. The frozen source is retained unchanged; the reference is
 an access gap, not permission to invent or regenerate its contents.
+
+## Explicit historical snapshot verification
+
+Run the read-only verifier from a full-history checkout:
+
+```bash
+python tools/verify_historical_snapshots.py
+```
+
+The tool inspects twelve explicitly catalogued manifest references. It reads each authoritative
+manifest from the fixed v0.1.0 commit, rejects a changed working copy of that manifest, and checks
+the designated historical Git blob against the recorded SHA-256. Current bytes must match that
+historical blob or an exact reviewed snapshot at v0.1.0 or the PR #34 squash commit
+`e85e1d4e1af917913f00e0574ead87909d5da792`. It never accepts an arbitrary hash from history.
+
+| Catalogued identity group | Designated historical commit |
+| --- | --- |
+| E002 package, dynamics and dependency lock; E002b inherited dynamics | `15879624c68b8cf93709f4c108735495e368e649` |
+| E002b Makefile and README | `2459cab197a1e759b50056bfee30416c4ced3013` |
+| E004 confirmatory CI | `cfb56b2a5510916e5295ae9b654b3849f4a8d7e1` |
+| E005 foundation and confirmatory CI | `46c6de41afa46e7e43b1c6074e59ba54dd3d99b8` |
+| E005 replacement-pilot roadmap and phase controls | `cf007e1cd7e44002069a8a5812867201d349f292` |
+| E002b expected validation payload | No matching public Git snapshot; exact local recovery awaits a supplement. |
+
+The JSON distinguishes `MATCHED HISTORICAL SNAPSHOT`,
+`CURRENT-CHECKOUT DIFFERENCE EXPLAINED BY PHASE HISTORY`, and `UNRESOLVED PROVENANCE GAP`.
+Unavailable history, modified manifests, unknown current bytes or wrong designated snapshots
+produce `VERIFICATION ERROR`. Git replacement objects are disabled for these reads.
+
+Exit 0 means the catalogue has no outstanding gap; exit 1 means a known public provenance gap
+remains; exit 2 means a verification error or unexpected difference. The current default result is
+**11 historical matches, one public archival gap, zero verification errors, exit 1**. The gap is
+explicitly not a clean provenance verdict. These are twelve identity checks, not a full audit of all
+manifests, chronology, execution validity or scientific claims.
+
+An authorised reviewer holding the exact recovered E002b payload can additionally check its bytes:
+
+```bash
+python tools/verify_historical_snapshots.py --e002b-record ../e002b-validation-evidence.json
+```
+
+The optional file must match the frozen expected digest exactly. It is read only and never copied
+into the repository. A match is reported separately; the unresolved public Git archive and exit 1
+remain. No raw private records or local workspace paths are included in this repository.
+
+The maintained test profile exercises this verifier and its failure cases. Passing those tests
+means the verifier correctly reports the known gap, not that the gap has disappeared. The original
+historical tests and phase-selection rules remain unchanged, including the two previously reported
+full-suite failures. Later maintenance changes to catalogued paths need explicit catalogue review;
+there is no blanket waiver for future README or CI changes.
 
 ## E005 evidence availability
 
@@ -174,9 +228,11 @@ review that retains the original scientific environment.
 Retain invalid partition 44 records, invalid E005 pilot records, calibration-attempt files, historical
 seed reservations, the compressed planning source, old phase helpers and both demo bundles. These
 explain the experiment sequence and evidence identities. Their age or similarity is not a deletion
-criterion. The `sal-v0.2.0-release` remote branch points to the already-reachable documentation commit
-`6efaed4003970e56e2074385c3269bd03c32af49`; it is not a published v0.2.0 release. Branch deletion,
-including squash-merged development heads that preserve distinct commit IDs, requires separate review.
+criterion. After the owner-approved merge of PR #34, only `post-release-audit-hardening` and
+`sal-v0.2.0-release` were deleted. The latter's commit
+`6efaed4003970e56e2074385c3269bd03c32af49` remains reachable from main and v0.1.0, with no open PR,
+release or deployment depending on that branch. Other historical development heads were retained.
+Further branch deletion, including squash-merged heads, requires separate review.
 
 No frozen file, completed result, statistical interpretation, public API, existing tag or release
 was changed by this maintenance pass. No scientific evidence file is proposed for automatic deletion.

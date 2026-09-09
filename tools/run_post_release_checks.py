@@ -23,6 +23,7 @@ TEST_FILES = (
     "tests/test_simulation.py",
     "tests/test_verification.py",
     "tests/test_post_release_hardening.py",
+    "tests/test_historical_snapshots.py",
 )
 
 
