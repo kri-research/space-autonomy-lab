@@ -24,6 +24,7 @@ TEST_FILES = (
     "tests/test_verification.py",
     "tests/test_post_release_hardening.py",
     "tests/test_historical_snapshots.py",
+    "tests/test_evidence_reconciliation.py",
 )
 
 
@@ -35,12 +36,10 @@ def main() -> int:
         (sys.executable, "-m", "pytest", *TEST_FILES),
         (sys.executable, "-m", "kri_space_autonomy.cli", "verify-gate"),
         (sys.executable, "-m", "kri_space_autonomy.experiment_004_closeout", "verify"),
-        (
-            sys.executable,
-            "-m",
-            "kri_space_autonomy.experiment_005_confirmatory.workflow",
-            "release-scan",
-        ),
+        (sys.executable, "-B", "tools/verify_historical_snapshots.py"),
+        (sys.executable, "-B", "tools/verify_evidence_supplement.py"),
+        (sys.executable, "-B", "tools/reconcile_e005_records.py"),
+        (sys.executable, "-B", "tools/check_reconciliation_publication.py"),
         ("git", "diff", "--check"),
         (sys.executable, "tools/check_release_preservation.py"),
     )

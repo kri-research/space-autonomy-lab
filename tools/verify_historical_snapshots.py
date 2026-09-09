@@ -25,6 +25,14 @@ E005_SNAPSHOT = "46c6de41afa46e7e43b1c6074e59ba54dd3d99b8"
 PILOT_SNAPSHOT = "cf007e1cd7e44002069a8a5812867201d349f292"
 E002B_EXPECTED = "c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1"
 E002B_OBSERVED = "4168fa738e5023ef3d59b7b46f700e54ec4bf881e3144a63329be16b9a747a70"
+E002B_SUPPLEMENT_PATH = (
+    "supplements/2026-09-09-evidence-reconciliation/e002b-validation-recovered.json"
+)
+# Exact, path-specific correction bytes; independent of squash-merge commit identities.
+APPROVED_CURRENT_SHA256 = {
+    "README.md": "dafee53f8f0825c99011885ad69e92339ed5ab016525009373f96e1da530ac72"
+}
+RECOVERED = "MATCHED RECOVERED SUPPLEMENT"
 MATCHED = "MATCHED HISTORICAL SNAPSHOT"
 PHASE = "CURRENT-CHECKOUT DIFFERENCE EXPLAINED BY PHASE HISTORY"
 GAP = "UNRESOLVED PROVENANCE GAP"
@@ -217,19 +225,35 @@ def verify(
                     raise InspectionError("unresolved_identity_changed_requires_explicit_review")
                 row.update(
                     status=GAP,
-                    expected_bytes_available_in_git=False,
+                    expected_bytes_in_original_git_snapshot=False,
+                    supplemental_path=E002B_SUPPLEMENT_PATH,
+                    supplemental_content_matched=False,
                     external_record_matched=False,
-                    reason="No catalogued Git snapshot supplies the expected bytes.",
+                    reason="Required recovered supplement is unavailable in this checkout.",
                 )
+                try:
+                    recovered = _working_bytes(root, E002B_SUPPLEMENT_PATH)
+                except InspectionError as exc:
+                    if not str(exc).startswith("working_file_unavailable:"):
+                        raise
+                else:
+                    if len(recovered) != 1372 or _sha(recovered) != expected:
+                        raise InspectionError("recovered_supplement_digest_mismatch")
+                    row.update(
+                        status=RECOVERED,
+                        supplemental_content_matched=True,
+                        supplemental_sha256=_sha(recovered),
+                        reason=(
+                            "Exact separately recovered payload matches the frozen expectation. "
+                            "Original expected-versus-published discrepancy is retained. "
+                            "Cite the enclosing commit for this supplemental location; "
+                            "no original Git snapshot or independent custody is asserted."
+                        ),
+                    )
                 if e002b_record is not None:
-                    record_hash = _external_record_hash(e002b_record, expected)
                     row.update(
                         external_record_matched=True,
-                        external_record_sha256=record_hash,
-                        reason=(
-                            "Supplied archival bytes match; public Git archive remains incomplete. "
-                            "Byte identity alone does not authenticate custodial history."
-                        ),
+                        external_record_sha256=_external_record_hash(e002b_record, expected),
                     )
             else:
                 historical = _sha(reader.blob(item.snapshot, item.path))
@@ -242,13 +266,19 @@ def verify(
                     # Exact reviewed snapshots only; never accept arbitrary historical hashes.
                     known = [(c, _sha(reader.blob(c, item.path))) for c in (release, maintenance)]
                     matches = [c for c, digest in known if digest == observed]
-                    if not matches:
+                    if not matches and APPROVED_CURRENT_SHA256.get(item.path) != observed:
                         raise InspectionError("unexpected_current_file_digest")
                     row.update(
                         status=PHASE,
-                        current_snapshot_commit=matches[-1],
+                        current_snapshot_commit=matches[-1] if matches else None,
                         matched_historical_snapshot=True,
                     )
+                    if not matches:
+                        row["current_content_binding"] = {
+                            "path": item.path,
+                            "sha256": observed,
+                            "reason": "exact approved 9 September 2026 E005 README correction",
+                        }
         except InspectionError as exc:
             row.update(status=ERROR, reason=str(exc))
         results.append(row)
@@ -268,9 +298,10 @@ def verify(
         "verification_errors": errors,
         "unresolved_items": gaps,
         "matched_historical_snapshots": counts[MATCHED] + counts[PHASE],
+        "matched_recovered_supplements": counts[RECOVERED],
         "phase_differences": counts[PHASE],
         "catalogued_items": len(catalogue),
-        "scope": "Explicit identity catalogue only; not all manifests or experimental validity.",
+        "scope": "Twelve content bindings only; not all manifests, custody or scientific validity.",
         "scientific_calculations_executed": False,
         "checkout_modified": False,
         "results": results,

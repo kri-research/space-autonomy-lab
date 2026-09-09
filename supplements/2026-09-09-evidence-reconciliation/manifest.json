@@ -1,0 +1,50 @@
+{
+  "files": [
+    {
+      "bytes": 4513,
+      "path": "PROVENANCE.md",
+      "sha256": "683e6243903ccd59dab432850bc30a098ce9f66519151e196c6baafaab7d087f"
+    },
+    {
+      "bytes": 4030,
+      "path": "README.md",
+      "sha256": "15ae207cdd1d0dc0b3b98651f755aec1e343a4f3600e707f11017e52777e4a2a"
+    },
+    {
+      "bytes": 1372,
+      "path": "e002b-validation-recovered.json",
+      "sha256": "c45a7cb29489c94460f64560b6f85e578fbbd076b9f4d325116c463dcf75b1f1"
+    },
+    {
+      "bytes": 274353,
+      "path": "e005-inventory.json",
+      "sha256": "0d33564bb1b979590adf9efc94f1046c158c5b4b2ddf8128bd912090fd48248e"
+    },
+    {
+      "bytes": 1667545,
+      "path": "e005-original-records.tar.gz",
+      "sha256": "3f0f71990c65159bfda70b79f24ca364bfaf12a736f2d1721844e032e9697b03"
+    },
+    {
+      "bytes": 14991,
+      "path": "e005-reconciliation.json",
+      "sha256": "00bba9187ee9c080ae23f6859c82ea6f097f2b8fee867940f07954a61c8a0b81"
+    },
+    {
+      "bytes": 3268,
+      "path": "original-release-body.md",
+      "sha256": "c8f8d522efdaa203565b406e4deddb477ecc5c37c9fd04d54935c3f4599f6770"
+    },
+    {
+      "bytes": 471,
+      "path": "release-body-capture.json",
+      "sha256": "cc0efa560a0b67863c3d12f57834c929b1083a56d172a5bc0a2cd8a10296897f"
+    }
+  ],
+  "frozen_analysis_commit": "d841a016361974734bd28b27ff39e9df0e2cbaed",
+  "manifest_self_hash_location": "tools/verify_evidence_supplement.py; enclosing Git commit binds both",
+  "metadata_created_utc": "2026-09-09T07:45:23.254211+00:00",
+  "record_kind": "new additive post-release supplement inventory",
+  "schema_version": "sal-evidence-supplement/1.0",
+  "software_release_commit": "f0e9e5d8c140ca3d5eea71cee97fd29f23bffe12"
+}
