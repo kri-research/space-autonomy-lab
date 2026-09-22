@@ -1,0 +1,5 @@
+study,case,episodes,episodes_with_override,override_decisions,minimum_decisions_per_episode,maximum_decisions_per_episode,geometry_reason_decisions,quality_reason_decisions,origin
+E004,bias,534,142,160,0,3,0,160,prior_executed_row_audit_import
+E004,dropout,534,137,158,0,3,0,158,prior_executed_row_audit_import
+E005,bias,534,139,163,0,3,0,163,prior_executed_row_audit_import
+E005,dropout,534,128,146,0,3,0,146,prior_executed_row_audit_import

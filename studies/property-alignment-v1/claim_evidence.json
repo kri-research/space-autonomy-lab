@@ -1,0 +1,61 @@
+{
+  "schema_version": "sal-claim-evidence/1",
+  "historical_commit": "5539de5753092b09fd78351095292e7627047794",
+  "new_research_results_established": false,
+  "claims": [
+    {
+      "id": "H1",
+      "claim": "The two historical primary paired tables retain their frozen outcomes and decisions.",
+      "evidence_class": "historical_records_and_read_only_reanalysis",
+      "source": "results/experiment-004-replacement-confirmatory/analysis.json and supplements/2026-09-09-evidence-reconciliation/e005-reconciliation.json",
+      "reproduction": "python run.py audit",
+      "output": "baseline/data/historical_audit/pair_tables.csv",
+      "limit": "No equivalence, absolute operational risk or causal dynamics effect."
+    },
+    {
+      "id": "R1",
+      "claim": "The stored minimum-separation fields provide a sufficient closed-union exclusion witness.",
+      "evidence_class": "retrospective_record_diagnostic",
+      "source": "baseline/validation/records.py and baseline/validation/properties.py",
+      "reproduction": "python run.py audit",
+      "output": "baseline/data/historical_audit/witnesses.csv",
+      "limit": "Conditional on valid numerical summaries; no reconstructed first exit."
+    },
+    {
+      "id": "R2",
+      "claim": "Initial membership and monitor engagement are reconstructed from existing records.",
+      "evidence_class": "retrospective_record_diagnostic",
+      "source": "baseline/scripts/verify_historical.py",
+      "reproduction": "python run.py audit",
+      "output": "baseline/data/historical_audit/initial_membership_counts.csv and paired_engagement_counts.csv",
+      "limit": "Counts and digests do not recover historical intervention timing."
+    },
+    {
+      "id": "D1",
+      "claim": "The supplied ideal-information midpoint diagnostic reproduces an accepted violating continuation.",
+      "evidence_class": "previously_declared_numerical_diagnostic",
+      "source": "baseline/data/diagnostic_protocol.json",
+      "reproduction": "python run.py diagnostics",
+      "output": "baseline/data/diagnostic_results.json",
+      "limit": "One selected initial condition, two related plants; no frequency or hardware claim."
+    },
+    {
+      "id": "N1",
+      "claim": "Original extrema helpers can discard sampled evidence; the additive helper preserves retained samples.",
+      "evidence_class": "controlled_software_fixture",
+      "source": "baseline/validation/extrema.py and baseline/tests/test_validation.py",
+      "reproduction": "python run.py test and python run.py diagnostics",
+      "output": "baseline/data/extrema_fixture_results.json",
+      "limit": "Not an observed historical optimizer failure or global-extremum certificate."
+    },
+    {
+      "id": "S1",
+      "claim": "The all-discordant planning calculation is reproduced independently.",
+      "evidence_class": "deterministic_statistical_computation",
+      "source": "baseline/scripts/check_statistics.py",
+      "reproduction": "python run.py diagnostics",
+      "output": "baseline/data/statistical_design_check.json",
+      "limit": "No universal power or calibration claim under arbitrary heterogeneous strata."
+    }
+  ]
+}

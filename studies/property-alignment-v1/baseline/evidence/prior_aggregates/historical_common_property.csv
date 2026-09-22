@@ -1,0 +1,9 @@
+study,case,arm,episodes,minimum_episode_minimum_m,maximum_episode_minimum_m,witness_count,smallest_witness_margin_m,origin
+E004,bias,primary_reference,534,20.956100910861906,24.905318329428454,534,2.0946816705715463,prior_executed_row_audit_import
+E004,bias,independent_monitor_gate,534,20.956100910861906,24.90539335279697,534,2.0946066472030296,prior_executed_row_audit_import
+E004,dropout,primary_reference,534,20.744459240436754,24.92871053301084,534,2.0712894669891604,prior_executed_row_audit_import
+E004,dropout,independent_monitor_gate,534,20.744459240436754,24.92871053301084,534,2.0712894669891604,prior_executed_row_audit_import
+E005,bias,primary_reference,534,22.684151404985787,24.99240050059428,534,2.007599499405721,prior_executed_row_audit_import
+E005,bias,independent_monitor_gate,534,22.684151404985787,24.99240050059428,534,2.007599499405721,prior_executed_row_audit_import
+E005,dropout,primary_reference,534,22.640187642515272,24.95561479365768,534,2.0443852063423193,prior_executed_row_audit_import
+E005,dropout,independent_monitor_gate,534,22.640187642515272,24.95561479365768,534,2.0443852063423193,prior_executed_row_audit_import

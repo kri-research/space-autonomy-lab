@@ -1,0 +1,3 @@
+study,case,arm,episodes,minimum_episode_minimum_m,maximum_episode_minimum_m,witness_count,origin
+E004,P00_nominal_feasibility,primary_reference,64,21.025245036079024,24.71560633685417,64,prior_executed_row_audit_import
+E004,P00_nominal_feasibility,independent_monitor_gate,64,21.025245036079024,24.71560633685417,64,prior_executed_row_audit_import

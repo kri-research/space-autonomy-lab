@@ -1,0 +1,61 @@
+{
+  "id": "SAL-manuscript-diagnostic-2026-09-22-v1",
+  "declared_before_execution_utc": "2026-09-22T11:50:46.109755+00:00",
+  "purpose": "Test whether a valid initial state with identical, ideal primary/monitor estimates can leave the closed position union under the original bounded LQR and old geometric gate.",
+  "selection_rule": "Exactly one deterministic midpoint initial state from the E005 bounded initial-state box; both HCW and nonlinear central-gravity plants. No outcome-selected added cases.",
+  "initial_state_planar": [
+    0.0,
+    -97.5,
+    0.0,
+    0.12
+  ],
+  "horizon_s": 300,
+  "command_period_s": 1,
+  "observation_grid_s": 0.25,
+  "snapshot_covariance_diagonal": [
+    0.01,
+    0.01,
+    0.0001,
+    0.0001
+  ],
+  "snapshot_health": "valid",
+  "snapshot_age_s": 0,
+  "consecutive_innovation_rejections": 0,
+  "information": "Both snapshots equal simulated planar state; no filter, measurement noise or fault injection. This differs from historical campaigns.",
+  "actuation": "Original saturated LQR and original gate; no actuator uncertainty or external process acceleration.",
+  "plant_implementations": "Byte-verified original E004 augmented-exponential HCW; byte-verified original E005 inertial RK4 and frame transforms.",
+  "rk4_max_steps_s": [
+    0.1,
+    0.05,
+    0.025
+  ],
+  "convergence_rule": "Generate nonlinear closed-loop commands at .1 s maximum step once. Replay exactly that fixed command sequence at .05 and .025 and through separately implemented relative-frame DOP853. Preserve all results.",
+  "independent_relative_DOP853": {
+    "rtol": 1e-11,
+    "atol": 1e-12
+  },
+  "adjudication": "Independent Boolean closed-union membership and signed excess evaluated on .25 s observation grid. First observed violation brackets, not exact event times; no containment conclusion from absent sampled violations.",
+  "recording": "Every command, state, original gate reason, union predicate, original-predicate value and finite check; no terminal command at 300 s.",
+  "cache_adapter": "Increase only pure HCW matrix memoization capacity to 32768; do not change computed formulas or source bytes.",
+  "software_fixtures": [
+    "forced optimizer failure",
+    "nonfinite optimizer result",
+    "inferior successful refinement",
+    "out-of-bracket refinement",
+    "nonfinite sampled objective",
+    "tangency",
+    "narrow interior violation between nodes",
+    "predicate boundaries",
+    "collision nesting",
+    "hold boundaries",
+    "healthy and degraded gate snapshots"
+  ],
+  "additional_state_fixture": [
+    0.0,
+    -25.0,
+    0.0,
+    0.0
+  ],
+  "state_fixture_interpretation": "Constructed outside-union state for non-implication; never counted as a reachable historical point.",
+  "stop_rule": "Retain all selected cases. On computational failure record it and do not replace the case."
+}

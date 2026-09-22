@@ -1,0 +1,110 @@
+{
+  "kind": "existing supplied baseline code and declared diagnostic; no new study results",
+  "source_changes": "Explicit historical checkout path binding, formatting, unused-import cleanup and equivalent lambda-to-function syntax; scientific formulas and original module bytes unchanged.",
+  "files": {
+    "baseline/validation/extrema.py": {
+      "original_relative_path": "validation/extrema.py",
+      "original_sha256": "fe9449cbe9aa6ae63ba109bf49e980f83a3d415291ae9075b2cd0d94b934af29"
+    },
+    "baseline/validation/properties.py": {
+      "original_relative_path": "validation/properties.py",
+      "original_sha256": "382c68097ec0069c109c4dc4313558852af3ad16bf0cedb2ba7b6c480c538a7a"
+    },
+    "baseline/validation/records.py": {
+      "original_relative_path": "validation/records.py",
+      "original_sha256": "e436c293771063911ecea6c945b2590a3ae8ab977108d6421c1bbdc5e717deab"
+    },
+    "baseline/validation/__init__.py": {
+      "original_relative_path": "validation/__init__.py",
+      "original_sha256": "93b67ba1fc601d8e8b1145aab995a934ae6edb152f1825fac2cc173b55852430"
+    },
+    "baseline/validation/loader.py": {
+      "original_relative_path": "validation/loader.py",
+      "original_sha256": "4bf35127d9d7f588a9947917d0637d3073d7eef9f85d14ebfc0b9d6c7b6f3d25"
+    },
+    "baseline/tests/test_validation.py": {
+      "original_relative_path": "tests/test_validation.py",
+      "original_sha256": "9755a7eee69e4a2b05af2e292207537bd085520e2da3a08f038cb0c56a623faa"
+    },
+    "baseline/tests/test_records.py": {
+      "original_relative_path": "tests/test_records.py",
+      "original_sha256": "8e529218075ee4cce09556e6c039588a5336e5177571e9cc08a05b3a7b5c168f"
+    },
+    "baseline/tests/test_canonical_imports.py": {
+      "original_relative_path": "tests/test_canonical_imports.py",
+      "original_sha256": "319af11c348a870efa9148c204b0943081b09928d9c6a18cccf1a688c83195e3"
+    },
+    "baseline/source_evidence/e005_dynamics.py": {
+      "original_relative_path": "source_evidence/e005_dynamics.py",
+      "original_sha256": "83ca0dc61d515bc21d826e540f9767291a4dfd1e423dc4cf4e75f029fe51015f"
+    },
+    "baseline/source_evidence/e005_geometry.py": {
+      "original_relative_path": "source_evidence/e005_geometry.py",
+      "original_sha256": "8c0601c670ccf7ef7d7c7a6aeaa43bb33fe77c51a8527939255ff9ce8364651a"
+    },
+    "baseline/source_evidence/e004_control.py": {
+      "original_relative_path": "source_evidence/e004_control.py",
+      "original_sha256": "2b244fc85932156dee4c4d4f08a9878f1ae86578209c4cdc324a073beb9760e2"
+    },
+    "baseline/source_evidence/e004_dynamics.py": {
+      "original_relative_path": "source_evidence/e004_dynamics.py",
+      "original_sha256": "4ecf8c95ad9c47526064b97c16bd26d363e9d28d5c97a84a0042e2b4a4197aa2"
+    },
+    "baseline/source_evidence/e004_geometry.py": {
+      "original_relative_path": "source_evidence/e004_geometry.py",
+      "original_sha256": "35c121ed0e8d2662f5f9a4fd60a2c375f6e96c2403105ab8c6a7c3869d64f4f0"
+    },
+    "baseline/source_evidence/Apache-2.0.txt": {
+      "original_relative_path": "source_evidence/Apache-2.0.txt",
+      "original_sha256": "78a3dd6ebb589de657702510df20054afd8ed2182e98cd006fcac701d97aee28"
+    },
+    "baseline/scripts/verify_historical.py": {
+      "original_relative_path": "scripts/verify_historical.py",
+      "original_sha256": "90dbcf99ef25f3b08e41a8cb2c2d0c00baa406c4cc138a14caec7e508046c3a2"
+    },
+    "baseline/scripts/run_diagnostics.py": {
+      "original_relative_path": "scripts/run_diagnostics.py",
+      "original_sha256": "78a1553c44ed6889c7bd66b4b2a0b573fe935bbe40e5d4c422159aa331b04ec1"
+    },
+    "baseline/scripts/check_statistics.py": {
+      "original_relative_path": "scripts/check_statistics.py",
+      "original_sha256": "15f97afba6a4c0b255ddb71829c22e0d2d89108bddc702f26b251960629ceb87"
+    },
+    "baseline/scripts/record_extrema_fixtures.py": {
+      "original_relative_path": "scripts/record_extrema_fixtures.py",
+      "original_sha256": "9cde16145c7f4be7ee8e6f694f7f3dd0be022a13bbaea28ebe3d15dd607a74ab"
+    },
+    "baseline/data/configuration_extract.json": {
+      "original_relative_path": "data/configuration_extract.json",
+      "original_sha256": "64c83275979451dc7cf92862d6d33280cb26c9a77d45e13d790568cf0879946a"
+    },
+    "baseline/data/diagnostic_protocol.json": {
+      "original_relative_path": "data/diagnostic_protocol.json",
+      "original_sha256": "704796a6e06dcbb78af2fe74d99d72353861dca4dce6dda00e69758adc5c06c8"
+    },
+    "baseline/data/diagnostic_protocol.sha256": {
+      "original_relative_path": "data/diagnostic_protocol.sha256",
+      "original_sha256": "30b8d0b5c422f455a0bf42add61d4a5aa112c8e76197a7438e6221cf3ac62375"
+    }
+  },
+  "prior_aggregate_normalization": [
+    {
+      "path": "baseline/evidence/prior_aggregates/historical_nominal_witness.csv",
+      "original_sha256": "7b92aace1ac274a4a24163655dc151588477177cdbef0c6a28c56c29d5f4e96f",
+      "normalized_sha256": "73fbb4bcc9d9de4148304b48bd2a9c94b68c1257ddb2c436f6782855ee7d4b50",
+      "change": "CRLF to LF only; parsed fields verified identical"
+    },
+    {
+      "path": "baseline/evidence/prior_aggregates/historical_common_property.csv",
+      "original_sha256": "4b0e71a6cae0533a57daee59ef8c3f830a9770f9b7b488bba2aa3abc81a321ce",
+      "normalized_sha256": "09d8af4b219c6ade8079b941a09c96d5d3caa0898d0306f0dea3802483452470",
+      "change": "CRLF to LF only; parsed fields verified identical"
+    },
+    {
+      "path": "baseline/evidence/prior_aggregates/historical_engagement.csv",
+      "original_sha256": "85eb28dfdd7163977f1c49bd79cd105a3096987cac8202e3ec6895b42e06bd88",
+      "normalized_sha256": "b58717d2dc172ac2fb0738f785e9e4c573c2c8fc240b3ac06a4f80f36ee1a873",
+      "change": "CRLF to LF only; parsed fields verified identical"
+    }
+  ]
+}
