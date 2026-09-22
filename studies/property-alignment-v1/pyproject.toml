@@ -1,0 +1,25 @@
+[project]
+name = "sal-property-alignment"
+version = "0.0.1"
+requires-python = "==3.13.5"
+dependencies = ["numpy==2.3.5", "scipy==1.17.0"]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.2"]
+
+[tool.pytest.ini_options]
+testpaths = ["baseline/tests", "tests"]
+pythonpath = ["baseline", "."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["baseline/source_evidence"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+"baseline/scripts/*.py" = ["E402"]
+"baseline/tests/test_canonical_imports.py" = ["E402"]

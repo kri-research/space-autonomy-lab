@@ -1,0 +1,22 @@
+# Generated baseline output is local and exported only after verification.
+/baseline/data/*
+!/baseline/data/configuration_extract.json
+!/baseline/data/diagnostic_protocol.json
+!/baseline/data/diagnostic_protocol.sha256
+/baseline/logs/
+/baseline/output_manifest.json
+/.venv/
+/.cache/
+/.pytest_cache/
+/.ruff_cache/
+__pycache__/
+*.pyc
+# Private workflow state, manuscripts and workstation logs do not belong here.
+.research/
+*.tex
+*.pdf
+*.b64
+*.log
+*.xml
+.env
+.env.*
