@@ -1,0 +1,142 @@
+{
+  "kind": "exact_background_analytical_fixtures",
+  "novelty_claim": false,
+  "spacecraft_recovery_certificate": false,
+  "compound_braking": {
+    "base_inputs": {
+      "clearance": "3/5",
+      "speed": "1/10",
+      "position_error": 0,
+      "speed_error": 0,
+      "age": 0,
+      "delay": 0,
+      "inward_acceleration": 0,
+      "brake": "1/50"
+    },
+    "individual_changes": {
+      "position_error": "1/10",
+      "speed_error": "1/50",
+      "age": 1,
+      "delay": 1,
+      "brake": "3/200"
+    },
+    "single_factor_results": {
+      "position_error": {
+        "lower_clearance": "1/2",
+        "upper_speed": "1/10",
+        "required_distance": "1/4",
+        "margin": "1/4",
+        "robust_arrest_possible": true,
+        "scope": "scalar_box_with_attainable_extremes_and_prescribed_wait"
+      },
+      "speed_error": {
+        "lower_clearance": "3/5",
+        "upper_speed": "3/25",
+        "required_distance": "9/25",
+        "margin": "6/25",
+        "robust_arrest_possible": true,
+        "scope": "scalar_box_with_attainable_extremes_and_prescribed_wait"
+      },
+      "age": {
+        "lower_clearance": "3/5",
+        "upper_speed": "1/10",
+        "required_distance": "7/20",
+        "margin": "1/4",
+        "robust_arrest_possible": true,
+        "scope": "scalar_box_with_attainable_extremes_and_prescribed_wait"
+      },
+      "delay": {
+        "lower_clearance": "3/5",
+        "upper_speed": "1/10",
+        "required_distance": "7/20",
+        "margin": "1/4",
+        "robust_arrest_possible": true,
+        "scope": "scalar_box_with_attainable_extremes_and_prescribed_wait"
+      },
+      "brake": {
+        "lower_clearance": "3/5",
+        "upper_speed": "1/10",
+        "required_distance": "1/3",
+        "margin": "4/15",
+        "robust_arrest_possible": true,
+        "scope": "scalar_box_with_attainable_extremes_and_prescribed_wait"
+      }
+    },
+    "joint_result": {
+      "lower_clearance": "1/2",
+      "upper_speed": "3/25",
+      "required_distance": "18/25",
+      "margin": "-11/50",
+      "robust_arrest_possible": false,
+      "scope": "scalar_box_with_attainable_extremes_and_prescribed_wait"
+    }
+  },
+  "common_policy_counterexample": {
+    "plant": "qdot=v; vdot=u; |q|<=1; |u|<=2/5",
+    "observation_assumption": "No distinguishing observation for the next second",
+    "input_assumption": "Commands held for one second",
+    "right_necessary_endpoint_interval": [
+      "-2/5",
+      "-1/5"
+    ],
+    "left_necessary_endpoint_interval": [
+      "1/5",
+      "2/5"
+    ],
+    "common_first_input_exists": false,
+    "individually_recoverable_paths": [
+      {
+        "initial_sign": -1,
+        "one_second_held_arcs": [
+          {
+            "control": "2/5",
+            "minimum_position": "-19/20",
+            "maximum_position": "-9/10",
+            "final_position": "-9/10",
+            "final_velocity": "1/5"
+          },
+          {
+            "control": "-1/5",
+            "minimum_position": "-9/10",
+            "maximum_position": "-4/5",
+            "final_position": "-4/5",
+            "final_velocity": "0"
+          },
+          {
+            "control": "0",
+            "minimum_position": "-4/5",
+            "maximum_position": "-4/5",
+            "final_position": "-4/5",
+            "final_velocity": "0"
+          }
+        ]
+      },
+      {
+        "initial_sign": 1,
+        "one_second_held_arcs": [
+          {
+            "control": "-2/5",
+            "minimum_position": "9/10",
+            "maximum_position": "19/20",
+            "final_position": "9/10",
+            "final_velocity": "-1/5"
+          },
+          {
+            "control": "1/5",
+            "minimum_position": "4/5",
+            "maximum_position": "9/10",
+            "final_position": "4/5",
+            "final_velocity": "0"
+          },
+          {
+            "control": "0",
+            "minimum_position": "4/5",
+            "maximum_position": "4/5",
+            "final_position": "4/5",
+            "final_velocity": "0"
+          }
+        ]
+      }
+    ]
+  }
+}
