@@ -1,0 +1,118 @@
+{
+  "schema": "sal-property-contract/1.0",
+  "status": "research_specification_not_frozen_evaluation",
+  "historical_evidence_commit": "5539de5753092b09fd78351095292e7627047794",
+  "frame": {
+    "name": "target_centered_circular_chief_LVLH",
+    "axes": [
+      "radial_outward",
+      "prograde_along_track"
+    ],
+    "state_order": [
+      "x_m",
+      "y_m",
+      "vx_mps",
+      "vy_mps"
+    ],
+    "position_units": "m",
+    "velocity_units": "m/s",
+    "acceleration_units": "m/s^2",
+    "time_units": "s",
+    "orbit_normal_policy": "planar_only; reject nonplanar inputs rather than silently project"
+  },
+  "geometry": {
+    "approach_y_bounds_m": [
+      -100.0,
+      -30.0
+    ],
+    "approach_radial_halfwidths_m": [
+      10.0,
+      3.0
+    ],
+    "hold_center_m": [
+      0.0,
+      -30.0
+    ],
+    "hold_halfwidths_m": [
+      2.0,
+      3.0
+    ],
+    "collision_radius_m": 2.0,
+    "keep_out_radius_m": 10.0,
+    "hold_max_speed_mps": 0.05,
+    "hold_required_dwell_s": 60.0
+  },
+  "time": {
+    "episode_horizon_s": 300.0,
+    "command_period_s": 1.0,
+    "property_scope": "all of [0,T], including initial and final positions, in every mode",
+    "hold_scope": "a continuous 60 s interval inside hold position and speed bounds; later holding does not erase earlier violations",
+    "historical_event_tolerance_m": 1e-09,
+    "new_adjudication": "independent continuous-interval safe/violated/unresolved judgments required; point samples cannot certify an interval; numerical accuracy deferred to Task 03"
+  },
+  "phases": {
+    "approach": "S=A union H remains required; no global approach speed limit is added",
+    "holding": "S remains required; H and speed apply to hold qualification",
+    "abort": "abort requests do not relax S or erase flags; continue all components to T; record task completion false",
+    "abort_corridor": "not specified; any future authorized departure needs a different prospective contract and separate endpoint"
+  },
+  "control": {
+    "command_norm_limit_mps2": 0.02,
+    "coordinate_hold": "zero-order hold in LVLH components; inertial direction rotates with the chief",
+    "realized_acceleration": "eta * held_command + bounded additive disturbance; delay applies before command replacement",
+    "fallback": "historical same-LQR substitution and zero-thrust paths are descriptive only; neither is an invariant backup certificate",
+    "new_recovery_policy": "not implemented or certified in Task 02"
+  },
+  "information": {
+    "required_fields": [
+      "measured_at_s",
+      "received_at_s",
+      "decision_at_s",
+      "applied_at_s",
+      "component_error_bounds",
+      "bound_kind",
+      "pending_commands"
+    ],
+    "bound_kinds": [
+      "ideal",
+      "deterministic_interval",
+      "covariance_only"
+    ],
+    "covariance_only": "not a deterministic uncertainty enclosure",
+    "age": "decision minus measurement time; distinct from applied minus decision delay",
+    "old_commands": "known command history must be propagated; do not blindly add age and delay to a current posterior error bound",
+    "disturbance_assumption": "every episode explicitly declares a finite disturbance bound and effectiveness interval; Gaussian draws are not globally bounded by standard deviation",
+    "online_access": "timestamped observations, permitted history, commands, certified bounds; no latent state except declared ideal-information fixtures"
+  },
+  "initial_classification": {
+    "position": "inside or outside S, independent of velocity feasibility",
+    "recovery_statuses": [
+      "unassessed",
+      "certified_common_policy",
+      "proved_state_unrecoverable",
+      "proved_no_common_policy",
+      "unresolved"
+    ],
+    "spacecraft_recovery_status_at_task02": "unassessed",
+    "historical_membership": "retain all 534 initially outside E004 primary roots; do not redefine or exclude them"
+  },
+  "requirement_authority": {
+    "geometric_numbers": "benchmark research choices from E004/E005; not an operational flight corridor or a standard",
+    "engineering_context": "NASA/TM-2011-217088, Orbital Express abort and safe-hold account; supports mission-specific abort design, not these dimensions",
+    "mission_endorsement": false
+  },
+  "evaluation_not_set": [
+    "future primary population",
+    "effect-size target",
+    "delay and disturbance sweep bounds",
+    "sample size",
+    "new policy parameters"
+  ],
+  "phase_position_sets": {
+    "approach": "union",
+    "holding": "union",
+    "abort": "union"
+  },
+  "abort_relaxes_union": false,
+  "abort_counts_as_nominal_completion": false
+}
