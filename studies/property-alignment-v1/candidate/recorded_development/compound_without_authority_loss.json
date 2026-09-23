@@ -1,0 +1,75 @@
+{
+  "candidate": {
+    "action": null,
+    "attempts": [
+      {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "3",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 2521,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "unresolved",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.00011200511298357956,
+                0.00013236984959804238
+              ],
+              [
+                -27.002000299517796,
+                -26.992000253437777
+              ],
+              [
+                7.466995150635316e-05,
+                8.824653381588223e-05
+              ],
+              [
+                0.0109997004823324,
+                0.012999746562300313
+              ]
+            ],
+            "range_evaluations": 5058,
+            "reason": null,
+            "status": "unresolved"
+          }
+        ],
+        "information_sha256": "989fa6d82b99c0c392886ae74481c4a5d8843be6a1b288dab3ad65c0b92b9ec4",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      }
+    ],
+    "deadline_exceeded": true,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "37095514124989405/332306998946228968225951765070086144",
+          "46236316139808665/324518553658426726783156020576256"
+        ],
+        "margin_lower": "-94624391163240907645110815688233071/106338239662793269832304564822427566080",
+        "proved": false,
+        "weighted_rhs_upper": "18924878232648120878675614287646787/21267647932558653966460912964485513216"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "unresolved_budget",
+    "wall_s": 2.551502540940419
+  },
+  "case": "compound_without_authority_loss",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": null
+}

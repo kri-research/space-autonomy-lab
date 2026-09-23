@@ -1,0 +1,6512 @@
+[
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-13511853156776438208863424823541259159/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "540474126271057377528409563730725295/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.010499991466762,
+                -27.010499991466702
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "61676d7d72ea7292c3d0d81534259d9e6b8cbebdb8f3e94d16a686ab267703f7",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.012292875093407929
+    },
+    "case": "exact-00",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-756240348894678434825452848830028911/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "151248069778935626314744020916005955/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.010499991466762,
+                -27.010499991466702
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "6990ea73977979b00370136af81dc0d034204f759f8307556ff1f94e7ef53305",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010945499991066754
+    },
+    "case": "exact-01",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-3503772335477891488630525603521393559/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "140150893419115508719093594929930671/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.000500000000027,
+                -27.000499999999974
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "d0f9e13e89a57c49b3011ff4b30f218f8b86abfddfd8e5be8c57c137a29680e6",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010847375029698014
+    },
+    "case": "exact-02",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-283645848491382217036391619116306031/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "56729169698276382756931774973261379/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.000500000000027,
+                -27.000499999999974
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "31f29c8fb6358c328b47a7f57b93026e8cea6eda2e3c5f1dff4983d4508c848d",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010269084013998508
+    },
+    "case": "exact-03",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1/2",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-54001/2000",
+              "0",
+              "1/100"
+            ],
+            "time_after_application": "1",
+            "weight": "3602336600860897/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "695562793721579/4611686018427387904"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "7204670127750833/36028797018963968"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "42557342802279247/83076749736557242056487941267521536",
+            "80338026920648563/162259276829213363391578010288128"
+          ],
+          "margin_lower": "119512075139729519200498356458855751/33230699894622896822595176507008614400",
+          "proved": true,
+          "weighted_rhs_upper": "-4780483005589193944220614634144151/1329227995784915872903807060280344576"
+        },
+        "information_sha256": "8e0392ecc21c9424867433e85f07d6d0d869cb22482dab42da9951f88b4e09c9",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3602336600860897/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "695562793721579/4611686018427387904",
+          "7204670127750833/36028797018963968",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0019276660168543458
+    },
+    "case": "exact-04",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-54001/2000",
+              "0",
+              "1/100"
+            ],
+            "time_after_application": "1/2",
+            "weight": "4003031979297421/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "3091726897325273/73786976294838206464"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "8006063104621031/72057594037927936"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "188948651911242259962287668974248849/106338239662793269832304564822427566080",
+          "proved": true,
+          "weighted_rhs_upper": "-37789730382248512642804082644849597/21267647932558653966460912964485513216"
+        },
+        "information_sha256": "76770793568766b8e8351665744d281fe95829641ce67066f772f5b663200a43",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "4003031979297421/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3091726897325273/73786976294838206464",
+          "8006063104621031/72057594037927936",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0012929589720442891
+    },
+    "case": "exact-05",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1/2",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-54001/2000",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "7204673201721795/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "5564502349772631/36893488147419103232"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "7204670127750831/36028797018963968"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "169944798715444653/332306998946228968225951765070086144",
+            "133654459920117177/324518553658426726783156020576256"
+          ],
+          "margin_lower": "7335423766431288897707541067511196459/265845599156983174580761412056068915200",
+          "proved": true,
+          "weighted_rhs_upper": "-293416950657251643608853167126325555/10633823966279326983230456482242756608"
+        },
+        "information_sha256": "604db8dbb93a0e029bd7b8f42cdb24369cd2433c24298d946140cb85d8182adf",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "7204673201721795/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "5564502349772631/36893488147419103232",
+          "7204670127750831/36028797018963968",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0017268749652430415
+    },
+    "case": "exact-06",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-54001/2000",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "579577417451759/2305843009213693952"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "326602604961883859646976068874150053/16615349947311448411297588253504307200",
+          "proved": true,
+          "weighted_rhs_upper": "-13064104198475362870262330012415787/664613997892457936451903530140172288"
+        },
+        "information_sha256": "740618dc8a75d554fdaa4618b016b2f0e64fd599da68e6474a0657e4cee74354",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "579577417451759/2305843009213693952",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.001184375025331974
+    },
+    "case": "exact-07",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-54001/2000",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-16514278043675541683250054188455844759/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "660571121747021516503874738327308719/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.011999991466762,
+                -27.011999991466702
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "d37f3a4c31a0fe2d68d5599e84746028f77be4410a8f6e77ba8aa38816bf727b",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.011634166934527457
+    },
+    "case": "exact-08",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-898018729261354880907858696760007791/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "179603745852270915531225190502001731/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.011999991466762,
+                -27.011999991466702
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "88a59a62205525152aa87d226669b9cbfe6b08e78782a41ecd7f24e6e32eb37a",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010795790934935212
+    },
+    "case": "exact-09",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-6506197222376995614064271988521892759/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "260247888895079673736443450329950639/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.002000000000027,
+                -27.001999999999974
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "23a7173fbc39e4dd3ecb40e0330858b7e03df3fb7a2e9775940f4d6cd2dbfc48",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.011601916048675776
+    },
+    "case": "exact-10",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-425424228858058693862083068050478191/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "85084845771611678122070064760095811/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.002000000000027,
+                -27.001999999999974
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "ad6965c57acd57ab6ba33cc880595ebebaf75db2488cc404cb65c63bbdef4803",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010332999983802438
+    },
+    "case": "exact-11",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1/2",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-13501/500",
+              "0",
+              "1/100"
+            ],
+            "time_after_application": "1",
+            "weight": "3602336600860897/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "695562793721579/4611686018427387904"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "7204670127750833/36028797018963968"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "42557342802279247/83076749736557242056487941267521536",
+            "80338026920648563/162259276829213363391578010288128"
+          ],
+          "margin_lower": "79641246333665350957778756257946951/33230699894622896822595176507008614400",
+          "proved": true,
+          "weighted_rhs_upper": "-3185649853346627214511830626107799/1329227995784915872903807060280344576"
+        },
+        "information_sha256": "50219cc8b540d0e0fc20fd62f6ca20e9f3a4e5299f49055940c4870b124ab5ef",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3602336600860897/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "695562793721579/4611686018427387904",
+          "7204670127750833/36028797018963968",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0025383339961990714
+    },
+    "case": "exact-12",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-13501/500",
+              "0",
+              "1/100"
+            ],
+            "time_after_application": "1/2",
+            "weight": "4003031979297421/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "3091726897325273/73786976294838206464"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "8006063104621031/72057594037927936"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "47170271544565854870929289049861009/106338239662793269832304564822427566080",
+          "proved": true,
+          "weighted_rhs_upper": "-9434054308913231624532406659972029/21267647932558653966460912964485513216"
+        },
+        "information_sha256": "781aaf97e89c50955bec10112d2db2d3b9143062d3ad3ccbd6c0ea4a91c76df3",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "4003031979297421/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3091726897325273/73786976294838206464",
+          "8006063104621031/72057594037927936",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0015233330195769668
+    },
+    "case": "exact-13",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1/2",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-13501/500",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "7204673201721795/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "5564502349772631/36893488147419103232"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "7204670127750831/36028797018963968"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "169944798715444653/332306998946228968225951765070086144",
+            "133654459920117177/324518553658426726783156020576256"
+          ],
+          "margin_lower": "7016457135982775507493598488999324459/265845599156983174580761412056068915200",
+          "proved": true,
+          "weighted_rhs_upper": "-280658285439311108000295463985850675/10633823966279326983230456482242756608"
+        },
+        "information_sha256": "63595b2075f533ba7138f72130285fa929c17139eedfcb6c24d6e5642ec61933",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "7204673201721795/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "5564502349772631/36893488147419103232",
+          "7204670127750831/36028797018963968",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0021777499932795763
+    },
+    "case": "exact-14",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-13501/500",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "579577417451759/2305843009213693952"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "309991428947537070562946514363097253/16615349947311448411297588253504307200",
+          "proved": true,
+          "weighted_rhs_upper": "-12399657157901491306901147831973675/664613997892457936451903530140172288"
+        },
+        "information_sha256": "8bcbe82ba2150f8204dfed76ee53ad40ef94e2af7ecc6166c0923fcd22796e63",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "579577417451759/2305843009213693952",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.001492417068220675
+    },
+    "case": "exact-15",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-13501/500",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-24520744408735078570644374731742321559/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "980829776349402991999647560058767791/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.01599999146676,
+                -27.0159999914667
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "b1d3d203874e67f862054314a232636b3e3252fddcd63d1acf06377230e84458",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.012602916918694973
+    },
+    "case": "exact-16",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-1276094410238934953335797292716600431/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "255218882047786930016812909693320259/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.01599999146676,
+                -27.0159999914667
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "1064154d2450ae7b181e428e5c2f85f1f4faf32b795894159702b896e03b1593",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.011523958994075656
+    },
+    "case": "exact-17",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-14512663587436531633395769838360484759/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "580506543497461114509703364323494319/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.006000000000025,
+                -27.005999999999972
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "a3075c977a671bd46b9bdca5e138204d02c4bcdc899ff5c70a0d17e0cb9a0696",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.012493832968175411
+    },
+    "case": "exact-18",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-803499909835638725298974196001479791/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "160699981967127684409448290350296131/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.006000000000025,
+                -27.005999999999972
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "ae962a8cc2120d9949882eb8304f090d741ae319d46d2ef7426611078eefe7a6",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010839208029210567
+    },
+    "case": "exact-19",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "-2882303761228887/144115188075855872"
+      ],
+      "attempts": 5,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "165843753390642507/332306998946228968225951765070086144",
+            "133654467606203231/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-213447710526208157091222003988642491/265845599156983174580761412056068915200",
+          "proved": false,
+          "weighted_rhs_upper": "8537908421048238585716987588185027/10633823966279326983230456482242756608"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "-2882303761228887/144115188075855872"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                3.7712204899624836e-06,
+                7.542444357784186e-06
+              ],
+              [
+                -27.00600000639898,
+                -27.0010000042661
+              ],
+              [
+                -7.238431215365623e-12,
+                1.1313667744025273e-05
+              ],
+              [
+                -0.010000017064540094,
+                -8.53226619608807e-09
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "de5bb2da5b5e85c51245d6e50188e6900b9f6bc203e9e2d3089f0bf9a09fb1f6",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.08580812497530133
+    },
+    "case": "exact-20",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "-2882303761228887/144115188075855872"
+      ],
+      "attempts": 5,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "75216289414220363/664613997892457936451903530140172288",
+            "110487029828338543/649037107316853453566312041152512"
+          ],
+          "margin_lower": "-661810818866028312835598322949891813/212676479325586539664609129644855132160",
+          "proved": false,
+          "weighted_rhs_upper": "132362163773205517653283077539881217/42535295865117307932921825928971026432"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "-2882303761228887/144115188075855872"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                3.771221455388377e-06,
+                3.7712214553884243e-06
+              ],
+              [
+                -27.006000004265662,
+                -27.0060000042656
+              ],
+              [
+                -2.4113013984209934e-12,
+                -2.4113013086354994e-12
+              ],
+              [
+                -0.010000008531268421,
+                -0.010000008531268373
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "a1ae925b71d0a4babd1a9443fdf73be76aceaf1ffacb65c3e353ad754be9082c",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.08764462498947978
+    },
+    "case": "exact-21",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1/2",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-13503/500",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "7204673201721795/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "5564502349772631/36893488147419103232"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "7204670127750831/36028797018963968"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "169944798715444653/332306998946228968225951765070086144",
+            "133654459920117177/324518553658426726783156020576256"
+          ],
+          "margin_lower": "6165879454787243443416896188495260459/265845599156983174580761412056068915200",
+          "proved": true,
+          "weighted_rhs_upper": "-246635178191489825437227371965688115/10633823966279326983230456482242756608"
+        },
+        "information_sha256": "18b38bd5fdde98ed64de543b53989ebcf0983f752b30802fbfcc53916afa7e2d",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "7204673201721795/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "5564502349772631/36893488147419103232",
+          "7204670127750831/36028797018963968",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0030111250234767795
+    },
+    "case": "exact-22",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-13503/500",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "579577417451759/2305843009213693952"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "265694959575971861784310871394623653/16615349947311448411297588253504307200",
+          "proved": true,
+          "weighted_rhs_upper": "-10627798383038882955755722113234731/664613997892457936451903530140172288"
+        },
+        "information_sha256": "9923ed21b49d7660da03c8e27fa836f19bb07db46173dc56885275ce0cf93c9b",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "579577417451759/2305843009213693952",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0033258749172091484
+    },
+    "case": "exact-23",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-13503/500",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "0",
+            "0"
+          ],
+          "margin_lower": "-5764607523034235/288230376151711744",
+          "proved": false,
+          "weighted_rhs_upper": "5764607523034235/288230376151711744"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.029999991466763,
+                -27.029999991466703
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "1d508e94f3dd149352a0cb15224b81e731418ee2176bd1bf18871a903ddeecba",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.01972762495279312
+    },
+    "case": "exact-24",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "0",
+            "0"
+          ],
+          "margin_lower": "-5764607523034235/288230376151711744",
+          "proved": false,
+          "weighted_rhs_upper": "5764607523034235/288230376151711744"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.131366532932816e-05,
+                -1.1313665329328095e-05
+              ],
+              [
+                -27.029999991466763,
+                -27.029999991466703
+              ],
+              [
+                -2.2627328245092225e-05,
+                -2.2627328245092117e-05
+              ],
+              [
+                -0.009999974400192646,
+                -0.009999974400192617
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "720641b649ecd03e5da6e51412e94649b2a4d9ece9fa09c3f775f5a3467150ae",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.017123374971561134
+    },
+    "case": "exact-25",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "-1/100"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "-1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "21528165818215763/332306998946228968225951765070086144",
+            "28746777195019085/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-42535295865166243383143583221632113559/2126764793255865396646091296448551321600",
+          "proved": false,
+          "weighted_rhs_upper": "1701411834606649584499615899654359471/85070591730234615865843651857942052864"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.020000000000028,
+                -27.019999999999975
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "215def7add15c6d47a909af8219ff8cf9346bfa5871f6c7676ea3c7f0681222c",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.01547841599676758
+    },
+    "case": "exact-26",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-2126764793258176333788285519249362031/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "425352958651635206107310554999872579/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -27.020000000000028,
+                -27.019999999999975
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "5201d378950fa27133d1e8b48c107eda5d47383d394ae05ac27e126d2ba80a76",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.01521670795045793
+    },
+    "case": "exact-27",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "81896615364120717/166153499473114484112975882535043072",
+            "76367680788480723/162259276829213363391578010288128"
+          ],
+          "margin_lower": "-1595234797356419049584262306818731479/132922799578491587290380706028034457600",
+          "proved": false,
+          "weighted_rhs_upper": "63809391894256711882633376900985375/5316911983139663491615228241121378304"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                1.1313665329328095e-05,
+                1.131366532932816e-05
+              ],
+              [
+                -27.0100000085333,
+                -27.01000000853324
+              ],
+              [
+                2.2627328245092117e-05,
+                2.2627328245092225e-05
+              ],
+              [
+                0.009999974400192617,
+                0.009999974400192646
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "ecf7a6713312f3ca75af81783432f6549b4385659d5eade0192e60093fe98217",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.016692250035703182
+    },
+    "case": "exact-28",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "140131766475710791/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "-1772527360130057750051929894461781723/132922799578491587290380706028034457600",
+          "proved": false,
+          "weighted_rhs_upper": "70901094405202242121246290195838755/5316911983139663491615228241121378304"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                1.1313665329328095e-05,
+                1.131366532932816e-05
+              ],
+              [
+                -27.0100000085333,
+                -27.01000000853324
+              ],
+              [
+                2.2627328245092117e-05,
+                2.2627328245092225e-05
+              ],
+              [
+                0.009999974400192617,
+                0.009999974400192646
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "336cbb96e899e2da57132cb2ab17ab288714d3be5816d1b708588746d653fe7e",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.01184629206545651
+    },
+    "case": "exact-29",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/100"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/100"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1/2",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-1351/50",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "3602336600860899/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "5564502349772633/36893488147419103232"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "450291882984427/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "86400214991491213/166153499473114484112975882535043072",
+            "71864081161110227/162259276829213363391578010288128"
+          ],
+          "margin_lower": "3188857570600617020613818960524863573/265845599156983174580761412056068915200",
+          "proved": true,
+          "weighted_rhs_upper": "-127554302824024775128833493100500029/10633823966279326983230456482242756608"
+        },
+        "information_sha256": "6e2de8ce54c83a65f5fb04a51faacb51c6cffd7fcf0cdebaafe99c5b8959ba4f",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3602336600860899/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "5564502349772633/36893488147419103232",
+          "450291882984427/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0019728749757632613
+    },
+    "case": "exact-30",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "0",
+              "0"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-1351/50",
+              "0",
+              "1/25"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "4636619339614071/18446744073709551616"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "68012073393320261/83076749736557242056487941267521536",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "885258534203005119870958084006267131/132922799578491587290380706028034457600",
+          "proved": true,
+          "weighted_rhs_upper": "-35410341368120272673040352341878227/5316911983139663491615228241121378304"
+        },
+        "information_sha256": "26e3d83a1daee2ab834d74fc60fea0720db45570a2b3b15647c4ecd94a08c779",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4636619339614071/18446744073709551616",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.0017950000474229455
+    },
+    "case": "exact-31",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/25"
+          ],
+          "upper": [
+            "0",
+            "-1351/50",
+            "0",
+            "1/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-741944318672244425286276401485388911/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "148388863734448824406908731447077955/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.6430577036339016e-05,
+                -6.196753622317276e-06
+              ],
+              [
+                -27.01070499532545,
+                -27.010294987608013
+              ],
+              [
+                -3.2864930521926455e-05,
+                -1.238972596825794e-05
+              ],
+              [
+                -0.010109985978399199,
+                -0.009889962821986068
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "52331b0ae49bcdf6c8c0ce2f1ba3e69fde80138b70284b5afb24d5479cbe58a6",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.02910583303309977
+    },
+    "case": "bounded-00",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-135003/5000",
+            "0",
+            "-101/10000"
+          ],
+          "upper": [
+            "0",
+            "-67501/2500",
+            "0",
+            "-99/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-269349818269619799695050041874566511/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "53869963653923899288663459524913475/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -5.116911707010844e-06,
+                5.116911707010844e-06
+              ],
+              [
+                -27.000705003858723,
+                -27.000294996141278
+              ],
+              [
+                -1.023760227683421e-05,
+                1.023760227683421e-05
+              ],
+              [
+                -0.00011001157820654968,
+                0.00011001157820654968
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "acb046c4bee66f2cb54e69da596d9727b7d23233b15e54b1b756f92c60881a5f",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.027784917037934065
+    },
+    "case": "bounded-01",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-135003/5000",
+            "0",
+            "-1/10000"
+          ],
+          "upper": [
+            "0",
+            "-67501/2500",
+            "0",
+            "1/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "-1/100000",
+              "1/100000"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-67501/2500",
+              "0",
+              "101/10000"
+            ],
+            "time_after_application": "1/2",
+            "weight": "4003031979297421/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "3091726897325273/73786976294838206464"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "8006063104621031/72057594037927936"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "203244682133340470840606214517089169/106338239662793269832304564822427566080",
+          "proved": true,
+          "weighted_rhs_upper": "-40648936426668154818467791753417661/21267647932558653966460912964485513216"
+        },
+        "information_sha256": "2117a13d532bf7332edd0ccfe0d7ce74c56bd976418402e849f384ceea0cdef9",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4003031979297421/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3091726897325273/73786976294838206464",
+          "8006063104621031/72057594037927936",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.009863207931630313
+    },
+    "case": "bounded-02",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-135003/5000",
+            "0",
+            "99/10000"
+          ],
+          "upper": [
+            "0",
+            "-67501/2500",
+            "0",
+            "101/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "-1/100000",
+              "1/100000"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-67501/2500",
+              "0",
+              "401/10000"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "579577417451759/2305843009213693952"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "328872839811491827690181367164838053/16615349947311448411297588253504307200",
+          "proved": true,
+          "weighted_rhs_upper": "-13154913592459681591990541944043307/664613997892457936451903530140172288"
+        },
+        "information_sha256": "e10df49dbb7f1cac2fb5e1a6eced851ad8038fb8f7e618b196ef1fac15a1ac66",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "579577417451759/2305843009213693952",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.009322666912339628
+    },
+    "case": "bounded-03",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-135003/5000",
+            "0",
+            "399/10000"
+          ],
+          "upper": [
+            "0",
+            "-67501/2500",
+            "0",
+            "401/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-883722699038920871368682249415367791/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "176744539807784113623389901033073731/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.6430577036339016e-05,
+                -6.196753622317276e-06
+              ],
+              [
+                -27.01220499532545,
+                -27.011794987608013
+              ],
+              [
+                -3.2864930521926455e-05,
+                -1.238972596825794e-05
+              ],
+              [
+                -0.010109985978399199,
+                -0.009889962821986068
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "a47e5307a44f688b717281cc3059a0ae7cc318e68e2c9a790c5e1a25c02c04d3",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.027201583026908338
+    },
+    "case": "bounded-04",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270021/10000",
+            "0",
+            "-101/10000"
+          ],
+          "upper": [
+            "0",
+            "-270019/10000",
+            "0",
+            "-99/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-411128198636296261149098690306642031/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "82225639727259191579473189211328579/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -5.116911707010844e-06,
+                5.116911707010844e-06
+              ],
+              [
+                -27.002205003858723,
+                -27.001794996141278
+              ],
+              [
+                -1.023760227683421e-05,
+                1.023760227683421e-05
+              ],
+              [
+                -0.00011001157820654968,
+                0.00011001157820654968
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "91a6545b2b6d927c9f997c4831d5255c0ac50ca3390d7af94efd5b8eee3e72fe",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.02748229098506272
+    },
+    "case": "bounded-05",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270021/10000",
+            "0",
+            "-1/10000"
+          ],
+          "upper": [
+            "0",
+            "-270019/10000",
+            "0",
+            "1/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "-1/100000",
+              "1/100000"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-270019/10000",
+              "0",
+              "101/10000"
+            ],
+            "time_after_application": "1/2",
+            "weight": "4003031979297421/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "3091726897325273/73786976294838206464"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "8006063104621031/72057594037927936"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "61466301766664065749247834592701329/106338239662793269832304564822427566080",
+          "proved": true,
+          "weighted_rhs_upper": "-12293260353332873800196115768540093/21267647932558653966460912964485513216"
+        },
+        "information_sha256": "eac1255fe71d588fd7c18647fca118ca62923fcafa778e6e06b6e4cc9dfc2cdc",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4003031979297421/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3091726897325273/73786976294838206464",
+          "8006063104621031/72057594037927936",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.009358958108350635
+    },
+    "case": "bounded-06",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270021/10000",
+            "0",
+            "99/10000"
+          ],
+          "upper": [
+            "0",
+            "-270019/10000",
+            "0",
+            "101/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "-1/100000",
+              "1/100000"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-270019/10000",
+              "0",
+              "401/10000"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "579577417451759/2305843009213693952"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "312261663797145038606151812653785253/16615349947311448411297588253504307200",
+          "proved": true,
+          "weighted_rhs_upper": "-12490466551885810028629359763601195/664613997892457936451903530140172288"
+        },
+        "information_sha256": "e2cb28853f93a9ec97071f33c9c02fc1579b199be224b4fc02a5a5f6c1dac07f",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "579577417451759/2305843009213693952",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.009582374943420291
+    },
+    "case": "bounded-07",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270021/10000",
+            "0",
+            "399/10000"
+          ],
+          "upper": [
+            "0",
+            "-270019/10000",
+            "0",
+            "401/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-1261798380016500943796620845371960431/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "252359676003300128108977620224392259/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.6430577036339016e-05,
+                -6.196753622317276e-06
+              ],
+              [
+                -27.016204995325452,
+                -27.01579498760801
+              ],
+              [
+                -3.2864930521926455e-05,
+                -1.238972596825794e-05
+              ],
+              [
+                -0.010109985978399199,
+                -0.009889962821986068
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "3556354121efa3f49d6348ae6c0ad0b72cb6b816f657571656b1fa215754f710",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.027229500003159046
+    },
+    "case": "bounded-08",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270061/10000",
+            "0",
+            "-101/10000"
+          ],
+          "upper": [
+            "0",
+            "-270059/10000",
+            "0",
+            "-99/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-789203879613876313081513552260439151/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "157840775922775201965956161602088003/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -5.116911707010844e-06,
+                5.116911707010844e-06
+              ],
+              [
+                -27.006205003858724,
+                -27.005794996141276
+              ],
+              [
+                -1.023760227683421e-05,
+                1.023760227683421e-05
+              ],
+              [
+                -0.00011001157820654968,
+                0.00011001157820654968
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "c516a965182e9ef3038dd80369fc44141b50b5c7059aceec4b9b81d05f9acd23",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.02849841699935496
+    },
+    "case": "bounded-09",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270061/10000",
+            "0",
+            "-1/10000"
+          ],
+          "upper": [
+            "0",
+            "-270059/10000",
+            "0",
+            "1/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "-2882303761228887/144115188075855872"
+      ],
+      "attempts": 5,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "37095514124989405/332306998946228968225951765070086144",
+            "46236316139808665/324518553658426726783156020576256"
+          ],
+          "margin_lower": "-316609379210915893953310224348515951/106338239662793269832304564822427566080",
+          "proved": false,
+          "weighted_rhs_upper": "63321875842183118140315496019703363/21267647932558653966460912964485513216"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "-2882303761228887/144115188075855872"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.3456902516224491e-06,
+                8.888133162399271e-06
+              ],
+              [
+                -27.006205008124358,
+                -27.005795000406916
+              ],
+              [
+                -1.0237604688135593e-05,
+                1.0237599865532905e-05
+              ],
+              [
+                -0.010110020109474973,
+                -0.009889996953061817
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "94a205a53b39994638abb3ccd65c55a7d8aaf4a33ca94240243d6bdb3ddfffb9",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.5315994169795886
+    },
+    "case": "bounded-10",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270061/10000",
+            "0",
+            "99/10000"
+          ],
+          "upper": [
+            "0",
+            "-270059/10000",
+            "0",
+            "101/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "-1/100000",
+              "1/100000"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-270059/10000",
+              "0",
+              "401/10000"
+            ],
+            "time_after_application": "1",
+            "weight": "6003291040764403/9007199254740992"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "579577417451759/2305843009213693952"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "750411059922417/2251799813685248"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "267965194425579829827516169685311653/16615349947311448411297588253504307200",
+          "proved": true,
+          "weighted_rhs_upper": "-10718607777023201677483934044862251/664613997892457936451903530140172288"
+        },
+        "information_sha256": "0f147246bd6c35ac753a41cb0f9909af459e878c84634d38ad18ccaee229f38b",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6003291040764403/9007199254740992",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "579577417451759/2305843009213693952",
+          "750411059922417/2251799813685248",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.009608249994926155
+    },
+    "case": "bounded-11",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270061/10000",
+            "0",
+            "399/10000"
+          ],
+          "upper": [
+            "0",
+            "-270059/10000",
+            "0",
+            "401/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "0",
+            "0"
+          ],
+          "margin_lower": "-5764607523034235/288230376151711744",
+          "proved": false,
+          "weighted_rhs_upper": "5764607523034235/288230376151711744"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -1.6430577036339016e-05,
+                -6.196753622317276e-06
+              ],
+              [
+                -27.03020499532545,
+                -27.029794987608014
+              ],
+              [
+                -3.2864930521926455e-05,
+                -1.238972596825794e-05
+              ],
+              [
+                -0.010109985978399199,
+                -0.009889962821986068
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "1390d1852431f3e1dd2f41b81d03f4946d8797663c3a18e471755903a947495a",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.026821792009286582
+    },
+    "case": "bounded-12",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270201/10000",
+            "0",
+            "-101/10000"
+          ],
+          "upper": [
+            "0",
+            "-270199/10000",
+            "0",
+            "-99/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "-330036764097206676912726153593824347/16615349947311448411297588253504307200",
+          "proved": false,
+          "weighted_rhs_upper": "13201470563888258592125758886303189/664613997892457936451903530140172288"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -5.116911707010844e-06,
+                5.116911707010844e-06
+              ],
+              [
+                -27.020205003858724,
+                -27.01979499614128
+              ],
+              [
+                -1.023760227683421e-05,
+                1.023760227683421e-05
+              ],
+              [
+                -0.00011001157820654968,
+                0.00011001157820654968
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "0db79d198d9eb4e887a9d8c53b803fb45ace9574df71b4994f50b766014889bf",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.027372000040486455
+    },
+    "case": "bounded-13",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270201/10000",
+            "0",
+            "-1/10000"
+          ],
+          "upper": [
+            "0",
+            "-270199/10000",
+            "0",
+            "1/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "131124567220969799/166153499473114484112975882535043072",
+            "6465067536834543/10141204801825835211973625643008"
+          ],
+          "margin_lower": "-219295685166649250677257141498070747/16615349947311448411297588253504307200",
+          "proved": false,
+          "weighted_rhs_upper": "8771827406665961542706998402473045/664613997892457936451903530140172288"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.196753622317276e-06,
+                1.6430577036339016e-05
+              ],
+              [
+                -27.01020501239199,
+                -27.00979500467455
+              ],
+              [
+                1.238972596825794e-05,
+                3.2864930521926455e-05
+              ],
+              [
+                0.009889962821986068,
+                0.010109985978399199
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "b12e1d1907ea82672fd040effe808a16aa253121e257ba503ab6bab6a1077948",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.025711167021654546
+    },
+    "case": "bounded-14",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270201/10000",
+            "0",
+            "99/10000"
+          ],
+          "upper": [
+            "0",
+            "-270199/10000",
+            "0",
+            "101/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "action": null,
+      "deadline_exceeded": false,
+      "negative": {
+        "active_obligations": [
+          {
+            "disturbance": [
+              "-1/100000",
+              "1/100000"
+            ],
+            "effectiveness": "1",
+            "normal": [
+              "0",
+              "1"
+            ],
+            "origin": [
+              "0",
+              "-270199/10000",
+              "0",
+              "401/10000"
+            ],
+            "time_after_application": "1",
+            "weight": "3001645520382201/4503599627370496"
+          },
+          {
+            "outer_actuator_box_coordinate": 0,
+            "sign": 1,
+            "weight": "4636619339614071/18446744073709551616"
+          },
+          {
+            "outer_actuator_box_coordinate": 1,
+            "sign": -1,
+            "weight": "6003288479379335/18014398509481984"
+          }
+        ],
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "64537022279284341/83076749736557242056487941267521536",
+            "3232533888512365/5070602400912917605986812821504"
+          ],
+          "margin_lower": "903420412999868713728969877298018043/132922799578491587290380706028034457600",
+          "proved": true,
+          "weighted_rhs_upper": "-36136816519994816422915277224237523/5316911983139663491615228241121378304"
+        },
+        "information_sha256": "eafb9f3a57e17e5afb872776c693682797e63aa9cd121ad5a13ebe38f906ac1e",
+        "model": "hcw",
+        "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+        "status": "proved_no_common_held_command",
+        "weights": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3001645520382201/4503599627370496",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4636619339614071/18446744073709551616",
+          "6003288479379335/18014398509481984",
+          "0"
+        ]
+      },
+      "status": "proved_no_common_held_command",
+      "wall_s": 0.009487041970714927
+    },
+    "case": "bounded-15",
+    "input": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-270201/10000",
+            "0",
+            "399/10000"
+          ],
+          "upper": [
+            "0",
+            "-270199/10000",
+            "0",
+            "401/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    }
+  }
+]

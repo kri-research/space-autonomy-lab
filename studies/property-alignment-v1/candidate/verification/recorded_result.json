@@ -1,0 +1,605 @@
+{
+  "schema": "sal-candidate-fixed-input-revalidation/1",
+  "evidence_class": "post_execution_fixed_input_numerical_revalidation",
+  "input_manifest_sha256": "0816ae70c2fb1f30df583d314a3ce5c7c3f07d75d5cf3af2baab36f488ad7575",
+  "original_outcomes_changed": false,
+  "policy_regenerated": false,
+  "protected_evaluation_accessed": false,
+  "prefixes": [
+    {
+      "case": "midpoint_known",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006950707989744842
+    },
+    {
+      "case": "midpoint_known",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.021912124939262867
+    },
+    {
+      "case": "hold_bounded",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006545290932990611
+    },
+    {
+      "case": "hold_bounded",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.021216124994680285
+    },
+    {
+      "case": "correlated_union",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.013619459001347423
+    },
+    {
+      "case": "correlated_union",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.04346145805902779
+    },
+    {
+      "case": "single_age",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.012656291015446186
+    },
+    {
+      "case": "single_age",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.04262537509202957
+    },
+    {
+      "case": "single_delay",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.012571915984153748
+    },
+    {
+      "case": "single_delay",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0427028329577297
+    },
+    {
+      "case": "single_error",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006656666984781623
+    },
+    {
+      "case": "single_error",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.021702541038393974
+    },
+    {
+      "case": "single_authority",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0066712499829009175
+    },
+    {
+      "case": "single_authority",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.02178162499330938
+    },
+    {
+      "case": "compound_without_age",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.012658542022109032
+    },
+    {
+      "case": "compound_without_age",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.04263558401726186
+    },
+    {
+      "case": "compound_without_delay",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.012764541083015501
+    },
+    {
+      "case": "compound_without_delay",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.042723749997094274
+    },
+    {
+      "case": "compound_without_error",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.018263167003169656
+    },
+    {
+      "case": "compound_without_error",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.063319957931526
+    },
+    {
+      "case": "three_face_single_0",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.013791666948236525
+    },
+    {
+      "case": "three_face_single_0",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.028688959078863263
+    },
+    {
+      "case": "three_face_single_1",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.01451245800126344
+    },
+    {
+      "case": "three_face_single_1",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.029581750044599175
+    },
+    {
+      "case": "three_face_single_2",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.014343042043037713
+    },
+    {
+      "case": "three_face_single_2",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.029490542015992105
+    },
+    {
+      "case": "three_face_pair_01",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.027153332950547338
+    },
+    {
+      "case": "three_face_pair_01",
+      "kind": "fixed_pair_action",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.013786209048703313
+    },
+    {
+      "case": "three_face_pair_01",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.05707658303435892
+    },
+    {
+      "case": "three_face_pair_02",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.02714750007726252
+    },
+    {
+      "case": "three_face_pair_02",
+      "kind": "fixed_pair_action",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.013782624970190227
+    },
+    {
+      "case": "three_face_pair_02",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0567433750256896
+    },
+    {
+      "case": "three_face_pair_12",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.013505084090866148
+    },
+    {
+      "case": "three_face_pair_12",
+      "kind": "fixed_pair_action",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.013683500001206994
+    },
+    {
+      "case": "three_face_pair_12",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.043695750064216554
+    },
+    {
+      "case": "opposed_single_0",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006814457941800356
+    },
+    {
+      "case": "opposed_single_0",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.021952749928459525
+    },
+    {
+      "case": "opposed_single_1",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006813999963924289
+    },
+    {
+      "case": "opposed_single_1",
+      "kind": "nonlinear_same_action",
+      "model": "nonlinear",
+      "status": "certified_common_prefix",
+      "wall_s": 0.021919499966315925
+    },
+    {
+      "case": "exact-00",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0066373751033097506
+    },
+    {
+      "case": "exact-01",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006693916977383196
+    },
+    {
+      "case": "exact-02",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.00650595803745091
+    },
+    {
+      "case": "exact-03",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0065130830043926835
+    },
+    {
+      "case": "exact-08",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006670083967037499
+    },
+    {
+      "case": "exact-09",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0066364159574732184
+    },
+    {
+      "case": "exact-10",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006463625002652407
+    },
+    {
+      "case": "exact-11",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006450916989706457
+    },
+    {
+      "case": "exact-16",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006783540942706168
+    },
+    {
+      "case": "exact-17",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006648083915933967
+    },
+    {
+      "case": "exact-18",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006344958092086017
+    },
+    {
+      "case": "exact-19",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006229209015145898
+    },
+    {
+      "case": "exact-20",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006916208891198039
+    },
+    {
+      "case": "exact-21",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006983957951888442
+    },
+    {
+      "case": "exact-24",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006702249986119568
+    },
+    {
+      "case": "exact-25",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0066660839365795255
+    },
+    {
+      "case": "exact-26",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0063190830405801535
+    },
+    {
+      "case": "exact-27",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0065764170140028
+    },
+    {
+      "case": "exact-28",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006741624907590449
+    },
+    {
+      "case": "exact-29",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006680042017251253
+    },
+    {
+      "case": "bounded-00",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.0069781659403815866
+    },
+    {
+      "case": "bounded-01",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006719666998833418
+    },
+    {
+      "case": "bounded-04",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006795375025831163
+    },
+    {
+      "case": "bounded-05",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006783958058804274
+    },
+    {
+      "case": "bounded-08",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006881957990117371
+    },
+    {
+      "case": "bounded-09",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006768207997083664
+    },
+    {
+      "case": "bounded-10",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006855999934487045
+    },
+    {
+      "case": "bounded-12",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006823833915404975
+    },
+    {
+      "case": "bounded-13",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006739458069205284
+    },
+    {
+      "case": "bounded-14",
+      "kind": "candidate",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006776875001378357
+    },
+    {
+      "case": "midpoint_known",
+      "kind": "barrier",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006902333931066096
+    },
+    {
+      "case": "midpoint_known",
+      "kind": "predictive",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006862750044092536
+    },
+    {
+      "case": "hold_bounded",
+      "kind": "barrier",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006384209031239152
+    },
+    {
+      "case": "hold_bounded",
+      "kind": "predictive",
+      "model": "hcw",
+      "status": "certified_common_prefix",
+      "wall_s": 0.006634500110521913
+    }
+  ],
+  "recoveries": [
+    {
+      "case": "three_face_single_0",
+      "model": "hcw",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "5e77d1e6aba492c62a4053b46eb522750f85f6f78c1fb548e5dec39c8dc24cee",
+      "wall_s": 1.7380892090732232
+    },
+    {
+      "case": "three_face_single_0",
+      "model": "nonlinear",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "b7d97609db0685c648f39abaf0b73a19b8c0cba765a9776e6b449ea06dad1f4f",
+      "wall_s": 7.829727292060852
+    },
+    {
+      "case": "three_face_single_1",
+      "model": "hcw",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "7e1d2d5b2bf6d40236b220c6c0d9daddf46a6bacde8a336fa157a8cf7acd037f",
+      "wall_s": 1.8057355839991942
+    },
+    {
+      "case": "three_face_single_1",
+      "model": "nonlinear",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "eb67a4c397547bf7d623af454582207e3c9d9860ee4205e3bebc629763744171",
+      "wall_s": 7.181579708005302
+    },
+    {
+      "case": "three_face_single_2",
+      "model": "hcw",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "9888ceeb0d121d0b633aaf03ab7e68a87ba4c6a87435a3f737290199502f96e4",
+      "wall_s": 1.9763879580423236
+    },
+    {
+      "case": "three_face_single_2",
+      "model": "nonlinear",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "c6f42150aa603b6a270617b4adccfeebf04ae4c6ade1cd1e598fe3c3f6648830",
+      "wall_s": 6.993759749922901
+    },
+    {
+      "case": "opposed_single_0",
+      "model": "hcw",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "206cde707d0399e7b080f7fb1f9ec95fcea0a345d248915a5de69c448dc62231",
+      "wall_s": 2.029476416995749
+    },
+    {
+      "case": "opposed_single_0",
+      "model": "nonlinear",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "b56358269b4813c6b99fa0420ca2cc04419c18ff30072fc734ccdb6f1967164f",
+      "wall_s": 8.229444041033275
+    },
+    {
+      "case": "opposed_single_1",
+      "model": "hcw",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "614eec7e7eee9d4ceb312e59a5a2546c9b0d2afed8ad79c06b57a73044f20697",
+      "wall_s": 2.7249080829788
+    },
+    {
+      "case": "opposed_single_1",
+      "model": "nonlinear",
+      "status": "validated_containment",
+      "hold_acquired": "satisfied",
+      "command_sha256": "0ec6c616210e7601b9f98860d7a8c74300e05648b02d27eedc3cd0d69b1a89c9",
+      "wall_s": 8.479877709061839
+    }
+  ],
+  "passed": true,
+  "verifier_sha256": "aa161b34801f8a6d08e5b6e461cd8d5425ade8f3d150bb446dc9f4d8422b63a9"
+}

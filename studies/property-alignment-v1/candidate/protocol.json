@@ -1,0 +1,42 @@
+{
+  "schema": "sal-candidate-development/1",
+  "task": "06",
+  "scope": "development_only_no_protected_outcomes",
+  "created_at_utc": "2026-09-23T13:52:01.299417+00:00",
+  "baseline_commit": "790b23a80791f565af105a8171bdae9abba58a20",
+  "principal_question": "Can a checked first-action obstruction distinguish inability to find a certificate from actual incompatibility of observation-consistent states, without misreporting a finite safe prefix as recoverability?",
+  "novelty_boundary": "Generic partial-information incompatibility, stopping-distance reasoning, interval reachability and Farkas alternatives are prior mathematics. Concrete counterexamples and checkable computational specialization are the proposed technical contribution; broad novelty is unestablished.",
+  "fixtures": "candidate/fixtures.py with all named contexts and ablations selected analytically before this task outcome execution; includes already-known midpoint and scalar pair background",
+  "physical_property": "unchanged Task02 closed approach/hold union,2m collision,10m keepout; no operational corridor claim",
+  "information": "exact finite union of boxes at measurement; all compatible states produce same declared observation label; no new distinguishing packet until chosen command end; per-segment bounded actuation and disturbance; age and delay have explicit known command queue",
+  "scalar": "Exact rational continuous one-held-command feasibility, up to30 bisections on a bounded held-duration question; independent quadratic extrema check; neither general switched viability nor first discovery",
+  "negative": "HCW attainable initial vertices and admissible constant disturbance/effectiveness realizations, times1/2 and1second afterapplication, outer halfspaces containing full S, nonnegative dual search plus exact residual-aware verification; never treating outer enclosure vertices as attainable",
+  "positive": "Task03 full-box continuous validation of queued and held commands through both supported ODEs; finiteprefix distinct from terminal-membership and conditional resumed-control recovery",
+  "budgets": {
+    "decision_s": 1,
+    "subproblem_s": 0.2,
+    "max_witness_origins": 64,
+    "positive_candidate_actions_max": 7,
+    "workers": 1,
+    "BLAS_threads": 1,
+    "scalar_random_cases": 512,
+    "scalar_commands_per_case": 17,
+    "targeted_scalar_durations": [
+      "1/4",
+      "1/2",
+      "1",
+      "2"
+    ],
+    "planar_grid_cases": 48,
+    "paired_case_runs": 24,
+    "individual_recovery_runs": 10
+  },
+  "comparators": "unchanged Task05 predictive and barrier via disclosed hull adapter, exact current scalar feasibility oracle, separately recorded mean-only/zero-queue/omitted-factor/outer-geometry shortcuts; no claim of winning against an intact method outside its admissible domain",
+  "failure": "retain every attempt and unresolved result; solver failure never gives impossibility; deadline-exceeded outputs not applied; new source changes require new version for scientific rerun",
+  "counterexample_evidence": "three-face pairwise prefix actions fixed in fixtures, single-state brakes followed by unretuned Task04 180s reference tracker, full300s continuation and independent adjudication; initial/terminal constraints unchanged",
+  "protected_evaluation": "Tasks07-10 not executed; preselected cart family not accessed",
+  "outputs": "complete compact JSON fixtures, input identities, dual weights, full local reconstruction traces for individual witnesses; claims and limitations; editable LaTeX derivation",
+  "recovery_numeric_binding": "The interval proof starts from an outward enclosure of the exact rational hypothesis, while the approximate feedback generator starts from its float representation. Float controls are rounded inward if needed to satisfy the exact 1/50 m/s2 norm bound; there is no claim of exact floating feedback equivalence.",
+  "dual_units": "All row residuals and input coordinates are nondimensionalized by their natural SI scales (position residual 1m, acceleration residual and input 1m/s2). The dual margin is dimensionless.",
+  "prior_exposure": "Analytically selected fixtures and their unit-test answers were exercised during method validation; this seal is not external preregistration. Full paired decision and recovery outputs remain unexecuted at sealing."
+}

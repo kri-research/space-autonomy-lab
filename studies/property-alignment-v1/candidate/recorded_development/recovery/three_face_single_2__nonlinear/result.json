@@ -1,0 +1,76 @@
+{
+  "adjudication": {
+    "aborted": false,
+    "adjudication_wall_s": 7.15127274999395,
+    "ambiguous_intervals": 1,
+    "complete_range_coverage": true,
+    "components": {
+      "collision_free": "satisfied",
+      "containment": "satisfied",
+      "keep_out_free": "satisfied"
+    },
+    "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+    "enclosure_kinds": [
+      "validated_interval_taylor"
+    ],
+    "feedback_sequence_certified": false,
+    "first_exit_bracket_s": null,
+    "first_exit_is_exact_time": false,
+    "guaranteed_dwell_s": "127503/1024",
+    "hold_acquired": "satisfied",
+    "initial_containment": "satisfied",
+    "leaf_intervals": 1210,
+    "max_simulator_distance_outside_enclosure_components": [
+      1.326304976956294e-08,
+      5.612495357354419e-09,
+      7.0843897654614715e-12,
+      2.3682786648112665e-11
+    ],
+    "minimum_separation_enclosure_m": [
+      29.9946247894291,
+      29.994911578645375
+    ],
+    "model_kinds": [
+      "nonlinear"
+    ],
+    "nominal_goal": "satisfied",
+    "possible_dwell_upper_s": "510013/4096",
+    "range_evaluations": 1220,
+    "reference_comparison_scope": "Original approximate plant versus enclosed intended ODE; includes represented frame-initial differences, not a simulator error certificate.",
+    "scope": "complete_episode",
+    "scope_of_validated_result": "Intended mathematical model under the exact recorded input schedule; feedback generator is not interval-certified.",
+    "simulator_agreement": "within_predeclared_comparison_limit",
+    "status": "validated_containment",
+    "unresolved_reasons": [
+      "boundary_or_range_overlap_at_resolution_limit"
+    ],
+    "validated_containment": true,
+    "witness_times_s": {
+      "collision_free": null,
+      "containment": null,
+      "keep_out_free": null
+    }
+  },
+  "case": "three_face_single_2",
+  "commands": 300,
+  "error": null,
+  "evidence": "individual known-state fixed-input existence witness, not shared-policy recovery",
+  "first_brake": [
+    ".015",
+    "0"
+  ],
+  "initial": [
+    -7.99905,
+    -80.0,
+    -0.001,
+    0.0
+  ],
+  "initial_exact": [
+    "-159981/20000",
+    "-80",
+    "-1/1000",
+    "0"
+  ],
+  "model": "nonlinear",
+  "validation_initial": "outward enclosure of exact rational hypothesis"
+}

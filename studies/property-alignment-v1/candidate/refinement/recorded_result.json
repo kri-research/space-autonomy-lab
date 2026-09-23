@@ -1,0 +1,391 @@
+{
+  "schema": "sal-scalar-recovery-clarification/1",
+  "recovery_deadline_s": "1/4",
+  "prefix_deadline_bracket": {
+    "lower_s": "1/2",
+    "upper_s": "536870913/1073741824",
+    "right_censored": false
+  },
+  "rows": [
+    {
+      "blind_time_s": "0",
+      "paths": [
+        {
+          "sign": -1,
+          "segments": [
+            {
+              "duration": "0",
+              "command": "0",
+              "minimum": "-9/10",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "2/5",
+              "minimum": "-19/20",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "-1/5",
+              "minimum": "-9/10",
+              "maximum": "-4/5"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "-4/5",
+              "maximum": "-4/5"
+            }
+          ],
+          "contained": true,
+          "final_q": "-4/5",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        },
+        {
+          "sign": 1,
+          "segments": [
+            {
+              "duration": "0",
+              "command": "0",
+              "minimum": "9/10",
+              "maximum": "9/10"
+            },
+            {
+              "duration": "1",
+              "command": "-2/5",
+              "minimum": "9/10",
+              "maximum": "19/20"
+            },
+            {
+              "duration": "1",
+              "command": "1/5",
+              "minimum": "4/5",
+              "maximum": "9/10"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "4/5",
+              "maximum": "4/5"
+            }
+          ],
+          "contained": true,
+          "final_q": "4/5",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        }
+      ],
+      "all_recover": true,
+      "exact_recovery_feasible": true,
+      "safe_blind_prefix": true
+    },
+    {
+      "blind_time_s": "1/8",
+      "paths": [
+        {
+          "sign": -1,
+          "segments": [
+            {
+              "duration": "1/8",
+              "command": "0",
+              "minimum": "-37/40",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "2/5",
+              "minimum": "-39/40",
+              "maximum": "-37/40"
+            },
+            {
+              "duration": "1",
+              "command": "-1/5",
+              "minimum": "-37/40",
+              "maximum": "-33/40"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "-33/40",
+              "maximum": "-33/40"
+            }
+          ],
+          "contained": true,
+          "final_q": "-33/40",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        },
+        {
+          "sign": 1,
+          "segments": [
+            {
+              "duration": "1/8",
+              "command": "0",
+              "minimum": "9/10",
+              "maximum": "37/40"
+            },
+            {
+              "duration": "1",
+              "command": "-2/5",
+              "minimum": "37/40",
+              "maximum": "39/40"
+            },
+            {
+              "duration": "1",
+              "command": "1/5",
+              "minimum": "33/40",
+              "maximum": "37/40"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "33/40",
+              "maximum": "33/40"
+            }
+          ],
+          "contained": true,
+          "final_q": "33/40",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        }
+      ],
+      "all_recover": true,
+      "exact_recovery_feasible": true,
+      "safe_blind_prefix": true
+    },
+    {
+      "blind_time_s": "1/4",
+      "paths": [
+        {
+          "sign": -1,
+          "segments": [
+            {
+              "duration": "1/4",
+              "command": "0",
+              "minimum": "-19/20",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "2/5",
+              "minimum": "-1",
+              "maximum": "-19/20"
+            },
+            {
+              "duration": "1",
+              "command": "-1/5",
+              "minimum": "-19/20",
+              "maximum": "-17/20"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "-17/20",
+              "maximum": "-17/20"
+            }
+          ],
+          "contained": true,
+          "final_q": "-17/20",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        },
+        {
+          "sign": 1,
+          "segments": [
+            {
+              "duration": "1/4",
+              "command": "0",
+              "minimum": "9/10",
+              "maximum": "19/20"
+            },
+            {
+              "duration": "1",
+              "command": "-2/5",
+              "minimum": "19/20",
+              "maximum": "1"
+            },
+            {
+              "duration": "1",
+              "command": "1/5",
+              "minimum": "17/20",
+              "maximum": "19/20"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "17/20",
+              "maximum": "17/20"
+            }
+          ],
+          "contained": true,
+          "final_q": "17/20",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        }
+      ],
+      "all_recover": true,
+      "exact_recovery_feasible": true,
+      "safe_blind_prefix": true
+    },
+    {
+      "blind_time_s": "2501/10000",
+      "paths": [
+        {
+          "sign": -1,
+          "segments": [
+            {
+              "duration": "2501/10000",
+              "command": "0",
+              "minimum": "-47501/50000",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "2/5",
+              "minimum": "-50001/50000",
+              "maximum": "-47501/50000"
+            },
+            {
+              "duration": "1",
+              "command": "-1/5",
+              "minimum": "-47501/50000",
+              "maximum": "-42501/50000"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "-42501/50000",
+              "maximum": "-42501/50000"
+            }
+          ],
+          "contained": false,
+          "final_q": "-42501/50000",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        },
+        {
+          "sign": 1,
+          "segments": [
+            {
+              "duration": "2501/10000",
+              "command": "0",
+              "minimum": "9/10",
+              "maximum": "47501/50000"
+            },
+            {
+              "duration": "1",
+              "command": "-2/5",
+              "minimum": "47501/50000",
+              "maximum": "50001/50000"
+            },
+            {
+              "duration": "1",
+              "command": "1/5",
+              "minimum": "42501/50000",
+              "maximum": "47501/50000"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "42501/50000",
+              "maximum": "42501/50000"
+            }
+          ],
+          "contained": false,
+          "final_q": "42501/50000",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        }
+      ],
+      "all_recover": false,
+      "exact_recovery_feasible": false,
+      "safe_blind_prefix": true
+    },
+    {
+      "blind_time_s": "1/2",
+      "paths": [
+        {
+          "sign": -1,
+          "segments": [
+            {
+              "duration": "1/2",
+              "command": "0",
+              "minimum": "-1",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "2/5",
+              "minimum": "-21/20",
+              "maximum": "-1"
+            },
+            {
+              "duration": "1",
+              "command": "-1/5",
+              "minimum": "-1",
+              "maximum": "-9/10"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "-9/10",
+              "maximum": "-9/10"
+            }
+          ],
+          "contained": false,
+          "final_q": "-9/10",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        },
+        {
+          "sign": 1,
+          "segments": [
+            {
+              "duration": "1/2",
+              "command": "0",
+              "minimum": "9/10",
+              "maximum": "1"
+            },
+            {
+              "duration": "1",
+              "command": "-2/5",
+              "minimum": "1",
+              "maximum": "21/20"
+            },
+            {
+              "duration": "1",
+              "command": "1/5",
+              "minimum": "9/10",
+              "maximum": "1"
+            },
+            {
+              "duration": "1",
+              "command": "0",
+              "minimum": "9/10",
+              "maximum": "9/10"
+            }
+          ],
+          "contained": false,
+          "final_q": "9/10",
+          "final_v": "0",
+          "zero_command_remains_safe": true
+        }
+      ],
+      "all_recover": false,
+      "exact_recovery_feasible": false,
+      "safe_blind_prefix": true
+    }
+  ],
+  "scope": "Exact deterministic scalar symmetric pair; full state revealed at the end of blindness; no noise or orbital-theorem claim",
+  "proof_outline": "Viability set is convex and reflection-symmetric. The common held-action feasibility set is convex and symmetric, so feasibility implies zero is feasible. Under zero, the outward state must satisfy a+v*T+v^2/(2U)<=L. Maximal braking proves sufficiency.",
+  "explicit_sampled_recovery": "The exhibited specific pair uses one-second held recovery commands after the blind interval, then exact zero-velocity holding.",
+  "broad_novelty_claim": false,
+  "original_development_rows_changed": false,
+  "source_sha256": {
+    "refinement/__init__.py": "2c2a2a34b77b8c93961f4d1a43ca625610c713bfcd9bacb6e88a7caeb941f2dd",
+    "refinement/scalar_recovery.py": "30a4df2f64961c74f41dda8969ce788b97afceb4ec6186ca0c41695bfe7933df"
+  },
+  "protocol_sha256": "d0f34e0b939cd2a2c4866450bf60a607b5c515c696afa72595aaac39e6087608"
+}

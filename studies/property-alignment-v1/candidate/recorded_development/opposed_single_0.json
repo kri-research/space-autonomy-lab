@@ -1,0 +1,120 @@
+{
+  "candidate": {
+    "action": [
+      "-2882303761228887/144115188075855872",
+      "0"
+    ],
+    "attempts": 3,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "3310913863882093/5070602400912917605986812821504",
+          "25741361496334669/324518553658426726783156020576256"
+        ],
+        "margin_lower": "-1003279778136372740560973952711347/519229685853482762853049632922009600",
+        "proved": false,
+        "weighted_rhs_upper": "40131191125454605443432513579019/20769187434139310514121985316880384"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "-2882303761228887/144115188075855872",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              6.9980134136600585,
+              6.998013413660074
+            ],
+            [
+              -70.00001509500649,
+              -70.00001509500626
+            ],
+            [
+              2.6825183951332744e-05,
+              2.6825183951386534e-05
+            ],
+            [
+              -2.265768460762189e-05,
+              -2.2657684607621722e-05
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "f8b0bd452864b158f03aae1d9ffbce06a3e32c7728cc7eff7ab4b91fabfe4797",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.044312375015579164
+  },
+  "case": "opposed_single_0",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": {
+    "action": [
+      "-2882303761228887/144115188075855872",
+      "0"
+    ],
+    "all_terminal_members": false,
+    "end_after_measurement_s": "1",
+    "hypotheses": [
+      {
+        "ambiguous_intervals": 0,
+        "components": {
+          "collision_free": "satisfied",
+          "containment": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "enclosure_final": [
+          [
+            6.998013414340084,
+            6.998013414340108
+          ],
+          [
+            -70.00001509514567,
+            -70.00001509514544
+          ],
+          [
+            2.682654388602885e-05,
+            2.682654390534761e-05
+          ],
+          [
+            -2.2657963545164795e-05,
+            -2.2657963545142044e-05
+          ]
+        ],
+        "range_evaluations": 4,
+        "reason": null,
+        "status": "validated_containment"
+      }
+    ],
+    "information_sha256": "f8b0bd452864b158f03aae1d9ffbce06a3e32c7728cc7eff7ab4b91fabfe4797",
+    "model": "nonlinear",
+    "recovery_status": "unassessed",
+    "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+    "status": "certified_common_prefix"
+  }
+}

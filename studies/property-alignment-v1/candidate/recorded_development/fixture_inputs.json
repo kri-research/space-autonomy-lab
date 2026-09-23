@@ -1,0 +1,1035 @@
+{
+  "compound": {
+    "age": 1,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 1,
+    "disturbance": "0",
+    "effectiveness": [
+      "1/2",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-5407/200",
+          "0",
+          "11/1000"
+        ],
+        "upper": [
+          "0",
+          "-27031/1000",
+          "0",
+          "13/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "compound_without_age": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 1,
+    "disturbance": "0",
+    "effectiveness": [
+      "1/2",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-5407/200",
+          "0",
+          "11/1000"
+        ],
+        "upper": [
+          "0",
+          "-27031/1000",
+          "0",
+          "13/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "compound_without_authority_loss": {
+    "age": 1,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 1,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-5407/200",
+          "0",
+          "11/1000"
+        ],
+        "upper": [
+          "0",
+          "-27031/1000",
+          "0",
+          "13/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "compound_without_delay": {
+    "age": 1,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1/2",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-5407/200",
+          "0",
+          "11/1000"
+        ],
+        "upper": [
+          "0",
+          "-27031/1000",
+          "0",
+          "13/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "compound_without_error": {
+    "age": 1,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 1,
+    "disturbance": "0",
+    "effectiveness": [
+      "1/2",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ],
+        "upper": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "correlated_union": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "29/10",
+          "-301/10",
+          "0",
+          "0"
+        ],
+        "upper": [
+          "29/10",
+          "-301/10",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "lower": [
+          "0",
+          "-271/10",
+          "0",
+          "0"
+        ],
+        "upper": [
+          "0",
+          "-271/10",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "hold_bounded": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "1/20000",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "-1/100",
+          "-3001/100",
+          "-1/1000",
+          "-1/1000"
+        ],
+        "upper": [
+          "1/100",
+          "-2999/100",
+          "1/1000",
+          "1/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "midpoint_known": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-195/2",
+          "0",
+          "3/25"
+        ],
+        "upper": [
+          "0",
+          "-195/2",
+          "0",
+          "3/25"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "opposed_radial": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "1747/250",
+          "-70",
+          "1/50",
+          "0"
+        ],
+        "upper": [
+          "1747/250",
+          "-70",
+          "1/50",
+          "0"
+        ]
+      },
+      {
+        "lower": [
+          "-1747/250",
+          "-70",
+          "-1/50",
+          "0"
+        ],
+        "upper": [
+          "-1747/250",
+          "-70",
+          "-1/50",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "opposed_single_0": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "1747/250",
+          "-70",
+          "1/50",
+          "0"
+        ],
+        "upper": [
+          "1747/250",
+          "-70",
+          "1/50",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "opposed_single_1": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "-1747/250",
+          "-70",
+          "-1/50",
+          "0"
+        ],
+        "upper": [
+          "-1747/250",
+          "-70",
+          "-1/50",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "outer_geometry_false_safe": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "12/5",
+          "-57/2",
+          "0",
+          "0"
+        ],
+        "upper": [
+          "12/5",
+          "-57/2",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "outward_boundary": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-27",
+          "0",
+          "3/25"
+        ],
+        "upper": [
+          "0",
+          "-27",
+          "0",
+          "3/25"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "single_age": {
+    "age": 1,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ],
+        "upper": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "single_authority": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1/2",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ],
+        "upper": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "single_delay": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 1,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ],
+        "upper": [
+          "0",
+          "-27033/1000",
+          "0",
+          "3/250"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "single_error": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-5407/200",
+          "0",
+          "11/1000"
+        ],
+        "upper": [
+          "0",
+          "-27031/1000",
+          "0",
+          "13/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_conflict": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ],
+        "upper": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ]
+      },
+      {
+        "lower": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ],
+        "upper": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ]
+      },
+      {
+        "lower": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ],
+        "upper": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_pair_01": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ],
+        "upper": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ]
+      },
+      {
+        "lower": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ],
+        "upper": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_pair_02": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ],
+        "upper": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ]
+      },
+      {
+        "lower": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ],
+        "upper": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_pair_12": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ],
+        "upper": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ]
+      },
+      {
+        "lower": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ],
+        "upper": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_single_0": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ],
+        "upper": [
+          "0",
+          "-1999981/20000",
+          "0",
+          "-1/1000"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_single_1": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ],
+        "upper": [
+          "159981/20000",
+          "-80",
+          "1/1000",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  },
+  "three_face_single_2": {
+    "age": 0,
+    "authority": "1/50",
+    "command_period_s": 1,
+    "delay": 0,
+    "disturbance": "0",
+    "effectiveness": [
+      "1",
+      "1"
+    ],
+    "hypotheses": [
+      {
+        "lower": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ],
+        "upper": [
+          "-159981/20000",
+          "-80",
+          "-1/1000",
+          "0"
+        ]
+      }
+    ],
+    "kind": "declared_exact_information_set",
+    "observation_pattern": "no new distinguishing observation before this held command ends",
+    "queue": [],
+    "schema": "sal-common-information/1",
+    "units": [
+      "m",
+      "m",
+      "m/s",
+      "m/s"
+    ]
+  }
+}

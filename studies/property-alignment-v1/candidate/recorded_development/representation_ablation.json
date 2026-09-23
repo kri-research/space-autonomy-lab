@@ -1,0 +1,123 @@
+{
+  "hull_negative": {
+    "reason": "ValueError:Impossibility needs attainable origins, not an outer-only enclosure",
+    "status": "unresolved"
+  },
+  "hull_zero": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "all_terminal_members": false,
+    "end_after_measurement_s": "1",
+    "hypotheses": [
+      {
+        "ambiguous_intervals": 4096,
+        "components": {
+          "collision_free": "satisfied",
+          "containment": "unresolved",
+          "keep_out_free": "satisfied"
+        },
+        "enclosure_final": [
+          [
+            -2.375645362491332e-12,
+            2.9000055679604824
+          ],
+          [
+            -30.100000004199632,
+            -27.09999999999997
+          ],
+          [
+            -9.502582666286812e-12,
+            1.1135924519594218e-05
+          ],
+          [
+            -1.2598809627007501e-08,
+            5.375451887856726e-15
+          ]
+        ],
+        "range_evaluations": 8188,
+        "reason": null,
+        "status": "unresolved"
+      }
+    ],
+    "information_sha256": "58b1e6c0522697f3bf1d574c945f210b6e6c0cbd73743724048ff04bd67a708a",
+    "model": "hcw",
+    "recovery_status": "unassessed",
+    "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+    "status": "unresolved"
+  },
+  "union_zero": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "all_terminal_members": false,
+    "end_after_measurement_s": "1",
+    "hypotheses": [
+      {
+        "ambiguous_intervals": 0,
+        "components": {
+          "collision_free": "satisfied",
+          "containment": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "enclosure_final": [
+          [
+            2.9000055679580985,
+            2.900005567958106
+          ],
+          [
+            -30.100000004199632,
+            -30.100000004199572
+          ],
+          [
+            1.1135915017011495e-05,
+            1.1135915017011553e-05
+          ],
+          [
+            -1.2598804251555613e-08,
+            -1.259880425155553e-08
+          ]
+        ],
+        "range_evaluations": 4,
+        "reason": null,
+        "status": "validated_containment"
+      },
+      {
+        "ambiguous_intervals": 0,
+        "components": {
+          "collision_free": "satisfied",
+          "containment": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "enclosure_final": [
+          [
+            -2.4716525140113564e-39,
+            2.4716525140113564e-39
+          ],
+          [
+            -27.100000000000026,
+            -27.099999999999973
+          ],
+          [
+            -9.764456908360799e-42,
+            9.764456908360799e-42
+          ],
+          [
+            -5.592690467332597e-42,
+            5.592690467332597e-42
+          ]
+        ],
+        "range_evaluations": 4,
+        "reason": null,
+        "status": "validated_containment"
+      }
+    ],
+    "information_sha256": "98523e0dad539eaf6337e372b3f8f76a496a1b9de1dc5152143bf349555885fb",
+    "model": "hcw",
+    "recovery_status": "unassessed",
+    "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+    "status": "certified_common_prefix"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "candidate": {
+    "action": null,
+    "deadline_exceeded": false,
+    "negative": {
+      "active_obligations": [
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "origin": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ],
+          "time_after_application": "1",
+          "weight": "1023545369856931/2251799813685248"
+        },
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "origin": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ],
+          "time_after_application": "1",
+          "weight": "3275345183542179/36028797018963968"
+        },
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "origin": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ],
+          "time_after_application": "1",
+          "weight": "8188362958855449/18014398509481984"
+        }
+      ],
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "628702998687829918157/664613997892457936451903530140172288",
+          "256978001092388379/1298074214633706907132624082305024"
+        ],
+        "margin_lower": "1700391029073976381726422951300441/26584559915698317458076141205606891520",
+        "proved": true,
+        "weighted_rhs_upper": "-340078205814916920462924131503001/5316911983139663491615228241121378304"
+      },
+      "information_sha256": "11916092197f633d39013a6acb870fdc243ee28d1e5017f2f444d37e03efb117",
+      "model": "hcw",
+      "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+      "status": "proved_no_common_held_command",
+      "weights": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1023545369856931/2251799813685248",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3275345183542179/36028797018963968",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "8188362958855449/18014398509481984",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "status": "proved_no_common_held_command",
+    "wall_s": 0.0025843330658972263
+  },
+  "case": "three_face_conflict",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": null
+}

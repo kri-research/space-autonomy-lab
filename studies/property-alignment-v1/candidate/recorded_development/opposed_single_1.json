@@ -1,0 +1,120 @@
+{
+  "candidate": {
+    "action": [
+      "2882303761228887/144115188075855872",
+      "0"
+    ],
+    "attempts": 4,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "14546123997849667/20282409603651670423947251286016",
+          "50707418211849563/649037107316853453566312041152512"
+        ],
+        "margin_lower": "-1995306729995503532978689456497549/1038459371706965525706099265844019200",
+        "proved": false,
+        "weighted_rhs_upper": "79812269199819480604413315170101/41538374868278621028243970633760768"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "2882303761228887/144115188075855872",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -6.998013413660074,
+              -6.9980134136600585
+            ],
+            [
+              -69.99998490499374,
+              -69.99998490499351
+            ],
+            [
+              -2.6825183951386534e-05,
+              -2.6825183951332744e-05
+            ],
+            [
+              2.2657684607621722e-05,
+              2.265768460762189e-05
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "602c12d47b912228510da2d97dc0fbc7c2d0e52a0618e33292bdcc38fcd474f1",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.062425166950561106
+  },
+  "case": "opposed_single_1",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": {
+    "action": [
+      "2882303761228887/144115188075855872",
+      "0"
+    ],
+    "all_terminal_members": false,
+    "end_after_measurement_s": "1",
+    "hypotheses": [
+      {
+        "ambiguous_intervals": 0,
+        "components": {
+          "collision_free": "satisfied",
+          "containment": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "enclosure_final": [
+          [
+            -6.998013412979829,
+            -6.998013412979809
+          ],
+          [
+            -69.9999849048556,
+            -69.99998490485537
+          ],
+          [
+            -2.6823823375543572e-05,
+            -2.6823823360076764e-05
+          ],
+          [
+            2.2657960439630696e-05,
+            2.265796043964907e-05
+          ]
+        ],
+        "range_evaluations": 4,
+        "reason": null,
+        "status": "validated_containment"
+      }
+    ],
+    "information_sha256": "602c12d47b912228510da2d97dc0fbc7c2d0e52a0618e33292bdcc38fcd474f1",
+    "model": "nonlinear",
+    "recovery_status": "unassessed",
+    "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+    "status": "certified_common_prefix"
+  }
+}
