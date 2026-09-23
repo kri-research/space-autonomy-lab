@@ -1,0 +1,5 @@
+stratum,completed_eligible,completed_ineligible,started_without_receipt,not_started
+interior_pair,288,0,0,0
+radial_boundary,288,0,0,0
+three_face_boundary,288,0,0,0
+timing_bounded_pair,147,0,4,137

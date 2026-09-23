@@ -1,0 +1,85 @@
+{
+  "case_id": "8f439ef85d302371873701213c2eb4e3648785580f8b23d4fea68cba8c385b1b",
+  "index": 317,
+  "namespace": "protected",
+  "qualification": {
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.005"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 2,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0.005"
+        ]
+      }
+    ]
+  },
+  "stratum": "three_face_boundary"
+}

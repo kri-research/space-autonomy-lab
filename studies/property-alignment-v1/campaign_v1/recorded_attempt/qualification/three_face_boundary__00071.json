@@ -1,0 +1,106 @@
+{
+  "case_id": "2e0a24a7bd4c139346dcb7ad2b89b845a1ac63f35ec41b66dc69e36d54ab25cd",
+  "index": 71,
+  "namespace": "protected",
+  "qualification": {
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "-0.005",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0.005",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.005"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 2,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0.005"
+        ]
+      }
+    ]
+  },
+  "stratum": "three_face_boundary"
+}

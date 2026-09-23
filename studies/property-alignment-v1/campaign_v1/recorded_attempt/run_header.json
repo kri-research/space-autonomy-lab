@@ -1,0 +1,9 @@
+{
+  "evaluation_id": "63eb088857849237bb9a4d42ac5ae38053c54335134a187c72d370f4a65d7ebd",
+  "freeze_sha256": "30ad0fbe500dafae4322e39753fc530fafde75ec8b001b7ea639c846def15eeb",
+  "physical_validation": false,
+  "schema": "sal-protected-run/2",
+  "source_commit": "cf83947518756537c58317afae253596d685133e",
+  "started_at_utc": "2026-09-23T18:53:03.973003+00:00",
+  "workers": 4
+}
