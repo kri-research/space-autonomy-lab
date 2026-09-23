@@ -1,0 +1,15 @@
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 1.459033228456974e-06, "phase": "imports"}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.00021166703663766384, "phase": "qualification_start"}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.00034666701685637236, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.0005185840418562293, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.00103554199449718, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.0012279170332476497, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.0013960839714854956, "phase": "queue_propagation", "hypothesis": 2}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.0015324170235544443, "phase": "queue_check", "hypothesis": 2}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.0016915419837459922, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.007519125007092953, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.013571999967098236, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.021855250000953674, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.0274071249878034, "phase": "continuation", "hypothesis": 1, "action_index": 1}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.035357499960809946, "phase": "continuation", "hypothesis": 2, "action_index": 0}
+{"case_key": "calibration__three_face_boundary__00000", "wall_since_start_s": 0.04261787503492087, "phase": "complete"}

@@ -1,0 +1,6 @@
+{"case_key": "named__hold_bounded", "wall_since_start_s": 1.4170072972774506e-06, "phase": "imports"}
+{"case_key": "named__hold_bounded", "wall_since_start_s": 0.0002697920426726341, "phase": "qualification_start"}
+{"case_key": "named__hold_bounded", "wall_since_start_s": 0.0004444579826667905, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__hold_bounded", "wall_since_start_s": 0.0006615830352529883, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__hold_bounded", "wall_since_start_s": 0.0010192079935222864, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__hold_bounded", "wall_since_start_s": 0.007822167011909187, "phase": "complete"}

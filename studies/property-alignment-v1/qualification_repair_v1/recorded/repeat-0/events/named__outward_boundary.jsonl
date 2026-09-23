@@ -1,0 +1,17 @@
+{"case_key": "named__outward_boundary", "wall_since_start_s": 5.749985575675964e-06, "phase": "imports"}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.002288375049829483, "phase": "qualification_start"}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.00263391702901572, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.0029765419894829392, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.003343417076393962, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.009759749984368682, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.015889583039097488, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.021086208056658506, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.026171833043918014, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.031556917005218565, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.038005375070497394, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.04320200008805841, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.04942804202437401, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.05680875002872199, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.0629832079866901, "phase": "continuation", "hypothesis": 0, "action_index": 10}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.06857383309397846, "phase": "continuation", "hypothesis": 0, "action_index": 11}
+{"case_key": "named__outward_boundary", "wall_since_start_s": 0.07448850001674145, "phase": "continuation", "hypothesis": 0, "action_index": 12}

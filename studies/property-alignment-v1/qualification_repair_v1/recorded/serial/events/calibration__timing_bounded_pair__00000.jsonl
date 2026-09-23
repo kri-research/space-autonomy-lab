@@ -1,0 +1,9 @@
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 1.9579892978072166e-06, "phase": "imports"}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.0005977499531581998, "phase": "qualification_start"}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.0009025420295074582, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.014990666997618973, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.021820791997015476, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.037843249971047044, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.05338874994777143, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.06432383297942579, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "calibration__timing_bounded_pair__00000", "wall_since_start_s": 0.07800358301028609, "phase": "complete"}

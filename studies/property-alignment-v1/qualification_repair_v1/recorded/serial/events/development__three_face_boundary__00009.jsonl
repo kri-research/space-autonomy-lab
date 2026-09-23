@@ -1,0 +1,12 @@
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 1.6660196706652641e-06, "phase": "imports"}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.00039733306039124727, "phase": "qualification_start"}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.0007660830160602927, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.0010586250573396683, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.001414666068740189, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.0016077910549938679, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.0018657080363482237, "phase": "queue_propagation", "hypothesis": 2}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.0019987080013379455, "phase": "queue_check", "hypothesis": 2}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.0021353750489652157, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.00963791599497199, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.018313457956537604, "phase": "continuation", "hypothesis": 2, "action_index": 0}
+{"case_key": "development__three_face_boundary__00009", "wall_since_start_s": 0.027245708042755723, "phase": "complete"}

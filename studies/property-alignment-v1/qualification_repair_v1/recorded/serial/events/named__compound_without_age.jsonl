@@ -1,0 +1,6 @@
+{"case_key": "named__compound_without_age", "wall_since_start_s": 1.5420373529195786e-06, "phase": "imports"}
+{"case_key": "named__compound_without_age", "wall_since_start_s": 0.00032466696575284004, "phase": "qualification_start"}
+{"case_key": "named__compound_without_age", "wall_since_start_s": 0.0006007920019328594, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__compound_without_age", "wall_since_start_s": 0.0056219580583274364, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__compound_without_age", "wall_since_start_s": 0.008134291972965002, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__compound_without_age", "wall_since_start_s": 0.015073667047545314, "phase": "complete"}

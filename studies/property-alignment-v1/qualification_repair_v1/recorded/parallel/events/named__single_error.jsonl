@@ -1,0 +1,6 @@
+{"case_key": "named__single_error", "wall_since_start_s": 1.5830155462026596e-06, "phase": "imports"}
+{"case_key": "named__single_error", "wall_since_start_s": 0.00028024998027831316, "phase": "qualification_start"}
+{"case_key": "named__single_error", "wall_since_start_s": 0.0005595829570665956, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__single_error", "wall_since_start_s": 0.0007216669619083405, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__single_error", "wall_since_start_s": 0.000966791994869709, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__single_error", "wall_since_start_s": 0.008041374967433512, "phase": "complete"}

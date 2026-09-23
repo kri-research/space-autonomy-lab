@@ -1,0 +1,6 @@
+{"case_key": "named__midpoint_known", "wall_since_start_s": 2.5419285520911217e-06, "phase": "imports"}
+{"case_key": "named__midpoint_known", "wall_since_start_s": 0.0006128749810159206, "phase": "qualification_start"}
+{"case_key": "named__midpoint_known", "wall_since_start_s": 0.0009459999855607748, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__midpoint_known", "wall_since_start_s": 0.0011575419921427965, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__midpoint_known", "wall_since_start_s": 0.0013869579415768385, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__midpoint_known", "wall_since_start_s": 0.008808166952803731, "phase": "complete"}

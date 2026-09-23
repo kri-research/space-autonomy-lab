@@ -1,0 +1,6 @@
+{"case_key": "stress__bounded_safe", "wall_since_start_s": 3.084074705839157e-06, "phase": "imports"}
+{"case_key": "stress__bounded_safe", "wall_since_start_s": 0.0003325840225443244, "phase": "qualification_start"}
+{"case_key": "stress__bounded_safe", "wall_since_start_s": 0.0005583340534940362, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "stress__bounded_safe", "wall_since_start_s": 0.009539792081341147, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "stress__bounded_safe", "wall_since_start_s": 0.014262250042520463, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "stress__bounded_safe", "wall_since_start_s": 0.022313125082291663, "phase": "complete"}

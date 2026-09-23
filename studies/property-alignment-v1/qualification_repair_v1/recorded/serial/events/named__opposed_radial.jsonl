@@ -1,0 +1,28 @@
+{"case_key": "named__opposed_radial", "wall_since_start_s": 1.500011421740055e-06, "phase": "imports"}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0002958329860121012, "phase": "qualification_start"}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0005583750316873193, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0007070410065352917, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0008728329557925463, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0009773330530151725, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0010984160471707582, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.006426207954064012, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.012692749965935946, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.018323790980502963, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.02470295794773847, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.03046658297535032, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.036053125048056245, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.04132970795035362, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.04719349998049438, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.0541682499460876, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.05998150003142655, "phase": "continuation", "hypothesis": 0, "action_index": 10}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.07093504094518721, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.07799100002739578, "phase": "continuation", "hypothesis": 1, "action_index": 1}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.08552754099946469, "phase": "continuation", "hypothesis": 1, "action_index": 2}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.09247304103337228, "phase": "continuation", "hypothesis": 1, "action_index": 3}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.10157145804259926, "phase": "continuation", "hypothesis": 1, "action_index": 4}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.11776416597422212, "phase": "continuation", "hypothesis": 1, "action_index": 5}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.12721695797517896, "phase": "continuation", "hypothesis": 1, "action_index": 6}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.13519416598137468, "phase": "continuation", "hypothesis": 1, "action_index": 7}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.1429579999530688, "phase": "continuation", "hypothesis": 1, "action_index": 8}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.15042716602329165, "phase": "continuation", "hypothesis": 1, "action_index": 9}
+{"case_key": "named__opposed_radial", "wall_since_start_s": 0.16089658299461007, "phase": "complete"}

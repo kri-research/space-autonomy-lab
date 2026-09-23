@@ -1,0 +1,12 @@
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 1.7910497263073921e-06, "phase": "imports"}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.00020279106684029102, "phase": "qualification_start"}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.00035454099997878075, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.0004985829582437873, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.0006658750353381038, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.0007751249941065907, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.0009183749789372087, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.007427291013300419, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.013515791040845215, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.02087354101240635, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.027330333017744124, "phase": "continuation", "hypothesis": 1, "action_index": 1}
+{"case_key": "named__three_face_pair_12", "wall_since_start_s": 0.03509799996390939, "phase": "complete"}

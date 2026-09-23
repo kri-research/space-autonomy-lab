@@ -1,0 +1,61 @@
+{
+  "input_sha256": "0a6f61ab4daeaf68f21430ae3819b560a4de330c5a2b5ae2709601ae49d308d1",
+  "key": "named__single_age",
+  "namespace": "analytic",
+  "qualification": {
+    "counters": {
+      "continuation_propagations": 1,
+      "point_evaluations": 24,
+      "queue_propagations": 1,
+      "range_evaluations": 8
+    },
+    "criterion": "every hypothesis admits fixed queue and a fixed-library one-second HCW prefix",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "information_sha256": "b14008366c4247797ef4ee58d7cc03ab20427f1d6c75ff7adfbed882c58db702",
+    "last_phase": "complete",
+    "physical_impossibility_claim": false,
+    "queue_checks": [
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 0,
+        "point_evaluations": 12,
+        "range_evaluations": 4,
+        "reason": "continuous_range_enclosures",
+        "scope": "physical_prefix_only",
+        "status": "validated_containment",
+        "witness_time_s": null
+      }
+    ],
+    "schema": "sal-repaired-qualification/1",
+    "status": "qualified",
+    "wall_s": 0.02137791702989489
+  },
+  "schema": "sal-repair-job/1",
+  "worker_wall_s": 0.021952542010694742
+}

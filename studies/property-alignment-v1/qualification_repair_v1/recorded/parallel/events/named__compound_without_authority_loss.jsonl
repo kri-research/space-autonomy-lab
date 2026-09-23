@@ -1,0 +1,18 @@
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 1.459033228456974e-06, "phase": "imports"}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.0002816669875755906, "phase": "qualification_start"}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.00044408405665308237, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.010874917032197118, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.01636704197153449, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.02264800004195422, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.029172167065553367, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.03571245900820941, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.042535917018540204, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.04889541701413691, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.05517804203554988, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.061735916999168694, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.06791137508116663, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.07498966704588383, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.08209445897955447, "phase": "continuation", "hypothesis": 0, "action_index": 10}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.08846641704440117, "phase": "continuation", "hypothesis": 0, "action_index": 11}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.0949775839690119, "phase": "continuation", "hypothesis": 0, "action_index": 12}
+{"case_key": "named__compound_without_authority_loss", "wall_since_start_s": 0.10308716702274978, "phase": "complete"}

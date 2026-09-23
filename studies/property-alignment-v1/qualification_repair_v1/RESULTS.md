@@ -1,0 +1,13 @@
+# Developmental repair validation
+
+The fixed 142-input matrix completed in both serial and four-worker execution. Its 38 retired/analytical inputs also completed three further four-worker repetitions, for 398 qualification attempts in total. The numerical verdicts agree between execution regimes and repetitions. Every attempt remains in `recorded/`; these engineering repeats are not independent scientific samples.
+
+The unique-input outcomes are 135 qualified, five with checked pre-command violations, and two not certified by the sufficient library method. No real validation job timed out or produced an unresolved computation. The two unqualified searches are not counted as physical impossibility results. All 48 previously recorded pilot qualification decisions are preserved. All 282 saved positive-action/negative-witness rechecks passed. Positive rechecks use the original full-schedule adjudicator.
+
+The previously stalled retired input137 is rejected by a verified pre-command violation in 0.03438 seconds of serial qualification computation and 0.03316 seconds in the parallel batch, with zero future-action propagations. The earlier diagnosis retained uninstrumented attempts censored at90 seconds and a95.49-second instrumented trace. These measurements have different instrumentation and execution sessions; no universal speedup ratio is asserted.
+
+Maximum measured qualification-call time in the two full batches is0.16069 seconds. The serial batch takes103.11 seconds and the four-worker batch32.81 seconds, including their process management. The15-second whole-case watchdog is unchanged. These observed values do not establish worst-case execution time, independent processor reliability or the runtime of an unseen protected campaign.
+
+The repair reuses the exact queued-state enclosures, rejects only explicitly witnessed queue violations as physically impossible, and keeps unsuccessful certification and execution failure separate. The old protected attempt is still invalid and unchanged. No candidate policy, hypothesis endpoint, historical result or manuscript source was revised by Task08B. Task08C must explicitly bind the repaired qualification API, its result meanings, the execution coordinator and fresh protected input identity before a replacement evaluation can run.
+
+The factored checker allocates its sufficient-proof cell budget separately to the cached queue and each continuation. That allocation and the omission of nonrequired dwell/minimum-distance calculations are explicit numerical-method changes, not a claim of global equality with the earlier conservative qualification domain. The observed pilot agreement and fixed-input replay establish only their stated validation scope.

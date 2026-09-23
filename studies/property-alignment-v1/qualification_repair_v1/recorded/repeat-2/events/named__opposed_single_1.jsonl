@@ -1,0 +1,15 @@
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 2.1670712158083916e-06, "phase": "imports"}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.0002091249916702509, "phase": "qualification_start"}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.0004483340308070183, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.0006316670915111899, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.0008297089952975512, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.007418208988383412, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.013537249993532896, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.020196667057462037, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.025754166999831796, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.03189391701016575, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.03824075008742511, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.04472579201683402, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.050239792093634605, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.05603787500876933, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.06296624999959022, "phase": "complete"}
