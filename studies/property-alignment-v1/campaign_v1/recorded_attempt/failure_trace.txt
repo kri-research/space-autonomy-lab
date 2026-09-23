@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<PROJECT>/development/space-autonomy-lab/studies/property-alignment-v1/evaluation/execute.py", line 312, in <module>
+    main()
+    ~~~~^^
+  File "<PROJECT>/development/space-autonomy-lab/studies/property-alignment-v1/evaluation/execute.py", line 301, in main
+    result = run_protected(
+        args.freeze,
+    ...<3 lines>...
+        authorize_task08=args.authorize_task08,
+    )
+  File "<PROJECT>/development/space-autonomy-lab/studies/property-alignment-v1/evaluation/execute.py", line 270, in run_protected
+    return _run_protected(freeze_path, evaluation_id, output, workers)
+  File "<PROJECT>/development/space-autonomy-lab/studies/property-alignment-v1/evaluation/execute.py", line 181, in _run_protected
+    work = run_jobs(
+        payloads,
+    ...<4 lines>...
+        wall_limit_s=freeze["resources"]["phase_wall_limit_s"],
+    )
+  File "<PROJECT>/development/space-autonomy-lab/studies/property-alignment-v1/evaluation/jobs.py", line 135, in run_jobs
+    raise RuntimeError("Qualification failure blocks selection: " + reason)
+RuntimeError: Qualification failure blocks selection: worker_wall_timeout

@@ -1,0 +1,43 @@
+{
+  "audit_pass_means": "Preservation and accounting checks passed; campaign remains protocol-invalid",
+  "campaign_valid": false,
+  "candidate_evaluations": 0,
+  "confidence_interval": null,
+  "evaluation_id": "63eb088857849237bb9a4d42ac5ae38053c54335134a187c72d370f4a65d7ebd",
+  "evidence_scope": "Qualification receipts and start markers only. No protected common-set coverage, collision, hold, abort, utility or controller-superiority result.",
+  "failure_attribution": "The driver records one worker timeout. Four missing receipts are not all labelled timeouts; the exception omits the triggering case ID.",
+  "frozen_analysis_executed": false,
+  "historical_endpoints_reopened": false,
+  "inference_status": "not_estimable_no_selected_population_or_candidate_outcomes",
+  "passed": true,
+  "per_stratum": {
+    "interior_pair": {
+      "completed_eligible": 288
+    },
+    "radial_boundary": {
+      "completed_eligible": 288
+    },
+    "three_face_boundary": {
+      "completed_eligible": 288
+    },
+    "timing_bounded_pair": {
+      "completed_eligible": 147,
+      "not_started": 137,
+      "started_without_receipt": 4
+    }
+  },
+  "physical_validation": false,
+  "planned_candidate_target": 768,
+  "planned_reserve": 1152,
+  "primary_estimate": null,
+  "qualification_counts": {
+    "completed_eligible": 1011,
+    "not_started": 137,
+    "started_without_receipt": 4
+  },
+  "reason": "Qualification worker reached frozen 15-second watchdog before selection",
+  "resume_scope": "The frozen runner blocks interrupted qualification. Do not retry or relabel missing cases under this identity.",
+  "schema": "sal-frozen-attempt-audit/1",
+  "selected_population_formed": false,
+  "underlying_timeout_cause": "Not established without further separately identified development"
+}
