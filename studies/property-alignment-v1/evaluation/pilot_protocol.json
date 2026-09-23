@@ -1,0 +1,50 @@
+{
+  "schema": "sal-evaluation-pilot-protocol/1",
+  "task": "07",
+  "evidence_class": "development_and_calibration_only",
+  "principal_question": "On a balanced prospective synthetic benchmark of ambiguous spacecraft information sets, what fraction of individually one-step-feasible cases receive an on-time, independently recheckable common-prefix or HCW first-command-obstruction certificate?",
+  "primary_endpoint": "on_time_decisive_valid among cases where every hidden hypothesis has a validated one-second HCW prefix under the fixed qualification action library",
+  "primary_inference": {
+    "target_half_width": 0.05,
+    "alpha": 0.05,
+    "method": "Hoeffding interval for independent bounded, not necessarily identically distributed Bernoulli trials",
+    "required_total": 738,
+    "balanced_per_stratum": 192,
+    "balanced_total": 768,
+    "stratum_weights": "equal by design"
+  },
+  "strata": [
+    "interior_pair",
+    "radial_boundary",
+    "three_face_boundary",
+    "timing_bounded_pair"
+  ],
+  "development_pilot_cases_per_stratum": 12,
+  "calibration_cases_per_stratum": 2,
+  "pilot_may_inform": [
+    "protected reserve multiplier",
+    "expected local wall time and disk use",
+    "whether the predeclared generator is capable of producing eligible cases",
+    "mechanical checkpoint/parallel settings"
+  ],
+  "pilot_may_not_change": [
+    "four primary strata",
+    "primary endpoint",
+    "qualification definition",
+    "candidate method or one-second budget",
+    "primary sample size 192 per stratum",
+    "protected namespace",
+    "five-percentage-point precision target"
+  ],
+  "reserve_rule": "If minimum pilot eligibility fraction is at least 0.90 use 288 protected reserve seeds per stratum; if 0.60 to below 0.90 use 384; below 0.60 blocks freezing and returns to development.",
+  "secondary_endpoints": [
+    "candidate status composition",
+    "pairwise-only false-safe shortcut among 3+ hypothesis cases",
+    "mean-only false-safe shortcut",
+    "native Task05 predictive/barrier protection status under disclosed hull adapter",
+    "decision wall time and one-second budget misses"
+  ],
+  "multiplicity": "One confirmatory primary endpoint. Secondary endpoints are descriptive and do not support multiplicity-unadjusted confirmatory claims.",
+  "integrity_gate": "Any definite candidate certificate that fails its independent stored-certificate recheck is reported and blocks the validity claim; unknown or failed computation never becomes safe.",
+  "protected_campaign_executed_in_task07": false
+}
