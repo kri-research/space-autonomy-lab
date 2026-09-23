@@ -1,0 +1,11 @@
+{
+  "command": "cd \"$HOME/LaTeX/spacecraft-runtime-assurance-paper/development/space-autonomy-lab/studies/property-alignment-v1\" && export SAL_EVIDENCE_ROOT=\"$HOME/LaTeX/spacecraft-runtime-assurance-paper/evidence/space-autonomy-lab\" OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 && \"$HOME/LaTeX/spacecraft-runtime-assurance-paper/.venv-baselines/bin/python\" -m evaluation_v2.execute --authorize-task08d --freeze evaluation_v2/frozen/freeze.json --evaluation-id 91c2f9c2f660ff210e29c53368d97886092909ad5efefe55831e637bf7df155f --output \"$HOME/LaTeX/spacecraft-runtime-assurance-paper/.research/tasks/08D/protected-v2\" --workers 4",
+  "elapsed_s": 446.5708445420023,
+  "ended_at_utc": "2026-09-23T22:25:32.236001+00:00",
+  "evaluation_id": "91c2f9c2f660ff210e29c53368d97886092909ad5efefe55831e637bf7df155f",
+  "exit_code": 0,
+  "outer_watchdog_reached": false,
+  "preflight_tests": 1068,
+  "started_at_utc": "2026-09-23T22:18:05.661446+00:00",
+  "watchdog_s": 3700
+}

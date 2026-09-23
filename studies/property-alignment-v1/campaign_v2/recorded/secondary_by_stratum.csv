@@ -1,0 +1,5 @@
+stratum,mean_admitted,mean_confirmed_false_safe,mean_unresolved,mean_revalidated,mean_no_admission,pairwise_applicable,pairwise_admitted,pairwise_confirmed_false_safe
+interior_pair,192,0,0,192,0,0,0,0
+radial_boundary,192,28,0,164,0,0,0,0
+three_face_boundary,192,65,0,127,0,192,181,22
+timing_bounded_pair,192,0,3,189,0,0,0,0

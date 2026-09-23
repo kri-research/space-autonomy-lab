@@ -1,0 +1,104 @@
+{
+  "balanced_coverage": {
+    "estimate": 0.984375,
+    "fixed_generator_mean_requires_independence": true,
+    "half_width_bound": 0.04900626723123034,
+    "independent_hardware_sessions_observed": false,
+    "inferential_scope": "protected fixed-order conditional-mean target",
+    "lower": 0.9353687327687696,
+    "method": "conditional Hoeffding bound in frozen case order",
+    "runtime_dependence_assumed_absent": false,
+    "target": "average conditional success probability given earlier case outcomes",
+    "upper": 1.0
+  },
+  "campaign_complete": true,
+  "candidate_statuses": {
+    "certified_common_prefix": 725,
+    "proved_no_common_held_command": 31,
+    "unresolved": 9,
+    "unresolved_budget": 3
+  },
+  "cases_loaded": 768,
+  "delivery_coverage_bounds": [
+    0.984375,
+    0.984375
+  ],
+  "eligible": 768,
+  "evaluation_class": "protected_replacement",
+  "invalid_definite_certificates": 0,
+  "legacy_mean_flags_not_treated_as_counterexamples": true,
+  "mean_shortcut_false_safe": 93,
+  "mean_shortcut_safe": 768,
+  "mean_shortcut_unresolved": 3,
+  "missing_selected": [],
+  "native_baselines": {
+    "barrier": {
+      "evaluated": 768,
+      "interpretation": "native-design comparison with different information representation and continuation obligations; no superiority claim",
+      "protected": 0,
+      "statuses": {
+        "uncertified_information": 768
+      }
+    },
+    "predictive": {
+      "evaluated": 768,
+      "interpretation": "native-design comparison with different information representation and continuation obligations; no superiority claim",
+      "protected": 0,
+      "statuses": {
+        "uncertified_information_or_terminal_bound": 768
+      }
+    }
+  },
+  "on_time_decisive_valid": 756,
+  "pairwise_applicable": 192,
+  "pairwise_false_safe": 22,
+  "per_stratum": {
+    "interior_pair": {
+      "eligible": 192,
+      "max_candidate_wall_s": 0.09526687499601394,
+      "on_time_decisive_valid": 192,
+      "statuses": {
+        "certified_common_prefix": 192
+      }
+    },
+    "radial_boundary": {
+      "eligible": 192,
+      "max_candidate_wall_s": 0.6233874160097912,
+      "on_time_decisive_valid": 192,
+      "statuses": {
+        "certified_common_prefix": 190,
+        "proved_no_common_held_command": 2
+      }
+    },
+    "three_face_boundary": {
+      "eligible": 192,
+      "max_candidate_wall_s": 0.36721208307426423,
+      "on_time_decisive_valid": 183,
+      "statuses": {
+        "certified_common_prefix": 154,
+        "proved_no_common_held_command": 29,
+        "unresolved": 9
+      }
+    },
+    "timing_bounded_pair": {
+      "eligible": 192,
+      "max_candidate_wall_s": 6.330568124889396,
+      "on_time_decisive_valid": 189,
+      "statuses": {
+        "certified_common_prefix": 189,
+        "unresolved_budget": 3
+      }
+    }
+  },
+  "physical_validation": false,
+  "planned_denominator": 768,
+  "protected": true,
+  "qualification_statuses": {
+    "proved_precommand_violation": 1,
+    "qualified": 1151
+  },
+  "replacement_evaluation_id": "91c2f9c2f660ff210e29c53368d97886092909ad5efefe55831e637bf7df155f",
+  "schema": "sal-evaluation-analysis/2",
+  "secondary_confirmatory_inference": false,
+  "validity_claim_gate_passed": true
+}

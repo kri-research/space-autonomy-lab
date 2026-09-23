@@ -1,0 +1,5 @@
+stratum,selected,on_time_decisive_valid,certified_common_prefix,proved_no_common_held_command,unresolved,unresolved_budget
+interior_pair,192,192,192,0,0,0
+radial_boundary,192,192,190,2,0,0
+three_face_boundary,192,183,154,29,9,0
+timing_bounded_pair,192,189,189,0,0,3
