@@ -1,0 +1,82 @@
+{
+  "K": [
+    [
+      -0.01000383997151471,
+      0.0,
+      -0.2,
+      -0.0022627333072220445
+    ],
+    [
+      0.0,
+      -0.01,
+      0.0022627333072220445,
+      -0.2
+    ]
+  ],
+  "P": [
+    [
+      0.1513528523945235,
+      -8.84387288687486e-11,
+      0.45138918592343236,
+      -0.00025879777279577904
+    ],
+    [
+      -8.84387288687486e-11,
+      0.1513532834060698,
+      0.00025879776324651,
+      0.45138902641836065
+    ],
+    [
+      0.45138918592343236,
+      0.00025879776324651,
+      4.923928157047755,
+      -4.576177153859539e-08
+    ],
+    [
+      -0.00025879777279577904,
+      0.45138902641836065,
+      -4.576177153859539e-08,
+      4.923883548492679
+    ]
+  ],
+  "P_LDL_lower_pivots": [
+    0.1513528523945235,
+    0.15135328340606977,
+    3.5777211915276275,
+    3.5776813679915436
+  ],
+  "alpha": 0.075,
+  "assertions": {
+    "approach_support_0": true,
+    "approach_support_1": true,
+    "approach_support_2": true,
+    "approach_support_3": true,
+    "comparison_exponential_with_reserved_roundoff": true,
+    "contraction": true,
+    "hold_ellipse_support": true,
+    "hold_speed_support": true,
+    "input_support": true,
+    "matrix_error_within_reserved_P_radius": true,
+    "nonlinear_remainder": true,
+    "positive_P": true,
+    "terminal_action": true,
+    "terminal_continuous_position": true,
+    "terminal_continuous_speed": true,
+    "terminal_invariance": true
+  },
+  "decay_LDL_lower_pivots": [
+    0.004006427045175952,
+    0.004006409977118817,
+    0.725261547999867,
+    0.7252630311074946
+  ],
+  "gamma": 0.98,
+  "gravity_linearization_remainder_norm_bound": 5.099159699286442e-08,
+  "matrix_discretization_reserved_P_radius": 1.1453451187313395e-12,
+  "one_step_error_P_radius": 0.0012906002377929425,
+  "passed": true,
+  "scope": "mathematical checks under bounded state/observation/disturbance domain; not proof of optimizer or floating-point feedback implementation",
+  "steady_error_P_radius": 0.06453001188964706,
+  "terminal_continuous_speed_bound": 0.04740489474759411,
+  "terminal_control_norm_bound": 0.007502116880265913
+}

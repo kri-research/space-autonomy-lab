@@ -1,0 +1,156 @@
+{
+  "arms": [
+    "unprotected",
+    "original",
+    "aligned",
+    "tracking",
+    "predictive",
+    "barrier"
+  ],
+  "budgets": {
+    "blas_threads": 1,
+    "command_rate_hz": 1,
+    "initialization": "CVXPY cone compilation happens during measured controller setup, separately reported.",
+    "publication_claim": "Measured timing only, no worst-case execution-time guarantee.",
+    "solver_per_subproblem_s": 0.2,
+    "whole_decision_budget_s": 1.0,
+    "workers": 1
+  },
+  "cases": [
+    {
+      "age": 0,
+      "delay": 0,
+      "id": "midpoint",
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "role": "main_admissible"
+    },
+    {
+      "age": 0,
+      "delay": 0,
+      "id": "offset",
+      "information": "ideal",
+      "initial": [
+        1.0,
+        -70.0,
+        0.0,
+        0.08
+      ],
+      "role": "main_admissible"
+    },
+    {
+      "age": 0,
+      "delay": 0,
+      "id": "hold",
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -30.0,
+        0.0,
+        0.0
+      ],
+      "role": "main_admissible"
+    },
+    {
+      "age": 0,
+      "delay": 0,
+      "id": "outward_boundary",
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -27.0,
+        0.0,
+        0.12
+      ],
+      "role": "proved_unrecoverable_control"
+    },
+    {
+      "age": 0,
+      "delay": 0,
+      "id": "bounded_midpoint",
+      "information": "bounded",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "role": "bounded_information_development"
+    },
+    {
+      "age": 1,
+      "delay": 1,
+      "id": "delayed_midpoint",
+      "information": "bounded",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "role": "bounded_information_development"
+    }
+  ],
+  "command_period_s": 1,
+  "common_information": "All six arms get identical observation construction and known-command forward prediction. Values follow each own simulated state. No method receives latent truth except labelled ideal observations.",
+  "comparison_count": 72,
+  "development_base_commit": "a9d8a41ae7006ab534b4446865236535af15d1ed",
+  "disturbance": "Uniform componentwise +/-5e-5m/s2 each quarter second in bounded contexts; zero in ideal. eta=1. HCW prediction includes a separate 1e-7 component nonlinear-model error allowance plus 1e-9 numerical reserve.",
+  "evidence_class": "bounded_development_not_final_evaluation",
+  "failure_policy": "Keep failed or uncertified runs and all initial cases. Corrections require versioned development records, never silently overwrite an executed trial.",
+  "final_evaluation": "No Task07/08 seeds or preselected cart-family data are generated or tuned.",
+  "historical_evidence_commit": "5539de5753092b09fd78351095292e7627047794",
+  "horizon_s": 300,
+  "initial_queue": "The one-second delayed case starts with an explicit zero command on [0,1]. The same queue applies to every arm.",
+  "legacy_adaptation": "Original controller/gate source unchanged; new common information adapter rather than original Kalman filter. This is not a rerun of Task04.",
+  "physical_segments_s": 0.25,
+  "plants": [
+    "hcw",
+    "nonlinear"
+  ],
+  "prior_exposure": "Task04 outcomes and four one-decision midpoint smoke tests were available; no new closed-loop baseline outcomes observed before this protocol.",
+  "restricted_search": "Predictive filter enumerates four approach-to-hold switch schedules with tightened convex component constraints and a declared 2m/s numerical domain cap. Barrier filter requires degree-two domain membership in an independently tested smooth component. These conservative restrictions do not alter the offline S endpoint.",
+  "schema": "sal-protective-development/1",
+  "seed": 50520260923,
+  "selection_rule": "For each family use exactly two 300s HCW midpoint development runs. Rank by validated containment, all 300 protected decisions, continuous hold acquisition, then lower control effort; stable input order breaks ties. Keep every attempt.",
+  "sensor": "Full state, componentwise uniform bounded error [0.01m,0.01m,0.001m/s,0.001m/s]; ideal cases zero. Synthetic levels, not operational specifications.",
+  "tuning": {
+    "barrier": [
+      {
+        "decision_limit": 1.0,
+        "rates": [
+          0.02,
+          0.04
+        ],
+        "solver_time_limit": 0.2
+      },
+      {
+        "decision_limit": 1.0,
+        "rates": [
+          0.04,
+          0.08
+        ],
+        "solver_time_limit": 0.2
+      }
+    ],
+    "predictive": [
+      {
+        "decision_limit": 1.0,
+        "horizon": 160,
+        "solver_time_limit": 0.2
+      },
+      {
+        "decision_limit": 1.0,
+        "horizon": 180,
+        "solver_time_limit": 0.2
+      }
+    ]
+  },
+  "tuning_count": 4,
+  "unavailable_action": "Apply the same explicitly labelled bounded reference tracker as an external continuation after missing certification. It never converts an uncertified decision into a protective success."
+}

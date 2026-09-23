@@ -1,0 +1,264 @@
+{
+  "tests": 50,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "New baseline method, failure-handling and retained-record tests; no historical test total is overwritten",
+  "test_source_sha256": {
+    "protective/tests/test_integrity.py": "e6e106e1b97e45c2b77635358fd365b615d919c28e89d0f19bba779b55618955",
+    "protective/tests/test_methods.py": "a79d66e5891fb5b4a4fd92516645f8dd22944bbd122a6a2a859be375ad208c5d",
+    "protective/tests/test_recorded.py": "16ec8278341cbe13fbf777f8f1327d6ec8f75b79bdae936ec77e7c7ded96887e"
+  },
+  "cases": [
+    {
+      "name": "test_manifest_or_json_corruption_fails[extra]",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_manifest_or_json_corruption_fails[missing]",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_manifest_or_json_corruption_fails[changed]",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_manifest_or_json_corruption_fails[nonfinite]",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_missing_backend_is_not_optimal",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_excessive_duality_gap_is_not_optimal",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_bad_plan_is_not_repaired_to_pass",
+      "class": "protective.tests.test_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "test_terminal_conditions",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_not_every_positive_matrix_is_positive_definite",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_comparison_map_dominates_dynamics[0.0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_comparison_map_dominates_dynamics[0.125]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_comparison_map_dominates_dynamics[0.25]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_comparison_map_dominates_dynamics[1.0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_comparison_map_dominates_dynamics[2.0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_information_history_respects_application_time[0-0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_information_history_respects_application_time[1-0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_information_history_respects_application_time[0-1]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_information_history_respects_application_time[1-1]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_missing_history_is_not_assumed_zero",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_malformed_observations_rejected[value0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_malformed_observations_rejected[value1]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_malformed_observations_rejected[value2]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_out_of_order_packet_rejected",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_excessive_information_age_rejected",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_covariance_not_promoted_to_bound",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_admissible_midpoint_first_control[predictive]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_admissible_midpoint_first_control[barrier]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_bounded_information_feasible[predictive]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_bounded_information_feasible[barrier]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_outward_boundary_not_certified[predictive]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_outward_boundary_not_certified[barrier]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_degree_two_forms_against_direct_derivatives[approach-state0]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_degree_two_forms_against_direct_derivatives[hold-state1]",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_identical_position_different_velocity_domain",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_union_component_not_intersection",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_zero_thrust_is_not_stationary",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_solver_failure_no_plan_is_unresolved",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_stored_plan_survives_solver_failure",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_false_solver_success_rejected",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_barrier_forced_failure_no_false_safe",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_pending_violation_is_not_hidden",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_large_uncertainty_cannot_use_small_terminal_set",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_arbitrary_bounded_disturbance_inside_comparison_enclosure",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_infeasible_solver_diagnostics_remain_serializable",
+      "class": "protective.tests.test_methods",
+      "status": "passed"
+    },
+    {
+      "name": "test_active_execution_sources_unchanged",
+      "class": "protective.tests.test_recorded",
+      "status": "passed"
+    },
+    {
+      "name": "test_complete_development_records_and_plans",
+      "class": "protective.tests.test_recorded",
+      "status": "passed"
+    },
+    {
+      "name": "test_complete_valid_tuning_records",
+      "class": "protective.tests.test_recorded",
+      "status": "passed"
+    },
+    {
+      "name": "test_all_invalid_serialization_attempts_retained",
+      "class": "protective.tests.test_recorded",
+      "status": "passed"
+    },
+    {
+      "name": "test_backup_validation_has_true_terminal_continuation",
+      "class": "protective.tests.test_recorded",
+      "status": "passed"
+    },
+    {
+      "name": "test_analysis_does_not_credit_external_guard_as_filter_success",
+      "class": "protective.tests.test_recorded",
+      "status": "passed"
+    }
+  ]
+}

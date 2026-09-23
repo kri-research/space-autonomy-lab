@@ -1,0 +1,238 @@
+{
+  "arms": [
+    {
+      "admissible_cases": 10,
+      "arm": "unprotected",
+      "contained": 4,
+      "entirely_filter_protected": 0,
+      "external_guard_decisions": 0,
+      "hold_acquired": 10,
+      "infeasible_control_violations": 2,
+      "maximum_policy_call_s": 1.2542004697024822e-05,
+      "unresolved": 0,
+      "violated": 6
+    },
+    {
+      "admissible_cases": 10,
+      "arm": "original",
+      "contained": 4,
+      "entirely_filter_protected": 0,
+      "external_guard_decisions": 0,
+      "hold_acquired": 10,
+      "infeasible_control_violations": 2,
+      "maximum_policy_call_s": 0.04149924998637289,
+      "unresolved": 0,
+      "violated": 6
+    },
+    {
+      "admissible_cases": 10,
+      "arm": "aligned",
+      "contained": 4,
+      "entirely_filter_protected": 0,
+      "external_guard_decisions": 0,
+      "hold_acquired": 10,
+      "infeasible_control_violations": 2,
+      "maximum_policy_call_s": 0.011393541935831308,
+      "unresolved": 0,
+      "violated": 6
+    },
+    {
+      "admissible_cases": 10,
+      "arm": "tracking",
+      "contained": 10,
+      "entirely_filter_protected": 0,
+      "external_guard_decisions": 0,
+      "hold_acquired": 10,
+      "infeasible_control_violations": 2,
+      "maximum_policy_call_s": 4.491698928177357e-05,
+      "unresolved": 0,
+      "violated": 0
+    },
+    {
+      "admissible_cases": 10,
+      "arm": "predictive",
+      "contained": 10,
+      "entirely_filter_protected": 10,
+      "external_guard_decisions": 0,
+      "hold_acquired": 10,
+      "infeasible_control_violations": 2,
+      "maximum_policy_call_s": 0.0847892080200836,
+      "unresolved": 0,
+      "violated": 0
+    },
+    {
+      "admissible_cases": 10,
+      "arm": "barrier",
+      "contained": 10,
+      "entirely_filter_protected": 4,
+      "external_guard_decisions": 48,
+      "hold_acquired": 10,
+      "infeasible_control_violations": 2,
+      "maximum_policy_call_s": 0.0173486249987036,
+      "unresolved": 0,
+      "violated": 0
+    }
+  ],
+  "counts": {
+    "cells": 72,
+    "decisions": 21600,
+    "plans": 3378,
+    "states": 86472
+  },
+  "execution_manifest_sha256": "e0f96c050aa7ffa01239fcad4630cc8044240fccfcd8611a474a36afbb16e98f",
+  "external_guard_policy": "Continuation after uncertified output is retained, not credited to the filter.",
+  "infrastructure_failures": 0,
+  "paired_comparisons": [
+    {
+      "barrier_external_guard_decisions": 8,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_containment",
+      "case": "bounded_midpoint",
+      "plant": "hcw",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_violation",
+      "role": "bounded_information_development"
+    },
+    {
+      "barrier_external_guard_decisions": 8,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_containment",
+      "case": "bounded_midpoint",
+      "plant": "nonlinear",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_violation",
+      "role": "bounded_information_development"
+    },
+    {
+      "barrier_external_guard_decisions": 8,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_containment",
+      "case": "delayed_midpoint",
+      "plant": "hcw",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_violation",
+      "role": "bounded_information_development"
+    },
+    {
+      "barrier_external_guard_decisions": 8,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_containment",
+      "case": "delayed_midpoint",
+      "plant": "nonlinear",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_violation",
+      "role": "bounded_information_development"
+    },
+    {
+      "barrier_external_guard_decisions": 0,
+      "barrier_fully_protected": true,
+      "barrier_status": "validated_containment",
+      "case": "hold",
+      "plant": "hcw",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_containment",
+      "role": "main_admissible"
+    },
+    {
+      "barrier_external_guard_decisions": 0,
+      "barrier_fully_protected": true,
+      "barrier_status": "validated_containment",
+      "case": "hold",
+      "plant": "nonlinear",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_containment",
+      "role": "main_admissible"
+    },
+    {
+      "barrier_external_guard_decisions": 8,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_containment",
+      "case": "midpoint",
+      "plant": "hcw",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_violation",
+      "role": "main_admissible"
+    },
+    {
+      "barrier_external_guard_decisions": 8,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_containment",
+      "case": "midpoint",
+      "plant": "nonlinear",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_violation",
+      "role": "main_admissible"
+    },
+    {
+      "barrier_external_guard_decisions": 0,
+      "barrier_fully_protected": true,
+      "barrier_status": "validated_containment",
+      "case": "offset",
+      "plant": "hcw",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_containment",
+      "role": "main_admissible"
+    },
+    {
+      "barrier_external_guard_decisions": 0,
+      "barrier_fully_protected": true,
+      "barrier_status": "validated_containment",
+      "case": "offset",
+      "plant": "nonlinear",
+      "predictive_fully_protected": true,
+      "predictive_status": "validated_containment",
+      "reference_status": "validated_containment",
+      "role": "main_admissible"
+    },
+    {
+      "barrier_external_guard_decisions": 111,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_violation",
+      "case": "outward_boundary",
+      "plant": "hcw",
+      "predictive_fully_protected": false,
+      "predictive_status": "validated_violation",
+      "reference_status": "validated_violation",
+      "role": "proved_unrecoverable_control"
+    },
+    {
+      "barrier_external_guard_decisions": 111,
+      "barrier_fully_protected": false,
+      "barrier_status": "validated_violation",
+      "case": "outward_boundary",
+      "plant": "nonlinear",
+      "predictive_fully_protected": false,
+      "predictive_status": "validated_violation",
+      "reference_status": "validated_violation",
+      "role": "proved_unrecoverable_control"
+    }
+  ],
+  "schema": "sal-protective-development-analysis/1",
+  "scope": "Selected developmental contexts; no inferential denominator, general superiority, novel controller or physical validation",
+  "selected_tuning": {
+    "barrier": {
+      "decision_limit": 1.0,
+      "rates": [
+        0.04,
+        0.08
+      ],
+      "solver_time_limit": 0.2
+    },
+    "predictive": {
+      "decision_limit": 1.0,
+      "horizon": 180,
+      "solver_time_limit": 0.2
+    }
+  },
+  "source_seal_sha256": "cd3f19d1091e306a3948d06ee1471f45a0a19a6efd5f675655289944dddadac0",
+  "timing_scope": "Policy calls exclude shared observation/proposal preparation, external continuation, and offline adjudication."
+}

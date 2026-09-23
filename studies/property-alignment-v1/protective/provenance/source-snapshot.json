@@ -1,0 +1,5 @@
+{
+  "source_sha256": "7a902431830f0de07ef286b40aa30eff31e636b10b7fea64dabe1af90d7d2306",
+  "scope": "Non-executed neighboring verifier source listed by run-start directory snapshot; core control and simulation files are identical to the seal. The verifier was subsequently formatted and its cross-platform command-reconstruction tolerance documented.",
+  "file": "artifact-at-comparison-start.py.txt"
+}

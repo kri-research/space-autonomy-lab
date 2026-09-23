@@ -1,0 +1,7 @@
+arm,admissible_cases,contained,violated,unresolved,hold_acquired,entirely_filter_protected,external_guard_decisions,infeasible_control_violations,maximum_policy_call_s
+unprotected,10,4,6,0,10,0,0,2,1.2542004697024822e-05
+original,10,4,6,0,10,0,0,2,0.04149924998637289
+aligned,10,4,6,0,10,0,0,2,0.011393541935831308
+tracking,10,10,0,0,10,0,0,2,4.491698928177357e-05
+predictive,10,10,0,0,10,10,0,2,0.0847892080200836
+barrier,10,10,0,0,10,4,48,2,0.0173486249987036

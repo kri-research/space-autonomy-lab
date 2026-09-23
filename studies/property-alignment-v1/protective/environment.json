@@ -1,0 +1,11 @@
+{
+  "system": "macOS",
+  "model": "Mac17,9",
+  "processor": "Apple M5 Pro",
+  "memory_bytes": 25769803776,
+  "logical_cpus": 15,
+  "experiment_workers": 1,
+  "blas_threads": 1,
+  "method_environment": "requirements.txt",
+  "timing_scope": "Measured policy calls, not worst-case or end-to-end execution-time guarantees; common observation/proposal preparation and external continuation excluded."
+}
