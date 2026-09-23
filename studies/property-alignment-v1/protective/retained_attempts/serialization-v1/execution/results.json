@@ -1,0 +1,214 @@
+{
+  "action": "tune",
+  "count": 4,
+  "elapsed_s": 1.8177710419986397,
+  "final_evaluation": false,
+  "rows": [
+    {
+      "adjudication": {
+        "reason": "incomplete_execution",
+        "status": "unresolved"
+      },
+      "age_s": 0,
+      "all_filter_decisions_protected": false,
+      "arm": "predictive",
+      "case": "midpoint",
+      "case_role": "main_admissible",
+      "changed_commands": 0,
+      "commands": 0,
+      "configuration": {
+        "decision_limit": 1.0,
+        "horizon": 160,
+        "solver_time_limit": 0.2
+      },
+      "delay_s": 0,
+      "effort_integral": 0,
+      "execution_error": "ValueError:Out of range float values are not JSON compliant: nan",
+      "external_guard_decisions": 0,
+      "hold_status": null,
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "max_selected_norm": 0,
+      "noise_hash": "b837e3421c1e45fa70294283109efd0a874bdb545028988df6dbbc74b50cff73",
+      "physical_status": "unresolved",
+      "physical_validation": false,
+      "plant": "hcw",
+      "policy_cpu_total": 0,
+      "policy_wall_max": 0,
+      "policy_wall_median": null,
+      "protected_decisions": 0,
+      "runtime_s": 0.1417150420602411,
+      "scope": "selected development; fixed-input continuous adjudication, conditional method guarantees, no exact numerical-feedback theorem",
+      "seed": 50520260923,
+      "setup_wall_s": 0.04416404094081372,
+      "states": 5,
+      "statuses": {},
+      "steady_error_P_radius": 2.3686590525822825e-05,
+      "stored_plans": 1,
+      "terminal_tube_valid": true,
+      "tuning": true
+    },
+    {
+      "adjudication": {
+        "reason": "incomplete_execution",
+        "status": "unresolved"
+      },
+      "age_s": 0,
+      "all_filter_decisions_protected": false,
+      "arm": "predictive",
+      "case": "midpoint",
+      "case_role": "main_admissible",
+      "changed_commands": 0,
+      "commands": 0,
+      "configuration": {
+        "decision_limit": 1.0,
+        "horizon": 180,
+        "solver_time_limit": 0.2
+      },
+      "delay_s": 0,
+      "effort_integral": 0,
+      "execution_error": "ValueError:Out of range float values are not JSON compliant: nan",
+      "external_guard_decisions": 0,
+      "hold_status": null,
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "max_selected_norm": 0,
+      "noise_hash": "b837e3421c1e45fa70294283109efd0a874bdb545028988df6dbbc74b50cff73",
+      "physical_status": "unresolved",
+      "physical_validation": false,
+      "plant": "hcw",
+      "policy_cpu_total": 0,
+      "policy_wall_max": 0,
+      "policy_wall_median": null,
+      "protected_decisions": 0,
+      "runtime_s": 0.0891574170673266,
+      "scope": "selected development; fixed-input continuous adjudication, conditional method guarantees, no exact numerical-feedback theorem",
+      "seed": 50520260923,
+      "setup_wall_s": 0.03690187504980713,
+      "states": 5,
+      "statuses": {},
+      "steady_error_P_radius": 2.3686590525822825e-05,
+      "stored_plans": 1,
+      "terminal_tube_valid": true,
+      "tuning": true
+    },
+    {
+      "adjudication": {
+        "reason": "incomplete_execution",
+        "status": "unresolved"
+      },
+      "age_s": 0,
+      "all_filter_decisions_protected": false,
+      "arm": "barrier",
+      "case": "midpoint",
+      "case_role": "main_admissible",
+      "changed_commands": 263,
+      "commands": 263,
+      "configuration": {
+        "decision_limit": 1.0,
+        "rates": [
+          0.02,
+          0.04
+        ],
+        "solver_time_limit": 0.2
+      },
+      "delay_s": 0,
+      "effort_integral": 1.2701808773875418,
+      "execution_error": "ValueError:Out of range float values are not JSON compliant: nan",
+      "external_guard_decisions": 0,
+      "hold_status": null,
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "max_selected_norm": 0.019999898583584592,
+      "noise_hash": "b837e3421c1e45fa70294283109efd0a874bdb545028988df6dbbc74b50cff73",
+      "physical_status": "unresolved",
+      "physical_validation": false,
+      "plant": "hcw",
+      "policy_cpu_total": 1.2437590000000003,
+      "policy_wall_max": 0.017758999951183796,
+      "policy_wall_median": 0.004547291900962591,
+      "protected_decisions": 263,
+      "runtime_s": 1.2845344580709934,
+      "scope": "selected development; fixed-input continuous adjudication, conditional method guarantees, no exact numerical-feedback theorem",
+      "seed": 50520260923,
+      "setup_wall_s": 0.004139708005823195,
+      "states": 1057,
+      "statuses": {
+        "robust_sampled_barrier": 263
+      },
+      "steady_error_P_radius": 2.3686590525822825e-05,
+      "stored_plans": 0,
+      "terminal_tube_valid": true,
+      "tuning": true
+    },
+    {
+      "adjudication": {
+        "reason": "incomplete_execution",
+        "status": "unresolved"
+      },
+      "age_s": 0,
+      "all_filter_decisions_protected": false,
+      "arm": "barrier",
+      "case": "midpoint",
+      "case_role": "main_admissible",
+      "changed_commands": 61,
+      "commands": 61,
+      "configuration": {
+        "decision_limit": 1.0,
+        "rates": [
+          0.04,
+          0.08
+        ],
+        "solver_time_limit": 0.2
+      },
+      "delay_s": 0,
+      "effort_integral": 1.0961052602531194,
+      "execution_error": "ValueError:Out of range float values are not JSON compliant: nan",
+      "external_guard_decisions": 0,
+      "hold_status": null,
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "max_selected_norm": 0.019999990000368704,
+      "noise_hash": "b837e3421c1e45fa70294283109efd0a874bdb545028988df6dbbc74b50cff73",
+      "physical_status": "unresolved",
+      "physical_validation": false,
+      "plant": "hcw",
+      "policy_cpu_total": 0.2816499999999995,
+      "policy_wall_max": 0.004936459008604288,
+      "policy_wall_median": 0.00460041593760252,
+      "protected_decisions": 61,
+      "runtime_s": 0.2977050830377266,
+      "scope": "selected development; fixed-input continuous adjudication, conditional method guarantees, no exact numerical-feedback theorem",
+      "seed": 50520260923,
+      "setup_wall_s": 0.003962417016737163,
+      "states": 249,
+      "statuses": {
+        "robust_sampled_barrier": 61
+      },
+      "steady_error_P_radius": 2.3686590525822825e-05,
+      "stored_plans": 0,
+      "terminal_tube_valid": true,
+      "tuning": true
+    }
+  ]
+}

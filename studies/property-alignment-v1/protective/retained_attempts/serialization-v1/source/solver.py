@@ -21,12 +21,11 @@ def solver_diagnostics(problem):
         )
         return {
             "backend_status": str(solution.status),
-            "primal_residual": primal if math.isfinite(primal) else None,
-            "dual_residual": dual if math.isfinite(dual) else None,
-            "objective": objective if math.isfinite(objective) else None,
-            "dual_objective": dual_objective if math.isfinite(dual_objective) else None,
-            "absolute_duality_gap": gap if math.isfinite(gap) else None,
-            "nonfinite_backend_metrics": not finite,
+            "primal_residual": primal,
+            "dual_residual": dual,
+            "objective": objective,
+            "dual_objective": dual_objective,
+            "absolute_duality_gap": gap,
             "optimality_residual_check": bool(passed),
             "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
         }

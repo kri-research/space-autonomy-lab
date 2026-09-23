@@ -1,0 +1,7 @@
+{
+  "scope": "Invalid developmental attempts, retained without replacement or a protective-outcome claim",
+  "reason": "Infeasible solver diagnostics contained NaN; strict JSON serialization terminated the driver. No NaN occurred in a selected control or physical state.",
+  "attempt_count": 4,
+  "source_commit": "2906c996ce82b216c602729d5e8f15f3430ea6f7",
+  "further_work": "Explicit serialization-only amendment and a separately identified rerun of the same four configuration cases, without changing tuning settings or ranking."
+}

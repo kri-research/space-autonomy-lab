@@ -250,3 +250,21 @@ def test_arbitrary_bounded_disturbance_inside_comparison_enclosure():
     for j, box in enumerate(boxes):
         s = aq @ s + bq @ (u + np.array([d * (-1) ** j, d]))
         assert box.contains(s.tolist())
+
+
+def test_infeasible_solver_diagnostics_remain_serializable():
+    import json
+    from types import SimpleNamespace
+    from protective.solver import solver_diagnostics
+
+    value = SimpleNamespace(
+        r_prim=float("nan"),
+        r_dual=0.0,
+        obj_val=float("inf"),
+        obj_val_dual=float("inf"),
+        status="PrimalInfeasible",
+    )
+    backend = SimpleNamespace(get_solution=lambda: value)
+    report = solver_diagnostics(SimpleNamespace(_solver_cache={"CLARABEL": backend}))
+    assert report["nonfinite_backend_metrics"] and not report["optimality_residual_check"]
+    json.dumps(report, allow_nan=False)

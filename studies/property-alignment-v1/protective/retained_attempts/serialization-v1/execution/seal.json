@@ -1,20 +1,5 @@
 {
-  "schema": "sal-protective-development-seal/1",
-  "created_at_utc": "2026-09-23T11:51:36.664336+00:00",
-  "development_base_commit": "a9d8a41ae7006ab534b4446865236535af15d1ed",
-  "historical_evidence_commit": "5539de5753092b09fd78351095292e7627047794",
-  "source_sha256": {
-    "__init__.py": "8bd278093a1d45fbfe184a1fba969c5053fe8cda4f8168b9ddf41aaf924a8135",
-    "barrier.py": "37d54b3159c1a521a6f7b2816606c075a7f971154504daf06cf444e3a302eefe",
-    "binding.py": "58f33b5a47ce37bdbb62490831cc3cdb13dc4ba32bd6a7d2b82e979d20bbf9f8",
-    "certificates.py": "a6e8da335b13a3465128325176878324f72b21fdf81b83fc0e736cd47da66adf",
-    "common.py": "2ddd48024cbe7fa99bad69c106c435112b7ee360cb142848b2635c9788218b41",
-    "predictive.py": "ba37ed315d345099e6dc2c3a07701f8767a5b2565a6ef1e278e0aa271b852bd5",
-    "protocol.json": "a0a1fda51bd6bf2321346858f81a8ce7f312f675fefd5878e4c32ae4fe2840ff",
-    "requirements.txt": "672b1f2dcd21bf4dc5d282cc00f32d8a46e47dddf66582dfba7e8244e597681e",
-    "run.py": "b221b53172cbbe650a2c429d224c2efe8b1a1c67e4b16ed2b24bcac2fd9322ea",
-    "solver.py": "5e4b34e48380c039736ea5c247b84fcec72e5e9d0460506bcf4262eb1d3a37fd"
-  },
+  "created_at_utc": "2026-09-23T11:47:48.308295+00:00",
   "dependency_sha256": {
     "adjudication/__init__.py": "725e089c9fbad31963802162388f93e17ae1ec7ce749c0dcaf3e79883c2ca4b5",
     "adjudication/engine.py": "faf0e3aa6166ef2c3c903d70b93f92406ef19e8eae6b5a9393370fa809ca1f05",
@@ -40,8 +25,21 @@
     "specification/fixtures.py": "72bb1b5de2a15e2bf2edc04fa0b0c3aeff1811f22a381e3be9e4acee2945e1b6",
     "specification/property_contract.json": "c848927f881ba621dbc94e29d10f62a9ef1294e253cce44d55fe6e3c41f6e26a"
   },
-  "new_closed_loop_outcomes_observed": true,
+  "development_base_commit": "a9d8a41ae7006ab534b4446865236535af15d1ed",
   "external_preregistration": false,
-  "amendment": "amendment-serialization.json",
-  "exposure_scope": "Four invalid logging attempts retained; no complete baseline run and no comparison observed."
+  "historical_evidence_commit": "5539de5753092b09fd78351095292e7627047794",
+  "new_closed_loop_outcomes_observed": false,
+  "schema": "sal-protective-development-seal/1",
+  "source_sha256": {
+    "__init__.py": "8bd278093a1d45fbfe184a1fba969c5053fe8cda4f8168b9ddf41aaf924a8135",
+    "barrier.py": "37d54b3159c1a521a6f7b2816606c075a7f971154504daf06cf444e3a302eefe",
+    "binding.py": "58f33b5a47ce37bdbb62490831cc3cdb13dc4ba32bd6a7d2b82e979d20bbf9f8",
+    "certificates.py": "a6e8da335b13a3465128325176878324f72b21fdf81b83fc0e736cd47da66adf",
+    "common.py": "2ddd48024cbe7fa99bad69c106c435112b7ee360cb142848b2635c9788218b41",
+    "predictive.py": "ba37ed315d345099e6dc2c3a07701f8767a5b2565a6ef1e278e0aa271b852bd5",
+    "protocol.json": "a0a1fda51bd6bf2321346858f81a8ce7f312f675fefd5878e4c32ae4fe2840ff",
+    "requirements.txt": "672b1f2dcd21bf4dc5d282cc00f32d8a46e47dddf66582dfba7e8244e597681e",
+    "run.py": "b221b53172cbbe650a2c429d224c2efe8b1a1c67e4b16ed2b24bcac2fd9322ea",
+    "solver.py": "5ec7a1f5412d4c7f106cdbb37f31cdd826e337e793291b6847f45c7682fdbfce"
+  }
 }
