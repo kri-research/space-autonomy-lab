@@ -1,0 +1,205 @@
+{
+  "schema": "sal-task08A-queue-probe/1",
+  "evidence_class": "post_failure_exploratory_diagnosis",
+  "rows": [
+    {
+      "hypothesis": 0,
+      "attainable_vertex": [
+        "16417/2500",
+        "-32849/500",
+        "3/2000",
+        "1/5000"
+      ],
+      "allowed_constant_disturbance_mps2": [
+        "1/100000",
+        "1/100000"
+      ],
+      "input_effectiveness": "1",
+      "queue_commands": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "end_before_new_command_s": 2,
+      "side_residual_m": [
+        "317154007831/2814749767106560",
+        "634308016091/5629499534213120"
+      ],
+      "side_residual_decimal_m": [
+        0.00011267573819075948,
+        0.0001126757382669652
+      ],
+      "endpoint_containment": "violated",
+      "final_enclosure": [
+        [
+          6.5698713653225465,
+          6.569871365322576
+        ],
+        [
+          -65.69758689584356,
+          -65.69758689584309
+        ],
+        [
+          0.0015713790970110198,
+          0.0015713790970110272
+        ],
+        [
+          0.00021305031938599487,
+          0.00021305031938599582
+        ]
+      ],
+      "adjudication": {
+        "status": "validated_violation",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "validated_interval_taylor"
+        ],
+        "model_kinds": [
+          "hcw"
+        ],
+        "components": {
+          "containment": "violated",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": [
+          1.928955078125,
+          1.92919921875
+        ],
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "0",
+        "possible_dwell_upper_s": "0",
+        "aborted": false,
+        "leaf_intervals": 18,
+        "range_evaluations": 28,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [
+          "boundary_or_range_overlap_at_resolution_limit"
+        ],
+        "witness_times_s": {
+          "containment": 1.92919921875,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": false,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          66.02522992464912,
+          66.02526890285114
+        ]
+      },
+      "elapsed_s": 0.021276416955515742
+    },
+    {
+      "hypothesis": 1,
+      "attainable_vertex": [
+        "-16417/2500",
+        "-32849/500",
+        "-3/2000",
+        "1/5000"
+      ],
+      "allowed_constant_disturbance_mps2": [
+        "-1/100000",
+        "1/100000"
+      ],
+      "input_effectiveness": "1",
+      "queue_commands": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "end_before_new_command_s": 2,
+      "side_residual_m": [
+        "631540347431/5629499534213120",
+        "31577017393/281474976710656"
+      ],
+      "side_residual_decimal_m": [
+        0.00011218410155162672,
+        0.00011218410162783243
+      ],
+      "endpoint_containment": "violated",
+      "final_enclosure": [
+        [
+          -6.569869494797164,
+          -6.569869494797135
+        ],
+        [
+          -65.69757310695583,
+          -65.69757310695536
+        ],
+        [
+          -0.0015694784026162583,
+          -0.0015694784026162511
+        ],
+        [
+          0.00022694544811385054,
+          0.0002269454481138515
+        ]
+      ],
+      "adjudication": {
+        "status": "validated_violation",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "validated_interval_taylor"
+        ],
+        "model_kinds": [
+          "hcw"
+        ],
+        "components": {
+          "containment": "violated",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": [
+          1.929443359375,
+          1.9295654296875
+        ],
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "0",
+        "possible_dwell_upper_s": "0",
+        "aborted": false,
+        "leaf_intervals": 18,
+        "range_evaluations": 28,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [
+          "boundary_or_range_overlap_at_resolution_limit"
+        ],
+        "witness_times_s": {
+          "containment": 1.9295654296875,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": false,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          66.02521606247579,
+          66.02525499626998
+        ]
+      },
+      "elapsed_s": 0.02101112506352365
+    }
+  ],
+  "source_sha256": "0204b581ed3bd24248962b8adeeb309bc3bfc37d04c3f077f86f27906a3ebbe0",
+  "protocol_sha256": "1cc27f2a9e93755a64f8ad72acd8bf25ade2eae01470373c0c12ea88715551f3",
+  "original_record_replaced": false,
+  "physical_validation": false,
+  "candidate_command_computed": false
+}

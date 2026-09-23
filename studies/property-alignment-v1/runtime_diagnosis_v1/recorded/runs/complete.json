@@ -1,0 +1,305 @@
+{
+  "finished_at_utc": "2026-09-23T19:58:44.680866+00:00",
+  "elapsed_s": 609.5642439170042,
+  "receipts": [
+    {
+      "label": "serial_plain__00136",
+      "index": 136,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        5.091796875,
+        8.22607421875,
+        9.08447265625
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.6951732910238206,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        5.091796875,
+        8.22607421875,
+        9.08447265625
+      ],
+      "qualification_wall_s": 0.03460675000678748,
+      "qualification_cpu_s": 0.03458099999999997,
+      "eligible": true,
+      "result_sha256": "a6f4fa8bf23a661751154c6cd83bf136d7b5adf133c8dab995326b3f3fa7adbc"
+    },
+    {
+      "label": "serial_plain__00137",
+      "index": 137,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        5.091796875,
+        8.22607421875,
+        9.08447265625
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.02436870906968,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ]
+    },
+    {
+      "label": "serial_plain__00179",
+      "index": 179,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.8623489579185843,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "qualification_wall_s": 0.03595958393998444,
+      "qualification_cpu_s": 0.035885999999999973,
+      "eligible": true,
+      "result_sha256": "3d86f547bd5618548fccf8ef6b5da7337af7fb5796d876f537971e30ed3d9350"
+    },
+    {
+      "label": "serial_plain__00180",
+      "index": 180,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.5359316669637337,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "qualification_wall_s": 0.03583695797715336,
+      "qualification_cpu_s": 0.035806000000000004,
+      "eligible": true,
+      "result_sha256": "ef729570b99fabf0d68b178f48575a3c91ce9f9b1972c0b52075d94e65ae10fb"
+    },
+    {
+      "label": "serial_plain__00181",
+      "index": 181,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.545049500069581,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "qualification_wall_s": 0.0385387500282377,
+      "qualification_cpu_s": 0.038353000000000026,
+      "eligible": true,
+      "result_sha256": "7ee68fae25349af4d9c45f76f4578fda0624f662465516df104dbd886758e283"
+    },
+    {
+      "label": "serial_plain__00182",
+      "index": 182,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.5448889590334147,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "qualification_wall_s": 0.041879290947690606,
+      "qualification_cpu_s": 0.04081599999999996,
+      "eligible": true,
+      "result_sha256": "de25f6f1e294697dcce02b22df28049cf3d119068053d5cfd16aedb582de12aa"
+    },
+    {
+      "label": "serial_trace__00137",
+      "index": 137,
+      "stage": "serial_trace",
+      "mode": "trace",
+      "limit_s": 180,
+      "load_before": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 96.01521683402825,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        5.19140625,
+        7.2509765625,
+        8.5302734375
+      ],
+      "qualification_wall_s": 95.48767366597895,
+      "qualification_cpu_s": 94.67921399999999,
+      "eligible": false,
+      "result_sha256": "ac7cd5ab0a5f4e306930b4c4522e106b126469b082868431f2647c4064da513b"
+    },
+    {
+      "label": "serial_profile__00137",
+      "index": 137,
+      "stage": "serial_profile",
+      "mode": "profile",
+      "limit_s": 240,
+      "load_before": [
+        5.19140625,
+        7.2509765625,
+        8.5302734375
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 240.01906495797448,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        6.18310546875,
+        6.79248046875,
+        7.98828125
+      ]
+    },
+    {
+      "label": "serial_repeat__00137",
+      "index": 137,
+      "stage": "serial_repeat",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        6.18310546875,
+        6.79248046875,
+        7.98828125
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.02198512502946,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ]
+    },
+    {
+      "label": "parallel_plain__00180",
+      "index": 180,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.9139237919589505,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        4.5615234375,
+        6.02392578125,
+        7.5576171875
+      ],
+      "qualification_wall_s": 0.03620958304964006,
+      "qualification_cpu_s": 0.036115999999999926,
+      "eligible": true,
+      "result_sha256": "5f0643b5e4179de5c30ab6318946e1f7b2d57ea6ab9137598f5dd479344af469"
+    },
+    {
+      "label": "parallel_plain__00181",
+      "index": 181,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.9134242910658941,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        4.5615234375,
+        6.02392578125,
+        7.5576171875
+      ],
+      "qualification_wall_s": 0.0360636250115931,
+      "qualification_cpu_s": 0.03591899999999992,
+      "eligible": true,
+      "result_sha256": "dbc549644535fbfd576f2db7a263460fb79efdc9ec7a98964c43ab367520f8d0"
+    },
+    {
+      "label": "parallel_plain__00182",
+      "index": 182,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.9126995829865336,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        4.5615234375,
+        6.02392578125,
+        7.5576171875
+      ],
+      "qualification_wall_s": 0.03604733303654939,
+      "qualification_cpu_s": 0.035871999999999904,
+      "eligible": true,
+      "result_sha256": "d0bf79bb2b71b847b167ea75cdd997e47ac97d666abd025c2192847396d8cb24"
+    },
+    {
+      "label": "parallel_plain__00137",
+      "index": 137,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.01767791691236,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        4.46484375,
+        5.72802734375,
+        7.30224609375
+      ]
+    }
+  ],
+  "all_diagnostic_attempts_accounted": true,
+  "original_campaign_valid": false,
+  "no_repair_implemented": true
+}

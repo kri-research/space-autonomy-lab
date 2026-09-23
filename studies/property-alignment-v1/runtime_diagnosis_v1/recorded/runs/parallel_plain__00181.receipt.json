@@ -1,0 +1,24 @@
+{
+  "label": "parallel_plain__00181",
+  "index": 181,
+  "stage": "parallel_plain",
+  "mode": "plain",
+  "limit_s": 90,
+  "load_before": [
+    4.4365234375,
+    6.0244140625,
+    7.56689453125
+  ],
+  "exit_code": 0,
+  "parent_wall_s": 0.9134242910658941,
+  "diagnostic_watchdog": false,
+  "load_after": [
+    4.5615234375,
+    6.02392578125,
+    7.5576171875
+  ],
+  "qualification_wall_s": 0.0360636250115931,
+  "qualification_cpu_s": 0.03591899999999992,
+  "eligible": true,
+  "result_sha256": "dbc549644535fbfd576f2db7a263460fb79efdc9ec7a98964c43ab367520f8d0"
+}

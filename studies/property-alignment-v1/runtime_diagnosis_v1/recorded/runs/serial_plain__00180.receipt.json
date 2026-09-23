@@ -1,0 +1,24 @@
+{
+  "label": "serial_plain__00180",
+  "index": 180,
+  "stage": "serial_plain",
+  "mode": "plain",
+  "limit_s": 90,
+  "load_before": [
+    6.77880859375,
+    8.021484375,
+    8.919921875
+  ],
+  "exit_code": 0,
+  "parent_wall_s": 0.5359316669637337,
+  "diagnostic_watchdog": false,
+  "load_after": [
+    6.77880859375,
+    8.021484375,
+    8.919921875
+  ],
+  "qualification_wall_s": 0.03583695797715336,
+  "qualification_cpu_s": 0.035806000000000004,
+  "eligible": true,
+  "result_sha256": "ef729570b99fabf0d68b178f48575a3c91ce9f9b1972c0b52075d94e65ae10fb"
+}

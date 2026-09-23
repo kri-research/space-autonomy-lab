@@ -1,0 +1,24 @@
+{
+  "label": "serial_trace__00137",
+  "index": 137,
+  "stage": "serial_trace",
+  "mode": "trace",
+  "limit_s": 180,
+  "load_before": [
+    6.77880859375,
+    8.021484375,
+    8.919921875
+  ],
+  "exit_code": 0,
+  "parent_wall_s": 96.01521683402825,
+  "diagnostic_watchdog": false,
+  "load_after": [
+    5.19140625,
+    7.2509765625,
+    8.5302734375
+  ],
+  "qualification_wall_s": 95.48767366597895,
+  "qualification_cpu_s": 94.67921399999999,
+  "eligible": false,
+  "result_sha256": "ac7cd5ab0a5f4e306930b4c4522e106b126469b082868431f2647c4064da513b"
+}

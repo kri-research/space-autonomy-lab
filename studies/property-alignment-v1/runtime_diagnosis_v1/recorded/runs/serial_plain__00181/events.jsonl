@@ -1,0 +1,4 @@
+{"event": "process_entered", "wall_s": 0.000254416954703629, "cpu_s": 0.00025500000000000175, "index": 181, "mode": "plain"}
+{"event": "imports_and_identity_ready", "wall_s": 0.4247116670012474, "cpu_s": 0.421941}
+{"event": "qualification_started", "wall_s": 0.42473366705235094, "cpu_s": 0.421962}
+{"event": "qualification_ended", "wall_s": 0.46327591699082404, "cpu_s": 0.460318, "elapsed_s": 0.0385387500282377, "cpu_elapsed_s": 0.038353000000000026, "result": {"eligible": true, "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library", "full_recovery_claim": false, "hypotheses": [{"hypothesis": 0, "qualified": true, "witness_action": ["0", "0"], "attempts": [{"action": ["0", "0"], "status": "certified_common_prefix"}]}, {"hypothesis": 1, "qualified": true, "witness_action": ["0", "0"], "attempts": [{"action": ["0", "0"], "status": "certified_common_prefix"}]}]}}

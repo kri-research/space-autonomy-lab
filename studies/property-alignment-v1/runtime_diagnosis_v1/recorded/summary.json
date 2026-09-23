@@ -1,0 +1,194 @@
+{
+  "schema": "sal-task08A-diagnosis-summary/1",
+  "evidence_class": "post_failure_development_diagnosis",
+  "unique_retired_inputs": 6,
+  "diagnostic_attempts": 13,
+  "completed_attempts": 9,
+  "censored_attempts": 4,
+  "trace_case": 137,
+  "trace_final_library_eligibility": false,
+  "trace_qualification_wall_s": 95.48767366597895,
+  "trace_qualification_cpu_s": 94.67921399999999,
+  "trace_adjudication_wall_s": 95.10057341912761,
+  "trace_adjudication_fraction": 0.9959460710268696,
+  "trace_propagation_wall_s": 0.3028874156298116,
+  "trace_action_attempts": 26,
+  "trace_action_statuses": {
+    "unresolved": 26
+  },
+  "trace_range_nodes": 194468,
+  "trace_ambiguous_leaves": 96973,
+  "control_qualification_wall_range_s": [
+    0.03460675000678748,
+    0.041879290947690606
+  ],
+  "control_parent_wall_range_s": [
+    0.5359316669637337,
+    0.8623489579185843
+  ],
+  "profile_completed": false,
+  "profile_top_cumulative": [],
+  "parallel_results": [
+    {
+      "label": "parallel_plain__00180",
+      "index": 180,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.9139237919589505,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        4.5615234375,
+        6.02392578125,
+        7.5576171875
+      ],
+      "qualification_wall_s": 0.03620958304964006,
+      "qualification_cpu_s": 0.036115999999999926,
+      "eligible": true,
+      "result_sha256": "5f0643b5e4179de5c30ab6318946e1f7b2d57ea6ab9137598f5dd479344af469"
+    },
+    {
+      "label": "parallel_plain__00181",
+      "index": 181,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.9134242910658941,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        4.5615234375,
+        6.02392578125,
+        7.5576171875
+      ],
+      "qualification_wall_s": 0.0360636250115931,
+      "qualification_cpu_s": 0.03591899999999992,
+      "eligible": true,
+      "result_sha256": "dbc549644535fbfd576f2db7a263460fb79efdc9ec7a98964c43ab367520f8d0"
+    },
+    {
+      "label": "parallel_plain__00182",
+      "index": 182,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": 0,
+      "parent_wall_s": 0.9126995829865336,
+      "diagnostic_watchdog": false,
+      "load_after": [
+        4.5615234375,
+        6.02392578125,
+        7.5576171875
+      ],
+      "qualification_wall_s": 0.03604733303654939,
+      "qualification_cpu_s": 0.035871999999999904,
+      "eligible": true,
+      "result_sha256": "d0bf79bb2b71b847b167ea75cdd997e47ac97d666abd025c2192847396d8cb24"
+    },
+    {
+      "label": "parallel_plain__00137",
+      "index": 137,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.01767791691236,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        4.46484375,
+        5.72802734375,
+        7.30224609375
+      ]
+    }
+  ],
+  "plain_slow_results": [
+    {
+      "label": "serial_plain__00137",
+      "index": 137,
+      "stage": "serial_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        5.091796875,
+        8.22607421875,
+        9.08447265625
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.02436870906968,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        6.77880859375,
+        8.021484375,
+        8.919921875
+      ]
+    },
+    {
+      "label": "serial_repeat__00137",
+      "index": 137,
+      "stage": "serial_repeat",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        6.18310546875,
+        6.79248046875,
+        7.98828125
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.02198512502946,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ]
+    },
+    {
+      "label": "parallel_plain__00137",
+      "index": 137,
+      "stage": "parallel_plain",
+      "mode": "plain",
+      "limit_s": 90,
+      "load_before": [
+        4.4365234375,
+        6.0244140625,
+        7.56689453125
+      ],
+      "exit_code": -15,
+      "parent_wall_s": 90.01767791691236,
+      "diagnostic_watchdog": true,
+      "load_after": [
+        4.46484375,
+        5.72802734375,
+        7.30224609375
+      ]
+    }
+  ],
+  "source_header_sha256": "94d546799718811e8e28add45d828f0b35a897821cf07a5707bd69c84c9d4ed3",
+  "original_campaign_complete": false,
+  "protected_candidate_outcomes_computed": 0,
+  "repair_implemented": false,
+  "new_freeze_created": false,
+  "same_run_restarted": false,
+  "interpretation": "Execution diagnosis only; repeated inputs and profiler overhead do not estimate campaign coverage or platform reliability."
+}

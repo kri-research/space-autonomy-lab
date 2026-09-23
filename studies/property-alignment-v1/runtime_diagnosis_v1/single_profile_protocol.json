@@ -1,0 +1,18 @@
+{
+  "schema": "sal-task08A-single-action-profile/1",
+  "declared_at_utc": "2026-09-23T19:56:36.019002+00:00",
+  "evidence_class": "observation_informed_development_diagnosis",
+  "reason": "Full-qualification cProfile attempt hit its declared 240-second diagnostic limit. Preserve it and profile one first-action call with a separate identity.",
+  "index": 137,
+  "hypothesis": 0,
+  "action": [
+    0,
+    0
+  ],
+  "model": "hcw",
+  "same_production_function": true,
+  "case_limit_s": 60,
+  "run_after_original_diagnostic_plan": true,
+  "replace_original_outcome": false,
+  "qualification_or_candidate_policy_not_run": true
+}

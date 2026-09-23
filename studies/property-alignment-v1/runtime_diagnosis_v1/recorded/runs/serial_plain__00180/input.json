@@ -1,0 +1,74 @@
+{
+  "evidence_class": "post_failure_development_diagnosis",
+  "original_case": {
+    "schema": "sal-protected-case/1",
+    "namespace": "protected",
+    "stratum": "timing_bounded_pair",
+    "index": 180,
+    "generator_seed": "187339542692326452316711216710862441685",
+    "information": {
+      "schema": "sal-common-information/1",
+      "hypotheses": [
+        {
+          "lower": [
+            "9801/1250",
+            "-39301/500",
+            "1/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "4903/625",
+            "-39299/500",
+            "9/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-4903/625",
+            "-39301/500",
+            "-9/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-9801/1250",
+            "-39299/500",
+            "-1/2000",
+            "1/5000"
+          ]
+        }
+      ],
+      "age": 1,
+      "delay": 1,
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "authority": "1/50",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "disturbance": "1/100000",
+      "kind": "declared_exact_information_set",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ],
+      "command_period_s": 1,
+      "observation_pattern": "no new distinguishing observation before this held command ends"
+    }
+  },
+  "original_input_retired": true,
+  "replacement_of_original_outcome": false,
+  "mode": "plain",
+  "protocol_sha256": "7e3fc5ef222caf5608befb00bad5bd9cd4ebe8ac1678c6296dde26e7a99d99ee"
+}

@@ -1,0 +1,1817 @@
+{
+  "schema": "sal-task08A-single-action-profile/1",
+  "evidence_class": "post_failure_development_diagnosis",
+  "index": 137,
+  "hypothesis": 0,
+  "action": [
+    0,
+    0
+  ],
+  "result": {
+    "status": "unresolved",
+    "information_sha256": "667a15805638394d66d0f6a887648e51a8ca2c4d6b1e933dd42d83f4a5935d41",
+    "model": "hcw",
+    "action": [
+      "0",
+      "0"
+    ],
+    "end_after_measurement_s": "3",
+    "hypotheses": [
+      {
+        "status": "unresolved",
+        "components": {
+          "containment": "unresolved",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "range_evaluations": 8790,
+        "ambiguous_intervals": 4387,
+        "reason": null,
+        "enclosure_final": [
+          [
+            6.566166250082218,
+            6.571460612529099
+          ],
+          [
+            -65.70266063681538,
+            -65.69736635050258
+          ],
+          [
+            0.001144127312615607,
+            0.0016071092911071638
+          ],
+          [
+            -0.00024054572320159789,
+            0.00022238307381847652
+          ]
+        ]
+      }
+    ],
+    "all_terminal_members": false,
+    "recovery_status": "unassessed",
+    "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem"
+  },
+  "wall_s": 17.087416582973674,
+  "cpu_s": 17.062663,
+  "rows": [
+    {
+      "source": "candidate/certify.py",
+      "line": 59,
+      "function": "certify_action",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 0.000235042,
+      "cumulative_s": 17.085186500000002
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 40,
+      "function": "adjudicate",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 0.06888945,
+      "cumulative_s": 17.0309285
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 116,
+      "function": "range",
+      "primitive_calls": 35199,
+      "calls": 35199,
+      "self_s": 0.38999798700000005,
+      "cumulative_s": 9.947209023000001
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 131,
+      "function": "point",
+      "primitive_calls": 26409,
+      "calls": 26409,
+      "self_s": 0.0069594290000000005,
+      "cumulative_s": 7.4662523190000005
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 26,
+      "function": "bounds",
+      "primitive_calls": 35161,
+      "calls": 35161,
+      "self_s": 0.416312135,
+      "cumulative_s": 6.892532858
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 84,
+      "function": "__mul__",
+      "primitive_calls": 1554840,
+      "calls": 1554840,
+      "self_s": 1.47052317,
+      "cumulative_s": 4.751799731
+    },
+    {
+      "source": "fractions.py",
+      "line": 663,
+      "function": "forward",
+      "primitive_calls": 2743358,
+      "calls": 2743358,
+      "self_s": 0.568117874,
+      "cumulative_s": 2.6853801
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 62,
+      "function": "__add__",
+      "primitive_calls": 1134108,
+      "calls": 1134108,
+      "self_s": 0.659340688,
+      "cumulative_s": 2.516061038
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 17,
+      "function": "linear_bounds",
+      "primitive_calls": 140644,
+      "calls": 140644,
+      "self_s": 0.295946353,
+      "cumulative_s": 2.275936546
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 117,
+      "function": "__pow__",
+      "primitive_calls": 140532,
+      "calls": 562128,
+      "self_s": 0.187552236,
+      "cumulative_s": 1.7361868130000002
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.isinstance>",
+      "primitive_calls": 16298679,
+      "calls": 16298679,
+      "self_s": 1.0113852760000002,
+      "cumulative_s": 1.648964102
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 13,
+      "function": "square_bounds",
+      "primitive_calls": 210966,
+      "calls": 210966,
+      "self_s": 0.15965457300000002,
+      "cumulative_s": 1.6099557690000001
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 45,
+      "function": "__post_init__",
+      "primitive_calls": 2783124,
+      "calls": 2783124,
+      "self_s": 1.1147420270000001,
+      "cumulative_s": 1.607549686
+    },
+    {
+      "source": "fractions.py",
+      "line": 203,
+      "function": "__new__",
+      "primitive_calls": 2207137,
+      "calls": 2207137,
+      "self_s": 0.7831604080000001,
+      "cumulative_s": 1.5080303160000001
+    },
+    {
+      "source": "fractions.py",
+      "line": 983,
+      "function": "_richcmp",
+      "primitive_calls": 1990032,
+      "calls": 1990032,
+      "self_s": 0.69430902,
+      "cumulative_s": 1.4829967830000002
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 110,
+      "function": "square",
+      "primitive_calls": 421596,
+      "calls": 421596,
+      "self_s": 0.435322205,
+      "cumulative_s": 1.227073828
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.all>",
+      "primitive_calls": 1201446,
+      "calls": 1201446,
+      "self_s": 0.38468765200000005,
+      "cumulative_s": 1.0762170020000001
+    },
+    {
+      "source": "fractions.py",
+      "line": 792,
+      "function": "_mul",
+      "primitive_calls": 1371793,
+      "calls": 1371793,
+      "self_s": 0.46325019100000003,
+      "cumulative_s": 1.00870891
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 161,
+      "function": "iv",
+      "primitive_calls": 2761281,
+      "calls": 2761281,
+      "self_s": 0.264975731,
+      "cumulative_s": 0.8936369200000001
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 14,
+      "function": "down",
+      "primitive_calls": 2675395,
+      "calls": 2675395,
+      "self_s": 0.566989681,
+      "cumulative_s": 0.8603543440000001
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 23,
+      "function": "up",
+      "primitive_calls": 2676171,
+      "calls": 2676171,
+      "self_s": 0.5325960940000001,
+      "cumulative_s": 0.816497456
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sum>",
+      "primitive_calls": 213328,
+      "calls": 213328,
+      "self_s": 0.12175938200000001,
+      "cumulative_s": 0.752924751
+    },
+    {
+      "source": "fractions.py",
+      "line": 1009,
+      "function": "__gt__",
+      "primitive_calls": 827923,
+      "calls": 827923,
+      "self_s": 0.10390439900000001,
+      "cumulative_s": 0.739767065
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method math.isfinite>",
+      "primitive_calls": 20853965,
+      "calls": 20853965,
+      "self_s": 0.71126445,
+      "cumulative_s": 0.71126445
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.max>",
+      "primitive_calls": 2471857,
+      "calls": 2471857,
+      "self_s": 0.22211555700000002,
+      "cumulative_s": 0.69926749
+    },
+    {
+      "source": "fractions.py",
+      "line": 760,
+      "function": "_add",
+      "primitive_calls": 997977,
+      "calls": 997977,
+      "self_s": 0.360579164,
+      "cumulative_s": 0.6960885950000001
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.min>",
+      "primitive_calls": 2032589,
+      "calls": 2032589,
+      "self_s": 0.19673633100000001,
+      "cumulative_s": 0.6785675800000001
+    },
+    {
+      "source": "<frozen abc>",
+      "line": 117,
+      "function": "__instancecheck__",
+      "primitive_calls": 3897030,
+      "calls": 3897030,
+      "self_s": 0.36414632,
+      "cumulative_s": 0.637578826
+    },
+    {
+      "source": "fractions.py",
+      "line": 334,
+      "function": "_from_coprime_ints",
+      "primitive_calls": 3200500,
+      "calls": 3200500,
+      "self_s": 0.460913365,
+      "cumulative_s": 0.619632297
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 93,
+      "function": "<genexpr>",
+      "primitive_calls": 5640840,
+      "calls": 5640840,
+      "self_s": 0.43136370700000004,
+      "cumulative_s": 0.575263808
+    },
+    {
+      "source": "fractions.py",
+      "line": 1005,
+      "function": "__lt__",
+      "primitive_calls": 564187,
+      "calls": 564187,
+      "self_s": 0.073000462,
+      "cumulative_s": 0.543078033
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 56,
+      "function": "point",
+      "primitive_calls": 71889,
+      "calls": 71889,
+      "self_s": 0.028838349000000003,
+      "cumulative_s": 0.518666571
+    },
+    {
+      "source": "<string>",
+      "line": 9,
+      "function": "__eq__",
+      "primitive_calls": 8891684,
+      "calls": 8891684,
+      "self_s": 0.503448086,
+      "cumulative_s": 0.503448086
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method math.gcd>",
+      "primitive_calls": 4907546,
+      "calls": 4907546,
+      "self_s": 0.476360198,
+      "cumulative_s": 0.476360198
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 32,
+      "function": "rational_bounds",
+      "primitive_calls": 71899,
+      "calls": 71899,
+      "self_s": 0.068353043,
+      "cumulative_s": 0.41814867
+    },
+    {
+      "source": "fractions.py",
+      "line": 1013,
+      "function": "__le__",
+      "primitive_calls": 492437,
+      "calls": 492437,
+      "self_s": 0.063459499,
+      "cumulative_s": 0.378179857
+    },
+    {
+      "source": "fractions.py",
+      "line": 677,
+      "function": "reverse",
+      "primitive_calls": 210987,
+      "calls": 210987,
+      "self_s": 0.07515632200000001,
+      "cumulative_s": 0.30789903
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method __new__ of type object at 0x10495bea0>",
+      "primitive_calls": 5407639,
+      "calls": 5407639,
+      "self_s": 0.279423802,
+      "cumulative_s": 0.279423802
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _abc._abc_instancecheck>",
+      "primitive_calls": 3897030,
+      "calls": 3897030,
+      "self_s": 0.273427131,
+      "cumulative_s": 0.273432506
+    },
+    {
+      "source": "fractions.py",
+      "line": 776,
+      "function": "_sub",
+      "primitive_calls": 395591,
+      "calls": 395591,
+      "self_s": 0.13271698,
+      "cumulative_s": 0.24016087900000002
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method math.nextafter>",
+      "primitive_calls": 5351566,
+      "calls": 5351566,
+      "self_s": 0.23455777000000003,
+      "cumulative_s": 0.23455777000000003
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.any>",
+      "primitive_calls": 48383,
+      "calls": 48383,
+      "self_s": 0.018714829000000002,
+      "cumulative_s": 0.14084597100000001
+    },
+    {
+      "source": "fractions.py",
+      "line": 808,
+      "function": "_div",
+      "primitive_calls": 188984,
+      "calls": 188984,
+      "self_s": 0.07794663,
+      "cumulative_s": 0.136581646
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 52,
+      "function": "<genexpr>",
+      "primitive_calls": 175805,
+      "calls": 175805,
+      "self_s": 0.021911207000000002,
+      "cumulative_s": 0.11878880800000001
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'as_integer_ratio' of 'float' objects>",
+      "primitive_calls": 1093414,
+      "calls": 1093414,
+      "self_s": 0.103131524,
+      "cumulative_s": 0.103131524
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 51,
+      "function": "<genexpr>",
+      "primitive_calls": 105635,
+      "calls": 105635,
+      "self_s": 0.016580605,
+      "cumulative_s": 0.091570333
+    },
+    {
+      "source": "fractions.py",
+      "line": 851,
+      "function": "__pow__",
+      "primitive_calls": 105499,
+      "calls": 105499,
+      "self_s": 0.033679492000000005,
+      "cumulative_s": 0.083267826
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.abs>",
+      "primitive_calls": 1685221,
+      "calls": 1685221,
+      "self_s": 0.081468495,
+      "cumulative_s": 0.081468495
+    },
+    {
+      "source": "fractions.py",
+      "line": 414,
+      "function": "numerator",
+      "primitive_calls": 1807417,
+      "calls": 1807417,
+      "self_s": 0.08135348,
+      "cumulative_s": 0.08135348
+    },
+    {
+      "source": "fractions.py",
+      "line": 418,
+      "function": "denominator",
+      "primitive_calls": 1772287,
+      "calls": 1772287,
+      "self_s": 0.080845631,
+      "cumulative_s": 0.080845631
+    },
+    {
+      "source": "fractions.py",
+      "line": 1017,
+      "function": "__ge__",
+      "primitive_calls": 105485,
+      "calls": 105485,
+      "self_s": 0.013758134000000002,
+      "cumulative_s": 0.076094322
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 167,
+      "function": "propagate_schedule",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.2451000000000004e-05,
+      "cumulative_s": 0.051168333
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 173,
+      "function": "__post_init__",
+      "primitive_calls": 35224,
+      "calls": 35224,
+      "self_s": 0.010748752,
+      "cumulative_s": 0.049830143
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _operator.gt>",
+      "primitive_calls": 827923,
+      "calls": 827923,
+      "self_s": 0.048942172000000006,
+      "cumulative_s": 0.048942172000000006
+    },
+    {
+      "source": "fractions.py",
+      "line": 901,
+      "function": "__neg__",
+      "primitive_calls": 140656,
+      "calls": 140656,
+      "self_s": 0.020882854000000003,
+      "cumulative_s": 0.048326602
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 135,
+      "function": "make_arc",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 6.899400000000001e-05,
+      "cumulative_s": 0.047354291
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 73,
+      "function": "coefficients",
+      "primitive_calls": 24,
+      "calls": 24,
+      "self_s": 0.000346194,
+      "cumulative_s": 0.044590502000000004
+    },
+    {
+      "source": "fractions.py",
+      "line": 962,
+      "function": "__eq__",
+      "primitive_calls": 61647,
+      "calls": 61647,
+      "self_s": 0.018413611,
+      "cumulative_s": 0.037848552
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 33,
+      "function": "rhs",
+      "primitive_calls": 192,
+      "calls": 192,
+      "self_s": 0.00035094900000000003,
+      "cumulative_s": 0.034741
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _operator.lt>",
+      "primitive_calls": 564187,
+      "calls": 564187,
+      "self_s": 0.034587568,
+      "cumulative_s": 0.034587568
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _operator.le>",
+      "primitive_calls": 492437,
+      "calls": 492437,
+      "self_s": 0.027550966000000003,
+      "cumulative_s": 0.027550966000000003
+    },
+    {
+      "source": "numbers.py",
+      "line": 308,
+      "function": "__float__",
+      "primitive_calls": 71899,
+      "calls": 71899,
+      "self_s": 0.019936371,
+      "cumulative_s": 0.026259983
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 174,
+      "function": "<genexpr>",
+      "primitive_calls": 176120,
+      "calls": 176120,
+      "self_s": 0.017675694000000002,
+      "cumulative_s": 0.023086915000000003
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 37,
+      "function": "__mul__",
+      "primitive_calls": 576,
+      "calls": 576,
+      "self_s": 0.0005288970000000001,
+      "cumulative_s": 0.019992149
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 40,
+      "function": "<genexpr>",
+      "primitive_calls": 2916,
+      "calls": 2916,
+      "self_s": 0.000550331,
+      "cumulative_s": 0.017538278
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 41,
+      "function": "<genexpr>",
+      "primitive_calls": 9720,
+      "calls": 9720,
+      "self_s": 0.001117753,
+      "cumulative_s": 0.013171774
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'append' of 'list' objects>",
+      "primitive_calls": 145695,
+      "calls": 145695,
+      "self_s": 0.012160695000000001,
+      "cumulative_s": 0.012160695000000001
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "primitive_calls": 182100,
+      "calls": 182100,
+      "self_s": 0.010863394,
+      "cumulative_s": 0.010863394
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 104,
+      "function": "__truediv__",
+      "primitive_calls": 720,
+      "calls": 720,
+      "self_s": 0.000272384,
+      "cumulative_s": 0.009487914
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 46,
+      "function": "<genexpr>",
+      "primitive_calls": 105483,
+      "calls": 105483,
+      "self_s": 0.007416343000000001,
+      "cumulative_s": 0.007416343000000001
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 49,
+      "function": "<genexpr>",
+      "primitive_calls": 105483,
+      "calls": 105483,
+      "self_s": 0.006901211000000001,
+      "cumulative_s": 0.006901211000000001
+    },
+    {
+      "source": "adjudication/geometry.py",
+      "line": 50,
+      "function": "<genexpr>",
+      "primitive_calls": 105483,
+      "calls": 105483,
+      "self_s": 0.006561877000000001,
+      "cumulative_s": 0.006561877000000001
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _operator.ge>",
+      "primitive_calls": 105485,
+      "calls": 105485,
+      "self_s": 0.00651176,
+      "cumulative_s": 0.00651176
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 22,
+      "function": "__add__",
+      "primitive_calls": 576,
+      "calls": 576,
+      "self_s": 0.00051333,
+      "cumulative_s": 0.0056716150000000005
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 24,
+      "function": "<genexpr>",
+      "primitive_calls": 2916,
+      "calls": 2916,
+      "self_s": 0.000350565,
+      "cumulative_s": 0.003654698
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 17,
+      "function": "all_status",
+      "primitive_calls": 5,
+      "calls": 5,
+      "self_s": 4.6292e-05,
+      "cumulative_s": 0.003236624
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 11,
+      "function": "__post_init__",
+      "primitive_calls": 2880,
+      "calls": 2880,
+      "self_s": 0.000487131,
+      "cumulative_s": 0.003048213
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 102,
+      "function": "<genexpr>",
+      "primitive_calls": 35160,
+      "calls": 35160,
+      "self_s": 0.002830687,
+      "cumulative_s": 0.002830687
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 82,
+      "function": "existence_box",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 4.2037000000000004e-05,
+      "cumulative_s": 0.0024800390000000003
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 15,
+      "function": "coerce",
+      "primitive_calls": 1152,
+      "calls": 1152,
+      "self_s": 0.0005145680000000001,
+      "cumulative_s": 0.001958403
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 27,
+      "function": "n",
+      "primitive_calls": 204,
+      "calls": 204,
+      "self_s": 3.4933e-05,
+      "cumulative_s": 0.0016654670000000001
+    },
+    {
+      "source": "adjudication/series.py",
+      "line": 12,
+      "function": "<genexpr>",
+      "primitive_calls": 14580,
+      "calls": 14580,
+      "self_s": 0.001181881,
+      "cumulative_s": 0.001584293
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 99,
+      "function": "reciprocal",
+      "primitive_calls": 720,
+      "calls": 720,
+      "self_s": 0.000300136,
+      "cumulative_s": 0.0013970570000000002
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 106,
+      "function": "<genexpr>",
+      "primitive_calls": 8832,
+      "calls": 8832,
+      "self_s": 0.001257337,
+      "cumulative_s": 0.001257337
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 50,
+      "function": "field",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 1.8796e-05,
+      "cumulative_s": 0.0011844590000000001
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 19,
+      "function": "<genexpr>",
+      "primitive_calls": 13213,
+      "calls": 13213,
+      "self_s": 0.000810161,
+      "cumulative_s": 0.001175016
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 44,
+      "function": "terminal_member",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 8.874100000000001e-05,
+      "cumulative_s": 0.0011592080000000001
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 76,
+      "function": "<genexpr>",
+      "primitive_calls": 900,
+      "calls": 900,
+      "self_s": 0.00015975,
+      "cumulative_s": 0.001062481
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 176,
+      "function": "<genexpr>",
+      "primitive_calls": 4402,
+      "calls": 4402,
+      "self_s": 0.000579436,
+      "cumulative_s": 0.001059856
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'pop' of 'list' objects>",
+      "primitive_calls": 8790,
+      "calls": 8790,
+      "self_s": 0.000932298,
+      "cumulative_s": 0.000932298
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 31,
+      "function": "execution_schedule",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.5494e-05,
+      "cumulative_s": 0.000748292
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 25,
+      "function": "realized",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 1.9579e-05,
+      "cumulative_s": 0.000656709
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'extend' of 'list' objects>",
+      "primitive_calls": 4389,
+      "calls": 4389,
+      "self_s": 0.000572256,
+      "cumulative_s": 0.000572256
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 54,
+      "function": "<genexpr>",
+      "primitive_calls": 272,
+      "calls": 272,
+      "self_s": 5.8778000000000005e-05,
+      "cumulative_s": 0.000562998
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 54,
+      "function": "lipschitz_bound",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 1.1496000000000001e-05,
+      "cumulative_s": 0.00046129300000000004
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'add' of 'set' objects>",
+      "primitive_calls": 4387,
+      "calls": 4387,
+      "self_s": 0.000459982,
+      "cumulative_s": 0.000459982
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 21,
+      "function": "<genexpr>",
+      "primitive_calls": 13212,
+      "calls": 13212,
+      "self_s": 0.000407544,
+      "cumulative_s": 0.000407544
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 87,
+      "function": "<genexpr>",
+      "primitive_calls": 60,
+      "calls": 60,
+      "self_s": 1.5957e-05,
+      "cumulative_s": 0.00033899600000000005
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 23,
+      "function": "<genexpr>",
+      "primitive_calls": 8820,
+      "calls": 8820,
+      "self_s": 0.00027104500000000003,
+      "cumulative_s": 0.00027104500000000003
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 84,
+      "function": "<genexpr>",
+      "primitive_calls": 60,
+      "calls": 60,
+      "self_s": 9.835e-06,
+      "cumulative_s": 0.00026612900000000004
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 151,
+      "function": "inflate",
+      "primitive_calls": 48,
+      "calls": 48,
+      "self_s": 4.5047000000000004e-05,
+      "cumulative_s": 0.000256294
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 28,
+      "function": "<genexpr>",
+      "primitive_calls": 36,
+      "calls": 36,
+      "self_s": 1.499e-05,
+      "cumulative_s": 0.00023091500000000002
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 151,
+      "function": "split_times",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 3.6919000000000003e-05,
+      "cumulative_s": 0.00021062600000000003
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 177,
+      "function": "<genexpr>",
+      "primitive_calls": 4443,
+      "calls": 4443,
+      "self_s": 0.000179767,
+      "cumulative_s": 0.000179767
+    },
+    {
+      "source": "specification/contract.py",
+      "line": 119,
+      "function": "load_property",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.3333000000000001e-05,
+      "cumulative_s": 0.000168292
+    },
+    {
+      "source": "candidate/information.py",
+      "line": 135,
+      "function": "identity",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.6459000000000002e-05,
+      "cumulative_s": 8.525e-05
+    },
+    {
+      "source": "_local.py",
+      "line": 539,
+      "function": "read_text",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.832e-06,
+      "cumulative_s": 7.591600000000001e-05
+    },
+    {
+      "source": "_abc.py",
+      "line": 628,
+      "function": "read_text",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.917e-06,
+      "cumulative_s": 7.2917e-05
+    },
+    {
+      "source": "candidate/information.py",
+      "line": 31,
+      "function": "enclosure",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.708e-06,
+      "cumulative_s": 6.1083e-05
+    },
+    {
+      "source": "_local.py",
+      "line": 529,
+      "function": "open",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 7.49e-07,
+      "cumulative_s": 5.9208000000000006e-05
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _io.open>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 5.5375000000000004e-05,
+      "cumulative_s": 5.8375e-05
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 18,
+      "function": "action_ok",
+      "primitive_calls": 5,
+      "calls": 5,
+      "self_s": 4.668e-06,
+      "cumulative_s": 5.5916000000000005e-05
+    },
+    {
+      "source": "candidate/information.py",
+      "line": 33,
+      "function": "<genexpr>",
+      "primitive_calls": 5,
+      "calls": 5,
+      "self_s": 2.334e-06,
+      "cumulative_s": 5.5042000000000006e-05
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 51,
+      "function": "<genexpr>",
+      "primitive_calls": 60,
+      "calls": 60,
+      "self_s": 1.0704000000000001e-05,
+      "cumulative_s": 4.8582000000000003e-05
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 192,
+      "function": "contains",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 5.164e-06,
+      "cumulative_s": 3.5416e-05
+    },
+    {
+      "source": "fractions.py",
+      "line": 958,
+      "function": "__hash__",
+      "primitive_calls": 49,
+      "calls": 49,
+      "self_s": 1.267e-05,
+      "cumulative_s": 3.2753e-05
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 127,
+      "function": "sqrt",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.5377000000000002e-05,
+      "cumulative_s": 2.7583000000000003e-05
+    },
+    {
+      "source": "__init__.py",
+      "line": 183,
+      "function": "dumps",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 6.666e-06,
+      "cumulative_s": 2.7333e-05
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 21,
+      "function": "__post_init__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.0000000000000002e-06,
+      "cumulative_s": 2.5e-05
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 121,
+      "function": "<genexpr>",
+      "primitive_calls": 330,
+      "calls": 330,
+      "self_s": 2.4901e-05,
+      "cumulative_s": 2.4901e-05
+    },
+    {
+      "source": "_local.py",
+      "line": 354,
+      "function": "with_name",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.7080000000000005e-06,
+      "cumulative_s": 2.4709e-05
+    },
+    {
+      "source": "<string>",
+      "line": 2,
+      "function": "__init__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.292000000000001e-06,
+      "cumulative_s": 2.4167e-05
+    },
+    {
+      "source": "adjudication/engine.py",
+      "line": 80,
+      "function": "<genexpr>",
+      "primitive_calls": 13,
+      "calls": 13,
+      "self_s": 5.706e-06,
+      "cumulative_s": 2.396e-05
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 194,
+      "function": "<genexpr>",
+      "primitive_calls": 60,
+      "calls": 60,
+      "self_s": 9.665e-06,
+      "cumulative_s": 2.3792000000000002e-05
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 20,
+      "function": "<genexpr>",
+      "primitive_calls": 15,
+      "calls": 15,
+      "self_s": 6.754e-06,
+      "cumulative_s": 2.3543e-05
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 24,
+      "function": "<genexpr>",
+      "primitive_calls": 4,
+      "calls": 4,
+      "self_s": 9.58e-07,
+      "cumulative_s": 2.3500000000000002e-05
+    },
+    {
+      "source": "__init__.py",
+      "line": 299,
+      "function": "loads",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.001e-06,
+      "cumulative_s": 2.1459000000000002e-05
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.1292000000000002e-05,
+      "cumulative_s": 2.1292000000000002e-05
+    },
+    {
+      "source": "fractions.py",
+      "line": 24,
+      "function": "_hash_algorithm",
+      "primitive_calls": 13,
+      "calls": 13,
+      "self_s": 9.29e-06,
+      "cumulative_s": 2.0083e-05
+    },
+    {
+      "source": "specification/contract.py",
+      "line": 57,
+      "function": "__post_init__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.000000000000001e-06,
+      "cumulative_s": 1.9875000000000002e-05
+    },
+    {
+      "source": "encoder.py",
+      "line": 183,
+      "function": "encode",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.8340000000000003e-06,
+      "cumulative_s": 1.9750000000000002e-05
+    },
+    {
+      "source": "decoder.py",
+      "line": 340,
+      "function": "decode",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.916e-06,
+      "cumulative_s": 1.9083e-05
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sorted>",
+      "primitive_calls": 15,
+      "calls": 15,
+      "self_s": 6.666e-06,
+      "cumulative_s": 1.8874000000000003e-05
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _hashlib.openssl_sha256>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.7500000000000002e-05,
+      "cumulative_s": 1.7500000000000002e-05
+    },
+    {
+      "source": "encoder.py",
+      "line": 205,
+      "function": "iterencode",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.6208e-05,
+      "cumulative_s": 1.6208e-05
+    },
+    {
+      "source": "decoder.py",
+      "line": 351,
+      "function": "raw_decode",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.4625000000000001e-05,
+      "cumulative_s": 1.4625000000000001e-05
+    },
+    {
+      "source": "_local.py",
+      "line": 307,
+      "function": "_tail",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.624e-06,
+      "cumulative_s": 1.4333000000000002e-05
+    },
+    {
+      "source": "adjudication/interval.py",
+      "line": 143,
+      "function": "contains",
+      "primitive_calls": 48,
+      "calls": 48,
+      "self_s": 7.962000000000001e-06,
+      "cumulative_s": 1.4127e-05
+    },
+    {
+      "source": "specification/contract.py",
+      "line": 12,
+      "function": "finite",
+      "primitive_calls": 14,
+      "calls": 14,
+      "self_s": 4.291e-06,
+      "cumulative_s": 1.3958000000000001e-05
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 79,
+      "function": "<genexpr>",
+      "primitive_calls": 120,
+      "calls": 120,
+      "self_s": 1.0335e-05,
+      "cumulative_s": 1.0335e-05
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 147,
+      "function": "<genexpr>",
+      "primitive_calls": 60,
+      "calls": 60,
+      "self_s": 1.0252000000000001e-05,
+      "cumulative_s": 1.0252000000000001e-05
+    },
+    {
+      "source": "candidate/information.py",
+      "line": 116,
+      "function": "payload",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 6.209e-06,
+      "cumulative_s": 9.583000000000001e-06
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 143,
+      "function": "<genexpr>",
+      "primitive_calls": 36,
+      "calls": 36,
+      "self_s": 5.412e-06,
+      "cumulative_s": 9.328000000000001e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 257,
+      "function": "_parse_path",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.2510000000000005e-06,
+      "cumulative_s": 9.250000000000001e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'read' of '_io.TextIOWrapper' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 6.416e-06,
+      "cumulative_s": 8.625000000000001e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.pow>",
+      "primitive_calls": 13,
+      "calls": 13,
+      "self_s": 8.125000000000001e-06,
+      "cumulative_s": 8.125000000000001e-06
+    },
+    {
+      "source": "<string>",
+      "line": 8,
+      "function": "__eq__",
+      "primitive_calls": 11,
+      "calls": 11,
+      "self_s": 4.132e-06,
+      "cumulative_s": 7.96e-06
+    },
+    {
+      "source": "<frozen abc>",
+      "line": 121,
+      "function": "__subclasscheck__",
+      "primitive_calls": 15,
+      "calls": 17,
+      "self_s": 2.166e-06,
+      "cumulative_s": 5.375e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 498,
+      "function": "__init__",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 2.0830000000000002e-06,
+      "cumulative_s": 5.375e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 245,
+      "function": "_from_parsed_parts",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.584e-06,
+      "cumulative_s": 5.334e-06
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 50,
+      "function": "<lambda>",
+      "primitive_calls": 4,
+      "calls": 4,
+      "self_s": 1.2080000000000001e-06,
+      "cumulative_s": 5e-06
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 52,
+      "function": "<genexpr>",
+      "primitive_calls": 60,
+      "calls": 60,
+      "self_s": 4.458e-06,
+      "cumulative_s": 4.458e-06
+    },
+    {
+      "source": "fractions.py",
+      "line": 427,
+      "function": "__str__",
+      "primitive_calls": 21,
+      "calls": 21,
+      "self_s": 4.249e-06,
+      "cumulative_s": 4.249e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'hexdigest' of '_hashlib.HASH' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 3.833e-06,
+      "cumulative_s": 3.833e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _abc._abc_subclasscheck>",
+      "primitive_calls": 15,
+      "calls": 17,
+      "self_s": 3.209e-06,
+      "cumulative_s": 3.541e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 117,
+      "function": "__init__",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 2.418e-06,
+      "cumulative_s": 3.2920000000000004e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method sys.intern>",
+      "primitive_calls": 10,
+      "calls": 10,
+      "self_s": 2.7490000000000003e-06,
+      "cumulative_s": 2.7490000000000003e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 252,
+      "function": "_from_parsed_string",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.5800000000000005e-07,
+      "cumulative_s": 2.6250000000000003e-06
+    },
+    {
+      "source": "specification/contract.py",
+      "line": 130,
+      "function": "<genexpr>",
+      "primitive_calls": 5,
+      "calls": 5,
+      "self_s": 1.956e-06,
+      "cumulative_s": 2.3320000000000003e-06
+    },
+    {
+      "source": "<frozen codecs>",
+      "line": 312,
+      "function": "__init__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.0840000000000003e-06,
+      "cumulative_s": 2.25e-06
+    },
+    {
+      "source": "<frozen codecs>",
+      "line": 322,
+      "function": "decode",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.584e-06,
+      "cumulative_s": 2.209e-06
+    },
+    {
+      "source": "_abc.py",
+      "line": 130,
+      "function": "with_segments",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 5.420000000000001e-07,
+      "cumulative_s": 2.167e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method '__exit__' of '_io._IOBase' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.167e-06,
+      "cumulative_s": 2.167e-06
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 95,
+      "function": "<lambda>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 9.59e-07,
+      "cumulative_s": 1.917e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method builtins.hash>",
+      "primitive_calls": 26,
+      "calls": 26,
+      "self_s": 1.8340000000000001e-06,
+      "cumulative_s": 1.8340000000000001e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method posix._path_splitroot_ex>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.7080000000000002e-06,
+      "cumulative_s": 1.7080000000000002e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'get' of 'dict' objects>",
+      "primitive_calls": 10,
+      "calls": 10,
+      "self_s": 1.2080000000000001e-06,
+      "cumulative_s": 1.2080000000000001e-06
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'match' of 're.Pattern' objects>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 1.2080000000000001e-06,
+      "cumulative_s": 1.2080000000000001e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 237,
+      "function": "_format_parsed_parts",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 6.25e-07,
+      "cumulative_s": 1.125e-06
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 156,
+      "function": "<genexpr>",
+      "primitive_calls": 12,
+      "calls": 12,
+      "self_s": 1.041e-06,
+      "cumulative_s": 1.041e-06
+    },
+    {
+      "source": "_local.py",
+      "line": 505,
+      "function": "__new__",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 7.5e-07,
+      "cumulative_s": 1.0000000000000002e-06
+    },
+    {
+      "source": "encoder.py",
+      "line": 105,
+      "function": "__init__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 9.170000000000001e-07,
+      "cumulative_s": 9.170000000000001e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'join' of 'str' objects>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 7.91e-07,
+      "cumulative_s": 7.91e-07
+    },
+    {
+      "source": "_local.py",
+      "line": 166,
+      "function": "__fspath__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 6.660000000000001e-07,
+      "cumulative_s": 7.5e-07
+    },
+    {
+      "source": "specification/contract.py",
+      "line": 76,
+      "function": "<genexpr>",
+      "primitive_calls": 11,
+      "calls": 11,
+      "self_s": 7.09e-07,
+      "cumulative_s": 7.09e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _codecs.utf_8_decode>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 6.25e-07,
+      "cumulative_s": 6.25e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'encode' of 'str' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 5.420000000000001e-07,
+      "cumulative_s": 5.420000000000001e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'split' of 'str' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 5.420000000000001e-07,
+      "cumulative_s": 5.420000000000001e-07
+    },
+    {
+      "source": "_local.py",
+      "line": 277,
+      "function": "_raw_path",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 3.35e-07,
+      "cumulative_s": 4.59e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'items' of 'dict' objects>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 3.75e-07,
+      "cumulative_s": 3.75e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method fromkeys>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 3.34e-07,
+      "cumulative_s": 3.34e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'values' of 'dict' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.92e-07,
+      "cumulative_s": 2.92e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method posix.fspath>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 2.92e-07,
+      "cumulative_s": 2.92e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method _io.text_encoding>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 2.51e-07,
+      "cumulative_s": 2.51e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'copy' of 'list' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.5000000000000004e-07,
+      "cumulative_s": 2.5000000000000004e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'startswith' of 'str' objects>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.5000000000000004e-07,
+      "cumulative_s": 2.5000000000000004e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<method 'end' of 're.Match' objects>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 2.5000000000000004e-07,
+      "cumulative_s": 2.5000000000000004e-07
+    },
+    {
+      "source": "candidate/certify.py",
+      "line": 90,
+      "function": "<genexpr>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.09e-07,
+      "cumulative_s": 2.09e-07
+    },
+    {
+      "source": "~",
+      "line": 0,
+      "function": "<built-in method math.sqrt>",
+      "primitive_calls": 2,
+      "calls": 2,
+      "self_s": 2.08e-07,
+      "cumulative_s": 2.08e-07
+    },
+    {
+      "source": "candidate/information.py",
+      "line": 112,
+      "function": "application_time",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 2.08e-07,
+      "cumulative_s": 2.08e-07
+    },
+    {
+      "source": "<frozen codecs>",
+      "line": 263,
+      "function": "__init__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 1.66e-07,
+      "cumulative_s": 1.66e-07
+    },
+    {
+      "source": "_local.py",
+      "line": 227,
+      "function": "__str__",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 8.400000000000001e-08,
+      "cumulative_s": 8.400000000000001e-08
+    },
+    {
+      "source": "adjudication/flow.py",
+      "line": 182,
+      "function": "<genexpr>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 8.3e-08,
+      "cumulative_s": 8.3e-08
+    },
+    {
+      "source": "_local.py",
+      "line": 289,
+      "function": "drive",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.2000000000000006e-08,
+      "cumulative_s": 4.2000000000000006e-08
+    },
+    {
+      "source": "_local.py",
+      "line": 298,
+      "function": "root",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_s": 4.2000000000000006e-08,
+      "cumulative_s": 4.2000000000000006e-08
+    }
+  ],
+  "profile_times_are_benchmark": false,
+  "production_function_changed": false,
+  "source_sha256": "da1ed55bbd0a1c8c1cfa00a259ce347330484b55c1e0ebc5ea08196409ec01fd",
+  "protocol_sha256": "d446fba97ec8f428ee25759dec9a4ca49d5ad291647ab83918b45c716086cf3c"
+}
