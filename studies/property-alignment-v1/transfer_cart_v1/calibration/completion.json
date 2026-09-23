@@ -1,0 +1,76 @@
+{
+  "attempts": [
+    {
+      "case_id": "4dbceabc4ab35f6137e3654ee9b474cba9c1872453d5286848421631e8c72093",
+      "exit_code": 0,
+      "wall_s": 1.5031481670448557
+    },
+    {
+      "case_id": "94d512c83c75a8de1aa828ec87a3ba3973cb599621ace09357ca4eebcd2c21d1",
+      "exit_code": 0,
+      "wall_s": 1.2901169590186328
+    },
+    {
+      "case_id": "c07d5a17efd18f3f64db0699dfe8f48fe7a9ee53e9a198fd7b5cb30ae6febceb",
+      "exit_code": 0,
+      "wall_s": 0.8333069159416482
+    },
+    {
+      "case_id": "c3b10cd3f08a806f13993e53db829de3c1ba15e3b5c069548cf1702b408519e5",
+      "exit_code": 0,
+      "wall_s": 0.928095042007044
+    },
+    {
+      "case_id": "c413783cc3dc62dc638ecb9c691c4fd98d030e1e5c11f26b66145f0e146ef739",
+      "exit_code": 0,
+      "wall_s": 0.9229277910199016
+    },
+    {
+      "case_id": "6cb34d6c66c78cc91d18c9038216f0581dcf22d30014b2dd49c268e0880138c3",
+      "exit_code": 0,
+      "wall_s": 1.137966459034942
+    },
+    {
+      "case_id": "3a4d5a867fea202c0af3a9533973832b19ad84ba41d252af856e34d04a88edd2",
+      "exit_code": 0,
+      "wall_s": 0.9854794159764424
+    },
+    {
+      "case_id": "39176f72687069db776ceb3e346fb9d28af070a69f0a66b50fe16effd50caabb",
+      "exit_code": 0,
+      "wall_s": 2.0084947500145063
+    }
+  ],
+  "cases": 8,
+  "completed_at_utc": "2026-09-23T23:45:31.165152+00:00",
+  "elapsed_s": 9.61919883301016,
+  "files": {
+    "cases/aliased_pair__0000.json": "26c095ba1641f365951c7b943c01015509aadf81f0de77568446ad19d366edfd",
+    "cases/aliased_pair__0001.json": "622a528d8df26f6f2cc4f95e894cae49231ba3bcea881189b8742bc71d62ea68",
+    "cases/aliased_triple__0000.json": "512e90634892196fbacc3d468f0aa5ce25aecbc33359cf50a04bab6efc413068",
+    "cases/aliased_triple__0001.json": "d22dae41e2e3bcd5f66fb2e0ced06e035ce4847607c35784f6ac6a2c95baf61f",
+    "cases/interior__0000.json": "b1f8b17db67b844424eb08eb556ef0151ce8c98fc93cd645e5bc7061b4abba46",
+    "cases/interior__0001.json": "23c0f249b68bdf250f57eb35a7fc3200ab1b276318998412969094d214001fd4",
+    "cases/single_face__0000.json": "677489cecfbd057e4e163c2bb6d9917315aedae9dd6439420f0977ad1ad3249d",
+    "cases/single_face__0001.json": "db82ea142fedff3d4a3f5ce06656003f824c7a2802c8b382874233a18b9ada81",
+    "header.json": "4256717ce2ec82945c9d37f25f934bbd9003282666be03c7896f9e0415af00af",
+    "inputs.json": "eb55e245a754a78155f10305da42b1c270b1e076e846b4a0ce75e41c558badbd",
+    "process_logs/aliased_pair__0000.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/aliased_pair__0001.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/aliased_triple__0000.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/aliased_triple__0001.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/interior__0000.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/interior__0001.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/single_face__0000.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process_logs/single_face__0001.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "started/aliased_pair__0000.json": "b6a557c56b5409051f724918bdffdc1848f9b11feca484f50d9d07b383959de5",
+    "started/aliased_pair__0001.json": "1bec61bbb9e0ee5d2e2fe82c81d68c87dfecaa6323a132c91fc8c50ee59127d2",
+    "started/aliased_triple__0000.json": "70790565504591cc0563b055f945897b2b0cd520bc54635b05f37b1544558d30",
+    "started/aliased_triple__0001.json": "51b9d82aad8ad20d330ab1271872bf387ccfbf34984fa2b4465d04d78c98aa0c",
+    "started/interior__0000.json": "a26cabe3209ea00b8899df8d63afa2164ba11e6d53f171b922b48235827f3d9f",
+    "started/interior__0001.json": "61fef17d8c314c95a62874127bff08bac2bb78b95a4bad05654a1b5c259dfa5f",
+    "started/single_face__0000.json": "517da5aa98c1dfafa4cb14a8056b97e143e15a18a0c6cbb0184cd4ec9b3be46c",
+    "started/single_face__0001.json": "096085a734895e7d189b690941a207424534f9a40afcf6742d11ceea4a0c9fae"
+  },
+  "transfer_id": "calibration-894c1d574b1d1f08e9dc8603f09d2a0bf45c53cd9953a5cdaf7e2dd7aeec441e"
+}
