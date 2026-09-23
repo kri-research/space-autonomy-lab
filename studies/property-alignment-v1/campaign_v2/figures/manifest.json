@@ -1,0 +1,11 @@
+{
+  "schema": "sal-campaign-v2-figures/2",
+  "data_manifest_sha256": "ac2353de44052d149b4cf0d8b493357c9be287544fcca8cc8a6d3c906b029035",
+  "plot_script_sha256": "1b4873596d0717c132421e92ba41459e7de5c14972dd236a8edd2b5983b69a38",
+  "files": {
+    "candidate_outcomes.svg": "153bf2ff2b065954c2a4bdfee287fabdd584e74db8a1cbe67d4c95dc1652699b",
+    "policy_timing.svg": "b05e8d819ac1a86bd66b79e3808a70b9d999ea16a2bc4ba6570f3408ad2dea58"
+  },
+  "local_and_public_svg_identical": true,
+  "public_format": "SVG text; local PNG and PDF not published"
+}

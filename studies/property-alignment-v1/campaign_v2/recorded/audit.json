@@ -1,0 +1,18 @@
+{
+  "campaign_complete": true,
+  "definite_outputs": 756,
+  "evaluation_id": "91c2f9c2f660ff210e29c53368d97886092909ad5efefe55831e637bf7df155f",
+  "frozen_analysis_reproduced": true,
+  "independent_count_interval_arithmetic": true,
+  "invalid_definite_certificates": 0,
+  "new_numerical_replay": false,
+  "passed": true,
+  "physical_validation": false,
+  "policy_or_qualification_rerun": false,
+  "qualification_receipts": 1152,
+  "raw_files": 5768,
+  "schema": "sal-replacement-campaign-audit/1",
+  "scope": "Exact raw accounting, input/receipt bindings, saved proof structure/algebra and unchanged analysis; numerical proof replay was performed only inside the frozen execution.",
+  "selected_receipts": 768,
+  "validity_claim_gate_passed": true
+}

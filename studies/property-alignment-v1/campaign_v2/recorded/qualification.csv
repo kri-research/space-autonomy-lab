@@ -1,0 +1,5 @@
+stratum,reserve,qualified,proved_precommand_violation,not_certified_by_library,selected
+interior_pair,288,288,0,0,192
+radial_boundary,288,288,0,0,192
+three_face_boundary,288,288,0,0,192
+timing_bounded_pair,288,287,1,0,192

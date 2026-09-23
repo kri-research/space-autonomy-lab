@@ -1,0 +1,529 @@
+{
+  "campaign_complete": true,
+  "candidate_statuses": {
+    "certified_common_prefix": 725,
+    "proved_no_common_held_command": 31,
+    "unresolved": 9,
+    "unresolved_budget": 3
+  },
+  "claim_status": {
+    "complete_recovery": "not_evaluated",
+    "controller_superiority": "not_tested",
+    "coverage": "estimated",
+    "physical_safety": "not_evaluated"
+  },
+  "elapsed_campaign_s": 446.5708445420023,
+  "evaluation_id": "91c2f9c2f660ff210e29c53368d97886092909ad5efefe55831e637bf7df155f",
+  "frozen_analysis_unchanged": true,
+  "inference_scope": "average conditional success probability given earlier case outcomes",
+  "invalid_definite_certificates": 0,
+  "limitations": [
+    "Single Mac run; conditional-mean interval is not independent hardware reliability.",
+    "Finite common prefixes and HCW obstructions, without a mission-recovery endpoint.",
+    "Native baselines retain different information representations and continuation obligations; matched tables do not establish superiority.",
+    "No new numerical replay beyond the predeclared in-episode checks; audit checks recorded structure and arithmetic.",
+    "The failed original campaign remains invalid and excluded."
+  ],
+  "on_time_verified_diagnostics": 756,
+  "performance_success_threshold_prespecified": false,
+  "physical_validation": false,
+  "primary": [
+    {
+      "certified_common_prefix": 192,
+      "on_time_decisive_valid": 192,
+      "proved_no_common_held_command": 0,
+      "selected": 192,
+      "stratum": "interior_pair",
+      "unresolved": 0,
+      "unresolved_budget": 0
+    },
+    {
+      "certified_common_prefix": 190,
+      "on_time_decisive_valid": 192,
+      "proved_no_common_held_command": 2,
+      "selected": 192,
+      "stratum": "radial_boundary",
+      "unresolved": 0,
+      "unresolved_budget": 0
+    },
+    {
+      "certified_common_prefix": 154,
+      "on_time_decisive_valid": 183,
+      "proved_no_common_held_command": 29,
+      "selected": 192,
+      "stratum": "three_face_boundary",
+      "unresolved": 9,
+      "unresolved_budget": 0
+    },
+    {
+      "certified_common_prefix": 189,
+      "on_time_decisive_valid": 189,
+      "proved_no_common_held_command": 0,
+      "selected": 192,
+      "stratum": "timing_bounded_pair",
+      "unresolved": 0,
+      "unresolved_budget": 3
+    }
+  ],
+  "primary_estimate": {
+    "estimate": 0.984375,
+    "fixed_generator_mean_requires_independence": true,
+    "half_width_bound": 0.04900626723123034,
+    "independent_hardware_sessions_observed": false,
+    "inferential_scope": "protected fixed-order conditional-mean target",
+    "lower": 0.9353687327687696,
+    "method": "conditional Hoeffding bound in frozen case order",
+    "runtime_dependence_assumed_absent": false,
+    "target": "average conditional success probability given earlier case outcomes",
+    "upper": 1.0
+  },
+  "protected_inputs": 768,
+  "qualification": [
+    {
+      "not_certified_by_library": 0,
+      "proved_precommand_violation": 0,
+      "qualified": 288,
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "interior_pair"
+    },
+    {
+      "not_certified_by_library": 0,
+      "proved_precommand_violation": 0,
+      "qualified": 288,
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "radial_boundary"
+    },
+    {
+      "not_certified_by_library": 0,
+      "proved_precommand_violation": 0,
+      "qualified": 288,
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "not_certified_by_library": 0,
+      "proved_precommand_violation": 1,
+      "qualified": 287,
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "timing_bounded_pair"
+    }
+  ],
+  "qualification_reserve": 1152,
+  "quantile_definition": "Linear interpolation at (n-1)*q of the sorted observed values",
+  "schema": "sal-replacement-results-summary/1",
+  "secondary": [
+    {
+      "mean_admitted": 192,
+      "mean_confirmed_false_safe": 0,
+      "mean_no_admission": 0,
+      "mean_revalidated": 192,
+      "mean_unresolved": 0,
+      "pairwise_admitted": 0,
+      "pairwise_applicable": 0,
+      "pairwise_confirmed_false_safe": 0,
+      "stratum": "interior_pair"
+    },
+    {
+      "mean_admitted": 192,
+      "mean_confirmed_false_safe": 28,
+      "mean_no_admission": 0,
+      "mean_revalidated": 164,
+      "mean_unresolved": 0,
+      "pairwise_admitted": 0,
+      "pairwise_applicable": 0,
+      "pairwise_confirmed_false_safe": 0,
+      "stratum": "radial_boundary"
+    },
+    {
+      "mean_admitted": 192,
+      "mean_confirmed_false_safe": 65,
+      "mean_no_admission": 0,
+      "mean_revalidated": 127,
+      "mean_unresolved": 0,
+      "pairwise_admitted": 181,
+      "pairwise_applicable": 192,
+      "pairwise_confirmed_false_safe": 22,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "mean_admitted": 192,
+      "mean_confirmed_false_safe": 0,
+      "mean_no_admission": 0,
+      "mean_revalidated": 189,
+      "mean_unresolved": 3,
+      "pairwise_admitted": 0,
+      "pairwise_applicable": 0,
+      "pairwise_confirmed_false_safe": 0,
+      "stratum": "timing_bounded_pair"
+    }
+  ],
+  "superiority_test_performed": false,
+  "timing": [
+    {
+      "maximum_s": 0.03648791601881385,
+      "measurement": "qualification_algorithm",
+      "median_s": 0.01662027050042525,
+      "minimum_s": 0.012762625003233552,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.02088263148325495,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.0702250829199329,
+      "measurement": "qualification_worker",
+      "median_s": 0.03728081245208159,
+      "minimum_s": 0.029162834049202502,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.047883547807577975,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.09526687499601394,
+      "measurement": "candidate_policy",
+      "median_s": 0.06596464558970183,
+      "minimum_s": 0.05901737499516457,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.08611149188363924,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.2677486250177026,
+      "measurement": "complete_episode",
+      "median_s": 0.1713329374906607,
+      "minimum_s": 0.15121545805595815,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.23598917294293642,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.2721968749538064,
+      "measurement": "episode_worker",
+      "median_s": 0.17414320854004472,
+      "minimum_s": 0.1538323750719428,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.240392603946384,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.10411333304364234,
+      "measurement": "predictive_setup_s",
+      "median_s": 0.05085850053001195,
+      "minimum_s": 0.0429736248916015,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.07087669835309497,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.00014391692820936441,
+      "measurement": "predictive_policy_wall_s",
+      "median_s": 1.9916973542422056e-05,
+      "minimum_s": 1.5166006051003933e-05,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 2.9033893952146152e-05,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.01338495803065598,
+      "measurement": "barrier_setup_s",
+      "median_s": 0.005369749502278864,
+      "minimum_s": 0.004556250059977174,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.007788814097875728,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 2.8250040486454964e-05,
+      "measurement": "barrier_policy_wall_s",
+      "median_s": 5.666515789926052e-06,
+      "minimum_s": 4.707952030003071e-06,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 1.1024880222976204e-05,
+      "stratum": "interior_pair"
+    },
+    {
+      "maximum_s": 0.05598945799283683,
+      "measurement": "qualification_algorithm",
+      "median_s": 0.01735031296266243,
+      "minimum_s": 0.014361458946950734,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.03958089194493368,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.09201050002593547,
+      "measurement": "qualification_worker",
+      "median_s": 0.03874685399932787,
+      "minimum_s": 0.03235487500205636,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.06142965450999327,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.6233874160097912,
+      "measurement": "candidate_policy",
+      "median_s": 0.06917379202786833,
+      "minimum_s": 0.03890383301768452,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.21742027748841788,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.7558996659936383,
+      "measurement": "complete_episode",
+      "median_s": 0.1808603959507309,
+      "minimum_s": 0.14522966591175646,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.3620734518975948,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.7585312500596046,
+      "measurement": "episode_worker",
+      "median_s": 0.1842849170207046,
+      "minimum_s": 0.14765533397439867,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.36525930811767443,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.08875362505204976,
+      "measurement": "predictive_setup_s",
+      "median_s": 0.05059072945732623,
+      "minimum_s": 0.04171699995640665,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.07115428333636373,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.00010329193901270628,
+      "measurement": "predictive_policy_wall_s",
+      "median_s": 1.9437982700765133e-05,
+      "minimum_s": 1.4999997802078724e-05,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 2.9600289417430744e-05,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.015970583073794842,
+      "measurement": "barrier_setup_s",
+      "median_s": 0.005595145979896188,
+      "minimum_s": 0.004195624962449074,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.008471333055058494,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 6.170908454805613e-05,
+      "measurement": "barrier_policy_wall_s",
+      "median_s": 5.541020072996616e-06,
+      "minimum_s": 4.792003892362118e-06,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 1.0714406380429861e-05,
+      "stratum": "radial_boundary"
+    },
+    {
+      "maximum_s": 0.0717158749466762,
+      "measurement": "qualification_algorithm",
+      "median_s": 0.027696395525708795,
+      "minimum_s": 0.0219642500160262,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.052930274495156485,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.10708037507720292,
+      "measurement": "qualification_worker",
+      "median_s": 0.05915164545876905,
+      "minimum_s": 0.04899466596543789,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.087201383971842,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.36721208307426423,
+      "measurement": "candidate_policy",
+      "median_s": 0.08282937499461696,
+      "minimum_s": 0.04425966599956155,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.3229826688941102,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 1.352326957974583,
+      "measurement": "complete_episode",
+      "median_s": 0.2992224579793401,
+      "minimum_s": 0.26439712499268353,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.912644365109736,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 1.355343500035815,
+      "measurement": "episode_worker",
+      "median_s": 0.3026416459470056,
+      "minimum_s": 0.26741383294574916,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.9159685293969232,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.0889806249178946,
+      "measurement": "predictive_setup_s",
+      "median_s": 0.05587250005919486,
+      "minimum_s": 0.04802283295430243,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.06417348534450866,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.00010316597763448954,
+      "measurement": "predictive_policy_wall_s",
+      "median_s": 2.1915999241173267e-05,
+      "minimum_s": 1.666706521064043e-05,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 3.085638745687901e-05,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.011137916939333081,
+      "measurement": "barrier_setup_s",
+      "median_s": 0.006465375481639057,
+      "minimum_s": 0.004829250043258071,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.008515816170256584,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.0014831660082563758,
+      "measurement": "barrier_policy_wall_s",
+      "median_s": 6.708025466650724e-06,
+      "minimum_s": 5.041947588324547e-06,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 9.893433889374137e-06,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "maximum_s": 0.06476149999070913,
+      "measurement": "qualification_algorithm",
+      "median_s": 0.04375072900438681,
+      "minimum_s": 0.03436995798256248,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.05289286077604629,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 0.167967583052814,
+      "measurement": "qualification_worker",
+      "median_s": 0.09117960394360125,
+      "minimum_s": 0.047966458019800484,
+      "missing": 0,
+      "observed": 288,
+      "p95_s": 0.10984994196915067,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 6.330568124889396,
+      "measurement": "candidate_policy",
+      "median_s": 0.5751206874847412,
+      "minimum_s": 0.5063048339216039,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.693145625136094,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 11.664707708056085,
+      "measurement": "complete_episode",
+      "median_s": 0.7976045830291696,
+      "minimum_s": 0.7026147920405492,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.9822923603758681,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 11.668600667035207,
+      "measurement": "episode_worker",
+      "median_s": 0.800741687475238,
+      "minimum_s": 0.705408624955453,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.9857794563693459,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 0.09427770809270442,
+      "measurement": "predictive_setup_s",
+      "median_s": 0.05445862497435883,
+      "minimum_s": 0.04328579211141914,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.06815625611925497,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 7.729209028184414e-05,
+      "measurement": "predictive_policy_wall_s",
+      "median_s": 2.095848321914673e-05,
+      "minimum_s": 1.4791963621973991e-05,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 2.8949714032933115e-05,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 0.012086458969861269,
+      "measurement": "barrier_setup_s",
+      "median_s": 0.006457999930717051,
+      "minimum_s": 0.004474958055652678,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 0.009100235748337581,
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "maximum_s": 2.7499976567924023e-05,
+      "measurement": "barrier_policy_wall_s",
+      "median_s": 6.020534783601761e-06,
+      "minimum_s": 4.958012141287327e-06,
+      "missing": 0,
+      "observed": 192,
+      "p95_s": 9.916810085996975e-06,
+      "stratum": "timing_bounded_pair"
+    }
+  ],
+  "utility_collision_hold_abort_measured": false,
+  "validity_claim_gate_passed": true
+}
