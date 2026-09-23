@@ -119,9 +119,47 @@
       "output": "causal/recorded_execution/qualification",
       "reproduction": "python -m pytest tests/test_causal_recorded.py",
       "limit": "Known-state ideal finite-horizon continuations; no robust partial-information or infinite-horizon claim. The outward boundary control remains separately unrecoverable."
+    },
+    {
+      "id": "PB1",
+      "claim": "A documented tube predictive-filter specialization passes interval matrix/terminal checks and a 300-second stored-plan/terminal continuation with 299 deliberately failed subsequent solves.",
+      "evidence_class": "bounded_method_implementation_and_numerical_validation",
+      "source": "protective/certificates.py, predictive.py and README.md",
+      "reproduction": "python -m protective.validate --output /path/to/new-validation",
+      "output": "protective/recorded_validation/",
+      "limit": "Conditional mathematical assumptions and recorded-input numerical validation; not a new theorem, exact-feedback machine proof or physical validation."
+    },
+    {
+      "id": "PB2",
+      "claim": "The predictive reconstruction contains all ten predeclared admissible case/plant combinations and acquires hold without external continuation; the unprotected, original and aligned controls each violate six.",
+      "evidence_class": "selected_developmental_comparison",
+      "source": "protective/protocol.json and recorded_development/",
+      "reproduction": "python -m protective.artifact protective/recorded_development",
+      "output": "protective/recorded_analysis/results.json",
+      "limit": "Development cases with explicitly bounded full-state observations; not a population rate or novelty/superiority claim."
+    },
+    {
+      "id": "PB3",
+      "claim": "The barrier-plus-continuation records contain all ten admissible combinations, but only four retain uninterrupted barrier protection; the others invoke 48 external tracking decisions.",
+      "evidence_class": "selected_developmental_comparison",
+      "source": "protective/barrier.py and recorded_development/",
+      "reproduction": "python -m protective.artifact protective/recorded_development",
+      "output": "protective/recorded_analysis/results.json",
+      "limit": "No attribution of the external tracker outcomes to a barrier theorem; failure of this sufficient-domain search is not proof of physical impossibility."
+    },
+    {
+      "id": "PB4",
+      "claim": "The bounded reference tracker also completes all ten admissible combinations, so resolving these selected failures does not require a new protective algorithm.",
+      "evidence_class": "selected_developmental_control",
+      "source": "protective/run.py tracker and protocol.json",
+      "reproduction": "python -m protective.artifact protective/recorded_development",
+      "output": "protective/recorded_analysis/results.json",
+      "limit": "No invariant-set or robust safety certificate is asserted for that tracker; larger information-constrained recovery question remains untested."
     }
   ],
   "bounded_numerical_validation_established": true,
   "new_comparative_campaign_executed": true,
-  "comparative_evidence_class": "declared_developmental_mechanistic_not_confirmatory"
+  "comparative_evidence_class": "declared_developmental_mechanistic_not_confirmatory",
+  "protective_baseline_development_executed": true,
+  "novel_protective_algorithm_claimed": false
 }

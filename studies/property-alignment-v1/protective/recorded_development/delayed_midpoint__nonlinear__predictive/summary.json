@@ -1,0 +1,99 @@
+{
+  "adjudication": {
+    "aborted": false,
+    "adjudication_wall_s": 6.122250083019026,
+    "ambiguous_intervals": 1,
+    "complete_range_coverage": true,
+    "components": {
+      "collision_free": "satisfied",
+      "containment": "satisfied",
+      "keep_out_free": "satisfied"
+    },
+    "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+    "enclosure_kinds": [
+      "validated_interval_taylor"
+    ],
+    "feedback_sequence_certified": false,
+    "first_exit_bracket_s": null,
+    "first_exit_is_exact_time": false,
+    "guaranteed_dwell_s": "45467/256",
+    "hold_acquired": "satisfied",
+    "initial_containment": "satisfied",
+    "leaf_intervals": 1210,
+    "max_simulator_distance_outside_enclosure_components": [
+      2.5384973886821705e-08,
+      8.126892936388685e-09,
+      6.338868232397266e-12,
+      3.7347739484383524e-11
+    ],
+    "minimum_separation_enclosure_m": [
+      29.196823410146077,
+      29.19690414011191
+    ],
+    "model_kinds": [
+      "nonlinear"
+    ],
+    "nominal_goal": "satisfied",
+    "possible_dwell_upper_s": "727473/4096",
+    "range_evaluations": 1220,
+    "reference_comparison_scope": "Original approximate plant versus enclosed intended ODE; includes represented frame-initial differences, not a simulator error certificate.",
+    "scope": "complete_episode",
+    "scope_of_validated_result": "Intended mathematical model under the exact recorded input schedule; feedback generator is not interval-certified.",
+    "simulator_agreement": "within_predeclared_comparison_limit",
+    "status": "validated_containment",
+    "unresolved_reasons": [
+      "boundary_or_range_overlap_at_resolution_limit"
+    ],
+    "validated_containment": true,
+    "witness_times_s": {
+      "collision_free": null,
+      "containment": null,
+      "keep_out_free": null
+    }
+  },
+  "age_s": 1,
+  "all_filter_decisions_protected": true,
+  "arm": "predictive",
+  "case": "delayed_midpoint",
+  "case_role": "bounded_information_development",
+  "changed_commands": 300,
+  "commands": 300,
+  "configuration": {
+    "decision_limit": 1.0,
+    "horizon": 180,
+    "solver_time_limit": 0.2
+  },
+  "delay_s": 1,
+  "effort_integral": 2.1166113388475605,
+  "execution_error": null,
+  "external_guard_decisions": 0,
+  "hold_status": "satisfied",
+  "information": "bounded",
+  "initial": [
+    0.0,
+    -97.5,
+    0.0,
+    0.12
+  ],
+  "max_selected_norm": 0.018740708502858347,
+  "noise_hash": "b837e3421c1e45fa70294283109efd0a874bdb545028988df6dbbc74b50cff73",
+  "physical_status": "validated_containment",
+  "physical_validation": false,
+  "plant": "nonlinear",
+  "policy_cpu_total": 12.567663000000096,
+  "policy_wall_max": 0.05821066698990762,
+  "policy_wall_median": 0.03990552097093314,
+  "protected_decisions": 300,
+  "runtime_s": 19.476146499975584,
+  "scope": "selected development; fixed-input continuous adjudication, conditional method guarantees, no exact numerical-feedback theorem",
+  "seed": 50520260923,
+  "setup_wall_s": 0.03753875009715557,
+  "states": 1201,
+  "statuses": {
+    "feasible_predictive_plan": 300
+  },
+  "steady_error_P_radius": 0.06453001188964706,
+  "stored_plans": 300,
+  "terminal_tube_valid": true,
+  "tuning": false
+}

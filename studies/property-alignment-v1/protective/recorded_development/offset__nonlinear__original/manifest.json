@@ -1,0 +1,9 @@
+{
+  "adjudication.json": "60a33fb0eb79813ca37665b5a8fcae6531cb51ef77d9fe781488b1ba30427d2e",
+  "commands.jsonl": "dd3585e7ea9a7400cfe9d49b8c44e680a1f5831b00f1eb4865f7668d5f948f06",
+  "enclosures.csv": "228567d37f7769e9365e73b13754147f074e76b00ecb8d02fcdfb666d1a35cec",
+  "plans.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schedule.json": "bb278abc0380425664e3c06af9ff8fd9cac03bf0afc7794b1a94299eaf2d5656",
+  "states.csv": "90d0e3072f842c7760622332615a9a3d1d9b76d23234eb5c8903e1912dfdaf70",
+  "summary.json": "a60ccff368132beb0b431024a0d515df3d01c9bf58563bf7ecc54b9cc2ed8ac0"
+}
