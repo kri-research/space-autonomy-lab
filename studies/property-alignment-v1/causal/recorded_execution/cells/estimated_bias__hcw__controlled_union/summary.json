@@ -1,0 +1,106 @@
+{
+  "abort_requested": false,
+  "adjudication": {
+    "aborted": false,
+    "adjudication_wall_s": 1.8091282080858946,
+    "ambiguous_intervals": 1,
+    "complete_range_coverage": true,
+    "components": {
+      "collision_free": "satisfied",
+      "containment": "violated",
+      "keep_out_free": "satisfied"
+    },
+    "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+    "enclosure_kinds": [
+      "validated_interval_taylor"
+    ],
+    "feedback_sequence_certified": false,
+    "first_exit_bracket_s": [
+      98.235595703125,
+      98.23583984375
+    ],
+    "first_exit_is_exact_time": false,
+    "guaranteed_dwell_s": "133279/1024",
+    "hold_acquired": "satisfied",
+    "initial_containment": "satisfied",
+    "leaf_intervals": 1231,
+    "max_simulator_distance_outside_enclosure_components": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "minimum_separation_enclosure_m": [
+      24.022208768043345,
+      24.02273742194228
+    ],
+    "model_kinds": [
+      "hcw"
+    ],
+    "nominal_goal": "violated",
+    "possible_dwell_upper_s": "533117/4096",
+    "range_evaluations": 1262,
+    "reference_comparison_scope": "Original approximate plant versus enclosed intended ODE; includes represented frame-initial differences, not a simulator error certificate.",
+    "scope": "complete_episode",
+    "scope_of_validated_result": "Intended mathematical model under the exact recorded input schedule; feedback generator is not interval-certified.",
+    "simulator_agreement": "within_predeclared_comparison_limit",
+    "status": "validated_violation",
+    "unresolved_reasons": [
+      "boundary_or_range_overlap_at_resolution_limit"
+    ],
+    "validated_containment": false,
+    "witness_times_s": {
+      "collision_free": null,
+      "containment": 98.23583984375,
+      "keep_out_free": null
+    }
+  },
+  "applied_command_sha256": "c6903e72cd02440eb3883da70393437fa262425cc9b61a8f7aef0045431847a5",
+  "arm": "controlled_union",
+  "case": "estimated_bias",
+  "case_role": "estimator_mechanism",
+  "changed_commands": 45,
+  "commands": 300,
+  "control_effort_integral_mps": 2.5299143454651314,
+  "control_energy_integral_m2ps3": 0.04545158039292496,
+  "controller_identity": "experiment-004-reference:648275e25324681e5d8989fb540d0ca4d5020bdcc4d43fa0c514c1f13949f91e",
+  "decision_cpu_total_s": 1.4668690000000453,
+  "decision_wall_max_s": 0.005775958998128772,
+  "error": null,
+  "execution_status": "complete",
+  "fault_packet_dispositions": {
+    "innovation_rejected": 30
+  },
+  "geometry_checks": 300,
+  "geometry_rejections": 45,
+  "information": "estimator",
+  "initial": [
+    0.0,
+    -97.5,
+    0.0,
+    0.12
+  ],
+  "initial_recovery_status": "unassessed_information_constrained",
+  "innovation_sha256": {
+    "actuator_error": "8c8adfb8dfafa069e4764ae81b9c01206634d4a122a912c2ed26e8ad93eb2d29",
+    "monitor_noise": "c57c7a894dd390e298b40d5004d983ccc8e699434ebff20d38f3338f6c098cf5",
+    "primary_noise": "664fe68c14f422b208f8e0465629fd078815d6e4dfeac8fba0f52eaabe94baed",
+    "process_acceleration": "d02352ea27905a7f739c1a79e8f5d68b87d58266c2910044631cd27b9eebea09"
+  },
+  "max_selected_norm_mps2": 0.020000000000000007,
+  "motion_sha256": "287a557cf786f7d0cb3a41efe71ad4451feee85851bfc728f7b1d78fcaf4d5f3",
+  "numerically_unresolved_decisions": 0,
+  "overrides": 45,
+  "packet_opportunities": 602,
+  "physical_status": "validated_violation",
+  "plant": "hcw",
+  "reasons": {
+    "UNCERTAINTY_AWARE_GEOMETRY": 45,
+    "accepted": 255
+  },
+  "sampled_minimum_separation_m": 24.022793858911488,
+  "sampled_outside_count": 177,
+  "selected_command_sha256": "7ab86a150268684a3b438274f60fea27f87ca845cf47990df54780c7de326ffe",
+  "states": 1201,
+  "wall_runtime_s": 3.3668661249103025
+}

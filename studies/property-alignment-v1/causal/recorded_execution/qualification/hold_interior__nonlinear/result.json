@@ -1,0 +1,59 @@
+{
+  "adjudication": {
+    "aborted": false,
+    "adjudication_wall_s": 5.811043124995194,
+    "ambiguous_intervals": 0,
+    "complete_range_coverage": true,
+    "components": {
+      "collision_free": "satisfied",
+      "containment": "satisfied",
+      "keep_out_free": "satisfied"
+    },
+    "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+    "enclosure_kinds": [
+      "validated_interval_taylor"
+    ],
+    "feedback_sequence_certified": false,
+    "first_exit_bracket_s": null,
+    "first_exit_is_exact_time": false,
+    "guaranteed_dwell_s": "300",
+    "hold_acquired": "satisfied",
+    "initial_containment": "satisfied",
+    "leaf_intervals": 1200,
+    "max_simulator_distance_outside_enclosure_components": [
+      3.3133767659673904e-08,
+      8.693415765037571e-09,
+      3.632623559238278e-12,
+      3.391244277330054e-11
+    ],
+    "minimum_separation_enclosure_m": [
+      29.99999999653908,
+      29.99999999665356
+    ],
+    "model_kinds": [
+      "nonlinear"
+    ],
+    "nominal_goal": "satisfied",
+    "possible_dwell_upper_s": "300",
+    "range_evaluations": 1200,
+    "reference_comparison_scope": "Original approximate plant versus enclosed intended ODE; includes represented frame-initial differences, not a simulator error certificate.",
+    "scope": "complete_episode",
+    "scope_of_validated_result": "Intended mathematical model under the exact recorded input schedule; feedback generator is not interval-certified.",
+    "simulator_agreement": "within_predeclared_comparison_limit",
+    "status": "validated_containment",
+    "unresolved_reasons": [],
+    "validated_containment": true,
+    "witness_times_s": {
+      "collision_free": null,
+      "containment": null,
+      "keep_out_free": null
+    }
+  },
+  "case": "hold_interior",
+  "error": null,
+  "execution_status": "complete",
+  "finite_horizon_recoverability": "demonstrated_fixed_input_continuation",
+  "plant": "nonlinear",
+  "scope": "Known initial state, ideal information, no disturbances, supplied held inputs on [0,300]. Neither robust/infinite-horizon recovery nor a competing baseline.",
+  "selected_cases_changed": false
+}

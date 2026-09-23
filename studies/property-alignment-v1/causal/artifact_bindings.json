@@ -1,0 +1,10 @@
+{
+  "schema": "sal-causal-artifact-bindings/1",
+  "sealed_source_protocol_sha256": "e2d9c61f522a04c65f32fb37cd7c22d30e352d69519ce101348decf28a14dfa1",
+  "execution_protocol_serialization_sha256": "0f64f34f4f1b3daecac467c89febffbba8655da59af0b5c064db3fad7dbc32dd",
+  "semantic_json_identity_verified": true,
+  "reason_for_distinct_hashes": "The sealed source protocol retains declaration key order; the execution writer saves the same parsed object with sorted keys. Both exact byte identities remain separately retained.",
+  "no_scientific_inputs_or_results_changed": true,
+  "execution_manifest_sha256": "dbc4e8cab994a199b3ac0f435d99fa1e8ae88f13bdeee96df96e572be43e8cb1",
+  "analysis_manifest_sha256": "2e56cbbe3dd1103bdb3ede00d77a337b9d917856b28c3e63ae748c7f5ba63e64"
+}

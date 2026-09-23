@@ -1,0 +1,23 @@
+{
+  "automatic_retry": false,
+  "code_commit": "852c3d036c69a7d428b3850a1a0b8e8b93995aa2",
+  "environment": {
+    "architecture": "arm64",
+    "blas_threads": "1",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0",
+    "system": "Darwin"
+  },
+  "kind": "developmental_mechanistic_not_confirmatory",
+  "no_historical_campaign": true,
+  "no_task05_work": true,
+  "protocol_sha256": "e2d9c61f522a04c65f32fb37cd7c22d30e352d69519ce101348decf28a14dfa1",
+  "qualification": [],
+  "results": [],
+  "schema": "sal-causal-execution/1",
+  "selected_cells": 56,
+  "started_at_utc": "2026-09-23T10:13:47.530449+00:00",
+  "status": "running",
+  "workers": 4
+}

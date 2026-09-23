@@ -1,7 +1,7 @@
 {
   "schema_version": "sal-claim-evidence/1",
   "historical_commit": "5539de5753092b09fd78351095292e7627047794",
-  "new_research_results_established": false,
+  "new_research_results_established": true,
   "claims": [
     {
       "id": "H1",
@@ -83,8 +83,45 @@
       "reproduction": "python -m pytest tests/test_adjudication_numerics.py",
       "output": "adjudication/recorded_validation/results.json",
       "limit": "Finite sampling remains incomplete; no optimizer failure is attributed to a historical campaign."
+    },
+    {
+      "id": "C1",
+      "claim": "On one preserved nonlinear midpoint path the historical in-band predicate is clear while the aligned predicate detects a violation.",
+      "evidence_class": "same_path_classification_only",
+      "source": "causal/protocol.json and seal.json",
+      "output": "causal/recorded_execution/classification_only.json",
+      "reproduction": "python -m causal.verify_records --execution causal/recorded_execution",
+      "limit": "Existing known fixed commands; the classification contrast does not itself alter motion."
+    },
+    {
+      "id": "C2",
+      "claim": "In both ideal midpoint plant cases, alignment creates 45 overrides without changing any command or recorded motion; the supplied fallback computes the original proposal.",
+      "evidence_class": "developmental_matched_factorial",
+      "source": "causal/screen.py and native.py",
+      "output": "causal/recorded_analysis/contrasts.json and recorded_execution/cells",
+      "reproduction": "python -m pytest tests/test_causal_recorded.py",
+      "limit": "Same one-second horizon and LQR fallback; no conclusion about an effective different backup or general frequency."
+    },
+    {
+      "id": "C3",
+      "claim": "In all six estimator-context predicate pairs alignment changes 45 commands and the paths but leaves a validated departure under the recorded-input model; offset and holding ideal cases remain contained.",
+      "evidence_class": "developmental_matched_factorial",
+      "source": "causal/protocol.json",
+      "output": "causal/recorded_analysis/results.json and comparison.csv",
+      "reproduction": "python -m causal.verify_records --execution causal/recorded_execution",
+      "limit": "Selected contexts with paired innovations, not operational prevalence or a globally certified feedback policy."
+    },
+    {
+      "id": "C4",
+      "claim": "All six predeclared main ideal-state feasibility checks provide bounded-input continuous containment and holding over the 300-second recorded-input model.",
+      "evidence_class": "finite_horizon_existence_witness",
+      "source": "causal/qualification.py",
+      "output": "causal/recorded_execution/qualification",
+      "reproduction": "python -m pytest tests/test_causal_recorded.py",
+      "limit": "Known-state ideal finite-horizon continuations; no robust partial-information or infinite-horizon claim. The outward boundary control remains separately unrecoverable."
     }
   ],
   "bounded_numerical_validation_established": true,
-  "new_comparative_campaign_executed": false
+  "new_comparative_campaign_executed": true,
+  "comparative_evidence_class": "declared_developmental_mechanistic_not_confirmatory"
 }

@@ -1,0 +1,55 @@
+{
+  "aborted": false,
+  "adjudication_wall_s": 1.8091282080858946,
+  "ambiguous_intervals": 1,
+  "complete_range_coverage": true,
+  "components": {
+    "collision_free": "satisfied",
+    "containment": "violated",
+    "keep_out_free": "satisfied"
+  },
+  "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+  "enclosure_kinds": [
+    "validated_interval_taylor"
+  ],
+  "feedback_sequence_certified": false,
+  "first_exit_bracket_s": [
+    98.235595703125,
+    98.23583984375
+  ],
+  "first_exit_is_exact_time": false,
+  "guaranteed_dwell_s": "133279/1024",
+  "hold_acquired": "satisfied",
+  "initial_containment": "satisfied",
+  "leaf_intervals": 1231,
+  "max_simulator_distance_outside_enclosure_components": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "minimum_separation_enclosure_m": [
+    24.022208768043345,
+    24.02273742194228
+  ],
+  "model_kinds": [
+    "hcw"
+  ],
+  "nominal_goal": "violated",
+  "possible_dwell_upper_s": "533117/4096",
+  "range_evaluations": 1262,
+  "reference_comparison_scope": "Original approximate plant versus enclosed intended ODE; includes represented frame-initial differences, not a simulator error certificate.",
+  "scope": "complete_episode",
+  "scope_of_validated_result": "Intended mathematical model under the exact recorded input schedule; feedback generator is not interval-certified.",
+  "simulator_agreement": "within_predeclared_comparison_limit",
+  "status": "validated_violation",
+  "unresolved_reasons": [
+    "boundary_or_range_overlap_at_resolution_limit"
+  ],
+  "validated_containment": false,
+  "witness_times_s": {
+    "collision_free": null,
+    "containment": 98.23583984375,
+    "keep_out_free": null
+  }
+}
