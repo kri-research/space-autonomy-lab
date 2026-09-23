@@ -1,10 +1,20 @@
 """Serial/parallel and checkpoint-continuation equivalence on calibration fixtures."""
 
 import json
+import pytest
+from evaluation.tests import clocked_fixture
 
 from evaluation.episode import scientific_signature
 from evaluation.generator import STRATA
 from evaluation.runner import run_fixed_namespace, run_resumable_namespace
+
+
+@pytest.fixture(autouse=True)
+def deterministic_policy_clock(monkeypatch):
+    # Mechanical equivalence excludes environmental deadline variation.
+    # Parent scheduling and subprocess watchdog clocks are not patched.
+    monkeypatch.setattr("evaluation.runner._episode_worker", clocked_fixture.episode_worker)
+    monkeypatch.setattr("evaluation.runner.run_case", clocked_fixture.run_case)
 
 
 def signatures(directory):

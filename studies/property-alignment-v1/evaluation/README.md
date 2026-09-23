@@ -141,3 +141,7 @@ From the study root run `python -m pytest evaluation/tests` for development-only
 tests and `python -m evaluation.verify --freeze evaluation/frozen/freeze.json` for
 read-only identity verification. The CI workflow never runs the protected campaign.
 No historical release, manifest, result or manuscript source is modified here.
+
+## CI timing and the pre-execution amendment
+
+The first freeze is preserved unchanged in `retired_freezes/` and superseded before any protected execution. Shared-runner CI exposed an allowed one-second policy-budget miss, so exact equality of live-clock serial and parallel results is not a valid universal assertion. The mechanics tests now run real numerical methods using calibration-only deterministic child policy clocks. Parent process watchdogs, explicit timeout tests and late-answer rejection still use their specified checks. The existing real-clock calibration is a recorded observation, not a guarantee of timing equivalence. No candidate method, decision budget, population, endpoint or protected sample size changed. `amendments.jsonl` records the correction and the new freeze binds the revised test source inventory.

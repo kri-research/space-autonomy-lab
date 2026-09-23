@@ -27,7 +27,8 @@
     "strata": 4,
     "unique_cases": 8,
     "repeated_for": "serial, parallel, checkpoint, tests and final bounded-coordinator verification",
-    "independent_replicate_claim": false
+    "independent_replicate_claim": false,
+    "ci_repetitions": "Same calibration inputs repeated with controlled child policy clocks for mechanics tests. All real-clock original calibration results and the CI deadline difference are retained."
   },
   "additional_generator_fixtures": {
     "development_and_calibration_indices": [
@@ -63,5 +64,10 @@
   },
   "new_transfer_family_accessed": false,
   "external_preregistration_claimed": false,
-  "limits": "Execution logs and hashes establish recorded identity and workflow events, not an independently authenticated proof that no person accessed outcomes."
+  "limits": "Execution logs and hashes establish recorded identity and workflow events, not an independently authenticated proof that no person accessed outcomes.",
+  "superseded_freeze": {
+    "evaluation_id": "e16cbcdd09dab49750c8a82dc8702e319ae1d2a20598664a0ff18af0f098590d",
+    "protected_executed": false,
+    "archive": "retired_freezes/e16cbcdd09dab49750c8a82dc8702e319ae1d2a20598664a0ff18af0f098590d"
+  }
 }

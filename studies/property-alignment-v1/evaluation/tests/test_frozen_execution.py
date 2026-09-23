@@ -9,7 +9,11 @@ from evaluation.safety import atomic_json, canonical_hash
 from evaluation.generator import case_payload
 
 
-def test_production_coordinator_calibration_and_interruption(tmp_path):
+def test_production_coordinator_calibration_and_interruption(tmp_path, monkeypatch):
+    from evaluation.tests.clocked_fixture import perform
+
+    # Deterministic child policy clocks; real parent watchdogs and start markers.
+    monkeypatch.setattr("evaluation.jobs._perform", perform)
     result = calibrate(tmp_path / "calibration")
     assert result["passed"] and result["cases"] == 8
     assert result["protected_case_evaluations"] == 0
