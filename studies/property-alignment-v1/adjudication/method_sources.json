@@ -1,0 +1,34 @@
+{
+  "checked_at_utc": "2026-09-23T08:41:08.214839+00:00",
+  "scope": "Targeted primary-source reading, not an exhaustive numerical-analysis literature review",
+  "references": [
+    {
+      "key": "lin2007",
+      "authors": [
+        "Youdong Lin",
+        "Mark A. Stadtherr"
+      ],
+      "title": "Validated solutions of initial value problems for parametric ODEs",
+      "journal": "Applied Numerical Mathematics",
+      "volume": 57,
+      "issue": 10,
+      "pages": "1145-1162",
+      "year": 2007,
+      "doi": "10.1016/j.apnum.2006.10.006",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0168927406002030",
+      "author_manuscript_url": "https://academicweb.nd.edu/~markst/lin-stadtherr-vspode-apnum.pdf",
+      "inspected": "Author-hosted accepted manuscript, introductory interval background and Sections 4.1-4.2, including equations 18 and 22; bibliographic fields checked against publisher",
+      "use": "Conventional interval Taylor inclusion and remainder background; specialized parameter method not claimed as implemented"
+    },
+    {
+      "key": "scipyivp117",
+      "title": "solve_ivp",
+      "version": "SciPy 1.17.0",
+      "url": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.integrate.solve_ivp.html",
+      "inspected": "Official solver API, tolerance and event-detection semantics",
+      "use": "Numerical comparison only; no solver-tolerance certificate"
+    }
+  ],
+  "access_method": "Web tool; no full-text article redistributed",
+  "own_implementation": "Independent interval arithmetic, Taylor recurrence, rational geometry and temporal adjudication"
+}

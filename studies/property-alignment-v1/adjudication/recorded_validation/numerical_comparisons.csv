@@ -1,0 +1,4 @@
+inertial_maximum_step_s,relative_reference_rtol,maximum_position_difference_m,maximum_velocity_difference_mps,sampled_membership_disagreements,certified_error_bound
+0.1,1e-13,3.135595396774851e-08,2.9450746011186154e-11,0,False
+0.05,1e-13,1.9080847266861543e-08,2.3366446189535276e-11,0,False
+0.025,1e-13,9.686247734810366e-08,7.801474860027385e-11,0,False
