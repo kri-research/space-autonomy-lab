@@ -1,0 +1,226 @@
+{
+  "analysis": "Within-case contrasts union-minus-inband, controlled-inband-minus-original, original-minus-no-gate; plant/predicate difference-of-differences; full nulls, exact input/motion equality, resolved/unresolved components. No p-values, prevalence or population generalization.",
+  "arms": [
+    "no_gate",
+    "original_gate",
+    "controlled_in_band",
+    "controlled_union"
+  ],
+  "cases": [
+    {
+      "fault": "none",
+      "id": "midpoint",
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "recovery_status": "qualification_pending",
+      "role": "ideal_main"
+    },
+    {
+      "fault": "none",
+      "id": "offset_interior",
+      "information": "ideal",
+      "initial": [
+        1.0,
+        -70.0,
+        0.0,
+        0.08
+      ],
+      "recovery_status": "qualification_pending",
+      "role": "ideal_main"
+    },
+    {
+      "fault": "none",
+      "id": "hold_interior",
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -30.0,
+        0.0,
+        0.0
+      ],
+      "recovery_status": "qualification_pending",
+      "role": "ideal_main"
+    },
+    {
+      "fault": "none",
+      "id": "outward_boundary",
+      "information": "ideal",
+      "initial": [
+        0.0,
+        -27.0,
+        0.0,
+        0.12
+      ],
+      "recovery_status": "proved_state_unrecoverable_by_outward_derivative",
+      "role": "unrecoverable_control"
+    },
+    {
+      "fault": "none",
+      "id": "estimated_nominal",
+      "information": "estimator",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "recovery_status": "unassessed_information_constrained",
+      "role": "estimator_mechanism"
+    },
+    {
+      "fault": "bias",
+      "id": "estimated_bias",
+      "information": "estimator",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "recovery_status": "unassessed_information_constrained",
+      "role": "estimator_mechanism"
+    },
+    {
+      "fault": "dropout",
+      "id": "estimated_dropout",
+      "information": "estimator",
+      "initial": [
+        0.0,
+        -97.5,
+        0.0,
+        0.12
+      ],
+      "recovery_status": "unassessed_information_constrained",
+      "role": "estimator_mechanism"
+    }
+  ],
+  "command_period_s": 1,
+  "coverage_justification": "Three ideal admissible archetypes cover long approach, radial offset/interior approach and holding; one outward boundary/velocity control is analytically unrecoverable. Three paired noisy two-filter midpoint contexts cover nominal packets, primary bias and dropout. Four arms crossed with two plants give 56 selected cases, plus six qualification continuations. No frequency or power interpretation.",
+  "development_base_commit": "38910a91c0e2f06246318385061b0ce5c0bdbe54",
+  "estimator": {
+    "actuator": "one-second Gaussian .0002m/s2 each axis; actual finite realization recorded, not claimed globally bounded by sigma",
+    "bias": {
+      "bias": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "channel": "primary",
+      "end_s": 130,
+      "start_s": 100
+    },
+    "dropout": {
+      "channel": "primary",
+      "end_s": 106,
+      "start_s": 100
+    },
+    "implementation": "two canonical original HCW filters with original prior and safeguards",
+    "measurement_sigma": [
+      0.25,
+      0.25,
+      0.01,
+      0.01
+    ],
+    "measurement_timing": "301 integer-second opportunities0..300; measurement=receipt;300 commands0..299",
+    "online_access": "timestamped packets and selected commands; latent state and fault labels remain offline",
+    "onset_rationale": "midpoint100s of original90..110s window; no outcome-dependent shift",
+    "pairing": "same complete innovations across all arms, plants and estimator contexts; rebuild packets from each own state, never force observation values equal",
+    "process": "quarter-second Gaussian .0005m/s2 each axis clipped to3sigma",
+    "quantization": [
+      0.02,
+      0.02,
+      0.002,
+      0.002
+    ],
+    "seed_master": 40420260923,
+    "seed_tuple": "[40420260923,1,stream], PCG64DXSM; streams1 primary,2 monitor,3 process,4 actuator"
+  },
+  "evidence_class": "prospectively_declared_developmental_mechanistic_not_confirmatory",
+  "execution_budget": {
+    "blas_threads": 1,
+    "comparative_cells": 56,
+    "historical_campaigns": 0,
+    "qualification_cells": 6,
+    "workers_maximum": 4
+  },
+  "failure_and_stopping": "Retain every selected attempt; no outcome-selected case replacement, stress enlargement or automatic retry. Continue independent cells. Scientific source change invalidates seal and requires an explicitly separate amendment before rerun.",
+  "first_stage": "Re-evaluate the Task03 saved nonlinear midpoint fixed-command path under both predicates on the SAME continuous arcs before new closed-loop cells.",
+  "historical_evidence_commit": "5539de5753092b09fd78351095292e7627047794",
+  "horizon_s": 300,
+  "id": "property-alignment-developmental-v1",
+  "ideal_information": {
+    "age_s": 0,
+    "covariance_diagonal": [
+      0.01,
+      0.01,
+      0.0001,
+      0.0001
+    ],
+    "disturbance": "zero",
+    "health": "valid",
+    "injected_faults": false,
+    "snapshots": "both equal own approximate simulated state; same covariance and health metadata"
+  },
+  "initial_admissibility": "All initial positions lie in S. Main ideal cases require independent finite-horizon feasibility qualification. Failed qualification remains unassessed, without replacing or excluding the case; noisy contexts have no robust recovery certificate.",
+  "logging": [
+    "proposed/selected/applied commands",
+    "actually visited core branches and observed original geometry/fallback invocation",
+    "override reasons",
+    "estimator mean,covariance,health,age",
+    "fault-window packet values,innovation and acceptance",
+    "quarter-second trajectory and independent enclosures",
+    "event brackets,hold,abort",
+    "control effort and CPU/wall costs,not realtime guarantee"
+  ],
+  "objective": "Isolate online position-predicate semantics and establish whether alignment alone changes applied control or continuous outcomes.",
+  "offline": {
+    "adjudicator": "Task03 order8 interval Taylor/rational geometry; step.25s,resolution1/4096s,max100000 cells",
+    "common_property": "Task02 S=A union H; closed collision2m/keepout10m, continuous60s hold with speed<=.05m/s",
+    "event_boundaries": "quarter-second splits include command,realization,observation andfault events",
+    "scope": "fixed exact recorded inputs on intended ODE; not exact numerical feedback equivalence or physical validation",
+    "simulator_comparison_limit": "distance outside independent enclosures at saved times <=1e-5m per position component and1e-8m/s per velocity component; exceedance blocks affected claim without widening",
+    "statuses": "validated mathematical containment, validated violation, unresolved; no failed calculation counted safe"
+  },
+  "online": {
+    "controlled_search": "Task03 outward interval Taylor order8, step .25s, shared traversal, resolution1/4096s, maximum16384 cells",
+    "fail_closed": "Unresolved numerical prediction rejects to unchanged LQR fallback; counted separately and never called safe",
+    "fallback": "same original bounded LQR evaluated on monitor estimate even if degraded",
+    "horizon_s": 1,
+    "interpretation": "nominal predicted mean path; covariance radius inflation is not a propagated uncertainty enclosure or recovery certificate",
+    "original_gate": "unchanged canonical class; geometry/fallback function calls observed; early source-ordered branches explicitly labelled. Shared pure HCW memoization capacity is enlarged as in prior validated diagnostic.",
+    "predicate_tolerance_m": 1e-09,
+    "prediction_model": "original HCW for every arm, including nonlinear plant",
+    "radius": "10 + 3 sqrt(lambda_max(Pxy)), from original covariance convention",
+    "task_controller": "same original bounded LQR on primary estimate; no-gate reference retains estimator safeguards"
+  },
+  "physical_execution": {
+    "actuation": "selected + recorded actuator error + recorded process acceleration; eta=1, application delay=0",
+    "command_norm_bound_mps2": 0.02,
+    "failure": "retain partial attempt; never automatically retry",
+    "hcw": "original augmented matrix exponential",
+    "initial": "exact intended relative coordinates; represented inertial-frame differences checked separately",
+    "nonlinear": "original 12-state inertial central-gravity RK4 at .1s maximum step; quarter-second output"
+  },
+  "plants": [
+    "hcw",
+    "nonlinear"
+  ],
+  "prior_work_boundary": "Task02 related-work limits retained; an ablation, not a new safety filter. Singletary arXiv2005.06418 and SciPy1.17 solve_ivp documentation rechecked for scope; no new theorem.",
+  "qualification": {
+    "acceptance": "independent interval containment and60s hold over[0,300]; command>bound or numericalfailure retainsunassessed, no clipping/retuning",
+    "controller": "reference acceleration + .01position error + .2velocity error minus HCW drift; held1s; identical forboth plants",
+    "reference": "cubic Hermite from initial position/velocity to(0,-30,0,0) at180s, then hold",
+    "role": "ideal known-state finite-horizon existence witness, not a competing safety baseline",
+    "unrecoverable_control_proof": "At y=-27,vy=+.12, bounded acceleration yields y>-27 at sufficiently small positive time. Since every S point has y<=-27, no bounded input can preserve containment."
+  },
+  "realization_period_s": 0.25,
+  "run_count": 56,
+  "schema": "sal-controlled-causal-protocol/1",
+  "selection_prior_information": "The existing midpoint failure and approximate exit are already known. Other cases are selected for causal coverage before observing their new outcomes. No replacement cases."
+}

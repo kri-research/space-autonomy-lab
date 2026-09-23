@@ -26,3 +26,13 @@ Execution requires a new directory outside both repositories and never retries o
 With identical ideal primary and monitor snapshots, the original LQR fallback computes exactly the proposed command. An aligned rejection can therefore change the log without changing the selected control. This implementation identity is tested; it is not attributed to every noisy case or to other recovery controllers.
 
 The estimator contexts pair innovations, not observation values: each channel's packet is rebuilt from its own arm's motion. Fault injection, packet acceptance, branch evaluation, rejection and command changes are separate recorded events. No significance test, operational prevalence estimate, new assurance theorem or broadly effective recovery method is claimed.
+
+## Recorded result and interpretation limits
+
+`recorded_analysis/RESULTS.md` is the compact result note. `recorded_execution/` retains all 56 selected cells and six feasibility continuations; `recorded_analysis/` retains the complete contrasts and interactions. The source protocol and execution's sorted-key protocol copy are semantically identical but have different byte hashes, both recorded in `artifact_bindings.json`.
+
+The controlled in-band and original-gate paths agree in all 14 corresponding pairs. The aligned midpoint has 45 rejections with identical ideal commands. All six estimator predicate pairs have 45 changed commands but retain a departure. These facts isolate the selected implementation contrast, rather than establish a generally sufficient horizon or backup policy.
+
+In every retained bias cell, all 30 active biased packets are innovation-rejected. Each dropout cell records six missing packets. The estimator-case first-exit bracket is [98.235595703125, 98.23583984375] seconds, before the predeclared 100-second fault onset. Thus those injected faults cannot explain the first departure in these new cases. They supply packet-handling and later-continuation diagnostics, not an identified first-exit fault effect. No fault window was moved after these outcomes.
+
+Decision CPU and wall times were measured on the local host during bounded parallel execution. They are observational costs, not worst-case execution times, deadline guarantees or an isolated hardware benchmark. All new geometric prediction decisions resolved in this execution; offline boundary ambiguity is still recorded even where the overall episode outcome is conclusive.

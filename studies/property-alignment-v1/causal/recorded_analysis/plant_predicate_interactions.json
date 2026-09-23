@@ -1,0 +1,65 @@
+[
+  {
+    "case": "midpoint",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": 0.0,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 0.0
+  },
+  {
+    "case": "offset_interior",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": 0.0,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 0.0
+  },
+  {
+    "case": "hold_interior",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": 0.0,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 0.0
+  },
+  {
+    "case": "outward_boundary",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": 0.0,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 0.0
+  },
+  {
+    "case": "estimated_nominal",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": 0.0,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 6.1519322969161294e-09
+  },
+  {
+    "case": "estimated_bias",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": 1.2266914409142515e-05,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 7.367336962715854e-09
+  },
+  {
+    "case": "estimated_dropout",
+    "changed_commands_difference_plant_interaction": 0,
+    "control_effort_integral_mps_difference_plant_interaction": -1.171232634877839e-06,
+    "geometry_checks_difference_plant_interaction": 0,
+    "geometry_rejections_difference_plant_interaction": 0,
+    "overrides_difference_plant_interaction": 0,
+    "sampled_minimum_separation_m_difference_plant_interaction": 5.4538311644591886e-09
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "abort_requested": false,
+  "adjudication": {
+    "aborted": false,
+    "adjudication_wall_s": 6.166469000047073,
+    "ambiguous_intervals": 1,
+    "complete_range_coverage": true,
+    "components": {
+      "collision_free": "satisfied",
+      "containment": "satisfied",
+      "keep_out_free": "satisfied"
+    },
+    "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+    "enclosure_kinds": [
+      "validated_interval_taylor"
+    ],
+    "feedback_sequence_certified": false,
+    "first_exit_bracket_s": null,
+    "first_exit_is_exact_time": false,
+    "guaranteed_dwell_s": "843581/4096",
+    "hold_acquired": "satisfied",
+    "initial_containment": "satisfied",
+    "leaf_intervals": 1210,
+    "max_simulator_distance_outside_enclosure_components": [
+      2.80593983565476e-08,
+      1.6419523518607093e-08,
+      2.454633775808961e-11,
+      5.0674622127713776e-11
+    ],
+    "minimum_separation_enclosure_m": [
+      29.185250612571465,
+      29.18533487882366
+    ],
+    "model_kinds": [
+      "nonlinear"
+    ],
+    "nominal_goal": "satisfied",
+    "possible_dwell_upper_s": "421791/2048",
+    "range_evaluations": 1220,
+    "reference_comparison_scope": "Original approximate plant versus enclosed intended ODE; includes represented frame-initial differences, not a simulator error certificate.",
+    "scope": "complete_episode",
+    "scope_of_validated_result": "Intended mathematical model under the exact recorded input schedule; feedback generator is not interval-certified.",
+    "simulator_agreement": "within_predeclared_comparison_limit",
+    "status": "validated_containment",
+    "unresolved_reasons": [
+      "boundary_or_range_overlap_at_resolution_limit"
+    ],
+    "validated_containment": true,
+    "witness_times_s": {
+      "collision_free": null,
+      "containment": null,
+      "keep_out_free": null
+    }
+  },
+  "applied_command_sha256": "efa583cb44a142179337a2e5396fbb3d73ea9858017548a103ece8a1c4f5f045",
+  "arm": "no_gate",
+  "case": "offset_interior",
+  "case_role": "ideal_main",
+  "changed_commands": 0,
+  "commands": 300,
+  "control_effort_integral_mps": 1.5642666255398532,
+  "control_energy_integral_m2ps3": 0.02581799084777197,
+  "controller_identity": "experiment-004-reference:648275e25324681e5d8989fb540d0ca4d5020bdcc4d43fa0c514c1f13949f91e",
+  "decision_cpu_total_s": 0.002849999999995134,
+  "decision_wall_max_s": 1.8124934285879135e-05,
+  "error": null,
+  "execution_status": "complete",
+  "fault_packet_dispositions": {},
+  "geometry_checks": 0,
+  "geometry_rejections": 0,
+  "information": "ideal",
+  "initial": [
+    1.0,
+    -70.0,
+    0.0,
+    0.08
+  ],
+  "initial_recovery_status": "qualification_pending",
+  "innovation_sha256": {},
+  "max_selected_norm_mps2": 0.020000000000000004,
+  "motion_sha256": "8468d58febf26dd8377b7fb9c0c7e26462c78a6247984ac8d201f28993cc75f6",
+  "numerically_unresolved_decisions": 0,
+  "overrides": 0,
+  "packet_opportunities": 0,
+  "physical_status": "validated_containment",
+  "plant": "nonlinear",
+  "reasons": {
+    "accepted": 300
+  },
+  "sampled_minimum_separation_m": 29.185334878815155,
+  "sampled_outside_count": 0,
+  "selected_command_sha256": "3895fc446530eb398c24761b2f4026ab72d8500745be456515d764f93ed274e1",
+  "states": 1201,
+  "wall_runtime_s": 6.869228916941211
+}

@@ -32,6 +32,8 @@ jobs:
           python run.py diagnostics
           python run.py test
           python -m pytest tests
+          python -m causal.execute verify
+          python -m causal.verify_records --execution causal/recorded_execution
           python -m adjudication.validate --output "$RUNNER_TEMP/adjudication-validation"
           python run.py verify --group audit
           python run.py verify --group diagnostics

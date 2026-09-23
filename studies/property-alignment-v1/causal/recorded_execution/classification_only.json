@@ -1,0 +1,36 @@
+{
+  "command_input": "adjudication/input_commands.json",
+  "control_modified": false,
+  "initial": [
+    0.0,
+    -97.5,
+    0.0,
+    0.12
+  ],
+  "kind": "classification_only_same_fixed_path",
+  "outcomes_previously_known": true,
+  "plant": "nonlinear",
+  "predicate_tolerance_m": 1e-09,
+  "results": {
+    "closed_union": {
+      "ambiguous_leaves": 0,
+      "first_witness_s": 98.125,
+      "range_evaluations": 1200,
+      "reason": null,
+      "status": "violated",
+      "witness_components": [
+        "predicate"
+      ]
+    },
+    "in_band": {
+      "ambiguous_leaves": 0,
+      "first_witness_s": null,
+      "range_evaluations": 1200,
+      "reason": null,
+      "status": "clear",
+      "witness_components": []
+    }
+  },
+  "shared_command_sequence": true,
+  "shared_continuous_arcs": true
+}
