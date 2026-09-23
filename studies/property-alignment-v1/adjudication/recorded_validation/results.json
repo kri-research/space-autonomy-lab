@@ -1,0 +1,1348 @@
+{
+  "schema": "sal-adjudication-validation-results/1",
+  "protocol_sha256": "391ae439bddb82809995f4905bba395d08e666321d5b281f15be4d4c905d803f",
+  "input_sha256": "0185aabed961cbbb3e71e4b62068b7ad677749a7b9a80cfe64f27d5f5489b679",
+  "kind": "bounded_validation_not_campaign",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "system": "Darwin",
+    "architecture": "arm64"
+  },
+  "physical_validation": false,
+  "historical_records_modified": false,
+  "analytical_fixtures": [
+    {
+      "name": "corridor_only",
+      "known_answer": "validated_containment",
+      "observed": {
+        "status": "validated_containment",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "satisfied",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "0",
+        "possible_dwell_upper_s": "0",
+        "aborted": false,
+        "leaf_intervals": 1,
+        "range_evaluations": 1,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [],
+        "witness_times_s": {
+          "containment": null,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": true,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          70.0,
+          70.0
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          -70
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "hold_only",
+      "known_answer": "validated_containment",
+      "observed": {
+        "status": "validated_containment",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "satisfied",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "1",
+        "possible_dwell_upper_s": "1",
+        "aborted": false,
+        "leaf_intervals": 1,
+        "range_evaluations": 1,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [],
+        "witness_times_s": {
+          "containment": null,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": true,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          28.0,
+          28.0
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          -28
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "component_transition",
+      "known_answer": "validated_containment",
+      "observed": {
+        "status": "validated_containment",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "satisfied",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "0",
+        "possible_dwell_upper_s": "0",
+        "aborted": false,
+        "leaf_intervals": 3,
+        "range_evaluations": 5,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [],
+        "witness_times_s": {
+          "containment": null,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": true,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          28.0,
+          28.0
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          -40,
+          12
+        ],
+        [
+          0
+        ],
+        [
+          12
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "permitted_tangency",
+      "known_answer": "validated_containment",
+      "observed": {
+        "status": "validated_containment",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "satisfied",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "819/16384",
+        "possible_dwell_upper_s": "1639/32768",
+        "aborted": false,
+        "leaf_intervals": 32,
+        "range_evaluations": 63,
+        "ambiguous_intervals": 2,
+        "unresolved_reasons": [
+          "boundary_or_range_overlap_at_resolution_limit"
+        ],
+        "witness_times_s": {
+          "containment": null,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": true,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          26.75,
+          27.0
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          "-109/4",
+          1,
+          -1
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "narrow_excursion",
+      "known_answer": "validated_violation",
+      "observed": {
+        "status": "validated_violation",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "violated",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": [
+          0.5037994384765625,
+          0.5038070678710938
+        ],
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "1631/65536",
+        "possible_dwell_upper_s": "1633/65536",
+        "aborted": false,
+        "leaf_intervals": 50,
+        "range_evaluations": 99,
+        "ambiguous_intervals": 4,
+        "unresolved_reasons": [
+          "boundary_or_range_overlap_at_resolution_limit"
+        ],
+        "witness_times_s": {
+          "containment": 0.5038070678710938,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": false,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          26.750015248789058,
+          26.999999990000006
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          "-697700390369/25600000000",
+          "129/128",
+          -1
+        ],
+        [
+          0
+        ],
+        [
+          "129/128",
+          -2
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "forbidden_contact",
+      "known_answer": "validated_violation",
+      "observed": {
+        "status": "validated_violation",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "violated",
+          "collision_free": "violated",
+          "keep_out_free": "violated"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "violated",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "0",
+        "possible_dwell_upper_s": "0",
+        "aborted": false,
+        "leaf_intervals": 32,
+        "range_evaluations": 63,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [
+          "boundary_or_range_overlap_at_resolution_limit"
+        ],
+        "witness_times_s": {
+          "containment": 0.0,
+          "collision_free": 0.5,
+          "keep_out_free": 0.0
+        },
+        "validated_containment": false,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          2.0,
+          2.0
+        ]
+      },
+      "coefficients": [
+        [
+          2
+        ],
+        [
+          "-1/2",
+          1
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "closed_hold_dwell",
+      "known_answer": "validated_containment",
+      "observed": {
+        "status": "validated_containment",
+        "scope": "complete_episode",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "satisfied",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "satisfied",
+        "nominal_goal": "satisfied",
+        "initial_containment": "satisfied",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "300",
+        "possible_dwell_upper_s": "300",
+        "aborted": false,
+        "leaf_intervals": 1,
+        "range_evaluations": 1,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [],
+        "witness_times_s": {
+          "containment": null,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": true,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          30.0,
+          30.0
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          -30
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "duration_s": 300,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    },
+    {
+      "name": "initially_outside",
+      "known_answer": "validated_violation",
+      "observed": {
+        "status": "validated_violation",
+        "scope": "bounded_window",
+        "enclosure_kinds": [
+          "exact_polynomial_enclosure"
+        ],
+        "model_kinds": [
+          "declared_polynomial_curve"
+        ],
+        "components": {
+          "containment": "violated",
+          "collision_free": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "hold_acquired": "violated",
+        "nominal_goal": "violated",
+        "initial_containment": "violated",
+        "first_exit_bracket_s": null,
+        "first_exit_is_exact_time": false,
+        "guaranteed_dwell_s": "0",
+        "possible_dwell_upper_s": "0",
+        "aborted": false,
+        "leaf_intervals": 1,
+        "range_evaluations": 1,
+        "ambiguous_intervals": 0,
+        "unresolved_reasons": [],
+        "witness_times_s": {
+          "containment": 0.0,
+          "collision_free": null,
+          "keep_out_free": null
+        },
+        "validated_containment": false,
+        "complete_range_coverage": true,
+        "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+        "minimum_separation_enclosure_m": [
+          105.0,
+          105.0
+        ]
+      },
+      "coefficients": [
+        [
+          0
+        ],
+        [
+          -105
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "duration_s": 1,
+      "scope": "exact rational curve fixture; not a spacecraft population"
+    }
+  ],
+  "original_extrema_fixtures": [
+    {
+      "original_module": "E004",
+      "maximize": true,
+      "failure_mode": "failed",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: unsuccessful optimizer"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": true,
+      "failure_mode": "nonfinite_fun",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": true,
+      "failure_mode": "nonfinite_x",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": true,
+      "failure_mode": "out_of_bracket",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": true,
+      "failure_mode": "inferior",
+      "known_sampled_extreme": 1,
+      "original_returned": 0.998046875,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: inferior refinement"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": false,
+      "failure_mode": "failed",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: unsuccessful optimizer"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": false,
+      "failure_mode": "nonfinite_fun",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": false,
+      "failure_mode": "nonfinite_x",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": false,
+      "failure_mode": "out_of_bracket",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E004",
+      "maximize": false,
+      "failure_mode": "inferior",
+      "known_sampled_extreme": -1,
+      "original_returned": -0.998046875,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: inferior refinement"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": true,
+      "failure_mode": "failed",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: unsuccessful optimizer"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": true,
+      "failure_mode": "nonfinite_fun",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": true,
+      "failure_mode": "nonfinite_x",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": true,
+      "failure_mode": "out_of_bracket",
+      "known_sampled_extreme": 1,
+      "original_returned": -1.0,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": true,
+      "failure_mode": "inferior",
+      "known_sampled_extreme": 1,
+      "original_returned": 0.998046875,
+      "corrected_returned": 1.0,
+      "unresolved": [
+        "bracket 32: inferior refinement"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": false,
+      "failure_mode": "failed",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: unsuccessful optimizer"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": false,
+      "failure_mode": "nonfinite_fun",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": false,
+      "failure_mode": "nonfinite_x",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": false,
+      "failure_mode": "out_of_bracket",
+      "known_sampled_extreme": -1,
+      "original_returned": 1.0,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: ValueError: nonfinite or out-of-bracket result"
+      ],
+      "historical_occurrence_claimed": false
+    },
+    {
+      "original_module": "E005",
+      "maximize": false,
+      "failure_mode": "inferior",
+      "known_sampled_extreme": -1,
+      "original_returned": -0.998046875,
+      "corrected_returned": -1.0,
+      "unresolved": [
+        "bracket 32: inferior refinement"
+      ],
+      "historical_occurrence_claimed": false
+    }
+  ],
+  "frame_fixtures": [
+    {
+      "phase_rad": 0,
+      "elapsed_s": 0.0,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 2.7755575615628914e-17,
+      "command_rotation_difference_mps2": 0.0,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 0,
+      "elapsed_s": 60,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 3.469446951953614e-18,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 0.37,
+      "elapsed_s": 0.0,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 3.469446951953614e-18,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 0.37,
+      "elapsed_s": 60,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 1.734723475976807e-18,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 1.7,
+      "elapsed_s": 0.0,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 0.0,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 1.7,
+      "elapsed_s": 60,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 3.469446951953614e-18,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 3.1,
+      "elapsed_s": 0.0,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 0.0,
+      "scope": "separate analytic circular-frame numerical calculation"
+    },
+    {
+      "phase_rad": 3.1,
+      "elapsed_s": 60,
+      "position_difference_m": 0.0,
+      "velocity_difference_mps": 0.0,
+      "command_rotation_difference_mps2": 0.0,
+      "scope": "separate analytic circular-frame numerical calculation"
+    }
+  ],
+  "inertial_relative_comparisons": [
+    {
+      "inertial_maximum_step_s": 0.1,
+      "relative_reference_rtol": 1e-13,
+      "maximum_position_difference_m": 3.135595396774851e-08,
+      "maximum_velocity_difference_mps": 2.9450746011186154e-11,
+      "sampled_membership_disagreements": 0,
+      "certified_error_bound": false
+    },
+    {
+      "inertial_maximum_step_s": 0.05,
+      "relative_reference_rtol": 1e-13,
+      "maximum_position_difference_m": 1.9080847266861543e-08,
+      "maximum_velocity_difference_mps": 2.3366446189535276e-11,
+      "sampled_membership_disagreements": 0,
+      "certified_error_bound": false
+    },
+    {
+      "inertial_maximum_step_s": 0.025,
+      "relative_reference_rtol": 1e-13,
+      "maximum_position_difference_m": 9.686247734810366e-08,
+      "maximum_velocity_difference_mps": 7.801474860027385e-11,
+      "sampled_membership_disagreements": 0,
+      "certified_error_bound": false
+    }
+  ],
+  "relative_tolerance_comparisons": [
+    {
+      "rtol": 1e-09,
+      "maximum_position_difference_m": 9.947599849501529e-14,
+      "maximum_velocity_difference_mps": 4.441739050683927e-16,
+      "certified_error_bound": false
+    },
+    {
+      "rtol": 1e-11,
+      "maximum_position_difference_m": 5.684352728092187e-14,
+      "maximum_velocity_difference_mps": 6.67226156342257e-16,
+      "certified_error_bound": false
+    },
+    {
+      "rtol": 1e-13,
+      "maximum_position_difference_m": 0.0,
+      "maximum_velocity_difference_mps": 0.0,
+      "certified_error_bound": false
+    }
+  ],
+  "numerical_exclusion_witness": {
+    "status": "numerically_corroborated_violation",
+    "component_spread": [
+      1.1558030976743796e-08,
+      6.047642386874942e-10,
+      3.3453517733761377e-12,
+      1.0202369764983345e-11
+    ],
+    "spread_is_error_bound": false,
+    "containment_certified": false,
+    "scope": "numerical_representations_only",
+    "time_s": 116.0
+  },
+  "validated_flows": [
+    {
+      "model": "hcw",
+      "maximum_step_s": 0.25,
+      "taylor_order": 8,
+      "segments": 1200,
+      "adjudications": [
+        {
+          "resolution_s": 0.00390625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "hcw"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.0078125,
+            98.01171875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "8363/64",
+          "possible_dwell_upper_s": "33453/256",
+          "aborted": false,
+          "leaf_intervals": 1218,
+          "range_evaluations": 1236,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01171875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.916209475298082,
+            23.916695302077663
+          ]
+        },
+        {
+          "resolution_s": 0.000244140625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "hcw"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.010986328125,
+            98.01123046875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "267623/2048",
+          "possible_dwell_upper_s": "535247/4096",
+          "aborted": false,
+          "leaf_intervals": 1230,
+          "range_evaluations": 1260,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01123046875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.916209475298082,
+            23.916695302077663
+          ]
+        }
+      ],
+      "initial_condition": "exact represented midpoint; fixed applied commands",
+      "last_state_widths": [
+        1.5543415513019635e-11,
+        8.197176271096397e-11,
+        1.3052705888794844e-13,
+        2.5037315428376455e-13
+      ],
+      "trace_file": "hcw-enclosure-0.25.csv"
+    },
+    {
+      "model": "hcw",
+      "maximum_step_s": 0.125,
+      "taylor_order": 8,
+      "segments": 2400,
+      "adjudications": [
+        {
+          "resolution_s": 0.00390625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "hcw"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.0078125,
+            98.01171875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "8363/64",
+          "possible_dwell_upper_s": "33453/256",
+          "aborted": false,
+          "leaf_intervals": 2415,
+          "range_evaluations": 2430,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01171875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.91653968474396,
+            23.916695302092318
+          ]
+        },
+        {
+          "resolution_s": 0.000244140625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "hcw"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.010986328125,
+            98.01123046875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "267623/2048",
+          "possible_dwell_upper_s": "535247/4096",
+          "aborted": false,
+          "leaf_intervals": 2427,
+          "range_evaluations": 2454,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01123046875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.91653968474396,
+            23.916695302092318
+          ]
+        }
+      ],
+      "initial_condition": "exact represented midpoint; fixed applied commands",
+      "last_state_widths": [
+        3.1032651600336476e-11,
+        1.6404300140493436e-10,
+        2.606831207331313e-13,
+        5.001876056355202e-13
+      ],
+      "trace_file": "hcw-enclosure-0.125.csv"
+    },
+    {
+      "model": "nonlinear",
+      "maximum_step_s": 0.25,
+      "taylor_order": 8,
+      "segments": 1200,
+      "adjudications": [
+        {
+          "resolution_s": 0.00390625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "nonlinear"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.0078125,
+            98.01171875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "8363/64",
+          "possible_dwell_upper_s": "33453/256",
+          "aborted": false,
+          "leaf_intervals": 1218,
+          "range_evaluations": 1236,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01171875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.9162109429375,
+            23.916696766227417
+          ]
+        },
+        {
+          "resolution_s": 0.000244140625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "nonlinear"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.010986328125,
+            98.01123046875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "535245/4096",
+          "possible_dwell_upper_s": "267623/2048",
+          "aborted": false,
+          "leaf_intervals": 1230,
+          "range_evaluations": 1260,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01123046875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.9162109429375,
+            23.916696766227417
+          ]
+        }
+      ],
+      "initial_condition": "exact represented midpoint; fixed applied commands",
+      "last_state_widths": [
+        9.062715894576913e-10,
+        2.831406220593636e-10,
+        6.508396045815406e-12,
+        2.334768486943022e-12
+      ],
+      "trace_file": "nonlinear-enclosure-0.25.csv"
+    },
+    {
+      "model": "nonlinear",
+      "maximum_step_s": 0.125,
+      "taylor_order": 8,
+      "segments": 2400,
+      "adjudications": [
+        {
+          "resolution_s": 0.00390625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "nonlinear"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.0078125,
+            98.01171875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "8363/64",
+          "possible_dwell_upper_s": "33453/256",
+          "aborted": false,
+          "leaf_intervals": 2415,
+          "range_evaluations": 2430,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01171875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.916541148879556,
+            23.916696766242353
+          ]
+        },
+        {
+          "resolution_s": 0.000244140625,
+          "status": "validated_violation",
+          "scope": "complete_episode",
+          "enclosure_kinds": [
+            "validated_interval_taylor"
+          ],
+          "model_kinds": [
+            "nonlinear"
+          ],
+          "components": {
+            "containment": "violated",
+            "collision_free": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "hold_acquired": "satisfied",
+          "nominal_goal": "violated",
+          "initial_containment": "satisfied",
+          "first_exit_bracket_s": [
+            98.010986328125,
+            98.01123046875
+          ],
+          "first_exit_is_exact_time": false,
+          "guaranteed_dwell_s": "535245/4096",
+          "possible_dwell_upper_s": "267623/2048",
+          "aborted": false,
+          "leaf_intervals": 2427,
+          "range_evaluations": 2454,
+          "ambiguous_intervals": 1,
+          "unresolved_reasons": [
+            "boundary_or_range_overlap_at_resolution_limit"
+          ],
+          "witness_times_s": {
+            "containment": 98.01123046875,
+            "collision_free": null,
+            "keep_out_free": null
+          },
+          "validated_containment": false,
+          "complete_range_coverage": true,
+          "conditions": "stated ODE/polynomial, supplied inputs, outward arithmetic, no physical-validation claim",
+          "minimum_separation_enclosure_m": [
+            23.916541148879556,
+            23.916696766242353
+          ]
+        }
+      ],
+      "initial_condition": "exact represented midpoint; fixed applied commands",
+      "last_state_widths": [
+        9.23327563712162e-10,
+        3.6817127124777476e-10,
+        6.6562290483010095e-12,
+        2.6186094308558454e-12
+      ],
+      "trace_file": "nonlinear-enclosure-0.125.csv"
+    }
+  ],
+  "source_sha256": {
+    "adjudication/__init__.py": "725e089c9fbad31963802162388f93e17ae1ec7ce749c0dcaf3e79883c2ca4b5",
+    "adjudication/engine.py": "faf0e3aa6166ef2c3c903d70b93f92406ef19e8eae6b5a9393370fa809ca1f05",
+    "adjudication/extrema.py": "1730f18415c53066b2d4496d230a7f76f42f80349c5b0e57d70da13fbcc4b6ee",
+    "adjudication/flow.py": "be392dcfc91b101df4dea9fdd00d290aa429e8a5ba041a98241fe7e036151d9b",
+    "adjudication/geometry.py": "13498e99c95513aa57d58f7b9854245f5286a789171660e70771ce9d160a4e50",
+    "adjudication/interval.py": "0c6aa2eeed8f51a51d78625c3db9080e3b73add282a6f889ca75ada3da58d418",
+    "adjudication/polynomial.py": "b056491ee5d8755aaffc0a787df68cb0ecd68923b3175d1cb99852d087f99681",
+    "adjudication/series.py": "a07ebe48974adb242508af128555bf49114d12343fa968d8555f6cc7f29e757f",
+    "adjudication/validate.py": "e9756badc489841fd5f7a851597e51effd388c3c1c0557fb08a90bfea788ae99"
+  },
+  "status": "passed",
+  "baseline_source_sha256": {
+    "baseline/data/configuration_extract.json": "64c83275979451dc7cf92862d6d33280cb26c9a77d45e13d790568cf0879946a",
+    "baseline/data/diagnostic_protocol.json": "704796a6e06dcbb78af2fe74d99d72353861dca4dce6dda00e69758adc5c06c8",
+    "baseline/data/diagnostic_protocol.sha256": "30b8d0b5c422f455a0bf42add61d4a5aa112c8e76197a7438e6221cf3ac62375",
+    "baseline/evidence/prior_aggregates/historical_common_property.csv": "09d8af4b219c6ade8079b941a09c96d5d3caa0898d0306f0dea3802483452470",
+    "baseline/evidence/prior_aggregates/historical_engagement.csv": "b58717d2dc172ac2fb0738f785e9e4c573c2c8fc240b3ac06a4f80f36ee1a873",
+    "baseline/evidence/prior_aggregates/historical_nominal_witness.csv": "73fbb4bcc9d9de4148304b48bd2a9c94b68c1257ddb2c436f6782855ee7d4b50",
+    "baseline/scripts/check_statistics.py": "0ce7c317ff98b8d101ed25cade6e46d98720160b155aef441fe69495dea6a895",
+    "baseline/scripts/record_extrema_fixtures.py": "030ebff2fd1c8cbd8eed50e2629e237a97687d9efa661980b54da05eb34002a0",
+    "baseline/scripts/run_diagnostics.py": "a7058b88cb99e4daac3d3aa1b1be59fe8b6eb82ad588b7af083f8b826b3c95d5",
+    "baseline/scripts/verify_historical.py": "fb174db3cc867c542d1f75843a71ca0b4b70ca57b0e2f63f4ae1050d7a71e017",
+    "baseline/source_evidence/e004_control.py": "2b244fc85932156dee4c4d4f08a9878f1ae86578209c4cdc324a073beb9760e2",
+    "baseline/source_evidence/e004_dynamics.py": "4ecf8c95ad9c47526064b97c16bd26d363e9d28d5c97a84a0042e2b4a4197aa2",
+    "baseline/source_evidence/e004_geometry.py": "35c121ed0e8d2662f5f9a4fd60a2c375f6e96c2403105ab8c6a7c3869d64f4f0",
+    "baseline/source_evidence/e005_dynamics.py": "83ca0dc61d515bc21d826e540f9767291a4dfd1e423dc4cf4e75f029fe51015f",
+    "baseline/source_evidence/e005_geometry.py": "8c0601c670ccf7ef7d7c7a6aeaa43bb33fe77c51a8527939255ff9ce8364651a",
+    "baseline/tests/test_canonical_imports.py": "83b96a71a4881eca7308fc3d6709983d4d4039116eb8b2d2ab013c564227f2b3",
+    "baseline/tests/test_records.py": "6ccb49a95bde303edc706d84191ec2e28ba7f431a04e91d445eafc026baf5f10",
+    "baseline/tests/test_validation.py": "decb6357e215ac156b8c06983559b7b739aaeb3470847f2658a380c9b565f8ec",
+    "baseline/validation/__init__.py": "93b67ba1fc601d8e8b1145aab995a934ae6edb152f1825fac2cc173b55852430",
+    "baseline/validation/extrema.py": "bbde88633511ea0461f624475c25252e447ecd324c30941f99006d334865a922",
+    "baseline/validation/loader.py": "2fddd439779d4e9f1e6a92ddc841a947a6d868ee7a90ec0fc4518aeca36ed536",
+    "baseline/validation/paths.py": "6094741dd61651247cc0fb90a335c443d2df586a80dd10b112e1a4ac4294f664",
+    "baseline/validation/properties.py": "6b57080cba663646fc20339b8143439c8824dc8d603a4a09c7d6709627471139",
+    "baseline/validation/records.py": "1b7e7afa817ae8d9d235c6b2f850a5170027ea8c6c10649b526c424355171c0b",
+    "bundle.py": "1b4b9e0ee166f717eab7e5a08232298f3d216dafc38539a562bbd4d9db11015a",
+    "pyproject.toml": "5ca74867e3c1bf2ea02c1f234dcbc4ee13e4e6fb8a84147fd133f97bda1d3ab5",
+    "run.py": "d7cedc39ba37ec9f52550b8b70cbe00623a95d0ec605c573fa56f721e8dc57a8"
+  },
+  "property_sha256": "c848927f881ba621dbc94e29d10f62a9ef1294e253cce44d55fe6e3c41f6e26a",
+  "scope_limits": [
+    "Validated flow is conditional on the stated circular-chief ODE, exact represented initial values and known piecewise-constant inputs.",
+    "Inertial/relative disagreement measures numerical differences and slightly different rounded initial states, not a global error bound.",
+    "Dense reference sampling is never used to certify containment or continuous dwell.",
+    "Interval bounds include rounding and Taylor remainder but not physical model error or unmodeled disturbances.",
+    "No new historical campaign, population-level comparison, control advantage or physical validation is reported."
+  ]
+}

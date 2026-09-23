@@ -1,0 +1,47 @@
+{
+  "schema": "sal-adjudication-validation/1",
+  "evidence_class": "software_and_bounded_numerical_validation",
+  "created_at_utc": "2026-09-23T08:13:32.668507+00:00",
+  "selection": "Analytical fixtures plus the previously declared midpoint diagnostic; its prior outcomes are known. Not a new confirmatory population.",
+  "historical_commit": "5539de5753092b09fd78351095292e7627047794",
+  "command_file": "adjudication/input_commands.json",
+  "command_sha256": "0185aabed961cbbb3e71e4b62068b7ad677749a7b9a80cfe64f27d5f5489b679",
+  "command_selection": "nonlinear plant; all 300 commands in original order",
+  "initial_planar_state": [
+    0,
+    -97.5,
+    0,
+    0.12
+  ],
+  "horizon_s": 300,
+  "interval_maximum_steps_s": [
+    0.25,
+    0.125
+  ],
+  "event_resolutions_s": [
+    0.00390625,
+    0.000244140625
+  ],
+  "taylor_order": 8,
+  "original_rk4_steps_s": [
+    0.1,
+    0.05,
+    0.025
+  ],
+  "relative_dop853_rtol": [
+    1e-09,
+    1e-11,
+    1e-13
+  ],
+  "relative_dop853_atol": 1e-13,
+  "frame_phases_rad": [
+    0,
+    0.37,
+    1.7,
+    3.1
+  ],
+  "frame_checks_duration_s": 60,
+  "no_population_estimation": true,
+  "time_varying_inputs": "Each known applied acceleration is constant between specified change times; arbitrary continuous disturbances are not certified.",
+  "input_binding_note": "Identical selected commands copied before numerical validation to avoid platform-dependent diagnostic regeneration changing validation input."
+}

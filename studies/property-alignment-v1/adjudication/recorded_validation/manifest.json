@@ -1,0 +1,10 @@
+{
+  "hcw-enclosure-0.125.csv": "e8267ff9df494a9a532b22804b92dd4ebc2404a47e2a6bbc08b2123ec9e6da79",
+  "hcw-enclosure-0.25.csv": "29a4221175682c8147d8a591a1682da075a2f61ee4a71b0194db3b70c15fc8e4",
+  "independent_relative_trace.csv": "7799144e9ec55f5a5f07f0d62b8bedea895b252a395234e592005766b2a4237a",
+  "nonlinear-enclosure-0.125.csv": "25d43ead153771ad6a133b7fe33a5ea42446d1377bf009dc3c7a3a6058d8caba",
+  "nonlinear-enclosure-0.25.csv": "e812f7b476555dc34ecb3f5c3740820b0f993965ea4394a389d94bb78e0140d9",
+  "numerical_comparisons.csv": "4f533970cd3e0211914e397f27ff467e5123f27d3f779ab29c8b9b53306ff5b1",
+  "results.json": "bb7e9a481f9a34a17ccb830b0e1e999bd1c15f130472a130b34d3b297f3d2e27",
+  "test_outcomes.json": "c720966704fda1c962a63176d5d7e515f637e1bdeea493813c352b7999855095"
+}

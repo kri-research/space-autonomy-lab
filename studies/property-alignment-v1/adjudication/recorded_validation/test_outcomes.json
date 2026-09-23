@@ -1,0 +1,960 @@
+{
+  "scope": "new adjudicator tests only; no historical campaign execution",
+  "created_at_utc": "2026-09-23T08:48:25.456963+00:00",
+  "tests": 95,
+  "failures": 0,
+  "errors": 0,
+  "known_answers": "Executable assertions in the named, hash-bound test definitions",
+  "cases": [
+    {
+      "case": "test_outward_operations_enclose_exact_rational_corner_results[add]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        17,
+        53
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_outward_operations_enclose_exact_rational_corner_results[subtract]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        17,
+        53
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_outward_operations_enclose_exact_rational_corner_results[multiply]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        17,
+        53
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_outward_operations_enclose_exact_rational_corner_results[divide]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        17,
+        53
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[0.0]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[5e-324]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[0.01]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[2.0]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[4.0]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[1e-200]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_square_root_is_checked_by_exact_squares[1e+200]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        57,
+        59
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_nonfinite_or_untyped_state_is_rejected[nan]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        63,
+        65
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_nonfinite_or_untyped_state_is_rejected[inf]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        63,
+        65
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_nonfinite_or_untyped_state_is_rejected[-inf]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        63,
+        65
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_nonfinite_or_untyped_state_is_rejected[True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        63,
+        65
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_nonfinite_or_untyped_state_is_rejected[1]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        63,
+        65
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_arithmetic_domains_fail_explicitly",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        68,
+        78
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--100-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--100.000001-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[10--100-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[10.000001--100-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[3--30-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[3.000001--30-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--27-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--26.999999-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[2--30-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--33-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[2.5--30-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--28-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--25-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[0--105-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[-3--30-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_union_boundaries_match_declared_contract[-3.000001--30-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        102,
+        106
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_closed_collision_and_keepout_boundaries[1-True-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        113,
+        116
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_closed_collision_and_keepout_boundaries[2-True-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        113,
+        116
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_closed_collision_and_keepout_boundaries[5-False-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        113,
+        116
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_closed_collision_and_keepout_boundaries[10-False-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        113,
+        116
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_closed_collision_and_keepout_boundaries[11-False-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        113,
+        116
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_speed_does_not_replace_position_requirement[0-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        120,
+        123
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_speed_does_not_replace_position_requirement[0.05-True]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        120,
+        123
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_speed_does_not_replace_position_requirement[0.050001-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        120,
+        123
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_speed_does_not_replace_position_requirement[0.2-False]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        120,
+        123
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_uncertainty_uses_actual_state_box_not_historical_tolerance",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        130,
+        140
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_point_agreement_and_sampling_cannot_become_containment",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        143,
+        154
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_tangent_to_closed_union_is_contained_with_exact_polynomial_bounds",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        157,
+        161
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_narrow_excursion_is_found_without_finite_grid_completeness_assumption",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        164,
+        175
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_tangent_to_closed_collision_disk_is_a_violation",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        178,
+        182
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_endpoints_initial_membership_and_aborts_remain_distinct",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        185,
+        196
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_continuous_dwell_uses_interval_bounds_and_respects_unresolved_cells",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        199,
+        210
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_missing_overlap_resets_and_unsplit_events_fail_closed",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        213,
+        223
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_command_disturbance_observation_and_fault_times_split_exactly",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        226,
+        242
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_refinement_budget_cannot_manufacture_safety",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        245,
+        248
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_bernstein_range_contains_exact_rational_evaluations",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        251,
+        258
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_failed_interval_omits_whole_episode_separation_bound[-30]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        262,
+        276
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_failed_interval_omits_whole_episode_separation_bound[-25]",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        262,
+        276
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_independent_classifier_does_not_call_point_contract",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        279,
+        287
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_core_adjudication_has_no_online_or_historical_implementation_imports",
+      "known_answer_source": "tests/test_adjudication.py",
+      "known_answer_lines": [
+        290,
+        305
+      ],
+      "known_answer_file_sha256": "b5e2a291283745639102d1dcb72ad0114b592c8689e65ff820efd68e145de391",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[failure-True-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[failure-True-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[failure-False-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[failure-False-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_fun-True-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_fun-True-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_fun-False-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_fun-False-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_x-True-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_x-True-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_x-False-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[nonfinite_x-False-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[out_of_bracket-True-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[out_of_bracket-True-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[out_of_bracket-False-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[out_of_bracket-False-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[inferior-True-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[inferior-True-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[inferior-False-2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_actual_original_helpers_and_versioned_sample_retention[inferior-False-3]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        26,
+        48
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_optimizer_plugin_failures_keep_observed_evidence[missing_fields]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        52,
+        66
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_optimizer_plugin_failures_keep_observed_evidence[exception]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        52,
+        66
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_optimizer_plugin_failures_keep_observed_evidence[reevaluation_exception]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        52,
+        66
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_narrow_unsampled_extremum_remains_an_explicit_limitation",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        69,
+        79
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_nonfinite_objective_cannot_be_a_safe_result",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        82,
+        86
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_fractional_power_jet_matches_exact_binomial_series",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        89,
+        97
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_a_priori_flow_and_taylor_ranges_against_independent_numerical_solution[hcw]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        101,
+        140
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_a_priori_flow_and_taylor_ranges_against_independent_numerical_solution[nonlinear]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        101,
+        140
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_hcw_constant_hold_is_exactly_enclosed_for_long_continuation",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        143,
+        147
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_hcw_jet_coefficients_enclose_exact_recurrence",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        150,
+        166
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_unsupported_time_varying_or_singular_inputs_are_rejected",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        169,
+        175
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_one_shot_time_events_split_command_disturbance_observation_and_faults",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        178,
+        186
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_invalid_propagation_is_an_explicit_unresolved_episode[initial0]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        190,
+        195
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_invalid_propagation_is_an_explicit_unresolved_episode[initial1]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        190,
+        195
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_invalid_propagation_is_an_explicit_unresolved_episode[initial2]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        190,
+        195
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_consumed_status_generator_cannot_hide_uncertainty",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        198,
+        204
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_validation_driver_cannot_write_into_either_repository[research]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        208,
+        219
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    },
+    {
+      "case": "test_validation_driver_cannot_write_into_either_repository[historical]",
+      "known_answer_source": "tests/test_adjudication_numerics.py",
+      "known_answer_lines": [
+        208,
+        219
+      ],
+      "known_answer_file_sha256": "5ac3d84470a6288a2861c4f47f0a2251b1ea588fa6cb6c4324744b15fb3dc933",
+      "observed": "all_assertions_passed"
+    }
+  ]
+}

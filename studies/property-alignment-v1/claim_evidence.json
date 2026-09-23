@@ -56,6 +56,35 @@
       "reproduction": "python run.py diagnostics",
       "output": "baseline/data/statistical_design_check.json",
       "limit": "No universal power or calibration claim under arbitrary heterogeneous strata."
+    },
+    {
+      "id": "A1",
+      "claim": "Independent interval and rational-geometry adjudication separates validated containment, violation witnesses and unresolved classifications.",
+      "evidence_class": "conditional_numerical_validation_and_software_fixtures",
+      "source": "adjudication/flow.py, geometry.py, engine.py and README.md",
+      "reproduction": "python -m pytest tests/test_adjudication.py tests/test_adjudication_numerics.py",
+      "output": "adjudication/recorded_validation/test_outcomes.json",
+      "limit": "Restricted to supported ODEs or declared polynomial curves, inputs and arithmetic assumptions; not physical or machine-checked validation."
+    },
+    {
+      "id": "A2",
+      "claim": "The fixed nonlinear command sequence has a first-exit bracket [98.010986328125,98.01123046875] seconds in both supported model continuations at 1/4096-second event resolution.",
+      "evidence_class": "validated_fixed_command_continuation",
+      "source": "adjudication/validation_protocol.json and input_commands.json",
+      "reproduction": "python -m adjudication.validate --output /path/to/new-directory",
+      "output": "adjudication/recorded_validation/results.json",
+      "limit": "Existing known diagnostic input; not regenerated feedback, a historical campaign, frequency estimate or protective-controller advantage."
+    },
+    {
+      "id": "A3",
+      "claim": "The versioned helper retains observed extrema and exposes unresolved refinement under tested optimizer failures.",
+      "evidence_class": "controlled_software_fixture",
+      "source": "adjudication/extrema.py and tests/test_adjudication_numerics.py",
+      "reproduction": "python -m pytest tests/test_adjudication_numerics.py",
+      "output": "adjudication/recorded_validation/results.json",
+      "limit": "Finite sampling remains incomplete; no optimizer failure is attributed to a historical campaign."
     }
-  ]
+  ],
+  "bounded_numerical_validation_established": true,
+  "new_comparative_campaign_executed": false
 }
