@@ -1,0 +1,6 @@
+{
+  "files": {
+    "clean_reproduction.json": "e73b2a7fd302eef4eddacf155aa7aac3b725765034864cc12e1d65cccb913be5"
+  },
+  "purpose": "Fixed public inputs and reference-only source export; no new population or policy-timing trials"
+}

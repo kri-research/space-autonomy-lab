@@ -1,0 +1,18 @@
+{
+  "schema": "sal-transfer-cleanroom/1",
+  "passed": true,
+  "comparisons": 738,
+  "mismatches": [],
+  "forbidden_modules_loaded": [],
+  "python": "3.13.5",
+  "implementation": "CPython",
+  "elapsed_s": 22.649832291994244,
+  "completed_at_utc": "2026-09-23T23:50:44.018186+00:00",
+  "source_sha256": {
+    "__init__.py": "79dd7fc3bd07e4a32d4361db3c400f15d8c570395c7ce357689d92807304946c",
+    "schema.py": "ac52dea5e1664d98ee7e0e9590164b2a6f343681974c3cdc2fc0d3ce1f8818fc",
+    "reference.py": "054ce186f39a5a85c7ad05dd3c68484aff703a82b7d19004ed113e2141f23137",
+    "cleanroom.py": "8178731e42187186f418e96b2fe66a6c98c360c3c04d71acaadb5b5b3889ec45"
+  },
+  "scope": "Isolated source export and fresh interpreter environment; same researcher/specification; no independent laboratory or policy-timing replication"
+}

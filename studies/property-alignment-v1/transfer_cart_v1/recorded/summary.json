@@ -1,0 +1,502 @@
+{
+  "all_individually_certified_obstructions": 20,
+  "all_pairs_certified_joint_obstructions": 9,
+  "by_stratum": {
+    "aliased_pair": {
+      "cases": 32,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "contradicted_prefix": 17,
+          "unresolved": 8,
+          "verified_prefix": 7
+        },
+        "lag_aware_common_command": {
+          "unresolved": 2,
+          "verified_obstruction": 13,
+          "verified_prefix": 17
+        },
+        "mean_only_prefix": {
+          "contradicted_prefix": 25,
+          "verified_prefix": 7
+        },
+        "robust_predictive_prefix": {
+          "unresolved": 14,
+          "verified_prefix": 18
+        },
+        "third_order_barrier": {
+          "unresolved": 32
+        }
+      }
+    },
+    "aliased_triple": {
+      "cases": 32,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "contradicted_prefix": 4,
+          "unresolved": 20,
+          "verified_prefix": 8
+        },
+        "lag_aware_common_command": {
+          "verified_obstruction": 23,
+          "verified_prefix": 9
+        },
+        "mean_only_prefix": {
+          "contradicted_prefix": 24,
+          "verified_prefix": 8
+        },
+        "robust_predictive_prefix": {
+          "unresolved": 23,
+          "verified_prefix": 9
+        },
+        "third_order_barrier": {
+          "unresolved": 32
+        }
+      }
+    },
+    "interior": {
+      "cases": 32,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "verified_prefix": 32
+        },
+        "lag_aware_common_command": {
+          "verified_prefix": 32
+        },
+        "mean_only_prefix": {
+          "verified_prefix": 32
+        },
+        "robust_predictive_prefix": {
+          "verified_prefix": 32
+        },
+        "third_order_barrier": {
+          "verified_prefix": 32
+        }
+      }
+    },
+    "single_face": {
+      "cases": 32,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "contradicted_prefix": 20,
+          "unresolved": 6,
+          "verified_prefix": 6
+        },
+        "lag_aware_common_command": {
+          "unresolved": 4,
+          "verified_obstruction": 9,
+          "verified_prefix": 19
+        },
+        "mean_only_prefix": {
+          "contradicted_prefix": 15,
+          "unresolved": 11,
+          "verified_prefix": 6
+        },
+        "robust_predictive_prefix": {
+          "unresolved": 12,
+          "verified_prefix": 20
+        },
+        "third_order_barrier": {
+          "unresolved": 32
+        }
+      }
+    }
+  },
+  "cases": 128,
+  "implementation_failures": 0,
+  "lag_mismatch_stress": {
+    "cases": 16,
+    "methods": {
+      "instantaneous_actuator_ablation": {
+        "contained": 4,
+        "violation": 10
+      },
+      "lag_aware_common_command": {
+        "contained": 4,
+        "violation": 7
+      },
+      "mean_only_prefix": {
+        "contained": 4,
+        "violation": 8
+      },
+      "robust_predictive_prefix": {
+        "contained": 4,
+        "violation": 7
+      },
+      "third_order_barrier": {}
+    },
+    "outside_assumptions": true
+  },
+  "methods": {
+    "instantaneous_actuator_ablation": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.2581317089498043,
+      "outcomes": {
+        "contradicted_prefix": 41,
+        "unresolved": 34,
+        "verified_prefix": 53
+      },
+      "total": 128
+    },
+    "lag_aware_common_command": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.16189883393235505,
+      "outcomes": {
+        "unresolved": 6,
+        "verified_obstruction": 45,
+        "verified_prefix": 77
+      },
+      "total": 128
+    },
+    "mean_only_prefix": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.15990383399184793,
+      "outcomes": {
+        "contradicted_prefix": 64,
+        "unresolved": 11,
+        "verified_prefix": 53
+      },
+      "total": 128
+    },
+    "robust_predictive_prefix": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.24149087502155453,
+      "outcomes": {
+        "unresolved": 49,
+        "verified_prefix": 79
+      },
+      "total": 128
+    },
+    "third_order_barrier": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.102425790973939,
+      "outcomes": {
+        "unresolved": 96,
+        "verified_prefix": 32
+      },
+      "total": 128
+    }
+  },
+  "no_general_new_controller_advantage_claim": true,
+  "obstruction_mechanisms": [
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "9a7d995f46494dd7de3b38835bbd2ed02ca56ce75e3f80c43d6c55fec45a00b9",
+      "index": 4,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "b99138184ee087196653aac1facc322d5815556710d7f41b2e2b8d4ce8dd1d9f",
+      "index": 5,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "bcc0097eac7965c11636fdc8efb0b996b81f06a81920ca6596ec4ec45d8e4265",
+      "index": 12,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "fe2e95f5474892d5e65bf18bf530eb9b15d57bf82712e251f9d80cdc4c688438",
+      "index": 18,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "362af45614fb32b95ad14d1849c4e63250fd16b1c7337728b3cdb681cee01719",
+      "index": 21,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "636241c8731e74ad7ea1e4b3ed4fdd0816060eeac232ddf4de7198a16b0e4a86",
+      "index": 22,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "472cd67e77dd19953ecef9b12093c8d7861a3bd3a1d32bfeebf58f2b8317174b",
+      "index": 23,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "7eb12d92d8fbba518d0eee6a1e2cb3b50c9bf148cedd975730c1bab40f76b51e",
+      "index": 28,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "e1bad8f2cc0244fa46ac869a1bbce9d4f658fe5ffe591eed021273569dc8380b",
+      "index": 29,
+      "stratum": "single_face"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "bc8b3320e8405a0f10fad185c09432e3fba07082f8ef7553a1e0502c9dafabc4",
+      "index": 0,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "22896b13ed5d70a1e9c163ab8699eeaed01cede6d3af021b94fc0ab65c1cad0f",
+      "index": 4,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "711b3cf7c24843d46be02698a63470af6e41a6578035a7ec99c8f9322d990330",
+      "index": 5,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "c51efe812f28a2e914b1d93c5a878351a3c3a618602838d7a4b89ad8799e1fce",
+      "index": 8,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "9d0c255d9aa6813626cbcabd77eb7dcff83a197401b249c98f6692eb089c2d38",
+      "index": 11,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "d7dbeea6ee14d041b68f9980f2cd556c3f4cee33727de23c35f8b2f57dd1273d",
+      "index": 14,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "8d9a1f4ac551a463b84af3bbce03090d9bc09d5c132ab435351a9b523b7d68a2",
+      "index": 17,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "1811c932190022360e8fc28fa854417936da3679a0d29a4f565ec730c09bad4a",
+      "index": 18,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "3ab216c4e74c23c68de6eb83189f6bfa3b345c60c6b543725e7978221318c40f",
+      "index": 23,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "414298cf4c4d757e1540694064d688d265a52ddc30863a9975bcc713f9cdc088",
+      "index": 24,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "a15b2949951857361b36228c6f22371eb0ccec0c6ae7295f99ccef0e24e3aaf4",
+      "index": 25,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "a7cd1b803b7176dea176bc59035660278969d4c6f46565e65e853bf4f50381ab",
+      "index": 28,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "e526e3dcb6733c0d05253dfbc5c93296f4bf6ccf5e8031ed54cf2e5f8d291396",
+      "index": 29,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "05b0208bccb67a3fcf295353fa2bfea8fb0acb593079f9ee31c7ccc6e451b716",
+      "index": 0,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "121698b5fce5395d18be8004656ccf3a64eec91068e36424f4c341747ad183fb",
+      "index": 1,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "82bdef1b89566e9dfa018057bc10b07ad56bfdfea1aeb898ac26219d0ad28fd7",
+      "index": 2,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "e2c07b9c22a1bca19f80228cbe1c3abeb18c52c43b3c0f66217fe61573545703",
+      "index": 4,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "bdc4a78bda5c172c31d20881aec0ddbff24934f8316d448947facee2f91fa57c",
+      "index": 5,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "0a4c24c9499da78aa7873810b06a0aa1b5802da420ca27146813de5215c6fde1",
+      "index": 6,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "6c35c85e04b07a2b3fb8fb2f83d9c2133338c23dd255ca4943055a027759fcdb",
+      "index": 7,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "8425c066fa48536139db25afdfe1b2b87f65d795a81eacc9f8284dde9c747c50",
+      "index": 8,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "ec27b108a3e5d13d5410760bbfb0f56349cc117918ae4144acd3353ab4b64ec7",
+      "index": 9,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "889a89410f4e7b3c3934a81854a120d528420c37b2af025fabb8822415fcc12b",
+      "index": 10,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "1b4a5b4bbcf7e76845cc850b6df23f7f4d9525b3e3b069e00e88ee7e631198b4",
+      "index": 11,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "df6e01337e9d185ffa41c7e73d89289f7356f18459bda0e7a1c727bf696a286f",
+      "index": 12,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "9372a6a807d9a302677c670f15ae64d15d3ff9cba4e2897abda2bea51acb2e92",
+      "index": 15,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "b91c0b12a7c9916127a996923eb48019ac8539099bf7fb44ed7de123f82956c2",
+      "index": 16,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "2a4092ac144f9cfc9dc9dfa47b20715a5e8899891a26448303c90baa3d9ae254",
+      "index": 17,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "1ddbafbaafb9a7f95e7463a319e5445f610a6d2432c78c0cb24f8ce01c332661",
+      "index": 18,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "2a9abc536969dfbb77e186919d9c4207c35e89b78b9d51bd2a9100de684f8066",
+      "index": 20,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "25a2a0ffe18f34791367e4996355782e5b29b00060cbfa8996f0491c342c3abc",
+      "index": 21,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "9e277b78b518e0e24c14eeec0fe0cfe501773c163bdabbb8b234bafca6aa88c2",
+      "index": 22,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": true,
+      "all_singletons_certified": true,
+      "case_id": "4b8b701945246b9b7d98a113eff579230beeefe7caf96a0d12cdb1551a19f215",
+      "index": 23,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "549072b9a74c2f4bd0288414bb1e96d7e9cf2d3331ee2f773baba79373432654",
+      "index": 26,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "b3a1bea5af0c97d7908582e01573748ab818b4cfa8496f396229a4228d2a8e9b",
+      "index": 27,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "3e9dfa7af5506e6f16836d02c4781e62589a829a96e425ad3dabd43e40fcbd0f",
+      "index": 31,
+      "stratum": "aliased_triple"
+    }
+  ],
+  "operational_prevalence_or_superiority_inference": false,
+  "physical_validation": false,
+  "schema": "sal-cart-transfer-summary/1",
+  "scope": "Prospective actuator-lag simulation transfer of finite shared-input criterion, not complete recovery or unchanged orbital controller portability.",
+  "supported_conditional_criterion": true
+}
