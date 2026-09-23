@@ -1,0 +1,808 @@
+{
+  "candidate": {
+    "action": null,
+    "attempts": [
+      {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.329812152057884,
+                6.329812152057899
+              ],
+              [
+                -63.30000057484903,
+                -63.30000057484891
+              ],
+              [
+                0.0005243040065255694,
+                0.0005243040065255713
+              ],
+              [
+                -1.1588635197543946e-06,
+                -1.1588635197543887e-06
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -6.329812152057899,
+                -6.329812152057884
+              ],
+              [
+                -63.29999942515109,
+                -63.29999942515097
+              ],
+              [
+                -0.0005243040065255713,
+                -0.0005243040065255694
+              ],
+              [
+                1.1588635197543887e-06,
+                1.1588635197543946e-06
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.01999788880329845,
+                0.01999788880329851
+              ],
+              [
+                -100.00139999840778,
+                -100.00139999840754
+              ],
+              [
+                -4.2223929526571005e-06,
+                -4.2223929526570785e-06
+              ],
+              [
+                -0.0018999952229249073,
+                -0.0018999952229249036
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          }
+        ],
+        "information_sha256": "68c7636e90ac53b5c415030e1a49f1ac254afcb26a936daf78e67892e10a8924",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      },
+      {
+        "action": [
+          "-6506313187106495/4722366482869645213696",
+          "8301216023727017/2305843009213693952"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.329812820844785,
+                6.3298128208448
+              ],
+              [
+                -63.298200535808014,
+                -63.298200535807894
+              ],
+              [
+                0.0005269992498309033,
+                0.0005269992498309053
+              ],
+              [
+                0.003598918202072371,
+                0.0035989182020723805
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -6.3298114832709995,
+                -6.329811483270984
+              ],
+              [
+                -63.29819938611008,
+                -63.29819938610996
+              ],
+              [
+                -0.0005216087632202372,
+                -0.0005216087632202354
+              ],
+              [
+                0.00360123592911188,
+                0.003601235929111889
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 5,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.01999855759019888,
+                0.01999855759019894
+              ],
+              [
+                -99.99959995936676,
+                -99.99959995936652
+              ],
+              [
+                -1.5271496473231091e-06,
+                -1.5271496473230892e-06
+              ],
+              [
+                0.0017000818426672216,
+                0.0017000818426672283
+              ]
+            ],
+            "range_evaluations": 98,
+            "reason": null,
+            "status": "validated_violation"
+          }
+        ],
+        "information_sha256": "68c7636e90ac53b5c415030e1a49f1ac254afcb26a936daf78e67892e10a8924",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      },
+      {
+        "action": [
+          "-2882303761228887/144115188075855872",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.319812153125543,
+                6.319812153125558
+              ],
+              [
+                -63.299993032405155,
+                -63.299993032405034
+              ],
+              [
+                -0.01947569172483972,
+                -0.019475691724839653
+              ],
+              [
+                2.146846713663907e-05,
+                2.1468467136639197e-05
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -6.339812150990241,
+                -6.339812150990226
+              ],
+              [
+                -63.29999188270722,
+                -63.2999918827071
+              ],
+              [
+                -0.02052429973789086,
+                -0.020524299737890793
+              ],
+              [
+                2.378619417614785e-05,
+                2.378619417614798e-05
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.009997889870957144,
+                0.00999788987095723
+              ],
+              [
+                -100.0013924559639,
+                -100.00139245596365
+              ],
+              [
+                -0.020004218124317946,
+                -0.02000421812431788
+              ],
+              [
+                -0.0018773678922685139,
+                -0.00187736789226851
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          }
+        ],
+        "information_sha256": "68c7636e90ac53b5c415030e1a49f1ac254afcb26a936daf78e67892e10a8924",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      },
+      {
+        "action": [
+          "2882303761228887/144115188075855872",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.339812150990226,
+                6.339812150990241
+              ],
+              [
+                -63.300008117292904,
+                -63.30000811729278
+              ],
+              [
+                0.020524299737890793,
+                0.02052429973789086
+              ],
+              [
+                -2.378619417614798e-05,
+                -2.378619417614785e-05
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -6.319812153125558,
+                -6.319812153125543
+              ],
+              [
+                -63.30000696759497,
+                -63.30000696759485
+              ],
+              [
+                0.019475691724839653,
+                0.01947569172483972
+              ],
+              [
+                -2.1468467136639197e-05,
+                -2.146846713663907e-05
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.029997887735639724,
+                0.029997887735639814
+              ],
+              [
+                -100.00140754085164,
+                -100.0014075408514
+              ],
+              [
+                0.019995773338412567,
+                0.019995773338412633
+              ],
+              [
+                -0.001922622553581301,
+                -0.001922622553581297
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          }
+        ],
+        "information_sha256": "68c7636e90ac53b5c415030e1a49f1ac254afcb26a936daf78e67892e10a8924",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      },
+      {
+        "action": [
+          "0",
+          "-2882303761228887/144115188075855872"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.329804609614012,
+                6.329804609614027
+              ],
+              [
+                -63.310000570581394,
+                -63.31000057058127
+              ],
+              [
+                0.0005016766758691758,
+                0.0005016766758691777
+              ],
+              [
+                -0.020001141794980814,
+                -0.020001141794980748
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -6.329819694501774,
+                -6.329819694501759
+              ],
+              [
+                -63.30999942088346,
+                -63.30999942088334
+              ],
+              [
+                -0.0005469313371819648,
+                -0.0005469313371819628
+              ],
+              [
+                -0.019998824067941307,
+                -0.01999882406794124
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.01999034635942451,
+                0.01999034635942457
+              ],
+              [
+                -100.01139999414013,
+                -100.0113999941399
+              ],
+              [
+                -2.684972360905069e-05,
+                -2.684972360905053e-05
+              ],
+              [
+                -0.02189997815438597,
+                -0.021899978154385897
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          }
+        ],
+        "information_sha256": "68c7636e90ac53b5c415030e1a49f1ac254afcb26a936daf78e67892e10a8924",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      },
+      {
+        "action": [
+          "0",
+          "2882303761228887/144115188075855872"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                6.329819694501759,
+                6.329819694501774
+              ],
+              [
+                -63.290000579116665,
+                -63.290000579116544
+              ],
+              [
+                0.0005469313371819628,
+                0.0005469313371819648
+              ],
+              [
+                0.01999882406794124,
+                0.019998824067941307
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "violated",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -6.329804609614027,
+                -6.329804609614012
+              ],
+              [
+                -63.28999942941873,
+                -63.28999942941861
+              ],
+              [
+                -0.0005016766758691777,
+                -0.0005016766758691758
+              ],
+              [
+                0.020001141794980748,
+                0.020001141794980814
+              ]
+            ],
+            "range_evaluations": 24,
+            "reason": null,
+            "status": "validated_violation"
+          },
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                0.020005431247172387,
+                0.020005431247172446
+              ],
+              [
+                -99.9914000026754,
+                -99.99140000267516
+              ],
+              [
+                1.8404937703736377e-05,
+                1.84049377037365e-05
+              ],
+              [
+                0.018099987708536092,
+                0.018099987708536158
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "68c7636e90ac53b5c415030e1a49f1ac254afcb26a936daf78e67892e10a8924",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "unresolved"
+      }
+    ],
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "1936165762843552664639/2658455991569831745807614120560689152",
+          "87234171342047177/649037107316853453566312041152512"
+        ],
+        "margin_lower": "-745130126423255434817811463186231/132922799578491587290380706028034457600",
+        "proved": false,
+        "weighted_rhs_upper": "3725650632104809789445754426423/664613997892457936451903530140172288"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "unresolved",
+    "wall_s": 0.25343083310872316
+  },
+  "case_id": "16f3653920d2dfa6f6995595d23393432a39629c6bd887dffc39a0eb9556969d",
+  "certificate_recheck": {
+    "checked": false,
+    "kind": null,
+    "valid": null
+  },
+  "episode_wall_s": 0.7439458749722689,
+  "generator_seed": "166247119936376425787640143624704861342",
+  "index": 2,
+  "mean_shortcut": {
+    "declares_safe": true,
+    "false_safe_for_full_set": true,
+    "fictional_mean_status": "certified_common_prefix",
+    "full_set_recheck": "unresolved",
+    "shortcut_is_valid": false
+  },
+  "namespace": "development",
+  "native_baselines": {
+    "adapter_s": 0.0003850830253213644,
+    "adapter_uses_truth": false,
+    "incoming_exact_hypotheses": 3,
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.3329706639051437e-06,
+        "protected": false,
+        "setup_s": 0.004823499941267073,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.3542012311518192e-05,
+        "protected": false,
+        "setup_s": 0.040493041975423694,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      6.329300000000001,
+      18.349750000000014,
+      0.0005,
+      0.0009500000000000001
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  "pairwise_shortcut": {
+    "applicable": true,
+    "declares_compatible": false,
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "status": "certified_common_prefix"
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "status": "unresolved"
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "status": "unresolved"
+      }
+    ],
+    "shortcut_is_sound_for_full_set": false
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": false,
+    "eligible": true,
+    "on_time": true,
+    "on_time_decisive_valid": false,
+    "valid_certificate": true
+  },
+  "qualification": {
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.005"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 2,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0.005"
+        ]
+      }
+    ]
+  },
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "three_face_boundary",
+  "timing_scope": "local developmental processor timing; not WCET or target hardware"
+}

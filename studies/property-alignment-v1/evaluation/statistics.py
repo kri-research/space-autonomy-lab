@@ -27,13 +27,18 @@ def balanced_size(strata=STRATA_COUNT):
 
 
 def hoeffding_half_width(total, alpha=ALPHA):
-    if type(total) is not int or total < 1:
-        raise ValueError("Positive integer count required")
+    if type(total) is not int or total < 1 or not 0 < alpha < 1:
+        raise ValueError("Positive integer count and valid alpha required")
     return math.sqrt(math.log(2.0 / alpha) / (2.0 * total))
 
 
 def hoeffding_interval(successes, total, alpha=ALPHA):
-    if type(successes) is not int or not 0 <= successes <= total:
+    if (
+        type(total) is not int
+        or total < 1
+        or type(successes) is not int
+        or not 0 <= successes <= total
+    ):
         raise ValueError("Invalid Bernoulli count")
     estimate = successes / total
     radius = hoeffding_half_width(total, alpha)
@@ -49,7 +54,11 @@ def hoeffding_interval(successes, total, alpha=ALPHA):
 def bounded_difference_interval(values, alpha=ALPHA):
     """Exploratory secondary CI for bounded paired differences in [-1,1]."""
     values = list(values)
-    if not values or any(value < -1 or value > 1 for value in values):
+    if (
+        not 0 < alpha < 1
+        or not values
+        or any(not math.isfinite(value) or value < -1 or value > 1 for value in values)
+    ):
         raise ValueError("Differences must lie in [-1,1]")
     estimate = sum(values) / len(values)
     radius = math.sqrt(2.0 * math.log(2.0 / alpha) / len(values))
@@ -65,3 +74,24 @@ def bounded_difference_interval(values, alpha=ALPHA):
 PER_STRATUM, PRIMARY_N = balanced_size()
 assert PER_STRATUM == 192 and PRIMARY_N == 768
 assert hoeffding_half_width(PRIMARY_N) < TARGET_HALF_WIDTH
+
+
+def conditional_mean_interval(successes, total, alpha=ALPHA):
+    """Fixed-order average conditional success probability, not IID hardware reliability.
+
+    For X_i in [0,1], p_i=E[X_i|F_(i-1)], conditional Hoeffding gives
+    E[exp(lambda*(X_i-p_i))|F_(i-1)] <= exp(lambda**2/8).
+    Iteration, Markov's inequality, lambda=4*epsilon and a union
+    bound give P(|mean(X)-mean(p)|>=epsilon)<=2*exp(-2*N*epsilon**2).
+    The random predictable target mean(p) must not be renamed a fixed
+    generator probability unless independent execution outcomes are justified.
+    """
+    result = hoeffding_interval(successes, total, alpha)
+    result.update(
+        method="conditional Hoeffding bound in frozen case order",
+        target="average conditional success probability given earlier case outcomes",
+        fixed_generator_mean_requires_independence=True,
+        independent_hardware_sessions_observed=False,
+        runtime_dependence_assumed_absent=False,
+    )
+    return result

@@ -32,7 +32,7 @@ def test_namespace_separation_and_reproducibility():
 
 def test_generated_initial_boxes_are_inside_declared_union():
     prop = load_property()
-    for namespace in ("development", "calibration", "protected"):
+    for namespace in ("development", "calibration"):
         for stratum in STRATA:
             for index in range(32):
                 info, _ = make_case(namespace, stratum, index)

@@ -1,43 +1,91 @@
-"""CLI for development/calibration runs and the separately authorized protected run."""
+"""Pilot and protected CLI. Protected execution requires explicit Task 08 opt-in."""
 
-from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 import argparse
-import hashlib
+import fcntl
+import importlib.metadata
 import json
-
+import os
+import platform
+import shutil
+import subprocess
 from .analysis import analyze_directory
-from .episode import run_case
 from .generator import STRATA, case_payload
-from .runner import (
-    qualification_receipt,
-    read_json,
-    run_fixed_namespace,
-    sha,
-    write_json,
+from .runner import run_fixed_namespace, sha
+from .safety import (
+    atomic_json as write_json,
+    strict_json as read_json,
+    canonical_hash,
+    safe_path,
+    utc_now,
 )
 
-
-def payload_sha(payload):
-    return hashlib.sha256(
-        json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()
-    ).hexdigest()
+payload_sha = canonical_hash
 
 
 def verify_freeze(path, evaluation_id):
+    from .freeze import source_inventory, identity_fields
+
+    path = safe_path(path)
     doc = read_json(path)
-    if doc.get("evaluation_id") != evaluation_id:
-        raise ValueError("Evaluation identity does not match frozen protocol")
-    for name, expected in doc["component_sha256"].items():
-        actual = sha(Path(path).parent / name)
-        if actual != expected:
-            raise ValueError("Frozen component drift: " + name)
+    if (
+        doc.get("evaluation_id") != evaluation_id
+        or canonical_hash(identity_fields(doc)) != evaluation_id
+    ):
+        raise ValueError("Evaluation identity is not the hash of its frozen design")
     if doc.get("protected_campaign_executed") is not False:
-        raise ValueError("Invalid pre-execution freeze state")
+        raise ValueError("Invalid pre-execution freeze statement")
+    for name, expected in doc["component_sha256"].items():
+        if Path(name).name != name or sha(path.parent / name) != expected:
+            raise ValueError("Frozen component drift or unsafe path")
+    if source_inventory() != doc["source_sha256"]:
+        raise ValueError("Frozen executable source inventory changed")
     return doc
 
 
+def check_runtime(freeze):
+    env = freeze["runtime"]
+    if platform.python_version() != env["python"]:
+        raise ValueError("Python version differs from freeze")
+    for name, expected in env["packages"].items():
+        if importlib.metadata.version(name) != expected:
+            raise ValueError("Dependency differs: " + name)
+    if platform.system() != env["system"] or platform.machine() != env["machine"]:
+        raise ValueError("Protected timing platform differs; amend before execution")
+    if platform.system() == "Darwin":
+        actual = {
+            "macos_version": platform.mac_ver()[0],
+            "hardware_model": subprocess.check_output(
+                ["sysctl", "-n", "hw.model"], text=True
+            ).strip(),
+            "processor": subprocess.check_output(
+                ["sysctl", "-n", "machdep.cpu.brand_string"], text=True
+            ).strip(),
+        }
+        if any(env.get(k) != v for k, v in actual.items()):
+            raise ValueError("Protected timing hardware or OS version differs from frozen runtime")
+    if os.environ.get("OPENBLAS_NUM_THREADS") != "1":
+        raise ValueError("One BLAS thread required")
+    evidence = safe_path(os.environ["SAL_EVIDENCE_ROOT"])
+
+    def git(*args):
+        return subprocess.check_output(["git", "-C", str(evidence), *args], text=True).strip()
+
+    if git("rev-parse", "HEAD") != freeze["historical_commit"] or git(
+        "status", "--porcelain", "--untracked-files=no"
+    ):
+        raise ValueError("Historical evidence is not pinned and unchanged")
+    return evidence
+
+
 def _missing_episode(payload, reason):
+    status = (
+        "execution_timeout"
+        if "timeout" in reason
+        else "execution_failure_unclassified"
+        if "worker_failed" in reason
+        else "infrastructure_missing"
+    )
     return {
         "schema": "sal-evaluation-episode/1",
         "case_id": payload_sha(payload),
@@ -47,7 +95,7 @@ def _missing_episode(payload, reason):
         "generator_seed": payload["generator_seed"],
         "qualification": {"eligible": True, "reason": "selected_before_candidate_execution"},
         "candidate": {
-            "status": "infrastructure_missing",
+            "status": status,
             "action": None,
             "wall_s": None,
             "deadline_exceeded": None,
@@ -69,161 +117,179 @@ def _missing_episode(payload, reason):
     }
 
 
-def run_protected(freeze_path, evaluation_id, output, workers):
+def _run_protected(freeze_path, evaluation_id, output, workers):
+    from .jobs import run_jobs
+
     freeze = verify_freeze(freeze_path, evaluation_id)
-    output = Path(output).expanduser().resolve()
-    study = Path(__file__).resolve().parents[1]
-    if output.is_relative_to(study) or output.is_relative_to(study.parents[1]):
-        raise ValueError("Protected output must be outside both public repositories")
+    evidence = check_runtime(freeze)
+    if workers != freeze["resources"]["workers"]:
+        raise ValueError("Protected worker count differs from frozen timing regime")
+    output = safe_path(output)
+    repo = Path(__file__).resolve().parents[3]
+    if output.is_relative_to(repo) or output.is_relative_to(evidence):
+        raise ValueError("Protected output cannot enter either scientific repository")
+    parent = output
+    while not parent.exists():
+        parent = parent.parent
+    if shutil.disk_usage(parent).free < 2 * 1024**3:
+        raise RuntimeError("At least 2 GiB free disk is required")
+    from .safety import bind_run
+
+    bind_run(
+        repo.parents[1] / ".research/evaluation-identities", evaluation_id, output, sha(freeze_path)
+    )
+    expected_header = {
+        "schema": "sal-protected-run/2",
+        "evaluation_id": evaluation_id,
+        "freeze_sha256": sha(freeze_path),
+        "source_commit": freeze["source_commit"],
+        "workers": workers,
+        "physical_validation": False,
+    }
     if output.exists():
-        header = output / "run_header.json"
-        if not header.exists() or read_json(header).get("evaluation_id") != evaluation_id:
-            raise ValueError("Existing output is not the same protected run")
+        if not (output / "run_header.json").exists():
+            raise ValueError("Unowned existing output directory")
+        header = read_json(output / "run_header.json")
+        if any(header.get(k) != v for k, v in expected_header.items()):
+            raise ValueError("Existing output belongs to another frozen run")
     else:
         output.mkdir(parents=True)
-        write_json(
-            output / "run_header.json",
-            {
-                "schema": "sal-protected-run/1",
-                "evaluation_id": evaluation_id,
-                "freeze_sha256": sha(freeze_path),
-                "source_commit": freeze["source_commit"],
-                "protected_results_observed_before_start": False,
-                "physical_validation": False,
-            },
-        )
-
-    reserve = read_json(Path(freeze_path).parent / "protected_reserve.json")
-    qual_dir = output / "qualification"
-    qual_dir.mkdir(exist_ok=True)
-    selected = {}
-    for stratum in STRATA:
-        entries = [row for row in reserve["cases"] if row["stratum"] == stratum]
-        eligible = []
-        for entry in entries:
-            payload = case_payload("protected", stratum, entry["index"])
+        write_json(output / "run_header.json", dict(expected_header, started_at_utc=utc_now()))
+    # Exclusive advisory lock avoids simultaneous resume writers; only our run is locked.
+    with (output / "execution.lock").open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        if (output / "completion.json").exists():
+            completed = read_json(output / "completion.json")
+            if completed["evaluation_id"] != evaluation_id or completed["analysis_sha256"] != sha(
+                output / "analysis.json"
+            ):
+                raise ValueError("Completion identity changed")
+            if completed["selection_sha256"] != sha(output / "selection.json"):
+                raise ValueError("Completed selection changed")
+            for name, digest in completed["case_sha256"].items():
+                if sha(output / "cases" / name) != digest:
+                    raise ValueError("Completed receipt changed")
+            return read_json(output / "analysis.json")
+        reserve = read_json(Path(freeze_path).parent / "protected_reserve.json")
+        payloads = []
+        for entry in reserve["cases"]:
+            payload = case_payload("protected", entry["stratum"], entry["index"])
             if payload_sha(payload) != entry["payload_sha256"]:
-                raise ValueError("Protected generator payload drift")
-            receipt = qual_dir / f"{stratum}__{entry['index']:05d}.json"
-            if receipt.exists():
-                row = read_json(receipt)
-            else:
-                row = qualification_receipt(payload)
-                write_json(receipt, row)
-            if row["qualification"]["eligible"]:
-                eligible.append(entry["index"])
-            if len(eligible) == freeze["design"]["target_eligible_per_stratum"]:
-                break
-        if len(eligible) != freeze["design"]["target_eligible_per_stratum"]:
-            raise RuntimeError("Protected reserve exhausted before fixed eligible target")
-        selected[stratum] = eligible
-
-    selection_path = output / "selection.json"
-    selection = {
-        "schema": "sal-protected-selection/1",
-        "evaluation_id": evaluation_id,
-        "selection_rule": "first eligible cases in frozen reserve order; candidate not called during selection",
-        "selected": selected,
-    }
-    if selection_path.exists():
-        if read_json(selection_path) != selection:
-            raise ValueError("Protected selection changed")
-    else:
-        write_json(selection_path, selection)
-
-    cases_dir = output / "cases"
-    starts_dir = output / "started"
-    cases_dir.mkdir(exist_ok=True)
-    starts_dir.mkdir(exist_ok=True)
-    payloads = [
-        case_payload("protected", stratum, index)
-        for stratum in STRATA
-        for index in selected[stratum]
-    ]
-    pending = []
-    for payload in payloads:
-        stem = f"{payload['stratum']}__{payload['index']:05d}"
-        result_path = cases_dir / (stem + ".json")
-        marker = starts_dir / (stem + ".json")
-        if result_path.exists():
-            continue
-        if marker.exists():
-            write_json(
-                result_path,
-                _missing_episode(
-                    payload, "previous process ended after start marker and before atomic receipt"
-                ),
-            )
-            continue
+                raise ValueError("Protected reserve input changed")
+            payloads.append(payload)
+        # All eligibility work precedes every protected full-set method call.
+        work = run_jobs(
+            payloads,
+            output / "qualification",
+            kind="qualification",
+            workers=workers,
+            case_limit_s=freeze["resources"]["case_wall_limit_s"],
+            wall_limit_s=freeze["resources"]["phase_wall_limit_s"],
+        )
+        if not work["complete"]:
+            return {
+                "status": "qualification_incomplete",
+                "work": work,
+                "protected_candidate_called": False,
+            }
+        selected = {}
+        qualified = {}
+        selected_payloads = []
+        for stratum in STRATA:
+            eligible = []
+            for p in [p for p in payloads if p["stratum"] == stratum]:
+                receipt = read_json(output / "qualification" / f"{stratum}__{p['index']:05d}.json")
+                if receipt["qualification"]["eligible"]:
+                    eligible.append(p)
+            target = freeze["design"]["target_eligible_per_stratum"]
+            if len(eligible) < target:
+                raise RuntimeError(
+                    "Protected reserve exhausted; no candidate run or denominator substitution"
+                )
+            chosen = eligible[:target]
+            selected[stratum] = [p["index"] for p in chosen]
+            selected_payloads.extend(chosen)
+            for p in chosen:
+                receipt = read_json(output / "qualification" / f"{stratum}__{p['index']:05d}.json")
+                qualified[payload_sha(p)] = receipt["qualification"]
+        selection = {
+            "schema": "sal-protected-selection/2",
+            "evaluation_id": evaluation_id,
+            "selection_rule": "first eligible in frozen stratum/index order before full-set outcomes",
+            "selected": selected,
+            "qualification_sha256": {
+                p.name: sha(p) for p in sorted((output / "qualification").glob("*.json"))
+            },
+        }
+        sp = output / "selection.json"
+        if sp.exists():
+            if read_json(sp) != selection:
+                raise ValueError("Selected inputs or eligibility receipts changed")
+        else:
+            write_json(sp, selection)
+        work = run_jobs(
+            selected_payloads,
+            output / "cases",
+            kind="episode",
+            workers=workers,
+            qualification_records=qualified,
+            case_limit_s=freeze["resources"]["case_wall_limit_s"],
+            wall_limit_s=freeze["resources"]["phase_wall_limit_s"],
+        )
+        if not work["complete"]:
+            return {
+                "status": "selected_execution_incomplete",
+                "work": work,
+                "completed_attempts_preserved": True,
+                "retry_started_cases": False,
+            }
+        analysis = analyze_directory(output, protected=True)
+        if (output / "analysis.json").exists():
+            if read_json(output / "analysis.json") != analysis:
+                raise ValueError("Stored analysis differs from records")
+        else:
+            write_json(output / "analysis.json", analysis)
         write_json(
-            marker,
+            output / "completion.json",
             {
-                "case_id": payload_sha(payload),
                 "evaluation_id": evaluation_id,
-                "started_marker_only": True,
+                "completed_at_utc": utc_now(),
+                "analysis_sha256": sha(output / "analysis.json"),
+                "selection_sha256": sha(output / "selection.json"),
+                "case_sha256": {p.name: sha(p) for p in sorted((output / "cases").glob("*.json"))},
+                "campaign_complete": analysis["campaign_complete"],
+                "validity_claim_gate_passed": analysis["validity_claim_gate_passed"],
             },
         )
-        pending.append(payload)
+        return analysis
 
-    def save_result(payload, result):
-        stem = f"{payload['stratum']}__{payload['index']:05d}"
-        write_json(cases_dir / (stem + ".json"), result)
 
-    if workers == 1:
-        for payload in pending:
-            save_result(payload, run_case(payload, include_native_baselines=True))
-    else:
-        with ProcessPoolExecutor(max_workers=workers) as pool:
-            futures = {
-                pool.submit(run_case, payload, include_native_baselines=True): payload
-                for payload in pending
-            }
-            for future in as_completed(futures):
-                payload = futures[future]
-                try:
-                    save_result(payload, future.result())
-                except Exception as exc:
-                    save_result(
-                        payload,
-                        _missing_episode(payload, "worker_exception:" + type(exc).__name__),
-                    )
-
-    analysis = analyze_directory(output, output / "analysis.json", protected=True)
-    write_json(
-        output / "completion.json",
-        {
-            "evaluation_id": evaluation_id,
-            "selected_total": sum(map(len, selected.values())),
-            "analysis_sha256": sha(output / "analysis.json"),
-            "invalid_definite_certificates": analysis["invalid_definite_certificates"],
-            "campaign_complete": True,
-        },
-    )
-    return analysis
+def run_protected(freeze_path, evaluation_id, output, workers, *, authorize_task08=False):
+    if authorize_task08 is not True:
+        raise PermissionError("Task 08 must be explicitly invoked before protected execution")
+    return _run_protected(freeze_path, evaluation_id, output, workers)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="mode", required=True)
-
     for mode in ("pilot", "calibration"):
         item = sub.add_parser(mode)
         item.add_argument("--output", type=Path, required=True)
         item.add_argument("--count-per-stratum", type=int, required=True)
         item.add_argument("--workers", type=int, default=1)
         item.add_argument("--no-native-baselines", action="store_true")
-
     protected = sub.add_parser("protected")
     protected.add_argument("--freeze", type=Path, required=True)
     protected.add_argument("--evaluation-id", required=True)
     protected.add_argument("--output", type=Path, required=True)
     protected.add_argument("--workers", type=int, default=4)
-
+    protected.add_argument("--authorize-task08", action="store_true")
     args = parser.parse_args()
-    if args.mode in {"pilot", "calibration"}:
+    if args.mode in ("pilot", "calibration"):
+        if not 1 <= args.count_per_stratum <= 12 or not 1 <= args.workers <= 4:
+            raise ValueError("Declared development budget exceeded")
         namespace = "development" if args.mode == "pilot" else "calibration"
-        if args.count_per_stratum < 1 or args.workers not in range(1, 9):
-            raise SystemExit("Invalid bounded run size or workers")
         result = run_fixed_namespace(
             namespace,
             args.count_per_stratum,
@@ -232,15 +298,14 @@ def main():
             include_native=not args.no_native_baselines,
         )
     else:
-        if args.workers not in range(1, 9):
-            raise SystemExit("Workers must be between 1 and 8")
         result = run_protected(
             args.freeze,
             args.evaluation_id,
             args.output,
             args.workers,
+            authorize_task08=args.authorize_task08,
         )
-    print(json.dumps(result, indent=2, sort_keys=True))
+    print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
 
 
 if __name__ == "__main__":

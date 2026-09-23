@@ -1,0 +1,133 @@
+"""Strict write-once receipts and conservative secondary evidence labels."""
+
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+import uuid
+
+
+def canonical_hash(value):
+    return hashlib.sha256(
+        json.dumps(value, sort_keys=True, separators=(",", ":"), allow_nan=False).encode()
+    ).hexdigest()
+
+
+def strict_json(path):
+    def pairs(items):
+        result = {}
+        for key, value in items:
+            if key in result:
+                raise ValueError("Duplicate JSON key")
+            result[key] = value
+        return result
+
+    def bad(value):
+        raise ValueError("Nonfinite JSON token: " + value)
+
+    return json.loads(Path(path).read_text(), object_pairs_hook=pairs, parse_constant=bad)
+
+
+def safe_path(path):
+    path = Path(path).expanduser().absolute()
+    if any(p.is_symlink() for p in (path, *path.parents)):
+        raise ValueError("Symlink in execution path")
+    return path
+
+
+def atomic_json(path, payload):
+    path = safe_path(path)
+    raw = (json.dumps(payload, indent=2, sort_keys=True, allow_nan=False) + "\n").encode()
+    if len(raw) > 16 * 1024 * 1024:
+        raise ValueError("Receipt exceeds fixed 16 MiB limit")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name("." + path.name + "." + uuid.uuid4().hex + ".tmp")
+    try:
+        with temporary.open("xb") as handle:
+            handle.write(raw)
+            handle.flush()
+            os.fsync(handle.fileno())
+        # Atomic create, unlike replace this can never overwrite a prior result.
+        os.link(temporary, path)
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def check_receipt(row, payload):
+    if row.get("case_id") != canonical_hash(payload):
+        raise ValueError("Receipt belongs to another input")
+    for key in ("namespace", "stratum", "index", "generator_seed"):
+        if row.get(key) != payload[key]:
+            raise ValueError("Receipt input metadata drift")
+    primary = row["primary"]
+    if any(
+        type(primary.get(k)) is not bool
+        for k in ("eligible", "decisive", "on_time", "valid_certificate", "on_time_decisive_valid")
+    ):
+        raise ValueError("Endpoint fields must be Boolean")
+    decisive = row["candidate"]["status"] in (
+        "certified_common_prefix",
+        "proved_no_common_held_command",
+    )
+    if primary["decisive"] != decisive:
+        raise ValueError("Contradictory decisive indicator")
+    expected = all(primary[k] for k in ("eligible", "decisive", "on_time", "valid_certificate"))
+    if primary["on_time_decisive_valid"] != expected:
+        raise ValueError("Contradictory primary endpoint")
+    if (
+        decisive
+        and primary["valid_certificate"]
+        and row["certificate_recheck"].get("valid") is not True
+    ):
+        raise ValueError("Unverified certificate counted valid")
+    if primary["eligible"] != row["qualification"]["eligible"]:
+        raise ValueError("Eligibility metadata drift")
+    return row
+
+
+def mean_evidence(row):
+    shortcut = row.get("mean_shortcut", {})
+    if not shortcut.get("declares_safe", False):
+        return "no_admission"
+    primary = row["primary"]
+    if (
+        row["candidate"]["status"] == "proved_no_common_held_command"
+        and primary["valid_certificate"]
+    ):
+        return "confirmed_false_safe"
+    if shortcut.get("classification_version") == "evidence-separated/2":
+        if shortcut.get("false_safe_for_full_set"):
+            return "confirmed_false_safe"
+        if shortcut.get("full_set_recheck") == "certified_common_prefix":
+            return "revalidated"
+        return "unresolved"
+    # Pilot-v1 incorrectly used a failed sufficient test as a false-safe label.
+    # Preserve its bytes, but never interpret that legacy flag as a counterexample.
+    if shortcut.get("full_set_recheck") == "certified_common_prefix":
+        return "revalidated"
+    return "unresolved"
+
+
+def bind_run(registry, evaluation_id, output, freeze_sha256):
+    """One evaluation identity has one output location in this project registry."""
+    if len(evaluation_id) != 64 or any(c not in "0123456789abcdef" for c in evaluation_id):
+        raise ValueError("Canonical hexadecimal evaluation identity required")
+    registry, output = safe_path(registry), safe_path(output)
+    entry = registry / (evaluation_id + ".json")
+    expected = {
+        "evaluation_id": evaluation_id,
+        "output": str(output),
+        "freeze_sha256": freeze_sha256,
+    }
+    try:
+        atomic_json(entry, expected)
+    except FileExistsError:
+        if strict_json(entry) != expected:
+            raise ValueError("Evaluation identity is already bound to a different attempt")
+    return expected

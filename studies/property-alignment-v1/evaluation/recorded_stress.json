@@ -1,0 +1,364 @@
+{
+  "cases": {
+    "covariance_only": {
+      "candidate": {
+        "action": null,
+        "attempts": [
+          {
+            "reason": "no_deterministic_information_set",
+            "status": "unresolved"
+          },
+          {
+            "reason": "no_deterministic_information_set",
+            "status": "unresolved"
+          },
+          {
+            "reason": "no_deterministic_information_set",
+            "status": "unresolved"
+          },
+          {
+            "reason": "no_deterministic_information_set",
+            "status": "unresolved"
+          },
+          {
+            "reason": "no_deterministic_information_set",
+            "status": "unresolved"
+          }
+        ],
+        "deadline_exceeded": false,
+        "negative": {
+          "reason": "ValueError:Impossibility needs attainable origins, not an outer-only enclosure",
+          "status": "unresolved"
+        },
+        "search": {
+          "reason": "ValueError",
+          "status": "unresolved"
+        },
+        "status": "unresolved",
+        "wall_s": 7.5409188866615295e-06
+      },
+      "input": {
+        "age": 0,
+        "authority": "1/50",
+        "command_period_s": 1,
+        "delay": 0,
+        "disturbance": "0",
+        "effectiveness": [
+          "1",
+          "1"
+        ],
+        "hypotheses": [
+          {
+            "lower": [
+              "1647/200",
+              "-889/10",
+              "19/2000",
+              "-9/1000"
+            ],
+            "upper": [
+              "1647/200",
+              "-889/10",
+              "19/2000",
+              "-9/1000"
+            ]
+          },
+          {
+            "lower": [
+              "-1647/200",
+              "-889/10",
+              "-19/2000",
+              "-9/1000"
+            ],
+            "upper": [
+              "-1647/200",
+              "-889/10",
+              "-19/2000",
+              "-9/1000"
+            ]
+          }
+        ],
+        "kind": "covariance_only",
+        "observation_pattern": "no new distinguishing observation before this held command ends",
+        "queue": [],
+        "schema": "sal-common-information/1",
+        "units": [
+          "m",
+          "m",
+          "m/s",
+          "m/s"
+        ]
+      },
+      "native": {
+        "not_a_baseline_failure": true,
+        "status": "unsupported_information_semantics"
+      }
+    },
+    "outer_enclosure_only": {
+      "candidate": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "attempts": 1,
+        "deadline_exceeded": false,
+        "negative": {
+          "reason": "ValueError:Impossibility needs attainable origins, not an outer-only enclosure",
+          "status": "unresolved"
+        },
+        "positive": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "all_terminal_members": false,
+          "end_after_measurement_s": "1",
+          "hypotheses": [
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  -8.244526007579898,
+                  8.244505642982304
+                ],
+                [
+                  -88.90901075223685,
+                  -88.90898923240327
+                ],
+                [
+                  -0.009552029367782397,
+                  0.009511300176941231
+                ],
+                [
+                  -0.009021508734982602,
+                  -0.008978445185364139
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            }
+          ],
+          "information_sha256": "4100311ba2983e531033abcc52ed4fb31d43acec8a6396d6c45384fc51400475",
+          "model": "hcw",
+          "recovery_status": "unassessed",
+          "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+          "status": "certified_common_prefix"
+        },
+        "search": {
+          "reason": "ValueError",
+          "status": "unresolved"
+        },
+        "status": "certified_common_prefix",
+        "wall_s": 0.006651083007454872
+      },
+      "input": {
+        "age": 0,
+        "authority": "1/50",
+        "command_period_s": 1,
+        "delay": 0,
+        "disturbance": "0",
+        "effectiveness": [
+          "1",
+          "1"
+        ],
+        "hypotheses": [
+          {
+            "lower": [
+              "-1647/200",
+              "-889/10",
+              "-19/2000",
+              "-9/1000"
+            ],
+            "upper": [
+              "1647/200",
+              "-889/10",
+              "19/2000",
+              "-9/1000"
+            ]
+          }
+        ],
+        "kind": "outer_enclosure_only",
+        "observation_pattern": "no new distinguishing observation before this held command ends",
+        "queue": [],
+        "schema": "sal-common-information/1",
+        "units": [
+          "m",
+          "m",
+          "m/s",
+          "m/s"
+        ]
+      },
+      "native": {
+        "not_a_baseline_failure": true,
+        "status": "unsupported_information_semantics"
+      }
+    },
+    "reduced_effectiveness": {
+      "candidate": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "attempts": 1,
+        "deadline_exceeded": false,
+        "negative": {
+          "checked": {
+            "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+            "coefficient_residual_upper": [
+              "0",
+              "0"
+            ],
+            "margin_lower": "-5764607523034235/288230376151711744",
+            "proved": false,
+            "weighted_rhs_upper": "5764607523034235/288230376151711744"
+          },
+          "reason": "nonpositive_verified_margin",
+          "status": "unresolved"
+        },
+        "positive": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "all_terminal_members": false,
+          "end_after_measurement_s": "1",
+          "hypotheses": [
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  8.244505626755561,
+                  8.244505626755592
+                ],
+                [
+                  -88.90901075222766,
+                  -88.90901075222742
+                ],
+                [
+                  0.009511251483302771,
+                  0.0095112514833028
+                ],
+                [
+                  -0.009021508698265878,
+                  -0.009021508698265849
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            },
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  -8.244525991353186,
+                  -8.244525991353155
+                ],
+                [
+                  -88.90898923241271,
+                  -88.90898923241247
+                ],
+                [
+                  -0.009551980674143966,
+                  -0.009551980674143937
+                ],
+                [
+                  -0.008978445222080886,
+                  -0.008978445222080857
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            }
+          ],
+          "information_sha256": "802dd787889ac65534cb7dc3cfdc55ed9bbf4985fe594c8850777aa0c2ae6c2b",
+          "model": "hcw",
+          "recovery_status": "unassessed",
+          "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+          "status": "certified_common_prefix"
+        },
+        "search": {
+          "not_certified": true,
+          "status": "proposed_by_relaxation"
+        },
+        "status": "certified_common_prefix",
+        "wall_s": 0.056918749934993684
+      },
+      "input": {
+        "age": 0,
+        "authority": "1/50",
+        "command_period_s": 1,
+        "delay": 0,
+        "disturbance": "0",
+        "effectiveness": [
+          "1/2",
+          "1"
+        ],
+        "hypotheses": [
+          {
+            "lower": [
+              "1647/200",
+              "-889/10",
+              "19/2000",
+              "-9/1000"
+            ],
+            "upper": [
+              "1647/200",
+              "-889/10",
+              "19/2000",
+              "-9/1000"
+            ]
+          },
+          {
+            "lower": [
+              "-1647/200",
+              "-889/10",
+              "-19/2000",
+              "-9/1000"
+            ],
+            "upper": [
+              "-1647/200",
+              "-889/10",
+              "-19/2000",
+              "-9/1000"
+            ]
+          }
+        ],
+        "kind": "declared_exact_information_set",
+        "observation_pattern": "no new distinguishing observation before this held command ends",
+        "queue": [],
+        "schema": "sal-common-information/1",
+        "units": [
+          "m",
+          "m",
+          "m/s",
+          "m/s"
+        ]
+      },
+      "native": {
+        "not_a_baseline_failure": true,
+        "status": "unsupported_native_actuation_bounds"
+      }
+    }
+  },
+  "in_primary_denominator": false,
+  "passed": true,
+  "protected_inputs_accessed": false,
+  "schema": "sal-evaluation-stress/1"
+}

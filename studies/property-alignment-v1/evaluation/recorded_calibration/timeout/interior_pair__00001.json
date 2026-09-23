@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "action": null,
+    "deadline_exceeded": null,
+    "reason": "worker_wall_timeout",
+    "status": "infrastructure_missing",
+    "wall_s": null
+  },
+  "case_id": "61845dd06170c6ec392db4ce6db67962d7c0799cccfe3a676328ac684bf4916d",
+  "certificate_recheck": {
+    "checked": false,
+    "kind": null,
+    "valid": null
+  },
+  "episode_wall_s": null,
+  "generator_seed": "220619422802174284275522106471254507858",
+  "index": 1,
+  "mean_shortcut": {
+    "declares_safe": false,
+    "false_safe_for_full_set": false
+  },
+  "namespace": "calibration",
+  "native_baselines": {
+    "status": "not_run_due_infrastructure_missing"
+  },
+  "pairwise_shortcut": {
+    "applicable": false,
+    "declares_compatible": null,
+    "pairs": []
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": false,
+    "eligible": true,
+    "on_time": false,
+    "on_time_decisive_valid": false,
+    "valid_certificate": false
+  },
+  "qualification": {
+    "eligible": true,
+    "reason": "selected_before_candidate_execution"
+  },
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "interior_pair"
+}
