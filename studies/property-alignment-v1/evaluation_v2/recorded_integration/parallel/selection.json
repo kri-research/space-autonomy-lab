@@ -1,0 +1,33 @@
+{
+  "identity": "replacement-integration-parallel",
+  "qualification_sha256": {
+    "interior_pair__00000.json": "a16ab67ca03d70886e70ae68736762afcec5f5bc76ae58fa62591b836c51e0ed",
+    "interior_pair__00001.json": "3440ffe8495e84410ef39fcf01443ebbd7b8c80ddc72eac9bbb22493ccaaf30f",
+    "radial_boundary__00000.json": "7adba5ae5f77b6e411e8874b9c596abf1089ef1fdb9b7ff254cca806bd00a8f5",
+    "radial_boundary__00001.json": "b6251a9112ecc9c651291efe4ba787e4925b1715905daff67b80cea5906b0161",
+    "three_face_boundary__00000.json": "9c5a1d043d884dd87763251ddd0ddfc604501c25c46267d29fa4f2af2d527b68",
+    "three_face_boundary__00001.json": "e8d60a5a1ebf610287712d83c6005f0dbc56fe25578bd6918cc13ff4b4f140a7",
+    "timing_bounded_pair__00000.json": "16efaa029eeecbce754e2a3bc7fc96534c26de4e6cbc92b04a2b0bb501910fb6",
+    "timing_bounded_pair__00001.json": "8ab067bd8120799f6e70902efc74d99216c6120f862453bfcdce1502ca11ce71"
+  },
+  "schema": "sal-replacement-selection/1",
+  "selected": {
+    "interior_pair": [
+      0,
+      1
+    ],
+    "radial_boundary": [
+      0,
+      1
+    ],
+    "three_face_boundary": [
+      0,
+      1
+    ],
+    "timing_bounded_pair": [
+      0,
+      1
+    ]
+  },
+  "selection_rule": "first eligible in frozen stratum/index order before any full-set method call"
+}

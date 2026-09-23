@@ -1,0 +1,338 @@
+{
+  "candidate": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "attempts": 1,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "318595119740147613/324518553658426726783156020576256",
+          "143436639342253581/1298074214633706907132624082305024"
+        ],
+        "margin_lower": "-5267722833086804393879200565684439/519229685853482762853049632922009600",
+        "proved": false,
+        "weighted_rhs_upper": "210708913323471722053690165717287/20769187434139310514121985316880384"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "3",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              7.984790757524894,
+              7.990085119971771
+            ],
+            [
+              -80.00266171049951,
+              -79.9973674241867
+            ],
+            [
+              0.001260465400048325,
+              0.0017234473785398814
+            ],
+            [
+              -0.00024127999700057772,
+              0.0002216488000194967
+            ]
+          ],
+          "range_evaluations": 12,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -7.990085119971771,
+              -7.984790757524894
+            ],
+            [
+              -80.0026325758133,
+              -79.99733828950049
+            ],
+            [
+              -0.0017234473785398814,
+              -0.001260465400048325
+            ],
+            [
+              -0.0002216488000194967,
+              0.00024127999700057772
+            ]
+          ],
+          "range_evaluations": 12,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "55a4ad0285c3d62c0093b32732bbcf281656076b45ebff2f81320e1f22d50898",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.4728170419111848
+  },
+  "case_id": "9649f6d629500cff77792ac9f2f6f310425398f2c761242b511c2de45aaba554",
+  "certificate_independence": "Fixed-action replay and exact dual recheck share the tested candidate/interval implementation. No independent implementation or human review is asserted.",
+  "certificate_recheck": {
+    "checked": true,
+    "kind": "positive_fixed_action",
+    "valid": true
+  },
+  "episode_wall_s": 0.6487164170248434,
+  "generator_seed": "249126350819712660698469693292816572671",
+  "index": 1,
+  "mean_shortcut": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "classification_version": "evidence-separated/2",
+    "declares_safe": true,
+    "false_safe_for_full_set": false,
+    "fictional_mean_status": "certified_common_prefix",
+    "full_set_evidence": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "3",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              7.984790757524894,
+              7.990085119971771
+            ],
+            [
+              -80.00266171049951,
+              -79.9973674241867
+            ],
+            [
+              0.001260465400048325,
+              0.0017234473785398814
+            ],
+            [
+              -0.00024127999700057772,
+              0.0002216488000194967
+            ]
+          ],
+          "range_evaluations": 12,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -7.990085119971771,
+              -7.984790757524894
+            ],
+            [
+              -80.0026325758133,
+              -79.99733828950049
+            ],
+            [
+              -0.0017234473785398814,
+              -0.001260465400048325
+            ],
+            [
+              -0.0002216488000194967,
+              0.00024127999700057772
+            ]
+          ],
+          "range_evaluations": 12,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "55a4ad0285c3d62c0093b32732bbcf281656076b45ebff2f81320e1f22d50898",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "full_set_recheck": "certified_common_prefix",
+    "full_set_unresolved": false,
+    "shortcut_is_valid": false
+  },
+  "namespace": "calibration",
+  "native_baselines": {
+    "adapter_s": 0.026838624966330826,
+    "adapter_uses_truth": false,
+    "incoming_exact_hypotheses": 2,
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 5.042064003646374e-06,
+        "protected": false,
+        "setup_s": 0.0050505839753896,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.9791070371866226e-05,
+        "protected": false,
+        "setup_s": 0.041399417095817626,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      7.988382260412581,
+      0.0024273648243280377,
+      0.0016822755338675188,
+      0.00022742687995849192
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  "pairwise_shortcut": {
+    "applicable": false,
+    "declares_compatible": null,
+    "pairs": []
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": true,
+    "eligible": true,
+    "on_time": true,
+    "on_time_decisive_valid": true,
+    "valid_certificate": true
+  },
+  "qualification": {
+    "counters": {
+      "continuation_propagations": 2,
+      "point_evaluations": 72,
+      "queue_propagations": 2,
+      "range_evaluations": 24
+    },
+    "criterion": "every hypothesis admits fixed queue and a fixed-library one-second HCW prefix",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "information_sha256": "55a4ad0285c3d62c0093b32732bbcf281656076b45ebff2f81320e1f22d50898",
+    "last_phase": "complete",
+    "physical_impossibility_claim": false,
+    "queue_checks": [
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 0,
+        "point_evaluations": 24,
+        "range_evaluations": 8,
+        "reason": "continuous_range_enclosures",
+        "scope": "physical_prefix_only",
+        "status": "validated_containment",
+        "witness_time_s": null
+      },
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 1,
+        "point_evaluations": 24,
+        "range_evaluations": 8,
+        "reason": "continuous_range_enclosures",
+        "scope": "physical_prefix_only",
+        "status": "validated_containment",
+        "witness_time_s": null
+      }
+    ],
+    "schema": "sal-repaired-qualification/1",
+    "status": "qualified",
+    "wall_s": 0.03569691604934633
+  },
+  "receipt_sha256": "39b4ae7bde2e1bbf8fb641ca012751153e29a7141aa2e40918bd4238495b8e1a",
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "timing_bounded_pair",
+  "timing_scope": "local processor policy timing; excludes qualification, certificate recheck and comparators; not WCET or target hardware",
+  "worker_wall_s": 0.6514702909626067
+}

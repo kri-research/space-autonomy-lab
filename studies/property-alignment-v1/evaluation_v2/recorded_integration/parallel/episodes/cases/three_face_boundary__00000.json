@@ -1,0 +1,478 @@
+{
+  "candidate": {
+    "action": null,
+    "deadline_exceeded": false,
+    "negative": {
+      "active_obligations": [
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "origin": [
+            "-69593/10000",
+            "-348/5",
+            "-17/10000",
+            "0"
+          ],
+          "time_after_application": "1",
+          "weight": "1023545369856931/2251799813685248"
+        },
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "origin": [
+            "1/25",
+            "-499991/5000",
+            "0",
+            "-17/10000"
+          ],
+          "time_after_application": "1",
+          "weight": "3275345183542179/36028797018963968"
+        },
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "origin": [
+            "69593/10000",
+            "-348/5",
+            "17/10000",
+            "0"
+          ],
+          "time_after_application": "1",
+          "weight": "8188362958855449/18014398509481984"
+        }
+      ],
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "628702998687829918157/664613997892457936451903530140172288",
+          "256978001092388379/1298074214633706907132624082305024"
+        ],
+        "margin_lower": "12124507890912839636381099057664223/13292279957849158729038070602803445760",
+        "proved": true,
+        "weighted_rhs_upper": "-2424901578182628749335039582154301/2658455991569831745807614120560689152"
+      },
+      "information_sha256": "4799f426d17e1dc694a3ec7f39b4f091bbf1e891c7ed4947f704b76c73b5b7e7",
+      "model": "hcw",
+      "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+      "status": "proved_no_common_held_command",
+      "weights": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1023545369856931/2251799813685248",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3275345183542179/36028797018963968",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "8188362958855449/18014398509481984",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "status": "proved_no_common_held_command",
+    "wall_s": 0.03855979104992002
+  },
+  "case_id": "0ae645779c4eb324673adbc81c83e98eb0b209d65c132acce5dd267dbc0dda61",
+  "certificate_independence": "Fixed-action replay and exact dual recheck share the tested candidate/interval implementation. No independent implementation or human review is asserted.",
+  "certificate_recheck": {
+    "checked": true,
+    "kind": "negative_dual",
+    "valid": true
+  },
+  "episode_wall_s": 0.35574775002896786,
+  "generator_seed": "78316445801845236040013553118842090102",
+  "index": 0,
+  "mean_shortcut": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "classification_version": "evidence-separated/2",
+    "declares_safe": true,
+    "false_safe_for_full_set": true,
+    "fictional_mean_status": "certified_common_prefix",
+    "full_set_evidence": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              6.9610133613927845,
+              6.9610133613928
+            ],
+            [
+              -69.60000193340126,
+              -69.60000193340102
+            ],
+            [
+              0.0017267224200695258,
+              0.0017267224200695297
+            ],
+            [
+              -3.876879890778732e-06,
+              -3.876879890778711e-06
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -6.9610133613928,
+              -6.9610133613927845
+            ],
+            [
+              -69.59999806659899,
+              -69.59999806659874
+            ],
+            [
+              -0.0017267224200695297,
+              -0.0017267224200695258
+            ],
+            [
+              3.876879890778711e-06,
+              3.876879890778732e-06
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              0.03999815347631605,
+              0.03999815347631617
+            ],
+            [
+              -99.99989999860739,
+              -99.99989999860715
+            ],
+            [
+              -3.693046973844829e-06,
+              -3.6930469738448134e-06
+            ],
+            [
+              -0.0016999958218093599,
+              -0.0016999958218093562
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "4799f426d17e1dc694a3ec7f39b4f091bbf1e891c7ed4947f704b76c73b5b7e7",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "unresolved"
+    },
+    "full_set_recheck": "unresolved",
+    "full_set_unresolved": false,
+    "shortcut_is_valid": false
+  },
+  "namespace": "calibration",
+  "native_baselines": {
+    "adapter_s": 0.004991416004486382,
+    "adapter_uses_truth": false,
+    "incoming_exact_hypotheses": 3,
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 4.875008016824722e-06,
+        "protected": false,
+        "setup_s": 0.004394000046886504,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.5333062037825584e-05,
+        "protected": false,
+        "setup_s": 0.04181758302729577,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      6.959300000000001,
+      15.199100000000016,
+      0.0017000000000000001,
+      0.0008500000000000001
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  "pairwise_shortcut": {
+    "applicable": true,
+    "declares_compatible": false,
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "status": "proved_no_common_held_command"
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "status": "certified_common_prefix"
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "status": "certified_common_prefix"
+      }
+    ],
+    "shortcut_is_sound_for_full_set": false
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": true,
+    "eligible": true,
+    "on_time": true,
+    "on_time_decisive_valid": true,
+    "valid_certificate": true
+  },
+  "qualification": {
+    "counters": {
+      "continuation_propagations": 6,
+      "point_evaluations": 51,
+      "queue_propagations": 0,
+      "range_evaluations": 12
+    },
+    "criterion": "every hypothesis admits fixed queue and a fixed-library one-second HCW prefix",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 4,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1/2"
+          },
+          {
+            "action": [
+              "1/200",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 4,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1/2"
+          },
+          {
+            "action": [
+              "-1/200",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "-1/200",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 4,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1/2"
+          },
+          {
+            "action": [
+              "1/200",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "1/200",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 2,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "information_sha256": "4799f426d17e1dc694a3ec7f39b4f091bbf1e891c7ed4947f704b76c73b5b7e7",
+    "last_phase": "complete",
+    "physical_impossibility_claim": false,
+    "queue_checks": [
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 0,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      },
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 1,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      },
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 2,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      }
+    ],
+    "schema": "sal-repaired-qualification/1",
+    "status": "qualified",
+    "wall_s": 0.034373041009530425
+  },
+  "receipt_sha256": "6ecde62c811a571d1485d8953e9e777d04ee20848325d8fc5208a6bb3d9666d2",
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "three_face_boundary",
+  "timing_scope": "local processor policy timing; excludes qualification, certificate recheck and comparators; not WCET or target hardware",
+  "worker_wall_s": 0.3584645410301164
+}

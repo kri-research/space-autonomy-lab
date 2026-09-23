@@ -1,0 +1,42 @@
+{
+  "candidate_attempts": 16,
+  "checkpoint_receipts_preserved": true,
+  "completed_pipeline_read_only": true,
+  "executions": {
+    "parallel": {
+      "candidate_statuses": {
+        "certified_common_prefix": 7,
+        "proved_no_common_held_command": 1
+      },
+      "on_time_valid": 8,
+      "qualification_statuses": {
+        "qualified": 8
+      },
+      "wall_s": 3.174450541031547
+    },
+    "serial": {
+      "candidate_statuses": {
+        "certified_common_prefix": 7,
+        "proved_no_common_held_command": 1
+      },
+      "on_time_valid": 8,
+      "qualification_statuses": {
+        "qualified": 8
+      },
+      "wall_s": 10.397077167057432
+    }
+  },
+  "full_pipelines": 2,
+  "input_sha256": "f06b17b21913bff22011b2192fdc754ad20b5207dfcc07f0fa723b8d4b6a2bab",
+  "namespace": "calibration",
+  "passed": true,
+  "physical_validation": false,
+  "protected_evaluations": 0,
+  "qualification_attempts": 24,
+  "schema": "sal-replacement-integration/1",
+  "serial_parallel_qualification_equivalent": true,
+  "source_sha256": "02b830e6b03283ce21c77d4c6984c58edcc8e01b02f1711d70f3b341391ba4fd",
+  "timing_scope": "Observed real-clock execution of eight reused calibration fixtures. Deadline-sensitive outputs need not be identical across hosts or repetitions; no worst-case bound or independent replication claim.",
+  "total_wall_s": 15.365351791959256,
+  "unique_inputs": 8
+}
