@@ -1,0 +1,42 @@
+{
+  "cases": 48,
+  "eligible": 48,
+  "environment": {
+    "openblas_threads": "1",
+    "physical_validation": false,
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "workers_environment": "4"
+  },
+  "maximum_episode_wall_s": 0.9514708749484271,
+  "on_time_decisive_valid": 47,
+  "per_stratum": {
+    "interior_pair": {
+      "cases": 12,
+      "eligible": 12,
+      "on_time_decisive_valid": 12
+    },
+    "radial_boundary": {
+      "cases": 12,
+      "eligible": 12,
+      "on_time_decisive_valid": 12
+    },
+    "three_face_boundary": {
+      "cases": 12,
+      "eligible": 12,
+      "on_time_decisive_valid": 11
+    },
+    "timing_bounded_pair": {
+      "cases": 12,
+      "eligible": 12,
+      "on_time_decisive_valid": 12
+    }
+  },
+  "schema": "sal-evaluation-run-summary/1",
+  "statuses": {
+    "certified_common_prefix": 46,
+    "proved_no_common_held_command": 1,
+    "unresolved": 1
+  },
+  "total_wall_s": 4.252810541074723
+}

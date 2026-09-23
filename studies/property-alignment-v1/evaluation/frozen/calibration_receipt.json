@@ -1,0 +1,39 @@
+{
+  "cases": 8,
+  "checkpoint_first": {
+    "complete": false,
+    "expected": 8,
+    "new_attempts": 3,
+    "preserved_receipts": 0,
+    "process_model": "fresh spawned process per case; at most four concurrently",
+    "wall_limit_reached": false,
+    "wall_s": 0.6414244580082595
+  },
+  "checkpoint_second": {
+    "complete": true,
+    "expected": 8,
+    "new_attempts": 5,
+    "preserved_receipts": 3,
+    "process_model": "fresh spawned process per case; at most four concurrently",
+    "wall_limit_reached": false,
+    "wall_s": 1.8084449999732897
+  },
+  "completed_receipts_preserved": true,
+  "forced_timeout_failure": {
+    "complete": true,
+    "expected": 1,
+    "new_attempts": 1,
+    "preserved_receipts": 0,
+    "process_model": "fresh spawned process per case; at most four concurrently",
+    "wall_limit_reached": false,
+    "wall_s": 0.019174874993041158
+  },
+  "interrupted_started_case_not_rerun": true,
+  "namespace": "calibration",
+  "parallel_wall_s": 1.8249478340148926,
+  "passed": true,
+  "protected_case_evaluations": 0,
+  "scope": "Same eight calibration inputs deliberately repeated for mechanics; no independent scientific replicates or worst-case runtime claim",
+  "serial_parallel_scientific_equivalence": true,
+  "serial_wall_s": 5.8805356660159305
+}

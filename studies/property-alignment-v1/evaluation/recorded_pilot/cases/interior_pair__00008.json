@@ -1,0 +1,210 @@
+{
+  "candidate": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "attempts": 1,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "0",
+          "0"
+        ],
+        "margin_lower": "-5764607523034235/288230376151711744",
+        "proved": false,
+        "weighted_rhs_upper": "5764607523034235/288230376151711744"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              8.282416907091639,
+              8.282416907091669
+            ],
+            [
+              -88.69910702722571,
+              -88.69910702722547
+            ],
+            [
+              0.006233812857042182,
+              0.006233812857042197
+            ],
+            [
+              0.0008859327972558111,
+              0.000885932797255813
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -8.282414870631909,
+              -8.282414870631879
+            ],
+            [
+              -88.69909297431052,
+              -88.69909297431028
+            ],
+            [
+              -0.00622973993795808,
+              -0.006229739937958065
+            ],
+            [
+              0.000914062594778861,
+              0.0009140625947788629
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "3011b629a33b35659b6d3629b5ae3b12bced0fab1b8f9daf31d29e7ceb03ad72",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.018659749999642372
+  },
+  "case_id": "ae2d8ea13381ec2a89eccea6b1ffc81cca1371aa00ae5a3ca706f3da34f61498",
+  "certificate_recheck": {
+    "checked": true,
+    "kind": "positive_fixed_action",
+    "valid": true
+  },
+  "episode_wall_s": 0.10323720797896385,
+  "generator_seed": "55892609810697583582878566241850805517",
+  "index": 8,
+  "mean_shortcut": {
+    "declares_safe": true,
+    "false_safe_for_full_set": false,
+    "fictional_mean_status": "certified_common_prefix",
+    "full_set_recheck": "certified_common_prefix",
+    "shortcut_is_valid": false
+  },
+  "namespace": "development",
+  "native_baselines": {
+    "adapter_s": 0.0003541249316185713,
+    "adapter_uses_truth": false,
+    "incoming_exact_hypotheses": 2,
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.4159747883677483e-06,
+        "protected": false,
+        "setup_s": 0.004889042000286281,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.1958996765315533e-05,
+        "protected": false,
+        "setup_s": 0.040981458965688944,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      8.276200000000001,
+      1.4210854715202004e-14,
+      0.006200000000000001,
+      1.0842021724855044e-19
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  "pairwise_shortcut": {
+    "applicable": false,
+    "declares_compatible": null,
+    "pairs": []
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": true,
+    "eligible": true,
+    "on_time": true,
+    "on_time_decisive_valid": true,
+    "valid_certificate": true
+  },
+  "qualification": {
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "interior_pair",
+  "timing_scope": "local developmental processor timing; not WCET or target hardware"
+}

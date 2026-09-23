@@ -1,0 +1,44 @@
+{
+  "evidence_class": "prospective_synthetic_evaluation",
+  "failure_semantics": "Unresolved, budget miss, invalid/unverified proof or started-case execution failure are zero primary successes. Incomplete unstarted selection withholds final inference.",
+  "fault_model": "Exact synthetic ambiguous information sets and quarter-second bounded actuation disturbances; no Gaussian-tail or sensor-calibration claim",
+  "held_out_transfer_family_used": false,
+  "historical_data_in_denominator": false,
+  "meaningful_difference": "Five percentage points is an estimation-resolution target, not powered effect detection, equivalence, operational safety or a journal-driven success threshold.",
+  "outside_assumption_checks": "fixed covariance-only, outer-only and reduced-effectiveness stress fixtures excluded from primary denominator",
+  "plant": "HCW for protected diagnostic; no negative-certificate transfer to nonlinear dynamics",
+  "primary_inference": {
+    "alpha": 0.05,
+    "dependence": "Conditional Hoeffding derivation permits dependent hardware timing; a fixed generator success-probability interpretation additionally requires independent execution outcomes",
+    "no_hardware_reliability_inference": true,
+    "one_confirmatory_estimate": true,
+    "sample_size": 768,
+    "sampling_half_width_bound": 0.04900626723123034,
+    "target": "average conditional success probability in frozen stratum/index reveal order"
+  },
+  "primary_question": "On-time checked common-prefix or HCW obstruction coverage among individually prefix-qualified synthetic information sets",
+  "qualification": "All hypotheses admit the known queue plus next one-second HCW prefix under the fixed 13-action qualification library; not full recovery",
+  "retired_indices": [
+    0,
+    31
+  ],
+  "retirement_reason": "Early tests inspected initial membership of these inputs; conservatively exclude all 32 per stratum even though no candidate or qualification outcome was computed",
+  "schema": "sal-frozen-evaluation-protocol/2",
+  "secondary": "Descriptive only: status composition, genuine false-safe witnesses versus unresolved shortcuts, native baseline outputs, paired discordance and timing. Different continuation obligations preclude superiority claims.",
+  "selection": "All reserve qualification precedes any full-set candidate evaluation. Select first 192 qualified IDs per stratum, never using candidate outcomes.",
+  "strata": [
+    "interior_pair",
+    "radial_boundary",
+    "three_face_boundary",
+    "timing_bounded_pair"
+  ],
+  "target_per_stratum": 192,
+  "target_total": 768,
+  "task_phases": "measurement-time exact information set, fixed age/queue, decision, held-input prefix; no mission completion or abort controller is evaluated",
+  "weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "scope": "Targeted primary bibliographic checks and independently derived concentration argument; no exhaustive statistical-methods survey",
+  "checked_at_utc": "2026-09-23T17:40:03.755263+00:00",
+  "references": [
+    {
+      "DOI": "10.1080/01621459.1963.10500830",
+      "title": [
+        "Probability Inequalities for Sums of Bounded Random Variables"
+      ],
+      "author": [
+        {
+          "given": "Wassily",
+          "family": "Hoeffding",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of North Carolina",
+              "place": [
+                "USA"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of the American Statistical Association"
+      ],
+      "volume": "58",
+      "issue": "301",
+      "page": "13-30",
+      "published": {
+        "date-parts": [
+          [
+            1963,
+            3
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1080/01621459.1963.10500830"
+    },
+    {
+      "DOI": "10.2748/tmj/1178243286",
+      "title": [
+        "Weighted sums of certain dependent random variables"
+      ],
+      "author": [
+        {
+          "given": "Kazuoki",
+          "family": "Azuma",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Tohoku Mathematical Journal"
+      ],
+      "volume": "19",
+      "issue": "3",
+      "page": null,
+      "published": {
+        "date-parts": [
+          [
+            1967,
+            1,
+            1
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.2748/tmj/1178243286"
+    }
+  ],
+  "access": "Publisher-deposited Crossref metadata fetched through the official API. Direct publisher full texts were unavailable through the browser; no full-text review is claimed.",
+  "derivation": "The conditional exponential bound used here is written explicitly in statistics.py and the study README. It does not treat shared-processor timings as independent.",
+  "originality": "Classical bounded-variable concentration; no new statistical theorem claimed."
+}

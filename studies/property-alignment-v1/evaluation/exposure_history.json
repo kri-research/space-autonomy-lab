@@ -1,0 +1,73 @@
+{
+  "schema": "sal-evaluation-exposure/1",
+  "recorded_at_utc": "2026-09-23T17:38:09.677377+00:00",
+  "historical_and_development": "E004/E005, midpoint and Tasks04-06 are prior knowledge and absent from the new evaluation denominator.",
+  "namespaces": {
+    "development": "sal-eval-v1-development",
+    "calibration": "sal-eval-v1-calibration",
+    "protected": "sal-eval-v1-protected",
+    "stress": "sal-eval-v1-stress"
+  },
+  "pilot": {
+    "indices": [
+      0,
+      11
+    ],
+    "strata": 4,
+    "unique_cases": 48,
+    "source_commit": "bc4f61603a1aa60f86115407167515e36bbe4ad4",
+    "outcomes_seen": true,
+    "repeated_for_tuning": false
+  },
+  "calibration": {
+    "indices": [
+      0,
+      1
+    ],
+    "strata": 4,
+    "unique_cases": 8,
+    "repeated_for": "serial, parallel, checkpoint, tests and final bounded-coordinator verification",
+    "independent_replicate_claim": false,
+    "ci_repetitions": "Same calibration inputs repeated with controlled child policy clocks for mechanics tests. All real-clock original calibration results and the CI deadline difference are retained."
+  },
+  "additional_generator_fixtures": {
+    "development_and_calibration_indices": [
+      0,
+      31
+    ],
+    "exposure": "initial membership and reproducibility checks; no claimed protected status"
+  },
+  "retired_protected": {
+    "indices": [
+      0,
+      31
+    ],
+    "strata": 4,
+    "candidate_or_qualification_called": false,
+    "reason": "initial membership checked before final freeze; retired conservatively"
+  },
+  "remaining_protected": {
+    "first_index": 32,
+    "input_generation_scope": "seed keys and payload identities after final scientific choices; no event, qualification, candidate or comparator evaluation",
+    "outcomes_seen": false
+  },
+  "fixed_stress": {
+    "source": "evaluation/generator.py stress_cases",
+    "cases": [
+      "covariance_only",
+      "reduced_effectiveness",
+      "outer_enclosure_only"
+    ],
+    "in_primary_denominator": false,
+    "executed": true,
+    "output": "recorded_stress.json"
+  },
+  "new_transfer_family_accessed": false,
+  "external_preregistration_claimed": false,
+  "limits": "Execution logs and hashes establish recorded identity and workflow events, not an independently authenticated proof that no person accessed outcomes.",
+  "superseded_freeze": {
+    "evaluation_id": "e16cbcdd09dab49750c8a82dc8702e319ae1d2a20598664a0ff18af0f098590d",
+    "protected_executed": false,
+    "archive": "retired_freezes/e16cbcdd09dab49750c8a82dc8702e319ae1d2a20598664a0ff18af0f098590d"
+  }
+}

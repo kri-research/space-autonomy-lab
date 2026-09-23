@@ -1,0 +1,300 @@
+{
+  "candidate": {
+    "action": [
+      "0",
+      "2882303761228887/144115188075855872"
+    ],
+    "attempts": 6,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "1936179676197405180409/2658455991569831745807614120560689152",
+          "369065763444525367/2596148429267413814265248164610048"
+        ],
+        "margin_lower": "-196069605699350417784168009271208017/132922799578491587290380706028034457600",
+        "proved": false,
+        "weighted_rhs_upper": "980348028496740518405750223360259/664613997892457936451903530140172288"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "0",
+        "2882303761228887/144115188075855872"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              7.768022453265,
+              7.768022453265015
+            ],
+            [
+              -77.69000193883751,
+              -77.69000193883727
+            ],
+            [
+              0.001752448607077205,
+              0.0017524486070772088
+            ],
+            [
+              0.0199961025456271,
+              0.019996102545627167
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -7.768007368377266,
+              -7.768007368377251
+            ],
+            [
+              -77.68999806969798,
+              -77.68999806969774
+            ],
+            [
+              -0.0017071939457644215,
+              -0.0017071939457644178
+            ],
+            [
+              0.02000386331729489,
+              0.020003863317294954
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -0.04999436374185644,
+              -0.04999436374185632
+            ],
+            [
+              -99.99060000283004,
+              -99.9906000028298
+            ],
+            [
+              1.881495960240266e-05,
+              1.8814959602402774e-05
+            ],
+            [
+              0.018399987244650938,
+              0.018399987244651
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "412e48bd9442c301e34faf8988feec2ef2e5d4abdbfb60f54c0f9461cabb11c6",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.2045994580257684
+  },
+  "case_id": "60362d3da4fbe911da61bd4be80f4cfc86149965d88a06b8c4d44daf92941321",
+  "certificate_recheck": {
+    "checked": true,
+    "kind": "positive_fixed_action",
+    "valid": true
+  },
+  "episode_wall_s": 0.6574882080312818,
+  "generator_seed": "59435703541369093843207443857273209034",
+  "index": 8,
+  "mean_shortcut": {
+    "declares_safe": true,
+    "false_safe_for_full_set": true,
+    "fictional_mean_status": "certified_common_prefix",
+    "full_set_recheck": "unresolved",
+    "shortcut_is_valid": false
+  },
+  "namespace": "development",
+  "native_baselines": {
+    "adapter_s": 0.00039537495467811823,
+    "adapter_uses_truth": false,
+    "incoming_exact_hypotheses": 3,
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.250082954764366e-06,
+        "protected": false,
+        "setup_s": 0.004508791957050562,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.333397813141346e-05,
+        "protected": false,
+        "setup_s": 0.039303999976255,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      7.7663,
+      11.149500000000018,
+      0.0017000000000000001,
+      0.0008
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  "pairwise_shortcut": {
+    "applicable": true,
+    "declares_compatible": true,
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "status": "certified_common_prefix"
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "status": "certified_common_prefix"
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "status": "certified_common_prefix"
+      }
+    ],
+    "shortcut_is_sound_for_full_set": false
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": true,
+    "eligible": true,
+    "on_time": true,
+    "on_time_decisive_valid": true,
+    "valid_certificate": true
+  },
+  "qualification": {
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.005"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 2,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0.005"
+        ]
+      }
+    ]
+  },
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "three_face_boundary",
+  "timing_scope": "local developmental processor timing; not WCET or target hardware"
+}

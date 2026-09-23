@@ -1,0 +1,73 @@
+{
+  "balanced_coverage": {
+    "estimate": 0.9791666666666666,
+    "half_width_bound": 0.19602506892492136,
+    "lower": 0.7831415977417453,
+    "method": "Hoeffding independent bounded trials; heterogeneous probabilities allowed",
+    "upper": 1.0
+  },
+  "candidate_statuses": {
+    "certified_common_prefix": 46,
+    "proved_no_common_held_command": 1,
+    "unresolved": 1
+  },
+  "cases_loaded": 48,
+  "eligible": 48,
+  "invalid_definite_certificates": 0,
+  "mean_shortcut_false_safe": 6,
+  "mean_shortcut_safe": 48,
+  "native_baselines": {
+    "barrier": {
+      "evaluated": 48,
+      "interpretation": "secondary native-design comparator; stronger continuation obligations",
+      "protected": 0
+    },
+    "predictive": {
+      "evaluated": 48,
+      "interpretation": "secondary native-design comparator; stronger continuation obligations",
+      "protected": 0
+    }
+  },
+  "on_time_decisive_valid": 47,
+  "pairwise_applicable": 12,
+  "pairwise_false_safe": 1,
+  "per_stratum": {
+    "interior_pair": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.05897870904300362,
+      "on_time_decisive_valid": 12,
+      "statuses": {
+        "certified_common_prefix": 12
+      }
+    },
+    "radial_boundary": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.07255933398846537,
+      "on_time_decisive_valid": 12,
+      "statuses": {
+        "certified_common_prefix": 12
+      }
+    },
+    "three_face_boundary": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.25343083310872316,
+      "on_time_decisive_valid": 11,
+      "statuses": {
+        "certified_common_prefix": 10,
+        "proved_no_common_held_command": 1,
+        "unresolved": 1
+      }
+    },
+    "timing_bounded_pair": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.45800741703715175,
+      "on_time_decisive_valid": 12,
+      "statuses": {
+        "certified_common_prefix": 12
+      }
+    }
+  },
+  "physical_validation": false,
+  "protected": false,
+  "schema": "sal-evaluation-analysis/1"
+}

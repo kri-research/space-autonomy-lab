@@ -1,0 +1,279 @@
+{
+  "candidate": {
+    "action": [
+      "0",
+      "0"
+    ],
+    "attempts": 1,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "628702998687829918157/664613997892457936451903530140172288",
+          "256978001092388379/1298074214633706907132624082305024"
+        ],
+        "margin_lower": "-20886018633023720998149104151039161/6646139978924579364519035301401722880",
+        "proved": false,
+        "weighted_rhs_upper": "261075232912794611787525684056069/83076749736557242056487941267521536"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              6.856813163463607,
+              6.856813163463622
+            ],
+            [
+              -68.60000080188527,
+              -68.60000080188503
+            ],
+            [
+              0.0007263267750889333,
+              0.0007263267750889351
+            ],
+            [
+              -1.6136987226147629e-06,
+              -1.6136987226147559e-06
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -6.856813163463622,
+              -6.856813163463607
+            ],
+            [
+              -68.59999919811497,
+              -68.59999919811473
+            ],
+            [
+              -0.0007263267750889351,
+              -0.0007263267750889333
+            ],
+            [
+              1.6136987226147559e-06,
+              1.6136987226147629e-06
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              0.08999802320228706,
+              0.0899980232022873
+            ],
+            [
+              -99.99729999850913,
+              -99.9972999985089
+            ],
+            [
+              -3.953595003970615e-06,
+              -3.953595003970592e-06
+            ],
+            [
+              -0.0018999955270339753,
+              -0.0018999955270339716
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "ef96e6b145fc5225001396445d37d1a9250e754e8ce9aa54be59e1488211b2ac",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.026829915936104953
+  },
+  "case_id": "2a24e4bcb34c645f0cfb6ca1501f057a339685192c094af04c3896265a3da1c2",
+  "certificate_recheck": {
+    "checked": true,
+    "kind": "positive_fixed_action",
+    "valid": true
+  },
+  "episode_wall_s": 0.2016602089861408,
+  "generator_seed": "277891826324043487778917690514374673517",
+  "index": 6,
+  "mean_shortcut": {
+    "declares_safe": true,
+    "false_safe_for_full_set": false,
+    "fictional_mean_status": "certified_common_prefix",
+    "full_set_recheck": "certified_common_prefix",
+    "shortcut_is_valid": false
+  },
+  "namespace": "development",
+  "native_baselines": {
+    "adapter_s": 0.00041679199784994125,
+    "adapter_uses_truth": false,
+    "incoming_exact_hypotheses": 3,
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.3329706639051437e-06,
+        "protected": false,
+        "setup_s": 0.004541083006188273,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.2208940461277962e-05,
+        "protected": false,
+        "setup_s": 0.058854541974142194,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      6.8561000000000005,
+      15.697700000000012,
+      0.0007000000000000001,
+      0.0009500000000000001
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  "pairwise_shortcut": {
+    "applicable": true,
+    "declares_compatible": true,
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "status": "certified_common_prefix"
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "status": "certified_common_prefix"
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "status": "certified_common_prefix"
+      }
+    ],
+    "shortcut_is_sound_for_full_set": false
+  },
+  "physical_validation": false,
+  "primary": {
+    "decisive": true,
+    "eligible": true,
+    "on_time": true,
+    "on_time_decisive_valid": true,
+    "valid_certificate": true
+  },
+  "qualification": {
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "certified_common_prefix"
+          }
+        ],
+        "hypothesis": 2,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "schema": "sal-evaluation-episode/1",
+  "stratum": "three_face_boundary",
+  "timing_scope": "local developmental processor timing; not WCET or target hardware"
+}

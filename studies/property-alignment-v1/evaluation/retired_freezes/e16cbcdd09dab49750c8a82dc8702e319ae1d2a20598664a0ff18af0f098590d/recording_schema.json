@@ -1,0 +1,9 @@
+{
+  "atomicity": "fsync temporary then exclusive hard-link publish; never overwrite; per-case start marker and bounded subprocess",
+  "case_schema": "evaluation/safety.py check_receipt",
+  "full_inputs": "Deterministic generator plus frozen seed-key/payload identities; exact set, queue, timing, authority and bounds reconstruct every selected case",
+  "preservation": "All qualification attempts and started-case failures retained. Final case hashes and analysis hash recorded.",
+  "schema": "sal-evaluation-recording/2",
+  "selection_bound_before_candidate": true,
+  "source": "evaluation/episode.py"
+}
