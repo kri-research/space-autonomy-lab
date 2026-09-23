@@ -1,0 +1,64 @@
+{
+  "checked_on_utc": "2026-09-23T11:47:07.701546+00:00",
+  "scope": "Targeted full-paper equation/assumption inspection, not exhaustive prior-art review",
+  "method_sources": [
+    {
+      "key": "wabersich2021",
+      "url": "https://arxiv.org/abs/1812.05506v4",
+      "doi": "10.1016/j.automatica.2021.109597",
+      "inspected": "Equations5/6, Assumption4.2, stored/shrinking horizon mechanisms and linear-feedback special case.",
+      "implemented": "Deterministic linear tube and invariant terminal specialization; no learned probabilistic model."
+    },
+    {
+      "key": "brunke2022",
+      "url": "https://arxiv.org/abs/2212.08900v1",
+      "doi": "10.1109/CDC51059.2022.9992834",
+      "inspected": "Equations7,18; assumptions1/4; theorem1 and algorithm1.",
+      "implemented": "Valid bounded full-state packet/age propagation replaces partial-observation MHE; explicit P-norm tube and terminal requirements. Not a reproduction of their complete nonlinear output-feedback benchmark."
+    },
+    {
+      "key": "xiao2019",
+      "url": "https://arxiv.org/abs/1903.04706v2",
+      "inspected": "High-order recursion and initial-set hypotheses.",
+      "implemented": "Relative-degree-two exponential specialization on separate smooth components."
+    },
+    {
+      "key": "singletary2020",
+      "url": "https://arxiv.org/abs/2005.06418v1",
+      "inspected": "Sampled-data uncertainty and SectionIV delay history, initial irrevocable interval.",
+      "implemented": "Known-input forward prediction and interval-robust one-second second-derivative check; not their specific backup-barrier/Segway benchmark."
+    }
+  ],
+  "official_code": {
+    "repository": "learnsyslab/dsl__rpof__sf",
+    "commit": "d46d8175a77272f656185e9ac9da58bd3733901b",
+    "license": "MIT",
+    "inspected_files": [
+      "LICENSE",
+      "README.md",
+      "ftocp_certification.m",
+      "mhe.m",
+      "mass_spring_damper_example.m"
+    ],
+    "code_executed": false
+  },
+  "software_sources": [
+    {
+      "url": "https://www.cvxpy.org/tutorial/solvers/index.html",
+      "version": "1.9.2",
+      "use": "Status and solver diagnostics"
+    },
+    {
+      "url": "https://oxfordcontrol.github.io/ClarabelDocs/stable/api_settings/",
+      "version": "0.11.1",
+      "use": "time_limit,max_iter and feasibility/duality tolerances"
+    }
+  ],
+  "third_party_pdfs_or_code_redistributed": false,
+  "private_full_text_sha256": {
+    "brunke2022.pdf": "ca77d7cc5ab2380c03c96b58ad497de9c01458e0fd3066c5ce6039cddccd9942",
+    "xiao2019.pdf": "68e563491705dab3ec37e8be26c6641b315bf684f0ce6ce4c2d0a5e83b654160",
+    "wabersich2021.pdf": "f1604802bf91f0eb672ca04b7772eee536dfccebd4a42072456130ba74fe8f52",
+    "singletary2020.pdf": "2e290c0d10c6e18e0b1bfbb896f81a11f462e02b90457b682b8ef5fc61eba268"
+  }
+}
