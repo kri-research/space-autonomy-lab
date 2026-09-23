@@ -1,0 +1,4231 @@
+[
+  {
+    "adapter_s": 0.007108124904334545,
+    "adapter_uses_truth": false,
+    "case": "midpoint_known",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 2.5,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 2.5
+        },
+        {
+          "clearance_m": 70.5,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 70.14
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 9.701612604547394,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 9.698048248111752
+        },
+        {
+          "clearance_m": 9.701612604547394,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 9.698048248111752
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": [
+          -3.599676015036616e-18,
+          2.008241398816603e-15
+        ],
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": 6.4888028933953405e-12,
+              "action_norm": 2.008244624936982e-15,
+              "backend_status": "Solved",
+              "checked_feasible": true,
+              "component": "approach",
+              "cover_step_s": 1.0,
+              "dual_objective": -6.488802893395331e-12,
+              "dual_residual": 2.31771193188418e-11,
+              "initial_h_lower": [
+                2.4999999999999853,
+                67.49999999999999,
+                9.749999999999998,
+                9.749999999999998
+              ],
+              "initial_psi1_lower": [
+                0.21999999999999933,
+                2.5799999999999983,
+                0.37799999999999984,
+                0.37799999999999984
+              ],
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 7,
+              "nonfinite_backend_metrics": false,
+              "objective": 1.0086610074846476e-26,
+              "optimality_residual_check": true,
+              "primal_residual": 4.059318320787412e-12,
+              "psi2_lower": [
+                0.019949323965359707,
+                0.19873643325944762,
+                0.026689008904861082,
+                0.02728976431754648
+              ],
+              "solver_s": 6.3876e-05,
+              "solver_status": "optimal",
+              "status": "barrier_domain_valid"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -505.25000000000057
+              ],
+              "initial_psi1_lower": [
+                -18.410000000000032
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "component": "approach",
+          "cpu_s": 0.019438999999999984,
+          "deadline_exceeded": false,
+          "guarantee": "one_step_comparison_principle; continued protection requires persistent feasibility",
+          "objective": 1.00826161839707e-26,
+          "setup_wall_s": 0.006177791045047343,
+          "wall_s": 0.019637000048533082
+        },
+        "policy_wall_s": 0.01965254091192037,
+        "protected": true,
+        "separate_prefix_check": {
+          "action": [
+            "-4672646616154447/1298074214633706907132624082305024",
+            "1272874207306523/633825300114114700748351602688"
+          ],
+          "all_terminal_members": false,
+          "end_after_measurement_s": "1",
+          "hypotheses": [
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  0.00013576398395193605,
+                  0.000135763983951937
+                ],
+                [
+                  -97.38000010239934,
+                  -97.38000010239911
+                ],
+                [
+                  0.00027152793894110404,
+                  0.00027152793894110556
+                ],
+                [
+                  0.1199996928023135,
+                  0.11999969280231373
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            }
+          ],
+          "information_sha256": "2899be1529082efc0e9cfa0a14313fb7699d75db1b491894f21b9bec0cc17124",
+          "model": "hcw",
+          "recovery_status": "unassessed",
+          "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+          "status": "certified_common_prefix"
+        },
+        "setup_s": 0.006177791045047343,
+        "status": "robust_sampled_barrier",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": [
+          -6.669358057535565e-12,
+          9.855937140430235e-11
+        ],
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.0423432705749423e-07,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 8,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.3379248143042261,
+              "solver_s": 0.008988084,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": 4.4974075264133325e-10,
+              "backend_status": "Solved",
+              "dual_objective": 1.01850998449896e-06,
+              "dual_residual": 6.569796890757543e-12,
+              "dynamic_max_abs": 1.8168383464356452e-12,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 20,
+              "max_tightened_constraint_residual": -1.2054097807903124e-07,
+              "nonfinite_backend_metrics": false,
+              "objective": 1.0189597252516014e-06,
+              "optimality_residual_check": true,
+              "passed": true,
+              "primal_residual": 6.672671566778419e-15,
+              "solver_s": 0.015004624,
+              "status": "optimal",
+              "switch": 90,
+              "terminal_residual": -0.0004021600928589464
+            },
+            {
+              "absolute_duality_gap": 9.840806594654716e-11,
+              "backend_status": "Solved",
+              "dual_objective": 2.553868020588281e-07,
+              "dual_residual": 1.439211284791726e-12,
+              "dynamic_max_abs": 4.263256414560601e-14,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 14,
+              "max_tightened_constraint_residual": -7.80002034739769e-06,
+              "nonfinite_backend_metrics": false,
+              "objective": 2.5548521012477463e-07,
+              "optimality_residual_check": true,
+              "passed": true,
+              "primal_residual": 2.3394148882405595e-15,
+              "solver_s": 0.00964525,
+              "status": "optimal",
+              "switch": 135,
+              "terminal_residual": -7.80002034739769e-06
+            },
+            {
+              "absolute_duality_gap": 4.8248232176703e-10,
+              "backend_status": "Solved",
+              "dual_objective": 1.6456237199387406e-07,
+              "dual_residual": 4.268108999876288e-12,
+              "dynamic_max_abs": 1.1368683772161603e-13,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 13,
+              "max_tightened_constraint_residual": -1.2799868055251578e-05,
+              "nonfinite_backend_metrics": false,
+              "objective": 1.650448543156411e-07,
+              "optimality_residual_check": true,
+              "passed": true,
+              "primal_residual": 5.909948791753855e-16,
+              "solver_s": 0.008546417,
+              "status": "optimal",
+              "switch": 179,
+              "terminal_residual": -1.2799868055251578e-05
+            }
+          ],
+          "cpu_s": 0.04857100000000003,
+          "deadline_exceeded": false,
+          "global_nonconvex_optimum_claimed": false,
+          "numerical_implementation_not_machine_proved": true,
+          "objective": 1.6504485431564106e-07,
+          "searched_all_declared_subproblems": true,
+          "setup_wall_s": 0.049046083935536444,
+          "switch": 179,
+          "terminal_radius": 2.8337058751854593e-07,
+          "wall_s": 0.049599000019952655
+        },
+        "policy_wall_s": 0.04960833303630352,
+        "protected": true,
+        "separate_prefix_check": {
+          "action": [
+            "-8256265375753845/1237940039285380274899124224",
+            "7625662006761527/77371252455336267181195264"
+          ],
+          "all_terminal_members": false,
+          "end_after_measurement_s": "1",
+          "hypotheses": [
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  0.00013576398065442735,
+                  0.00013576398065442828
+                ],
+                [
+                  -97.38000010235005,
+                  -97.38000010234983
+                ],
+                [
+                  0.0002715279323832555,
+                  0.000271527932383257
+                ],
+                [
+                  0.11999969290087831,
+                  0.11999969290087854
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            }
+          ],
+          "information_sha256": "2899be1529082efc0e9cfa0a14313fb7699d75db1b491894f21b9bec0cc17124",
+          "model": "hcw",
+          "recovery_status": "unassessed",
+          "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+          "status": "certified_common_prefix"
+        },
+        "setup_s": 0.049046083935536444,
+        "status": "feasible_predictive_plan",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      0.0,
+      0.0,
+      0.0,
+      1.3877787807814457e-17
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.00036320905201137066,
+    "adapter_uses_truth": false,
+    "case": "hold_bounded",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 69.99,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 69.98997493734335
+        },
+        {
+          "clearance_m": 2.99,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 2.9899749373433586
+        },
+        {
+          "clearance_m": 9.99,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 9.989974937343359
+        },
+        {
+          "clearance_m": 9.99,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 9.989974937343359
+        },
+        {
+          "clearance_m": 2.974166161537658,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.9741361288626296
+        },
+        {
+          "clearance_m": 2.974166161537658,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.9741361288626296
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": [
+          1.8269252128050953e-30,
+          0.0
+        ],
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                69.98999999999998,
+                -0.010000000000005118,
+                2.9889999999999985,
+                2.9889999999999985
+              ],
+              "initial_psi1_lower": [
+                2.7985999999999986,
+                -0.0014000000000002051,
+                0.11845999999999991,
+                0.11845999999999991
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "absolute_duality_gap": 1.4146633586020678e-13,
+              "action_norm": 1.8269252128050953e-30,
+              "backend_status": "Solved",
+              "checked_feasible": true,
+              "component": "hold",
+              "cover_step_s": 1.0,
+              "dual_objective": -1.4146633586020678e-13,
+              "dual_residual": 1.0478618969822064e-12,
+              "initial_h_lower": [
+                0.9999638888888887
+              ],
+              "initial_psi1_lower": [
+                0.03999133333333331
+              ],
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 8,
+              "nonfinite_backend_metrics": false,
+              "objective": 8.347184808954236e-57,
+              "optimality_residual_check": true,
+              "primal_residual": 4.520802714643025e-13,
+              "psi2_lower": [
+                0.0028388066535281987
+              ],
+              "solver_s": 5.0584e-05,
+              "solver_status": "optimal",
+              "status": "barrier_domain_valid"
+            }
+          ],
+          "component": "hold",
+          "cpu_s": 0.005410000000000137,
+          "deadline_exceeded": false,
+          "guarantee": "one_step_comparison_principle; continued protection requires persistent feasibility",
+          "objective": 8.344139332957357e-57,
+          "setup_wall_s": 0.0053931670263409615,
+          "wall_s": 0.005513209034688771
+        },
+        "policy_wall_s": 0.005528750014491379,
+        "protected": true,
+        "separate_prefix_check": {
+          "action": [
+            "2607474794722417/1427247692705959881058285969449495136382746624",
+            "0"
+          ],
+          "all_terminal_members": true,
+          "end_after_measurement_s": "1",
+          "hypotheses": [
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  -0.011026170935479083,
+                  0.011026170935479083
+                ],
+                [
+                  -30.011026151102122,
+                  -29.988973848897878
+                ],
+                [
+                  -0.0010523622594698823,
+                  0.0010523622594698823
+                ],
+                [
+                  -0.0010523219511546133,
+                  0.0010523219511546133
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            }
+          ],
+          "information_sha256": "097ae1f3eed0be93b573aeebdcacfbf26661c152aabe80ef287784f67586e130",
+          "model": "hcw",
+          "recovery_status": "terminal_membership_needs_resumed_baseline_assumptions",
+          "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+          "status": "certified_common_prefix"
+        },
+        "setup_s": 0.0053931670263409615,
+        "status": "robust_sampled_barrier",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": [
+          0.0,
+          0.0
+        ],
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": 1.4182698745068975e-11,
+              "backend_status": "Solved",
+              "dual_objective": -1.4182698745068975e-11,
+              "dual_residual": 1.8838223479355478e-13,
+              "dynamic_max_abs": 0.0,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 8,
+              "max_tightened_constraint_residual": -0.011986856379553731,
+              "nonfinite_backend_metrics": false,
+              "objective": 0.0,
+              "optimality_residual_check": true,
+              "passed": true,
+              "primal_residual": 1.5668776775932403e-14,
+              "solver_s": 0.005915541,
+              "status": "optimal",
+              "switch": 0,
+              "terminal_residual": -0.011986856379553731
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.5771416042053157e-15,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 13,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.001244159203238256,
+              "solver_s": 0.011004084,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.8866521206424282e-15,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 13,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.0011741777403581717,
+              "solver_s": 0.01066621,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 6.90425874278378e-14,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 12,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.0008569865141063416,
+              "solver_s": 0.009441418,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.04295300000000002,
+          "deadline_exceeded": false,
+          "global_nonconvex_optimum_claimed": false,
+          "numerical_implementation_not_machine_proved": true,
+          "objective": 0.0,
+          "searched_all_declared_subproblems": true,
+          "setup_wall_s": 0.042887625051662326,
+          "switch": 0,
+          "terminal_radius": 0.06300814362044627,
+          "wall_s": 0.04373145801946521
+        },
+        "policy_wall_s": 0.04374224995262921,
+        "protected": true,
+        "separate_prefix_check": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "all_terminal_members": true,
+          "end_after_measurement_s": "1",
+          "hypotheses": [
+            {
+              "ambiguous_intervals": 0,
+              "components": {
+                "collision_free": "satisfied",
+                "containment": "satisfied",
+                "keep_out_free": "satisfied"
+              },
+              "enclosure_final": [
+                [
+                  -0.011026170935479083,
+                  0.011026170935479083
+                ],
+                [
+                  -30.011026151102122,
+                  -29.988973848897878
+                ],
+                [
+                  -0.0010523622594698823,
+                  0.0010523622594698823
+                ],
+                [
+                  -0.0010523219511546133,
+                  0.0010523219511546133
+                ]
+              ],
+              "range_evaluations": 4,
+              "reason": null,
+              "status": "validated_containment"
+            }
+          ],
+          "information_sha256": "097ae1f3eed0be93b573aeebdcacfbf26661c152aabe80ef287784f67586e130",
+          "model": "hcw",
+          "recovery_status": "terminal_membership_needs_resumed_baseline_assumptions",
+          "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+          "status": "certified_common_prefix"
+        },
+        "setup_s": 0.042887625051662326,
+        "status": "feasible_predictive_plan",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      0.01,
+      0.010000000000001563,
+      0.001,
+      0.001
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003145829541608691,
+    "adapter_uses_truth": false,
+    "case": "outward_boundary",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": false,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 73.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 73.0
+        },
+        {
+          "clearance_m": 0.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": -0.36
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.686600413566971,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6830360571313276
+        },
+        {
+          "clearance_m": 2.686600413566971,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6830360571313276
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                72.99999999999999,
+                -3.0000000000000004,
+                2.6999999999999993,
+                2.6999999999999993
+              ],
+              "initial_psi1_lower": [
+                3.0399999999999987,
+                -0.24000000000000007,
+                0.09599999999999993,
+                0.09599999999999993
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -1.1102230246251567e-15
+              ],
+              "initial_psi1_lower": [
+                -0.08000000000000013
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.0003069999999998352,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.005987999960780144,
+          "wall_s": 0.0003072500694543123
+        },
+        "policy_wall_s": 0.0003124589566141367,
+        "protected": false,
+        "setup_s": 0.005987999960780144,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 6.391671389699373e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 15,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.0286879481767147,
+              "solver_s": 0.013643455,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.3228995613604454e-09,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 11,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.09453221687674998,
+              "solver_s": 0.010933999,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.6910277312774024e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 11,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.10970208368990572,
+              "solver_s": 0.010698374,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.06541732153331e-11,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 11,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.0679444995418345,
+              "solver_s": 0.010633999,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.05200500000000008,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.04642420797608793,
+          "wall_s": 0.052599707967601717
+        },
+        "policy_wall_s": 0.0526076250243932,
+        "protected": false,
+        "setup_s": 0.04642420797608793,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      0.0,
+      0.0,
+      0.0,
+      1.3877787807814457e-17
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0006417090771719813,
+    "adapter_uses_truth": false,
+    "case": "opposed_radial",
+    "incoming_exact_hypotheses": 2,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 30.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 30.0
+        },
+        {
+          "clearance_m": 43.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 43.0
+        },
+        {
+          "clearance_m": 3.012,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 3.0020000000000002
+        },
+        {
+          "clearance_m": 16.988,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 16.988
+        },
+        {
+          "clearance_m": 0.01194044628251987,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.002039456183509968
+        },
+        {
+          "clearance_m": 13.918580216657329,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 13.918580216657329
+        },
+        {
+          "clearance_m": 30.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 30.0
+        },
+        {
+          "clearance_m": 43.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 43.0
+        },
+        {
+          "clearance_m": 16.988,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 16.988
+        },
+        {
+          "clearance_m": 3.012,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 3.0020000000000002
+        },
+        {
+          "clearance_m": 13.918580216657329,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 13.918580216657329
+        },
+        {
+          "clearance_m": 0.01194044628251987,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 0.002039456183509968
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.4159747883677483e-06,
+        "protected": false,
+        "setup_s": 0.005221083993092179,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.7415964975953102e-05,
+        "protected": false,
+        "setup_s": 0.04624620801769197,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      6.988,
+      0.0,
+      0.02,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.00037545792292803526,
+    "adapter_uses_truth": false,
+    "case": "three_face_conflict",
+    "incoming_exact_hypotheses": 3,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 0.00095,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 0.000925
+        },
+        {
+          "clearance_m": 72.99905,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 72.99905
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        },
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 2,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 2,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 2,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 2,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 2,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 2,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.5830307751893997e-06,
+        "protected": false,
+        "setup_s": 0.005064375000074506,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.40840420499444e-05,
+        "protected": false,
+        "setup_s": 0.042213000007905066,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      7.99905,
+      9.999525000000006,
+      0.001,
+      0.0005
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0004526670090854168,
+    "adapter_uses_truth": false,
+    "case": "correlated_union",
+    "incoming_exact_hypotheses": 2,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 69.9,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 69.9
+        },
+        {
+          "clearance_m": 3.1,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 3.1
+        },
+        {
+          "clearance_m": 7.1,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 7.1
+        },
+        {
+          "clearance_m": 12.9,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 12.9
+        },
+        {
+          "clearance_m": 0.10945409092309881,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.10945409092309881
+        },
+        {
+          "clearance_m": 5.880669794141037,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 5.880669794141037
+        },
+        {
+          "clearance_m": 72.9,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.9
+        },
+        {
+          "clearance_m": 0.1,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.1
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.696550785469071,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.696550785469071
+        },
+        {
+          "clearance_m": 2.696550785469071,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.696550785469071
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.708992153406143e-06,
+        "protected": false,
+        "setup_s": 0.0059046660317108035,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.4249933883547783e-05,
+        "protected": false,
+        "setup_s": 0.054435792029835284,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      1.4500000000000002,
+      1.5000000000000036,
+      0.0,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.00039408402517437935,
+    "adapter_uses_truth": false,
+    "case": "outer_geometry_false_safe",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 71.5,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 71.5
+        },
+        {
+          "clearance_m": 1.5,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 1.5
+        },
+        {
+          "clearance_m": 7.6,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 7.6
+        },
+        {
+          "clearance_m": 12.4,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 12.4
+        },
+        {
+          "clearance_m": 0.44776673559449515,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.44776673559449515
+        },
+        {
+          "clearance_m": 5.223945248602443,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 5.223945248602443
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                71.49999999999999,
+                -1.5000000000000002,
+                0.4499999999999979,
+                5.249999999999997
+              ],
+              "initial_psi1_lower": [
+                2.859999999999999,
+                -0.06000000000000002,
+                0.017999999999999912,
+                0.20999999999999988
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -0.6900000000000033
+              ],
+              "initial_psi1_lower": [
+                -0.027600000000000135
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.000280000000000058,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.00525562500115484,
+          "wall_s": 0.00027966592460870743
+        },
+        "policy_wall_s": 0.00028408400248736143,
+        "protected": false,
+        "setup_s": 0.00525562500115484,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 8.749545657252758e-12,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 12,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.15454993166221195,
+              "solver_s": 0.012672127,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.7037580091912536e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.12335952654655015,
+              "solver_s": 0.00904554,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.1945534497128056e-11,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.05264333170611699,
+              "solver_s": 0.011012917,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.905493743700114e-11,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.05902698541642956,
+              "solver_s": 0.009795625,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.04833200000000004,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.0613772920332849,
+          "wall_s": 0.04983208398334682
+        },
+        "policy_wall_s": 0.04983937507495284,
+        "protected": false,
+        "setup_s": 0.0613772920332849,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      4.440892098500626e-16,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "case": "compound",
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.965,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.965
+        },
+        {
+          "clearance_m": 0.031,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.02255
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6896013654902853
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6896013654902853
+        }
+      ]
+    },
+    "not_a_baseline_failure": true,
+    "status": "unsupported_native_actuation_bounds"
+  },
+  {
+    "adapter_s": 0.008717624936252832,
+    "adapter_uses_truth": false,
+    "case": "single_age",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.967,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.967
+        },
+        {
+          "clearance_m": 0.033,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.029400000000000003
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6898483927303074
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6898483927303074
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                72.97899998976003,
+                -2.9789999897601125,
+                2.7020864246255925,
+                2.702113577422383
+              ],
+              "initial_psi1_lower": [
+                2.9311599688706313,
+                -0.13115996887063572,
+                0.10685630726310644,
+                0.10691169896276628
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                0.0139510067327252
+              ],
+              "initial_psi1_lower": [
+                -0.007385939551216314
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.00032499999999968665,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.008583625080063939,
+          "wall_s": 0.0003246660344302654
+        },
+        "policy_wall_s": 0.0003288340521976352,
+        "protected": false,
+        "setup_s": 0.008583625080063939,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": 1.2081336452085534e-10,
+              "backend_status": "AlmostSolved",
+              "dual_objective": 0.004510664220423194,
+              "dual_residual": 7.272830919026404e-11,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 17,
+              "nonfinite_backend_metrics": false,
+              "objective": 0.004510664341236558,
+              "optimality_residual_check": false,
+              "primal_residual": 1.154219884388367e-08,
+              "solver_s": 0.014488665,
+              "status": "optimal_inaccurate",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 5.44031103788031e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.08938518608493068,
+              "solver_s": 0.012366748,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.505077488388445e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07773597132221081,
+              "solver_s": 0.009566085,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.4739807382516417e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07131423290878539,
+              "solver_s": 0.009560042,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.050143999999999966,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.05490279197692871,
+          "wall_s": 0.05283991701435298
+        },
+        "policy_wall_s": 0.052848874940536916,
+        "protected": false,
+        "setup_s": 0.05490279197692871,
+        "status": "no_previous_feasible_plan",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      3.8963515573697816e-20,
+      3.197442310920451e-14,
+      5.759824041329242e-20,
+      1.5612511283791264e-17
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.004455790971405804,
+    "adapter_uses_truth": false,
+    "case": "single_delay",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.967,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.967
+        },
+        {
+          "clearance_m": 0.033,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.029400000000000003
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6898483927303074
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6898483927303074
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                72.97899998976003,
+                -2.9789999897601125,
+                2.7020864246255925,
+                2.702113577422383
+              ],
+              "initial_psi1_lower": [
+                2.9311599688706313,
+                -0.13115996887063572,
+                0.10685630726310644,
+                0.10691169896276628
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                0.0139510067327252
+              ],
+              "initial_psi1_lower": [
+                -0.007385939551216314
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.004880999999999691,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.0050905829994007945,
+          "wall_s": 0.004918541060760617
+        },
+        "policy_wall_s": 0.004928583046421409,
+        "protected": false,
+        "setup_s": 0.0050905829994007945,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": 1.2081336452085534e-10,
+              "backend_status": "AlmostSolved",
+              "dual_objective": 0.004510664220423194,
+              "dual_residual": 7.272830919026404e-11,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 17,
+              "nonfinite_backend_metrics": false,
+              "objective": 0.004510664341236558,
+              "optimality_residual_check": false,
+              "primal_residual": 1.154219884388367e-08,
+              "solver_s": 0.012092914,
+              "status": "optimal_inaccurate",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 5.44031103788031e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.08938518608493068,
+              "solver_s": 0.009361374,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.505077488388445e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07773597132221081,
+              "solver_s": 0.009379292,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.4739807382516417e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07131423290878539,
+              "solver_s": 0.009417041,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.05078300000000002,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.04447800002526492,
+          "wall_s": 0.050961875007487833
+        },
+        "policy_wall_s": 0.05097004200797528,
+        "protected": false,
+        "setup_s": 0.04447800002526492,
+        "status": "no_previous_feasible_plan",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      3.8963515573697816e-20,
+      3.197442310920451e-14,
+      5.759824041329242e-20,
+      1.5612511283791264e-17
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.00036912492942065,
+    "adapter_uses_truth": false,
+    "case": "single_error",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.965,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.965
+        },
+        {
+          "clearance_m": 0.031,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.026775
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6896431971734533
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6896431971734533
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                72.96499999999997,
+                -2.969000000000005,
+                2.7030999999999987,
+                2.7030999999999987
+              ],
+              "initial_psi1_lower": [
+                2.9295999999999984,
+                -0.13176000000000027,
+                0.10682399999999993,
+                0.10682399999999993
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                0.020559888888884933
+              ],
+              "initial_psi1_lower": [
+                -0.007754715555555738
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.0004340000000002675,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.005662082927301526,
+          "wall_s": 0.000447375001385808
+        },
+        "policy_wall_s": 0.0004544999683275819,
+        "protected": false,
+        "setup_s": 0.005662082927301526,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": 1.561124285398563e-10,
+              "backend_status": "AlmostSolved",
+              "dual_objective": 0.06482815128722802,
+              "dual_residual": 1.2215206827854053e-11,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 19,
+              "nonfinite_backend_metrics": false,
+              "objective": 0.06482815144334045,
+              "optimality_residual_check": false,
+              "primal_residual": 7.010209496951026e-08,
+              "solver_s": 0.014307377,
+              "status": "optimal_inaccurate",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 5.374356010327716e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.08932024985265624,
+              "solver_s": 0.010096708,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.4806589528938364e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.0776860083325166,
+              "solver_s": 0.009892501,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.4745107213014375e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07127801596861144,
+              "solver_s": 0.010156086,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.05035400000000001,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.06421616696752608,
+          "wall_s": 0.05171554198022932
+        },
+        "policy_wall_s": 0.05172358301933855,
+        "protected": false,
+        "setup_s": 0.06421616696752608,
+        "status": "no_previous_feasible_plan",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      0.0,
+      0.0020000000000024443,
+      0.0,
+      0.0010000000000000009
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "case": "single_authority",
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.967,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.967
+        },
+        {
+          "clearance_m": 0.033,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.025800000000000003
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.689812749165951
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.689812749165951
+        }
+      ]
+    },
+    "not_a_baseline_failure": true,
+    "status": "unsupported_native_actuation_bounds"
+  },
+  {
+    "case": "compound_without_age",
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.965,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.965
+        },
+        {
+          "clearance_m": 0.031,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.02255
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6896013654902853
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6896013654902853
+        }
+      ]
+    },
+    "not_a_baseline_failure": true,
+    "status": "unsupported_native_actuation_bounds"
+  },
+  {
+    "case": "compound_without_delay",
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.965,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.965
+        },
+        {
+          "clearance_m": 0.031,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.02255
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6896013654902853
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6896013654902853
+        }
+      ]
+    },
+    "not_a_baseline_failure": true,
+    "status": "unsupported_native_actuation_bounds"
+  },
+  {
+    "case": "compound_without_error",
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.967,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.967
+        },
+        {
+          "clearance_m": 0.033,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.025800000000000003
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.689812749165951
+        },
+        {
+          "clearance_m": 2.689884036294664,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.689812749165951
+        }
+      ]
+    },
+    "not_a_baseline_failure": true,
+    "status": "unsupported_native_actuation_bounds"
+  },
+  {
+    "adapter_s": 0.01275579200591892,
+    "adapter_uses_truth": false,
+    "case": "compound_without_authority_loss",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 72.965,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 72.965
+        },
+        {
+          "clearance_m": 0.031,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 0.026775
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 2.6896431971734533
+        },
+        {
+          "clearance_m": 2.689685028856622,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 2.6896431971734533
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                72.98699991125392,
+                -2.9949999249073262,
+                2.700441176452933,
+                2.7005497876053393
+              ],
+              "initial_psi1_lower": [
+                2.930479863331165,
+                -0.1327998843572117,
+                0.1066588272753461,
+                0.10677178282750818
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                0.0033306046686272235
+              ],
+              "initial_psi1_lower": [
+                -0.00851892458152455
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.004698999999999565,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.00486258405726403,
+          "wall_s": 0.004704917082563043
+        },
+        "policy_wall_s": 0.004712791997008026,
+        "protected": false,
+        "setup_s": 0.00486258405726403,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.6165630124381836e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 18,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.004029588628503967,
+              "solver_s": 0.014604582,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 5.293475448681993e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.08999841295442294,
+              "solver_s": 0.009131791,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.4392099859065603e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07829105173699022,
+              "solver_s": 0.00958979,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.476342390669775e-10,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 10,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.07184267968780678,
+              "solver_s": 0.009215168,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.05252499999999927,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.044938707957044244,
+          "wall_s": 0.05274062498938292
+        },
+        "policy_wall_s": 0.05275058303959668,
+        "protected": false,
+        "setup_s": 0.044938707957044244,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      4.525480130420483e-06,
+      0.004000006826689884,
+      4.5254936464127635e-06,
+      0.0010000102399546507
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003587920218706131,
+    "adapter_uses_truth": false,
+    "case": "three_face_single_0",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 0.00095,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 0.000925
+        },
+        {
+          "clearance_m": 72.99905,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 72.99905
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                0.0009499999999462715,
+                69.99904999999997,
+                9.999904999999996,
+                9.999904999999996
+              ],
+              "initial_psi1_lower": [
+                -0.0009620000000021499,
+                2.800961999999998,
+                0.40009619999999974,
+                0.40009619999999974
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -543.4296667669457
+              ],
+              "initial_psi1_lower": [
+                -21.75274201512228
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.00028200000000033754,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.004573915968649089,
+          "wall_s": 0.00028079201001673937
+        },
+        "policy_wall_s": 0.00028520904015749693,
+        "protected": false,
+        "setup_s": 0.004573915968649089,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.643859682142433e-08,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 8,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.33328102876868104,
+              "solver_s": 0.007480125,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.094427677736022e-15,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 15,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.00017260505132096638,
+              "solver_s": 0.011169996,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.1138238633521937e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 14,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.202198020473634e-05,
+              "solver_s": 0.009594918,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 9.70914075530403e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 13,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.8547663204636e-05,
+              "solver_s": 0.009194205,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.04286600000000007,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.0401719999499619,
+          "wall_s": 0.042887625051662326
+        },
+        "policy_wall_s": 0.04289616702590138,
+        "protected": false,
+        "setup_s": 0.0401719999499619,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      0.0,
+      1.4210854715202004e-14,
+      0.0,
+      2.168404344971009e-19
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003802500432357192,
+    "adapter_uses_truth": false,
+    "case": "three_face_single_1",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                19.999999999999982,
+                49.99999999999999,
+                0.0009499999999960095,
+                15.999049999999995
+              ],
+              "initial_psi1_lower": [
+                0.7999999999999992,
+                1.9999999999999996,
+                -0.0009620000000001604,
+                0.6409619999999996
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -292.7739780034032
+              ],
+              "initial_psi1_lower": [
+                -11.714958645136132
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.00030700000000027927,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.004566874937154353,
+          "wall_s": 0.00030541594605892897
+        },
+        "policy_wall_s": 0.0003101250622421503,
+        "protected": false,
+        "setup_s": 0.004566874937154353,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.6115158065958873e-07,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 8,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.5073784570334345,
+              "solver_s": 0.00712346,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 6.230956768127826e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 14,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.00010155808402836888,
+              "solver_s": 0.010523211,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.323586144376138e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 13,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.150778736773093e-05,
+              "solver_s": 0.009481751,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.847430580117824e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 14,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 9.146269170063969e-05,
+              "solver_s": 0.009983875,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.042747999999999564,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.04125866701360792,
+          "wall_s": 0.04303570801857859
+        },
+        "policy_wall_s": 0.04304304101970047,
+        "protected": false,
+        "setup_s": 0.04125866701360792,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      8.881784197001252e-16,
+      0.0,
+      2.168404344971009e-19,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003325840225443244,
+    "adapter_uses_truth": false,
+    "case": "three_face_single_2",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                19.999999999999982,
+                49.99999999999999,
+                15.999049999999995,
+                0.0009499999999951213
+              ],
+              "initial_psi1_lower": [
+                0.7999999999999992,
+                1.9999999999999996,
+                0.6409619999999996,
+                -0.0009620000000001957
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -292.7739780034032
+              ],
+              "initial_psi1_lower": [
+                -11.714958645136132
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.0002959999999996299,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.004687000066041946,
+          "wall_s": 0.00029624998569488525
+        },
+        "policy_wall_s": 0.000300041981972754,
+        "protected": false,
+        "setup_s": 0.004687000066041946,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 3.622223295453289e-07,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 8,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.5067779523675822,
+              "solver_s": 0.007397002,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 6.677870155909526e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 14,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.00010401034279442665,
+              "solver_s": 0.009932914,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.2707593813227954e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 13,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.211473211708062e-05,
+              "solver_s": 0.009291874,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.920404355093672e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 14,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 9.102062357555382e-05,
+              "solver_s": 0.009764002,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.04161400000000004,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.04009104205761105,
+          "wall_s": 0.041637832997366786
+        },
+        "policy_wall_s": 0.041648250073194504,
+        "protected": false,
+        "setup_s": 0.04009104205761105,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      8.881784197001252e-16,
+      0.0,
+      2.168404344971009e-19,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003619999624788761,
+    "adapter_uses_truth": false,
+    "case": "three_face_pair_01",
+    "incoming_exact_hypotheses": 2,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 0.00095,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 0.000925
+        },
+        {
+          "clearance_m": 72.99905,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 72.99905
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.6249402910470963e-06,
+        "protected": false,
+        "setup_s": 0.00460741703864187,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.4874967746436596e-05,
+        "protected": false,
+        "setup_s": 0.0397522080456838,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      3.999525,
+      9.999525000000006,
+      0.0005,
+      0.0005
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003717920044437051,
+    "adapter_uses_truth": false,
+    "case": "three_face_pair_02",
+    "incoming_exact_hypotheses": 2,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 0.00095,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 0.000925
+        },
+        {
+          "clearance_m": 72.99905,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 72.99905
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 10.0,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 10.0
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 9.950277373566822,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 9.950277373566822
+        },
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.1669624149799347e-06,
+        "protected": false,
+        "setup_s": 0.00457170803565532,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.3916054740548134e-05,
+        "protected": false,
+        "setup_s": 0.039124540984630585,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      3.999525,
+      9.999525000000006,
+      0.0005,
+      0.0005
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003595830639824271,
+    "adapter_uses_truth": false,
+    "case": "three_face_pair_12",
+    "incoming_exact_hypotheses": 2,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        },
+        {
+          "clearance_m": 20.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 20.0
+        },
+        {
+          "clearance_m": 53.0,
+          "hypothesis": 1,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 53.0
+        },
+        {
+          "clearance_m": 17.99905,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 17.99905
+        },
+        {
+          "clearance_m": 2.00095,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 2.000925
+        },
+        {
+          "clearance_m": 15.919649758029129,
+          "hypothesis": 1,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 15.919649758029129
+        },
+        {
+          "clearance_m": 0.0009452853306994897,
+          "hypothesis": 1,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 0.000920532855451965
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 3.5830307751893997e-06,
+        "protected": false,
+        "setup_s": 0.004672916955314577,
+        "status": "uncertified_information",
+        "terminal_domain_valid": false
+      },
+      "predictive": {
+        "command": null,
+        "details": {},
+        "policy_wall_s": 1.525005791336298e-05,
+        "protected": false,
+        "setup_s": 0.04070637503173202,
+        "status": "uncertified_information_or_terminal_bound",
+        "terminal_domain_valid": false
+      }
+    },
+    "native_information_error": [
+      7.99905,
+      0.0,
+      0.001,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003631250001490116,
+    "adapter_uses_truth": false,
+    "case": "opposed_single_0",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 30.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 30.0
+        },
+        {
+          "clearance_m": 43.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 43.0
+        },
+        {
+          "clearance_m": 3.012,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 3.0020000000000002
+        },
+        {
+          "clearance_m": 16.988,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 16.988
+        },
+        {
+          "clearance_m": 0.01194044628251987,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 0.002039456183509968
+        },
+        {
+          "clearance_m": 13.918580216657329,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 13.918580216657329
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                29.999999999999982,
+                39.99999999999999,
+                0.0119999999999969,
+                13.987999999999994
+              ],
+              "initial_psi1_lower": [
+                1.199999999999999,
+                1.5999999999999994,
+                -0.019520000000000134,
+                0.5795199999999996
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -188.98581377777802
+              ],
+              "initial_psi1_lower": [
+                -7.6293125511111235
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.0002990000000000492,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.004677499993704259,
+          "wall_s": 0.0002989169443026185
+        },
+        "policy_wall_s": 0.00030266703106462955,
+        "protected": false,
+        "setup_s": 0.004677499993704259,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.9667000096713455e-08,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 9,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.31144910528382747,
+              "solver_s": 0.009700251,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 6.571536025195683e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 15,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.034637377008244e-05,
+              "solver_s": 0.011752749,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.0979753486167983e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 16,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.110069840971571e-05,
+              "solver_s": 0.011604293,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 9.306659809913474e-17,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 16,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 6.652817589996737e-05,
+              "solver_s": 0.013144831,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.05121399999999987,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.04552804201375693,
+          "wall_s": 0.05196666601113975
+        },
+        "policy_wall_s": 0.05197733303066343,
+        "protected": false,
+        "setup_s": 0.04552804201375693,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      8.881784197001252e-16,
+      0.0,
+      3.469446951953614e-18,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  },
+  {
+    "adapter_s": 0.0003700830275192857,
+    "adapter_uses_truth": false,
+    "case": "opposed_single_1",
+    "incoming_exact_hypotheses": 1,
+    "individual_stopping_heuristic": {
+      "all_nonnegative": true,
+      "certified_safe": false,
+      "known_omissions": [
+        "orbital coupling",
+        "joint common-command quantifier",
+        "nonconvex region shape",
+        "command queue"
+      ],
+      "scope": "per-hypothesis scalar stopping heuristic, not the exact scalar common-input comparator",
+      "wall_scores": [
+        {
+          "clearance_m": 30.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "-1"
+          ],
+          "score_m": 30.0
+        },
+        {
+          "clearance_m": 43.0,
+          "hypothesis": 0,
+          "normal": [
+            "0",
+            "1"
+          ],
+          "score_m": 43.0
+        },
+        {
+          "clearance_m": 16.988,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "0"
+          ],
+          "score_m": 16.988
+        },
+        {
+          "clearance_m": 3.012,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "0"
+          ],
+          "score_m": 3.0020000000000002
+        },
+        {
+          "clearance_m": 13.918580216657329,
+          "hypothesis": 0,
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "score_m": 13.918580216657329
+        },
+        {
+          "clearance_m": 0.01194044628251987,
+          "hypothesis": 0,
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "score_m": 0.002039456183509968
+        }
+      ]
+    },
+    "methods": {
+      "barrier": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "component": "approach",
+              "initial_h_lower": [
+                29.999999999999982,
+                39.99999999999999,
+                13.987999999999994,
+                0.011999999999996012
+              ],
+              "initial_psi1_lower": [
+                1.199999999999999,
+                1.5999999999999994,
+                0.5795199999999996,
+                -0.019520000000000166
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            },
+            {
+              "component": "hold",
+              "initial_h_lower": [
+                -188.98581377777802
+              ],
+              "initial_psi1_lower": [
+                -7.6293125511111235
+              ],
+              "status": "outside_or_unresolved_barrier_domain"
+            }
+          ],
+          "cpu_s": 0.00030700000000027927,
+          "deadline_exceeded": false,
+          "setup_wall_s": 0.005633041961118579,
+          "wall_s": 0.000312417047098279
+        },
+        "policy_wall_s": 0.00032070802990347147,
+        "protected": false,
+        "setup_s": 0.005633041961118579,
+        "status": "no_feasible_barrier_certificate",
+        "terminal_domain_valid": true
+      },
+      "predictive": {
+        "command": null,
+        "details": {
+          "attempts": [
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.9305851491875976e-08,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 9,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 0.3127976542716772,
+              "solver_s": 0.008990292,
+              "status": "infeasible",
+              "switch": 0
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 2.886603928695565e-17,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 16,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 4.922527669957233e-05,
+              "solver_s": 0.011960335,
+              "status": "infeasible",
+              "switch": 90
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.5458215042387175e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 16,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 8.09799156615006e-05,
+              "solver_s": 0.010770457,
+              "status": "infeasible",
+              "switch": 135
+            },
+            {
+              "absolute_duality_gap": null,
+              "backend_status": "PrimalInfeasible",
+              "dual_objective": null,
+              "dual_residual": 1.4526110638061763e-16,
+              "interface": "CVXPY1.9.2 pinned Clarabel backend cache",
+              "iterations": 16,
+              "nonfinite_backend_metrics": true,
+              "objective": null,
+              "optimality_residual_check": false,
+              "primal_residual": 6.164983875368889e-05,
+              "solver_s": 0.011075538,
+              "status": "infeasible",
+              "switch": 179
+            }
+          ],
+          "cpu_s": 0.04828299999999963,
+          "deadline_exceeded": false,
+          "numerical_implementation_not_machine_proved": true,
+          "setup_wall_s": 0.04160400002729148,
+          "wall_s": 0.048359874985180795
+        },
+        "policy_wall_s": 0.0483677500160411,
+        "protected": false,
+        "setup_s": 0.04160400002729148,
+        "status": "infeasible_declared_schedule_search",
+        "terminal_domain_valid": true
+      }
+    },
+    "native_information_error": [
+      8.881784197001252e-16,
+      0.0,
+      3.469446951953614e-18,
+      0.0
+    ],
+    "scope": "single decision, unchanged native guarantees; prefix availability is not superiority over recovery certification",
+    "status": "evaluated_with_declared_hull_adapter"
+  }
+]

@@ -1,0 +1,478 @@
+[
+  {
+    "case": "opposed_radial",
+    "full_set_recheck": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              7.0080134125923985,
+              7.008013412592414
+            ],
+            [
+              -70.00002263745036,
+              -70.00002263745013
+            ],
+            [
+              0.020026820915316587,
+              0.020026820915316646
+            ],
+            [
+              -4.5285015264015445e-05,
+              -4.528501526401523e-05
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -7.008013412592414,
+              -7.0080134125923985
+            ],
+            [
+              -69.99997736254987,
+              -69.99997736254964
+            ],
+            [
+              -0.020026820915316646,
+              -0.020026820915316587
+            ],
+            [
+              4.528501526401523e-05,
+              4.5285015264015445e-05
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        }
+      ],
+      "information_sha256": "f73755c7b2c48f4088039d1fff7b98371e6ce1fbbc12617bab2813707c0479e9",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "unresolved"
+    },
+    "mean_only": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "0",
+            "0"
+          ],
+          "margin_lower": "-5764607523034235/288230376151711744",
+          "proved": false,
+          "weighted_rhs_upper": "5764607523034235/288230376151711744"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -2.4716525140113564e-39,
+                2.4716525140113564e-39
+              ],
+              [
+                -70.0000000000001,
+                -69.9999999999999
+              ],
+              [
+                -9.764456908360799e-42,
+                9.764456908360799e-42
+              ],
+              [
+                -5.592690467332597e-42,
+                5.592690467332597e-42
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "05095ad546f30432a12acadd6d23148960945b0f9ceec6943a2baf4d9702a536",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.010695707984268665
+    },
+    "shortcut_is_valid": false
+  },
+  {
+    "case": "three_face_conflict",
+    "full_set_recheck": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -1.131366532932817e-06,
+              -1.131366532932809e-06
+            ],
+            [
+              -100.0000499991468,
+              -100.00004999914655
+            ],
+            [
+              -2.2627328245092244e-06,
+              -2.2627328245092112e-06
+            ],
+            [
+              -0.0009999974400192652,
+              -0.0009999974400192616
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              8.000065357847093,
+              8.000065357847113
+            ],
+            [
+              -80.00000114295038,
+              -80.00000114295015
+            ],
+            [
+              0.001030715477596823,
+              0.0010307154775968266
+            ],
+            [
+              -2.2974840193879836e-06,
+              -2.2974840193879718e-06
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "violated",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -8.000065357847113,
+              -8.000065357847093
+            ],
+            [
+              -79.99999885704985,
+              -79.99999885704962
+            ],
+            [
+              -0.0010307154775968266,
+              -0.001030715477596823
+            ],
+            [
+              2.2974840193879718e-06,
+              2.2974840193879836e-06
+            ]
+          ],
+          "range_evaluations": 24,
+          "reason": null,
+          "status": "validated_violation"
+        }
+      ],
+      "information_sha256": "11916092197f633d39013a6acb870fdc243ee28d1e5017f2f444d37e03efb117",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "unresolved"
+    },
+    "mean_only": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "0",
+            "0"
+          ],
+          "margin_lower": "-5764607523034235/288230376151711744",
+          "proved": false,
+          "weighted_rhs_upper": "5764607523034235/288230376151711744"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                -3.7712217764427204e-07,
+                -3.771221776442699e-07
+              ],
+              [
+                -86.66668333304902,
+                -86.6666833330488
+              ],
+              [
+                -7.542442748364076e-07,
+                -7.542442748364041e-07
+              ],
+              [
+                -0.00033333248000642153,
+                -0.00033333248000642066
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "a541d20bb2f2af1bb89de57ac69d3c67820d44d1af17533ab6dd4c8d02193474",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.01204637496266514
+    },
+    "shortcut_is_valid": false
+  },
+  {
+    "case": "correlated_union",
+    "full_set_recheck": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              2.9000055679580985,
+              2.900005567958106
+            ],
+            [
+              -30.100000004199632,
+              -30.100000004199572
+            ],
+            [
+              1.1135915017011495e-05,
+              1.1135915017011553e-05
+            ],
+            [
+              -1.2598804251555613e-08,
+              -1.259880425155553e-08
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        },
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -2.4716525140113564e-39,
+              2.4716525140113564e-39
+            ],
+            [
+              -27.100000000000026,
+              -27.099999999999973
+            ],
+            [
+              -9.764456908360799e-42,
+              9.764456908360799e-42
+            ],
+            [
+              -5.592690467332597e-42,
+              5.592690467332597e-42
+            ]
+          ],
+          "range_evaluations": 4,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "98523e0dad539eaf6337e372b3f8f76a496a1b9de1dc5152143bf349555885fb",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "mean_only": {
+      "action": [
+        "0",
+        "0"
+      ],
+      "attempts": 1,
+      "deadline_exceeded": false,
+      "negative": {
+        "checked": {
+          "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+          "coefficient_residual_upper": [
+            "0",
+            "0"
+          ],
+          "margin_lower": "-5764607523034235/288230376151711744",
+          "proved": false,
+          "weighted_rhs_upper": "5764607523034235/288230376151711744"
+        },
+        "reason": "nonpositive_verified_margin",
+        "status": "unresolved"
+      },
+      "positive": {
+        "action": [
+          "0",
+          "0"
+        ],
+        "all_terminal_members": false,
+        "end_after_measurement_s": "1",
+        "hypotheses": [
+          {
+            "ambiguous_intervals": 0,
+            "components": {
+              "collision_free": "satisfied",
+              "containment": "satisfied",
+              "keep_out_free": "satisfied"
+            },
+            "enclosure_final": [
+              [
+                1.4500027839790492,
+                1.4500027839790528
+              ],
+              [
+                -28.60000000209983,
+                -28.600000002099772
+              ],
+              [
+                5.567957508505748e-06,
+                5.567957508505775e-06
+              ],
+              [
+                -6.299402125777805e-09,
+                -6.299402125777765e-09
+              ]
+            ],
+            "range_evaluations": 4,
+            "reason": null,
+            "status": "validated_containment"
+          }
+        ],
+        "information_sha256": "ae3f2f9f304739d9d6483b36ea205250581d170ab4696c9c4eafc452c6a75729",
+        "model": "hcw",
+        "recovery_status": "unassessed",
+        "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+        "status": "certified_common_prefix"
+      },
+      "search": {
+        "not_certified": true,
+        "status": "proposed_by_relaxation"
+      },
+      "status": "certified_common_prefix",
+      "wall_s": 0.011742542032152414
+    },
+    "shortcut_is_valid": false
+  }
+]

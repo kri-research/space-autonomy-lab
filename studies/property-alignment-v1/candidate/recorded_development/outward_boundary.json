@@ -1,0 +1,76 @@
+{
+  "candidate": {
+    "action": null,
+    "deadline_exceeded": false,
+    "negative": {
+      "active_obligations": [
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "0",
+            "1"
+          ],
+          "origin": [
+            "0",
+            "-27",
+            "0",
+            "3/25"
+          ],
+          "time_after_application": "1",
+          "weight": "6003291040764403/9007199254740992"
+        },
+        {
+          "outer_actuator_box_coordinate": 0,
+          "sign": 1,
+          "weight": "579577417451759/2305843009213693952"
+        },
+        {
+          "outer_actuator_box_coordinate": 1,
+          "sign": -1,
+          "weight": "750411059922417/2251799813685248"
+        }
+      ],
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "131124567220969799/166153499473114484112975882535043072",
+          "6465067536834543/10141204801825835211973625643008"
+        ],
+        "margin_lower": "1218068295077739511141475713668786853/16615349947311448411297588253504307200",
+        "proved": true,
+        "weighted_rhs_upper": "-48722731803109588930042315804201259/664613997892457936451903530140172288"
+      },
+      "information_sha256": "0afbfdd79c47b3fb3da7de5cf04553680a4b014923d997ba1108ac9b06c02410",
+      "model": "hcw",
+      "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+      "status": "proved_no_common_held_command",
+      "weights": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6003291040764403/9007199254740992",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "579577417451759/2305843009213693952",
+        "750411059922417/2251799813685248",
+        "0"
+      ]
+    },
+    "status": "proved_no_common_held_command",
+    "wall_s": 0.0016753750387579203
+  },
+  "case": "outward_boundary",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": null
+}

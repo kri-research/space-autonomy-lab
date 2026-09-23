@@ -1,0 +1,55 @@
+{
+  "schema": "sal-candidate-claims/1",
+  "claims": [
+    {
+      "id": "T6-1",
+      "claim": "The scalar interval formula exactly characterizes shared constant-input continuous containment for the stated bounded-acceleration model.",
+      "status": "analytical_specialization",
+      "evidence": "scalar.py; scalar.json; complete proof in README and local LaTeX",
+      "limit": "Known stopping-distance/set-membership principles; not arbitrary switching or orbital recovery."
+    },
+    {
+      "id": "T6-2",
+      "claim": "A strictly positive residual-aware dual margin certifies absence of a common HCW held command.",
+      "status": "proved_conditional_criterion",
+      "evidence": "affine.py; exact nonnegative rational weight recheck",
+      "limit": "Requires attainable witness origins and sound map enclosures. Nonpositive margin and solver failure remain unresolved; no nonlinear converse."
+    },
+    {
+      "id": "T6-3",
+      "claim": "The selected three-state HCW information set has no common one-second command, although each pair has a validated common prefix and each state has an individually validated recovery.",
+      "status": "checked_concrete_witness",
+      "evidence": "recorded_development/three_face_conflict.json; pair files; recovery files",
+      "limit": "Finite declared observational ambiguity; pairwise prefix feasibility is not pairwise infinite-horizon viability; not operational prevalence or a first general ambiguity theorem."
+    },
+    {
+      "id": "T6-4",
+      "claim": "The symmetric scalar example has recovery deadline 1/4 s and safe-prefix deadline 1/2 s.",
+      "status": "exact_background_viability_specialization",
+      "evidence": "refinement/scalar_recovery.py and recorded_result.json",
+      "limit": "Deterministic scalar plant, exact state revelation and stated recovery controls; added after first development matrix without replacing any outcome."
+    },
+    {
+      "id": "T6-5",
+      "claim": "All 48 selected grid cases and 22 of 24 named cases received a definite prefix or obstruction verdict; one geometric-relaxation ambiguity and one policy-budget miss remain.",
+      "status": "bounded_developmental_observation",
+      "evidence": "recorded_development/summary.json",
+      "limit": "No prevalence, performance guarantee or broad novelty inference. A finite prefix must not be scored as full mission protection."
+    },
+    {
+      "id": "T6-6",
+      "claim": "Existing baseline protected outputs pass the selected independent prefix rechecks.",
+      "status": "native_design_comparison",
+      "evidence": "recorded_development/comparisons.json",
+      "limit": "Different future guarantees and hull conservatism are disclosed. No controller-superiority or theorem-refutation claim."
+    }
+  ],
+  "not_established": [
+    "A new broadly superior controller",
+    "A general orbital blackout-recoverability algorithm",
+    "An operational sensor error bound",
+    "Physical validation",
+    "Protected population-level evaluation"
+  ],
+  "next_research_gate": "Task 07 may evaluate the bounded diagnostic under these exact labels. A claim about full orbital recovery requires a separately defined terminal/invariant continuation argument before its outcome can be frozen."
+}

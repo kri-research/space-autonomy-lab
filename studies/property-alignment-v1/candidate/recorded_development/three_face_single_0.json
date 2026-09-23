@@ -1,0 +1,120 @@
+{
+  "candidate": {
+    "action": [
+      "-5702513617983463/75557863725914323419136",
+      "3691684390457767/36893488147419103232"
+    ],
+    "attempts": 2,
+    "deadline_exceeded": false,
+    "negative": {
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "158438642787035569/1329227995784915872903807060280344576",
+          "59246546893466693/324518553658426726783156020576256"
+        ],
+        "margin_lower": "-2789199125657231936099078184477371177/1063382396627932698323045648224275660800",
+        "proved": false,
+        "weighted_rhs_upper": "111567965026289122031294507586064385/42535295865117307932921825928971026432"
+      },
+      "reason": "nonpositive_verified_margin",
+      "status": "unresolved"
+    },
+    "positive": {
+      "action": [
+        "-5702513617983463/75557863725914323419136",
+        "3691684390457767/36893488147419103232"
+      ],
+      "all_terminal_members": false,
+      "end_after_measurement_s": "1",
+      "hypotheses": [
+        {
+          "ambiguous_intervals": 0,
+          "components": {
+            "collision_free": "satisfied",
+            "containment": "satisfied",
+            "keep_out_free": "satisfied"
+          },
+          "enclosure_final": [
+            [
+              -1.1313665051327362e-06,
+              -1.1313665051327286e-06
+            ],
+            [
+              -99.99999996748673,
+              -99.99999996748649
+            ],
+            [
+              -2.2249966722530914e-06,
+              -2.2249966722530796e-06
+            ],
+            [
+              -0.0008999341341126987,
+              -0.0008999341341126967
+            ]
+          ],
+          "range_evaluations": 18,
+          "reason": null,
+          "status": "validated_containment"
+        }
+      ],
+      "information_sha256": "1e217f8a8ca76de3a0777ac226bfce8036c3cbdef308f5068ea57a36efd5bab8",
+      "model": "hcw",
+      "recovery_status": "unassessed",
+      "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+      "status": "certified_common_prefix"
+    },
+    "search": {
+      "not_certified": true,
+      "status": "proposed_by_relaxation"
+    },
+    "status": "certified_common_prefix",
+    "wall_s": 0.03468316700309515
+  },
+  "case": "three_face_single_0",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": {
+    "action": [
+      "-5702513617983463/75557863725914323419136",
+      "3691684390457767/36893488147419103232"
+    ],
+    "all_terminal_members": false,
+    "end_after_measurement_s": "1",
+    "hypotheses": [
+      {
+        "ambiguous_intervals": 0,
+        "components": {
+          "collision_free": "satisfied",
+          "containment": "satisfied",
+          "keep_out_free": "satisfied"
+        },
+        "enclosure_final": [
+          [
+            -1.1299502195975272e-06,
+            -1.1299502117713172e-06
+          ],
+          [
+            -99.99999996748781,
+            -99.99999996748757
+          ],
+          [
+            -2.222164092685981e-06,
+            -2.2221640763111353e-06
+          ],
+          [
+            -0.0008999341373591618,
+            -0.0008999341373591409
+          ]
+        ],
+        "range_evaluations": 18,
+        "reason": null,
+        "status": "validated_containment"
+      }
+    ],
+    "information_sha256": "1e217f8a8ca76de3a0777ac226bfce8036c3cbdef308f5068ea57a36efd5bab8",
+    "model": "nonlinear",
+    "recovery_status": "unassessed",
+    "scope": "continuous_common_held_input; not an infinite-horizon or floating-feedback theorem",
+    "status": "certified_common_prefix"
+  }
+}

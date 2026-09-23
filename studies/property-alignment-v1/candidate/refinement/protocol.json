@@ -1,0 +1,20 @@
+{
+  "schema": "sal-candidate-analytical-refinement/1",
+  "created_at_utc": "2026-09-23T14:18:53.827061+00:00",
+  "relation_to_first_execution": "Derived after the first development matrix. All original results, including the 1s-budget miss, remain unchanged. No new stochastic or spacecraft comparison is introduced.",
+  "purpose": "Falsify the interpretation of a safe-prefix duration as a recoverability deadline using a complete scalar viability argument.",
+  "declared_cases": [
+    "0",
+    "1/8",
+    "1/4",
+    "2501/10000",
+    "1/2"
+  ],
+  "fixed_parameters": {
+    "position": "9/10",
+    "speed": "1/5",
+    "halfwidth": "1",
+    "authority": "2/5"
+  },
+  "outputs": "five exact symmetric two-path calculations; no retuning of original algorithm; a known viability specialization, not a claimed new law"
+}

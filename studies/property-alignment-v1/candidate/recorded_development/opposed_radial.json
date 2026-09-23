@@ -1,0 +1,102 @@
+{
+  "candidate": {
+    "action": null,
+    "deadline_exceeded": false,
+    "negative": {
+      "active_obligations": [
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "-1",
+            "1/10"
+          ],
+          "origin": [
+            "-1747/250",
+            "-70",
+            "-1/50",
+            "0"
+          ],
+          "time_after_application": "1",
+          "weight": "2144409483505707/4503599627370496"
+        },
+        {
+          "disturbance": [
+            "0",
+            "0"
+          ],
+          "effectiveness": "1",
+          "normal": [
+            "1",
+            "1/10"
+          ],
+          "origin": [
+            "1747/250",
+            "-70",
+            "1/50",
+            "0"
+          ],
+          "time_after_application": "1",
+          "weight": "8578931958815847/18014398509481984"
+        },
+        {
+          "outer_actuator_box_coordinate": 1,
+          "sign": -1,
+          "weight": "3431314466573235/72057594037927936"
+        }
+      ],
+      "checked": {
+        "arithmetic": "exact_rational_recheck_of_outward_ODE_coefficients",
+        "coefficient_residual_upper": [
+          "318595119740147613/324518553658426726783156020576256",
+          "143436639342253581/1298074214633706907132624082305024"
+        ],
+        "margin_lower": "3468163647559341878621738874161961/519229685853482762853049632922009600",
+        "proved": true,
+        "weighted_rhs_upper": "-138726545902374128846347411876569/20769187434139310514121985316880384"
+      },
+      "information_sha256": "f73755c7b2c48f4088039d1fff7b98371e6ce1fbbc12617bab2813707c0479e9",
+      "model": "hcw",
+      "scope": "necessary_conditions_at_attainable_hypotheses; not each-state impossibility",
+      "status": "proved_no_common_held_command",
+      "weights": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2144409483505707/4503599627370496",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "8578931958815847/18014398509481984",
+        "0",
+        "0",
+        "0",
+        "3431314466573235/72057594037927936",
+        "0"
+      ]
+    },
+    "status": "proved_no_common_held_command",
+    "wall_s": 0.0024088750360533595
+  },
+  "case": "opposed_radial",
+  "fixed_pair_action": null,
+  "nonlinear_same_action": null
+}
