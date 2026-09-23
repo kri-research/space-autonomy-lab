@@ -1,0 +1,101 @@
+{
+  "before_protected_execution": true,
+  "calibration_after_review": {
+    "cases": 8,
+    "checkpoint_preserved": true,
+    "forced_timeout_failed": true,
+    "interrupted_started_case_not_rerun": true,
+    "serial_parallel_equal": true
+  },
+  "calibration_final_path": "recorded_calibration/result.json",
+  "candidate_baseline_or_qualification_methods_tuned": false,
+  "corrections": [
+    {
+      "issue": "A failed sufficient mean-action recheck had been named false-safe.",
+      "resolution": "Store full recheck evidence prospectively; legacy mean failures become unresolved unless an actual validated violation or full-set impossibility proves otherwise. Original pilot rows and primary outcomes retained."
+    },
+    {
+      "issue": "Shared processor timing does not establish independent Bernoulli outcomes.",
+      "resolution": "The same conservative numeric width is now derived for the average conditional success probability in fixed reveal order. A fixed generator-probability interpretation additionally requires independent outcomes and is not asserted for hardware timing."
+    },
+    {
+      "issue": "Early initial-membership fixtures inspected the first 32 protected input IDs per stratum.",
+      "resolution": "Retire indices 0 through 31. No qualification/candidate/protected endpoint was executed. Remaining reserve generation occurs only after method choices stop."
+    },
+    {
+      "issue": "Non-atomic receipts and insufficient restart guards.",
+      "resolution": "Exclusive atomic JSON publication, source and full-design hashes, case start markers, run lock, fixed selected denominator, no re-execution of started cases, bounded process watchdogs."
+    },
+    {
+      "issue": "End-to-end worker failure could be mislabeled removable infrastructure noise.",
+      "resolution": "Timeouts and unclassified worker failures remain selected primary failures; no substitution or denominator removal. Qualification process failure blocks selection."
+    }
+  ],
+  "created_at_utc": "2026-09-23T17:38:09.669303+00:00",
+  "final_execution_guard": "One evaluation ID is bound to one private output location; completed selection, case and analysis hashes are rechecked. Synthetic guard tests performed before freeze.",
+  "interpretation": "No software acceptance, physical safety, complete recovery or broad-novelty claim follows from this freeze.",
+  "later_non_scientific_adjustments": "Formatting and explicit timeout/worker-failure status labels after calibration; no candidate action, eligibility rule, primary success or method budget changed. Tests exercise updated labels.",
+  "original_pilot_commit": "bc4f61603a1aa60f86115407167515e36bbe4ad4",
+  "original_pilot_hashes": {
+    "analysis.json": "9032016575c200c987e63c1fbf573e921c3334df38b0928bdcad6d3071c9250e",
+    "cases/interior_pair__00000.json": "80fc7ebe262af2ea67efde2565639463f9919a7ea15574d807c3965983bd64a7",
+    "cases/interior_pair__00001.json": "7045493cc860e6a0a167f4bf7720189a748bdb35384164bb6dbca6ebbbc947b3",
+    "cases/interior_pair__00002.json": "ce846500b64b21972370b4eb68b2fb2926fa1c77f984cdb1df6038d3b491ec06",
+    "cases/interior_pair__00003.json": "223944d1c6e7c67ba8cd6720ca982a308e250dd7eddf5a89064cf5af872ff59d",
+    "cases/interior_pair__00004.json": "d0ad10eb1a68963b8b34f8c6b2352f3ee97b4559cd470508b4f6562e1603ad6f",
+    "cases/interior_pair__00005.json": "60015d2df7eed66ce0a26ba558afcc12d129bb682866863b7dcc12c92224795c",
+    "cases/interior_pair__00006.json": "155b38c87044efcab426471219d3ef164f1109b9f88d1f142dc23dd25b9f1ef1",
+    "cases/interior_pair__00007.json": "b2eae1dcbd27e703bc42d0f8c094aa1f1979f27b2ebf022bd4485bce8649e95f",
+    "cases/interior_pair__00008.json": "00e8840b0957dd7ee76a8cb378808e75ad3bf044a7081f53747dd248e2227453",
+    "cases/interior_pair__00009.json": "9ec58985444c492ac1382faddb2ed7b59ff68f118c7addce3d88916fde14f13c",
+    "cases/interior_pair__00010.json": "4ca9836f0ed2cb07c941b40b0c165603a319d1fa01aac8497abbeb4f660a62ea",
+    "cases/interior_pair__00011.json": "cc6c3495ed24ea48dbbb52d409af899b2f029a10c4d0b4d87bc893888829c3d8",
+    "cases/radial_boundary__00000.json": "1dd159f39dd62cdfc117864c93fe7270dd123d78519e778f44c898106b2e3390",
+    "cases/radial_boundary__00001.json": "6010aa3a28c7cdcbafd8a248addf1bb0b413ba457acc12ff13b8af058d71814b",
+    "cases/radial_boundary__00002.json": "cc4a8a42d39898a85363ff950f3d9453f7ea553beb19c92de7b42ea33331b55d",
+    "cases/radial_boundary__00003.json": "dce30892bf4a6871cc80a1ed92e92593e7cbabb88643605649e2a066123c6c2d",
+    "cases/radial_boundary__00004.json": "559cd7d2f6577d4e875fc1a50cac633b860c1b4c8c9298b25099b3fcd7cc197a",
+    "cases/radial_boundary__00005.json": "0886267e59bf9de75f8adb2af45e243e96393ee8e6c0883f90839c210145256d",
+    "cases/radial_boundary__00006.json": "da66acfdc1d83ca91f0297c3b23f71cb3bd1d923c3a60820e468989e7ff3d0be",
+    "cases/radial_boundary__00007.json": "0aec3dd7c3eaa56f96ca4210b222cda21fd2477827d672e884855d891fbbeacd",
+    "cases/radial_boundary__00008.json": "27fa6fd056c37680173128a53a9cf5333300c689428e27710bbd3c911ea853c7",
+    "cases/radial_boundary__00009.json": "cdd64de3de4119610a7daa2aed003f5393b6b35af5cc12b9bd1a8a89e6dba227",
+    "cases/radial_boundary__00010.json": "d50b5c99944412c21493bf1e26fda5e148078fa59d1ec36e97eb57df04683eeb",
+    "cases/radial_boundary__00011.json": "7880819626c0228d29a7100af6d88eebc8bded2716419738b298b1df452aefe5",
+    "cases/three_face_boundary__00000.json": "39dc2695445ad1ef219415172f5409e6041403bc46693b677ee58514571b50c3",
+    "cases/three_face_boundary__00001.json": "5414a34f122465e8564fb9c242ffc7d9239cb922218f9687807d24ee0ee4c568",
+    "cases/three_face_boundary__00002.json": "1d38556d779ae35c5ae152941daf7be282b736d970ea79df1587268e3fc56333",
+    "cases/three_face_boundary__00003.json": "f2b6fd8179ede9605684ff1c35bf4bcb690b64566f6d6102a4a4e6425b734ae4",
+    "cases/three_face_boundary__00004.json": "618406dade95d848683639f4a64ef998c08cf2322d8b57538ccbe3c1dfb61b51",
+    "cases/three_face_boundary__00005.json": "dfa6bdeee01535e0dfd85685bc0a76fbcb2b75c983d1804b3149882a5cb9c5f4",
+    "cases/three_face_boundary__00006.json": "4215fed13f299f9aebc520019fe71de70043a28bdba3915e1593df314bb4f870",
+    "cases/three_face_boundary__00007.json": "c05ac12dc2af025a4f95b4c610437365e2a2adfd044f4f0f965386dafffe98c4",
+    "cases/three_face_boundary__00008.json": "fab2728c7c670e0636dfa4de978b98b19b682ee3ea70ce6fd1f83a46f2ece76b",
+    "cases/three_face_boundary__00009.json": "5d0954e6d540e30b377f66b425f700675e701b5a9801fd95fe2d8c9bea944a27",
+    "cases/three_face_boundary__00010.json": "b210780abefd1d70fadc0df6014a174363d4f4f5bcfb5d5fd206ee5a070b663a",
+    "cases/three_face_boundary__00011.json": "1ecbf085b976afc7ad84d6687d26bdeedf041d1d28655ec64dba797461d9baa3",
+    "cases/timing_bounded_pair__00000.json": "800b6b6753af385986f8fbcb3c207811443d23be70e09821142d9305d8a8e1fa",
+    "cases/timing_bounded_pair__00001.json": "0ee4e2115308ec608fd7f157b510272564f55e5505a791087c8eaac335dfb9ef",
+    "cases/timing_bounded_pair__00002.json": "a324c5305aa4409b48e8a7cbe2dc1edd41eda87b72047ac2b6bb05d1349ab1d5",
+    "cases/timing_bounded_pair__00003.json": "27026e3cd85f8156b6d2249533d1bb4e82a5f0033c549ecc22ecc7a9304d4871",
+    "cases/timing_bounded_pair__00004.json": "bccc01ac6d932d947e438c209ecdf6150d781ce81c5369e928a108e61622aba4",
+    "cases/timing_bounded_pair__00005.json": "e4abdcc728a866c91d9eb7ebc3d76db3180fae323cfe0d4fc0306161bc699609",
+    "cases/timing_bounded_pair__00006.json": "2eb6b423c58ceb44f7b33549232c7a124efbb5017ac0a7ec895fbbf8ddecf980",
+    "cases/timing_bounded_pair__00007.json": "824cb66a01b487555eb79845e5f6620a0144d633617713e60396c50e33bafad3",
+    "cases/timing_bounded_pair__00008.json": "50e5e69036b03ddd2954a185dd743f0fbb3c78e0e1f89d5bd0699cacfa7a25e1",
+    "cases/timing_bounded_pair__00009.json": "94054a3452db5886d12e3d027e616984798211e0a8fbc13981b2b2e370bb7708",
+    "cases/timing_bounded_pair__00010.json": "2d7e79cf46954cdfe9a38987a6d675752ea0fc16ce4ae930b4b177b78ce8b1f5",
+    "cases/timing_bounded_pair__00011.json": "65793c72a62bbe66d2092fc0aa805e3167a4e2b775b0a74c2d9eef5d601ef9e5",
+    "manifest.json": "05e117f0d3dabc580803afe52e0706cac07927666bbcb19ed756a2299c31ebd7",
+    "summary.json": "8c26553b25dfe7102c8eeb2462c26d2bef800cae3b819649a8ecf7c2f31d1732"
+  },
+  "original_pilot_preserved": "recorded_pilot/",
+  "pilot_primary_endpoint_or_counts_changed": false,
+  "resource_validation": {
+    "maximum_resident_set_size_macos_bytes": 201244672,
+    "old_validation_cases": 913,
+    "scope": "Observed maximum resident process from /usr/bin/time -l during validation; not total concurrent memory or a hard bound",
+    "wall_s": 28.95
+  },
+  "schema": "sal-prefreeze-review/1"
+}

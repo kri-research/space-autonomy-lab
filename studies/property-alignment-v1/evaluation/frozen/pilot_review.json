@@ -1,0 +1,95 @@
+{
+  "balanced_coverage": {
+    "estimate": 0.9791666666666666,
+    "fixed_generator_mean_requires_independence": true,
+    "half_width_bound": 0.19602506892492136,
+    "independent_hardware_sessions_observed": false,
+    "inferential_scope": "pilot description only; not confirmatory",
+    "lower": 0.7831415977417453,
+    "method": "conditional Hoeffding bound in frozen case order",
+    "runtime_dependence_assumed_absent": false,
+    "target": "average conditional success probability given earlier case outcomes",
+    "upper": 1.0
+  },
+  "campaign_complete": true,
+  "candidate_statuses": {
+    "certified_common_prefix": 46,
+    "proved_no_common_held_command": 1,
+    "unresolved": 1
+  },
+  "cases_loaded": 48,
+  "delivery_coverage_bounds": [
+    0.9791666666666666,
+    0.9791666666666666
+  ],
+  "eligible": 48,
+  "invalid_definite_certificates": 0,
+  "legacy_mean_flags_not_treated_as_counterexamples": true,
+  "mean_shortcut_false_safe": 1,
+  "mean_shortcut_safe": 48,
+  "mean_shortcut_unresolved": 5,
+  "missing_selected": [],
+  "native_baselines": {
+    "barrier": {
+      "evaluated": 48,
+      "interpretation": "native-design comparison with different information representation and continuation obligations; no superiority claim",
+      "protected": 0,
+      "statuses": {
+        "uncertified_information": 48
+      }
+    },
+    "predictive": {
+      "evaluated": 48,
+      "interpretation": "native-design comparison with different information representation and continuation obligations; no superiority claim",
+      "protected": 0,
+      "statuses": {
+        "uncertified_information_or_terminal_bound": 48
+      }
+    }
+  },
+  "on_time_decisive_valid": 47,
+  "pairwise_applicable": 12,
+  "pairwise_false_safe": 1,
+  "per_stratum": {
+    "interior_pair": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.05897870904300362,
+      "on_time_decisive_valid": 12,
+      "statuses": {
+        "certified_common_prefix": 12
+      }
+    },
+    "radial_boundary": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.07255933398846537,
+      "on_time_decisive_valid": 12,
+      "statuses": {
+        "certified_common_prefix": 12
+      }
+    },
+    "three_face_boundary": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.25343083310872316,
+      "on_time_decisive_valid": 11,
+      "statuses": {
+        "certified_common_prefix": 10,
+        "proved_no_common_held_command": 1,
+        "unresolved": 1
+      }
+    },
+    "timing_bounded_pair": {
+      "eligible": 12,
+      "max_candidate_wall_s": 0.45800741703715175,
+      "on_time_decisive_valid": 12,
+      "statuses": {
+        "certified_common_prefix": 12
+      }
+    }
+  },
+  "physical_validation": false,
+  "planned_denominator": 48,
+  "protected": false,
+  "schema": "sal-evaluation-analysis/2",
+  "secondary_confirmatory_inference": false,
+  "validity_claim_gate_passed": true
+}
