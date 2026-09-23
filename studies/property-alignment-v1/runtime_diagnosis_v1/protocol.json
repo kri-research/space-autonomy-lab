@@ -1,0 +1,97 @@
+{
+  "schema": "sal-qualification-runtime-diagnosis/1",
+  "created_at_utc": "2026-09-23T19:46:01.106319+00:00",
+  "evidence_class": "post_failure_development_diagnosis",
+  "scope": "08A only; unchanged qualification implementation, no repair or new evaluation",
+  "base_commit": "04b65b37ecec4c901871ce4a792e0859e4ebc486",
+  "old_evaluation_id": "63eb088857849237bb9a4d42ac5ae38053c54335134a187c72d370f4a65d7ebd",
+  "inputs": [
+    {
+      "index": 136,
+      "payload_sha256": "449e877416083cce72113b4077098ca234c74ace81f3d55296e60d0972c43085",
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "index": 137,
+      "payload_sha256": "3bedee58665f5a7b14ae7f1bc06883f0cca6591586b4d85f7cdd410de5d15ff0",
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "index": 179,
+      "payload_sha256": "9314719dff07d4d027441868b0ae140a65ba54968b3971ca3334a3e5b571a499",
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "index": 180,
+      "payload_sha256": "3361248d4aa045bdd045b0ca8a41a66a4c345ac191ffce4bfa5dee81482940cc",
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "index": 181,
+      "payload_sha256": "340fbd93038f1550a1e9cf88563f373ac801691e5441e2665b9de83e2848eb91",
+      "stratum": "timing_bounded_pair"
+    },
+    {
+      "index": 182,
+      "payload_sha256": "0a278499bb857bfc1d21370ad62d94139acf5d9e7078699724184ee49c4fec5e",
+      "stratum": "timing_bounded_pair"
+    }
+  ],
+  "input_selection": "Four started-without-receipt cases plus their two preselected completed boundary neighbours 136 and 179. No new protected cases.",
+  "diagnostic_namespace": "sal-task08A-runtime-diagnosis-v1",
+  "qualification_only": true,
+  "candidate_full_set_evaluation": false,
+  "original_evaluation_valid": false,
+  "actions_and_numerical_bounds": "Unchanged original qualification library, input histories and continuous evaluator. Instrumentation only wraps calls.",
+  "plan": [
+    {
+      "stage": "serial_plain",
+      "indices": [
+        136,
+        137,
+        179,
+        180,
+        181,
+        182
+      ],
+      "case_wall_limit_s": 90
+    },
+    {
+      "stage": "serial_trace",
+      "indices": [
+        137
+      ],
+      "case_wall_limit_s": 180
+    },
+    {
+      "stage": "serial_profile",
+      "indices": [
+        137
+      ],
+      "case_wall_limit_s": 240
+    },
+    {
+      "stage": "serial_repeat",
+      "indices": [
+        137
+      ],
+      "case_wall_limit_s": 90
+    },
+    {
+      "stage": "parallel_plain",
+      "indices": [
+        137,
+        180,
+        181,
+        182
+      ],
+      "workers": 4,
+      "case_wall_limit_s": 90
+    }
+  ],
+  "whole_diagnostic_wall_limit_s": 900,
+  "failure_rules": "All attempts retained. A diagnostic timeout is censored and never supplies a missing old receipt. No old campaign retry or altered deadline.",
+  "timing": "Wall and process CPU time; fresh subprocess per case; separate import/setup, qualification and parent elapsed. Profiling timings are overhead-affected and not performance measurements.",
+  "outputs": "Private original profiles/logs; reviewed source, sanitized function profile summaries, exact input hashes and compact findings may be additive GitHub artifacts.",
+  "next_task": "08B repair and validate, not executed here."
+}

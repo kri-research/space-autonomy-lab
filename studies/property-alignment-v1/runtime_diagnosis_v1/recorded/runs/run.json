@@ -1,0 +1,19 @@
+{
+  "schema": "sal-task08A-diagnostic-run/1",
+  "evidence_class": "post_failure_development_diagnosis",
+  "started_at_utc": "2026-09-23T19:48:35.097424+00:00",
+  "source_sha256": {
+    "__init__.py": "41a0cbc1925c61d0793b89da290935c5c2915fa9d98f69eb03f737d0df70e38f",
+    "protocol.json": "7e3fc5ef222caf5608befb00bad5bd9cd4ebe8ac1678c6296dde26e7a99d99ee",
+    "run.py": "8acc4ba4a4086a27658a155f472c9bfb20d6b8875ebf8a42db6e17edd7b171e6",
+    "source_identity.json": "cc7a9c9e8a88fc4695321ae09c335b60fe7038774c4464255103d6315fd0006a",
+    "tests/test_diagnosis_guards.py": "2077d59c7fd09983f764ba8275baeb4190c6b69482da6a93af7d6091714ca033",
+    "worker.py": "2ce031d23c5f6dc6b7311fafadfd94e3c533d38779e84b2088a06f5e5e896fed"
+  },
+  "python": "3.13.5",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "whole_limit_s": 900,
+  "candidate_outcomes": 0,
+  "original_attempt_retried": false,
+  "separate_diagnostic_reexecutions": true
+}

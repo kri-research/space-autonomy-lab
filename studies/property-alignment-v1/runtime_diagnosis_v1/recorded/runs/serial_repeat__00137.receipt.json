@@ -1,0 +1,20 @@
+{
+  "label": "serial_repeat__00137",
+  "index": 137,
+  "stage": "serial_repeat",
+  "mode": "plain",
+  "limit_s": 90,
+  "load_before": [
+    6.18310546875,
+    6.79248046875,
+    7.98828125
+  ],
+  "exit_code": -15,
+  "parent_wall_s": 90.02198512502946,
+  "diagnostic_watchdog": true,
+  "load_after": [
+    4.4365234375,
+    6.0244140625,
+    7.56689453125
+  ]
+}

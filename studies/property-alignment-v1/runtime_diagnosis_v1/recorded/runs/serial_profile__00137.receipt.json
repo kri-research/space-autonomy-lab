@@ -1,0 +1,20 @@
+{
+  "label": "serial_profile__00137",
+  "index": 137,
+  "stage": "serial_profile",
+  "mode": "profile",
+  "limit_s": 240,
+  "load_before": [
+    5.19140625,
+    7.2509765625,
+    8.5302734375
+  ],
+  "exit_code": -15,
+  "parent_wall_s": 240.01906495797448,
+  "diagnostic_watchdog": true,
+  "load_after": [
+    6.18310546875,
+    6.79248046875,
+    7.98828125
+  ]
+}

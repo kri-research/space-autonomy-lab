@@ -1,0 +1,38 @@
+"""Single-call diagnostic profile after censored full-call profiling."""
+from pathlib import Path
+from dataclasses import replace
+import argparse
+import cProfile
+import hashlib
+import time
+from .worker import validate_case, atomic_new, profile_rows, PACKAGE
+
+
+def profile_one(output):
+    from evaluation.runner import _information
+    from candidate.certify import certify_action
+    original=_information(validate_case(137))
+    single=replace(original,hypotheses=(original.hypotheses[0],))
+    profiler=cProfile.Profile()
+    start=time.perf_counter();cpu=time.process_time()
+    profiler.enable()
+    result=certify_action(single,(0,0),model='hcw')
+    profiler.disable()
+    rows=profile_rows(profiler)
+    report={'schema':'sal-task08A-single-action-profile/1','evidence_class':'post_failure_development_diagnosis',
+            'index':137,'hypothesis':0,'action':[0,0],'result':result,
+            'wall_s':time.perf_counter()-start,'cpu_s':time.process_time()-cpu,
+            'rows':rows,'profile_times_are_benchmark':False,'production_function_changed':False,
+            'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+            'protocol_sha256':hashlib.sha256((PACKAGE/'single_profile_protocol.json').read_bytes()).hexdigest()}
+    atomic_new(output,report)
+    profiler.dump_stats(str(output.with_suffix('.pstats')))
+    print('Single-action profile completed',report['wall_s'],result['status'])
+
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True)
+    args=p.parse_args();profile_one(args.output)
+
+
+if __name__=='__main__':main()

@@ -1,0 +1,45 @@
+{
+  "evidence_class": "post_failure_trace_accounting",
+  "driver_exit_utc": "2026-09-23T18:57:06.910824+00:00",
+  "frozen_worker_limit_s": 15,
+  "rows": [
+    {
+      "case": "timing_bounded_pair__00136.json",
+      "start_marker_utc": "2026-09-23T18:56:51.247942+00:00",
+      "seconds_from_marker_to_driver_exit": 15.662882,
+      "original_receipt_present": true
+    },
+    {
+      "case": "timing_bounded_pair__00137.json",
+      "start_marker_utc": "2026-09-23T18:56:51.632580+00:00",
+      "seconds_from_marker_to_driver_exit": 15.278244,
+      "original_receipt_present": false
+    },
+    {
+      "case": "timing_bounded_pair__00179.json",
+      "start_marker_utc": "2026-09-23T18:57:05.275371+00:00",
+      "seconds_from_marker_to_driver_exit": 1.635453,
+      "original_receipt_present": true
+    },
+    {
+      "case": "timing_bounded_pair__00180.json",
+      "start_marker_utc": "2026-09-23T18:57:05.763371+00:00",
+      "seconds_from_marker_to_driver_exit": 1.147453,
+      "original_receipt_present": false
+    },
+    {
+      "case": "timing_bounded_pair__00181.json",
+      "start_marker_utc": "2026-09-23T18:57:05.982279+00:00",
+      "seconds_from_marker_to_driver_exit": 0.928545,
+      "original_receipt_present": false
+    },
+    {
+      "case": "timing_bounded_pair__00182.json",
+      "start_marker_utc": "2026-09-23T18:57:06.383754+00:00",
+      "seconds_from_marker_to_driver_exit": 0.52707,
+      "original_receipt_present": false
+    }
+  ],
+  "causal_scope": "The exception itself has no case ID. Marker timing singles out index137 among the four missing receipts, conditional on ordinary wall-clock continuity; diagnostic profiling tests this inference. Other active workers are terminated by jobs.py finally.",
+  "original_records_changed": false
+}

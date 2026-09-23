@@ -1,0 +1,301 @@
+{
+  "evidence_class": "post_failure_development_diagnosis",
+  "original_case": {
+    "schema": "sal-protected-case/1",
+    "namespace": "protected",
+    "stratum": "timing_bounded_pair",
+    "index": 137,
+    "generator_seed": "18406933027169111351032106072334060670",
+    "information": {
+      "schema": "sal-common-information/1",
+      "hypotheses": [
+        {
+          "lower": [
+            "16407/2500",
+            "-32851/500",
+            "11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "16417/2500",
+            "-32849/500",
+            "3/2000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-16417/2500",
+            "-32851/500",
+            "-3/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-16407/2500",
+            "-32849/500",
+            "-11/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "age": 1,
+      "delay": 1,
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "authority": "1/50",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "disturbance": "1/100000",
+      "kind": "declared_exact_information_set",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ],
+      "command_period_s": 1,
+      "observation_pattern": "no new distinguishing observation before this held command ends"
+    }
+  },
+  "original_input_retired": true,
+  "replacement_of_original_outcome": false,
+  "mode": "trace",
+  "protocol_sha256": "7e3fc5ef222caf5608befb00bad5bd9cd4ebe8ac1678c6296dde26e7a99d99ee",
+  "qualification": {
+    "eligible": false,
+    "criterion": "every hypothesis has a validated one-second HCW prefix under fixed action library",
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "hypothesis": 0,
+        "qualified": false,
+        "witness_action": null,
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.005"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "-0.005"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.01",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.01",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.01"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "-0.01"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.019",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.019",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.019"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "-0.019"
+            ],
+            "status": "unresolved"
+          }
+        ]
+      },
+      {
+        "hypothesis": 1,
+        "qualified": false,
+        "witness_action": null,
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.005",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.005"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "-0.005"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.01",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.01",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.01"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "-0.01"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0.019",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "-0.019",
+              "0"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "0.019"
+            ],
+            "status": "unresolved"
+          },
+          {
+            "action": [
+              "0",
+              "-0.019"
+            ],
+            "status": "unresolved"
+          }
+        ]
+      }
+    ]
+  },
+  "qualification_wall_s": 95.48767366597895,
+  "qualification_cpu_s": 94.67921399999999,
+  "process_wall_s": 95.90263316698838,
+  "process_cpu_s": 95.09303200000001,
+  "geometry_counts": [
+    {
+      "containment": "satisfied",
+      "hold": "none_eligible",
+      "calls": 2190
+    },
+    {
+      "containment": "unresolved",
+      "hold": "none_eligible",
+      "calls": 775572
+    },
+    {
+      "containment": "violated",
+      "hold": "none_eligible",
+      "calls": 136
+    }
+  ],
+  "original_evaluation_valid": false,
+  "candidate_outcome_computed": false,
+  "profile_overhead_present": false
+}

@@ -1,0 +1,20 @@
+{
+  "label": "parallel_plain__00137",
+  "index": 137,
+  "stage": "parallel_plain",
+  "mode": "plain",
+  "limit_s": 90,
+  "load_before": [
+    4.4365234375,
+    6.0244140625,
+    7.56689453125
+  ],
+  "exit_code": -15,
+  "parent_wall_s": 90.01767791691236,
+  "diagnostic_watchdog": true,
+  "load_after": [
+    4.46484375,
+    5.72802734375,
+    7.30224609375
+  ]
+}

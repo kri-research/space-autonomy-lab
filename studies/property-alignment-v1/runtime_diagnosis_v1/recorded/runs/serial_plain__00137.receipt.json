@@ -1,0 +1,20 @@
+{
+  "label": "serial_plain__00137",
+  "index": 137,
+  "stage": "serial_plain",
+  "mode": "plain",
+  "limit_s": 90,
+  "load_before": [
+    5.091796875,
+    8.22607421875,
+    9.08447265625
+  ],
+  "exit_code": -15,
+  "parent_wall_s": 90.02436870906968,
+  "diagnostic_watchdog": true,
+  "load_after": [
+    6.77880859375,
+    8.021484375,
+    8.919921875
+  ]
+}

@@ -1,0 +1,53 @@
+"""Observation-informed queue diagnosis on two attainable retired-input vertices."""
+from pathlib import Path
+from fractions import Fraction as Q
+import argparse
+import hashlib
+import json
+import time
+from .worker import validate_case, atomic_new, PACKAGE
+
+
+def probe():
+    from evaluation.runner import _information
+    from candidate.information import Hypothesis
+    from adjudication.flow import Model, propagate_schedule
+    from adjudication.geometry import bounds
+    from adjudication.engine import adjudicate
+    from specification.contract import load_property
+    payload=validate_case(137);info=_information(payload);prop=load_property()
+    assert info.application_time==2 and len(info.hypotheses)==2
+    rows=[]
+    for i,sign in ((0,1),(1,-1)):
+        h=info.hypotheses[i]
+        vertex=h.upper if sign==1 else (h.lower[0],h.upper[1],h.lower[2],h.upper[3])
+        assert h.contains(vertex)
+        disturbance=(sign*info.disturbance,info.disturbance)
+        eta=info.effectiveness[-1]
+        segments=[(Q(j),Q(j+1),[eta*u+w for u,w in zip(command,disturbance,strict=True)]) for j,command in enumerate(info.queue)]
+        started=time.perf_counter()
+        arcs=propagate_schedule(Model('hcw'),Hypothesis.point(vertex).enclosure(),segments)
+        final=arcs[-1].point(2);metrics=bounds(final,prop)
+        judged=adjudicate(arcs,prop,end=2,required_events=(0,1))
+        residue=metrics['approach_residual_m'][2 if sign==1 else 3]
+        rows.append({'hypothesis':i,'attainable_vertex':list(map(str,vertex)),
+                     'allowed_constant_disturbance_mps2':list(map(str,disturbance)),
+                     'input_effectiveness':str(eta),'queue_commands':[[str(x) for x in u] for u in info.queue],
+                     'end_before_new_command_s':2,'side_residual_m':list(map(str,residue)),
+                     'side_residual_decimal_m':list(map(float,residue)),
+                     'endpoint_containment':str(metrics['containment']),
+                     'final_enclosure':[[c.lo,c.hi] for c in final.coordinates],
+                     'adjudication':judged,'elapsed_s':time.perf_counter()-started})
+    return {'schema':'sal-task08A-queue-probe/1','evidence_class':'post_failure_exploratory_diagnosis',
+            'rows':rows,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+            'protocol_sha256':hashlib.sha256((PACKAGE/'queue_probe_protocol.json').read_bytes()).hexdigest(),
+            'original_record_replaced':False,'physical_validation':False,'candidate_command_computed':False}
+
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True)
+    args=p.parse_args();result=probe();atomic_new(args.output,result)
+    print(json.dumps({'rows':[{k:r[k] for k in ('hypothesis','endpoint_containment','side_residual_decimal_m','elapsed_s')} for r in result['rows']]},indent=2))
+
+
+if __name__=='__main__':main()
