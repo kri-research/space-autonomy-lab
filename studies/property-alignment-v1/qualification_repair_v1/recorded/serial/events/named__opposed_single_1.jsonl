@@ -1,0 +1,15 @@
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 5.749985575675964e-06, "phase": "imports"}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.0004148329608142376, "phase": "qualification_start"}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.0007741249864920974, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.007546707987785339, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.007972875027917325, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.01387879194226116, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.020034000044688582, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.02588108298368752, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.03159033297561109, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.038034833036363125, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.04387900000438094, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.05008108296897262, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.055819874978624284, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.06197841698303819, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__opposed_single_1", "wall_since_start_s": 0.06929404195398092, "phase": "complete"}

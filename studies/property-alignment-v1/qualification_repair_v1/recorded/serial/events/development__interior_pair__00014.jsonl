@@ -1,0 +1,9 @@
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 1.3329554349184036e-06, "phase": "imports"}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.00026183295994997025, "phase": "qualification_start"}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.00039329100400209427, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.0005431659519672394, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.0007205409929156303, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.0008297079475596547, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.0009549580281600356, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.007401166018098593, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "development__interior_pair__00014", "wall_since_start_s": 0.013870124937966466, "phase": "complete"}

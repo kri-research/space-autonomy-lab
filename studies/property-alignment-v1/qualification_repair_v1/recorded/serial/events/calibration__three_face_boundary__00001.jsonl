@@ -1,0 +1,12 @@
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 1.0709045454859734e-05, "phase": "imports"}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.0006424169987440109, "phase": "qualification_start"}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.0010189589811488986, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.001512999995611608, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.00195762503426522, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.002256667008623481, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.0025957500329241157, "phase": "queue_propagation", "hypothesis": 2}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.002770625054836273, "phase": "queue_check", "hypothesis": 2}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.00294870906509459, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.01268941699527204, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.0228143340209499, "phase": "continuation", "hypothesis": 2, "action_index": 0}
+{"case_key": "calibration__three_face_boundary__00001", "wall_since_start_s": 0.033180334023199975, "phase": "complete"}

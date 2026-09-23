@@ -1,0 +1,6 @@
+{"case_key": "stress__nonzero_queue", "wall_since_start_s": 6.207963451743126e-06, "phase": "imports"}
+{"case_key": "stress__nonzero_queue", "wall_since_start_s": 0.00048045802395790815, "phase": "qualification_start"}
+{"case_key": "stress__nonzero_queue", "wall_since_start_s": 0.0007313330424949527, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "stress__nonzero_queue", "wall_since_start_s": 0.011901249992661178, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "stress__nonzero_queue", "wall_since_start_s": 0.017391500063240528, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "stress__nonzero_queue", "wall_since_start_s": 0.025686917011626065, "phase": "complete"}

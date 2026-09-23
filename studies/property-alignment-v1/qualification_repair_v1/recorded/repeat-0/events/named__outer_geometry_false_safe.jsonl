@@ -1,0 +1,5 @@
+{"case_key": "named__outer_geometry_false_safe", "wall_since_start_s": 3.625056706368923e-06, "phase": "imports"}
+{"case_key": "named__outer_geometry_false_safe", "wall_since_start_s": 0.0005512080388143659, "phase": "qualification_start"}
+{"case_key": "named__outer_geometry_false_safe", "wall_since_start_s": 0.0008154580136761069, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__outer_geometry_false_safe", "wall_since_start_s": 0.0011666250647976995, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__outer_geometry_false_safe", "wall_since_start_s": 0.0015502080786973238, "phase": "queue_witness", "hypothesis": 0}

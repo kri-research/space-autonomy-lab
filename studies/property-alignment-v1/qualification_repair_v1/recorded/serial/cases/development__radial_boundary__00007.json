@@ -1,0 +1,90 @@
+{
+  "input_sha256": "43f4d7fe173f6028a3894da65a6dc98f73b74eaf78abc9b2e102fa8e77856558",
+  "key": "development__radial_boundary__00007",
+  "namespace": "development",
+  "qualification": {
+    "counters": {
+      "continuation_propagations": 2,
+      "point_evaluations": 26,
+      "queue_propagations": 0,
+      "range_evaluations": 8
+    },
+    "criterion": "every hypothesis admits fixed queue and a fixed-library one-second HCW prefix",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "information_sha256": "864628dfb1b2cd88c080053dfe88619116e7de0ebd7fd71c20c6010c97f9c7d7",
+    "last_phase": "complete",
+    "physical_impossibility_claim": false,
+    "queue_checks": [
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 0,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      },
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 1,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      }
+    ],
+    "schema": "sal-repaired-qualification/1",
+    "status": "qualified",
+    "wall_s": 0.015755917062051594
+  },
+  "schema": "sal-repair-job/1",
+  "worker_wall_s": 0.01623087504412979
+}

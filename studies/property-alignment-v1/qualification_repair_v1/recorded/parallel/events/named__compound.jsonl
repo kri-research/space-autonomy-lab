@@ -1,0 +1,17 @@
+{"case_key": "named__compound", "wall_since_start_s": 1.9170111045241356e-06, "phase": "imports"}
+{"case_key": "named__compound", "wall_since_start_s": 0.0003821250284090638, "phase": "qualification_start"}
+{"case_key": "named__compound", "wall_since_start_s": 0.0007052499568089843, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__compound", "wall_since_start_s": 0.010188917047344148, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__compound", "wall_since_start_s": 0.015478958957828581, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__compound", "wall_since_start_s": 0.02169175003655255, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__compound", "wall_since_start_s": 0.027519416995346546, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__compound", "wall_since_start_s": 0.03344975004438311, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__compound", "wall_since_start_s": 0.03919708402827382, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__compound", "wall_since_start_s": 0.04491687496192753, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__compound", "wall_since_start_s": 0.05079570901580155, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__compound", "wall_since_start_s": 0.05644275003578514, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__compound", "wall_since_start_s": 0.062406333978287876, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__compound", "wall_since_start_s": 0.06784675002563745, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__compound", "wall_since_start_s": 0.07334433402866125, "phase": "continuation", "hypothesis": 0, "action_index": 10}
+{"case_key": "named__compound", "wall_since_start_s": 0.07950737501960248, "phase": "continuation", "hypothesis": 0, "action_index": 11}
+{"case_key": "named__compound", "wall_since_start_s": 0.08535066701006144, "phase": "continuation", "hypothesis": 0, "action_index": 12}

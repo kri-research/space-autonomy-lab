@@ -1,0 +1,5 @@
+{"case_key": "stress__initial_unsafe", "wall_since_start_s": 1.7080456018447876e-06, "phase": "imports"}
+{"case_key": "stress__initial_unsafe", "wall_since_start_s": 0.0003291660686954856, "phase": "qualification_start"}
+{"case_key": "stress__initial_unsafe", "wall_since_start_s": 0.0005254159914329648, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "stress__initial_unsafe", "wall_since_start_s": 0.0006802499992772937, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "stress__initial_unsafe", "wall_since_start_s": 0.0008231659885495901, "phase": "queue_witness", "hypothesis": 0}

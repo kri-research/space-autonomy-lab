@@ -1,0 +1,63 @@
+{
+  "schema": "sal-qualification-repair-development-protocol/1",
+  "scope": "08B repair validation only; a new evaluation freeze is reserved for08C",
+  "inputs": {
+    "development": {
+      "per_stratum": 24,
+      "strata": 4
+    },
+    "calibration": {
+      "per_stratum": 2,
+      "strata": 4
+    },
+    "retired_diagnosis_indices": [
+      136,
+      137,
+      179,
+      180,
+      181,
+      182
+    ],
+    "analytical_task06_fixtures": 24,
+    "additional_analytic_stress": 8,
+    "total": 142
+  },
+  "repetitions": "All142 once serial and once with4 spawned workers. The38 retired/analytic stress inputs repeated3 additional times with4 workers. Repeats are engineering execution tests, not independent scientific samples.",
+  "old_candidate_unchanged": true,
+  "old_freeze_unchanged": true,
+  "old_failed_campaign_unchanged": true,
+  "qualification_actions": "Original13 actions, identical rational accelerations and order",
+  "numerical_bounds": "Original validated HCW Taylor integration and physical union inequalities; 1/4096 minimum cell width and32768 per-window cell budget unchanged; physical prefix only, no dwell or minimum-distance estimation required for qualification",
+  "repair": "Compute each immutable queue once. Check whole uncertainty enclosures with early failure of sufficient certification. Only concrete admissible queue witnesses permit a proved-violation label. Reuse the exact same propagated queue boxes for all13 future commands. Stop sufficient searches that cannot certify an already-unresolved point enclosure.",
+  "failure_semantics": {
+    "unresolved_computation": "eligible null, blocks selection",
+    "unsupported_information": "eligible null, blocks selection",
+    "not_certified_by_library": "eligible false under a sufficient library-based definition, not a physical impossibility claim",
+    "proved_precommand_violation": "eligible false with rechecked attainable witness before new action",
+    "qualified": "eligible true only after continuous enclosure proof for every hypothesis"
+  },
+  "primary_endpoint_changes": "No protected endpoint changed. The replacement qualifier must be explicitly versioned and bound in08C; no implicit claim that numerical qualification domains are globally identical.",
+  "validation_gates": [
+    "No false-positive certificate in analytical/boundary tests",
+    "All observed48 pilot eligibility flags agree",
+    "Every recorded positive passes the original full-schedule fixed-action recheck",
+    "Every queue-impossibility witness rechecks",
+    "All serial/parallel and repeated-stress numerical verdicts agree",
+    "Every declared real-clock batch completes without qualification-process unknowns under the unchanged15-second watchdog",
+    "Failures and interruption mechanics tested separately, remain unknown and attributed"
+  ],
+  "resource_bounds": {
+    "workers": [
+      1,
+      4
+    ],
+    "blas_threads": 1,
+    "case_watchdog_s": 15,
+    "phase_limit_s": 600,
+    "external_supervisor_s": 1200
+  },
+  "protected_access": "No fresh protected input or outcome generation; six previously exposed inputs are diagnostic fixtures only",
+  "no_post_hoc_outcome_replacement": true,
+  "physical_validation": false,
+  "timing_limits": "Observed margins on a declared development set; not a global worst-case execution guarantee or completed protected inference"
+}

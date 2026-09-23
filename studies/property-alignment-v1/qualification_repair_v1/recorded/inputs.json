@@ -1,0 +1,8999 @@
+[
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "52399/10000",
+            "-273/5",
+            "7/1250",
+            "9/1250"
+          ],
+          "upper": [
+            "52399/10000",
+            "-273/5",
+            "7/1250",
+            "9/1250"
+          ]
+        },
+        {
+          "lower": [
+            "-52399/10000",
+            "-273/5",
+            "-7/1250",
+            "9/1250"
+          ],
+          "upper": [
+            "-52399/10000",
+            "-273/5",
+            "-7/1250",
+            "9/1250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00000",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 0,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "27569/5000",
+            "-288/5",
+            "73/5000",
+            "-47/5000"
+          ],
+          "upper": [
+            "27569/5000",
+            "-288/5",
+            "73/5000",
+            "-47/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-27569/5000",
+            "-288/5",
+            "-73/5000",
+            "-47/5000"
+          ],
+          "upper": [
+            "-27569/5000",
+            "-288/5",
+            "-73/5000",
+            "-47/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00001",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 1,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "83617/10000",
+            "-438/5",
+            "11/1000",
+            "-79/10000"
+          ],
+          "upper": [
+            "83617/10000",
+            "-438/5",
+            "11/1000",
+            "-79/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-83617/10000",
+            "-438/5",
+            "-11/1000",
+            "-79/10000"
+          ],
+          "upper": [
+            "-83617/10000",
+            "-438/5",
+            "-11/1000",
+            "-79/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00002",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 2,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "51533/10000",
+            "-581/10",
+            "7/5000",
+            "19/2000"
+          ],
+          "upper": [
+            "51533/10000",
+            "-581/10",
+            "7/5000",
+            "19/2000"
+          ]
+        },
+        {
+          "lower": [
+            "-51533/10000",
+            "-581/10",
+            "-7/5000",
+            "19/2000"
+          ],
+          "upper": [
+            "-51533/10000",
+            "-581/10",
+            "-7/5000",
+            "19/2000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00003",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 3,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "52359/10000",
+            "-603/10",
+            "61/5000",
+            "69/10000"
+          ],
+          "upper": [
+            "52359/10000",
+            "-603/10",
+            "61/5000",
+            "69/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-52359/10000",
+            "-603/10",
+            "-61/5000",
+            "69/10000"
+          ],
+          "upper": [
+            "-52359/10000",
+            "-603/10",
+            "-61/5000",
+            "69/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00004",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 4,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "68151/10000",
+            "-71",
+            "9/2500",
+            "29/5000"
+          ],
+          "upper": [
+            "68151/10000",
+            "-71",
+            "9/2500",
+            "29/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-68151/10000",
+            "-71",
+            "-9/2500",
+            "29/5000"
+          ],
+          "upper": [
+            "-68151/10000",
+            "-71",
+            "-9/2500",
+            "29/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00005",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 5,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "46199/10000",
+            "-539/10",
+            "147/10000",
+            "-19/5000"
+          ],
+          "upper": [
+            "46199/10000",
+            "-539/10",
+            "147/10000",
+            "-19/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-46199/10000",
+            "-539/10",
+            "-147/10000",
+            "-19/5000"
+          ],
+          "upper": [
+            "-46199/10000",
+            "-539/10",
+            "-147/10000",
+            "-19/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00006",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 6,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "14703/2500",
+            "-298/5",
+            "13/2500",
+            "69/10000"
+          ],
+          "upper": [
+            "14703/2500",
+            "-298/5",
+            "13/2500",
+            "69/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-14703/2500",
+            "-298/5",
+            "-13/2500",
+            "69/10000"
+          ],
+          "upper": [
+            "-14703/2500",
+            "-298/5",
+            "-13/2500",
+            "69/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00007",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 7,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "41381/5000",
+            "-887/10",
+            "31/5000",
+            "9/10000"
+          ],
+          "upper": [
+            "41381/5000",
+            "-887/10",
+            "31/5000",
+            "9/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-41381/5000",
+            "-887/10",
+            "-31/5000",
+            "9/10000"
+          ],
+          "upper": [
+            "-41381/5000",
+            "-887/10",
+            "-31/5000",
+            "9/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00008",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 8,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "66821/10000",
+            "-358/5",
+            "131/10000",
+            "73/10000"
+          ],
+          "upper": [
+            "66821/10000",
+            "-358/5",
+            "131/10000",
+            "73/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-66821/10000",
+            "-358/5",
+            "-131/10000",
+            "73/10000"
+          ],
+          "upper": [
+            "-66821/10000",
+            "-358/5",
+            "-131/10000",
+            "73/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00009",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 9,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "46097/10000",
+            "-509/10",
+            "123/10000",
+            "-2/625"
+          ],
+          "upper": [
+            "46097/10000",
+            "-509/10",
+            "123/10000",
+            "-2/625"
+          ]
+        },
+        {
+          "lower": [
+            "-46097/10000",
+            "-509/10",
+            "-123/10000",
+            "-2/625"
+          ],
+          "upper": [
+            "-46097/10000",
+            "-509/10",
+            "-123/10000",
+            "-2/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00010",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 10,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "34841/5000",
+            "-759/10",
+            "63/5000",
+            "-39/5000"
+          ],
+          "upper": [
+            "34841/5000",
+            "-759/10",
+            "63/5000",
+            "-39/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-34841/5000",
+            "-759/10",
+            "-63/5000",
+            "-39/5000"
+          ],
+          "upper": [
+            "-34841/5000",
+            "-759/10",
+            "-63/5000",
+            "-39/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00011",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 11,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "50779/10000",
+            "-113/2",
+            "79/10000",
+            "9/5000"
+          ],
+          "upper": [
+            "50779/10000",
+            "-113/2",
+            "79/10000",
+            "9/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-50779/10000",
+            "-113/2",
+            "-79/10000",
+            "9/5000"
+          ],
+          "upper": [
+            "-50779/10000",
+            "-113/2",
+            "-79/10000",
+            "9/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00012",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 12,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "6637/1000",
+            "-68",
+            "1/500",
+            "-3/625"
+          ],
+          "upper": [
+            "6637/1000",
+            "-68",
+            "1/500",
+            "-3/625"
+          ]
+        },
+        {
+          "lower": [
+            "-6637/1000",
+            "-68",
+            "-1/500",
+            "-3/625"
+          ],
+          "upper": [
+            "-6637/1000",
+            "-68",
+            "-1/500",
+            "-3/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00013",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 13,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "28229/5000",
+            "-319/5",
+            "97/10000",
+            "7/2500"
+          ],
+          "upper": [
+            "28229/5000",
+            "-319/5",
+            "97/10000",
+            "7/2500"
+          ]
+        },
+        {
+          "lower": [
+            "-28229/5000",
+            "-319/5",
+            "-97/10000",
+            "7/2500"
+          ],
+          "upper": [
+            "-28229/5000",
+            "-319/5",
+            "-97/10000",
+            "7/2500"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00014",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 14,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "34801/5000",
+            "-767/10",
+            "41/10000",
+            "-41/10000"
+          ],
+          "upper": [
+            "34801/5000",
+            "-767/10",
+            "41/10000",
+            "-41/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-34801/5000",
+            "-767/10",
+            "-41/10000",
+            "-41/10000"
+          ],
+          "upper": [
+            "-34801/5000",
+            "-767/10",
+            "-41/10000",
+            "-41/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00015",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 15,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "51899/10000",
+            "-296/5",
+            "9/10000",
+            "69/10000"
+          ],
+          "upper": [
+            "51899/10000",
+            "-296/5",
+            "9/10000",
+            "69/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-51899/10000",
+            "-296/5",
+            "-9/10000",
+            "69/10000"
+          ],
+          "upper": [
+            "-51899/10000",
+            "-296/5",
+            "-9/10000",
+            "69/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00016",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 16,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "2693/625",
+            "-503/10",
+            "3/200",
+            "-93/10000"
+          ],
+          "upper": [
+            "2693/625",
+            "-503/10",
+            "3/200",
+            "-93/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-2693/625",
+            "-503/10",
+            "-3/200",
+            "-93/10000"
+          ],
+          "upper": [
+            "-2693/625",
+            "-503/10",
+            "-3/200",
+            "-93/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00017",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 17,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "64577/10000",
+            "-336/5",
+            "101/10000",
+            "9/1000"
+          ],
+          "upper": [
+            "64577/10000",
+            "-336/5",
+            "101/10000",
+            "9/1000"
+          ]
+        },
+        {
+          "lower": [
+            "-64577/10000",
+            "-336/5",
+            "-101/10000",
+            "9/1000"
+          ],
+          "upper": [
+            "-64577/10000",
+            "-336/5",
+            "-101/10000",
+            "9/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00018",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 18,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "26679/5000",
+            "-58",
+            "111/10000",
+            "-73/10000"
+          ],
+          "upper": [
+            "26679/5000",
+            "-58",
+            "111/10000",
+            "-73/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-26679/5000",
+            "-58",
+            "-111/10000",
+            "-73/10000"
+          ],
+          "upper": [
+            "-26679/5000",
+            "-58",
+            "-111/10000",
+            "-73/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00019",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 19,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "13281/2500",
+            "-547/10",
+            "119/10000",
+            "-1/125"
+          ],
+          "upper": [
+            "13281/2500",
+            "-547/10",
+            "119/10000",
+            "-1/125"
+          ]
+        },
+        {
+          "lower": [
+            "-13281/2500",
+            "-547/10",
+            "-119/10000",
+            "-1/125"
+          ],
+          "upper": [
+            "-13281/2500",
+            "-547/10",
+            "-119/10000",
+            "-1/125"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00020",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 20,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "55491/10000",
+            "-117/2",
+            "139/10000",
+            "3/500"
+          ],
+          "upper": [
+            "55491/10000",
+            "-117/2",
+            "139/10000",
+            "3/500"
+          ]
+        },
+        {
+          "lower": [
+            "-55491/10000",
+            "-117/2",
+            "-139/10000",
+            "3/500"
+          ],
+          "upper": [
+            "-55491/10000",
+            "-117/2",
+            "-139/10000",
+            "3/500"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00021",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 21,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "16649/2500",
+            "-711/10",
+            "31/10000",
+            "-1/250"
+          ],
+          "upper": [
+            "16649/2500",
+            "-711/10",
+            "31/10000",
+            "-1/250"
+          ]
+        },
+        {
+          "lower": [
+            "-16649/2500",
+            "-711/10",
+            "-31/10000",
+            "-1/250"
+          ],
+          "upper": [
+            "-16649/2500",
+            "-711/10",
+            "-31/10000",
+            "-1/250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00022",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 22,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "6017/1000",
+            "-321/5",
+            "7/10000",
+            "-19/2500"
+          ],
+          "upper": [
+            "6017/1000",
+            "-321/5",
+            "7/10000",
+            "-19/2500"
+          ]
+        },
+        {
+          "lower": [
+            "-6017/1000",
+            "-321/5",
+            "-7/10000",
+            "-19/2500"
+          ],
+          "upper": [
+            "-6017/1000",
+            "-321/5",
+            "-7/10000",
+            "-19/2500"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__interior_pair__00023",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 23,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "31943/5000",
+            "-639/10",
+            "1/1250",
+            "0"
+          ],
+          "upper": [
+            "31943/5000",
+            "-639/10",
+            "1/1250",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-31943/5000",
+            "-639/10",
+            "-1/1250",
+            "0"
+          ],
+          "upper": [
+            "-31943/5000",
+            "-639/10",
+            "-1/1250",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00000",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 0,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "44047/5000",
+            "-881/10",
+            "1/2000",
+            "0"
+          ],
+          "upper": [
+            "44047/5000",
+            "-881/10",
+            "1/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-44047/5000",
+            "-881/10",
+            "-1/2000",
+            "0"
+          ],
+          "upper": [
+            "-44047/5000",
+            "-881/10",
+            "-1/2000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00001",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 1,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "81663/10000",
+            "-817/10",
+            "3/2500",
+            "0"
+          ],
+          "upper": [
+            "81663/10000",
+            "-817/10",
+            "3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-81663/10000",
+            "-817/10",
+            "-3/2500",
+            "0"
+          ],
+          "upper": [
+            "-81663/10000",
+            "-817/10",
+            "-3/2500",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00002",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 2,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "58691/10000",
+            "-587/10",
+            "7/10000",
+            "0"
+          ],
+          "upper": [
+            "58691/10000",
+            "-587/10",
+            "7/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-58691/10000",
+            "-587/10",
+            "-7/10000",
+            "0"
+          ],
+          "upper": [
+            "-58691/10000",
+            "-587/10",
+            "-7/10000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00003",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 3,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4622/625",
+            "-74",
+            "1/500",
+            "0"
+          ],
+          "upper": [
+            "4622/625",
+            "-74",
+            "1/500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-4622/625",
+            "-74",
+            "-1/500",
+            "0"
+          ],
+          "upper": [
+            "-4622/625",
+            "-74",
+            "-1/500",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00004",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 4,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "8019/1250",
+            "-321/5",
+            "7/5000",
+            "0"
+          ],
+          "upper": [
+            "8019/1250",
+            "-321/5",
+            "7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-8019/1250",
+            "-321/5",
+            "-7/5000",
+            "0"
+          ],
+          "upper": [
+            "-8019/1250",
+            "-321/5",
+            "-7/5000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00005",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 5,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "69079/10000",
+            "-691/10",
+            "3/2500",
+            "0"
+          ],
+          "upper": [
+            "69079/10000",
+            "-691/10",
+            "3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-69079/10000",
+            "-691/10",
+            "-3/2500",
+            "0"
+          ],
+          "upper": [
+            "-69079/10000",
+            "-691/10",
+            "-3/2500",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00006",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 6,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "12273/2000",
+            "-307/5",
+            "17/10000",
+            "0"
+          ],
+          "upper": [
+            "12273/2000",
+            "-307/5",
+            "17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-12273/2000",
+            "-307/5",
+            "-17/10000",
+            "0"
+          ],
+          "upper": [
+            "-12273/2000",
+            "-307/5",
+            "-17/10000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00007",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 7,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "16891/2000",
+            "-169/2",
+            "1/2000",
+            "0"
+          ],
+          "upper": [
+            "16891/2000",
+            "-169/2",
+            "1/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-16891/2000",
+            "-169/2",
+            "-1/2000",
+            "0"
+          ],
+          "upper": [
+            "-16891/2000",
+            "-169/2",
+            "-1/2000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00008",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 8,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "38543/5000",
+            "-771/10",
+            "7/5000",
+            "0"
+          ],
+          "upper": [
+            "38543/5000",
+            "-771/10",
+            "7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-38543/5000",
+            "-771/10",
+            "-7/5000",
+            "0"
+          ],
+          "upper": [
+            "-38543/5000",
+            "-771/10",
+            "-7/5000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00009",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 9,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "50753/10000",
+            "-254/5",
+            "7/5000",
+            "0"
+          ],
+          "upper": [
+            "50753/10000",
+            "-254/5",
+            "7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-50753/10000",
+            "-254/5",
+            "-7/5000",
+            "0"
+          ],
+          "upper": [
+            "-50753/10000",
+            "-254/5",
+            "-7/5000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00010",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 10,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "70083/10000",
+            "-701/10",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "70083/10000",
+            "-701/10",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-70083/10000",
+            "-701/10",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-70083/10000",
+            "-701/10",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00011",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 11,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "15947/2500",
+            "-319/5",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "15947/2500",
+            "-319/5",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-15947/2500",
+            "-319/5",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-15947/2500",
+            "-319/5",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00012",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 12,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "88689/10000",
+            "-887/10",
+            "1/500",
+            "0"
+          ],
+          "upper": [
+            "88689/10000",
+            "-887/10",
+            "1/500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-88689/10000",
+            "-887/10",
+            "-1/500",
+            "0"
+          ],
+          "upper": [
+            "-88689/10000",
+            "-887/10",
+            "-1/500",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00013",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 13,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "20689/2500",
+            "-414/5",
+            "13/10000",
+            "0"
+          ],
+          "upper": [
+            "20689/2500",
+            "-414/5",
+            "13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-20689/2500",
+            "-414/5",
+            "-13/10000",
+            "0"
+          ],
+          "upper": [
+            "-20689/2500",
+            "-414/5",
+            "-13/10000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00014",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 14,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "28077/5000",
+            "-281/5",
+            "7/5000",
+            "0"
+          ],
+          "upper": [
+            "28077/5000",
+            "-281/5",
+            "7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-28077/5000",
+            "-281/5",
+            "-7/5000",
+            "0"
+          ],
+          "upper": [
+            "-28077/5000",
+            "-281/5",
+            "-7/5000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00015",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 15,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "25139/5000",
+            "-503/10",
+            "1/2000",
+            "0"
+          ],
+          "upper": [
+            "25139/5000",
+            "-503/10",
+            "1/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-25139/5000",
+            "-503/10",
+            "-1/2000",
+            "0"
+          ],
+          "upper": [
+            "-25139/5000",
+            "-503/10",
+            "-1/2000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00016",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 16,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "42647/5000",
+            "-853/10",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "42647/5000",
+            "-853/10",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-42647/5000",
+            "-853/10",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-42647/5000",
+            "-853/10",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00017",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 17,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "10561/1250",
+            "-169/2",
+            "13/10000",
+            "0"
+          ],
+          "upper": [
+            "10561/1250",
+            "-169/2",
+            "13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-10561/1250",
+            "-169/2",
+            "-13/10000",
+            "0"
+          ],
+          "upper": [
+            "-10561/1250",
+            "-169/2",
+            "-13/10000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00018",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 18,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "22023/2500",
+            "-881/10",
+            "9/5000",
+            "0"
+          ],
+          "upper": [
+            "22023/2500",
+            "-881/10",
+            "9/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-22023/2500",
+            "-881/10",
+            "-9/5000",
+            "0"
+          ],
+          "upper": [
+            "-22023/2500",
+            "-881/10",
+            "-9/5000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00019",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 19,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "87183/10000",
+            "-436/5",
+            "13/10000",
+            "0"
+          ],
+          "upper": [
+            "87183/10000",
+            "-436/5",
+            "13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-87183/10000",
+            "-436/5",
+            "-13/10000",
+            "0"
+          ],
+          "upper": [
+            "-87183/10000",
+            "-436/5",
+            "-13/10000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00020",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 20,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "7149/1000",
+            "-143/2",
+            "17/10000",
+            "0"
+          ],
+          "upper": [
+            "7149/1000",
+            "-143/2",
+            "17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7149/1000",
+            "-143/2",
+            "-17/10000",
+            "0"
+          ],
+          "upper": [
+            "-7149/1000",
+            "-143/2",
+            "-17/10000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00021",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 21,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "17139/2000",
+            "-857/10",
+            "3/2000",
+            "0"
+          ],
+          "upper": [
+            "17139/2000",
+            "-857/10",
+            "3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-17139/2000",
+            "-857/10",
+            "-3/2000",
+            "0"
+          ],
+          "upper": [
+            "-17139/2000",
+            "-857/10",
+            "-3/2000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00022",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 22,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4541/625",
+            "-727/10",
+            "9/5000",
+            "0"
+          ],
+          "upper": [
+            "4541/625",
+            "-727/10",
+            "9/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-4541/625",
+            "-727/10",
+            "-9/5000",
+            "0"
+          ],
+          "upper": [
+            "-4541/625",
+            "-727/10",
+            "-9/5000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__radial_boundary__00023",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 23,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "3774/625",
+            "-302/5",
+            "7/10000",
+            "0"
+          ],
+          "upper": [
+            "3774/625",
+            "-302/5",
+            "7/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-3774/625",
+            "-302/5",
+            "-7/10000",
+            "0"
+          ],
+          "upper": [
+            "-3774/625",
+            "-302/5",
+            "-7/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "9/100",
+            "-99997/1000",
+            "0",
+            "-1/2000"
+          ],
+          "upper": [
+            "9/100",
+            "-99997/1000",
+            "0",
+            "-1/2000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00000",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 0,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "62373/10000",
+            "-312/5",
+            "1/500",
+            "0"
+          ],
+          "upper": [
+            "62373/10000",
+            "-312/5",
+            "1/500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-62373/10000",
+            "-312/5",
+            "-1/500",
+            "0"
+          ],
+          "upper": [
+            "-62373/10000",
+            "-312/5",
+            "-1/500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-3/25",
+            "-499987/5000",
+            "0",
+            "-9/5000"
+          ],
+          "upper": [
+            "-3/25",
+            "-499987/5000",
+            "0",
+            "-9/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00001",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 1,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "63293/10000",
+            "-633/10",
+            "1/2000",
+            "0"
+          ],
+          "upper": [
+            "63293/10000",
+            "-633/10",
+            "1/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-63293/10000",
+            "-633/10",
+            "-1/2000",
+            "0"
+          ],
+          "upper": [
+            "-63293/10000",
+            "-633/10",
+            "-1/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "1/50",
+            "-199999/2000",
+            "0",
+            "-19/10000"
+          ],
+          "upper": [
+            "1/50",
+            "-199999/2000",
+            "0",
+            "-19/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00002",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 2,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "77287/10000",
+            "-773/10",
+            "13/10000",
+            "0"
+          ],
+          "upper": [
+            "77287/10000",
+            "-773/10",
+            "13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-77287/10000",
+            "-773/10",
+            "-13/10000",
+            "0"
+          ],
+          "upper": [
+            "-77287/10000",
+            "-773/10",
+            "-13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "1/10",
+            "-199991/2000",
+            "0",
+            "-9/10000"
+          ],
+          "upper": [
+            "1/10",
+            "-199991/2000",
+            "0",
+            "-9/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00003",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 3,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4867/625",
+            "-779/10",
+            "3/2000",
+            "0"
+          ],
+          "upper": [
+            "4867/625",
+            "-779/10",
+            "3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-4867/625",
+            "-779/10",
+            "-3/2000",
+            "0"
+          ],
+          "upper": [
+            "-4867/625",
+            "-779/10",
+            "-3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "3/20",
+            "-999983/10000",
+            "0",
+            "-1/1250"
+          ],
+          "upper": [
+            "3/20",
+            "-999983/10000",
+            "0",
+            "-1/1250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00004",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 4,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "13697/2000",
+            "-137/2",
+            "11/10000",
+            "0"
+          ],
+          "upper": [
+            "13697/2000",
+            "-137/2",
+            "11/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-13697/2000",
+            "-137/2",
+            "-11/10000",
+            "0"
+          ],
+          "upper": [
+            "-13697/2000",
+            "-137/2",
+            "-11/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "2/25",
+            "-999979/10000",
+            "0",
+            "-7/10000"
+          ],
+          "upper": [
+            "2/25",
+            "-999979/10000",
+            "0",
+            "-7/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00005",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 5,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "68561/10000",
+            "-343/5",
+            "7/10000",
+            "0"
+          ],
+          "upper": [
+            "68561/10000",
+            "-343/5",
+            "7/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-68561/10000",
+            "-343/5",
+            "-7/10000",
+            "0"
+          ],
+          "upper": [
+            "-68561/10000",
+            "-343/5",
+            "-7/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "9/100",
+            "-499977/5000",
+            "0",
+            "-19/10000"
+          ],
+          "upper": [
+            "9/100",
+            "-499977/5000",
+            "0",
+            "-19/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00006",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 6,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "2803/400",
+            "-701/10",
+            "13/10000",
+            "0"
+          ],
+          "upper": [
+            "2803/400",
+            "-701/10",
+            "13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-2803/400",
+            "-701/10",
+            "-13/10000",
+            "0"
+          ],
+          "upper": [
+            "-2803/400",
+            "-701/10",
+            "-13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7/50",
+            "-499987/5000",
+            "0",
+            "-1/625"
+          ],
+          "upper": [
+            "-7/50",
+            "-499987/5000",
+            "0",
+            "-1/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00007",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 7,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "77663/10000",
+            "-777/10",
+            "17/10000",
+            "0"
+          ],
+          "upper": [
+            "77663/10000",
+            "-777/10",
+            "17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-77663/10000",
+            "-777/10",
+            "-17/10000",
+            "0"
+          ],
+          "upper": [
+            "-77663/10000",
+            "-777/10",
+            "-17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-1/20",
+            "-99999/1000",
+            "0",
+            "-1/625"
+          ],
+          "upper": [
+            "-1/20",
+            "-99999/1000",
+            "0",
+            "-1/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00008",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 8,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "40087/5000",
+            "-401/5",
+            "13/10000",
+            "0"
+          ],
+          "upper": [
+            "40087/5000",
+            "-401/5",
+            "13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-40087/5000",
+            "-401/5",
+            "-13/10000",
+            "0"
+          ],
+          "upper": [
+            "-40087/5000",
+            "-401/5",
+            "-13/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "19/100",
+            "-199991/2000",
+            "0",
+            "-3/2000"
+          ],
+          "upper": [
+            "19/100",
+            "-199991/2000",
+            "0",
+            "-3/2000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00009",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 9,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "14113/2000",
+            "-353/5",
+            "19/10000",
+            "0"
+          ],
+          "upper": [
+            "14113/2000",
+            "-353/5",
+            "19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-14113/2000",
+            "-353/5",
+            "-19/10000",
+            "0"
+          ],
+          "upper": [
+            "-14113/2000",
+            "-353/5",
+            "-19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "4/25",
+            "-199997/2000",
+            "0",
+            "-19/10000"
+          ],
+          "upper": [
+            "4/25",
+            "-199997/2000",
+            "0",
+            "-19/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00010",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 10,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "40147/5000",
+            "-803/10",
+            "3/2500",
+            "0"
+          ],
+          "upper": [
+            "40147/5000",
+            "-803/10",
+            "3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-40147/5000",
+            "-803/10",
+            "-3/2500",
+            "0"
+          ],
+          "upper": [
+            "-40147/5000",
+            "-803/10",
+            "-3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-2/25",
+            "-999953/10000",
+            "0",
+            "-1/625"
+          ],
+          "upper": [
+            "-2/25",
+            "-999953/10000",
+            "0",
+            "-1/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00011",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 11,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "16959/2000",
+            "-424/5",
+            "7/5000",
+            "0"
+          ],
+          "upper": [
+            "16959/2000",
+            "-424/5",
+            "7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-16959/2000",
+            "-424/5",
+            "-7/5000",
+            "0"
+          ],
+          "upper": [
+            "-16959/2000",
+            "-424/5",
+            "-7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-11/100",
+            "-124997/1250",
+            "0",
+            "-7/5000"
+          ],
+          "upper": [
+            "-11/100",
+            "-124997/1250",
+            "0",
+            "-7/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00012",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 12,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "87669/10000",
+            "-877/10",
+            "9/5000",
+            "0"
+          ],
+          "upper": [
+            "87669/10000",
+            "-877/10",
+            "9/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-87669/10000",
+            "-877/10",
+            "-9/5000",
+            "0"
+          ],
+          "upper": [
+            "-87669/10000",
+            "-877/10",
+            "-9/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-13/100",
+            "-999977/10000",
+            "0",
+            "-3/2000"
+          ],
+          "upper": [
+            "-13/100",
+            "-999977/10000",
+            "0",
+            "-3/2000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00013",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 13,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "61383/10000",
+            "-307/5",
+            "7/5000",
+            "0"
+          ],
+          "upper": [
+            "61383/10000",
+            "-307/5",
+            "7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-61383/10000",
+            "-307/5",
+            "-7/5000",
+            "0"
+          ],
+          "upper": [
+            "-61383/10000",
+            "-307/5",
+            "-7/5000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "1/5",
+            "-249997/2500",
+            "0",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/5",
+            "-249997/2500",
+            "0",
+            "-1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00014",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 14,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "84151/10000",
+            "-421/5",
+            "19/10000",
+            "0"
+          ],
+          "upper": [
+            "84151/10000",
+            "-421/5",
+            "19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-84151/10000",
+            "-421/5",
+            "-19/10000",
+            "0"
+          ],
+          "upper": [
+            "-84151/10000",
+            "-421/5",
+            "-19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7/100",
+            "-62499/625",
+            "0",
+            "-3/2500"
+          ],
+          "upper": [
+            "-7/100",
+            "-62499/625",
+            "0",
+            "-3/2500"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00015",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 15,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "44547/5000",
+            "-891/10",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "44547/5000",
+            "-891/10",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-44547/5000",
+            "-891/10",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-44547/5000",
+            "-891/10",
+            "-1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-1/50",
+            "-499997/5000",
+            "0",
+            "-11/10000"
+          ],
+          "upper": [
+            "-1/50",
+            "-499997/5000",
+            "0",
+            "-11/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00016",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 16,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "64471/10000",
+            "-129/2",
+            "3/2500",
+            "0"
+          ],
+          "upper": [
+            "64471/10000",
+            "-129/2",
+            "3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-64471/10000",
+            "-129/2",
+            "-3/2500",
+            "0"
+          ],
+          "upper": [
+            "-64471/10000",
+            "-129/2",
+            "-3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-13/100",
+            "-499977/5000",
+            "0",
+            "-13/10000"
+          ],
+          "upper": [
+            "-13/100",
+            "-499977/5000",
+            "0",
+            "-13/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00017",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 17,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "3892/625",
+            "-623/10",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "3892/625",
+            "-623/10",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-3892/625",
+            "-623/10",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-3892/625",
+            "-623/10",
+            "-1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "9/50",
+            "-39999/400",
+            "0",
+            "-9/10000"
+          ],
+          "upper": [
+            "9/50",
+            "-39999/400",
+            "0",
+            "-9/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00018",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 18,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "12013/2000",
+            "-601/10",
+            "11/10000",
+            "0"
+          ],
+          "upper": [
+            "12013/2000",
+            "-601/10",
+            "11/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-12013/2000",
+            "-601/10",
+            "-11/10000",
+            "0"
+          ],
+          "upper": [
+            "-12013/2000",
+            "-601/10",
+            "-11/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "7/50",
+            "-499983/5000",
+            "0",
+            "-19/10000"
+          ],
+          "upper": [
+            "7/50",
+            "-499983/5000",
+            "0",
+            "-19/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00019",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 19,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "66993/10000",
+            "-67",
+            "19/10000",
+            "0"
+          ],
+          "upper": [
+            "66993/10000",
+            "-67",
+            "19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-66993/10000",
+            "-67",
+            "-19/10000",
+            "0"
+          ],
+          "upper": [
+            "-66993/10000",
+            "-67",
+            "-19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-13/100",
+            "-999983/10000",
+            "0",
+            "-1/625"
+          ],
+          "upper": [
+            "-13/100",
+            "-999983/10000",
+            "0",
+            "-1/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00020",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 20,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4993/625",
+            "-799/10",
+            "19/10000",
+            "0"
+          ],
+          "upper": [
+            "4993/625",
+            "-799/10",
+            "19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-4993/625",
+            "-799/10",
+            "-19/10000",
+            "0"
+          ],
+          "upper": [
+            "-4993/625",
+            "-799/10",
+            "-19/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "3/50",
+            "-499977/5000",
+            "0",
+            "-13/10000"
+          ],
+          "upper": [
+            "3/50",
+            "-499977/5000",
+            "0",
+            "-13/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00021",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 21,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "996/125",
+            "-797/10",
+            "3/2000",
+            "0"
+          ],
+          "upper": [
+            "996/125",
+            "-797/10",
+            "3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-996/125",
+            "-797/10",
+            "-3/2000",
+            "0"
+          ],
+          "upper": [
+            "-996/125",
+            "-797/10",
+            "-3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "1/50",
+            "-499989/5000",
+            "0",
+            "-1/625"
+          ],
+          "upper": [
+            "1/50",
+            "-499989/5000",
+            "0",
+            "-1/625"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00022",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 22,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "89893/10000",
+            "-899/10",
+            "3/2500",
+            "0"
+          ],
+          "upper": [
+            "89893/10000",
+            "-899/10",
+            "3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-89893/10000",
+            "-899/10",
+            "-3/2500",
+            "0"
+          ],
+          "upper": [
+            "-89893/10000",
+            "-899/10",
+            "-3/2500",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-3/50",
+            "-999963/10000",
+            "0",
+            "-1/500"
+          ],
+          "upper": [
+            "-3/50",
+            "-999963/10000",
+            "0",
+            "-1/500"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__three_face_boundary__00023",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 23,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "7807/1000",
+            "-39151/500",
+            "1/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "7811/1000",
+            "-39149/500",
+            "9/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-7811/1000",
+            "-39151/500",
+            "-9/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-7807/1000",
+            "-39149/500",
+            "-1/2000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00000",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 0,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "61773/10000",
+            "-31001/500",
+            "11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "61813/10000",
+            "-30999/500",
+            "3/2000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-61813/10000",
+            "-31001/500",
+            "-3/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-61773/10000",
+            "-30999/500",
+            "-11/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00001",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 1,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "6309/1250",
+            "-25301/500",
+            "7/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "3157/625",
+            "-25299/500",
+            "11/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-3157/625",
+            "-25301/500",
+            "-11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-6309/1250",
+            "-25299/500",
+            "-7/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00002",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 2,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4769/625",
+            "-38251/500",
+            "3/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "9543/1250",
+            "-38249/500",
+            "1/625",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-9543/1250",
+            "-38251/500",
+            "-1/625",
+            "-1/5000"
+          ],
+          "upper": [
+            "-4769/625",
+            "-38249/500",
+            "-3/2500",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00003",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 3,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "3934/625",
+            "-31601/500",
+            "7/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "7873/1250",
+            "-31599/500",
+            "11/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-7873/1250",
+            "-31601/500",
+            "-11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-3934/625",
+            "-31599/500",
+            "-7/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00004",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 4,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "63147/10000",
+            "-31701/500",
+            "7/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "63187/10000",
+            "-31699/500",
+            "11/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-63187/10000",
+            "-31701/500",
+            "-11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-63147/10000",
+            "-31699/500",
+            "-7/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00005",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 5,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "53329/10000",
+            "-26701/500",
+            "1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "53369/10000",
+            "-26699/500",
+            "3/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-53369/10000",
+            "-26701/500",
+            "-3/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-53329/10000",
+            "-26699/500",
+            "-1/5000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00006",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 6,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "1591/200",
+            "-39901/500",
+            "-1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "7959/1000",
+            "-39899/500",
+            "1/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-7959/1000",
+            "-39901/500",
+            "-1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-1591/200",
+            "-39899/500",
+            "1/5000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00007",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 7,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "70277/10000",
+            "-35201/500",
+            "-1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "70317/10000",
+            "-35199/500",
+            "1/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-70317/10000",
+            "-35201/500",
+            "-1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-70277/10000",
+            "-35199/500",
+            "1/5000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00008",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 8,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "65493/10000",
+            "-32801/500",
+            "3/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "65533/10000",
+            "-32799/500",
+            "1/625",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-65533/10000",
+            "-32801/500",
+            "-1/625",
+            "-1/5000"
+          ],
+          "upper": [
+            "-65493/10000",
+            "-32799/500",
+            "-3/2500",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00009",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 9,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "18787/2500",
+            "-37651/500",
+            "0",
+            "-1/5000"
+          ],
+          "upper": [
+            "18797/2500",
+            "-37649/500",
+            "1/2500",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-18797/2500",
+            "-37651/500",
+            "-1/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "-18787/2500",
+            "-37649/500",
+            "0",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00010",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 10,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "50983/10000",
+            "-25601/500",
+            "1/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "51023/10000",
+            "-25599/500",
+            "9/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-51023/10000",
+            "-25601/500",
+            "-9/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-50983/10000",
+            "-25599/500",
+            "-1/2000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00011",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 11,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "56073/10000",
+            "-28101/500",
+            "3/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "56113/10000",
+            "-28099/500",
+            "7/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-56113/10000",
+            "-28101/500",
+            "-7/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-56073/10000",
+            "-28099/500",
+            "-3/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00012",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 12,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "65037/10000",
+            "-32651/500",
+            "13/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "65077/10000",
+            "-32649/500",
+            "17/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-65077/10000",
+            "-32651/500",
+            "-17/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-65037/10000",
+            "-32649/500",
+            "-13/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00013",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 13,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "52777/10000",
+            "-26501/500",
+            "11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "52817/10000",
+            "-26499/500",
+            "3/2000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-52817/10000",
+            "-26501/500",
+            "-3/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-52777/10000",
+            "-26499/500",
+            "-11/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00014",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 14,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "70339/10000",
+            "-35301/500",
+            "1/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "70379/10000",
+            "-35299/500",
+            "1/1250",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-70379/10000",
+            "-35301/500",
+            "-1/1250",
+            "-1/5000"
+          ],
+          "upper": [
+            "-70339/10000",
+            "-35299/500",
+            "-1/2500",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00015",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 15,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "36803/5000",
+            "-36901/500",
+            "9/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "36823/5000",
+            "-36899/500",
+            "13/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-36823/5000",
+            "-36901/500",
+            "-13/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-36803/5000",
+            "-36899/500",
+            "-9/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00016",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 16,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "32249/5000",
+            "-32351/500",
+            "1/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "32269/5000",
+            "-32349/500",
+            "9/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-32269/5000",
+            "-32351/500",
+            "-9/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-32249/5000",
+            "-32349/500",
+            "-1/2000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00017",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 17,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "13243/2500",
+            "-26551/500",
+            "1/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "13253/2500",
+            "-26549/500",
+            "1/2000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-13253/2500",
+            "-26551/500",
+            "-1/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-13243/2500",
+            "-26549/500",
+            "-1/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00018",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 18,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4981/1000",
+            "-25001/500",
+            "1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "997/200",
+            "-24999/500",
+            "3/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-997/200",
+            "-25001/500",
+            "-3/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-4981/1000",
+            "-24999/500",
+            "-1/5000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00019",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 19,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "72919/10000",
+            "-36551/500",
+            "1/1000",
+            "-1/5000"
+          ],
+          "upper": [
+            "72959/10000",
+            "-36549/500",
+            "7/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-72959/10000",
+            "-36551/500",
+            "-7/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-72919/10000",
+            "-36549/500",
+            "-1/1000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00020",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 20,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "27683/5000",
+            "-27751/500",
+            "-1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "27703/5000",
+            "-27749/500",
+            "1/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-27703/5000",
+            "-27751/500",
+            "-1/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-27683/5000",
+            "-27749/500",
+            "1/5000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00021",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 21,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "38091/5000",
+            "-38151/500",
+            "1/1000",
+            "-1/5000"
+          ],
+          "upper": [
+            "38111/5000",
+            "-38149/500",
+            "7/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-38111/5000",
+            "-38151/500",
+            "-7/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-38091/5000",
+            "-38149/500",
+            "-1/1000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00022",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 22,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "56537/10000",
+            "-28351/500",
+            "0",
+            "-1/5000"
+          ],
+          "upper": [
+            "56577/10000",
+            "-28349/500",
+            "1/2500",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-56577/10000",
+            "-28351/500",
+            "-1/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "-56537/10000",
+            "-28349/500",
+            "0",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "development__timing_bounded_pair__00023",
+    "namespace": "development",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "development",
+      "index": 23,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "81651/10000",
+            "-433/5",
+            "9/5000",
+            "47/5000"
+          ],
+          "upper": [
+            "81651/10000",
+            "-433/5",
+            "9/5000",
+            "47/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-81651/10000",
+            "-433/5",
+            "-9/5000",
+            "47/5000"
+          ],
+          "upper": [
+            "-81651/10000",
+            "-433/5",
+            "-9/5000",
+            "47/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__interior_pair__00000",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 0,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "29381/5000",
+            "-131/2",
+            "37/5000",
+            "67/10000"
+          ],
+          "upper": [
+            "29381/5000",
+            "-131/2",
+            "37/5000",
+            "67/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-29381/5000",
+            "-131/2",
+            "-37/5000",
+            "67/10000"
+          ],
+          "upper": [
+            "-29381/5000",
+            "-131/2",
+            "-37/5000",
+            "67/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__interior_pair__00001",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 1,
+      "stratum": "interior_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "70167/10000",
+            "-351/5",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "70167/10000",
+            "-351/5",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-70167/10000",
+            "-351/5",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-70167/10000",
+            "-351/5",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__radial_boundary__00000",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 0,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "7311/1250",
+            "-117/2",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "7311/1250",
+            "-117/2",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7311/1250",
+            "-117/2",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-7311/1250",
+            "-117/2",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__radial_boundary__00001",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 1,
+      "stratum": "radial_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "69593/10000",
+            "-348/5",
+            "17/10000",
+            "0"
+          ],
+          "upper": [
+            "69593/10000",
+            "-348/5",
+            "17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-69593/10000",
+            "-348/5",
+            "-17/10000",
+            "0"
+          ],
+          "upper": [
+            "-69593/10000",
+            "-348/5",
+            "-17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "1/25",
+            "-499991/5000",
+            "0",
+            "-17/10000"
+          ],
+          "upper": [
+            "1/25",
+            "-499991/5000",
+            "0",
+            "-17/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__three_face_boundary__00000",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 0,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "2899/400",
+            "-145/2",
+            "3/2000",
+            "0"
+          ],
+          "upper": [
+            "2899/400",
+            "-145/2",
+            "3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-2899/400",
+            "-145/2",
+            "-3/2000",
+            "0"
+          ],
+          "upper": [
+            "-2899/400",
+            "-145/2",
+            "-3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7/50",
+            "-499991/5000",
+            "0",
+            "-11/10000"
+          ],
+          "upper": [
+            "-7/50",
+            "-499991/5000",
+            "0",
+            "-11/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__three_face_boundary__00001",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 1,
+      "stratum": "three_face_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "60889/10000",
+            "-30501/500",
+            "1/1000",
+            "-1/5000"
+          ],
+          "upper": [
+            "60929/10000",
+            "-30499/500",
+            "7/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-60929/10000",
+            "-30501/500",
+            "-7/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-60889/10000",
+            "-30499/500",
+            "-1/1000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__timing_bounded_pair__00000",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 0,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "79811/10000",
+            "-40001/500",
+            "3/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "79851/10000",
+            "-39999/500",
+            "1/625",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-79851/10000",
+            "-40001/500",
+            "-1/625",
+            "-1/5000"
+          ],
+          "upper": [
+            "-79811/10000",
+            "-39999/500",
+            "-3/2500",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "calibration__timing_bounded_pair__00001",
+    "namespace": "calibration",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "generator_namespace": "calibration",
+      "index": 1,
+      "stratum": "timing_bounded_pair"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "77451/10000",
+            "-38851/500",
+            "13/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "77491/10000",
+            "-38849/500",
+            "17/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-77491/10000",
+            "-38851/500",
+            "-17/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-77451/10000",
+            "-38849/500",
+            "-13/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "retired__00136",
+    "namespace": "retired_diagnosis",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "index": 136,
+      "original_outcome_replaced": false,
+      "retired_original_case_id": "449e877416083cce72113b4077098ca234c74ace81f3d55296e60d0972c43085"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "16407/2500",
+            "-32851/500",
+            "11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "16417/2500",
+            "-32849/500",
+            "3/2000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-16417/2500",
+            "-32851/500",
+            "-3/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-16407/2500",
+            "-32849/500",
+            "-11/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "retired__00137",
+    "namespace": "retired_diagnosis",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "index": 137,
+      "original_outcome_replaced": false,
+      "retired_original_case_id": "3bedee58665f5a7b14ae7f1bc06883f0cca6591586b4d85f7cdd410de5d15ff0"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "76297/10000",
+            "-38201/500",
+            "3/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "76337/10000",
+            "-38199/500",
+            "1/1000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-76337/10000",
+            "-38201/500",
+            "-1/1000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-76297/10000",
+            "-38199/500",
+            "-3/5000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "retired__00179",
+    "namespace": "retired_diagnosis",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "index": 179,
+      "original_outcome_replaced": false,
+      "retired_original_case_id": "9314719dff07d4d027441868b0ae140a65ba54968b3971ca3334a3e5b571a499"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "9801/1250",
+            "-39301/500",
+            "1/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "4903/625",
+            "-39299/500",
+            "9/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-4903/625",
+            "-39301/500",
+            "-9/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-9801/1250",
+            "-39299/500",
+            "-1/2000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "retired__00180",
+    "namespace": "retired_diagnosis",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "index": 180,
+      "original_outcome_replaced": false,
+      "retired_original_case_id": "3361248d4aa045bdd045b0ca8a41a66a4c345ac191ffce4bfa5dee81482940cc"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "9649/1250",
+            "-38701/500",
+            "11/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "4827/625",
+            "-38699/500",
+            "3/2000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-4827/625",
+            "-38701/500",
+            "-3/2000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-9649/1250",
+            "-38699/500",
+            "-11/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "retired__00181",
+    "namespace": "retired_diagnosis",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "index": 181,
+      "original_outcome_replaced": false,
+      "retired_original_case_id": "340fbd93038f1550a1e9cf88563f373ac801691e5441e2665b9de83e2848eb91"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "74949/10000",
+            "-37601/500",
+            "13/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "74989/10000",
+            "-37599/500",
+            "17/10000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-74989/10000",
+            "-37601/500",
+            "-17/10000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-74949/10000",
+            "-37599/500",
+            "-13/10000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "retired__00182",
+    "namespace": "retired_diagnosis",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "index": 182,
+      "original_outcome_replaced": false,
+      "retired_original_case_id": "0a278499bb857bfc1d21370ad62d94139acf5d9e7078699724184ee49c4fec5e"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-195/2",
+            "0",
+            "3/25"
+          ],
+          "upper": [
+            "0",
+            "-195/2",
+            "0",
+            "3/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__midpoint_known",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "midpoint_known"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "1/20000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1/100",
+            "-3001/100",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/100",
+            "-2999/100",
+            "1/1000",
+            "1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__hold_bounded",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "hold_bounded"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-27",
+            "0",
+            "3/25"
+          ],
+          "upper": [
+            "0",
+            "-27",
+            "0",
+            "3/25"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__outward_boundary",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "outward_boundary"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "1747/250",
+            "-70",
+            "1/50",
+            "0"
+          ],
+          "upper": [
+            "1747/250",
+            "-70",
+            "1/50",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-1747/250",
+            "-70",
+            "-1/50",
+            "0"
+          ],
+          "upper": [
+            "-1747/250",
+            "-70",
+            "-1/50",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__opposed_radial",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "opposed_radial"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ],
+          "upper": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ]
+        },
+        {
+          "lower": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_conflict",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_conflict"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "29/10",
+            "-301/10",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "29/10",
+            "-301/10",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "0",
+            "-271/10",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "-271/10",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__correlated_union",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "correlated_union"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "12/5",
+            "-57/2",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "12/5",
+            "-57/2",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__outer_geometry_false_safe",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "outer_geometry_false_safe"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-5407/200",
+            "0",
+            "11/1000"
+          ],
+          "upper": [
+            "0",
+            "-27031/1000",
+            "0",
+            "13/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__compound",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "compound"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ],
+          "upper": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__single_age",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "single_age"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ],
+          "upper": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__single_delay",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "single_delay"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-5407/200",
+            "0",
+            "11/1000"
+          ],
+          "upper": [
+            "0",
+            "-27031/1000",
+            "0",
+            "13/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__single_error",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "single_error"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ],
+          "upper": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__single_authority",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "single_authority"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-5407/200",
+            "0",
+            "11/1000"
+          ],
+          "upper": [
+            "0",
+            "-27031/1000",
+            "0",
+            "13/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__compound_without_age",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "compound_without_age"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-5407/200",
+            "0",
+            "11/1000"
+          ],
+          "upper": [
+            "0",
+            "-27031/1000",
+            "0",
+            "13/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__compound_without_delay",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "compound_without_delay"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "0",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ],
+          "upper": [
+            "0",
+            "-27033/1000",
+            "0",
+            "3/250"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__compound_without_error",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "compound_without_error"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-5407/200",
+            "0",
+            "11/1000"
+          ],
+          "upper": [
+            "0",
+            "-27031/1000",
+            "0",
+            "13/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__compound_without_authority_loss",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "compound_without_authority_loss"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ],
+          "upper": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_single_0",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_single_0"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_single_1",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_single_1"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_single_2",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_single_2"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ],
+          "upper": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ]
+        },
+        {
+          "lower": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_pair_01",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_pair_01"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ],
+          "upper": [
+            "0",
+            "-1999981/20000",
+            "0",
+            "-1/1000"
+          ]
+        },
+        {
+          "lower": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_pair_02",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_pair_02"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "159981/20000",
+            "-80",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-159981/20000",
+            "-80",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__three_face_pair_12",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "three_face_pair_12"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "1747/250",
+            "-70",
+            "1/50",
+            "0"
+          ],
+          "upper": [
+            "1747/250",
+            "-70",
+            "1/50",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__opposed_single_0",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "opposed_single_0"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1747/250",
+            "-70",
+            "-1/50",
+            "0"
+          ],
+          "upper": [
+            "-1747/250",
+            "-70",
+            "-1/50",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "named__opposed_single_1",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "task06_development_fixture": "opposed_single_1"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "-5401/200",
+            "0",
+            "1/50"
+          ],
+          "upper": [
+            "0",
+            "-5401/200",
+            "0",
+            "1/50"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__queued_departure",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "queued_departure"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__initial_unsafe",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "initial_unsafe"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1/100",
+            "-6001/100",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/100",
+            "-5999/100",
+            "1/1000",
+            "1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__bounded_safe",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "bounded_safe"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1/2",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1/100",
+            "-6001/100",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/100",
+            "-5999/100",
+            "1/1000",
+            "1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__effectiveness_interval",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "effectiveness_interval"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "0",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1/100",
+            "-6001/100",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/100",
+            "-5999/100",
+            "1/1000",
+            "1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__zero_authority",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "zero_authority"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1/100",
+            "-6001/100",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/100",
+            "-5999/100",
+            "1/1000",
+            "1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "1/500",
+          "-1/500"
+        ],
+        [
+          "-1/500",
+          "1/500"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__nonzero_queue",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "nonzero_queue"
+    }
+  },
+  {
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "0",
+        "0"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "-1/100",
+            "-6001/100",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "upper": [
+            "1/100",
+            "-5999/100",
+            "1/1000",
+            "1/1000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__zero_effectiveness",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "zero_effectiveness"
+    }
+  },
+  {
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "4999/1000",
+            "-50",
+            "0",
+            "0"
+          ],
+          "upper": [
+            "5001/1000",
+            "-50",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "key": "stress__boundary_straddle",
+    "namespace": "analytic",
+    "schema": "sal-repair-validation-input/1",
+    "source": {
+      "development_stress": "boundary_straddle"
+    }
+  }
+]

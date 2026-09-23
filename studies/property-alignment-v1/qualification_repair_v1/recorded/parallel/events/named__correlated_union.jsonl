@@ -1,0 +1,9 @@
+{"case_key": "named__correlated_union", "wall_since_start_s": 1.6249250620603561e-06, "phase": "imports"}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.0003577499883249402, "phase": "qualification_start"}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.0005584589671343565, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.000748499995097518, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.000988874933682382, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.001126458984799683, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.0012749999295920134, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.008914791978895664, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "named__correlated_union", "wall_since_start_s": 0.01560108398552984, "phase": "complete"}

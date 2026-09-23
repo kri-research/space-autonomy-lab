@@ -1,0 +1,142 @@
+{
+  "input_sha256": "8babf82c086acd47bc4628ed3359df25da649fe9a06f6fa3242091bf037d9b75",
+  "key": "named__three_face_pair_02",
+  "namespace": "analytic",
+  "qualification": {
+    "counters": {
+      "continuation_propagations": 6,
+      "point_evaluations": 66,
+      "queue_propagations": 0,
+      "range_evaluations": 8
+    },
+    "criterion": "every hypothesis admits fixed queue and a fixed-library one-second HCW prefix",
+    "eligible": true,
+    "full_recovery_claim": false,
+    "hypotheses": [
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 10,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1"
+          },
+          {
+            "action": [
+              "1/200",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 10,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1"
+          },
+          {
+            "action": [
+              "-1/200",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 10,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1"
+          },
+          {
+            "action": [
+              "0",
+              "1/200"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 0,
+        "qualified": true,
+        "witness_action": [
+          "0",
+          "1/200"
+        ]
+      },
+      {
+        "attempts": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "continuous_range_coverage": false,
+            "point_evaluations": 10,
+            "range_evaluations": 0,
+            "reason": "point_enclosure_not_contained",
+            "scope": "physical_prefix_only",
+            "status": "validated_violation",
+            "witness_time_s": "1"
+          },
+          {
+            "action": [
+              "1/200",
+              "0"
+            ],
+            "continuous_range_coverage": true,
+            "point_evaluations": 12,
+            "range_evaluations": 4,
+            "reason": "continuous_range_enclosures",
+            "scope": "physical_prefix_only",
+            "status": "validated_containment",
+            "witness_time_s": null
+          }
+        ],
+        "hypothesis": 1,
+        "qualified": true,
+        "witness_action": [
+          "1/200",
+          "0"
+        ]
+      }
+    ],
+    "information_sha256": "2ddc994b9fe604b19c090ae4a86e4dce3d87972f6b92ce490325edceb39a1e84",
+    "last_phase": "complete",
+    "physical_impossibility_claim": false,
+    "queue_checks": [
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 0,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      },
+      {
+        "continuous_range_coverage": true,
+        "hypothesis": 1,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "validated_containment"
+      }
+    ],
+    "schema": "sal-repaired-qualification/1",
+    "status": "qualified",
+    "wall_s": 0.04383137496188283
+  },
+  "schema": "sal-repair-job/1",
+  "worker_wall_s": 0.044246832956559956
+}

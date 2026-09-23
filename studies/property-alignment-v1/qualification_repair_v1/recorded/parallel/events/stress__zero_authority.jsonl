@@ -1,0 +1,6 @@
+{"case_key": "stress__zero_authority", "wall_since_start_s": 1.7079291865229607e-06, "phase": "imports"}
+{"case_key": "stress__zero_authority", "wall_since_start_s": 0.000293583027087152, "phase": "qualification_start"}
+{"case_key": "stress__zero_authority", "wall_since_start_s": 0.00046308303717523813, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "stress__zero_authority", "wall_since_start_s": 0.009120292030274868, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "stress__zero_authority", "wall_since_start_s": 0.013670291984453797, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "stress__zero_authority", "wall_since_start_s": 0.020286957966163754, "phase": "complete"}

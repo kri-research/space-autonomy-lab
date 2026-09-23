@@ -1,0 +1,16 @@
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 1.834006980061531e-06, "phase": "imports"}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.00027054199017584324, "phase": "qualification_start"}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.00041375006549060345, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.0005975840613245964, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.0008765840902924538, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.006581375026144087, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.012883124989457428, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.01990475005004555, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.02593162504490465, "phase": "continuation", "hypothesis": 0, "action_index": 4}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.031773708993569016, "phase": "continuation", "hypothesis": 0, "action_index": 5}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.03808370907790959, "phase": "continuation", "hypothesis": 0, "action_index": 6}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.04439354198984802, "phase": "continuation", "hypothesis": 0, "action_index": 7}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.05071858409792185, "phase": "continuation", "hypothesis": 0, "action_index": 8}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.05764858401380479, "phase": "continuation", "hypothesis": 0, "action_index": 9}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.06494079204276204, "phase": "continuation", "hypothesis": 0, "action_index": 10}
+{"case_key": "named__opposed_single_0", "wall_since_start_s": 0.07411275000777096, "phase": "complete"}

@@ -1,0 +1,15 @@
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 1.9581057131290436e-06, "phase": "imports"}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.00042470800690352917, "phase": "qualification_start"}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0006709580775350332, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0009085830533877015, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0012104581110179424, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0014188330387696624, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0015914581017568707, "phase": "queue_propagation", "hypothesis": 2}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0017254160484299064, "phase": "queue_check", "hypothesis": 2}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.0018962500616908073, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.011062625097110868, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.01862637500744313, "phase": "continuation", "hypothesis": 2, "action_index": 0}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.024461208027787507, "phase": "continuation", "hypothesis": 2, "action_index": 1}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.030476583051495254, "phase": "continuation", "hypothesis": 2, "action_index": 2}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.035973250051029027, "phase": "continuation", "hypothesis": 2, "action_index": 3}
+{"case_key": "development__three_face_boundary__00002", "wall_since_start_s": 0.04340291605331004, "phase": "complete"}

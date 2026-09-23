@@ -1,0 +1,5 @@
+{"case_key": "stress__boundary_straddle", "wall_since_start_s": 1.500011421740055e-06, "phase": "imports"}
+{"case_key": "stress__boundary_straddle", "wall_since_start_s": 0.0002668329980224371, "phase": "qualification_start"}
+{"case_key": "stress__boundary_straddle", "wall_since_start_s": 0.0004082500236108899, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "stress__boundary_straddle", "wall_since_start_s": 0.0005570420762524009, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "stress__boundary_straddle", "wall_since_start_s": 0.0006801250856369734, "phase": "queue_witness", "hypothesis": 0}

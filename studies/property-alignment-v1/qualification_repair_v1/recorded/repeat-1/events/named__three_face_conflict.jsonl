@@ -1,0 +1,18 @@
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 1.6249250620603561e-06, "phase": "imports"}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.00020420795772224665, "phase": "qualification_start"}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0003323330311104655, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0007107079727575183, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0010189579334110022, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0011554579250514507, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0013197079533711076, "phase": "queue_propagation", "hypothesis": 2}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.001494165975600481, "phase": "queue_check", "hypothesis": 2}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0016772079980000854, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.008179500000551343, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.014458457939326763, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.020989125012420118, "phase": "continuation", "hypothesis": 0, "action_index": 3}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.028331957990303636, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.03492595802526921, "phase": "continuation", "hypothesis": 1, "action_index": 1}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.04073170793708414, "phase": "continuation", "hypothesis": 1, "action_index": 2}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.0480295829474926, "phase": "continuation", "hypothesis": 2, "action_index": 0}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.05443374998867512, "phase": "continuation", "hypothesis": 2, "action_index": 1}
+{"case_key": "named__three_face_conflict", "wall_since_start_s": 0.061831665923818946, "phase": "complete"}

@@ -1,0 +1,5 @@
+{"case_key": "retired__00137", "wall_since_start_s": 1.9170111045241356e-06, "phase": "imports"}
+{"case_key": "retired__00137", "wall_since_start_s": 0.0003334999782964587, "phase": "qualification_start"}
+{"case_key": "retired__00137", "wall_since_start_s": 0.0006146669620648026, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "retired__00137", "wall_since_start_s": 0.011467374977655709, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "retired__00137", "wall_since_start_s": 0.015887083020061255, "phase": "queue_witness", "hypothesis": 0}

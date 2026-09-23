@@ -1,0 +1,6 @@
+{"case_key": "named__single_delay", "wall_since_start_s": 1.5420373529195786e-06, "phase": "imports"}
+{"case_key": "named__single_delay", "wall_since_start_s": 0.00025195907801389694, "phase": "qualification_start"}
+{"case_key": "named__single_delay", "wall_since_start_s": 0.00038804206997156143, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__single_delay", "wall_since_start_s": 0.005843959050253034, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__single_delay", "wall_since_start_s": 0.009305750019848347, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__single_delay", "wall_since_start_s": 0.01713749999180436, "phase": "complete"}

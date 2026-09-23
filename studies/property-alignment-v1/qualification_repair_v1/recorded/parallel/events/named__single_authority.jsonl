@@ -1,0 +1,6 @@
+{"case_key": "named__single_authority", "wall_since_start_s": 5.541951395571232e-06, "phase": "imports"}
+{"case_key": "named__single_authority", "wall_since_start_s": 0.0004659999394789338, "phase": "qualification_start"}
+{"case_key": "named__single_authority", "wall_since_start_s": 0.0009440419962629676, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "named__single_authority", "wall_since_start_s": 0.0013408330269157887, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "named__single_authority", "wall_since_start_s": 0.0018206669483333826, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "named__single_authority", "wall_since_start_s": 0.01221895799972117, "phase": "complete"}

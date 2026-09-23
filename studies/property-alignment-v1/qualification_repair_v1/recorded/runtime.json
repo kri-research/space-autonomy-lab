@@ -1,0 +1,6 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "processor": "Apple M5 Pro",
+  "python": "3.13.5",
+  "scope": "local development measurements, no hardware reliability inference"
+}

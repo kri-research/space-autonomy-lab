@@ -1,0 +1,77 @@
+{
+  "input_sha256": "f454194068d7514479214dc5c3a5e0bb2509aa546ced86e0d9939477ad7a657f",
+  "key": "stress__boundary_straddle",
+  "namespace": "analytic",
+  "qualification": {
+    "counters": {
+      "continuation_propagations": 0,
+      "point_evaluations": 1,
+      "queue_propagations": 0,
+      "range_evaluations": 0
+    },
+    "criterion": "every hypothesis admits fixed queue and a fixed-library one-second HCW prefix",
+    "eligible": false,
+    "full_recovery_claim": false,
+    "hypotheses": [],
+    "information_sha256": "96cc31d7add3a46beb322092f3efc9ec2e367aa0b563098b442adf789b6781c3",
+    "last_phase": "queue_witness",
+    "physical_impossibility_claim": true,
+    "queue_checks": [
+      {
+        "continuous_range_coverage": false,
+        "hypothesis": 0,
+        "point_evaluations": 1,
+        "range_evaluations": 0,
+        "reason": "initial_enclosure",
+        "status": "unresolved"
+      }
+    ],
+    "queue_witness": {
+      "components": {
+        "collision_free": "satisfied",
+        "containment": "violated",
+        "keep_out_free": "satisfied"
+      },
+      "disturbance": [
+        "0",
+        "0"
+      ],
+      "effectiveness": "1",
+      "enclosure": [
+        [
+          5.0009999999999994,
+          5.001
+        ],
+        [
+          -50.0,
+          -50.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "hypothesis": 0,
+      "information_sha256": "96cc31d7add3a46beb322092f3efc9ec2e367aa0b563098b442adf789b6781c3",
+      "model": "hcw",
+      "new_command_used": false,
+      "origin": [
+        "5001/1000",
+        "-50",
+        "0",
+        "0"
+      ],
+      "scope": "attainable_precommand_violation",
+      "time_s": "0"
+    },
+    "schema": "sal-repaired-qualification/1",
+    "status": "proved_precommand_violation",
+    "wall_s": 0.0006870420183986425
+  },
+  "schema": "sal-repair-job/1",
+  "worker_wall_s": 0.0010176249779760838
+}

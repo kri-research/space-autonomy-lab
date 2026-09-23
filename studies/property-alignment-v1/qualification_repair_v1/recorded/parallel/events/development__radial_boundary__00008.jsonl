@@ -1,0 +1,9 @@
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 2.166023477911949e-06, "phase": "imports"}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.0003203330561518669, "phase": "qualification_start"}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.0006762910634279251, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.0010201249970123172, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.0013881250051781535, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.0015810000477358699, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.001762458006851375, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.009843791020102799, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "development__radial_boundary__00008", "wall_since_start_s": 0.017981041106395423, "phase": "complete"}

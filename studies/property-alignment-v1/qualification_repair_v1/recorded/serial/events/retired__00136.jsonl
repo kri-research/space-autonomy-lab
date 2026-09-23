@@ -1,0 +1,9 @@
+{"case_key": "retired__00136", "wall_since_start_s": 1.5830155462026596e-06, "phase": "imports"}
+{"case_key": "retired__00136", "wall_since_start_s": 0.00034441601019352674, "phase": "qualification_start"}
+{"case_key": "retired__00136", "wall_since_start_s": 0.0006318750092759728, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "retired__00136", "wall_since_start_s": 0.0096176250372082, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "retired__00136", "wall_since_start_s": 0.014807165949605405, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "retired__00136", "wall_since_start_s": 0.024080625036731362, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "retired__00136", "wall_since_start_s": 0.02965520799625665, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "retired__00136", "wall_since_start_s": 0.03769737493712455, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "retired__00136", "wall_since_start_s": 0.04536541597917676, "phase": "complete"}

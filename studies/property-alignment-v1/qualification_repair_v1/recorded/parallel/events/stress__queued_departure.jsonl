@@ -1,0 +1,5 @@
+{"case_key": "stress__queued_departure", "wall_since_start_s": 1.374981366097927e-06, "phase": "imports"}
+{"case_key": "stress__queued_departure", "wall_since_start_s": 0.0002747499383985996, "phase": "qualification_start"}
+{"case_key": "stress__queued_departure", "wall_since_start_s": 0.00043245800770819187, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "stress__queued_departure", "wall_since_start_s": 0.005294207949191332, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "stress__queued_departure", "wall_since_start_s": 0.0062327919295057654, "phase": "queue_witness", "hypothesis": 0}
