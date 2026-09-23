@@ -1,0 +1,16 @@
+{
+  "incomplete": "No balanced interval until complete equal stratum counts. Missing selected receipts remain visible.",
+  "independence_limit": "One Mac and one session do not demonstrate independent timing or platform variation. The unconditional fixed-generator interpretation is not asserted.",
+  "inferential_proof": "For X_i in [0,1], p_i=E[X_i|F_(i-1)], conditional MGF <= exp(lambda^2/8). Iteration and optimization at lambda=4*epsilon give two-sided bound 2*exp(-2*N*epsilon^2).",
+  "mean_shortcut": "Failed sufficient check is unresolved. Confirmed false-safe requires a validated violation or a checked full-set impossibility certificate.",
+  "multiplicity": "One alpha=.05 conditional-mean estimate; all additional quantities descriptive without confirmatory p-values",
+  "numerical_unknown": "No certificate counted verified or safe solely because computation failed",
+  "primary_endpoint": "on_time_decisive_valid",
+  "qualification_denominator": "192 selected per stratum; no post-candidate exclusion",
+  "replacement_note": "Same frozen analysis implementation, binary endpoint, N=768 and conditional-mean interval. Eligibility now uses the explicitly versioned repaired qualifier and definite-claim recheck.",
+  "reserve_exhaustion": "No candidate execution and no denominator replacement; preserve the attempt and amend prospectively",
+  "schema": "sal-frozen-analysis-plan/2",
+  "stopping": "No efficacy/futility stopping. Pause for resource budget, source mismatch, corruption or user interruption; resume only the same identity. Started unfinished candidate cases become failures without re-execution. Qualification interruption blocks selection.",
+  "valid": "Candidate returns a definite result within its one-second policy budget and fixed certificate replay passes",
+  "validity_gate": "Any definite certificate failing revalidation blocks a validity claim; distinguishes a failed check from an actual contrary witness"
+}

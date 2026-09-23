@@ -1,0 +1,10 @@
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.00018458301201462746, "phase": "imports"}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.002620499930344522, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.010284165968187153, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.014420832972973585, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.02186924999114126, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.026080957963131368, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.03238887502811849, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.038421915960498154, "phase": "complete"}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.038588249939493835, "phase": "qualification_recheck"}
+{"case_key": "timing_bounded_pair__00000", "wall_s": 0.07426233298610896, "phase": "publishing"}

@@ -1,0 +1,16 @@
+{"case_key": "three_face_boundary__00000", "wall_s": 0.000157834030687809, "phase": "imports"}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.0024437090614810586, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.002629334107041359, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.00283541704993695, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.0029735000571236014, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.003256959025748074, "phase": "queue_propagation", "hypothesis": 2}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.0034125420497730374, "phase": "queue_check", "hypothesis": 2}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.0035757090663537383, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.008503250079229474, "phase": "continuation", "hypothesis": 0, "action_index": 1}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.013406084035523236, "phase": "continuation", "hypothesis": 0, "action_index": 2}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.019648959045298398, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.02449562505353242, "phase": "continuation", "hypothesis": 1, "action_index": 1}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.03073545906227082, "phase": "continuation", "hypothesis": 2, "action_index": 0}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.036630709073506296, "phase": "complete"}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.03673370904289186, "phase": "qualification_recheck"}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.058946709032170475, "phase": "publishing"}

@@ -1,0 +1,98 @@
+{
+  "balanced_coverage": {
+    "estimate": 1.0,
+    "fixed_generator_mean_requires_independence": true,
+    "half_width_bound": 0.48016139565996035,
+    "independent_hardware_sessions_observed": false,
+    "inferential_scope": "pilot description only; not confirmatory",
+    "lower": 0.5198386043400396,
+    "method": "conditional Hoeffding bound in frozen case order",
+    "runtime_dependence_assumed_absent": false,
+    "target": "average conditional success probability given earlier case outcomes",
+    "upper": 1.0
+  },
+  "campaign_complete": true,
+  "candidate_statuses": {
+    "certified_common_prefix": 7,
+    "proved_no_common_held_command": 1
+  },
+  "cases_loaded": 8,
+  "delivery_coverage_bounds": [
+    1.0,
+    1.0
+  ],
+  "eligible": 8,
+  "evaluation_class": "calibration_only",
+  "invalid_definite_certificates": 0,
+  "legacy_mean_flags_not_treated_as_counterexamples": true,
+  "mean_shortcut_false_safe": 1,
+  "mean_shortcut_safe": 8,
+  "mean_shortcut_unresolved": 0,
+  "missing_selected": [],
+  "native_baselines": {
+    "barrier": {
+      "evaluated": 8,
+      "interpretation": "native-design comparison with different information representation and continuation obligations; no superiority claim",
+      "protected": 0,
+      "statuses": {
+        "uncertified_information": 8
+      }
+    },
+    "predictive": {
+      "evaluated": 8,
+      "interpretation": "native-design comparison with different information representation and continuation obligations; no superiority claim",
+      "protected": 0,
+      "statuses": {
+        "uncertified_information_or_terminal_bound": 8
+      }
+    }
+  },
+  "on_time_decisive_valid": 8,
+  "pairwise_applicable": 2,
+  "pairwise_false_safe": 0,
+  "per_stratum": {
+    "interior_pair": {
+      "eligible": 2,
+      "max_candidate_wall_s": 0.06092775007709861,
+      "on_time_decisive_valid": 2,
+      "statuses": {
+        "certified_common_prefix": 2
+      }
+    },
+    "radial_boundary": {
+      "eligible": 2,
+      "max_candidate_wall_s": 0.06172591703943908,
+      "on_time_decisive_valid": 2,
+      "statuses": {
+        "certified_common_prefix": 2
+      }
+    },
+    "three_face_boundary": {
+      "eligible": 2,
+      "max_candidate_wall_s": 0.06657479191198945,
+      "on_time_decisive_valid": 2,
+      "statuses": {
+        "certified_common_prefix": 1,
+        "proved_no_common_held_command": 1
+      }
+    },
+    "timing_bounded_pair": {
+      "eligible": 2,
+      "max_candidate_wall_s": 0.4728170419111848,
+      "on_time_decisive_valid": 2,
+      "statuses": {
+        "certified_common_prefix": 2
+      }
+    }
+  },
+  "physical_validation": false,
+  "planned_denominator": 8,
+  "protected": false,
+  "qualification_statuses": {
+    "qualified": 8
+  },
+  "replacement_evaluation_id": "replacement-integration-parallel",
+  "schema": "sal-evaluation-analysis/2",
+  "secondary_confirmatory_inference": false,
+  "validity_claim_gate_passed": true
+}

@@ -1,0 +1,59 @@
+{
+  "analysis_module": "evaluation.analysis",
+  "changes": [
+    "new namespace salts and complete fresh reserve",
+    "validated factored qualification and mandatory claim recheck",
+    "attributed per-case worker failures",
+    "independent replacement output identity and preserved original attempt"
+  ],
+  "failure_handling": "Qualification unknown or failed proof blocks selection. Selected candidate timeout/crash/interruption contributes zero success without retry. Unstarted cases may resume under the same bound identity. Reserve exhaustion requires a new prospective amendment.",
+  "first_index": 0,
+  "freshness_rule": "Propose new namespace inputs in increasing index order; before any scientific execution, retire exact information sets previously exposed or already retained in this reserve. Preserve every retirement. Parameter proposal distributions and group weights remain unchanged; finite-population exclusion is explicit.",
+  "integration_inputs": "Only the eight already exposed original calibration inputs (indices0-1 in each stratum), plus explicit synthetic failure-handling fixtures. No replacement protected outcomes.",
+  "maximum_proposed_indices_per_stratum": 4096,
+  "old_campaign_valid": false,
+  "parent_evaluation_id": "63eb088857849237bb9a4d42ac5ae38053c54335134a187c72d370f4a65d7ebd",
+  "primary_endpoint": "on_time_decisive_valid",
+  "protected_execution_task": "08D only",
+  "qualification_domain_change": "The factored, short-circuit sufficient checker is explicitly versioned. Global equality to the earlier conservative qualification domain is not claimed.",
+  "qualification_interpretation": "True means all hypotheses have a validated fixed-library HCW prefix; False distinguishes proved queued-motion violation from noncertifying abstention; None blocks selection. No full recovery.",
+  "qualification_module": "qualification_repair_v1.core.qualify",
+  "qualification_recheck": "qualification_repair_v1.recheck.recheck; any failed definite-claim recheck blocks selection",
+  "replay": "All definite candidate outputs receive the existing in-episode fixed-input proof recheck. Qualification definite claims also rechecked before selection. No additional outcome-selected replay is authorized by this freeze.",
+  "reserve_per_stratum": 288,
+  "resources": {
+    "blas_threads": 1,
+    "case_wall_limit_s": 15.0,
+    "minimum_free_disk_bytes": 2147483648,
+    "phase_wall_limit_s": 1800.0,
+    "receipt_directory_limit_bytes": 536870912,
+    "workers": 4
+  },
+  "schema": "sal-replacement-design/1",
+  "selection": "Complete all reserve qualification first; take first 192 eligible indices per stratum. Do not exclude unknown computations or select by full-set candidate outputs.",
+  "statistical_scope": "Average conditional success probability in fixed stratum/index reveal order; no operational frequency, controller superiority or independent hardware reliability inference.",
+  "strata": [
+    "interior_pair",
+    "radial_boundary",
+    "three_face_boundary",
+    "timing_bounded_pair"
+  ],
+  "target_per_stratum": 192,
+  "target_total": 768,
+  "unchanged": [
+    "four stratum parameter distributions",
+    "equal weights",
+    "13 qualification actions",
+    "candidate and native baseline implementations",
+    "one-second candidate budget",
+    "primary endpoint and conditional-mean analysis",
+    "192 selected inputs per stratum",
+    "288-input reserve per stratum"
+  ],
+  "weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ]
+}

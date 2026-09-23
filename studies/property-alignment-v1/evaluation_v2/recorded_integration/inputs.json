@@ -1,0 +1,512 @@
+[
+  {
+    "generator_seed": "212688007992854881377243040070728152477",
+    "index": 0,
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "81651/10000",
+            "-433/5",
+            "9/5000",
+            "47/5000"
+          ],
+          "upper": [
+            "81651/10000",
+            "-433/5",
+            "9/5000",
+            "47/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-81651/10000",
+            "-433/5",
+            "-9/5000",
+            "47/5000"
+          ],
+          "upper": [
+            "-81651/10000",
+            "-433/5",
+            "-9/5000",
+            "47/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "interior_pair"
+  },
+  {
+    "generator_seed": "220619422802174284275522106471254507858",
+    "index": 1,
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "29381/5000",
+            "-131/2",
+            "37/5000",
+            "67/10000"
+          ],
+          "upper": [
+            "29381/5000",
+            "-131/2",
+            "37/5000",
+            "67/10000"
+          ]
+        },
+        {
+          "lower": [
+            "-29381/5000",
+            "-131/2",
+            "-37/5000",
+            "67/10000"
+          ],
+          "upper": [
+            "-29381/5000",
+            "-131/2",
+            "-37/5000",
+            "67/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "interior_pair"
+  },
+  {
+    "generator_seed": "300463246253584770156344734337432433426",
+    "index": 0,
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "70167/10000",
+            "-351/5",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "70167/10000",
+            "-351/5",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-70167/10000",
+            "-351/5",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-70167/10000",
+            "-351/5",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "radial_boundary"
+  },
+  {
+    "generator_seed": "195958815325519287907622022004620296283",
+    "index": 1,
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "7311/1250",
+            "-117/2",
+            "1/1000",
+            "0"
+          ],
+          "upper": [
+            "7311/1250",
+            "-117/2",
+            "1/1000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7311/1250",
+            "-117/2",
+            "-1/1000",
+            "0"
+          ],
+          "upper": [
+            "-7311/1250",
+            "-117/2",
+            "-1/1000",
+            "0"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "radial_boundary"
+  },
+  {
+    "generator_seed": "78316445801845236040013553118842090102",
+    "index": 0,
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "69593/10000",
+            "-348/5",
+            "17/10000",
+            "0"
+          ],
+          "upper": [
+            "69593/10000",
+            "-348/5",
+            "17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-69593/10000",
+            "-348/5",
+            "-17/10000",
+            "0"
+          ],
+          "upper": [
+            "-69593/10000",
+            "-348/5",
+            "-17/10000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "1/25",
+            "-499991/5000",
+            "0",
+            "-17/10000"
+          ],
+          "upper": [
+            "1/25",
+            "-499991/5000",
+            "0",
+            "-17/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "three_face_boundary"
+  },
+  {
+    "generator_seed": "239428886714284679354786735554665856775",
+    "index": 1,
+    "information": {
+      "age": 0,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 0,
+      "disturbance": "0",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "2899/400",
+            "-145/2",
+            "3/2000",
+            "0"
+          ],
+          "upper": [
+            "2899/400",
+            "-145/2",
+            "3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-2899/400",
+            "-145/2",
+            "-3/2000",
+            "0"
+          ],
+          "upper": [
+            "-2899/400",
+            "-145/2",
+            "-3/2000",
+            "0"
+          ]
+        },
+        {
+          "lower": [
+            "-7/50",
+            "-499991/5000",
+            "0",
+            "-11/10000"
+          ],
+          "upper": [
+            "-7/50",
+            "-499991/5000",
+            "0",
+            "-11/10000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "three_face_boundary"
+  },
+  {
+    "generator_seed": "124159708304579669869929994365322395763",
+    "index": 0,
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "60889/10000",
+            "-30501/500",
+            "1/1000",
+            "-1/5000"
+          ],
+          "upper": [
+            "60929/10000",
+            "-30499/500",
+            "7/5000",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-60929/10000",
+            "-30501/500",
+            "-7/5000",
+            "-1/5000"
+          ],
+          "upper": [
+            "-60889/10000",
+            "-30499/500",
+            "-1/1000",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "timing_bounded_pair"
+  },
+  {
+    "generator_seed": "249126350819712660698469693292816572671",
+    "index": 1,
+    "information": {
+      "age": 1,
+      "authority": "1/50",
+      "command_period_s": 1,
+      "delay": 1,
+      "disturbance": "1/100000",
+      "effectiveness": [
+        "1",
+        "1"
+      ],
+      "hypotheses": [
+        {
+          "lower": [
+            "79811/10000",
+            "-40001/500",
+            "3/2500",
+            "-1/5000"
+          ],
+          "upper": [
+            "79851/10000",
+            "-39999/500",
+            "1/625",
+            "1/5000"
+          ]
+        },
+        {
+          "lower": [
+            "-79851/10000",
+            "-40001/500",
+            "-1/625",
+            "-1/5000"
+          ],
+          "upper": [
+            "-79811/10000",
+            "-39999/500",
+            "-3/2500",
+            "1/5000"
+          ]
+        }
+      ],
+      "kind": "declared_exact_information_set",
+      "observation_pattern": "no new distinguishing observation before this held command ends",
+      "queue": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "schema": "sal-common-information/1",
+      "units": [
+        "m",
+        "m",
+        "m/s",
+        "m/s"
+      ]
+    },
+    "namespace": "calibration",
+    "schema": "sal-protected-case/1",
+    "stratum": "timing_bounded_pair"
+  }
+]

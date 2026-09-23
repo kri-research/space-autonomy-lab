@@ -1,0 +1,10 @@
+{"case_key": "interior_pair__00001", "wall_s": 0.0001769589725881815, "phase": "imports"}
+{"case_key": "interior_pair__00001", "wall_s": 0.002671541995368898, "phase": "queue_propagation", "hypothesis": 0}
+{"case_key": "interior_pair__00001", "wall_s": 0.0028899169992655516, "phase": "queue_check", "hypothesis": 0}
+{"case_key": "interior_pair__00001", "wall_s": 0.0031028749654069543, "phase": "queue_propagation", "hypothesis": 1}
+{"case_key": "interior_pair__00001", "wall_s": 0.0032372919376939535, "phase": "queue_check", "hypothesis": 1}
+{"case_key": "interior_pair__00001", "wall_s": 0.0034502919297665358, "phase": "continuation", "hypothesis": 0, "action_index": 0}
+{"case_key": "interior_pair__00001", "wall_s": 0.011485124938189983, "phase": "continuation", "hypothesis": 1, "action_index": 0}
+{"case_key": "interior_pair__00001", "wall_s": 0.018897041911259294, "phase": "complete"}
+{"case_key": "interior_pair__00001", "wall_s": 0.019075250020250678, "phase": "qualification_recheck"}
+{"case_key": "interior_pair__00001", "wall_s": 0.03555987495929003, "phase": "publishing"}

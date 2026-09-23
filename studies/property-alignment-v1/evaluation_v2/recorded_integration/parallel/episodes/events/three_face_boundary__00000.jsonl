@@ -1,0 +1,3 @@
+{"case_key": "three_face_boundary__00000", "wall_s": 0.00015320803504437208, "phase": "imports"}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.00264495809096843, "phase": "candidate_episode"}
+{"case_key": "three_face_boundary__00000", "wall_s": 0.3587570410454646, "phase": "publishing"}

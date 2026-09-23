@@ -1,0 +1,20 @@
+{
+  "case_limit_s": 15.0,
+  "context_id": "replacement-integration-serial",
+  "inputs": [
+    "169b94b38aa8003818fa74b142d625a2ba7c6d8291253e4728ddcb11b5940167",
+    "61845dd06170c6ec392db4ce6db67962d7c0799cccfe3a676328ac684bf4916d",
+    "db870fb58d932b5cfbfc3cbe9355e833ef3fdedfa6efbbd182edc98dc9318359",
+    "1e27d67bc2141e712b23d9bc2ce744a1415622041083edd69723ad235633041e",
+    "0ae645779c4eb324673adbc81c83e98eb0b209d65c132acce5dd267dbc0dda61",
+    "9b82799dd136d2efce5a6a40c39c6bb2a2b5c2bf8129163eeff0be17feacc0e6",
+    "fe60b56e49410c8d679e918cb689116c4d21ccea254c9c55c543bb7dee509871",
+    "9649f6d629500cff77792ac9f2f6f310425398f2c761242b511c2de45aaba554"
+  ],
+  "kind": "qualification",
+  "phase_limit_s": 1800.0,
+  "qualifications": {},
+  "schema": "sal-replacement-batch/1",
+  "test_mode": null,
+  "workers": 1
+}
