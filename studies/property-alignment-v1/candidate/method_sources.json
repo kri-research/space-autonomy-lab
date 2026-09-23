@@ -1,0 +1,70 @@
+{
+  "scope": "Targeted primary-source novelty assessment, not an exhaustive priority proof. Relevant published constructions and recent preprints are distinguished.",
+  "accessed_at_utc": "2026-09-23T14:04:29.752273+00:00",
+  "entries": [
+    {
+      "key": "wabersich2021",
+      "doi": "10.1016/j.automatica.2021.109597",
+      "source": "https://arxiv.org/abs/1812.05506",
+      "inspected": "Nominal/robust predictive-filter construction and retained Task05 reconstruction",
+      "relation": "Existing continuation and terminal protection already solves prior selected failures; retained unchanged."
+    },
+    {
+      "key": "brunke2022",
+      "doi": "10.1109/CDC51059.2022.9992834",
+      "source": "https://arxiv.org/abs/2212.08900",
+      "inspected": "Output-feedback bound/terminal assumptions, equation18; original code access documented in Task05",
+      "relation": "Uncertainty-aware protection is established; this task does not introduce it."
+    },
+    {
+      "key": "laine2020",
+      "source": "https://arxiv.org/abs/2005.07144",
+      "version": "v2",
+      "title": "Eyes-Closed Safety Kernels: Safety for Autonomous Systems Under Loss of Observability",
+      "inspected": "Full PDF obtained; information structure, eyes-closed kernel and execution in SectionsII-III read",
+      "relation": "Blackout-compatible safety and reachability already studied; self-state/external-observation split differs from the exact multimodal self-state information set here."
+    },
+    {
+      "key": "zhang2021interval",
+      "source": "https://arxiv.org/abs/2110.00915",
+      "title": "Control Barrier Function Meets Interval Analysis: Safety-Critical Control with Measurement and Actuation Uncertainties",
+      "authors": [
+        "Yuhao Zhang",
+        "Sequoyah Walters",
+        "Xiangru Xu"
+      ],
+      "inspected": "Open full PDF, interval sampled-data conditions and higher-relative-degree extension, Propositions1-3",
+      "relation": "Positive uncertainty-tube safety checks are prior work. Our negative certificates do not rely on failure of that sufficient search."
+    },
+    {
+      "key": "wan2026",
+      "source": "https://arxiv.org/html/2609.06036v1",
+      "title": "Generator-Independent Runtime Assurance under Partial Observation",
+      "authors": [
+        "Guangxi Wan",
+        "Yongbo Xie",
+        "Yuqi Liu",
+        "Qingwei Dong",
+        "Qingxin Li",
+        "Hongfei Bai",
+        "Peng Zeng"
+      ],
+      "status": "arXiv preprint, v1, 5 September2026, not asserted peer reviewed",
+      "inspected": "HTML full text accessed; definitions, Theorem2 and common-action construction read",
+      "relation": "Generic observational incompatibility is explicitly covered already. No first-discovery claim for ambiguous observations preventing reliable useful admission is defensible from this task."
+    },
+    {
+      "key": "boyd2004",
+      "source": "https://web.stanford.edu/~boyd/cvxbook/",
+      "title": "Convex Optimization",
+      "authors": [
+        "Stephen Boyd",
+        "Lieven Vandenberghe"
+      ],
+      "status": "Cambridge University Press2004 textbook",
+      "inspected": "Author-hosted bibliographic/book page; our residual inequality is independently derived in full",
+      "relation": "Linear alternatives/dual certificates are classical. The contribution is a checked spacecraft specialization and concrete multi-hypothesis witnesses, not a new alternative theorem."
+    }
+  ],
+  "novelty_decision": "No broad novel control or general impossibility theorem is claimed. Test the usefulness of the concrete two-sided certificate diagnostic separately in Task07; do not rename generic partial-information viability as a breakthrough."
+}
