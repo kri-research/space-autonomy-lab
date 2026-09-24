@@ -1,0 +1,13 @@
+{
+  "schema": "sal-independent-calibration-plan/1",
+  "scope": "Post hoc engineering calibration on the35already exposed jobs, not protected audit",
+  "jobs_sha256": "8d8cd7f8eafc8f3e7fb956b188ce940c5f178ca1f5d2d226a04f351617550b71",
+  "warm_runs": 3,
+  "cold_serial_runs": 1,
+  "workers": 1,
+  "initial_resource_limit_s": 30,
+  "phase_limit_s": 1800,
+  "source_isolation": "Copy only the package; fresh standard-library environment and -I -S -B; trace actual imports.",
+  "retain": "All completions, errors, original no-on-time cases and setup corrections; no outcome-selected removal.",
+  "planned_tests": "Unit/adversarial suite, actual serial worker checkpoint/resume, mock process-failure and timeout paths, source dependency checks, exact supplied checker replay."
+}

@@ -1,0 +1,22 @@
+{
+  "research": {
+    "tests": 1213,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "publication": {
+    "tests": 106,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "manuscript": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "independent": 95,
+  "maintained": 208
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "Only pre-existing named development and eight exposed original calibration inputs; no protected certificate evaluation",
+  "files": {
+    "candidate/recorded_development/fixture_inputs.json": "0f48f0a65b753f0f51cb2d2ba8327c0142a6d717f246952d35895cda0f47545a",
+    "candidate/recorded_development/fixtures.json": "96793a68cf170641f0ce0459e751dc9fd9ccd4884dd369b6609ff6de5d83abba",
+    "evaluation_v2/recorded_integration/inputs.json": "f06b17b21913bff22011b2192fdc754ad20b5207dfcc07f0fa723b8d4b6a2bab",
+    "evaluation_v2/recorded_integration/manifest.json": "64a839f184fd5496e6c9fe22a57a18628fb26000236d51994438bdec3e16fe14"
+  },
+  "job_ids": [
+    "named-midpoint_known",
+    "named-hold_bounded",
+    "named-outward_boundary",
+    "named-opposed_radial",
+    "named-three_face_conflict",
+    "named-correlated_union",
+    "named-outer_geometry_false_safe",
+    "named-compound",
+    "named-single_age",
+    "named-single_delay",
+    "named-single_error",
+    "named-single_authority",
+    "named-compound_without_age",
+    "named-compound_without_delay",
+    "named-compound_without_error",
+    "named-compound_without_authority_loss",
+    "named-three_face_single_0",
+    "named-three_face_single_1",
+    "named-three_face_single_2",
+    "named-three_face_pair_01",
+    "pair-three_face_pair_01",
+    "named-three_face_pair_02",
+    "pair-three_face_pair_02",
+    "named-three_face_pair_12",
+    "pair-three_face_pair_12",
+    "named-opposed_single_0",
+    "named-opposed_single_1",
+    "calibration-interior_pair__00000",
+    "calibration-interior_pair__00001",
+    "calibration-radial_boundary__00000",
+    "calibration-radial_boundary__00001",
+    "calibration-three_face_boundary__00000",
+    "calibration-three_face_boundary__00001",
+    "calibration-timing_bounded_pair__00000",
+    "calibration-timing_bounded_pair__00001"
+  ],
+  "count": 35,
+  "provided_checker_files": {
+    "independent_hcw_check.py": "1bf6e23f704af19812976c42c884bdb3dfccd590b17c1939274cb733b5fd6d3a",
+    "independent_hcw_results.json": "ff85ec0f472b593dc8095af6c006abd4f9f9346418838989b91a4c4236745487"
+  },
+  "provided_checker_storage": {
+    "original_name": "independent_hcw_check.py",
+    "stored_as": "reference_inputs/independent_hcw_check.py.txt",
+    "sha256": "1bf6e23f704af19812976c42c884bdb3dfccd590b17c1939274cb733b5fd6d3a",
+    "reason": "Immutable source input, not a runtime module. Exact bytes remain independently parseable and may be copied to a new .py path for explicit reference replay."
+  }
+}
