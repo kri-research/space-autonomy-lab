@@ -5,6 +5,17 @@ This additive index describes the completed scientific artifact at commit
 pre-execution statements retain their historical meanings. They are not current
 claims that the subsequently recorded studies remain unexecuted.
 
+## Current verification correction
+
+The current active verifier is version `sal-git-content-binding/2`. A coordinated
+file/manifest mutation exposed a content-binding defect in the original publication
+audit. The repair checks actual Git blobs and modes, not only filenames. No real
+scientific content mismatch was found in the new 5,744-file comparison.
+See `corrections/git_binding_v2/` for the dated correction, exact source revision,
+regression counts, interpretation and platform limits. The original recorded
+publication evidence remains unchanged. Earlier receipts are not retrospectively
+credited with the repaired check.
+
 ## Isolated setup
 
 Use a new full-history clone and CPython 3.13.5. The subproject is not installed
@@ -13,7 +24,7 @@ through the historical repository's Python 3.11 package configuration.
 ```sh
 git clone https://github.com/kri-research/space-autonomy-lab.git sal-reproduction
 cd sal-reproduction
-git checkout --detach dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac
+git checkout --detach 793f4bd6c8139e88066f0cbf10e9c41a842ea875
 git clone --no-hardlinks . ../sal-evidence
 git -C ../sal-evidence checkout --detach 5539de5753092b09fd78351095292e7627047794
 python3.13 -m venv ../sal-check-environment
@@ -26,7 +37,10 @@ python -m publication_v1.audit
 python -m publication_v1.reproduce --output "$HOME/sal-check-output"
 ```
 
-The final directory must not exist. The default reconstructs the frozen analysis
+The checkout above is the repaired implementation revision preceding the new
+correction receipt, not the historical reproduction-source commit. Preserve the
+current instructions when using that pinned checkout; its older README predates
+this correction. The final directory must not exist. The default reconstructs the frozen analysis
 from retained records, verifies source/manifest bindings, tests explicit audit
 fixtures, and regenerates spacecraft and cart result figures. It does not run a
 protected policy, physical trial or host timing experiment. For an additionally

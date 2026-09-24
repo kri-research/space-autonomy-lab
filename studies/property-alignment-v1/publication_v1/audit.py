@@ -1,11 +1,10 @@
 """Read-only scientific artifact audit with explicit prior-commit identities."""
 
-from pathlib import Path, PurePosixPath
+from pathlib import Path
 import argparse
 import hashlib
 import json
 import math
-import subprocess
 
 ROOT = Path(__file__).resolve().parent
 STUDY = ROOT.parent
@@ -20,44 +19,19 @@ def load(path):
     return json.loads(Path(path).read_text())
 
 
+SCIENTIFIC_SOURCE_COMMIT = "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8"
+
+
 def verify_manifest(document=None, repository=REPO):
-    doc = document or load(ROOT / "evidence_manifest.json")
-    repository = Path(repository).resolve()
-    expected_commit = "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8"
-    if doc["scientific_source_commit"] != expected_commit:
-        raise ValueError("Wrong scientific source anchor")
-    if not doc["files"]:
-        raise ValueError("Empty scientific inventory")
-    for name, item in doc["files"].items():
-        rel = PurePosixPath(name)
-        if rel.is_absolute() or ".." in rel.parts or rel.as_posix() != name:
-            raise ValueError("Unsafe manifest path")
-        p = repository / name
-        if not p.is_file() or p.is_symlink() or any(q.is_symlink() for q in p.parents):
-            raise ValueError("Missing or unsafe scientific input " + name)
-        if p.stat().st_size != item["bytes"] or digest(p) != item["sha256"]:
-            raise ValueError("Changed scientific input " + name)
-    # Git object membership and mode remain bound to the prior source, not self.
-    tree = subprocess.check_output(
-        [
-            "git",
-            "--no-replace-objects",
-            "-C",
-            str(repository),
-            "ls-tree",
-            "-r",
-            "--name-only",
-            expected_commit,
-        ],
-        text=True,
-    ).splitlines()
-    if set(tree) != set(doc["files"]):
-        raise ValueError("Prior-commit inventory is incomplete")
-    return {
-        "scientific_source_commit": expected_commit,
-        "files": len(tree),
-        "bytes": sum(x["bytes"] for x in doc["files"].values()),
-    }
+    """Version 2 binds working bytes/modes to Git, not just to a manifest."""
+    from .git_binding import strict_json, verify_commit_content
+
+    doc = (
+        strict_json((ROOT / "evidence_manifest.json").read_bytes())
+        if document is None
+        else document
+    )
+    return verify_commit_content(doc, repository, expected_commit=SCIENTIFIC_SOURCE_COMMIT)
 
 
 def outcomes():
@@ -134,11 +108,11 @@ def main():
     p.add_argument("--output", type=Path)
     args = p.parse_args()
     result = {
-        "schema": "sal-publication-audit/1",
+        "schema": "sal-publication-audit/2",
         "source": verify_manifest(),
         "outcomes": outcomes(),
         "protected_campaigns_executed": False,
-        "scope": "Record/identity and derived-count checks; not physical or human validation",
+        "scope": "Git-content/mode and derived-count checks; not physical or human validation",
     }
     text = json.dumps(result, indent=2, sort_keys=True) + "\n"
     if args.output:
@@ -148,4 +122,17 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (ValueError, OSError, TypeError, KeyError) as exc:
+        print(
+            json.dumps(
+                {
+                    "passed": False,
+                    "verification_version": "sal-git-content-binding/2",
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+            )
+        )
+        raise SystemExit(2) from exc

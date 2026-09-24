@@ -1,0 +1,9 @@
+{
+  "schema": "sal-git-binding-correction-files/1",
+  "repaired_code_commit": "793f4bd6c8139e88066f0cbf10e9c41a842ea875",
+  "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+  "files": {
+    "README.md": "c150c661fccb5be85f98f3d5dc2df2e59feea195c3da233abefda31946d3910e",
+    "verification.json": "5c43cf02d5e8967571083e7843d326ed107ce2e0117e5f15083a897d54414da7"
+  }
+}
