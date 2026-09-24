@@ -1,0 +1,121 @@
+{
+  "schema": "sal-figure-bindings/1",
+  "figures": [
+    {
+      "file": "figures/figure_1_paired_tables.svg",
+      "sha256": "be9d9a9bdb909a900f3c60173a9ca7f22b0841ece7a01370a85f9a2110a49dbd",
+      "generator": "publication_v1/figures.py",
+      "generator_sha256": "9e5b247e80889142a250cd12b9a1522e0b66c5b7a2b23abc0a36c4c3f6f54548",
+      "input_sha256": {
+        "paired_counts.csv": "0e8544b0335ad1f989724c1ea76270bec8376e3907536447d845ef23f70deb71",
+        "historical_common_property.csv": "af45d7d8633eb164a4d8249f454976273dc7109c5ff9df179b5efec675ac2ee2",
+        "diagnostic_states.csv": "2dd4a74478b9457f79d6cb8460ca945474d339432ebddf6a279898b0e4414ab9"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "7f8037beef4eb8ca0b5779e519a218e11c9478bb500cf72210af7cd34d771b88",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    },
+    {
+      "file": "figures/figure_2_common_property.svg",
+      "sha256": "8c93159800385724fd51abb843a7cb7a5c95432c71d7f9bf9a782e46464cada8",
+      "generator": "publication_v1/figures.py",
+      "generator_sha256": "9e5b247e80889142a250cd12b9a1522e0b66c5b7a2b23abc0a36c4c3f6f54548",
+      "input_sha256": {
+        "paired_counts.csv": "0e8544b0335ad1f989724c1ea76270bec8376e3907536447d845ef23f70deb71",
+        "historical_common_property.csv": "af45d7d8633eb164a4d8249f454976273dc7109c5ff9df179b5efec675ac2ee2",
+        "diagnostic_states.csv": "2dd4a74478b9457f79d6cb8460ca945474d339432ebddf6a279898b0e4414ab9"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "badf8b3394d3294cb4f4994dd1d4c8ede4ba085c0fb2dd0dcdef828662ef18c4",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    },
+    {
+      "file": "figures/figure_3_diagnostic.svg",
+      "sha256": "e7542d187c08a8236a403555fe14e26ccd202d512ffc24d55c912590a71d4212",
+      "generator": "publication_v1/figures.py",
+      "generator_sha256": "9e5b247e80889142a250cd12b9a1522e0b66c5b7a2b23abc0a36c4c3f6f54548",
+      "input_sha256": {
+        "paired_counts.csv": "0e8544b0335ad1f989724c1ea76270bec8376e3907536447d845ef23f70deb71",
+        "historical_common_property.csv": "af45d7d8633eb164a4d8249f454976273dc7109c5ff9df179b5efec675ac2ee2",
+        "diagnostic_states.csv": "2dd4a74478b9457f79d6cb8460ca945474d339432ebddf6a279898b0e4414ab9"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "6906fada275502bba65c4cab73e02e8944d70024639de4ecbf9abc71bbfae7b4",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    },
+    {
+      "file": "figures/figure_S1_geometry.svg",
+      "sha256": "3a0ac348aed07582993ac9651d00717b13d19c5e84cca91ee203be870ed8c94c",
+      "generator": "publication_v1/figures.py",
+      "generator_sha256": "9e5b247e80889142a250cd12b9a1522e0b66c5b7a2b23abc0a36c4c3f6f54548",
+      "input_sha256": {
+        "paired_counts.csv": "0e8544b0335ad1f989724c1ea76270bec8376e3907536447d845ef23f70deb71",
+        "historical_common_property.csv": "af45d7d8633eb164a4d8249f454976273dc7109c5ff9df179b5efec675ac2ee2",
+        "diagnostic_states.csv": "2dd4a74478b9457f79d6cb8460ca945474d339432ebddf6a279898b0e4414ab9"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "50f6d6483b493761593fcda3b78764c31de79a4154aa16b7d33b85520e88c1d2",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    },
+    {
+      "file": "figures/candidate_outcomes.svg",
+      "sha256": "153bf2ff2b065954c2a4bdfee287fabdd584e74db8a1cbe67d4c95dc1652699b",
+      "generator": "campaign_v2/plot.py",
+      "generator_sha256": "1b4873596d0717c132421e92ba41459e7de5c14972dd236a8edd2b5983b69a38",
+      "input_sha256": {
+        "summary.json": "a42794233795380888c0e796008ac264acd4d1fde1ebd82011a41a54c2cf10ce",
+        "selected_case_ledger.csv": "fe01dc8cb873a3b926b454a312ab6187eafc8cb371c2a4fcdd91b69624971454"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "153bf2ff2b065954c2a4bdfee287fabdd584e74db8a1cbe67d4c95dc1652699b",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    },
+    {
+      "file": "figures/policy_timing.svg",
+      "sha256": "b05e8d819ac1a86bd66b79e3808a70b9d999ea16a2bc4ba6570f3408ad2dea58",
+      "generator": "campaign_v2/plot.py",
+      "generator_sha256": "1b4873596d0717c132421e92ba41459e7de5c14972dd236a8edd2b5983b69a38",
+      "input_sha256": {
+        "summary.json": "a42794233795380888c0e796008ac264acd4d1fde1ebd82011a41a54c2cf10ce",
+        "selected_case_ledger.csv": "fe01dc8cb873a3b926b454a312ab6187eafc8cb371c2a4fcdd91b69624971454"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "b05e8d819ac1a86bd66b79e3808a70b9d999ea16a2bc4ba6570f3408ad2dea58",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    },
+    {
+      "file": "figures/transfer_outcomes.svg",
+      "sha256": "e12b2f9bfb18efbc773fd5f54bbbb3a17aa5aa3ec25fa29fc709a8574e0cd709",
+      "generator": "transfer_cart_v1/plot.py",
+      "generator_sha256": "b8f7417d3e3e60bc1210efd3e5f4138f50d7bac64519b470546a62e6366d70fa",
+      "input_sha256": {
+        "summary.json": "55097c91709c1e64aa22ba61c756683b7e73adb2b4c43f866eaf8e0a9979c48f"
+      },
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+      "raw_svg_sha256": "e12b2f9bfb18efbc773fd5f54bbbb3a17aa5aa3ec25fa29fc709a8574e0cd709",
+      "serialization": "UTF-8 with trailing whitespace removed per line; drawing token stream unchanged",
+      "serialization_source": "publication_v1/prepare_figures.py",
+      "serialization_source_sha256": "46a01290716245acb5e9314e81aceda526d1c6ea85e55760ed3037bac63279a3"
+    }
+  ],
+  "new_scientific_simulations": false
+}

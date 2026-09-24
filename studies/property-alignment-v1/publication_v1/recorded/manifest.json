@@ -1,0 +1,16 @@
+{
+  "schema": "sal-publication-recorded-manifest/1",
+  "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+  "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+  "files": {
+    "figure_manifest.json": "bd7fc466460197ceedd2cd3c4b2c8adfa26f99dd8507cd38a18cfe4927d5fac0",
+    "figures/candidate_outcomes.svg": "153bf2ff2b065954c2a4bdfee287fabdd584e74db8a1cbe67d4c95dc1652699b",
+    "figures/figure_1_paired_tables.svg": "be9d9a9bdb909a900f3c60173a9ca7f22b0841ece7a01370a85f9a2110a49dbd",
+    "figures/figure_2_common_property.svg": "8c93159800385724fd51abb843a7cb7a5c95432c71d7f9bf9a782e46464cada8",
+    "figures/figure_3_diagnostic.svg": "e7542d187c08a8236a403555fe14e26ccd202d512ffc24d55c912590a71d4212",
+    "figures/figure_S1_geometry.svg": "3a0ac348aed07582993ac9651d00717b13d19c5e84cca91ee203be870ed8c94c",
+    "figures/policy_timing.svg": "b05e8d819ac1a86bd66b79e3808a70b9d999ea16a2bc4ba6570f3408ad2dea58",
+    "figures/transfer_outcomes.svg": "e12b2f9bfb18efbc773fd5f54bbbb3a17aa5aa3ec25fa29fc709a8574e0cd709",
+    "verification.json": "d62ead5966cc49886a3d870f901c000c5c8755c3304703c9315d040b158ef91d"
+  }
+}
