@@ -1,0 +1,25 @@
+{
+  "cap_passed": true,
+  "family": "mean_motion",
+  "gate": "information_boxes",
+  "lower_parameters": {
+    "mean_motion_relative": "1",
+    "position_m": "0",
+    "queue_delay_s": "0",
+    "velocity_mps": "0"
+  },
+  "lower_radius": "1",
+  "noncertified_upper": null,
+  "probes": [
+    {
+      "admitted": true,
+      "evaluation_id": "43e3413e1aa9feab25944baf19d8b3ad5bf097d00d9002a6e2ffde1f4cc04b6d",
+      "rho": "0"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "82ec155bc8471a5d183407ec9b39fafd89c8cf6798a1d5f0700c75c16c89da0b",
+      "rho": "1"
+    }
+  ]
+}

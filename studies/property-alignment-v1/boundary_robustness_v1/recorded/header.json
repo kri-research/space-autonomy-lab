@@ -1,0 +1,165 @@
+{
+  "original_campaign_executed": false,
+  "protocol": {
+    "anchors_sha256": "a26fc6db773a442592b37aff3826021179b44f373388916cd7b4c67f89a65e1d",
+    "claims": [
+      "Every pair of full nominal-centered information boxes admits its original fixed command, while the full union is obstructed by the still-admitted nominal centers.",
+      "Every independently shifted triple within the boxes is initially admissible, admits the same original command for each pair, and has no common held command under the declared schedule."
+    ],
+    "core_precision_bits": 192,
+    "families": [
+      {
+        "name": "position",
+        "scale": [
+          "1/1000",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "velocity",
+        "scale": [
+          "0",
+          "1/1000",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "joint_state",
+        "scale": [
+          "1/1000",
+          "1/1000",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "mean_motion",
+        "scale": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "known_delay",
+        "scale": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "combined",
+        "scale": [
+          "1/10000",
+          "1/10000",
+          "1/100",
+          "1/100"
+        ]
+      }
+    ],
+    "figure": "Nominal-model p-v frontier of the explicit sufficient inequalities, with strict obstruction boundary excluded. Derived from the same recorded affine bounds, not additional trials.",
+    "limits": {
+      "max_unique_evaluations": 193,
+      "per_evaluation_seconds": 60,
+      "retry": "No started evaluation is silently retried. Preserve failed runs; numerical changes after run start require a new version. Fixed-output reproduction is labeled separately.",
+      "run_seconds": 1800,
+      "workers": 1
+    },
+    "negative_region": "Three proven necessary halfspaces containing the whole union, with fixed original rational weights. Coefficients and shifted right-hand sides bounded for every model/delay realization.",
+    "novelty": "Application of established sufficient-margin and residual-checked infeasibility principles; no new general theorem or flight claim.",
+    "original_campaigns_executed": false,
+    "outcomes": [
+      "certified",
+      "not_certified_by_bound",
+      "execution_failure"
+    ],
+    "parameters": {
+      "disturbance": "Exactly zero.",
+      "effectiveness": "Exactly one.",
+      "mean_motion_relative": "One constant shared n in [n0*(1-e),n0*(1+e)], e in [0,1].",
+      "physical_calibration": "None; parameters are mathematical sensitivity variables, not observed sensor errors.",
+      "position_m": "Independent componentwise bounds |dx_i|,|dy_i|<=p for each original hypothesis i.",
+      "queue_delay_s": "Each realization has one known d in [0,D], zero commanded input on [0,d], then the fixed original pair command for one second. D in [0,1]. No observations distinguish the hypotheses during this schedule.",
+      "velocity_mps": "Independent componentwise bounds |dvx_i|,|dvy_i|<=v."
+    },
+    "positive_region": "Closed original corridor, a sufficient subset of the original closed corridor/ellipse union. A failed sufficient bound is unresolved, never a proof of physical failure.",
+    "post_hoc": true,
+    "schema": "sal-three-state-robustness-protocol/1",
+    "search": {
+      "algorithm": "Evaluate rho0 and rho1. If cap passes, report cap only. Otherwise exactly14 rational bisection steps, treating every non-certificate as a failed sufficient bound. No optimized pair commands or replacement triple.",
+      "bisection_steps": 14,
+      "gates": [
+        "information_boxes",
+        "shifted_triples"
+      ],
+      "radius_units": "Dimensionless rho multiplies the four SI/relative scales in their stated order.",
+      "range": [
+        "0",
+        "1"
+      ],
+      "strict_margin": "Negative obstruction requires delta>0; closed positive margins may equal zero.",
+      "upper_interpretation": "Smallest retained noncertified bracket is not a physical counterexample or an exact maximal radius."
+    },
+    "stress": [
+      {
+        "delay_s": "0",
+        "name": "position-outward",
+        "pair": [
+          1,
+          2
+        ],
+        "shift": [
+          "9/10000",
+          "0",
+          "0",
+          "0"
+        ],
+        "state_index": 1,
+        "time_s": "1"
+      },
+      {
+        "delay_s": "0",
+        "name": "velocity-outward",
+        "pair": [
+          1,
+          2
+        ],
+        "shift": [
+          "0",
+          "0",
+          "1/1000",
+          "0"
+        ],
+        "state_index": 1,
+        "time_s": "1"
+      },
+      {
+        "delay_s": "1",
+        "name": "zero-queue-exit",
+        "pair": [
+          0,
+          1
+        ],
+        "shift": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "state_index": 0,
+        "time_s": "1"
+      }
+    ],
+    "stress_rule": "A contrary witness must be inside its separately declared stress family, initially in the original region, and have a validated outside enclosure at an explicit time. It refutes that fixed command at that stress value only, not another control or the smaller certified neighborhood.",
+    "time_cells_per_phase": 256
+  },
+  "source_commit": "607768961966127b628d673534070ab7bb74afed",
+  "started_at_utc": "2026-09-24T17:48:46.977798+00:00",
+  "study_id": "de8cb9a5d3e2c73b2a9f748e3e07cea301fb0cf8b739960b7d47fe38ad439b23"
+}

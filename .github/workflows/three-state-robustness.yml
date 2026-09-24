@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'studies/property-alignment-v1/boundary_robustness_v1/**'
+      - 'studies/property-alignment-v1/robustness_evidence_tests/**'
       - '.github/workflows/three-state-robustness.yml'
 permissions:
   contents: read
@@ -27,7 +28,7 @@ jobs:
           OPENBLAS_NUM_THREADS: '1'
         run: |
           python -m ruff check boundary_robustness_v1
-          python -m pytest boundary_robustness_v1/tests
+          python -m pytest boundary_robustness_v1/tests robustness_evidence_tests
           if [ -f boundary_robustness_v1/recorded/completion.json ]; then
             ID=$(python -c "import json; print(json.load(open('boundary_robustness_v1/frozen/study.json'))['study_id'])")
             python -m boundary_robustness_v1.study verify --output boundary_robustness_v1/recorded --freeze boundary_robustness_v1/frozen/study.json --study-id "$ID" --recompute
