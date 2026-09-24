@@ -1,0 +1,113 @@
+{
+  "all_selected_accounted_for": true,
+  "audit_id": "bc472385b582d0f5d6ee9e7a3e4d5f250d316f2c6c9a4c8e31be21f838577f53",
+  "comparison_categories": {
+    "original_no_on_time_certificate": 12,
+    "verified_original_certificate": 756
+  },
+  "discrepancies": 0,
+  "full_recovery_or_physical_validation": false,
+  "groups": [
+    {
+      "independent_statuses": {
+        "verified_prefix": 192
+      },
+      "original_statuses": {
+        "certified_common_prefix": 192
+      },
+      "qualification_outcomes": {
+        "verified_prefix": 384
+      },
+      "qualification_witnesses": 384,
+      "selected": 192,
+      "stratum": "interior_pair"
+    },
+    {
+      "independent_statuses": {
+        "verified_obstruction": 2,
+        "verified_prefix": 190
+      },
+      "original_statuses": {
+        "certified_common_prefix": 190,
+        "proved_no_common_held_command": 2
+      },
+      "qualification_outcomes": {
+        "verified_prefix": 384
+      },
+      "qualification_witnesses": 384,
+      "selected": 192,
+      "stratum": "radial_boundary"
+    },
+    {
+      "independent_statuses": {
+        "no_on_time_certificate": 9,
+        "verified_obstruction": 29,
+        "verified_prefix": 154
+      },
+      "original_statuses": {
+        "certified_common_prefix": 154,
+        "proved_no_common_held_command": 29,
+        "unresolved": 9
+      },
+      "qualification_outcomes": {
+        "verified_prefix": 576
+      },
+      "qualification_witnesses": 576,
+      "selected": 192,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "independent_statuses": {
+        "no_on_time_certificate": 3,
+        "verified_prefix": 189
+      },
+      "original_statuses": {
+        "certified_common_prefix": 189,
+        "unresolved_budget": 3
+      },
+      "qualification_outcomes": {
+        "verified_prefix": 384
+      },
+      "qualification_witnesses": 384,
+      "selected": 192,
+      "stratum": "timing_bounded_pair"
+    }
+  ],
+  "independent_statuses": {
+    "no_on_time_certificate": 12,
+    "verified_obstruction": 31,
+    "verified_prefix": 725
+  },
+  "independently_verified_original_certificates": 756,
+  "interpretation": "Deterministic post hoc certificate validation under the declared HCW model and information/input class; not an operational safety probability, original timing measurement, physical validation or independent human review",
+  "new_probability_interval": null,
+  "original_delivered_certificates": 756,
+  "original_descriptive_coverage": {
+    "denominator": 768,
+    "fraction": 0.984375,
+    "numerator": 756
+  },
+  "original_statuses": {
+    "certified_common_prefix": 725,
+    "proved_no_common_held_command": 31,
+    "unresolved": 9,
+    "unresolved_budget": 3
+  },
+  "original_timing_changed": false,
+  "post_hoc_certificate_agreement": {
+    "denominator": 756,
+    "numerator": 756
+  },
+  "post_hoc_verified_fraction_of_all_selected": {
+    "denominator": 768,
+    "fraction": 0.984375,
+    "numerator": 756
+  },
+  "qualification_outcomes": {
+    "verified_prefix": 1728
+  },
+  "qualification_witnesses_checked": 1728,
+  "qualification_witnesses_expected": 1728,
+  "schema": "sal-independent-hcw-campaign-results/1",
+  "selected": 768
+}

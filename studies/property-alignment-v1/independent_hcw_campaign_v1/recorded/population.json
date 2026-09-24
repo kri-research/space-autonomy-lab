@@ -1,0 +1,68 @@
+{
+  "all_raw_members_checked": 5768,
+  "groups": [
+    {
+      "qualification_statuses": {
+        "qualified": 288
+      },
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "interior_pair"
+    },
+    {
+      "qualification_statuses": {
+        "qualified": 288
+      },
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "radial_boundary"
+    },
+    {
+      "qualification_statuses": {
+        "qualified": 288
+      },
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "three_face_boundary"
+    },
+    {
+      "qualification_statuses": {
+        "proved_precommand_violation": 1,
+        "qualified": 287
+      },
+      "reserve": 288,
+      "selected": 192,
+      "stratum": "timing_bounded_pair"
+    }
+  ],
+  "original_policy_or_qualification_search_executed": false,
+  "original_statuses": {
+    "certified_common_prefix": 725,
+    "proved_no_common_held_command": 31,
+    "unresolved": 9,
+    "unresolved_budget": 3
+  },
+  "qualification_records": 1152,
+  "reserve": 1152,
+  "retired_before_reserve": [
+    {
+      "index": 91,
+      "information_sha256": "0368faa112ab2190254457f2423ee0f2b38366917c508c3a51c05762c36c4825",
+      "payload_sha256": "7be3bc93f822ec3761d374e748c00d954c6f2baa8408b458e964dfcfdf682f78",
+      "reason": "previously_exposed_information",
+      "stratum": "radial_boundary"
+    },
+    {
+      "index": 234,
+      "information_sha256": "8675878e45842dc4388a41e439d276b31197d91cab23bc1d2fc62cff3564097e",
+      "payload_sha256": "3432b8a46a28d0367982a0c1a8b5e359c8c6cf40b86a40d609f206b6939e9302",
+      "reason": "previously_exposed_information",
+      "stratum": "radial_boundary"
+    }
+  ],
+  "schema": "sal-original-population-audit/1",
+  "selected": 768,
+  "selected_singleton_witnesses": 1728,
+  "selection_rule_reconstructed": true,
+  "unselected_qualification_proofs_independently_rechecked": false
+}
