@@ -8,6 +8,16 @@ A listed serial endpoint is not evidence of a suitable connected robot.
 
 ## Evidence levels
 
+| Evidence level | Achieved state | Boundary |
+|---|---|---|
+| Host-computer timing | Measured | One host, correlated process sessions |
+| Simulated interface | Tested | No physical I/O |
+| Processor-in-the-loop | Not performed | No dedicated target processor/interface |
+| Hardware-in-the-loop | Not performed | No real sensor/actuator path |
+| Physical-system trials | Not performed | Rig, metrology, supervision and approval missing |
+| Independent external replication | Not performed | No reviewer or laboratory report received |
+
+
 The host study uses three fresh interpreter/service sessions on one computer,
 with two retained warm-up calls per adapter and two repetitions of eight exposed
 calibration inputs. All 192 measured and 24 warm-up requests are predeclared.

@@ -1,0 +1,470 @@
+{
+  "all_requests_accounted_for": true,
+  "clock_diagnostics": [
+    {
+      "absolute_accuracy_calibrated": false,
+      "adjustable": false,
+      "advertised_resolution_s": 4.166666666666666e-08,
+      "clock_pair_diagnostics": {
+        "inverse_mean_roundtrip_hz": 27466490.881125025,
+        "maximum_is_wcet": false,
+        "maximum_ns": 792,
+        "mean_ns": 36.408,
+        "median_ns": 42.0,
+        "minimum_ns": 0,
+        "n": 1000,
+        "p95_ns": 42.0
+      },
+      "implementation": "mach_absolute_time()",
+      "monotonic": true,
+      "overhead_subtracted": false,
+      "resolution_is_accuracy": false,
+      "sensor_clock_alignment_measured": false,
+      "session": 0,
+      "source": "perf_counter_ns"
+    },
+    {
+      "absolute_accuracy_calibrated": false,
+      "adjustable": false,
+      "advertised_resolution_s": 4.166666666666666e-08,
+      "clock_pair_diagnostics": {
+        "inverse_mean_roundtrip_hz": 31373533.28731882,
+        "maximum_is_wcet": false,
+        "maximum_ns": 42,
+        "mean_ns": 31.874,
+        "median_ns": 42.0,
+        "minimum_ns": 0,
+        "n": 1000,
+        "p95_ns": 42.0
+      },
+      "implementation": "mach_absolute_time()",
+      "monotonic": true,
+      "overhead_subtracted": false,
+      "resolution_is_accuracy": false,
+      "sensor_clock_alignment_measured": false,
+      "session": 1,
+      "source": "perf_counter_ns"
+    },
+    {
+      "absolute_accuracy_calibrated": false,
+      "adjustable": false,
+      "advertised_resolution_s": 4.166666666666666e-08,
+      "clock_pair_diagnostics": {
+        "inverse_mean_roundtrip_hz": 31684674.123126645,
+        "maximum_is_wcet": false,
+        "maximum_ns": 125,
+        "mean_ns": 31.561,
+        "median_ns": 41.0,
+        "minimum_ns": 0,
+        "n": 1000,
+        "p95_ns": 42.0
+      },
+      "implementation": "mach_absolute_time()",
+      "monotonic": true,
+      "overhead_subtracted": false,
+      "resolution_is_accuracy": false,
+      "sensor_clock_alignment_measured": false,
+      "session": 2,
+      "source": "perf_counter_ns"
+    }
+  ],
+  "external_reviews": 0,
+  "groups": [
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "lag_aware_common_command",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 29.599075873932556,
+        "maximum_is_wcet": false,
+        "maximum_ns": 68910709,
+        "mean_ns": 33784838.5625,
+        "median_ns": 33920291.0,
+        "minimum_ns": 4056375,
+        "n": 16,
+        "p95_ns": 64981833.25
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 29.33013398276507,
+        "maximum_is_wcet": false,
+        "maximum_ns": 69235667,
+        "mean_ns": 34094627.75,
+        "median_ns": 34217771.0,
+        "minimum_ns": 4357334,
+        "n": 16,
+        "p95_ns": 65319791.75
+      },
+      "service_overruns": 0,
+      "session": 0,
+      "statuses": {
+        "obstruction": 6,
+        "prefix": 10
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "robust_predictive_prefix",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 11.980675170949258,
+        "maximum_is_wcet": false,
+        "maximum_ns": 135107541,
+        "mean_ns": 83467750.0,
+        "median_ns": 86807750.0,
+        "minimum_ns": 43860084,
+        "n": 16,
+        "p95_ns": 133550260.5
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 11.935992482377728,
+        "maximum_is_wcet": false,
+        "maximum_ns": 135485708,
+        "mean_ns": 83780213.625,
+        "median_ns": 87080958.5,
+        "minimum_ns": 44142750,
+        "n": 16,
+        "p95_ns": 133866176.75
+      },
+      "service_overruns": 0,
+      "session": 0,
+      "statuses": {
+        "prefix": 10,
+        "unresolved": 6
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "third_order_barrier",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 59.8158137257501,
+        "maximum_is_wcet": false,
+        "maximum_ns": 61716208,
+        "mean_ns": 16717987.0625,
+        "median_ns": 938021.0,
+        "minimum_ns": 355334,
+        "n": 16,
+        "p95_ns": 61186021.0
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 58.949456286690186,
+        "maximum_is_wcet": false,
+        "maximum_ns": 62028583,
+        "mean_ns": 16963684.875,
+        "median_ns": 1171958.5,
+        "minimum_ns": 541875,
+        "n": 16,
+        "p95_ns": 61463208.25
+      },
+      "service_overruns": 0,
+      "session": 0,
+      "statuses": {
+        "prefix": 4,
+        "unresolved": 12
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 12,
+      "domain": "spacecraft",
+      "method": "common_command",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 11.343707330932899,
+        "maximum_is_wcet": false,
+        "maximum_ns": 483741791,
+        "mean_ns": 88154601.5625,
+        "median_ns": 22048687.5,
+        "minimum_ns": 2897042,
+        "n": 16,
+        "p95_ns": 308639260.25
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 11.302913284290176,
+        "maximum_is_wcet": false,
+        "maximum_ns": 484101459,
+        "mean_ns": 88472765.8125,
+        "median_ns": 22376208.5,
+        "minimum_ns": 3152417,
+        "n": 16,
+        "p95_ns": 309046458.0
+      },
+      "service_overruns": 0,
+      "session": 0,
+      "statuses": {
+        "obstruction": 2,
+        "prefix": 14
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "lag_aware_common_command",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 25.595836396961648,
+        "maximum_is_wcet": false,
+        "maximum_ns": 84957583,
+        "mean_ns": 39068854.1875,
+        "median_ns": 32021833.5,
+        "minimum_ns": 3786000,
+        "n": 16,
+        "p95_ns": 83677145.5
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 25.340115184380476,
+        "maximum_is_wcet": false,
+        "maximum_ns": 85443083,
+        "mean_ns": 39463119.75,
+        "median_ns": 32286354.0,
+        "minimum_ns": 4064083,
+        "n": 16,
+        "p95_ns": 84458458.25
+      },
+      "service_overruns": 0,
+      "session": 1,
+      "statuses": {
+        "obstruction": 6,
+        "prefix": 10
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "robust_predictive_prefix",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 10.760039325334425,
+        "maximum_is_wcet": false,
+        "maximum_ns": 183081625,
+        "mean_ns": 92936463.3125,
+        "median_ns": 90518458.0,
+        "minimum_ns": 44607667,
+        "n": 16,
+        "p95_ns": 147499030.75
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 10.696392218748768,
+        "maximum_is_wcet": false,
+        "maximum_ns": 183608750,
+        "mean_ns": 93489466.3125,
+        "median_ns": 91419083.5,
+        "minimum_ns": 44946667,
+        "n": 16,
+        "p95_ns": 147874406.75
+      },
+      "service_overruns": 0,
+      "session": 1,
+      "statuses": {
+        "prefix": 10,
+        "unresolved": 6
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "third_order_barrier",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 54.2734399499105,
+        "maximum_is_wcet": false,
+        "maximum_ns": 83879750,
+        "mean_ns": 18425218.6875,
+        "median_ns": 1033666.5,
+        "minimum_ns": 377167,
+        "n": 16,
+        "p95_ns": 68124125.0
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 52.89213937090625,
+        "maximum_is_wcet": false,
+        "maximum_ns": 84468958,
+        "mean_ns": 18906401.0625,
+        "median_ns": 1631271.0,
+        "minimum_ns": 571416,
+        "n": 16,
+        "p95_ns": 68494708.0
+      },
+      "service_overruns": 0,
+      "session": 1,
+      "statuses": {
+        "prefix": 4,
+        "unresolved": 12
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 12,
+      "domain": "spacecraft",
+      "method": "common_command",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 9.535832187509724,
+        "maximum_is_wcet": false,
+        "maximum_ns": 650239375,
+        "mean_ns": 104867617.25,
+        "median_ns": 27402396.0,
+        "minimum_ns": 2848208,
+        "n": 16,
+        "p95_ns": 401063906.5
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 9.472976623421319,
+        "maximum_is_wcet": false,
+        "maximum_ns": 653584792,
+        "mean_ns": 105563440.0625,
+        "median_ns": 27717562.5,
+        "minimum_ns": 3074916,
+        "n": 16,
+        "p95_ns": 404043916.75
+      },
+      "service_overruns": 0,
+      "session": 1,
+      "statuses": {
+        "obstruction": 2,
+        "prefix": 14
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "lag_aware_common_command",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 28.78047892066009,
+        "maximum_is_wcet": false,
+        "maximum_ns": 86625375,
+        "mean_ns": 34745773.4375,
+        "median_ns": 34256000.5,
+        "minimum_ns": 3651667,
+        "n": 16,
+        "p95_ns": 70669125.0
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 28.511698294568845,
+        "maximum_is_wcet": false,
+        "maximum_ns": 87536375,
+        "mean_ns": 35073322.875,
+        "median_ns": 34554416.5,
+        "minimum_ns": 3853375,
+        "n": 16,
+        "p95_ns": 71130687.5
+      },
+      "service_overruns": 0,
+      "session": 2,
+      "statuses": {
+        "obstruction": 6,
+        "prefix": 10
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "robust_predictive_prefix",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 12.420633259683273,
+        "maximum_is_wcet": false,
+        "maximum_ns": 119268334,
+        "mean_ns": 80511192.875,
+        "median_ns": 82693375.5,
+        "minimum_ns": 46413625,
+        "n": 16,
+        "p95_ns": 114057833.5
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 12.375834356127719,
+        "maximum_is_wcet": false,
+        "maximum_ns": 119541167,
+        "mean_ns": 80802632.875,
+        "median_ns": 82952875.0,
+        "minimum_ns": 46710584,
+        "n": 16,
+        "p95_ns": 114297385.25
+      },
+      "service_overruns": 0,
+      "session": 2,
+      "statuses": {
+        "prefix": 10,
+        "unresolved": 6
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 8,
+      "domain": "cart",
+      "method": "third_order_barrier",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 51.44572536262203,
+        "maximum_is_wcet": false,
+        "maximum_ns": 76485917,
+        "mean_ns": 19437960.9375,
+        "median_ns": 945333.0,
+        "minimum_ns": 347000,
+        "n": 16,
+        "p95_ns": 73800635.75
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 50.78202348361355,
+        "maximum_is_wcet": false,
+        "maximum_ns": 76807208,
+        "mean_ns": 19692007.75,
+        "median_ns": 1133604.0,
+        "minimum_ns": 530333,
+        "n": 16,
+        "p95_ns": 74242802.0
+      },
+      "service_overruns": 0,
+      "session": 2,
+      "statuses": {
+        "prefix": 4,
+        "unresolved": 12
+      },
+      "unknown_physical_timing": 16
+    },
+    {
+      "application_window_shortfalls": 12,
+      "domain": "spacecraft",
+      "method": "common_command",
+      "policy": {
+        "inverse_mean_roundtrip_hz": 12.272802947457834,
+        "maximum_is_wcet": false,
+        "maximum_ns": 494170417,
+        "mean_ns": 81480979.0625,
+        "median_ns": 20101375.0,
+        "minimum_ns": 2638291,
+        "n": 16,
+        "p95_ns": 281420822.5
+      },
+      "roundtrip": {
+        "inverse_mean_roundtrip_hz": 12.232285358966877,
+        "maximum_is_wcet": false,
+        "maximum_ns": 494464458,
+        "mean_ns": 81750872.4375,
+        "median_ns": 20382458.5,
+        "minimum_ns": 2824167,
+        "n": 16,
+        "p95_ns": 281819489.25
+      },
+      "service_overruns": 0,
+      "session": 2,
+      "statuses": {
+        "obstruction": 2,
+        "prefix": 14
+      },
+      "unknown_physical_timing": 16
+    }
+  ],
+  "host_service_budget_misses": 0,
+  "id": "ee0dc34d414b8d04bd8a01b0ca55ae161cc14cdb23682569f502c18eec240791",
+  "interpretation": "A literal zero queued interval cannot include positive measured software latency. Longer windows remain conditional on unmeasured sensor/actuator/alignment bounds. Early replies must be queued until the modeled application instant; no early or late physical application is authorized.",
+  "measured_samples": 192,
+  "physical_actuator_delays_measured": false,
+  "physical_sensor_delays_measured": false,
+  "physical_trials": 0,
+  "schema": "sal-host-measurement-summary/1",
+  "sessions": 3,
+  "timing_contradictions_to_zero_or_short_application_windows": 108,
+  "uncertainty": "Repeated host rounds are correlated; clock resolution is not calibrated accuracy. No timing error bound from an independent time reference is available. No IID uncertainty interval or flight inference.",
+  "warmup_samples": 24
+}
