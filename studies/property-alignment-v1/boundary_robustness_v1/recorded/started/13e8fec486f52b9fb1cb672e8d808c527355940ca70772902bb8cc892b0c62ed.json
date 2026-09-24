@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "mean_motion_relative": "3/1024",
+    "position_m": "3/102400",
+    "queue_delay_s": "3/1024",
+    "velocity_mps": "3/102400"
+  },
+  "study_id": "de8cb9a5d3e2c73b2a9f748e3e07cea301fb0cf8b739960b7d47fe38ad439b23"
+}

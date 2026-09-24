@@ -1,0 +1,187 @@
+{
+  "created_at_utc": "2026-09-24T17:48:04.845985+00:00",
+  "post_hoc": true,
+  "prior_sources": {
+    "independent_hcw_audit_v1/arithmetic.py": "25d19c2d69ac2a0173812a86ef06df46949e58693190760a454a6b807e96a897",
+    "independent_hcw_audit_v1/certificates.py": "16bfbc82ac56bf6fa06f9bc10279fc9372675ff6bb7517c1a4902b2c29889383",
+    "independent_hcw_audit_v1/development_cases.json": "8d8cd7f8eafc8f3e7fb956b188ce940c5f178ca1f5d2d226a04f351617550b71",
+    "independent_hcw_audit_v1/hcw.py": "00cae10d3e6765de415ca2e14ade324517be9f203d19a2bb7bd4387b7a0cc469",
+    "independent_hcw_audit_v1/reference_inputs/independent_hcw_check.py.txt": "1bf6e23f704af19812976c42c884bdb3dfccd590b17c1939274cb733b5fd6d3a",
+    "independent_hcw_audit_v1/reference_inputs/independent_hcw_results.json": "ff85ec0f472b593dc8095af6c006abd4f9f9346418838989b91a4c4236745487",
+    "independent_hcw_audit_v1/schema.py": "a44468624dae24b356df1235a56c52364a46e37a7215aad94a5850aeecee467a"
+  },
+  "protocol": {
+    "anchors_sha256": "a26fc6db773a442592b37aff3826021179b44f373388916cd7b4c67f89a65e1d",
+    "claims": [
+      "Every pair of full nominal-centered information boxes admits its original fixed command, while the full union is obstructed by the still-admitted nominal centers.",
+      "Every independently shifted triple within the boxes is initially admissible, admits the same original command for each pair, and has no common held command under the declared schedule."
+    ],
+    "core_precision_bits": 192,
+    "families": [
+      {
+        "name": "position",
+        "scale": [
+          "1/1000",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "velocity",
+        "scale": [
+          "0",
+          "1/1000",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "joint_state",
+        "scale": [
+          "1/1000",
+          "1/1000",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "name": "mean_motion",
+        "scale": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "known_delay",
+        "scale": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "combined",
+        "scale": [
+          "1/10000",
+          "1/10000",
+          "1/100",
+          "1/100"
+        ]
+      }
+    ],
+    "figure": "Nominal-model p-v frontier of the explicit sufficient inequalities, with strict obstruction boundary excluded. Derived from the same recorded affine bounds, not additional trials.",
+    "limits": {
+      "max_unique_evaluations": 193,
+      "per_evaluation_seconds": 60,
+      "retry": "No started evaluation is silently retried. Preserve failed runs; numerical changes after run start require a new version. Fixed-output reproduction is labeled separately.",
+      "run_seconds": 1800,
+      "workers": 1
+    },
+    "negative_region": "Three proven necessary halfspaces containing the whole union, with fixed original rational weights. Coefficients and shifted right-hand sides bounded for every model/delay realization.",
+    "novelty": "Application of established sufficient-margin and residual-checked infeasibility principles; no new general theorem or flight claim.",
+    "original_campaigns_executed": false,
+    "outcomes": [
+      "certified",
+      "not_certified_by_bound",
+      "execution_failure"
+    ],
+    "parameters": {
+      "disturbance": "Exactly zero.",
+      "effectiveness": "Exactly one.",
+      "mean_motion_relative": "One constant shared n in [n0*(1-e),n0*(1+e)], e in [0,1].",
+      "physical_calibration": "None; parameters are mathematical sensitivity variables, not observed sensor errors.",
+      "position_m": "Independent componentwise bounds |dx_i|,|dy_i|<=p for each original hypothesis i.",
+      "queue_delay_s": "Each realization has one known d in [0,D], zero commanded input on [0,d], then the fixed original pair command for one second. D in [0,1]. No observations distinguish the hypotheses during this schedule.",
+      "velocity_mps": "Independent componentwise bounds |dvx_i|,|dvy_i|<=v."
+    },
+    "positive_region": "Closed original corridor, a sufficient subset of the original closed corridor/ellipse union. A failed sufficient bound is unresolved, never a proof of physical failure.",
+    "post_hoc": true,
+    "schema": "sal-three-state-robustness-protocol/1",
+    "search": {
+      "algorithm": "Evaluate rho0 and rho1. If cap passes, report cap only. Otherwise exactly14 rational bisection steps, treating every non-certificate as a failed sufficient bound. No optimized pair commands or replacement triple.",
+      "bisection_steps": 14,
+      "gates": [
+        "information_boxes",
+        "shifted_triples"
+      ],
+      "radius_units": "Dimensionless rho multiplies the four SI/relative scales in their stated order.",
+      "range": [
+        "0",
+        "1"
+      ],
+      "strict_margin": "Negative obstruction requires delta>0; closed positive margins may equal zero.",
+      "upper_interpretation": "Smallest retained noncertified bracket is not a physical counterexample or an exact maximal radius."
+    },
+    "stress": [
+      {
+        "delay_s": "0",
+        "name": "position-outward",
+        "pair": [
+          1,
+          2
+        ],
+        "shift": [
+          "9/10000",
+          "0",
+          "0",
+          "0"
+        ],
+        "state_index": 1,
+        "time_s": "1"
+      },
+      {
+        "delay_s": "0",
+        "name": "velocity-outward",
+        "pair": [
+          1,
+          2
+        ],
+        "shift": [
+          "0",
+          "0",
+          "1/1000",
+          "0"
+        ],
+        "state_index": 1,
+        "time_s": "1"
+      },
+      {
+        "delay_s": "1",
+        "name": "zero-queue-exit",
+        "pair": [
+          0,
+          1
+        ],
+        "shift": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "state_index": 0,
+        "time_s": "1"
+      }
+    ],
+    "stress_rule": "A contrary witness must be inside its separately declared stress family, initially in the original region, and have a validated outside enclosure at an explicit time. It refutes that fixed command at that stress value only, not another control or the smaller certified neighborhood.",
+    "time_cells_per_phase": 256
+  },
+  "python_version": "3.13.5",
+  "schema": "sal-robustness-freeze/1",
+  "source_commit": "607768961966127b628d673534070ab7bb74afed",
+  "source_sha256": {
+    "DERIVATION.md": "8a5cbd35ce0cd30062436dcffbd85f6b4fa5ce047c72aaf429a27b539cdfa63b",
+    "__init__.py": "3ed234e24d09eefce4740c5e0f0bc605073862368c86a6237424bc7dec3e077e",
+    "anchors.json": "a26fc6db773a442592b37aff3826021179b44f373388916cd7b4c67f89a65e1d",
+    "core.py": "9722efd57f5362fe458d7da9675b8831630a9f5e23ddfeb3dfd2989bcae43b97",
+    "presentation.py": "654a1f6f8f91cd671b56b2303a27bb4a7455fcce459b26063189957466c47cbe",
+    "protocol.json": "7ae7755290596ea5dbcc5104745d1200bb1ae4a428241214fc0bfcbbca1c2a8a",
+    "sources.json": "1ab8d311deeae4bcbd334ba981f679113360ccfe2e9ce17d4fc64b6059f376e6",
+    "study.py": "0603bf908592773f4d112202497d940213d06b96305e2ebc359035f0ec2fedd8",
+    "tests/test_robustness.py": "22d64f2cfe9dadeb954abdc4fb72d3bf7100c3d619966ec03becf74856584744"
+  },
+  "study_id": "de8cb9a5d3e2c73b2a9f748e3e07cea301fb0cf8b739960b7d47fe38ad439b23"
+}

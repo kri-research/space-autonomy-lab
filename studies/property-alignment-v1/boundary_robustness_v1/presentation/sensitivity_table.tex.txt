@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Sufficient perturbation bounds for the fixed original pair commands. Boxes retains the nominal centers as obstruction witnesses; Shifts certifies every shifted triple. Each row is a simultaneous componentwise bound, with $n/n_0\in[1-e,1+e]$ and a known zero queue of duration $d\in[0,D]$. Displayed nonzero values are rounded down. These are mathematical bounds, not calibrated equipment tolerances or maximal radii.}
+\label{tab:boundary-robustness}
+\begin{tabular}{llrrrr}
+\toprule
+Family & Criterion & $p$ ($\mu$m) & $v$ ($\mu$m/s) & $e$ (\%) & $D$ (ms) \\
+\midrule
+Position & Boxes & 208.9 & 0 & 0 & 0 \\
+Position & Shifts & 58.59 & 0 & 0 & 0 \\
+Velocity & Boxes & 0 & 208.8 & 0 & 0 \\
+Velocity & Shifts & 0 & 58.59 & 0 & 0 \\
+Joint state & Boxes & 104.4 & 104.4 & 0 & 0 \\
+Joint state & Shifts & 29.29 & 29.29 & 0 & 0 \\
+Mean motion & Boxes & 0 & 0 & 100.0 & 0 \\
+Mean motion & Shifts & 0 & 0 & 100.0 & 0 \\
+Known delay & Boxes & 0 & 0 & 0 & 222.2 \\
+Known delay & Shifts & 0 & 0 & 0 & 222.2 \\
+Combined & Boxes & 99.16 & 99.16 & 0.9916 & 9.916 \\
+Combined & Shifts & 29.21 & 29.21 & 0.2921 & 2.921 \\
+\bottomrule
+\end{tabular}
+\end{table}

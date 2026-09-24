@@ -1,0 +1,37 @@
+\subsection{Robustness of the fixed three-state construction}\label{sec:boundary-robustness}
+Let $B_i(p,v)$ contain every initial state within $p$ metres in each position coordinate and $v$ metres per second in each velocity coordinate of the original state $z_i$. Shifts are independent across coordinates and hypotheses. Each trajectory has one constant shared mean motion $n\in[n_0(1-e),n_0(1+e)]$. A known zero command is held for $d\in[0,D]$ seconds before the original pair command is held for one second, without intervening distinguishing information. Disturbance is zero and effectiveness is one. This separate continuous-delay family does not modify the earlier discrete campaign schema.
+
+Using the unchanged independent HCW response, after application the state is
+\begin{equation}
+z(d+\tau)=\Phi(d+\tau,n)(z_i+\delta_i)+\Gamma(\tau,n)u_{ij},\qquad 0\le\tau\le1.
+\end{equation}
+For each pair, outward coefficient bounds over 256 complete intervals per phase give a nominal corridor residual $m_{ij}$ and gains $L^p_{ij}$ and $L^v_{ij}$. The gains have units one and seconds, respectively. Thus
+\begin{equation}
+ m_{ij}-L^p_{ij}p-L^v_{ij}v\ge0
+ \label{eq:robust-pair-margin}
+\end{equation}
+is sufficient for every member of both complete boxes to remain in the closed corridor, hence in the corridor--ellipse union, throughout the queue and hold. The zero queue is checked separately. All initial boxes must also satisfy the corridor inequalities.
+
+For the three necessary union-containing halfspaces and fixed weights $\lambda=(1,5,5)/11$, reconstruct the coefficient intervals $[\underline M,\overline M]$ and center right-hand-side upper bounds $\overline b^0$. Define
+\begin{align}
+ R_j&=\max\left(\left|\sum_i\lambda_i\underline M_{ij}\right|,\left|\sum_i\lambda_i\overline M_{ij}\right|\right),\\
+ \Delta_0&=-\sum_i\lambda_i\overline b_i^0-U\sum_jR_j,\\
+ \Delta_{\rm shift}&=\Delta_0-\beta_pp-\beta_vv.
+\end{align}
+Here $\beta_p,\beta_v$ are the weighted absolute state-response gains. They bound the increase in the weighted right-hand side under every independently shifted triple. Coefficient dependence on the full $n,d$ intervals is included in $R_j$ and $\overline b^0$; a nominal obstruction margin is not reused without those changes. Both deltas have residual units metres, not Euclidean-distance meaning.
+
+\paragraph{Sufficient robustness proposition.}
+Assume initial box membership and Eq.~\eqref{eq:robust-pair-margin} for each original pair command. If $\Delta_0>0$, every pair of full nominal-centered boxes admits its command, while the full information union is obstructed by the still-possible nominal centers. If $\Delta_{\rm shift}>0$, every independently shifted triple in those boxes is itself pairwise feasible and jointly obstructed for this held-command class.
+
+\paragraph{Proof.}
+The pair inequalities bound the complete continuous response for all states and model parameters. For any allegedly feasible joint command, the actuator disk implies $|u_j|\le U$, while the outward coefficient and right-hand-side bounds imply $\lambda^\top(Mu-b)\ge\Delta_{\rm shift}>0$, contradicting $Mu\le b$. The center argument substitutes the nominal points and uses $\Delta_0$. Containment of centers alone does not establish the all-shifted-triples conclusion.\hfill$\square$
+
+\input{sensitivity_table}
+\begin{figure}[htbp]
+\centering\includegraphics[width=.88\linewidth]{state_robustness.pdf}
+\caption{Frontiers of the nominal-model sufficient inequalities in position--velocity error coordinates. Certified interiors lie below the respective frontiers; the strict obstruction boundary is excluded. These frontiers describe this sufficient calculation rather than the exact maximal feasible neighborhood. The information-box argument retains nominal witnesses; the smaller all-shifts argument bounds the perturbed witnesses themselves.}
+\end{figure}
+
+The post hoc protocol fixes six directions and 14-step bisections separately for both statements. Failed upper bounds remain noncertificates. Original pair commands and the three states are never optimized or replaced. The larger, separately specified stress examples retain admissible starting points and exhibit validated departures for their fixed commands. They do not falsify the smaller certified neighborhoods or exclude other pair commands.
+
+This is an application of established affine-support and residual-verified infeasibility principles, not a new general theorem. Jansson, \emph{Guaranteed Accuracy for Conic Programming Problems in Vector Lattices} (2007), Section~8, provides relevant verified-infeasibility context. All results remain model-conditional; numerical residuals and these perturbation bounds are not sensor specifications, physical measurements, nonlinear safety or recursive recovery guarantees.

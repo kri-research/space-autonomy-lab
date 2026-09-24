@@ -1,0 +1,95 @@
+{
+  "cap_passed": false,
+  "family": "velocity",
+  "gate": "information_boxes",
+  "lower_parameters": {
+    "mean_motion_relative": "0",
+    "position_m": "0",
+    "queue_delay_s": "0",
+    "velocity_mps": "3421/16384000"
+  },
+  "lower_radius": "3421/16384",
+  "noncertified_upper": "1711/8192",
+  "probes": [
+    {
+      "admitted": true,
+      "evaluation_id": "43e3413e1aa9feab25944baf19d8b3ad5bf097d00d9002a6e2ffde1f4cc04b6d",
+      "rho": "0"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "adf391f0861d45c2f03de4b247e79959c5b7f819ba25769b939d8f6cd293bac3",
+      "rho": "1"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "e7dffa89293b13a97e158f37982afd65ce43b6be0d0e33788a6d82d09a4bf4c7",
+      "rho": "1/2"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "1b5f5b0f500f29ed7a20282b3cc47dab45e257e73ae01631179b0be40cd0572a",
+      "rho": "1/4"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "f0f3c73fd567e328493356ed8d1107e260e80517731d0b70cca73823c1292b0b",
+      "rho": "1/8"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "11eb2fb08f1f39938fd5da2f4910992f08b52f916478922acbaf8cf4253e953d",
+      "rho": "3/16"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "cf1bef296aed0a5a51b9f776af00ef805a5b12a1deec25ae7d0aad6e089c02a9",
+      "rho": "7/32"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "140773a829847a60752cbf21c9d060ea8a5930e57c0a6e6346f4ca9d6232c7fe",
+      "rho": "13/64"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "2a4749d8a76ad6d718c84eedaee0b1f1a39916bff0b141f39d9e303494486209",
+      "rho": "27/128"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "0a8731b1d7ade109593737c90fff3c080dc7274b8837bf2cbef851e7ed48b719",
+      "rho": "53/256"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "d37792f71086e21ee5b8d9f8ee601283b39bffed56e0e1157bc3ad7eb1e3ef3a",
+      "rho": "107/512"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "ef5b3733d6f2b786b60fee5e36cc7a3107d6006efaab328daf15314397a37555",
+      "rho": "213/1024"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "6347c984120a7dc9b16f4a26aaa7cd6a105447cf4a09c37152e336e1046dc508",
+      "rho": "427/2048"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "143d2a45046c83cf378e9b799a503c420a07a123e0879cedd9527e32382a1d98",
+      "rho": "855/4096"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "47a44eb88b6fad8dd78736e623345e68840f99111af60c8f749770e957b35338",
+      "rho": "1711/8192"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "5a26a65c03a510d7ad393493ac56b46f71372f14a4c0120d4fc51328c1f1aa43",
+      "rho": "3421/16384"
+    }
+  ]
+}

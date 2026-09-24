@@ -1,0 +1,22 @@
+{
+  "inspected": "2026-09-24",
+  "references": [
+    {
+      "title": "Guaranteed Accuracy for Conic Programming Problems in Vector Lattices",
+      "author": "Christian Jansson",
+      "year": 2007,
+      "url": "https://arxiv.org/abs/0707.4366",
+      "scope": "Author abstract and full HTML Sections1 and8 inspected; rigorous interval/error control for infeasibility is established prior work, not this specific spacecraft calculation.",
+      "full_text": "https://arxiv.org/html/0707.4366v1"
+    },
+    {
+      "title": "Convex Optimization",
+      "authors": [
+        "Stephen Boyd",
+        "Lieven Vandenberghe"
+      ],
+      "url": "https://web.stanford.edu/~boyd/cvxbook/",
+      "scope": "Author-hosted book page; standard robust affine support and dual reasoning, no originality claim."
+    }
+  ]
+}

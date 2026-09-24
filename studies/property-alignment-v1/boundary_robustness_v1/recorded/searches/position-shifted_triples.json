@@ -1,0 +1,95 @@
+{
+  "cap_passed": false,
+  "family": "position",
+  "gate": "shifted_triples",
+  "lower_parameters": {
+    "mean_motion_relative": "0",
+    "position_m": "3/51200",
+    "queue_delay_s": "0",
+    "velocity_mps": "0"
+  },
+  "lower_radius": "15/256",
+  "noncertified_upper": "961/16384",
+  "probes": [
+    {
+      "admitted": true,
+      "evaluation_id": "43e3413e1aa9feab25944baf19d8b3ad5bf097d00d9002a6e2ffde1f4cc04b6d",
+      "rho": "0"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "3c5611d72a48b472e97804dcae974b6e03f16463bfd2049bb82d1831bb220bc4",
+      "rho": "1"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "207e9af7aa1597027958c2e50463e9e7bee607e272bebdabc41836de61a91c18",
+      "rho": "1/2"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "3564e26414af5893020ef58e74525110a3122cfba5ff3335be569badbf15514f",
+      "rho": "1/4"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "298b4bc41ea72f7fda6456e14be942b045b1eff802afb238cab9199aa8a7b829",
+      "rho": "1/8"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "e44fcce7a977128c36ce3dc80827315c6da3c2c1bfc6421366c1460f7282151c",
+      "rho": "1/16"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "56fd3f4c880debb22c4a51614d59c86efb72293eda257b8b46807ca5217d739b",
+      "rho": "1/32"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "cc1fe1060e27f7c6ff28e2c75b28ae8b3dd57050df7b2d8978b7f38f8d2d7250",
+      "rho": "3/64"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "cbef55922ba6daae965dd7fa21e4246378cad89f0eb85a8f6e0645dffab7997b",
+      "rho": "7/128"
+    },
+    {
+      "admitted": true,
+      "evaluation_id": "e45c6ae885df97738e53e427519d5be8b3471bfcbc79c2cbc6052df1eca5a906",
+      "rho": "15/256"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "a018f1d9c461375a5a76e219bca442c5a46de4a0647327e7eb3d023a1ef05b3a",
+      "rho": "31/512"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "65617a2b7bf10359005063b233f03cd4787d566f287c56eebdd5b6f387fd04b8",
+      "rho": "61/1024"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "89a546b9bd5cfa9b9f3b45373c5cc2865a80eb4afd48bb824b76b6662c96a4f1",
+      "rho": "121/2048"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "c1df87e4ebe11543ec1ade283eeda36431f73ba93ac34c8fe08f043baa8912d1",
+      "rho": "241/4096"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "6eac906bc0b798f63740e57072770c7c0199cc89aadee10deb2ce4e02ec840b1",
+      "rho": "481/8192"
+    },
+    {
+      "admitted": false,
+      "evaluation_id": "0c7d70ae2d531b01455ac4f38ef2b4ffa40411b4aee277335ee69d2fe4c6c272",
+      "rho": "961/16384"
+    }
+  ]
+}

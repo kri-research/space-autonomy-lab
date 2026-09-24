@@ -1,0 +1,13 @@
+family,criterion,mean_motion_relative,position_m,queue_delay_s,velocity_mps,lower_radius,noncertified_upper,cap_passed
+position,information_boxes,0,107/512000,0,0,107/512,3425/16384,False
+position,shifted_triples,0,3/51200,0,0,15/256,961/16384,False
+velocity,information_boxes,0,0,0,3421/16384000,3421/16384,1711/8192,False
+velocity,shifted_triples,0,0,0,3/51200,15/256,961/16384,False
+joint_state,information_boxes,0,1711/16384000,0,1711/16384000,1711/16384,107/1024,False
+joint_state,shifted_triples,0,3/102400,0,3/102400,15/512,481/16384,False
+mean_motion,information_boxes,1,0,0,0,1,,True
+mean_motion,shifted_triples,1,0,0,0,1,,True
+known_delay,information_boxes,0,0,3641/16384,0,3641/16384,1821/8192,False
+known_delay,shifted_triples,0,0,3641/16384,0,3641/16384,1821/8192,False
+combined,information_boxes,2031/204800,2031/20480000,2031/204800,2031/20480000,2031/2048,16249/16384,False
+combined,shifted_triples,4787/1638400,4787/163840000,4787/1638400,4787/163840000,4787/16384,1197/4096,False
