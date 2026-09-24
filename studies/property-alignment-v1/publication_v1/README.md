@@ -13,8 +13,7 @@ through the historical repository's Python 3.11 package configuration.
 ```sh
 git clone https://github.com/kri-research/space-autonomy-lab.git sal-reproduction
 cd sal-reproduction
-# Check out the immutable integration commit containing this guide, as cited by
-# the accompanying publication record; do not substitute a future moving branch.
+git checkout --detach dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac
 git clone --no-hardlinks . ../sal-evidence
 git -C ../sal-evidence checkout --detach 5539de5753092b09fd78351095292e7627047794
 python3.13 -m venv ../sal-check-environment
@@ -99,3 +98,5 @@ paired tables, common-property ranges, retained midpoint paths and declared
 geometry. It introduces no new statistical analysis. The manuscript's private
 wrapper delegates to this same plotting implementation. Scientific plot input
 and generator hashes are recorded in the final artifact manifest.
+
+The public SVGs use a separate whitespace-only serialization step. Run `python -m publication_v1.prepare_figures raw.svg normalized.svg` on a new output path to obtain the deposited text representation. The figure manifest records raw and normalized hashes, the unchanged generator commit and the normalization-source hash. No geometric token or numerical value changes.

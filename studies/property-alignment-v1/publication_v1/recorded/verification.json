@@ -1,0 +1,148 @@
+{
+  "checks": {
+    "additional_automated_adversarial_tests": 26,
+    "external_human_reviews": 0,
+    "fixed_development_prefixes": 73,
+    "fixed_individual_recoveries": 10,
+    "historical_campaigns_reexecuted": 0,
+    "isolated_cart_referee_comparisons": 738,
+    "legacy_failed": [
+      "tests.test_experiment_002d_workflow.test_historical_experiments_002_002b_002c_verify_unchanged",
+      "tests.test_experiment_005_confirmatory_validation.test_complete_repaired_lineage_and_blocker_audit_are_preserved",
+      "tests.test_experiment_005_transfer_pilot_workflow.test_foundation_source_hashes_and_readiness_identity_are_unchanged"
+    ],
+    "legacy_passed": 387,
+    "maintained_profile_tests": 208,
+    "physical_trials": 0,
+    "protected_campaigns_reexecuted": 0,
+    "referee_mismatches": 0,
+    "research_tests": 1213,
+    "unfiltered_legacy_tests": 390
+  },
+  "deterministic_display_inputs": {
+    "diagnostic_commands.csv": {
+      "equal_bytes": true,
+      "sha256": "fb5b1e7142f60513493f3fdf80eed2b8e9e11eec46d14ac75b3b886985e950ef"
+    },
+    "diagnostic_results.json": {
+      "equal_bytes": true,
+      "sha256": "8a56ad9c96875e5faeb0d32a3d217297d018fce6e3e4fe528d659d702cab2097"
+    },
+    "diagnostic_states.csv": {
+      "equal_bytes": true,
+      "sha256": "2dd4a74478b9457f79d6cb8460ca945474d339432ebddf6a279898b0e4414ab9"
+    },
+    "historical_common_property.csv": {
+      "equal_bytes": true,
+      "sha256": "af45d7d8633eb164a4d8249f454976273dc7109c5ff9df179b5efec675ac2ee2"
+    },
+    "historical_engagement.csv": {
+      "equal_bytes": true,
+      "sha256": "8ee70db26182ba8fd0323c474875c6e09b0b4223d1d78fc261b1c180781e971b"
+    },
+    "independent_relative_trace.csv": {
+      "equal_bytes": true,
+      "sha256": "0da736315f7f9470eef1442492440119c8509755370c0b5607d8d061201aef6e"
+    },
+    "integration_comparison.csv": {
+      "equal_bytes": true,
+      "sha256": "39291af18c4094ddfcc51b86804e066a2179194a9817ebcaf3b2c50c52c3ae0d"
+    },
+    "paired_counts.csv": {
+      "equal_bytes": true,
+      "sha256": "0e8544b0335ad1f989724c1ea76270bec8376e3907536447d845ef23f70deb71"
+    },
+    "statistical_design_check.json": {
+      "equal_bytes": true,
+      "sha256": "ec12147a8992ac113d37b7aa486cd8a19b825d30d0221a033f9996a0fd3a25c5"
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "requirements_sha256": "dcbc31e93a32b636b491761fcb16a717a963b2617f2f8eae4238f92882636c13",
+    "resolved_packages": [
+      "cffi==2.1.1",
+      "clarabel==0.11.1",
+      "cloudpickle==3.1.2",
+      "contourpy==1.4.0",
+      "cvxpy==1.9.2",
+      "cycler==0.12.1",
+      "fonttools==4.66.0",
+      "highspy==1.15.1",
+      "iniconfig==2.3.0",
+      "Jinja2==3.1.6",
+      "joblib==1.6.0",
+      "kiwisolver==1.5.1",
+      "MarkupSafe==3.0.3",
+      "matplotlib==3.10.8",
+      "numpy==2.3.5",
+      "osqp==1.1.3",
+      "packaging==26.3",
+      "pillow==12.3.0",
+      "pluggy==1.6.0",
+      "pycparser==3.0",
+      "Pygments==2.21.0",
+      "pyparsing==3.3.3",
+      "pytest==9.0.2",
+      "python-dateutil==2.9.0.post0",
+      "qdldl==0.1.9.post1",
+      "ruff==0.14.11",
+      "scipy==1.17.0",
+      "scs==3.3.1",
+      "setuptools==84.0.0",
+      "six==1.17.0",
+      "sparsediffpy==0.3.0"
+    ]
+  },
+  "historical_failures": "Preserved and explained at the recorded source phases; maintained success is not an all-tests-pass claim.",
+  "interpretation": "Bounded modeled diagnostic and implementation findings remain supported. Broad originality, physical-system validation and journal acceptance are not established by computational reproduction.",
+  "outcomes": {
+    "campaign": {
+      "conditional_mean_interval": [
+        0.9353687327687696,
+        1.0
+      ],
+      "denominator": 768,
+      "operational_safety_estimate": false,
+      "statuses": {
+        "certified_common_prefix": 725,
+        "proved_no_common_held_command": 31,
+        "unresolved": 9,
+        "unresolved_budget": 3
+      },
+      "verified_diagnostics": 756
+    },
+    "development": {
+      "barrier_continued_cases": 6,
+      "barrier_external_actions": 48,
+      "predictive_contained": 10,
+      "predictive_external_actions": 0
+    },
+    "host": {
+      "external_reviews": 0,
+      "measured_requests": 192,
+      "physical_trials": 0,
+      "warmups": 24
+    },
+    "inferential_populations_pooled": false,
+    "transfer": {
+      "cases": 128,
+      "criterion": {
+        "unresolved": 6,
+        "verified_obstruction": 45,
+        "verified_prefix": 77
+      },
+      "lag_mismatch": {
+        "contained": 4,
+        "violation": 7
+      },
+      "pairwise_certified_joint_obstructions": 9,
+      "predictive_prefixes": 79
+    }
+  },
+  "reproduction_code_commit": "dc4c755d7d27c3a1eb4d10899b4ac55ee7deecac",
+  "review_kind": "Automated author-side technical audit; no independent human or laboratory validation",
+  "schema": "sal-clean-publication-verification/1",
+  "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+  "verification_date": "2026-09-24"
+}
