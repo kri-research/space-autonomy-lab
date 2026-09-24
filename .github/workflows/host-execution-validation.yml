@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - 'studies/property-alignment-v1/execution_validation_v1/**'
-      - 'studies/property-alignment-v1/tests/test_host_recorded_evidence.py'
+      - 'studies/property-alignment-v1/host_evidence_tests/test_recorded_evidence.py'
       - '.github/workflows/host-execution-validation.yml'
 permissions:
   contents: read
@@ -32,6 +32,6 @@ jobs:
           python -m pytest execution_validation_v1/tests
           if [ -f execution_validation_v1/recorded/manifest.json ]; then
             python -m execution_validation_v1.artifact --verify --output execution_validation_v1/recorded
-            python -m pytest tests/test_host_recorded_evidence.py
+            python -m pytest host_evidence_tests/test_recorded_evidence.py
           fi
           git -C "$SAL_EVIDENCE_ROOT" diff --exit-code
