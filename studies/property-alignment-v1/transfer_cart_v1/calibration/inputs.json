@@ -1,0 +1,390 @@
+[
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "-181/1000",
+          "19/1000",
+          "19/1000",
+          "9/1000",
+          "1/125",
+          "1/125"
+        ],
+        "upper": [
+          "-179/1000",
+          "21/1000",
+          "21/1000",
+          "11/1000",
+          "3/250",
+          "3/250"
+        ]
+      }
+    ],
+    "delay": "0.25",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "1",
+    "generator_seed": "165854640202778179959684001578599474082",
+    "index": 0,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/interior/0",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "interior",
+    "tau": "0.1"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "139/1000",
+          "-151/1000",
+          "9/1000",
+          "-1/1000",
+          "-11/500",
+          "1/125"
+        ],
+        "upper": [
+          "141/1000",
+          "-149/1000",
+          "11/1000",
+          "1/1000",
+          "-9/500",
+          "3/250"
+        ]
+      }
+    ],
+    "delay": "0.25",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "1",
+    "generator_seed": "319907831584411024946131822507008558924",
+    "index": 1,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/interior/1",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "interior",
+    "tau": "0.3"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "887/1000",
+          "-1/1000",
+          "97/1000",
+          "-1/1000",
+          "1/200",
+          "-1/500"
+        ],
+        "upper": [
+          "889/1000",
+          "1/1000",
+          "99/1000",
+          "1/1000",
+          "9/1000",
+          "1/500"
+        ]
+      }
+    ],
+    "delay": "0",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "0.8",
+    "generator_seed": "27414018659228971912147424621486657735",
+    "index": 0,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/single_face/0",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "single_face",
+    "tau": "0.6"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "-269/500",
+          "143/200",
+          "-73/1000",
+          "19/200",
+          "-7/200",
+          "21/500"
+        ],
+        "upper": [
+          "-67/125",
+          "717/1000",
+          "-71/1000",
+          "97/1000",
+          "-31/1000",
+          "23/500"
+        ]
+      }
+    ],
+    "delay": "0",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "1",
+    "generator_seed": "246481670579468004929054200679960574555",
+    "index": 1,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/single_face/1",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "single_face",
+    "tau": "0.6"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "179/200",
+          "-1/1000",
+          "39/250",
+          "-1/1000",
+          "73/1000",
+          "-1/500"
+        ],
+        "upper": [
+          "897/1000",
+          "1/1000",
+          "79/500",
+          "1/1000",
+          "77/1000",
+          "1/500"
+        ]
+      },
+      {
+        "lower": [
+          "-2693/5000",
+          "3579/5000",
+          "-119/1250",
+          "623/5000",
+          "-47/1000",
+          "29/500"
+        ],
+        "upper": [
+          "-2683/5000",
+          "3589/5000",
+          "-233/2500",
+          "633/5000",
+          "-43/1000",
+          "31/500"
+        ]
+      }
+    ],
+    "delay": "0.25",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "1",
+    "generator_seed": "104163471894870970262202136440346405292",
+    "index": 0,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/aliased_pair/0",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "aliased_pair",
+    "tau": "0.3"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "-349/625",
+          "3711/5000",
+          "-203/5000",
+          "259/5000",
+          "-67/1250",
+          "167/2500"
+        ],
+        "upper": [
+          "-1391/2500",
+          "3721/5000",
+          "-193/5000",
+          "269/5000",
+          "-31/625",
+          "177/2500"
+        ]
+      },
+      {
+        "lower": [
+          "-349/625",
+          "-3721/5000",
+          "-203/5000",
+          "-269/5000",
+          "-67/1250",
+          "-177/2500"
+        ],
+        "upper": [
+          "-1391/2500",
+          "-3711/5000",
+          "-193/5000",
+          "-259/5000",
+          "-31/625",
+          "-167/2500"
+        ]
+      }
+    ],
+    "delay": "0",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "1",
+    "generator_seed": "37972625539775950643736105454941146341",
+    "index": 1,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/aliased_pair/1",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "aliased_pair",
+    "tau": "0.3"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "116/125",
+          "-1/1000",
+          "89/1000",
+          "-1/1000",
+          "83/1000",
+          "-1/500"
+        ],
+        "upper": [
+          "93/100",
+          "1/1000",
+          "91/1000",
+          "1/1000",
+          "87/1000",
+          "1/500"
+        ]
+      },
+      {
+        "lower": [
+          "-349/625",
+          "3711/5000",
+          "-11/200",
+          "71/1000",
+          "-53/1000",
+          "33/500"
+        ],
+        "upper": [
+          "-1391/2500",
+          "3721/5000",
+          "-53/1000",
+          "73/1000",
+          "-49/1000",
+          "7/100"
+        ]
+      },
+      {
+        "lower": [
+          "-349/625",
+          "-3721/5000",
+          "-11/200",
+          "-73/1000",
+          "-53/1000",
+          "-7/100"
+        ],
+        "upper": [
+          "-1391/2500",
+          "-3711/5000",
+          "-53/1000",
+          "-71/1000",
+          "-49/1000",
+          "-33/500"
+        ]
+      }
+    ],
+    "delay": "0",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "1",
+    "generator_seed": "301861433256914786757169020844652479433",
+    "index": 0,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/aliased_triple/0",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "aliased_triple",
+    "tau": "0.6"
+  },
+  {
+    "authority": "0.4",
+    "boxes": [
+      {
+        "lower": [
+          "-541/1000",
+          "719/1000",
+          "-199/2500",
+          "519/5000",
+          "-133/5000",
+          "77/2500"
+        ],
+        "upper": [
+          "-539/1000",
+          "721/1000",
+          "-97/1250",
+          "529/5000",
+          "-113/5000",
+          "87/2500"
+        ]
+      },
+      {
+        "lower": [
+          "-541/1000",
+          "-721/1000",
+          "-199/2500",
+          "-529/5000",
+          "-133/5000",
+          "-87/2500"
+        ],
+        "upper": [
+          "-539/1000",
+          "-719/1000",
+          "-97/1250",
+          "-519/5000",
+          "-113/5000",
+          "-77/2500"
+        ]
+      },
+      {
+        "lower": [
+          "899/1000",
+          "-1/1000",
+          "13/100",
+          "-1/1000",
+          "39/1000",
+          "-1/500"
+        ],
+        "upper": [
+          "901/1000",
+          "1/1000",
+          "33/250",
+          "1/1000",
+          "43/1000",
+          "1/500"
+        ]
+      }
+    ],
+    "delay": "0.25",
+    "disturbance": "0.003",
+    "duration": "1",
+    "eta": "0.8",
+    "generator_seed": "194707520435164009711572025661299499494",
+    "index": 1,
+    "measurement_time_s": "0",
+    "namespace": "calibration",
+    "packet_code": "sal-cart-lag-transfer-v1-calibration/aliased_triple/1",
+    "schema": "sal-lag-cart-case/1",
+    "stratum": "aliased_triple",
+    "tau": "0.1"
+  }
+]

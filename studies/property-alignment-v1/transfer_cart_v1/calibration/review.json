@@ -1,0 +1,181 @@
+{
+  "all_individually_certified_obstructions": 2,
+  "all_pairs_certified_joint_obstructions": 0,
+  "by_stratum": {
+    "aliased_pair": {
+      "cases": 2,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "contradicted_prefix": 1,
+          "unresolved": 1
+        },
+        "lag_aware_common_command": {
+          "verified_obstruction": 1,
+          "verified_prefix": 1
+        },
+        "mean_only_prefix": {
+          "contradicted_prefix": 2
+        },
+        "robust_predictive_prefix": {
+          "unresolved": 1,
+          "verified_prefix": 1
+        },
+        "third_order_barrier": {
+          "unresolved": 2
+        }
+      }
+    },
+    "aliased_triple": {
+      "cases": 2,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "unresolved": 2
+        },
+        "lag_aware_common_command": {
+          "verified_obstruction": 2
+        },
+        "mean_only_prefix": {
+          "contradicted_prefix": 2
+        },
+        "robust_predictive_prefix": {
+          "unresolved": 2
+        },
+        "third_order_barrier": {
+          "unresolved": 2
+        }
+      }
+    },
+    "interior": {
+      "cases": 2,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "verified_prefix": 2
+        },
+        "lag_aware_common_command": {
+          "verified_prefix": 2
+        },
+        "mean_only_prefix": {
+          "verified_prefix": 2
+        },
+        "robust_predictive_prefix": {
+          "verified_prefix": 2
+        },
+        "third_order_barrier": {
+          "verified_prefix": 2
+        }
+      }
+    },
+    "single_face": {
+      "cases": 2,
+      "methods": {
+        "instantaneous_actuator_ablation": {
+          "contradicted_prefix": 1,
+          "verified_prefix": 1
+        },
+        "lag_aware_common_command": {
+          "verified_prefix": 2
+        },
+        "mean_only_prefix": {
+          "contradicted_prefix": 1,
+          "verified_prefix": 1
+        },
+        "robust_predictive_prefix": {
+          "verified_prefix": 2
+        },
+        "third_order_barrier": {
+          "unresolved": 2
+        }
+      }
+    }
+  },
+  "cases": 8,
+  "implementation_failures": 0,
+  "lag_mismatch_stress": {
+    "cases": 0,
+    "methods": {
+      "instantaneous_actuator_ablation": {},
+      "lag_aware_common_command": {},
+      "mean_only_prefix": {},
+      "robust_predictive_prefix": {},
+      "third_order_barrier": {}
+    },
+    "outside_assumptions": true
+  },
+  "methods": {
+    "instantaneous_actuator_ablation": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.1718845000723377,
+      "outcomes": {
+        "contradicted_prefix": 2,
+        "unresolved": 3,
+        "verified_prefix": 3
+      },
+      "total": 8
+    },
+    "lag_aware_common_command": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.08914220903534442,
+      "outcomes": {
+        "verified_obstruction": 3,
+        "verified_prefix": 5
+      },
+      "total": 8
+    },
+    "mean_only_prefix": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.15620504191610962,
+      "outcomes": {
+        "contradicted_prefix": 5,
+        "verified_prefix": 3
+      },
+      "total": 8
+    },
+    "robust_predictive_prefix": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.18207162502221763,
+      "outcomes": {
+        "unresolved": 3,
+        "verified_prefix": 5
+      },
+      "total": 8
+    },
+    "third_order_barrier": {
+      "exceptions": 0,
+      "max_policy_wall_s": 0.1060578339966014,
+      "outcomes": {
+        "unresolved": 6,
+        "verified_prefix": 2
+      },
+      "total": 8
+    }
+  },
+  "no_general_new_controller_advantage_claim": true,
+  "obstruction_mechanisms": [
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": false,
+      "case_id": "c413783cc3dc62dc638ecb9c691c4fd98d030e1e5c11f26b66145f0e146ef739",
+      "index": 0,
+      "stratum": "aliased_pair"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "3a4d5a867fea202c0af3a9533973832b19ad84ba41d252af856e34d04a88edd2",
+      "index": 0,
+      "stratum": "aliased_triple"
+    },
+    {
+      "all_pairs_certified": false,
+      "all_singletons_certified": true,
+      "case_id": "39176f72687069db776ceb3e346fb9d28af070a69f0a66b50fe16effd50caabb",
+      "index": 1,
+      "stratum": "aliased_triple"
+    }
+  ],
+  "operational_prevalence_or_superiority_inference": false,
+  "physical_validation": false,
+  "schema": "sal-cart-transfer-summary/1",
+  "scope": "Prospective actuator-lag simulation transfer of finite shared-input criterion, not complete recovery or unchanged orbital controller portability.",
+  "supported_conditional_criterion": true
+}

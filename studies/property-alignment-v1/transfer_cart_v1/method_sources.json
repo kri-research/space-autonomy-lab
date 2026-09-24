@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-09-23T23:31:30.889432+00:00",
+  "scope": "Targeted primary-source checks, not an exhaustive novelty review",
+  "references": [
+    {
+      "title": "Control Barrier Functions for Systems with High Relative Degree",
+      "authors": [
+        "Wei Xiao",
+        "Calin Belta"
+      ],
+      "url": "https://arxiv.org/abs/1903.04706",
+      "access": "Primary abstract and PDF text; barrier definitions and initial derivative-domain assumptions."
+    },
+    {
+      "title": "A predictive safety filter for learning-based control of constrained nonlinear dynamical systems",
+      "authors": [
+        "Kim P. Wabersich",
+        "Melanie N. Zeilinger"
+      ],
+      "url": "https://arxiv.org/html/1812.05506v4",
+      "access": "Primary HTML, equations5-6 and terminal/fallback conditions. Our prefix comparator deliberately does not claim those full guarantees."
+    },
+    {
+      "title": "Control Barrier Functions for Sampled-Data Systems with Input Delays",
+      "url": "https://arxiv.org/abs/2005.06418",
+      "access": "Primary abstract; not a complete proof audit."
+    },
+    {
+      "title": "Python decimal documentation",
+      "url": "https://docs.python.org/3.13/library/decimal.html",
+      "access": "Context directed rounding; exp correctly rounded to nearest. Online exp enclosures enlarged by adjacent representable numbers."
+    }
+  ],
+  "physical_parameters": "Declared synthetic mass, force and lag values; not estimates from equipment or published experimental data."
+}

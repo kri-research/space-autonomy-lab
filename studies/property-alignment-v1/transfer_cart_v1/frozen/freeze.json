@@ -1,0 +1,43 @@
+{
+  "calibration_receipt_sha256": "651cae70421e41933eb3fa57c82a3a87cfd9d234e96960d4d8901c141222adae",
+  "candidate_task08_results_known": true,
+  "cart_family_preselected_in_task02": true,
+  "cart_numerical_plan_set_after_task08": true,
+  "component_sha256": {
+    "design.json": "483dc62f194fca2576ebc314a617e9954ac17f20e63d2ed69d1c4444f241421f",
+    "exposure.json": "f5187abef6b2a018657f3690be94cc8a323ae7e1b654cd5402ad0faad39a0b30",
+    "method_sources.json": "cefb3d83f55e77054d68e77e3dafa352023305c56629d6e7a5b7666d8c0fbbdf"
+  },
+  "count": 128,
+  "created_at_utc": "2026-09-23T23:45:54.575010+00:00",
+  "inputs_sha256": "bc131760e805a43e2467131ff699dea1e6b74ab8d28121712634816f749ab216",
+  "physical_validation": false,
+  "protected_outcomes_executed": false,
+  "runtime": {
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor_model": "Mac17,9",
+    "python": "3.13.5"
+  },
+  "schema": "sal-cart-transfer-freeze/1",
+  "source_commit": "3bc7f1602b3c05be814b758e46b26ab2358ff064",
+  "source_sha256": {
+    "__init__.py": "79dd7fc3bd07e4a32d4361db3c400f15d8c570395c7ce357689d92807304946c",
+    "arithmetic.py": "d1c17e4f431143760e6323fce8b30d2da5ab3b843dd016aee040923577a54f15",
+    "audit.py": "4e92e651b967ecc3df5deda2a17af1a016f47c1ff671cae1bf014e7ee340bed4",
+    "cleanroom.py": "8178731e42187186f418e96b2fe66a6c98c360c3c04d71acaadb5b5b3889ec45",
+    "experiment.py": "b33c9e61037ad24616becb37e2ffc37c5b7b8941186dec68709b9a6316ca92f5",
+    "freeze.py": "993a530acfb1f1772390bd7f0824b48f13b3641123f1176ae77bd450e010834b",
+    "lag.py": "eacc66074c234b93f6fee9d445dada9af9f1eaed7d582a94648f660cbbf8eb46",
+    "plot.py": "b8f7417d3e3e60bc1210efd3e5f4138f50d7bac64519b470546a62e6366d70fa",
+    "policies.py": "95c07178f888086b7ac77905c04251df3b7ff500360d861802d405815b3fac41",
+    "reference.py": "054ce186f39a5a85c7ad05dd3c68484aff703a82b7d19004ed113e2141f23137",
+    "schema.py": "ac52dea5e1664d98ee7e0e9590164b2a6f343681974c3cdc2fc0d3ce1f8818fc",
+    "tests/test_cart_decisions.py": "df7ccb87058c7c1eb81ee0e8fdf302f2384dacf7c3b645e7751a42e89740256f",
+    "tests/test_cart_numerics.py": "8d18b83becd94122ca09d3fbc2f9eb611f6010cdeb5488c4fcaefbc45ddfb7e8"
+  },
+  "transfer_id": "00030898559d9fd8c4402125acb60a210a4bef7aa37e7de5b925b4ddddf227ed"
+}

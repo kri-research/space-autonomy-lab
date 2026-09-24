@@ -1,0 +1,155 @@
+{
+  "schema": "sal-cart-transfer-design/1",
+  "created_at_utc": "2026-09-23T23:31:30.889432+00:00",
+  "family_preselected_in": "specification/research_question.md, Task02",
+  "timing": "Numerical design fixed during Task09 after Task08 outcomes; family equations alone were previously exposed.",
+  "claim": "Portability of the shared held-input feasibility/obstruction criterion under a six-state actuator-lag model; not unchanged spacecraft-code transfer or a novel general safety theorem.",
+  "dynamics": {
+    "state_order": [
+      "px",
+      "py",
+      "vx",
+      "vy",
+      "ax",
+      "ay"
+    ],
+    "equations": [
+      "pdot=v",
+      "vdot=a+w",
+      "tau*adot=-a+eta*u"
+    ],
+    "units": "m, s, m/s, m/s^2; u is commanded acceleration",
+    "mass_kg": "2",
+    "force_limit_N": "0.8",
+    "acceleration_authority": "0.4",
+    "lag_seconds": [
+      "0.1",
+      "0.3",
+      "0.6"
+    ],
+    "effectiveness": [
+      "0.8",
+      "1"
+    ],
+    "hold_seconds": "1",
+    "observation_age_seconds": [
+      "0",
+      "0.125"
+    ],
+    "actuation_delay_equals_age": true,
+    "queued_acceleration": [
+      0,
+      0
+    ],
+    "disturbance_component_bound": "0.003",
+    "disturbance_semantics": "Constant unknown acceleration on the complete episode; independently bounded components. No arbitrary disturbance derivative claim."
+  },
+  "physical_property": {
+    "normals": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "-0.6",
+        "0.8"
+      ],
+      [
+        "-0.6",
+        "-0.8"
+      ]
+    ],
+    "bounds": [
+      "1",
+      "1",
+      "1"
+    ],
+    "closed": true,
+    "description": "Triangular center-position workspace; fixed cart footprint is already absorbed into these center constraints. A synthetic research enclosure, not a certified robot workspace."
+  },
+  "measurement": "Timestamped aliased cell code. A packet identifies a declared union of six-dimensional boxes. Every compatible state produces the same code; no true hypothesis is supplied to a policy. Actuator state bounds are included. Covariance is not used as a deterministic bound.",
+  "strata": [
+    "interior",
+    "single_face",
+    "aliased_pair",
+    "aliased_triple"
+  ],
+  "per_stratum": 32,
+  "total": 128,
+  "sampling": "Fixed deterministic seed salts, no qualification exclusion; all generated cases retained. Descriptive stratified counts, no operational frequencies or superiority p-values.",
+  "distribution": {
+    "interior_positions": "each coordinate integer[-20,20]/100",
+    "interior_velocities": "each integer[-3,3]/100",
+    "interior_actuator": "each integer[-2,2]/100",
+    "face_clearance": "integer[20,140]/1000 m",
+    "outward_speed": "integer[40,180]/1000 m/s",
+    "outward_acceleration": "integer[0,100]/1000 m/s^2",
+    "box_halfwidths": [
+      "0.001",
+      "0.001",
+      "0.001",
+      "0.001",
+      "0.002",
+      "0.002"
+    ],
+    "face_selection": "cyclic faces from case index; pair uses consecutive faces; triple all three"
+  },
+  "methods": [
+    "lag_aware_common_command",
+    "robust_predictive_prefix",
+    "third_order_barrier",
+    "mean_only_prefix",
+    "instantaneous_actuator_ablation"
+  ],
+  "candidate": "Residual-checked necessary inequalities at queue endpoints and half/full held times; minimum-norm feasible proposal; checked continuous prefix through endpoint envelopes plus curvature margins. No HCW coefficients reused.",
+  "predictive_comparator": "Re-derived robust one-hold predictive feasibility comparator with 64 subdivisions and exact input norm; same finite-prefix obligation. This is a prefix specialization, NOT a claimed port of the original terminal-set/full-recovery theorem.",
+  "barrier_comparator": "Re-derived relative-degree-three exponential barrier with lambda=2/hold. Check h,psi1,psi2 at application; require psi3 over the entire held interval using derivative margins. No infinite-horizon recursive-feasibility claim.",
+  "numerics": {
+    "online_decimal_precision": 50,
+    "reference_decimal_precision": 80,
+    "candidate_subdivisions": 16,
+    "verification_subdivisions": 64,
+    "predictive_subdivisions": 64,
+    "barrier_subdivisions": 32,
+    "barrier_lambda": "2",
+    "reference_taylor_order": 10,
+    "reference_maximum_step_over_tau": "0.5",
+    "reference_minimum_cell_s": "0.000001",
+    "reference_maximum_cells_per_face": 4096,
+    "decision_budget_s": 1.0,
+    "optimizer_max_iterations": 100,
+    "optimizer_tolerance": 1e-10,
+    "optimization_margin_m": 1e-08
+  },
+  "outcomes": [
+    "delivered_prefix",
+    "checked_obstruction",
+    "unresolved",
+    "budget_miss",
+    "independent_prefix_check",
+    "independent_negative_check",
+    "same_information_pairwise_and_singleton_diagnostics",
+    "recorded_wall_time",
+    "fixed_action_input_norm",
+    "boundary_witness_or_unresolved"
+  ],
+  "singletons_and_pairs": "Evaluate lag-aware criterion on all proper nonempty singleton/pair subsets after the full-set methods. These are descriptive mechanistic checks, not new independent cases.",
+  "assumption_stress": {
+    "cases": 16,
+    "source": "first 16 prespecified single_face inputs",
+    "change": "reference plant tau is four times declared tau; commands and predictions stay fixed",
+    "scope": "Deliberate assumption violation, excluded from the 128-case in-assumption endpoint; no subsequent retuning."
+  },
+  "recovery": "No terminal invariant set, full recovery, hold acquisition, or closed-loop mission utility is credited. Prefix witness feasibility and common-policy impossibility over the held interval remain distinct.",
+  "execution": {
+    "workers": 1,
+    "phase_limit_s": 1800,
+    "case_limit_s": 60,
+    "minimum_free_disk_bytes": 2147483648,
+    "write_once": true,
+    "resume": "No automatic second invocation. Preserve all completed and started attempts. An interrupted campaign remains incomplete until a separately reviewed continuation can account for unfinished work without rerunning started cases.",
+    "protected_namespace": "sal-cart-lag-transfer-v1-protected",
+    "calibration_namespace": "sal-cart-lag-transfer-v1-calibration"
+  },
+  "reproduction": "Fresh standard-library-only environment and isolated source export of the independent Taylor/Bernstein referee. Replay exact recorded commands and dual evidence, not policy timing or protected trials. No laboratory independence claim."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "sal-cart-transfer-exposure/1",
+  "checked_at_utc": "2026-09-23T23:31:30.889432+00:00",
+  "inspected": [
+    "Task02 record held_out_family",
+    "specification/research_question.md held-out family",
+    "Task07 evaluation/exposure_history.json",
+    "Task08 replacement freeze and completion"
+  ],
+  "held_out": "New actuator-lag dynamics, triangular geometry, six-state observation sets, implementations and family-specific outcomes. Not an independent team or physical system.",
+  "known_before_transfer": "Cart equations and interface chosen in Task02; all original spacecraft outcomes known. Scalar double-integrator examples already used for development.",
+  "prior_valid_numerical_plan": false,
+  "new_prospective_plan": "design.json set before new family evaluation; technical fixtures are development only",
+  "parameter_fitting_to_transfer_outcomes": false,
+  "external_preregistration_claimed": false
+}
