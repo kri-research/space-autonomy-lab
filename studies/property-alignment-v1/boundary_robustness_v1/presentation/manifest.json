@@ -1,11 +1,11 @@
 {
   "study_id": "de8cb9a5d3e2c73b2a9f748e3e07cea301fb0cf8b739960b7d47fe38ad439b23",
   "files": {
-    "derivation.tex": "83343ee03667b1bedbb3226750d8dff8bb024dbfdd1c7814cbb0f6a7dbafe273",
     "state_robustness.svg": "afe19dc58cc18ed02a0f01a2662effe10b92c401d70d65985d32efdc06ae7cbe",
-    "sensitivity_table.tex": "359566d4e6adb7ff8304bd30391ea84bf2406a85940f56fba45fdaa34cdeaded",
     "frontier.csv": "76ef3cf6ace81f3a88a0c71a747886524eba35c2921865e0855dff309e69242c",
-    "sensitivity.csv": "95ab4bcfffd0bfc232bbd9ae2ef4a11289a7c356cebdba6693fd0ee5f927c1a6"
+    "sensitivity.csv": "95ab4bcfffd0bfc232bbd9ae2ef4a11289a7c356cebdba6693fd0ee5f927c1a6",
+    "derivation.tex.txt": "83343ee03667b1bedbb3226750d8dff8bb024dbfdd1c7814cbb0f6a7dbafe273",
+    "sensitivity_table.tex.txt": "359566d4e6adb7ff8304bd30391ea84bf2406a85940f56fba45fdaa34cdeaded"
   },
   "source": "boundary_robustness_v1.presentation",
   "public_pdf_included": false,
@@ -30,6 +30,19 @@
         "public_sha256": "afe19dc58cc18ed02a0f01a2662effe10b92c401d70d65985d32efdc06ae7cbe",
         "rule": "Strip trailing horizontal whitespace on lines; all whitespace-normalized SVG drawing tokens unchanged",
         "raw_local_generation_preserved": true
+      }
+    }
+  },
+  "latex_fragment_packaging": {
+    "reason": "The unchanged study .gitignore excludes *.tex; these authorized new mathematical fragments are retained as plain text. The authoritative manuscript is not included.",
+    "files": {
+      "derivation.tex.txt": {
+        "local_LaTeX_filename": "derivation.tex",
+        "sha256": "83343ee03667b1bedbb3226750d8dff8bb024dbfdd1c7814cbb0f6a7dbafe273"
+      },
+      "sensitivity_table.tex.txt": {
+        "local_LaTeX_filename": "sensitivity_table.tex",
+        "sha256": "359566d4e6adb7ff8304bd30391ea84bf2406a85940f56fba45fdaa34cdeaded"
       }
     }
   }
