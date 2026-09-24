@@ -166,9 +166,7 @@ def build(attempt, output, execution_receipt):
     receipts = verify_attempt(attempt, records, frozen)
     rows, discrepancies, summary = summarize(records, receipts, population)
     repository = STUDY.parents[1]
-    commit = subprocess.check_output(
-        ["git", "--no-replace-objects", "-C", str(repository), "rev-parse", "HEAD"], text=True
-    ).strip()
+    commit = strict_json((ROOT / "source_binding.json").read_bytes())["source_commit"]
     source_files = {x.relative_to(ROOT).as_posix(): digest(x) for x in ROOT.glob("*.py")}
     for name, h in source_files.items():
         raw = subprocess.check_output(
@@ -284,33 +282,38 @@ def verify(directory=ROOT / "recorded"):
     }
     require(files == manifest["files"], "Artifact file inventory changed")
     anchor = strict_json((ROOT / "source_binding.json").read_bytes())
+    generation = anchor["accepted_generators"].get(manifest["report_source_commit"])
     require(
-        manifest["report_source_commit"] == anchor["source_commit"]
-        and manifest["report_source_sha256"] == anchor["files"],
-        "Reporter identity differs from trusted installed binding",
+        generation == manifest["report_source_sha256"],
+        "Generating source differs from trusted installed binding",
     )
     repository = STUDY.parents[1]
+    for commit, sources in (
+        (manifest["report_source_commit"], generation),
+        (anchor["source_commit"], anchor["files"]),
+    ):
+        for name, h in sources.items():
+            safe_name(name)
+            blob = subprocess.check_output(
+                [
+                    "git",
+                    "--no-replace-objects",
+                    "-C",
+                    str(repository),
+                    "show",
+                    commit + ":studies/property-alignment-v1/independent_hcw_campaign_v1/" + name,
+                ]
+            )
+            require(
+                hashlib.sha256(blob).hexdigest() == h,
+                "Reporter content differs from actual Git blob",
+            )
+    require(
+        {x.name for x in ROOT.glob("*.py")} == set(anchor["files"]),
+        "Incomplete current reader source inventory",
+    )
     for name, h in anchor["files"].items():
-        safe_name(name)
-        blob = subprocess.check_output(
-            [
-                "git",
-                "--no-replace-objects",
-                "-C",
-                str(repository),
-                "show",
-                anchor["source_commit"]
-                + ":studies/property-alignment-v1/independent_hcw_campaign_v1/"
-                + name,
-            ]
-        )
-        require(
-            hashlib.sha256(blob).hexdigest() == h,
-            "Reporter content differs from actual source Git blob",
-        )
-    for name, h in manifest["report_source_sha256"].items():
-        safe_name(name)
-        require(digest(ROOT / name) == h, "Report implementation drift")
+        require(digest(ROOT / name) == h, "Current verification source drift")
     require(
         digest(STUDY / "independent_hcw_audit_v1/frozen/protocol.json")
         == manifest["auditor_freeze_sha256"],
@@ -322,7 +325,7 @@ def verify(directory=ROOT / "recorded"):
         "Numerical source identity",
     )
     with tempfile.TemporaryDirectory() as tmp:
-        output = Path(tmp)
+        output = Path(tmp).resolve()
         seen = set()
         for row in (
             strict_json(x) for x in (directory / "audit_records.jsonl").read_text().splitlines()
@@ -378,6 +381,7 @@ def verify(directory=ROOT / "recorded"):
     )
     return {
         "passed": True,
+        "artifact_reader_version": 2,
         "audit_id": AUDIT_ID,
         "selected": 768,
         "independent_statuses": summary["independent_statuses"],
