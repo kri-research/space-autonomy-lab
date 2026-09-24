@@ -1,0 +1,16 @@
+{
+  "audit_id": "R02-committable-source-development",
+  "expected": 35,
+  "completed": 35,
+  "complete": true,
+  "new_jobs": 35,
+  "statuses": {
+    "verified_prefix": 28,
+    "verified_obstruction": 5,
+    "no_on_time_certificate": 2
+  },
+  "qualification_witnesses": 18,
+  "no_original_results_changed": true,
+  "no_original_policy_executed": true,
+  "elapsed_s": 1.9809145419858396
+}

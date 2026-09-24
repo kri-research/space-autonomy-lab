@@ -1,0 +1,144 @@
+{
+  "schema": "sal-independent-hcw-contract/1",
+  "model": "planar circular-chief HCW",
+  "mean_motion_exact": "5217507778172933/4611686018427387904",
+  "mean_motion_origin": "Exact binary64 constant from the original validated model, not the rounded decimal string.",
+  "state_order": [
+    "x",
+    "y",
+    "vx",
+    "vy"
+  ],
+  "units": [
+    "m",
+    "m",
+    "m/s",
+    "m/s"
+  ],
+  "command_units": "m/s^2",
+  "time_units": "s",
+  "equations": [
+    "dx=vx",
+    "dy=vy",
+    "dvx=3*n^2*x+2*n*vy+eta*ux+wx",
+    "dvy=-2*n*vx+eta*uy+wy"
+  ],
+  "region": {
+    "closed_corridor": [
+      "-100<=y<=-30",
+      "10*x+y<=0",
+      "-10*x+y<=0"
+    ],
+    "closed_ellipse": "9*x^2+4*(y+30)^2<=36",
+    "combination": "union, not intersection or convex hull",
+    "separation_lower_m": "27",
+    "collision_radius_m": "2",
+    "keepout_radius_m": "10"
+  },
+  "credited_obligations": [
+    "continuous union containment",
+    "collision/keepout freedom implied by verified union containment"
+  ],
+  "not_credited": [
+    "terminal membership",
+    "hold acquisition",
+    "recursive recovery",
+    "nonlinear impossibility",
+    "physical validation"
+  ],
+  "information": {
+    "maximum_boxes": 16,
+    "exact_rational_endpoints": true,
+    "known_queue_intervals_s": "one second each",
+    "age_s": [
+      0,
+      1
+    ],
+    "delay_s": [
+      0,
+      1
+    ],
+    "command_period_s": "1",
+    "maximum_measurement_to_hold_end_s": "3",
+    "authority_upper": "1/50",
+    "effectiveness": "0<=lower<=upper<=1",
+    "disturbance": "componentwise [-W,W]",
+    "uncertainty_realization": "Independent constant choices per quarter-second segment; shared scalar effectiveness is conservatively enclosed by axiswise intervals. No arbitrary within-segment variation is asserted."
+  },
+  "positive_method": "Cancellation-safe closed-form all-state interval maps and direct original-box superposition, with continuous-time refinement of the closed nonconvex union.",
+  "negative_method": "Original saved nonnegative weights and row order; actual original vertices and allowed constant realizations; residual-adjusted exact-rational contradiction.",
+  "numerical": {
+    "dyadic_fraction_bits": 192,
+    "series_terms": 10,
+    "maximum_abs_nt": "1/32",
+    "maximum_duration_s": "3"
+  },
+  "source_inspection": {
+    "candidate/information.py": "920daf70c5388c762028d183b693451157ad75084c51df6a838ddc6a28c2d6ee",
+    "candidate/affine.py": "6e87c31fdb1f99d10377742489d613e7ed8b1c7d7aab65d1e96d86796781eb8f",
+    "candidate/certify.py": "87c936110b0e50bc76d18a8292005c2a6b686044c532539346c0d426ed8024b2",
+    "adjudication/flow.py": "be392dcfc91b101df4dea9fdd00d290aa429e8a5ba041a98241fe7e036151d9b",
+    "specification/property_contract.json": "c848927f881ba621dbc94e29d10f62a9ef1294e253cce44d55fe6e3c41f6e26a",
+    "evaluation_v2/generator.py": "8dbb948e3a68f54c683a39af8da2a5d3fded870a440e3ef374adb2b16706f96f",
+    "evaluation/episode.py": "fa650daa8d6cecd507824e8b0f66e6a8f8e4a8fe36c42a6f424cc90a8818302d",
+    "evaluation_v2/receipts.py": "a994268aeca499da4749301b34f68a3b7e79ec5849380cc5c9777339d328d265",
+    "qualification_repair_v1/core.py": "af5d535a5dc511b43d3b80f115592dd3df16e49ac051044fee9a3bc1989bb884",
+    "evaluation/qualification.py": "bbede574e9adac4a16ecc3067347d8f5777ffbb3862cfa5bc38e74170a8f4f64"
+  },
+  "imported_original_numerical_modules": false,
+  "computational_separation": "New integer interval implementation and extended four-state closed-form HCW response. The supplied checker and original source were inspected; this is not clean-room or independent human replication.",
+  "qualification_action_library": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1/200",
+      "0"
+    ],
+    [
+      "-1/200",
+      "0"
+    ],
+    [
+      "0",
+      "1/200"
+    ],
+    [
+      "0",
+      "-1/200"
+    ],
+    [
+      "1/100",
+      "0"
+    ],
+    [
+      "-1/100",
+      "0"
+    ],
+    [
+      "0",
+      "1/100"
+    ],
+    [
+      "0",
+      "-1/100"
+    ],
+    [
+      "19/1000",
+      "0"
+    ],
+    [
+      "-19/1000",
+      "0"
+    ],
+    [
+      "0",
+      "19/1000"
+    ],
+    [
+      "0",
+      "-19/1000"
+    ]
+  ]
+}

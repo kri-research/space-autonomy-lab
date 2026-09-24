@@ -1,0 +1,115 @@
+"""Independent exact-rational checks for the paper's three-state HCW example.
+No repository modules or third-party packages are imported.
+
+Uses the closed-form HCW transition map with cancellation-safe response
+coefficients bounded by exact-rational alternating Taylor sums for
+0<=n*t<0.002.
+For positive witnesses, all four corridor halfspaces are checked over 256
+complete time subintervals, not merely at sampled points. The corridor is
+a subset of the declared corridor/ellipse union.
+
+The represented mean motion is exactly the binary64 value stated in the code.
+The result is conditional on the planar HCW model, exact point states,
+zero disturbance/delay, and one-second constant commands.
+"""
+from __future__ import annotations
+from dataclasses import dataclass
+from fractions import Fraction as F
+from math import factorial, log, sqrt
+from pathlib import Path
+import json
+
+@dataclass(frozen=True)
+class I:
+    lo: F
+    hi: F
+    @staticmethod
+    def of(x):
+        return x if isinstance(x,I) else I(F(x),F(x))
+    def __add__(self,x):
+        x=I.of(x); return I(self.lo+x.lo,self.hi+x.hi)
+    __radd__=__add__
+    def __neg__(self): return I(-self.hi,-self.lo)
+    def __sub__(self,x): return self+-I.of(x)
+    def __rsub__(self,x): return I.of(x)+-self
+    def __mul__(self,x):
+        x=I.of(x); z=[a*b for a in (self.lo,self.hi) for b in (x.lo,x.hi)]
+        return I(min(z),max(z))
+    __rmul__=__mul__
+    def __truediv__(self,x):
+        x=I.of(x)
+        if x.lo<=0<=x.hi: raise ZeroDivisionError
+        return self*I(1/x.hi,1/x.lo)
+    def square(self):
+        return I(F(0) if self.lo<=0<=self.hi else min(self.lo*self.lo,self.hi*self.hi),max(self.lo*self.lo,self.hi*self.hi))
+
+
+N=F(0.0011313666536110223)
+STATES=[list(map(F,v)) for v in [('0','-99.99905','0','-0.001'),('7.99905','-80','0.001','0'),('-7.99905','-80','-0.001','0')]]
+
+def response_series(z: I, offset: int) -> I:
+    """Bound sum (-1)^k*z^(2k)/(2k+offset)! without cancellation.
+
+    All z lie in [0, .002]. The alternating tail after k=5 is positive
+    and at most z_hi^12/(12+offset)!. Interval Horner bounds the finite
+    polynomial for every time in the requested interval.
+    """
+    assert 0 <= z.lo <= z.hi < F(1,500)
+    zz=z.square()
+    result=I.of(F(-1,factorial(10+offset)))
+    for k in range(4,-1,-1):
+        result=result*zz+F((-1)**k,factorial(2*k+offset))
+    return result+I(F(0),z.hi**12/factorial(12+offset))
+
+def maps(a,b):
+    t=I(F(a),F(b)); nt=N*t
+    sinc=response_series(nt,1)
+    cosc=response_series(nt,2)
+    tanc=response_series(nt,3)
+    t2=t.square(); t3=t2*t
+    one_minus_cos=N*N*t2*cosc
+    nt_minus_sin=N*N*N*t3*tanc
+    phi=[[1+3*one_minus_cos,I.of(0),t*sinc,2*N*t2*cosc],
+         [-6*nt_minus_sin,I.of(1),-2*N*t2*cosc,t-4*N*N*t3*tanc]]
+    gam=[[t2*cosc,2*N*t3*tanc],
+         [-2*N*t3*tanc,t2*(4*cosc-F(3,2))]]
+    return phi,gam
+
+def dot(a,b): return sum((I.of(x)*y for x,y in zip(a,b)),I.of(0))
+
+def pos(phi,gam,state,u): return [dot(row,state)+dot(g,u) for row,g in zip(phi,gam)]
+
+def run():
+    phi,gam=maps(F(1),F(1))
+    normals=[(F(0),F(-1)),(F(1),F(1,10)),(F(-1),F(1,10))]
+    limits=[F(100),F(0),F(0)]
+    rows=[]; rhs=[]
+    for normal,bound,state in zip(normals,limits,STATES):
+        rows.append([dot(normal,[gam[k][j] for k in range(2)]) for j in range(2)])
+        rhs.append(bound-dot(normal,[dot(row,state) for row in phi]))
+    weights=[F(1,11),F(5,11),F(5,11)]
+    r=[dot(weights,[row[j] for row in rows]) for j in range(2)]
+    residual=[max(abs(x.lo),abs(x.hi)) for x in r]
+    delta=-sum(w*b.hi for w,b in zip(weights,rhs))-F(1,50)*sum(residual)
+    assert delta>0
+    specs=[((0,1),('-.004','.004')),((0,2),('.004','.004')),((1,2),('0','-.006'))]
+    records=[]
+    slices=256
+    cached=[maps(F(i,slices),F(i+1,slices)) for i in range(slices)]
+    for pair,raw in specs:
+        u=list(map(F,raw)); assert sum(x*x for x in u)<=F(1,50)**2
+        margin=None
+        for phi,gam in cached:
+            for i in pair:
+                x,y=pos(phi,gam,STATES[i],u)
+                residuals=[-100-y,y+30,x+F(1,10)*y,-x+F(1,10)*y]
+                upper=max(v.hi for v in residuals)
+                assert upper<=0,(pair,i,float(upper))
+                margin=-upper if margin is None else min(margin,-upper)
+        records.append({'pair':list(pair),'command':list(raw),'whole_interval_corridor_containment':True,'subintervals':slices,'certified_lower_halfspace_slack_m_approx':float(margin),'certified_lower_halfspace_slack_exact':str(margin)})
+    eps=sqrt(log(40)/(2*768))
+    result={'model':'planar HCW','mean_motion_exact_binary64':str(N),'inputs':'exact stated point states; zero delay and disturbance; one-second held commands','negative_certificate':{'necessary_row_time_s':1,'weights':list(map(str,weights)),'exact_rational_margin_positive':True,'margin_lower_approx':float(delta),'margin_lower_exact':str(delta),'control_bound':'1/50','coefficient_error_budget_included':True},'positive_certificates':records,'coverage_arithmetic':{'numerator':756,'denominator':768,'fraction':756/768,'epsilon':eps,'interval':[756/768-eps,1.0]},'limitations':'This validates only the explicit HCW triple and concentration arithmetic. It does not validate the full 768-case campaign, nonlinear models, physical implementation, or a population safety rate.'}
+    dest=Path(__file__).with_name('independent_hcw_results.json')
+    dest.write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps({'negative_margin_lower':float(delta),'pairs':[{k:v for k,v in r.items() if k!='certified_lower_halfspace_slack_exact'} for r in records],'coverage':result['coverage_arithmetic']},indent=2))
+if __name__=='__main__':run()
