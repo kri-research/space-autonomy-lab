@@ -1,0 +1,120 @@
+{
+  "after": {
+    "error": "Working bytes differ from pinned Git blob: 'README.md'",
+    "original_scientific_inputs_modified": false,
+    "same_before_fixture_rejected_after": true
+  },
+  "corrected_full_snapshot_check": {
+    "access_failures": 0,
+    "bytes": 433340210,
+    "elapsed_s": 1.7235082919942215,
+    "extra_working_paths": "Outside the pinned inventory; not certified by this check",
+    "files": 5744,
+    "git_modes": {
+      "100644": 5744
+    },
+    "git_object_format": "sha1",
+    "git_replacement_objects": "disabled",
+    "mismatches": 0,
+    "passed": true,
+    "platform_scope": "POSIX owner-executable bit and literal symlink bytes; no full permission audit",
+    "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+    "scope": "Pinned tracked bytes, blob availability and Git modes; no scientific validity or custody claim",
+    "verification_version": "sal-git-content-binding/2"
+  },
+  "defect": "The prior checker bound working bytes to supplied hashes but only filenames to the Git tree; a coordinated file/manifest substitution passed. It also treated an explicitly empty document as a request for the default manifest.",
+  "environment": {
+    "existing_isolated_environments_used": true,
+    "git": "git version 2.48.1",
+    "platform": "macOS arm64",
+    "python": "3.13.5"
+  },
+  "limitations": [
+    "Content and Git mode verification assumes a stable checkout, trusted Git/Python and hash collision resistance; it does not establish scientific correctness or chain of custody.",
+    "Full verification requires POSIX descriptor-relative no-follow file access. Unsupported platforms fail rather than silently omit mode checks.",
+    "The recorded Git owner-executable bit and literal symlink target bytes are checked. No full POSIX permission, target-file content, or ACL claim is made.",
+    "All entries of the pinned tree are required; later additional working paths are explicitly outside this scientific-snapshot inventory.",
+    "Submodule/gitlink and unsupported object kinds are rejected.",
+    "Original receipts remain historical observations and are not relabelled as executions of the repaired verifier.",
+    "No new independent spacecraft numerical certificate audit was performed in this revision."
+  ],
+  "old_audit_sha256": "1f77e63b6cb6323d655aa4112544acc5903eb4444b4fc17644ed3a8e0591f4cd",
+  "preservation": {
+    "historical_files": 601,
+    "historical_or_protected_campaign_reexecuted": false,
+    "old_evidence_manifest_unchanged": true,
+    "old_publication_recorded_files_unchanged": true,
+    "old_release_tag_unchanged": true,
+    "old_scientific_files": 5744,
+    "scientific_manuscript_rewritten": false
+  },
+  "previous_publication_commit": "27463f287a1e0855aeaee6a6151e1b4c473bc2b9",
+  "repaired_code_commit": "793f4bd6c8139e88066f0cbf10e9c41a842ea875",
+  "repaired_source_sha256": {
+    "studies/property-alignment-v1/publication_v1/audit.py": "5a6438a6b7dbe7f80a8c8ba1010bc44e1273a13b7d1c5704e29fa14a7ab6be82",
+    "studies/property-alignment-v1/publication_v1/git_binding.py": "1a347de18e2f57ecefead787461b3110ace474ea106887262b06a59e51e7e907",
+    "studies/property-alignment-v1/publication_v1/tests/test_git_content_binding.py": "5af5ed6a13168c111723095c3371b6b2cfd3e55e46316c6466bca0683ab97693"
+  },
+  "reproduction": {
+    "actual_git_blob_mismatch": true,
+    "bug_reproduced": true,
+    "coordinated_same_length_mutation_incorrectly_accepted": {
+      "bytes": 433340210,
+      "files": 5744,
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8"
+    },
+    "elapsed_s": 2.7509298339718953,
+    "function": "publication_v1.audit.verify_manifest",
+    "git_original_sha256": "dafee53f8f0825c99011885ad69e92339ed5ab016525009373f96e1da530ac72",
+    "mutated_path": "README.md",
+    "mutated_sha256": "eb684e96d7f9bf096047ac0561c8f694bdfd5746e08f183149996ba05810010c",
+    "real_scientific_inputs_modified": false,
+    "source_commit": "27463f287a1e0855aeaee6a6151e1b4c473bc2b9",
+    "source_sha256": "1f77e63b6cb6323d655aa4112544acc5903eb4444b4fc17644ed3a8e0591f4cd",
+    "unchanged_passed": {
+      "bytes": 433340210,
+      "files": 5744,
+      "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8"
+    }
+  },
+  "schema": "sal-verification-correction/2",
+  "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+  "separate_supplied_comparison": {
+    "origin": "Unmodified author-provided reference checker. Separate code path, not independent human or laboratory review.",
+    "result": {
+      "commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8",
+      "failures": [],
+      "matched_blobs": 5744,
+      "matched_bytes": 433340210,
+      "passed": true,
+      "scope": "Tracked file bytes and file modes; not scientific validity or chain of custody"
+    },
+    "source_sha256": "a2b6df5a79721ad0f662153f89f039d57a842e2759a1635baeedd3491c941fb9"
+  },
+  "tests": {
+    "maintained_tests": 208,
+    "manuscript": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 16
+    },
+    "new_git_binding_regressions": 76,
+    "prior_unfiltered_legacy_failures": 3,
+    "publication": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 106
+    },
+    "research": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 1213
+    },
+    "unfiltered_legacy_suite_rerun_in_this_revision": false
+  },
+  "verification_date": "2026-09-24",
+  "verification_version": "sal-git-content-binding/2"
+}
