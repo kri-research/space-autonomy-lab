@@ -1,0 +1,17 @@
+{
+  "schema": "sal-validation-resources/1",
+  "achieved": "host_computer_timing_and_simulated_interface_tests",
+  "host_processor": "Apple M5 Pro",
+  "host_platform_class": "arm64 macOS",
+  "connected_service_discovery": "One authorized remote Mac. No laboratory-instrumentation connector identified.",
+  "sensors_for_this_study": null,
+  "actuators_for_this_study": null,
+  "independent_metrology": null,
+  "authorized_trial_operator": null,
+  "independent_safety_supervisor": null,
+  "external_review_reports_received": 0,
+  "physical_device_interfaces_opened": false,
+  "physical_equipment_moved": false,
+  "dedicated_target_processor": null,
+  "scope": "No suitable project-authorized physical rig identified. Absence of a connector is not proof that no hardware exists elsewhere."
+}

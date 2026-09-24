@@ -1,0 +1,1735 @@
+{
+  "checks": [
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0000",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0001",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0002",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0003",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0004",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0005",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0006",
+      "method": "common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0007",
+      "method": "common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0008",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0009",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0010",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0011",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0012",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0013",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0014",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0015",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0016",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0017",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0018",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0019",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0020",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0021",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0022",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0023",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0024",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0025",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0026",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0027",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0028",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0029",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0030",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0031",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0032",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0033",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0034",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0035",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0036",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0037",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0038",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0039",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0040",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0041",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0042",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0043",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0044",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0045",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0046",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0047",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0048",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0049",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0050",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0051",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0052",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0053",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0054",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0055",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0056",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0057",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0058",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0059",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0060",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0061",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session00-0062",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session00-0063",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0064",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0065",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0066",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0067",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0068",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0069",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0070",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session00-0071",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0000",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0001",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0002",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0003",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0004",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0005",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0006",
+      "method": "common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0007",
+      "method": "common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0008",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0009",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0010",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0011",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0012",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0013",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0014",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0015",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0016",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0017",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0018",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0019",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0020",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0021",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0022",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0023",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0024",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0025",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0026",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0027",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0028",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0029",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0030",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0031",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0032",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0033",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0034",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0035",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0036",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0037",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0038",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0039",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0040",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0041",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0042",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0043",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0044",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0045",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0046",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0047",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0048",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0049",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0050",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0051",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0052",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0053",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0054",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0055",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0056",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0057",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0058",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0059",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0060",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session01-0061",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0062",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session01-0063",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0064",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0065",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0066",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0067",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0068",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0069",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0070",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session01-0071",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0000",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0001",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0002",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0003",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0004",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0005",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0006",
+      "method": "common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0007",
+      "method": "common_command",
+      "passed": true,
+      "phase": "warmup"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0008",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0009",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0010",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0011",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0012",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0013",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0014",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0015",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0016",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0017",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0018",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0019",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0020",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0021",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0022",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0023",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0024",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0025",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0026",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0027",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0028",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0029",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0030",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0031",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0032",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0033",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0034",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0035",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0036",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0037",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0038",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0039",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0040",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0041",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0042",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0043",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0044",
+      "method": "third_order_barrier",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0045",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0046",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0047",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0048",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0049",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0050",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0051",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0052",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0053",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0054",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0055",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0056",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0057",
+      "method": "robust_predictive_prefix",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0058",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0059",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0060",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0061",
+      "method": "robust_predictive_prefix",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": false,
+      "domain": "cart",
+      "id": "session02-0062",
+      "method": "third_order_barrier",
+      "passed": null,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "cart",
+      "id": "session02-0063",
+      "method": "lag_aware_common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0064",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0065",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0066",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0067",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0068",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0069",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0070",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    },
+    {
+      "checked": true,
+      "domain": "spacecraft",
+      "id": "session02-0071",
+      "method": "common_command",
+      "passed": true,
+      "phase": "measured"
+    }
+  ],
+  "definite_checks": 162,
+  "failed_checks": 0,
+  "scope": "After-timing calibration fixed-output rechecks; no protected re-evaluation or independent human validation"
+}

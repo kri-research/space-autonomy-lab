@@ -1,0 +1,15 @@
+{
+  "scope": "Instrument timing and uncertainty definitions only; no new external safety theorem",
+  "references": [
+    {
+      "title": "Python 3.13 time documentation",
+      "url": "https://docs.python.org/3.13/library/time.html",
+      "inspected": "perf_counter_ns, get_clock_info, same monotonic clock across CPython processes; resolution is not external calibration"
+    },
+    {
+      "title": "JCGM publications",
+      "url": "https://www.bipm.org/en/committees/jc/jcgm/publications",
+      "inspected": "Official uncertainty-publication index; no claim of accredited calibration or compliance"
+    }
+  ]
+}

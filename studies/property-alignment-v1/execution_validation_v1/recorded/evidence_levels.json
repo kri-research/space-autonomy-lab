@@ -1,0 +1,33 @@
+[
+  {
+    "level": "host_computer_timing",
+    "limitation": "one host, three process sessions, correlated samples",
+    "quantity": 192,
+    "status": "measured"
+  },
+  {
+    "level": "simulated_interface",
+    "limitation": "virtual command scheduling and uncertainty checks; no equipment interfaces",
+    "status": "tested"
+  },
+  {
+    "level": "processor_in_the_loop",
+    "missing": "identified target processor and independently driven simulated-plant interface",
+    "status": "not_performed"
+  },
+  {
+    "level": "hardware_in_the_loop",
+    "missing": "real sensor/actuator interfaces and timestamp metrology",
+    "status": "not_performed"
+  },
+  {
+    "level": "physical_system_trials",
+    "missing": "rig, independent metrology, operator, safety supervisor and trial-specific approval",
+    "status": "not_performed"
+  },
+  {
+    "level": "independent_external_replication",
+    "missing": "actual independent reviewer or laboratory reports",
+    "status": "not_performed"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "evidence_levels.json": "4ce5ca9ff3423e5371f95d7500422bf8db902ce223312f38bb76ed876551c80e",
+    "fixed_output_checks.json": "e1892f23b5eaf580631d6e0f3946bad1e4d79ecb651e13ef00711879ec681522",
+    "raw_records.jsonl": "6085ea56111aff4c83ccaa16bef6b7b9ee3a8741de0c24e93eb5a2691ac7f2d6",
+    "summary.json": "16bfe54bb88e12c8ca355c374dc91474c608605a8ccc14cd1970a245baea0615"
+  },
+  "host_freeze_sha256": "edf0695916016091c6ba6393c3ccebd87e13939710ff03c640fb445b5151b42e",
+  "original_measurements_unchanged": true,
+  "private_worker_stderr_not_published": true,
+  "raw_measurement_files": 445
+}

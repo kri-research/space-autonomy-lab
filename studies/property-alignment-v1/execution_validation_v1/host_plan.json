@@ -1,0 +1,45 @@
+{
+  "schema": "sal-host-measurement-plan/1",
+  "evidence_level": "host_computer_timing",
+  "question": "Actual isolated service and policy latency on the available Mac; distinguish one-second policy budget from input-specific application-time assumptions.",
+  "inputs": "Only original spacecraft and lagged-cart calibration inputs, indices 0-1 per stratum. None of the completed protected inputs is rerun.",
+  "sessions": 3,
+  "repetitions_per_session": 2,
+  "warmup_per_adapter_per_session": 2,
+  "adapters": [
+    {
+      "domain": "cart",
+      "method": "lag_aware_common_command"
+    },
+    {
+      "domain": "cart",
+      "method": "robust_predictive_prefix"
+    },
+    {
+      "domain": "cart",
+      "method": "third_order_barrier"
+    },
+    {
+      "domain": "spacecraft",
+      "method": "common_command"
+    }
+  ],
+  "measured_requests": 192,
+  "warmup_requests": 24,
+  "workers": 1,
+  "blas_threads": 1,
+  "policy_budget_ns": 1000000000,
+  "request_watchdog_s": 15,
+  "startup_watchdog_s": 30,
+  "total_watchdog_s": 900,
+  "clock_pairs_per_session": 1000,
+  "method_order": "Rotate three cart methods by session+repetition+case index; spacecraft separate block. No outcome-dependent order.",
+  "analysis": "Descriptive per-session counts, median, interpolated p95, maximum, reciprocal mean synchronous throughput and full-service overruns. No IID confidence interval or worst-case claim; sessions share one host/day.",
+  "warmup": "All warm-up samples retained separately; no post-measurement trimming. Candidate coefficient caches may be warm; cart implementation clears its coefficient cache per decision.",
+  "uncertainty": "Clock resolution and back-to-back clock gaps are diagnostics only. Absolute accuracy, drift, sensor age, metrology and actuator latency are uncalibrated; total physical delay remains unknown.",
+  "delay_rule": "Compare measured parent monotonic request roundtrip to declared queued duration only as necessary timing condition. Early output must wait to the model application instant; no physical command is sent.",
+  "recheck": "Recheck each returned definite command or dual after measurement by the existing reference. These are separate calibration host measurements and fixed-output checks, never replacements for protected results.",
+  "failures": "Retain all starts. Abort affected session on transport failure without retrying or changing the scientific methods.",
+  "physical_trials_executed": false,
+  "external_human_review": false
+}
