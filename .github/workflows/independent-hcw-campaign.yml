@@ -1,0 +1,31 @@
+name: Independent HCW campaign evidence
+on:
+  pull_request:
+    paths:
+      - 'studies/property-alignment-v1/independent_hcw_campaign_v1/**'
+      - '.github/workflows/independent-hcw-campaign.yml'
+permissions:
+  contents: read
+jobs:
+  independent-campaign:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13.5'
+      - name: Install test dependencies
+        run: python -m pip install pytest==9.0.2 ruff==0.14.11
+      - name: Verify fixed records and continuous proof transcripts without running policies
+        working-directory: studies/property-alignment-v1
+        run: |
+          export OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
+          python -m ruff check independent_hcw_campaign_v1
+          python -m publication_v1.audit
+          python -m independent_hcw_audit_v1.protocol --verify independent_hcw_audit_v1/frozen/protocol.json --audit-id bc472385b582d0f5d6ee9e7a3e4d5f250d316f2c6c9a4c8e31be21f838577f53
+          python -m pytest independent_hcw_campaign_v1/tests
+          git diff --exit-code

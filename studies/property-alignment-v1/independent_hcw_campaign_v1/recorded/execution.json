@@ -1,0 +1,19 @@
+{
+  "audit_id": "bc472385b582d0f5d6ee9e7a3e4d5f250d316f2c6c9a4c8e31be21f838577f53",
+  "audit_wall_s": 44.632310915971175,
+  "ended_at_utc": "2026-09-24T16:42:45.541418+00:00",
+  "exact_R02_command_sha256": "d398c1bc241eb79062ea5bfb58e9ad003365fc6890b3a1150a24b9a1ef8fdf23",
+  "exit_code": 0,
+  "new_probability_inference": false,
+  "original_policy_executed": false,
+  "started_at_utc": "2026-09-24T16:42:00.908682+00:00",
+  "trace_checks": {
+    "continuous_leaves": 19701,
+    "negative_margin_rechecks": 31,
+    "primary_prefix_transcripts": 725,
+    "qualification_transcripts": 1728
+  },
+  "trace_class": "supplemental deterministic fixed-output replay under unchanged R02 settings; never changes first audit classifications",
+  "trace_code_commit": "903bc7cd4099d429e4cc29125a4749c0b5ba7203",
+  "trace_expansion_wall_s": 11.233861000044271
+}

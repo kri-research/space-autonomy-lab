@@ -1,0 +1,12 @@
+{
+  "schema": "sal-audit-report-reader-correction/2",
+  "issue": "The private artifact verification TemporaryDirectory used a Mac /var path containing the platform /var to /private/var symlink; strict evidence-path rejection prevented the final packaging check.",
+  "correction": "Resolve only the newly created verifier-owned temporary directory before reconstructing records. Keep strict input/evidence symlink checks. Accept original generating code through a separately pinned source binding and independently verify both old generator and current reader against Git blobs.",
+  "original_artifact_generation_completed": true,
+  "original_artifact_replaced": false,
+  "frozen_auditor_changed": false,
+  "numerical_method_or_classification_changed": false,
+  "audit_rerun": false,
+  "trace_replay_reexecuted": false,
+  "new_reader_version": 2
+}

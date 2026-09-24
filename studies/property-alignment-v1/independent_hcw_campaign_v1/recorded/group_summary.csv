@@ -1,0 +1,5 @@
+stratum,selected,original_prefixes,original_obstructions,original_unresolved,original_late,independent_prefixes,independent_obstructions,original_nondeliveries_retained,other_audit_outcomes,qualification_witnesses,verified_qualification_witnesses
+interior_pair,192,192,0,0,0,192,0,0,0,384,384
+radial_boundary,192,190,2,0,0,190,2,0,0,384,384
+three_face_boundary,192,154,29,9,0,154,29,9,0,576,576
+timing_bounded_pair,192,189,0,0,3,189,0,3,0,384,384

@@ -1,0 +1,32 @@
+{
+  "audit_id": "bc472385b582d0f5d6ee9e7a3e4d5f250d316f2c6c9a4c8e31be21f838577f53",
+  "auditor_freeze_sha256": "aa51ce0cac4bdcd30aece9bd6e73427f67df3d7255e1ca05a54ed56cc0d2b948",
+  "files": {
+    "audit_records.jsonl": "5da8ff5f1325fa8c764dba2640bece6c3c52c0135e5c509716b89c1815802c21",
+    "cases.jsonl": "0498bd683006514ae6d74acaac727450524ba5a66ae7f193cdabad38779c523e",
+    "discrepancies.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "execution.json": "703888e9f5752893ad6d2d132d0dbdde848c1fad10de6bcb9e9e5b5fa6eff1cc",
+    "group_summary.csv": "a97489b9d5a8b67eec18ffa87d00a3dfd3bb583e9b3a8e1f56af6020006c63ed",
+    "original_attempt_manifest.json": "63bd24805a1f75466d73df4f0b04421369a51e318db1f84ad0057a1439c0957c",
+    "population.json": "8fc0a1e20d35c413cd4f8269cb54cc4ecc8b44b2f2731de8c9e69ce5fc7a65b0",
+    "reserve_ledger.json": "0c615d24dd9925fced465f4cad46b917a4a4ddcf51929a179486378279539b11",
+    "summary.json": "3e3fbfa8b036427b5ae67b736577a7f7fff1d6580ccc8b3be4cb837a8f3ee3a2",
+    "traces/interior_pair.jsonl": "3da3430ded3aaa52f02f8babbba0956b985b6bc8134fb5e167ea0290c5fa27ae",
+    "traces/radial_boundary.jsonl": "43cd0ae1cdb2c1a34931dc1f608fbcb4a5189163d6bdb513b54229e06a325577",
+    "traces/three_face_boundary.jsonl": "493d4433b39a77b7800a3f464939bd978461798408ee6acd9e1764eaeff4d287",
+    "traces/timing_bounded_pair.jsonl": "d03cc4075b5092b6cc078d3b5b5a065d1573685ec59b81206f23c986ce832364"
+  },
+  "numerical_source_commit": "d667ef4b58ff95863282c7d48b683c7e1e24e5ce",
+  "original_counts_or_timing_rewritten": false,
+  "physical_or_human_validation": false,
+  "report_source_commit": "903bc7cd4099d429e4cc29125a4749c0b5ba7203",
+  "report_source_sha256": {
+    "__init__.py": "c3c66e6f294ce2b0b65f2aa757ca00f5b0749c349ef1d73632a0a8d7575c149c",
+    "artifact.py": "665c4c759123f3d7d35318ea312ceb7cb4f96d8f16569eb9212a733372571095",
+    "population.py": "e2fb52522ad8dc60b6ea1a259c7b8951c7bd6f2fd93184e5f477963dcc9d78b7",
+    "report.py": "18e0354873e27f6f8b5166b105334e3dfb463f2f71851b9708d062c824d5c79e",
+    "trace.py": "24ba2ea433a8c14d2ea6def2f00304650e4d2fb23064b96a73cc51eda471b28e"
+  },
+  "schema": "sal-independent-hcw-campaign-artifact/1",
+  "scientific_source_commit": "b2ff0cc3e0c5c0a524d248fa62d0f8ffc24d65b8"
+}

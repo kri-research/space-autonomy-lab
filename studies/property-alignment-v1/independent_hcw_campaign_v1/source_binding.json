@@ -1,0 +1,28 @@
+{
+  "schema": "sal-independent-audit-report-source/2",
+  "source_commit": "adf821630f45a17195bcc0b8c565e4eb120dfc3b",
+  "files": {
+    "trace.py": "24ba2ea433a8c14d2ea6def2f00304650e4d2fb23064b96a73cc51eda471b28e",
+    "artifact.py": "799274ef23e84e700dc87e39a866d0ef4ae47f086ea4ac493c1c51eb8e0d5b56",
+    "population.py": "e2fb52522ad8dc60b6ea1a259c7b8951c7bd6f2fd93184e5f477963dcc9d78b7",
+    "__init__.py": "c3c66e6f294ce2b0b65f2aa757ca00f5b0749c349ef1d73632a0a8d7575c149c",
+    "report.py": "18e0354873e27f6f8b5166b105334e3dfb463f2f71851b9708d062c824d5c79e"
+  },
+  "accepted_generators": {
+    "903bc7cd4099d429e4cc29125a4749c0b5ba7203": {
+      "trace.py": "24ba2ea433a8c14d2ea6def2f00304650e4d2fb23064b96a73cc51eda471b28e",
+      "artifact.py": "665c4c759123f3d7d35318ea312ceb7cb4f96d8f16569eb9212a733372571095",
+      "population.py": "e2fb52522ad8dc60b6ea1a259c7b8951c7bd6f2fd93184e5f477963dcc9d78b7",
+      "__init__.py": "c3c66e6f294ce2b0b65f2aa757ca00f5b0749c349ef1d73632a0a8d7575c149c",
+      "report.py": "18e0354873e27f6f8b5166b105334e3dfb463f2f71851b9708d062c824d5c79e"
+    },
+    "adf821630f45a17195bcc0b8c565e4eb120dfc3b": {
+      "trace.py": "24ba2ea433a8c14d2ea6def2f00304650e4d2fb23064b96a73cc51eda471b28e",
+      "artifact.py": "799274ef23e84e700dc87e39a866d0ef4ae47f086ea4ac493c1c51eb8e0d5b56",
+      "population.py": "e2fb52522ad8dc60b6ea1a259c7b8951c7bd6f2fd93184e5f477963dcc9d78b7",
+      "__init__.py": "c3c66e6f294ce2b0b65f2aa757ca00f5b0749c349ef1d73632a0a8d7575c149c",
+      "report.py": "18e0354873e27f6f8b5166b105334e3dfb463f2f71851b9708d062c824d5c79e"
+    }
+  },
+  "scope": "Trusted installed reader and explicitly retained generating source; actual Git blob hashes checked for both."
+}
