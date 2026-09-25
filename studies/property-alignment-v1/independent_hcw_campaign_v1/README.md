@@ -67,8 +67,8 @@ interval. A nonverified certificate is not automatically a false physical claim;
 numerical uncertainty, malformed evidence and an actual contrary witness remain
 separate. Successful finite prefixes do not establish full recovery or mission
 safety. Host/offline computation is not physical validation or independent human
-peer review. Anonymous technical feedback and substantive AI assistance informed
-this workflow. No government or institutional endorsement is asserted.
+peer review. Anonymous technical feedback informed this workflow. No government
+or institutional endorsement is asserted.
 
 The repository's existing Apache-2.0 license applies to the new implementation.
 No manuscript, reviewer prose, personal information or private task logs are

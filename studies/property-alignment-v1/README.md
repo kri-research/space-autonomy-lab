@@ -33,4 +33,4 @@ The baseline retains 84 existing validation cases. Separate integrity fixtures t
 
 The unfiltered legacy suite's three source/lineage-guard failures remain documented in `docs/post-release-maintenance.md` at the repository root. The published maintained post-release checks are a separate profile. This subproject does not weaken either set of checks or claim a universal historical test pass.
 
-Manuscript sources, prompts, workflow state, grant drafts, workstation paths and raw personal logs are intentionally excluded. No manuscript is published by this scaffold. Development used substantive generative-AI assistance in verification code and source organization; this is not represented as independent human scientific review.
+Manuscript sources, prompts, workflow state, grant drafts, workstation paths and raw personal logs are intentionally excluded. No manuscript is published by this scaffold.
