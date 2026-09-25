@@ -1,0 +1,17 @@
+{
+  "schema": "sal-post-review-fixed-checks/1",
+  "source_commit": "b0d8525f02757b3589f60d4292a9e887af13ee9a",
+  "source_sha256": {
+    "ENDPOINT_CONVENTION.md": "d5ad8775521848933531b58e56c1ced98fd527df37e2f1641805f26fbbf52e37",
+    "REFERENCE.json": "128faf1ee6bb0dae16c02946a6ad7ab1560fcf69e22987879a1855f18bb180fd",
+    "SOURCE.json": "d9b48bd379ff783d977efcc1aabc47e13409a4a3a15af19d2b77eb393e16f24a",
+    "__init__.py": "8a52c5c5afdf808acd2d6d221144cad58f8bbbd87404b6bbbc589d56995b4fcf",
+    "checks.py": "ab64e698316fb52c9c95558be7527bee10932abad13fa1e3336a78d951fb91ea",
+    "endpoint.py": "724eca2f9916cf8d13b6261dde6d31f427b7abcccf04dda1b188bcd110e43d5c",
+    "matrix.py": "2528502478087d9763c56c5ad151a7ecffd8c94bd0dcbfd68e34cf69d53cea23",
+    "stress.py": "c2e3f6ac22ec469ff517449f243c1ffd8300ef83b6c341cffb20a6ee48550dce"
+  },
+  "result_sha256": "d3be232fcb3513dfc33b4ab5617f2e86799d0ffc385e447b1817d22b091c2d4b",
+  "original_policy_executed": false,
+  "original_results_changed": false
+}
