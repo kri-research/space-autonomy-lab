@@ -1,0 +1,9 @@
+{
+  "schema": "sal-post-review-reference/1",
+  "basis": "Scientific fields in author-supplied corrected revision-2 results; environment and display-source metadata remain separately identified",
+  "scientific_result_sha256": {
+    "matrix": "3289cd9c4042c9270ff7b902ed52dd02d12371783e62a5a2dd1fd3196087b8d0",
+    "stress": "98a10dd8bd965ce31f3258af1263c96ea52e771b3fcd7330e1b687bed9091f9e",
+    "endpoint": "c75cca4276584f1b6cc7cb1cb1ce867f44ad5c6bc96712bc3203a86ed8381590"
+  }
+}

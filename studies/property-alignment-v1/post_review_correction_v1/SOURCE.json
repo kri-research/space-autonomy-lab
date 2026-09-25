@@ -1,0 +1,39 @@
+{
+  "schema": "sal-post-review-source/1",
+  "basis": "Author-provided corrected checking code, revision 2",
+  "source_files": {
+    "r06_stress_check.py": {
+      "sha256": "e1304d2d7773b44a017da9ae5d015be14aaf5402412c331ecf6a21d47b1e2be2",
+      "bytes": 2143
+    },
+    "endpoint_convention_check.py": {
+      "sha256": "1374914bf067f8be90bae507758dbb79537cb78f45b8f360433bf371782c155b",
+      "bytes": 1769
+    },
+    "r06_matrix_bernstein_check.py": {
+      "sha256": "d1cf39b8b2a3a319feeadea092cc115d36dd59abb7802853a6bf4b4725385052",
+      "bytes": 7091
+    }
+  },
+  "expected_supplied_results": {
+    "r06_stress_results.json": {
+      "sha256": "d10e08ea9059e69eb848b2687ec1fc925187c1eff8bf15f7f330c3f417b653d7",
+      "bytes": 44445
+    },
+    "r06_matrix_bernstein_results.json": {
+      "sha256": "b29d478ef7ce21dc319a1b56e38f38080b26900db1ee4a555213d2b5590f1700",
+      "bytes": 19797
+    },
+    "endpoint_convention_results.json": {
+      "sha256": "6476a4e7a3aceefcc59742f5ae91751649a3cae6a3c13ca9277ffbac5cbdcc90",
+      "bytes": 7793
+    }
+  },
+  "adaptations": [
+    "Package-relative imports and import-safe functions",
+    "Runtime assertions converted to explicit failures, including when Python optimization is enabled",
+    "Stable scientific output separated from environment and source metadata",
+    "No numerical constants, commands, polynomial order or perturbation bounds changed"
+  ],
+  "scope": "Further computational check of the nominal triple, its simultaneous state-shift bound, and three fixed-command stress realizations. Not a new implementation of all 768 cases or a physical validation."
+}
