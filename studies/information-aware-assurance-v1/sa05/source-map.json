@@ -1,0 +1,199 @@
+{
+  "schema": "iaa-sa05-source-map/1",
+  "parent_commit": "951209b52269a55669c84857e8b96a9cd8e58ae9",
+  "parent_files": [
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/__init__.py",
+      "blob": "96ba088db9fa3c35687f6dcd85122331bab75a85",
+      "sha256": "22f4b7235499ff18083ef35ccb222ba9c7f1252ff2a217b687d760ccf856adc8"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/artifact.py",
+      "blob": "374c87c25c6fe187262fa120813481b178ead618",
+      "sha256": "a8d0aab54c3f3b186cfaf3cf7a96392653161f79d8b2f3313cfcb7bef7aa48ba"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/assurance.py",
+      "blob": "5b773434a2f755e94d4e9ab5c50edca5aa2c6977",
+      "sha256": "b88f1c3f303f82170f7f55a31a6e5747583c0312aab8ea0a9ceeefab64117fda"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/controller.py",
+      "blob": "41e0f20470ec5bd524502d951bc0e3a18ac36504",
+      "sha256": "8ecd2639de2135cb5a578c39b69045943981714a8b01a2383f3ff1261fec07b8"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/enclosure.py",
+      "blob": "75805554b35dcf15ab6201664b141e71525b484f",
+      "sha256": "32072a5fe74ce99682a0228363acc3d3320bb5700b2facc4659e3c57a0eecb24"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/fixtures.py",
+      "blob": "2e2ee2b493eafc803d17c58d7e6b28fa6ee743b9",
+      "sha256": "e34d07494bf59a644ea8b6271592f9f0abfd30938b6f5be7534bb390259eca3d"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/plant.py",
+      "blob": "b5e8675e7c7d41951fafab43bbf89d8400c44299",
+      "sha256": "c6ff0c7d7936acb6e13648fb33bc09792976df587b5ce43250944a18477d3918"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/runtime.py",
+      "blob": "002e966672b1241d147e76570d9ddbae24f02d38",
+      "sha256": "1a51688e53be159b17cb886fbbfed5eb36e195bf902521657f91e1ef94f65c69"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/iaa/types.py",
+      "blob": "1359d1a1e73191d1182573f00d71dfe6a13876ad",
+      "sha256": "2894fd748b7386c350f111ac4bbb7944e4bb17e6579eceada27eea0a74dd89f5"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/__init__.py",
+      "blob": "f31d556fd211c7ecebccee3e25ba5974ce5ede2e",
+      "sha256": "f0048c427c70f5796101930cdcf1beb928472b09ef5b14a4f7e7337d78cef167"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/artifact.py",
+      "blob": "c06c66f909a532c3066a01b83df4139ed8ad7c76",
+      "sha256": "9a6bb50c7356e9cb8e6005e8a4228963bb037ff03f80c4e05876549cf59fc8b4"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/bridge.py",
+      "blob": "ca8e728a33a5886394d9b0efe5fca835ae7f1feb",
+      "sha256": "c9ed4128a4ec74568690fdf6ff618b857b5a1300abaf774a3e6c7ebf24d734c7"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/development.py",
+      "blob": "c119b5a628c8d54b20bd02d12aa53a1835b629b5",
+      "sha256": "fb0f673ee71d8ca19c2d29a08153093bd05ca54765f76af462f99c32a6d6d9ff"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/estimator.py",
+      "blob": "84a07ed26270431dbb3c1cc0c9ee503dfdd34389",
+      "sha256": "89d31f86affcb13b5e23f33374988b25dfd15139605208559939cfa2f3f2be24"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/intervals.py",
+      "blob": "2e46c2df644ab24766c5b08fc986986a0c89a921",
+      "sha256": "b5d6fd061615d451ae7b1808e7588eb3ad6522a1e8a25f6dfe665774929a1f33"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/model.py",
+      "blob": "be83fab38e5e29fa7e3d1650226d1f356c019207",
+      "sha256": "29aacb8b99bc7aa4b86e4efc655cbec3a134fc3655b49167a067dbe55d639973"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/oracle.py",
+      "blob": "e1281db7e44559e7d3afcd1d110bd45c665bfe53",
+      "sha256": "ab285d9875c63c66fb041c3e57a4dc1bad89f4e00ae7617da3ff6a79d353824a"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/packet_fixtures.py",
+      "blob": "402e4cdfc7b7e75192c1295c5280ee78bdea861e",
+      "sha256": "85c4acbfc3cc970c112a3e1cedeeb9cabade9efe80b2a13761c0a996b3842815"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa02/runtime.py",
+      "blob": "42d1b4fa265501d343c02d772a9825197ec545fc",
+      "sha256": "06f67656924304f156377f9f9953cfb8ca1b34bf3f70ade19f7bc3c5018b9764"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/__init__.py",
+      "blob": "75d8c22214ae03c899a2471d25219a2e90929993",
+      "sha256": "fcb7d3d15701033e225f74e53bc3bef6612a68aacec732f1db5a88d453f6d04e"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/artifact.py",
+      "blob": "cee6ac35f604e47e24d31c8519b099b9847b72fc",
+      "sha256": "0d5efe0ed1a4d6724d040aa8ca62e8197e88d89a9f9952d3fbce2740e051bd9c"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/development.py",
+      "blob": "24d336ede8cd2096254a9f5c637bf17ace3271da",
+      "sha256": "78a2fb616a40ad74c15c43cc40580d8b179c5703b882b7b743e75af03c4cbf99"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/forecast.py",
+      "blob": "cdfba0d2469d9aea27b5d98cb78f4926e5d435c9",
+      "sha256": "57ee7c54c82e49e81c8858d3bbffcdcf32edee7adc100422224b1698a0ee34ee"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/model.py",
+      "blob": "9626caf696028c37e134a6374b87d3800dc8a710",
+      "sha256": "1b210c18bc6ee1f0ff33a80cf99d9c5bf88beaad5c98259b906bd8351025e51c"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/policy.py",
+      "blob": "3782a87cb5e496875247448f30cd4b85b760fb04",
+      "sha256": "17a09deff6e84d013f146e5ef7003162ac951b99f4c670dbd178650570a99123"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa03/scalar.py",
+      "blob": "f988aff4396bbc624c106778825eeab259279d88",
+      "sha256": "9dc5d00e062dec3604deaa514934c079eb5be55c1705bac7822794a12d0f4260"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/__init__.py",
+      "blob": "f5a536180b6c7ecc68e14c379e81006d77554985",
+      "sha256": "3b711a9fa2f7155c6701e2cdfb37d93f579b577968cdd22703c29c3279c5be0f"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/artifact.py",
+      "blob": "b7c648c81c4893aed4c245564c8052b4fe502739",
+      "sha256": "9df30fdf285963d45fc732ab792b18bf1a7dc7b134006eb8a346a5d1bfbec8ea"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/compute.py",
+      "blob": "21409cc835ff32817581d87c441d9d3ca33f35aa",
+      "sha256": "c6c0c3104d90e75de610810cc4f4d3a4d2e916b41dbe91699f33c3de8f09d4f0"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/fixtures.py",
+      "blob": "e34effc6b175b8853cd7ee79e5a4466f11e7de00",
+      "sha256": "3fca5238d708c5b975dca65d47e3205fc2444f01a8656c4fe60e6e5e6ae1a2a0"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/gate.py",
+      "blob": "252c486cfa4e68f324370276c6b1c73f55777355",
+      "sha256": "78c75d46d4c57100c409c2b3e67c23b7e4b108a15b85e7c4612112ea7fc47613"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/host.py",
+      "blob": "7e0ebf02b49ed2b604976ccf8a4e8a354a9521bc",
+      "sha256": "be0d8541db4677c2a065d02645e764633618fd08f298e9268ab3866a37fff3a2"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/legacy.py",
+      "blob": "7c9daa87482dbb471a12fd2fc13b783f2c3a4bbb",
+      "sha256": "810c6bdeabccb3c71d01041409e668a2c30167706bac2dd9adfd5713737ee18f"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/service.py",
+      "blob": "ff07193787fe90cd6218914656facce0b5c4beb4",
+      "sha256": "1426fb574eb6527afdc8a7497939efff653b4248f0229f4a9b3ce2a173c5e3f9"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/trace.py",
+      "blob": "26249f29a608ef5a6d48f10d633a492f10edd91d",
+      "sha256": "02799c40f298cf3aea6fcd2920d1d8f16aa779ba4fabc11750c427f60a20bef1"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/transport.py",
+      "blob": "4dbc801ef5a3fa0a695b0a6922e41cf0a1caa16e",
+      "sha256": "0f5139bea69ef4efdc333317ad0304ce581dca7e3191af8d385985cd016d8d56"
+    },
+    {
+      "path": "studies/information-aware-assurance-v1/sa04/wire.py",
+      "blob": "d2d2da98169990814885ceb47cbd35056dc6256c",
+      "sha256": "8b2c0af85164df64be1fcee4d6c3e41a780d05f24af74c41285b695c1ef533f2"
+    },
+    {
+      "path": "studies/property-alignment-v1/execution_validation_v1/protocol.py",
+      "blob": "fe88d42618f95d41516e6795cef20d9381cbb43a",
+      "sha256": "487b6777a9f9e23ce39e7b8c428d162f752dec35548545c056897f64c683358c"
+    }
+  ],
+  "adaptations": "SA05 wrapper calls unchanged SA03 policy and SA04 reconstruction/checking/gate; Basilisk dynamics is independently configured.",
+  "basilisk_version": "2.12.0",
+  "s_feast_code_copied": false
+}

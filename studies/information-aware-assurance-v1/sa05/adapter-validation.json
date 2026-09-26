@@ -1,0 +1,79 @@
+{
+  "schema": "iaa-sa05-adapter-validation/1",
+  "basilisk_version": "2.12.0",
+  "rows": [
+    {
+      "initial": [
+        0,
+        -45,
+        0,
+        0
+      ],
+      "action": [
+        0,
+        0
+      ],
+      "effectiveness": 1,
+      "samples": 841,
+      "max_position_error_m": 4.140363940157102e-09,
+      "max_velocity_error_mps": 1.1182420293630074e-11
+    },
+    {
+      "initial": [
+        1,
+        -45,
+        0.01,
+        -0.02
+      ],
+      "action": [
+        0.02,
+        0
+      ],
+      "effectiveness": 1,
+      "samples": 841,
+      "max_position_error_m": 9.21056675373677e-09,
+      "max_velocity_error_mps": 5.468740044145548e-12
+    },
+    {
+      "initial": [
+        -2,
+        -35,
+        -0.03,
+        0.01
+      ],
+      "action": [
+        0,
+        -0.02
+      ],
+      "effectiveness": 0.8,
+      "samples": 841,
+      "max_position_error_m": 5.574623429538406e-09,
+      "max_velocity_error_mps": 1.2306638347281407e-11
+    },
+    {
+      "initial": [
+        -7.9,
+        -30.2,
+        0.1,
+        -0.04
+      ],
+      "action": [
+        -0.02,
+        0
+      ],
+      "effectiveness": 1,
+      "samples": 841,
+      "max_position_error_m": 9.116637222916779e-09,
+      "max_velocity_error_mps": 8.592321298905858e-12
+    }
+  ],
+  "passed": true,
+  "analytic_nonlinear_and_hold_acceleration_bound": 1.310417402929938e-07,
+  "declared_additive_acceleration_bound": 1e-05,
+  "injected_component_disturbance_max": 2e-06,
+  "numerical_position_allowance_m": 1e-05,
+  "numerical_velocity_allowance_mps": 1e-07,
+  "numerical_not_machine_proof": true,
+  "external_replication": false,
+  "physical_validation": false
+}
