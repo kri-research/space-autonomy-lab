@@ -1,0 +1,32 @@
+{
+  "schema": "iaa-engineering-protocol/1",
+  "id": "SA01-reference-fixtures-v1",
+  "classification": "named engineering fixtures; not a scientific comparison or held-out evaluation",
+  "selection": "nominal wiring; delayed/dropout/correlated observations; bounded and out-of-model actuator; lost/late replies; unsupported checker; invalid packets; unavailable coast; exhausted model work budget",
+  "fixed_before_first_full_execution": true,
+  "case_names": [
+    "nominal",
+    "delayed_dropout_and_correlated_bias",
+    "bounded_actuator_degradation",
+    "late_and_missing_decisions",
+    "unsupported_checker",
+    "coast_entry_failure",
+    "outside_model_actuator",
+    "invalid_timestamp_and_range",
+    "work_budget_exhaustion"
+  ],
+  "all_attempts": "exclusive new output directory, retain exceptions and partial outputs privately; no automatic retries",
+  "outcomes": [
+    "finite-prefix evidence",
+    "mission dwell",
+    "unresolved containment",
+    "numeric exit witness",
+    "missed deadlines",
+    "protection gaps",
+    "modeled resource costs"
+  ],
+  "no_rank_or_inference": true,
+  "maximum_simulated_duration_seconds_per_case": 60,
+  "maximum_cases": 9,
+  "source_inputs": "typed fixture dataclasses in iaa/fixtures.py"
+}
