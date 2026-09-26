@@ -1,0 +1,21 @@
+{
+  "schema": "iaa-sa04-host-protocol/1",
+  "sessions": 3,
+  "repetitions": 2,
+  "contexts": ["ambiguity", "adequate", "unsafe"],
+  "methods": ["uncertainty_triggered", "decision_aware"],
+  "warmups_per_method_per_session": 1,
+  "enforced_repetitions": 3,
+  "diagnostic_hard_timeout_ms": 5000,
+  "native_planner_budget_ms": 50,
+  "native_checking_budget_ms": 50,
+  "application_window_ms": [700, 710],
+  "source_freeze_before_record": true,
+  "environment": "one host; ambient load captured, no imposed CPU stress, no physical I/O",
+  "startup": "both worker imports/handshakes and offline initial arming retained separately",
+  "logging": "JSONL write and flush measured; no fsync or durable-storage latency claim",
+  "memory": "process peak RSS; per-session high-water mark, not per-call allocation",
+  "timing": "parent monotonic intervals; worker intervals never subtracted across processes",
+  "retention": "all samples, warmups, errors and timeouts; no retries or outlier removal",
+  "inference": "descriptive correlated observations, no hardware generalization, energy or WCET claim"
+}
