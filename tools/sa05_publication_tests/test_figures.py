@@ -74,3 +74,15 @@ def test_reviewed_bytes_cannot_be_substituted(tmp_path, change):
         p.symlink_to(ROOT / name)
     with pytest.raises(ValueError):
         figures.normalize_reviewed_figures(report(), tmp_path)
+
+
+def test_prospective_workflow_parses_and_installs_pinned_tools():
+    import yaml
+
+    workflow = yaml.safe_load((ROOT / ".github/workflows/prospective-evaluation.yml").read_text())
+    steps = workflow["jobs"]["sa05"]["steps"]
+    installation = next(
+        s["run"] for s in steps if s.get("name") == "Install separately pinned evaluation tools"
+    )
+    assert "--require-hashes" in installation and "--only-binary=:all:" in installation
+    assert any("--sample" in s.get("run", "") for s in steps)

@@ -30,7 +30,8 @@ jobs:
           python tools/check_release_preservation.py
           python tools/verify_historical_snapshots.py
       - name: Install separately pinned evaluation tools
-        run: python -m pip install --require-hashes --only-binary=:all: -r studies/information-aware-assurance-v1/sa05/requirements.lock
+        run: |
+          python -m pip install --require-hashes --only-binary=:all: -r studies/information-aware-assurance-v1/sa05/requirements.lock
       - name: Check reviewed figure publication boundaries
         run: python -m pytest -p no:cacheprovider -c /dev/null --confcutdir=tools/sa05_publication_tests tools/sa05_publication_tests
       - name: Validate numerical adapter and analysis
