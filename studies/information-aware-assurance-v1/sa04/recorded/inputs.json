@@ -1,0 +1,1 @@
+{"faults":["nominal","sensor_loss","late_planner","planner_failure","checker_failure","late_checker","checker_channel_corrupt","missed_application_window","window_jitter","settings_changed","acknowledgement_loss","unsupported_sensor_clock","unsafe_initial","unmodelled_sensor_bias","already_adequate","actuator_saturation"],"methods":["uncertainty_triggered","decision_aware"]}
