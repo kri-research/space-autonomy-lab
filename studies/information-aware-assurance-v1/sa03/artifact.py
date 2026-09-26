@@ -16,7 +16,7 @@ from .scalar import examples
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
-RECORD = ROOT / "sa03/recorded"
+RECORD = ROOT / "sa03/recorded_causal"
 
 
 def git(*args):

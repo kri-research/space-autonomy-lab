@@ -79,7 +79,7 @@ def test_partition_with_one_unsuccessful_branch_never_claims_universal_benefit()
 def test_delayed_receipt_uses_checked_fallback_and_duplicate_conflict_cannot_select_branch():
     c = prepare(Case("c"))
     tree = build_option(c, "range", Budget(50000))
-    p = ObservationPacket("sa03-" + c.identity()[:16] + "-range", 1, "range", 40.6, 250, 850)
+    p = ObservationPacket("sa03-" + c.identity()[:16] + "-range", 1, "range", 40.6, 250, 690)
     policy = dict(certificate=tree, status="checked_tree", context_sha256=c.identity())
     result = dispatch(c, policy, (p,), 700)
     assert result["status"] == "late_or_invalid_receipt_fallback" and result["credited"]

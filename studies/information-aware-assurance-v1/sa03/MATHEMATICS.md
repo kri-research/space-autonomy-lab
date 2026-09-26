@@ -75,7 +75,7 @@ This is a conservative constructive composition of existing inclusion and
 set-membership methods. It is not a characterization of all feasible policies.
 The implementation checks five commands: zero and four axial accelerations at
 the existing authority. Other commands or waiting manoeuvres may work when this
-search returns unresolved. Complete trees are independently recomputed by the
+search returns unresolved. Complete trees are recomputed by the
 local verifier before simulated dispatch; hash equality alone does not certify them.
 This uses related numerical machinery, not an external replication.
 
@@ -175,3 +175,33 @@ is required even when a favourable reading could permit a useful later action.
 Real-time operation, repeated feedback performance, target energy and independent
 physical validation remain unestablished. SA04 must address execution constraints
 without rewriting these records or converting modeled latency into measurement.
+
+## Receipt-boundary correction
+
+The first development execution passed a generated but not yet available packet to
+the dispatcher. Its availability check prevented direct use of that reading, but its
+status message distinguished a future packet from absence. A further regression
+showed that a future conflicting duplicate could suppress an already available
+reading and change the selected action to fallback. Both defects were reproduced
+against the retained original implementation without modifying its source or records.
+The corrected simulation sends only receipts whose availability time has passed.
+The dispatcher also filters future packets before identity/conflict checks. Adding
+unavailable data must change neither current actions nor online statuses. Generated
+future packets remain evaluation-only records.
+
+The original execution remains in recorded/ at source 6ee881a13904e7d5e3cc04615f8d8e5d5225daff.
+The corrected implementation uses recorded_causal/ with a new source identity and
+new host measurements. No fixture, action policy, reading partition, model, deadline,
+resource formula or physical outcome is changed to improve the result.
+
+## Additional complete-outcome checks
+
+Separately enumerated engineering tests combine nonzero queued acceleration, bounded
+actuator effectiveness, component disturbances, simultaneous shared/channel bias and
+acquisition times at both timestamp limits. Each matched closed reading leaf retains
+the realized state and coherent bias in the tested worlds. These are binary64
+corroboration, not a second complete proof of the nonlinear conditioning algorithm.
+Injected failure of one live leaf, loss of the missing-observation branch, a changed
+queue and changed assumption identity all suppress the associated certificate. An
+integration fixture starts from an actual SA02 measurement-conditioned estimate.
+None of these tests is added to or used to retune the frozen development population.

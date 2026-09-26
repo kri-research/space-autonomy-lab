@@ -135,7 +135,8 @@ def run(case, method):
             if p.channel == requested
         )
     start = perf_counter_ns()
-    dispatched = dispatch(context, policy, receipts, case.timing.apply_ms)
+    delivered = tuple(p for p in receipts if p.available_ms <= case.timing.apply_ms)
+    dispatched = dispatch(context, policy, delivered, case.timing.apply_ms)
     recheck_ns = perf_counter_ns() - start
     truth = tuple(case.actual_initial)
     evaluation = StateBox.around(truth, (0, 0, 0, 0))
@@ -205,7 +206,8 @@ def run(case, method):
     evidence = dict(
         context=primitive(context),
         policy=primitive(policy),
-        receipts=primitive(receipts),
+        receipts=primitive(delivered),
+        generated_receipts_evaluation_only=primitive(receipts),
         dispatch=primitive(dispatched),
         trace=traces,
     )

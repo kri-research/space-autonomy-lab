@@ -21,7 +21,7 @@ python -m pip install -r requirements-dev.txt
 python -m pytest -c pyproject.toml --confcutdir=. sa03_tests
 python -m ruff check .
 python -m ruff format --check .
-python -m sa03.artifact verify sa03/recorded --replay
+python -m sa03.artifact verify sa03/recorded_causal --replay
 # New bounded development execution, never overwrite the published artifact.
 python -m sa03.artifact run --output /tmp/kri-sa03-new-attempt
 # Earlier source-bound evidence remains independently inspectable.
@@ -46,9 +46,13 @@ recorded separately from deterministic results and never expected to repeat exac
 | development.py | Evaluation-only truth, declared cases, actual receipts, trajectories and comparison outputs. |
 | artifact.py | Committed-source recording, complete membership/hash/Git-blob/mode verification and replay. |
 
+The current record is recorded_causal/. REVALIDATION.md describes the causal receipt
+correction and its separately measured timings. The first record and its RESULTS.md
+remain intact and are interpreted as that original execution.
+
 Read MATHEMATICS.md for the quantifiers, uncertainty bounds, application timing,
 missing-observation handling and precise limited meaning of useful. RESULTS.md gives
-all actual outcomes. related-work.md distinguishes prior methods and access limits.
+the first execution; REVALIDATION.md gives the current execution. related-work.md distinguishes prior methods and access limits.
 
 ## Important operating boundaries
 
@@ -81,3 +85,6 @@ manuscript are outside this execution.
 SA04 may use a supported candidate or the documented simpler alternative; it must
 address the actual execution costs rather than treating this modeled clock as a
 measured deadline. No next stage is started by this module.
+
+To reproduce the preserved first execution, use a separate clean full-history checkout
+at eb5e899b42c270e4bf547f14903a2bd8de617a2a and its original command `python -m sa03.artifact verify sa03/recorded --replay`. Current verification deliberately rejects a first-run manifest paired with corrected source.

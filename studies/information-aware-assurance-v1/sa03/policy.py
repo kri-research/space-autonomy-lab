@@ -206,7 +206,11 @@ def dispatch(context, policy, packets, now_ms):
     if channel:
         expected_id = "sa03-" + context.identity()[:16] + "-" + channel
         matching = [
-            p for p in packets if isinstance(p, ObservationPacket) and p.packet_id == expected_id
+            p
+            for p in packets
+            if isinstance(p, ObservationPacket)
+            and p.packet_id == expected_id
+            and p.available_ms <= now_ms
         ]
         if len(set(encode(p) for p in matching)) > 1:
             matching = []
