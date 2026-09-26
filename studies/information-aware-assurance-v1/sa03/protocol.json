@@ -1,0 +1,20 @@
+{
+  "schema": "iaa-sa03-development/1",
+  "purpose": "one additional observation before a scheduled held action",
+  "case_count": 13,
+  "methods": [
+    "fixed_range",
+    "fixed_bearing",
+    "uncertainty_triggered",
+    "decision_aware"
+  ],
+  "comparison_count": 52,
+  "maximum_horizon_ms": 4200,
+  "maximum_requests_per_episode": 1,
+  "exposure": "named engineering and analytical fixtures exposed during implementation and unit testing; no held-out population",
+  "tuning": "no parameter search; preserve all declared cases and observed failures",
+  "timing": "host samples retained separately; simulation uses stated clock and cannot establish real-time feasibility",
+  "model_energy": "5 mJ base decision, 0.001 mJ per counted work unit, 5 mJ post-observation decision, range 0.2 mJ or bearing 0.3 mJ; illustrative accounting only",
+  "retention": "new outside-checkout directory per attempt, no retries or overwrites",
+  "source_committed_before_full_matrix": true
+}

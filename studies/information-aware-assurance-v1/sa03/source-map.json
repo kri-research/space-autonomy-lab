@@ -1,0 +1,123 @@
+{
+  "schema": "iaa-sa03-source-map/1",
+  "parent_commit": "33fb3d9bb60edae5a75a59ad97c340cdf412ff30",
+  "parent_files": [
+    {
+      "path": "iaa/__init__.py",
+      "sha256": "22f4b7235499ff18083ef35ccb222ba9c7f1252ff2a217b687d760ccf856adc8",
+      "blob": "96ba088db9fa3c35687f6dcd85122331bab75a85",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/artifact.py",
+      "sha256": "a8d0aab54c3f3b186cfaf3cf7a96392653161f79d8b2f3313cfcb7bef7aa48ba",
+      "blob": "374c87c25c6fe187262fa120813481b178ead618",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/assurance.py",
+      "sha256": "b88f1c3f303f82170f7f55a31a6e5747583c0312aab8ea0a9ceeefab64117fda",
+      "blob": "5b773434a2f755e94d4e9ab5c50edca5aa2c6977",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/controller.py",
+      "sha256": "8ecd2639de2135cb5a578c39b69045943981714a8b01a2383f3ff1261fec07b8",
+      "blob": "41e0f20470ec5bd524502d951bc0e3a18ac36504",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/enclosure.py",
+      "sha256": "32072a5fe74ce99682a0228363acc3d3320bb5700b2facc4659e3c57a0eecb24",
+      "blob": "75805554b35dcf15ab6201664b141e71525b484f",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/fixtures.py",
+      "sha256": "e34d07494bf59a644ea8b6271592f9f0abfd30938b6f5be7534bb390259eca3d",
+      "blob": "2e2ee2b493eafc803d17c58d7e6b28fa6ee743b9",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/plant.py",
+      "sha256": "c6ff0c7d7936acb6e13648fb33bc09792976df587b5ce43250944a18477d3918",
+      "blob": "b5e8675e7c7d41951fafab43bbf89d8400c44299",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/runtime.py",
+      "sha256": "1a51688e53be159b17cb886fbbfed5eb36e195bf902521657f91e1ef94f65c69",
+      "blob": "002e966672b1241d147e76570d9ddbae24f02d38",
+      "mode": "100644"
+    },
+    {
+      "path": "iaa/types.py",
+      "sha256": "2894fd748b7386c350f111ac4bbb7944e4bb17e6579eceada27eea0a74dd89f5",
+      "blob": "1359d1a1e73191d1182573f00d71dfe6a13876ad",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/__init__.py",
+      "sha256": "f0048c427c70f5796101930cdcf1beb928472b09ef5b14a4f7e7337d78cef167",
+      "blob": "f31d556fd211c7ecebccee3e25ba5974ce5ede2e",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/artifact.py",
+      "sha256": "9a6bb50c7356e9cb8e6005e8a4228963bb037ff03f80c4e05876549cf59fc8b4",
+      "blob": "c06c66f909a532c3066a01b83df4139ed8ad7c76",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/bridge.py",
+      "sha256": "c9ed4128a4ec74568690fdf6ff618b857b5a1300abaf774a3e6c7ebf24d734c7",
+      "blob": "ca8e728a33a5886394d9b0efe5fca835ae7f1feb",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/development.py",
+      "sha256": "fb0f673ee71d8ca19c2d29a08153093bd05ca54765f76af462f99c32a6d6d9ff",
+      "blob": "c119b5a628c8d54b20bd02d12aa53a1835b629b5",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/estimator.py",
+      "sha256": "89d31f86affcb13b5e23f33374988b25dfd15139605208559939cfa2f3f2be24",
+      "blob": "84a07ed26270431dbb3c1cc0c9ee503dfdd34389",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/intervals.py",
+      "sha256": "b5d6fd061615d451ae7b1808e7588eb3ad6522a1e8a25f6dfe665774929a1f33",
+      "blob": "2e46c2df644ab24766c5b08fc986986a0c89a921",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/model.py",
+      "sha256": "29aacb8b99bc7aa4b86e4efc655cbec3a134fc3655b49167a067dbe55d639973",
+      "blob": "be83fab38e5e29fa7e3d1650226d1f356c019207",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/oracle.py",
+      "sha256": "ab285d9875c63c66fb041c3e57a4dc1bad89f4e00ae7617da3ff6a79d353824a",
+      "blob": "e1281db7e44559e7d3afcd1d110bd45c665bfe53",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/packet_fixtures.py",
+      "sha256": "85c4acbfc3cc970c112a3e1cedeeb9cabade9efe80b2a13761c0a996b3842815",
+      "blob": "402e4cdfc7b7e75192c1295c5280ee78bdea861e",
+      "mode": "100644"
+    },
+    {
+      "path": "sa02/runtime.py",
+      "sha256": "06f67656924304f156377f9f9953cfb8ca1b34bf3f70ade19f7bc3c5018b9764",
+      "blob": "42d1b4fa265501d343c02d772a9825197ec545fc",
+      "mode": "100644"
+    }
+  ],
+  "external_code_copied": false,
+  "s_feast_license_blob": "c5302702b0f9f627636c536997fcf6f6ee1bcfd8",
+  "reuse": "Imports unchanged SA01/SA02 modules; interval-reading contractor independently adapted from SA02 scalar-packet necessary constraints, with explicit interval outcome semantics"
+}
