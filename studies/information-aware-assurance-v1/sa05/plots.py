@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 
 
 def generate(analysis, destination):
+    # Dependencies may change matplotlib globals. Isolate rendering from imports.
+    with plt.rc_context(rc=matplotlib.rcParamsDefault):
+        _generate(analysis, destination)
+
+
+def _generate(analysis, destination):
     destination = Path(destination)
     destination.mkdir(parents=True, exist_ok=True)
     records = analysis["absolute"]

@@ -96,7 +96,7 @@ def summarize(cases, rows):
                     acquired_goal=acquisitions,
                     initially_eligible=sum(r["initially_goal_eligible"] for r in complete),
                     acquisition_rate_exact95=rate_interval(acquisitions, n)
-                    if len(complete) == n
+                    if len(complete) == n and stratum != "outside_assumptions"
                     else None,
                     requests=sum(r["observation_requests"] for r in complete),
                     nonzero_interventions=sum(r["nonzero_intervention"] for r in complete),

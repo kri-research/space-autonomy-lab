@@ -195,5 +195,7 @@
   ],
   "adaptations": "SA05 wrapper calls unchanged SA03 policy and SA04 reconstruction/checking/gate; Basilisk dynamics is independently configured.",
   "basilisk_version": "2.12.0",
-  "s_feast_code_copied": false
+  "s_feast_code_copied": false,
+  "basilisk_source_commit": "611665f742999951453d4e128c8540c761de8a4f",
+  "basilisk_license_blob": "5653a30d00e0f577e528bd4995edcd00c5e9a0a0"
 }

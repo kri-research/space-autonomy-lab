@@ -44,7 +44,13 @@ def source_paths():
     paths += [REPO / "studies/property-alignment-v1/execution_validation_v1/protocol.py"]
     paths += [
         PACKAGE / name
-        for name in ("requirements.txt", "protocol.json", "source-map.json", "MATHEMATICS.md")
+        for name in (
+            "requirements.txt",
+            "requirements.lock",
+            "protocol.json",
+            "source-map.json",
+            "MATHEMATICS.md",
+        )
         if (PACKAGE / name).is_file()
     ]
     paths += [

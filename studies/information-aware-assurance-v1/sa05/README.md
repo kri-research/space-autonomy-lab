@@ -13,7 +13,7 @@ From studies/information-aware-assurance-v1:
 ```sh
 python3.13 -m venv /tmp/kri-sa05-env
 . /tmp/kri-sa05-env/bin/activate
-python -m pip install --only-binary=:all: -r sa05/requirements.txt
+python -m pip install --require-hashes --only-binary=:all: -r sa05/requirements.lock
 python -m pytest -c pyproject.toml --confcutdir=. sa05_tests
 python -m ruff check sa05 sa05_tests
 python -m ruff format --check sa05 sa05_tests
@@ -44,3 +44,10 @@ times cannot reproduce identically. Plot/table regeneration is checked from stor
 results. Numerical simulation and repeated computational checks are not physical or
 external validation. The prospective deposit and actual outcome interpretation will
 be identified in RESULTS.md, without rewriting the frozen protocol or earlier work.
+
+Generated SVG path records retain the renderer's original line endings, with
+file-specific Git whitespace attributes. Their bytes remain hash-checked. PNG
+publication uses an individually reviewed filename/digest list in the maintained
+publication wrapper; no general binary-file exception or scientific-check waiver
+is introduced. The original historical scanner and archive-only validator are
+retained unchanged.

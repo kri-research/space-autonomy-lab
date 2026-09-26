@@ -55,3 +55,17 @@ def test_invalid_data_is_not_coerced_to_success():
         binary_pair([math.nan], [True])
     with pytest.raises(ValueError):
         binary_pair([1], [True])
+
+
+def test_outside_assumption_mixture_has_no_binomial_inference():
+    from sa05.artifact import PACKAGE, read_json
+
+    old = read_json(PACKAGE / "development_recorded/results.json")
+    cases = read_json(PACKAGE / "development_recorded/inputs.json")
+    result = summarize(cases, old)
+    assert all(
+        r["acquisition_rate_exact95"] is None
+        for r in result["absolute"]
+        if r["stratum"] == "outside_assumptions"
+    )
+    assert all(r["stratum"] != "outside_assumptions" for r in result["primary"])

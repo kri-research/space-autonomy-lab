@@ -1,6 +1,6 @@
 {
   "schema": "iaa-sa05-prospective/1",
-  "status": "development_before_freeze",
+  "status": "prospective_frozen_design_pending_source_deposit",
   "question": "Does decision-aware sensing improve acquisition of two-second inspection-goal dwell over fixed-range and uncertainty-triggered schedules in the same 4.2-second manoeuvre?",
   "pilot_counts": {
     "nominal": 3,
@@ -10,7 +10,11 @@
   "pilot_wall_seconds": 600,
   "held_wall_seconds": 1800,
   "cell_timeout_seconds": 45,
-  "held_counts": null,
+  "held_counts": {
+    "nominal": 48,
+    "bounded_faults": 48,
+    "outside_assumptions": 16
+  },
   "methods": [
     "fixed_range",
     "fixed_bearing",
@@ -37,5 +41,9 @@
   "analysis": "Exact paired conditional binary tests per stratum, four-comparison Holm adjustment; simultaneous conservative Hoeffding intervals for signed paired differences; exact binomial marginal intervals; costs and host times descriptive only.",
   "acceptance": "No operational noninferiority or flight-reliability criterion. A general benefit is not asserted from certificate counts or a null test. A valid negative/inconclusive result completes this stage.",
   "replay": "Same outcome and action categories; numerical potential tolerance 5e-5 m2; stored data identity exact; host durations not rerun as identity expectations.",
-  "ci_replay_sample": "predeclared first two units per stratum and every method; full clean-environment replay performed locally"
+  "ci_replay_sample": "predeclared first two units per stratum and every method; full clean-environment replay performed locally",
+  "sample_size_basis": "Pilot 36/36 completed, mean cell 2.4294 s, maximum 5.3308 s. 448 cells have 1088 s mean extrapolated cost within fixed 1800 s budget; no power is claimed from zero observed acquisition discordance. 48 units per in-model stratum give 7.4 percent two-sided 95 percent upper marginal event bound if none observed; paired simultaneous bounds remain wide. Outside-assumption 16 units are descriptive, four per deliberate violation type.",
+  "confidence_scope": "Inferential calculations are restricted to nominal and bounded_faults independent-unit artificial distributions. The cyclic outside-assumption mixture is descriptive only.",
+  "modeled_energy_maximum_mj": 500,
+  "unsafe_admission_definition": "Numerically violated trajectory while output received conditional gate credit, including prearmed fallback; no physical violation is claimed."
 }

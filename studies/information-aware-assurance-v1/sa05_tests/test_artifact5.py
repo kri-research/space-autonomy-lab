@@ -104,3 +104,21 @@ def test_committed_record_mutations_fail(tmp_path, mutation):
         m.write_text('{"schema":1,"schema":2}')
     with pytest.raises((ValueError, OSError)):
         artifact.verify(target)
+
+
+def test_pilot_retained_identity_and_plot_portability(tmp_path):
+    from sa05.plots import generate
+
+    directory = artifact.PACKAGE / "development_recorded"
+    manifest = artifact.read_json(directory / "manifest.json")
+    artifact.verify_files(directory, manifest)
+    for name, spec in manifest["source"]["files"].items():
+        assert (
+            hashlib.sha256(
+                artifact.git("show", manifest["source"]["commit"] + ":" + name)
+            ).hexdigest()
+            == spec["sha256"]
+        )
+    generate(artifact.read_json(directory / "analysis.json"), tmp_path / "plots")
+    for path in (tmp_path / "plots").iterdir():
+        assert path.read_bytes() == (directory / "plots" / path.name).read_bytes()
