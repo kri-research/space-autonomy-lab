@@ -39,5 +39,5 @@ jobs:
           python -m ruff check .
           python -m ruff format --check .
           python -m pytest -c pyproject.toml --confcutdir=. tests
-          python -m iaa.artifact verify recorded --replay
+          python -m iaa.artifact verify recorded_sa01_final --replay
           git diff --exit-code

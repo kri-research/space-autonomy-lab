@@ -13,6 +13,7 @@ from .types import encode, primitive
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parents[1]
+ACTIVE_RECORD = "recorded_sa01_final"
 
 
 def sha(path):
@@ -110,7 +111,7 @@ def verify(directory, replay=False):
     if manifest_path.is_symlink():
         raise ValueError("Artifact manifest must be a regular file")
     # Trust the chosen checkout's committed record identity, not a co-edited manifest.
-    anchor_path = (ROOT / "recorded/manifest.json").relative_to(REPOSITORY).as_posix()
+    anchor_path = (ROOT / ACTIVE_RECORD / "manifest.json").relative_to(REPOSITORY).as_posix()
     anchored = subprocess.check_output(
         ["git", "--no-replace-objects", "-C", str(REPOSITORY), "show", "HEAD:" + anchor_path]
     )

@@ -7,7 +7,7 @@ The internal result object is not a cryptographic proof or untrusted plugin boun
 from fractions import Fraction as Q
 
 from .enclosure import inside, propagate, separated
-from .types import CheckResult, Command, Status, Uncertainty, identity, millis
+from .types import CHECK_SCOPE, CheckResult, Command, Status, Uncertainty, identity, millis
 
 RESERVE_MS = 3000
 
@@ -70,7 +70,8 @@ class CommandSink:
             checked.command_sha256 != identity(command)
             or checked.information_sha256 != identity(info)
             or checked.request_id != command.request_id
-            or checked.valid_until_ms < command.end_ms + RESERVE_MS
+            or checked.scope != CHECK_SCOPE
+            or checked.valid_until_ms != command.end_ms + RESERVE_MS
         ):
             reasons.append("binding_or_scope_mismatch")
         if self.pending is not None:

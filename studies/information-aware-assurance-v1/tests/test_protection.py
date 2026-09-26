@@ -119,3 +119,30 @@ def test_unsupported_set_or_interface_never_certifies():
     info, cmd, _ = setup()
     assert check(info, cmd, enabled=False).status == Status.UNSUPPORTED
     assert check(Uncertainty(None, 100, kind="unsupported"), cmd).status == Status.UNSUPPORTED
+
+
+def test_unknown_scope_and_overextended_validity_never_authorize():
+    info, cmd, proof = setup()
+    with pytest.raises(ValueError, match="scope"):
+        replace(proof, scope="unimplemented_other_model")
+    extended = replace(proof, valid_until_ms=1000000)
+    assert not CommandSink().submit(cmd, extended, info, 150)["scheduled"]
+
+
+def test_expiry_cannot_be_extended_by_even_one_millisecond():
+    info, cmd, proof = setup()
+    assert CommandSink().submit(cmd, proof, info, 150)["scheduled"]
+    for delta in (-1, 1, 3000):
+        bad = replace(proof, valid_until_ms=proof.valid_until_ms + delta)
+        assert "binding_or_scope_mismatch" in CommandSink().submit(cmd, bad, info, 150)["reasons"]
+
+
+def test_terminal_dwell_thresholds_have_positive_and_negative_fixtures():
+    from iaa.enclosure import terminal
+
+    stationary = StateBox.around((0, -40, 0, 0), (0, 0, 0, 0))
+    end, tubes = propagate(stationary, (0, 0), 2500, (Q(1), Q(1)), Q(0))
+    assert end == stationary and all(terminal(t) for t in tubes)
+    assert terminal(StateBox.around((0, -40, Q(1, 20), 0), (0, 0, 0, 0)))
+    assert not terminal(StateBox.around((0, -40, Q(1, 20), Q(1, 20)), (0, 0, 0, 0)))
+    assert not terminal(StateBox.around((Q(36, 100), -40, 0, 0), (0, 0, 0, 0)))

@@ -10,6 +10,7 @@ from fractions import Fraction as Q
 FRAME = "chief-centred-radial-alongtrack/1"
 STATE_UNITS = ("m", "m", "m/s", "m/s")
 AUTHORITY = Q(1, 50)
+CHECK_SCOPE = "HCW_finite_prefix_and_three_second_coast_only"
 
 
 def rational(value):
@@ -172,13 +173,15 @@ class CheckResult:
     valid_until_ms: int
     reason: str
     schema: str = "iaa-check/1"
-    scope: str = "HCW_finite_prefix_and_three_second_coast_only"
+    scope: str = CHECK_SCOPE
     recovery_claim: bool = False
 
     def __post_init__(self):
         millis(self.valid_until_ms)
         if self.schema != "iaa-check/1" or not isinstance(self.status, Status):
             raise ValueError("Unsupported check result")
+        if self.scope != CHECK_SCOPE:
+            raise ValueError("Unsupported checking scope")
         if self.recovery_claim is not False:
             raise ValueError("Recovery is not established by SA01")
 

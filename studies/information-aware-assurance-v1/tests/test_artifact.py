@@ -5,13 +5,13 @@ from pathlib import Path
 
 import pytest
 
-from iaa.artifact import read_json, verify
+from iaa.artifact import ACTIVE_RECORD, read_json, verify
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_recorded_source_and_file_integrity():
-    assert verify(ROOT / "recorded")["fixtures"] == 9
+    assert verify(ROOT / ACTIVE_RECORD)["fixtures"] == 9
 
 
 @pytest.mark.parametrize(
@@ -19,7 +19,7 @@ def test_recorded_source_and_file_integrity():
 )
 def test_artifact_integrity_mutations(tmp_path, mutation):
     dest = tmp_path / "artifact"
-    shutil.copytree(ROOT / "recorded", dest)
+    shutil.copytree(ROOT / ACTIVE_RECORD, dest)
     if mutation in ("content", "coedited_hash"):
         p = dest / "nominal.jsonl"
         p.write_text(p.read_text() + "\n")
@@ -36,7 +36,7 @@ def test_artifact_integrity_mutations(tmp_path, mutation):
         (dest / "unlisted.json").write_text("{}")
     elif mutation == "symlink":
         (dest / "summary.json").unlink()
-        (dest / "summary.json").symlink_to(ROOT / "recorded/summary.json")
+        (dest / "summary.json").symlink_to(ROOT / ACTIVE_RECORD / "summary.json")
     else:
         (dest / "manifest.json").write_text('{"schema":"x","schema":"y"}')
     with pytest.raises(ValueError):

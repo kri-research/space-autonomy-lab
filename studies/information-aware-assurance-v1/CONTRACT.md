@@ -169,7 +169,8 @@ continuous containment proof. No safety probability or efficacy ranking is compu
 
 Versioned dataclasses reject mismatched units/frames, malformed times and nonfinite
 inputs. The sink verifies request, command, information and validity bindings and
-rejects late, duplicate or unsupported results. These are trusted in-process interfaces,
+rejects late, duplicate or unsupported results. It requires the exact finite-prefix
+scope and expiry at command end plus 3000 ms; a longer claimed expiry is rejected. These are trusted in-process interfaces,
 not a security boundary against malicious plugins or forged certificates. There is
 no separate hardware watchdog or physical fault containment. No sensor calibration,
 external navigation-engineer review, processor-in-the-loop run, hardware trial or
