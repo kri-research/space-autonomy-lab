@@ -22,3 +22,11 @@ The new phase has separate interfaces, geometry, budgets and engineering inputs.
 It does not reopen E001-E005, replace the property-alignment outcomes, establish
 KRI-STD-001 conformance or change an existing manuscript. New research and retained
 historical evidence must be cited with their respective exact version identities.
+
+## Observation-derived uncertainty
+
+[SA02](information-aware-assurance-v1/sa02/README.md) adds bounded range/bearing
+conditioning, persistent shared-error hypotheses, delayed-packet replay and an
+outer-only interface. Its engineering results and mathematical assumptions are
+separate from SA01 and the earlier studies. No physical calibration, mission
+superiority or negative certificate from a box corner is inferred.

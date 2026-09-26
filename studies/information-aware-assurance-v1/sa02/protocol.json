@@ -1,0 +1,23 @@
+{
+  "schema": "iaa-sa02-development-protocol/1",
+  "purpose": "engineering validation of observation-conditioned outer sets",
+  "not_confirmatory": true,
+  "case_count": 10,
+  "max_case_horizon_ms": 30000,
+  "selection": "ten named cases in sa02/development.py, all retained",
+  "no_adaptive_sensing": true,
+  "no_population_statistics": true,
+  "no_automatic_retry": true,
+  "retention": "new output directory outside all checkouts; retain any partial or failed attempt",
+  "metrics": [
+    "state inclusion on the realised simulation",
+    "update status",
+    "latent ambiguity",
+    "representation cells",
+    "unconditional-prior area ratio",
+    "baseline point error as used at decision time",
+    "observer host update duration",
+    "finite coast and mission-dwell semantics unchanged"
+  ],
+  "timing_replay_rule": "Host timing samples are real but nonrepeatable; deterministic event/outcome files must replay exactly; timing file is hash-bound, not reranked or treated as target WCET."
+}

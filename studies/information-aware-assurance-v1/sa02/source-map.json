@@ -1,0 +1,54 @@
+{
+  "schema": "iaa-sa02-source-map/1",
+  "parent_commit": "4c304e5906a8ab273c3fde6d5fd950ce9747b02f",
+  "reuse": "Imports of unchanged SA01 implementations; sa02/runtime.py is an additive source-identified adaptation of iaa/runtime.py. No original file is replaced.",
+  "parent_files": [
+    {
+      "path": "iaa/types.py",
+      "sha256": "2894fd748b7386c350f111ac4bbb7944e4bb17e6579eceada27eea0a74dd89f5",
+      "blob": "1359d1a1e73191d1182573f00d71dfe6a13876ad"
+    },
+    {
+      "path": "iaa/enclosure.py",
+      "sha256": "32072a5fe74ce99682a0228363acc3d3320bb5700b2facc4659e3c57a0eecb24",
+      "blob": "75805554b35dcf15ab6201664b141e71525b484f"
+    },
+    {
+      "path": "iaa/assurance.py",
+      "sha256": "b88f1c3f303f82170f7f55a31a6e5747583c0312aab8ea0a9ceeefab64117fda",
+      "blob": "5b773434a2f755e94d4e9ab5c50edca5aa2c6977"
+    },
+    {
+      "path": "iaa/plant.py",
+      "sha256": "c6ff0c7d7936acb6e13648fb33bc09792976df587b5ce43250944a18477d3918",
+      "blob": "b5e8675e7c7d41951fafab43bbf89d8400c44299"
+    },
+    {
+      "path": "iaa/controller.py",
+      "sha256": "8ecd2639de2135cb5a578c39b69045943981714a8b01a2383f3ff1261fec07b8",
+      "blob": "41e0f20470ec5bd524502d951bc0e3a18ac36504"
+    },
+    {
+      "path": "iaa/runtime.py",
+      "sha256": "1a51688e53be159b17cb886fbbfed5eb36e195bf902521657f91e1ef94f65c69",
+      "blob": "002e966672b1241d147e76570d9ddbae24f02d38"
+    },
+    {
+      "path": "iaa/fixtures.py",
+      "sha256": "e34d07494bf59a644ea8b6271592f9f0abfd30938b6f5be7534bb390259eca3d",
+      "blob": "2e2ee2b493eafc803d17c58d7e6b28fa6ee743b9"
+    },
+    {
+      "path": "iaa/artifact.py",
+      "sha256": "a8d0aab54c3f3b186cfaf3cf7a96392653161f79d8b2f3313cfcb7bef7aa48ba",
+      "blob": "374c87c25c6fe187262fa120813481b178ead618"
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "57054897983bed26dcfdcab859dd32e9315a1604b940da594f0f32db84653751",
+      "blob": "89b48d7f33f6e032c3cd2929e6405030dec9e7b4"
+    }
+  ],
+  "external_research_code_incorporated": false,
+  "s_feast_license_blob": "c5302702b0f9f627636c536997fcf6f6ee1bcfd8"
+}
