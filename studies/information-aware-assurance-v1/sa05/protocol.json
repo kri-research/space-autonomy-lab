@@ -1,0 +1,49 @@
+{
+  "schema": "iaa-sa05-prospective/1",
+  "status": "prospective_frozen_design_pending_source_deposit",
+  "question": "Does decision-aware sensing improve acquisition of two-second inspection-goal dwell over fixed-range and uncertainty-triggered schedules in the same 4.2-second manoeuvre?",
+  "pilot_counts": {
+    "nominal": 3,
+    "bounded_faults": 3,
+    "outside_assumptions": 3
+  },
+  "pilot_wall_seconds": 600,
+  "held_wall_seconds": 1800,
+  "cell_timeout_seconds": 45,
+  "held_counts": {
+    "nominal": 48,
+    "bounded_faults": 48,
+    "outside_assumptions": 16
+  },
+  "methods": [
+    "fixed_range",
+    "fixed_bearing",
+    "uncertainty_triggered",
+    "decision_aware"
+  ],
+  "primary_comparisons": "decision_aware minus fixed_range and uncertainty_triggered, separately in nominal and bounded_faults",
+  "primary_outcome": "new goal acquisition with two-second dwell and full numerical containment; initially eligible cases are not acquisitions",
+  "physics": "Basilisk 2.12.0 nonlinear point-mass orbital dynamics against analytical circular chief; no physical system",
+  "horizon_ms": 4200,
+  "application_window_ms": [
+    700,
+    710
+  ],
+  "command_end_ms": 1200,
+  "planner_budget_ms": 50,
+  "checker_budget_ms": 50,
+  "timing_scope": "Clock completion times are frozen simulated inputs. Actual host durations are measured separately and do not establish physical deadline feasibility.",
+  "energy_scope": "SA05 explicit model: 5 mJ initial decision plus 5 mJ realized checking, 0.001 mJ per counted planner/observer/checking operation, actual requested sensor 0.2/0.3 mJ and common warm sensor cost. Same 500 mJ envelope; offline arming and hardware power excluded. Failed work charged; no physical energy claim.",
+  "sampling": "Independent discrete hash streams per split,stratum,unit,field; pair initial states and all exogenous conditions across policies. Noise is a latent error applied to each policy's actual simulated sensor geometry, not copied observed values.",
+  "tuning": "No tuning of any method; same fixed command menu, nodes, work, sensing choices and initial information. Pilot selects only bounded sample size and execution budget.",
+  "missing_handling": "Every scheduled cell has a result. Infrastructure failure, timeout and unstarted budget remainder stay explicitly missing, never physical impossibility. Paired primary inference is suppressed if either outcome is missing; report identification intervals.",
+  "stopping": "One sequential attempt in declared order; no selective retries, replacement cases or sample extensions. Global limit marks remaining cells unstarted. Defect invalidation requires a new identity.",
+  "analysis": "Exact paired conditional binary tests per stratum, four-comparison Holm adjustment; simultaneous conservative Hoeffding intervals for signed paired differences; exact binomial marginal intervals; costs and host times descriptive only.",
+  "acceptance": "No operational noninferiority or flight-reliability criterion. A general benefit is not asserted from certificate counts or a null test. A valid negative/inconclusive result completes this stage.",
+  "replay": "Same outcome and action categories; numerical potential tolerance 5e-5 m2; stored data identity exact; host durations not rerun as identity expectations.",
+  "ci_replay_sample": "predeclared first two units per stratum and every method; full clean-environment replay performed locally",
+  "sample_size_basis": "Pilot 36/36 completed, mean cell 2.4294 s, maximum 5.3308 s. 448 cells have 1088 s mean extrapolated cost within fixed 1800 s budget; no power is claimed from zero observed acquisition discordance. 48 units per in-model stratum give 7.4 percent two-sided 95 percent upper marginal event bound if none observed; paired simultaneous bounds remain wide. Outside-assumption 16 units are descriptive, four per deliberate violation type.",
+  "confidence_scope": "Inferential calculations are restricted to nominal and bounded_faults independent-unit artificial distributions. The cyclic outside-assumption mixture is descriptive only.",
+  "modeled_energy_maximum_mj": 500,
+  "unsafe_admission_definition": "Numerically violated trajectory while output received conditional gate credit, including prearmed fallback; no physical violation is claimed."
+}

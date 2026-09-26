@@ -1,0 +1,13 @@
+stratum,method,scheduled,completed,mission_completion,acquired_goal,requests,nonzero_interventions,unsafe_admissions,exclusions,unresolved,mean_modeled_energy_mj,median_potential_change_m2
+nominal,fixed_range,3,3,1,0,3,3,0,0,0,12.745000000000001,-0.023118407
+nominal,fixed_bearing,3,3,1,0,3,3,0,0,0,11.808333333333334,-0.023118407
+nominal,uncertainty_triggered,3,3,1,0,1,3,0,0,0,11.875666666666667,-0.023118407
+nominal,decision_aware,3,3,1,0,0,3,0,0,0,13.368666666666668,-0.023118407
+bounded_faults,fixed_range,3,3,1,0,3,3,0,0,0,16.352333333333334,-0.257916425
+bounded_faults,fixed_bearing,3,3,1,0,3,3,0,0,0,13.642666666666665,-0.257916425
+bounded_faults,uncertainty_triggered,3,3,1,0,3,3,0,0,0,15.565666666666667,-0.257916425
+bounded_faults,decision_aware,3,3,1,0,0,3,0,0,0,15.973333333333334,-0.257916425
+outside_assumptions,fixed_range,3,3,0,0,2,1,0,0,2,18.695666666666668,0.070570584
+outside_assumptions,fixed_bearing,3,3,0,0,2,2,0,0,1,14.594333333333333,0.036553381
+outside_assumptions,uncertainty_triggered,3,3,0,0,2,2,0,0,1,16.84466666666667,0.036553381
+outside_assumptions,decision_aware,3,3,0,0,0,2,0,0,1,22.462,0.036553381

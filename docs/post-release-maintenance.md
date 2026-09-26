@@ -255,3 +255,15 @@ All 574 protected baseline files, public scientific APIs and the original tag re
 The E005 zero-absolute-event prose is corrected through the new notice, maintained README and
 one additive release-description warning. The recovered supplement and recomputation are explicitly
 separate from the original scientific snapshot. No scientific evidence file was deleted.
+
+## SA05 reviewed research figures
+
+The SA05 enhancement adds individually inspected plot PNGs. The original frozen
+scanner and archive-only `validate_frozen_report` function are unchanged. The
+maintained wrapper first verifies the exact filenames, SHA-256 identities and
+image dimensions in `tools/check_sa05_figure_publication.py`, then removes only
+those identified image findings before applying the unchanged historical rule.
+No directory-wide, extension-wide or self-manifested exception is granted.
+Unknown opaque files, altered images and every secret/privacy finding still fail.
+New figures require an explicit reviewed digest update in a normal pull request.
+This publication check does not establish scientific or physical validity.

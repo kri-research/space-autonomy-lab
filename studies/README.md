@@ -47,3 +47,11 @@ context-bound expiry, a separately checked initiation window and causal replay.
 Its prospective host timings remain distinct from simulated sensor/actuator behavior.
 Actual deadline failures, finite-coast limits and absent physical validation remain
 explicit; previous sources and recorded outcomes are not replaced.
+
+## Prospective comparative evaluation
+
+[SA05](information-aware-assurance-v1/sa05/README.md) supplies nonlinear Basilisk
+validation and a separately frozen paired comparison of the existing sensing
+schedules. Its pre-execution protocol, exposed pilot and subsequent outcomes have
+distinct identities. Claims concern a finite simulated manoeuvre, with modeled
+latency and energy; no operational safety or target-hardware result is implied.

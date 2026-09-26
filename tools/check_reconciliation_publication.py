@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from check_sa05_figure_publication import normalize_reviewed_figures, reviewed_pngs
 from verify_evidence_supplement import (
     ARCHIVE_SHA256,
     SUPPLEMENT,
@@ -77,7 +78,7 @@ def main() -> int:
         if completed.returncode != 1:
             raise ValueError("unexpected frozen scanner exit status")
         report = strict_json(completed.stdout)
-        validate_frozen_report(report)
+        validate_frozen_report(normalize_reviewed_figures(report, root))
         members = read_original_members(root)
         for raw in members.values():
             scan_text(raw)
@@ -91,7 +92,8 @@ def main() -> int:
                 {
                     "status": "PASSED_EXPANDED_PUBLICATION_CHECK",
                     "frozen_scanner_passed": False,
-                    "sole_opaque_exception": ARCHIVE_PATH,
+                    "sole_frozen_archive_exception": ARCHIVE_PATH,
+                    "individually_reviewed_sa05_figures": reviewed_pngs(root),
                     "exception_sha256": ARCHIVE_SHA256,
                     "expanded_members_scanned": len(members),
                     "supplemental_text_files_scanned": supplemental,
