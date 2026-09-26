@@ -1,0 +1,46 @@
+name: Deadline-aware execution
+on:
+  pull_request:
+    paths:
+      - 'studies/information-aware-assurance-v1/**'
+      - 'studies/README.md'
+      - '.github/workflows/deadline-execution.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'studies/information-aware-assurance-v1/**'
+      - 'studies/README.md'
+      - '.github/workflows/deadline-execution.yml'
+permissions:
+  contents: read
+jobs:
+  sa04:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13.5'
+      - name: Check historical preservation
+        run: |
+          python tools/check_release_preservation.py
+          python tools/verify_historical_snapshots.py
+      - name: Install isolated study test tools
+        run: python -m pip install -r studies/information-aware-assurance-v1/requirements-dev.txt
+      - name: Validate execution and recorded evidence
+        working-directory: studies/information-aware-assurance-v1
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python -m ruff check .
+          python -m ruff format --check .
+          python -m pytest -c pyproject.toml --confcutdir=. sa04_tests
+          python -m sa04.artifact verify sa04/recorded --replay
+          python -m sa03.artifact verify sa03/recorded_causal
+          python -m sa02.artifact verify sa02/recorded
+          python -m iaa.artifact verify recorded_sa01_final
+          git diff --exit-code
