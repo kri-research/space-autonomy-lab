@@ -1,0 +1,45 @@
+{
+  "external_code_incorporated": false,
+  "files": [
+    {
+      "git_blob": "1f6a30f72efd89d5830490226cbfd1fe70d22e96",
+      "path": "studies/property-alignment-v1/candidate/information.py",
+      "sha256": "920daf70c5388c762028d183b693451157ad75084c51df6a838ddc6a28c2d6ee"
+    },
+    {
+      "git_blob": "66fecad6b2734b1904738d1e50ccf22d576026fb",
+      "path": "studies/property-alignment-v1/candidate/certify.py",
+      "sha256": "87c936110b0e50bc76d18a8292005c2a6b686044c532539346c0d426ed8024b2"
+    },
+    {
+      "git_blob": "9e92073d18fcabadbec4df2721917b34e87584de",
+      "path": "studies/property-alignment-v1/candidate/README.md",
+      "sha256": "8c9bbc05a716afa8116d0b37269f207cf69d9a239b5a58e9ef5da872d0c7af23"
+    },
+    {
+      "git_blob": "09f605638b50504bfe4b05b544befd2136c0046c",
+      "path": "studies/property-alignment-v1/protective/README.md",
+      "sha256": "582b737fe50fa0a3d731e92a7af3e8d2531f3cc3d0dae65d93f67ce63ccc9ae3"
+    },
+    {
+      "git_blob": "4ea0822c2a95e6d6b40b2c724514bf66bbdf0094",
+      "path": "studies/property-alignment-v1/adjudication/README.md",
+      "sha256": "b92e4f5907af2752676fb834e31d41f414888172f8205841a8647de7eda23b34"
+    },
+    {
+      "git_blob": "fe88d42618f95d41516e6795cef20d9381cbb43a",
+      "path": "studies/property-alignment-v1/execution_validation_v1/protocol.py",
+      "sha256": "487b6777a9f9e23ce39e7b8c428d162f752dec35548545c056897f64c683358c"
+    },
+    {
+      "git_blob": "1f3c81d13fefa2a1bfada90db77dc8d79b34058a",
+      "path": "studies/property-alignment-v1/execution_validation_v1/README.md",
+      "sha256": "67230b37e26c29766979b543a593905fe7c0aaeefeed35ad59a16a4f75a0f786"
+    }
+  ],
+  "parent_scientific_commit": "ba453a94832254cb98fca1852260ccdfab48641f",
+  "primary_source_note": "related-work.md",
+  "reuse_mode": "design and mathematical interpretation only; no imported or copied prior implementation",
+  "s_feast_licence_blob": "c5302702b0f9f627636c536997fcf6f6ee1bcfd8",
+  "schema": "iaa-source-map/1"
+}
