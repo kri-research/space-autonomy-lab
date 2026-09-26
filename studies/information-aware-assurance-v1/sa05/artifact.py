@@ -19,7 +19,7 @@ from iaa.types import encode, identity, primitive
 
 from .analysis import host_summary, summarize
 from .design import DEVELOPMENT_SEED, METHODS, population
-from .plots import generate
+from .plots import equal_rendering, generate
 
 STUDY = Path(__file__).resolve().parents[1]
 REPO = STUDY.parents[1]
@@ -374,7 +374,7 @@ def verify(directory, replay=False, sample=False):
     with tempfile.TemporaryDirectory() as tmp:
         generate(read_json(directory / "analysis.json"), Path(tmp))
         for p in Path(tmp).iterdir():
-            if p.read_bytes() != (directory / "plots" / p.name).read_bytes():
+            if not equal_rendering(p, directory / "plots" / p.name):
                 raise ValueError("Plot/table regeneration mismatch: " + p.name)
     count = 0
     if replay or sample:

@@ -73,3 +73,24 @@ def _generate(analysis, destination):
         fig.savefig(destination / (name + ".svg"), metadata={"Date": None})
         fig.savefig(destination / (name + ".png"), dpi=160, metadata={"Software": "KRI-SA05"})
         plt.close(fig)
+
+
+def equal_rendering(generated, stored):
+    """Exact vectors/tables and exact decoded PNG pixels, independent of compression.
+
+    Original files are still separately checked against their full byte hashes.
+    No pixel tolerance, resized image or removed text is accepted.
+    """
+    generated, stored = Path(generated), Path(stored)
+    if generated.suffix != ".png":
+        return generated.read_bytes() == stored.read_bytes()
+    from PIL import Image
+
+    with Image.open(generated) as a, Image.open(stored) as b:
+        return (
+            a.format == b.format == "PNG"
+            and a.mode == b.mode == "RGBA"
+            and a.size == b.size
+            and a.info.get("dpi") == b.info.get("dpi")
+            and a.tobytes() == b.tobytes()
+        )

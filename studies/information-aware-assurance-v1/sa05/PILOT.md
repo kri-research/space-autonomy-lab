@@ -43,3 +43,12 @@ A pre-freeze plot-regeneration test also exposed dependence on global matplotlib
 settings changed by another imported package. Rendering now runs inside isolated
 default settings. The regression reproduces all original pilot plot/table bytes;
 no stored data, plotted quantity or pilot figure was edited.
+
+Linux CI subsequently exposed different PNG byte streams from the platform
+encoders. The pre-outcome reproduction contract now compares every decoded RGBA
+pixel and DPI exactly, while CSV, Markdown and SVG still require exact bytes.
+There is no pixel tolerance. Original PNG files remain bound by their original
+full-byte hashes. Recompression and one-pixel mutation regressions distinguish
+encoding variation from altered output. The source/freeze revision is retained
+in Git before held-out outcomes; neither the latent population nor any policy,
+scientific calculation, analysis or stored pilot output is changed.

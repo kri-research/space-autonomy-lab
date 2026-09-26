@@ -107,7 +107,7 @@ def test_committed_record_mutations_fail(tmp_path, mutation):
 
 
 def test_pilot_retained_identity_and_plot_portability(tmp_path):
-    from sa05.plots import generate
+    from sa05.plots import equal_rendering, generate
 
     directory = artifact.PACKAGE / "development_recorded"
     manifest = artifact.read_json(directory / "manifest.json")
@@ -121,4 +121,32 @@ def test_pilot_retained_identity_and_plot_portability(tmp_path):
         )
     generate(artifact.read_json(directory / "analysis.json"), tmp_path / "plots")
     for path in (tmp_path / "plots").iterdir():
-        assert path.read_bytes() == (directory / "plots" / path.name).read_bytes()
+        assert equal_rendering(path, directory / "plots" / path.name), path.name
+
+
+def test_png_regeneration_ignores_compression_but_rejects_one_changed_pixel(tmp_path):
+    from PIL import Image
+
+    from sa05.plots import equal_rendering
+
+    source = artifact.PACKAGE / "development_recorded/plots/goal-acquisition.png"
+    copy = tmp_path / "reencoded.png"
+    with Image.open(source) as image:
+        image.save(copy, compress_level=0, dpi=image.info["dpi"])
+        assert copy.read_bytes() != source.read_bytes()
+        assert equal_rendering(copy, source)
+        changed = image.copy()
+        changed.putpixel((0, 0), (0, 0, 0, 255))
+        changed.save(copy, dpi=image.info["dpi"])
+        assert not equal_rendering(copy, source)
+
+
+def test_vector_and_table_regeneration_still_requires_exact_bytes(tmp_path):
+    from sa05.plots import equal_rendering
+
+    a, b = tmp_path / "a.svg", tmp_path / "b.svg"
+    a.write_text("<svg><text>1</text></svg>")
+    b.write_bytes(a.read_bytes())
+    assert equal_rendering(a, b)
+    b.write_text("<svg><text>2</text></svg>")
+    assert not equal_rendering(a, b)

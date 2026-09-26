@@ -51,3 +51,8 @@ publication uses an individually reviewed filename/digest list in the maintained
 publication wrapper; no general binary-file exception or scientific-check waiver
 is introduced. The original historical scanner and archive-only validator are
 retained unchanged.
+
+Portable figure reproduction requires exact SVG/table bytes and exact decoded
+RGBA pixels and DPI for PNGs. PNG compression may vary across platform builds.
+Original artifact hashes remain exact; the verifier never accepts modified stored
+image bytes merely because they decode to similar or identical pixels.
