@@ -30,3 +30,11 @@ conditioning, persistent shared-error hypotheses, delayed-packet replay and an
 outer-only interface. Its engineering results and mathematical assumptions are
 separate from SA01 and the earlier studies. No physical calibration, mission
 superiority or negative certificate from a box corner is inferred.
+
+## Decision-aware sensing
+
+[SA03](information-aware-assurance-v1/sa03/README.md) checks one observation-contingent
+command tree, including its waiting and missing-reading branches, and compares simple
+sensing schedules. Analytical timing examples and bounded development results retain
+failures, costs and finite-horizon limits. Real-time feasibility and general active-
+sensing superiority are not established.
