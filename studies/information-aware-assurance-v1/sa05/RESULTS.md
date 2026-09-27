@@ -2,8 +2,8 @@
 
 ## Primary result and scope
 
-No schedule achieved a new two-second goal acquisition in this prospectively
-specified finite-manoeuvre evaluation. The decision-aware candidate therefore
+No schedule demonstrated a new two-second goal acquisition under the numerical
+adjudication in this prospectively specified finite-manoeuvre evaluation. The decision-aware candidate therefore
 has no demonstrated acquisition advantage over fixed-range or uncertainty-triggered
 sensing. It avoided optional observation requests, but incurred more modeled total
 work cost than the simpler schedules. This is a valid negative/inconclusive result
@@ -122,7 +122,9 @@ binomial inferential interval.
 All 448 measured host trials are retained separately from simulated readiness
 inputs. Each method has 112 samples. The planner measurement includes its
 observation reconstruction; checker measurements concern the realized-action
-path. Process startup and total offline trial cost remain separately recorded.
+path. The per-cell ledger duration includes startup, imports and transport in
+addition to the separately timed offline trial. Startup is not isolated as its own
+measurement.
 
 | Schedule | Planner median ms | Planner maximum ms | Planner over 50 ms | Checker over 50 ms | Checker maximum ms |
 | --- | ---: | ---: | ---: | ---: | ---: |
