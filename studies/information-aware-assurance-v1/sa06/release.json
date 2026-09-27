@@ -1,0 +1,151 @@
+{
+  "component": "kri-assurance-eval",
+  "component_version": "0.1.0",
+  "existing_tags_unchanged": true,
+  "external_integration": "pending",
+  "inherited_commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+  "overall_status": "partially_complete",
+  "physical_trials": "pending",
+  "publication": "immutable_Git_commit_only",
+  "schema": "kri-sa06-release/1",
+  "software_scope": "offline_design_and_evaluation",
+  "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+  "sources": {
+    "studies/information-aware-assurance-v1/sa06/EXTERNAL_VALIDATION.md": {
+      "blob": "cc86e381a68939db15c8e7800996b4ebcd12af8c",
+      "mode": "100644",
+      "sha256": "cbf7160e928afeceaaef9afe453bc647db174e21e61852712f1c82eb0f02d127"
+    },
+    "studies/information-aware-assurance-v1/sa06/IMPLEMENTATION_NOTE.md": {
+      "blob": "c410094ee6c5a1620a6b3774504082de2e97e2a8",
+      "mode": "100644",
+      "sha256": "8b8fb574bb04371f8f35ba6b0c3210dc0d0653a5436a5eef1fcae9655ec3c768"
+    },
+    "studies/information-aware-assurance-v1/sa06/INTERFACE.md": {
+      "blob": "9da02baa654daad3609789b0d56c4aaf2c41da9a",
+      "mode": "100644",
+      "sha256": "b52a793dedfaef97f4766fb260c77e4ba4af0ac676c4bd3c8e6faf9e6a8621cd"
+    },
+    "studies/information-aware-assurance-v1/sa06/README.md": {
+      "blob": "54f2ae5373fd57e95925e14f04ee7e03ceec3854",
+      "mode": "100644",
+      "sha256": "7286a1eeb30f599c0cb7892fe0840b4e97650ef6eb3138053951da196acbe6ed"
+    },
+    "studies/information-aware-assurance-v1/sa06/__init__.py": {
+      "blob": "47c8b1a051da773a4ac76b21c17fb668d2919ee5",
+      "mode": "100644",
+      "sha256": "7b67c7cef8a19bd86c8575e4183075863277e7ba26f02d2f037ad48a61191ab8"
+    },
+    "studies/information-aware-assurance-v1/sa06/assemble.py": {
+      "blob": "ca261a06253de303e80d0de1316971b4aa1a14a9",
+      "mode": "100644",
+      "sha256": "6a7397fc9b6001cda431d66523566b54108839665b921bf0d353c5446cb9b29a"
+    },
+    "studies/information-aware-assurance-v1/sa06/examples/controller_adapter.py": {
+      "blob": "54d9fb78754c7ae5253934922f70113be9a95ad4",
+      "mode": "100644",
+      "sha256": "db06f93bc99de0ace4fd9087f1a0a03efa639621c7d31e1ab2c104037d2696fa"
+    },
+    "studies/information-aware-assurance-v1/sa06/external-evidence.json": {
+      "blob": "e794dacb61434fb19cc973f6b9c081050db2446d",
+      "mode": "100644",
+      "sha256": "09cb27d752b370fcd96826173ed61e9b3b980e2eab9559c29649a31c4817380e"
+    },
+    "studies/information-aware-assurance-v1/sa06/packaging.toml": {
+      "blob": "2a40052bef88ed477c0d819ee344548d3fdcf430",
+      "mode": "100644",
+      "sha256": "4e41e17bc62f2fbb7f231879f00d117ae7cbd3638bfc5d841298d5b3e3d91b16"
+    },
+    "studies/information-aware-assurance-v1/sa06/related-work.md": {
+      "blob": "43e524acf8a1433be296f270f78e6195c499d5c3",
+      "mode": "100644",
+      "sha256": "d092be1a9a133728ad6be7566b46566527f9024694e04b7f9ce7451b758428f6"
+    },
+    "studies/information-aware-assurance-v1/sa06/requirements-build.lock": {
+      "blob": "40b8185de66be871ec2960d379906d84a154c37e",
+      "mode": "100644",
+      "sha256": "a9df5ae05223aa6fdb0095125ad0af4ba28d5ba0312bd522a3918c99c22cf5cc"
+    },
+    "studies/information-aware-assurance-v1/sa06/requirements-build.txt": {
+      "blob": "e50effe713886427e514095ff6ecdb8a47753cb5",
+      "mode": "100644",
+      "sha256": "23458250854dc16701d4b8fb25c1fba1f87b1e519d16c167a72c9f195914f5a6"
+    },
+    "studies/information-aware-assurance-v1/sa06/source-map.json": {
+      "blob": "01a3814eb0f819f0cf2052afc357a4b9215e85e9",
+      "mode": "100644",
+      "sha256": "0b038ca907c50311c562c6c14f105b3c9a10f43531b539756b91de290e3dc1d6"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/__init__.py": {
+      "blob": "d502451d3f2ac46b912e7c126634e1757cf6ecc1",
+      "mode": "100644",
+      "sha256": "b44eae845cf880de76094da5d87e644290902b1a0fbd600e3596e327f0db0abc"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/api.py": {
+      "blob": "128b53ed9f981c4e006100289ffd0f4ee159e982",
+      "mode": "100644",
+      "sha256": "2577ddc9d99acf01ab07133e0603965cec091aad5c0dab78f16afd36ecded238"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/benchmark.py": {
+      "blob": "9e40e714a2055ef9f540a5b524aa280b1ffe3043",
+      "mode": "100644",
+      "sha256": "8fdac937aff6984d8ac08540c2f3054da80c62ca71c47ee3c40441bd40bc5b3a"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/cli.py": {
+      "blob": "96e1e0717e014bfbf4a979a771192b543fec46bb",
+      "mode": "100644",
+      "sha256": "06b149e41f5532300a13240ee0fc9e788acd621f453593a0a92876e4e52bbde2"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/examples.json": {
+      "blob": "f94a62a99d73d4d5d4071412a7d5798879468515",
+      "mode": "100644",
+      "sha256": "9a7da67bf3c7eeefd0b406959abb2a29a28e3a23c157543f0d3ad5ee40de09e7"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/examples.py": {
+      "blob": "9d22549d2439326146fe33862c9ad5d8ef570808",
+      "mode": "100644",
+      "sha256": "f9fe370721b98200a488db41707f3472ab7c781ae3e08b77cf26b2154a7d5ec9"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/integrity.py": {
+      "blob": "ba2ac15f891218e7e3fe249e875f37b330be75ba",
+      "mode": "100644",
+      "sha256": "e4565aaec9e5cabc64b9b767ebf478093d6c1151769b07d4814e7eb70c4ddeb6"
+    },
+    "studies/information-aware-assurance-v1/sa06/vendor-sources.json": {
+      "blob": "589ed9251384db3e2d8efa5514df7a097652d0c4",
+      "mode": "100644",
+      "sha256": "b37e4b7d19bc2cfdcf32ca37a3d63a3d2984a65a6c1dd1f704e1f773d7a44293"
+    },
+    "studies/information-aware-assurance-v1/sa06/verify.py": {
+      "blob": "45842f620cdca70a0da071907e98844ef91d380f",
+      "mode": "100644",
+      "sha256": "83fbb5f2c9a0d0ff9d030c9a0ba9b9d085927b06baa19f22e1c8f38b5830309d"
+    },
+    "studies/information-aware-assurance-v1/sa06_tests/conftest.py": {
+      "blob": "80f6ce8aa2e517d5f043b4d0337e56b1823518fa",
+      "mode": "100644",
+      "sha256": "9ad07f783d52db504041b4c76b20660235f06788ae59133af87bc1b938ab1f55"
+    },
+    "studies/information-aware-assurance-v1/sa06_tests/test_docs6.py": {
+      "blob": "c548b4ceb3ab8f8b91e9fd9f7509afc0470e833a",
+      "mode": "100644",
+      "sha256": "54a602f4bc86626e0efe262ce57d6f889c459e528271d1f90cca9f2baf6ffec0"
+    },
+    "studies/information-aware-assurance-v1/sa06_tests/test_integration6.py": {
+      "blob": "024dbf5e6b2ba046c985ca3852fbca3d6d2e1717",
+      "mode": "100644",
+      "sha256": "7cf850ef1c7f482b04ffd97803dd1666e75d74f594b4b5272fd11a72ec08a557"
+    },
+    "studies/information-aware-assurance-v1/sa06_tests/test_packaging6.py": {
+      "blob": "e9f3cd6d4f5af782ff72a1ca9a2399a2bffc767e",
+      "mode": "100644",
+      "sha256": "aea6553ab9ee011bdf56c6926ceb11ef524cace06b7accb0df24578327bb8b98"
+    },
+    "studies/information-aware-assurance-v1/sa06_tests/test_record6.py": {
+      "blob": "a8bef894e22b18c082d8de6d074c88c18efb4a69",
+      "mode": "100644",
+      "sha256": "016a86b8bdf89e99139c200c07a271182e97765e39654bba89d0221c37fdec82"
+    }
+  },
+  "target_measurements": "pending"
+}

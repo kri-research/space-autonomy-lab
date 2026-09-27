@@ -1,0 +1,32 @@
+{
+  "adapter": {
+    "external_replication": false,
+    "internal_integration": true,
+    "proposed": [
+      "0",
+      "1/50"
+    ],
+    "status": "supported_prefix"
+  },
+  "examples": 10,
+  "external_replication": false,
+  "installed_outside_checkout": true,
+  "isolated_interpreter": true,
+  "package_members": 34,
+  "physical_validation": false,
+  "python": "3.13.5",
+  "runtime_source_members": 27,
+  "runtime_third_party_dependencies": 0,
+  "schema": "kri-sa06-internal-integration/1",
+  "sdist": {
+    "bytes": 56133,
+    "file": "kri_assurance_eval-0.1.0.tar.gz",
+    "sha256": "ceba611daa94d9ad5c6b70229028b21e4492a3ca012a7bf389cdf6d7ba20f24a"
+  },
+  "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+  "wheel": {
+    "bytes": 55588,
+    "file": "kri_assurance_eval-0.1.0-py3-none-any.whl",
+    "sha256": "7714f573fc7c9c3069672e658396e78d2ed51a68e153afc0ef4466863547f9c4"
+  }
+}
