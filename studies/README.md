@@ -55,3 +55,10 @@ validation and a separately frozen paired comparison of the existing sensing
 schedules. Its pre-execution protocol, exposed pilot and subsequent outcomes have
 distinct identities. Claims concern a finite simulated manoeuvre, with modeled
 latency and energy; no operational safety or target-hardware result is implied.
+
+[Completed SA05 results](information-aware-assurance-v1/sa05/RESULTS.md) retain
+all 112 paired units and 448 method runs. No new goal acquisition was observed
+under any schedule. Request avoidance did not establish an overall candidate
+advantage or lower total modeled cost; timing failures and outside-assumption
+outcomes remain explicit. The separate full numerical audit supports the stated
+simulation-level conclusions, not physical or real-time validation.

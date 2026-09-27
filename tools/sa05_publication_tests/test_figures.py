@@ -86,3 +86,15 @@ def test_prospective_workflow_parses_and_installs_pinned_tools():
     )
     assert "--require-hashes" in installation and "--only-binary=:all:" in installation
     assert any("--sample" in s.get("run", "") for s in steps)
+
+
+@pytest.mark.parametrize("name", ["goal-acquisition.png", "observation-requests.png"])
+def test_held_out_figure_mutation_remains_a_failure(tmp_path, name):
+    for relative in figures.REVIEWED_PNG_SHA256:
+        p = tmp_path / relative
+        p.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / relative, p)
+    p = tmp_path / "studies/information-aware-assurance-v1/sa05/recorded/plots" / name
+    p.write_bytes(p.read_bytes() + b"altered")
+    with pytest.raises(ValueError):
+        figures.reviewed_pngs(tmp_path)

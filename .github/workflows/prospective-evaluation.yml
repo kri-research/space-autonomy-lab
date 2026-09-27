@@ -45,5 +45,9 @@ jobs:
           python -m pytest -c pyproject.toml --confcutdir=. sa05_tests
           if test -f sa05/recorded/manifest.json; then
             python -m sa05.artifact verify sa05/recorded --sample
+            python -m ruff check sa05_validation
+            python -m ruff format --check sa05_validation
+            python -m pytest -c pyproject.toml --confcutdir=. sa05_validation
+            python -m sa05_validation.verify
           fi
           git diff --exit-code

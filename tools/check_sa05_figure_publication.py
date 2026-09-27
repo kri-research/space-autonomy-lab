@@ -22,6 +22,14 @@ REVIEWED_PNG_SHA256: dict[str, str] = dict(
             "studies/information-aware-assurance-v1/sa05/development_recorded/plots/observation-requests.png",
             "87cc69c5db94ad7096ed59b068a566071157a148089facc0c93dca66a7bd9a5a",
         ),
+        (
+            "studies/information-aware-assurance-v1/sa05/recorded/plots/goal-acquisition.png",
+            "7df314563436d8303f482504825da01e30b116f030d8eeb02ed1e1dead24fc9e",
+        ),
+        (
+            "studies/information-aware-assurance-v1/sa05/recorded/plots/observation-requests.png",
+            "1cfe433f308e83a6ee26a17d29bf156535f85b6f355a471a154697ad5eea23d5",
+        ),
     ]
 )
 
