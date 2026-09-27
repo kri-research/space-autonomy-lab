@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kri-assurance-eval"
+version = "0.1.0"
+description = "Finite-horizon spacecraft assurance assessment for research and design evaluation"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "KRI"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/kri-research/space-autonomy-lab"
+
+[project.scripts]
+kri-assurance-eval = "kri_assurance_eval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["kri_assurance_eval*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+kri_assurance_eval = ["*.json"]
