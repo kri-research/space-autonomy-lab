@@ -1,0 +1,40 @@
+{
+  "component": "kri-assurance-eval",
+  "external_evidence": "pending",
+  "historical_tag": "v0.1.0",
+  "inherited_commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+  "inherited_sources": {
+    "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+    "files": {
+      "studies/information-aware-assurance-v1/iaa/__init__.py": "22f4b7235499ff18083ef35ccb222ba9c7f1252ff2a217b687d760ccf856adc8",
+      "studies/information-aware-assurance-v1/iaa/assurance.py": "b88f1c3f303f82170f7f55a31a6e5747583c0312aab8ea0a9ceeefab64117fda",
+      "studies/information-aware-assurance-v1/iaa/enclosure.py": "32072a5fe74ce99682a0228363acc3d3320bb5700b2facc4659e3c57a0eecb24",
+      "studies/information-aware-assurance-v1/iaa/types.py": "2894fd748b7386c350f111ac4bbb7944e4bb17e6579eceada27eea0a74dd89f5",
+      "studies/information-aware-assurance-v1/sa02/__init__.py": "f0048c427c70f5796101930cdcf1beb928472b09ef5b14a4f7e7337d78cef167",
+      "studies/information-aware-assurance-v1/sa02/bridge.py": "c9ed4128a4ec74568690fdf6ff618b857b5a1300abaf774a3e6c7ebf24d734c7",
+      "studies/information-aware-assurance-v1/sa02/estimator.py": "89d31f86affcb13b5e23f33374988b25dfd15139605208559939cfa2f3f2be24",
+      "studies/information-aware-assurance-v1/sa02/intervals.py": "b5d6fd061615d451ae7b1808e7588eb3ad6522a1e8a25f6dfe665774929a1f33",
+      "studies/information-aware-assurance-v1/sa02/model.py": "29aacb8b99bc7aa4b86e4efc655cbec3a134fc3655b49167a067dbe55d639973",
+      "studies/information-aware-assurance-v1/sa03/__init__.py": "fcb7d3d15701033e225f74e53bc3bef6612a68aacec732f1db5a88d453f6d04e",
+      "studies/information-aware-assurance-v1/sa03/forecast.py": "57ee7c54c82e49e81c8858d3bbffcdcf32edee7adc100422224b1698a0ee34ee",
+      "studies/information-aware-assurance-v1/sa03/model.py": "1b210c18bc6ee1f0ff33a80cf99d9c5bf88beaad5c98259b906bd8351025e51c",
+      "studies/information-aware-assurance-v1/sa03/policy.py": "17a09deff6e84d013f146e5ef7003162ac951b99f4c670dbd178650570a99123",
+      "studies/information-aware-assurance-v1/sa04/__init__.py": "3b711a9fa2f7155c6701e2cdfb37d93f579b577968cdd22703c29c3279c5be0f",
+      "studies/information-aware-assurance-v1/sa04/compute.py": "c6c0c3104d90e75de610810cc4f4d3a4d2e916b41dbe91699f33c3de8f09d4f0",
+      "studies/information-aware-assurance-v1/sa04/gate.py": "78c75d46d4c57100c409c2b3e67c23b7e4b108a15b85e7c4612112ea7fc47613",
+      "studies/information-aware-assurance-v1/sa04/wire.py": "8b2c0af85164df64be1fcee4d6c3e41a780d05f24af74c41285b695c1ef533f2",
+      "studies/property-alignment-v1/execution_validation_v1/protocol.py": "487b6777a9f9e23ce39e7b8c428d162f752dec35548545c056897f64c683358c"
+    }
+  },
+  "schema": "kri-sa06-source-map/1",
+  "scope": "offline observation-to-command assessment; no physical driver",
+  "standard": {
+    "date": "2026-09-08",
+    "edition": "KRI-STD-001-V2.0",
+    "pages": 16,
+    "pdf_url": "https://kri.org.uk/publications/KRI-STD-001_Trustworthy-Onboard-AI-Standard_v2-0.pdf",
+    "sha256": "4e9dbed7386de19069a56fa9a5f510ce94efc869afd4a2591eb083e3379c667b"
+  },
+  "third_party_research_code_copied": false,
+  "version": "0.1.0"
+}

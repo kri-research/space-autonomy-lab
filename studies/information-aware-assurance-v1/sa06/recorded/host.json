@@ -1,0 +1,3707 @@
+{
+  "complete": true,
+  "development_build": false,
+  "environment": {
+    "architecture": "arm64",
+    "clock": {
+      "adjustable": false,
+      "implementation": "mach_absolute_time()",
+      "monotonic": true,
+      "resolution": 4.166666666666666e-08
+    },
+    "os": "Darwin",
+    "python": "3.13.5"
+  },
+  "external_replication": false,
+  "physical_validation": false,
+  "protocol": {
+    "energy_measured": false,
+    "input_names": [
+      "bounded_proposal",
+      "zero_proposal",
+      "late_check",
+      "missed_window",
+      "unsupported_assumptions",
+      "excess_authority",
+      "unsafe_entry",
+      "incompatible_model",
+      "observation_conditioned",
+      "inconsistent_observation"
+    ],
+    "purpose": "installation and bounded interface profiling",
+    "repetitions": 2,
+    "warmups": 1
+  },
+  "samples": [
+    {
+      "cpu_ns": 30527000,
+      "elapsed_ns": 30562000,
+      "expected_status_matched": true,
+      "name": "bounded_proposal",
+      "process_peak_rss_bytes": 28737536,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": true,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "68204fe3a8b0ac2fbfe8a4bf3d12f9d4cc1e595325a6fdcbcdfc5122d9cd5526",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "1/50"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": true,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 30327000,
+      "elapsed_ns": 30345541,
+      "expected_status_matched": true,
+      "name": "zero_proposal",
+      "process_peak_rss_bytes": 28770304,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "0"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "a1a81348e288e4989881ef286802f2b1331f92c0ebe64b1d487347c802f9891f",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "14f177f8a7b4ac7e78712c707861e72101c02f34b7e0e4250f025e42e8234ec6",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "a1a81348e288e4989881ef286802f2b1331f92c0ebe64b1d487347c802f9891f",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 32253000,
+      "elapsed_ns": 32546250,
+      "expected_status_matched": true,
+      "name": "late_check",
+      "process_peak_rss_bytes": 28803072,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [
+            "late_or_pre_request"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "7e1766c9cb9b1d25a09ff9f05465b272cf0a1cdec9cc7663d7117f6920e39c7e",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "late",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 33004000,
+      "elapsed_ns": 34354667,
+      "expected_status_matched": true,
+      "name": "missed_window",
+      "process_peak_rss_bytes": 28835840,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "3ddfe3fc925d407258c674441aafcba1d0a600390dc0e1db527ae089d4ace228",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 715,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "missed_application_window",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 3476000,
+      "elapsed_ns": 4158958,
+      "expected_status_matched": true,
+      "name": "unsupported_assumptions",
+      "process_peak_rss_bytes": 28917760,
+      "repetition": -1,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "No protection claim",
+        "request_sha256": "1503692277a75434d33134aa4c0e252129d1d3a56c77cc2e18b33241c9e4e71e",
+        "schema": "kri-assurance-result/1",
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "assumptions_unavailable",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 15485000,
+      "elapsed_ns": 15712041,
+      "expected_status_matched": true,
+      "name": "excess_authority",
+      "process_peak_rss_bytes": 28950528,
+      "repetition": -1,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "ValueError",
+        "request_sha256": "bf1d6b96de1d649318081ba0b644e7886a381ac370876165db45483846edf0b0",
+        "schema": "kri-assurance-result/1",
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "unsupported_input",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 7556000,
+      "elapsed_ns": 7605917,
+      "expected_status_matched": true,
+      "name": "unsafe_entry",
+      "process_peak_rss_bytes": 28950528,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [
+            "initial_protection_unavailable",
+            "binding_scope_or_check_mismatch"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "26d4f2637c01e68c4db4dd3cb155504a00727d72af1d241bb265b9d1f4e9be23",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "0ce9d91e1f4ea2408fba4ab5590558fce3a6db71200adc1b31a509f53df23e7d",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "unresolved",
+          "steps": 0,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "1736947011/200000000000",
+                    "lo": "-8470235061/1000000000000"
+                  },
+                  {
+                    "hi": "-7464730642307/250000000000",
+                    "lo": "-29876077517287/1000000000000"
+                  },
+                  {
+                    "hi": "49111103/125000000000",
+                    "lo": "40263891/125000000000"
+                  },
+                  {
+                    "hi": "62508778131/250000000000",
+                    "lo": "31245551947/125000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-8470235061/1000000000000",
+                "-29876077517287/1000000000000",
+                "40263891/125000000000",
+                "31245551947/125000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "1736947011/200000000000",
+                "-7464730642307/250000000000",
+                "49111103/125000000000",
+                "62508778131/250000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "5e22a98ae306bc34bf4eec17a071dbd3797186c5cbde187693dfba60de51ae1b"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 0,
+          "initial_input_sha256": "9151c1f663e44a0c9afdbe68ffe25f535d750e0d9a066bc2d304ad180376bba5",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 3,
+          "valid": false
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "2380b48468d1b9e617be3fcb04f6e6914aef463b878fbd1ed61f4113a79ea0a6",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": false,
+          "expires_ms": 0,
+          "live_binding_sha256": "0ce9d91e1f4ea2408fba4ab5590558fce3a6db71200adc1b31a509f53df23e7d",
+          "mode": "uncredited_after_expiry_or_invalidation",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "uncredited_entry",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 2095000,
+      "elapsed_ns": 2122833,
+      "expected_status_matched": true,
+      "name": "incompatible_model",
+      "process_peak_rss_bytes": 28950528,
+      "repetition": -1,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "ValueError",
+        "schema": "kri-assurance-result/1",
+        "status": "unsupported_input",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 53797000,
+      "elapsed_ns": 64564125,
+      "expected_status_matched": true,
+      "name": "observation_conditioned",
+      "process_peak_rss_bytes": 28966912,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "01a50606b27e46e9288a371f5ed1655b9ff4a904d166c8675608d62ca2238a9b",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "c9e22d72af4069a2aa91ec16a07c066158c019a16c0f14e5520e37e9464679c9",
+            "payload_sha256": "061e60f76795215b333279d9defccac685839fbfe658ef508dbbdd5ffa9400b4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "45435134337/1000000000000",
+                    "lo": "-11358783573/250000000000"
+                  },
+                  {
+                    "hi": "-2249477342103/50000000000",
+                    "lo": "-45010425073627/1000000000000"
+                  },
+                  {
+                    "hi": "504060819/500000000000",
+                    "lo": "-504060819/500000000000"
+                  },
+                  {
+                    "hi": "1008010457/1000000000000",
+                    "lo": "-1008010457/1000000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "fresh",
+                "range": "fresh"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 31,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "c9e22d72af4069a2aa91ec16a07c066158c019a16c0f14e5520e37e9464679c9",
+              "retained_packets": 2,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "updated"
+          },
+          "uncertainty_sha256": "22abf0994b1e4c0a91a382bffacc941ffd94fc3bcb9e0a981e28ad75b23515a4"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": true,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "96d993ea703d9df35a241275071d1aeb5a6d0a2796130233e495f84652dee6b3",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "1/50"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": true,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "061e60f76795215b333279d9defccac685839fbfe658ef508dbbdd5ffa9400b4",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 26731000,
+      "elapsed_ns": 30627958,
+      "expected_status_matched": true,
+      "name": "inconsistent_observation",
+      "process_peak_rss_bytes": 28966912,
+      "repetition": -1,
+      "result": {
+        "admission": {
+          "reasons": [
+            "binding_scope_or_check_mismatch"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "96052f1afb2f319f70292452e2fb149250563cefca5710c6a17a4c2b4ec80145",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "bf3da591a4c276929c1d20237714a72cca139a2aa64e3ccd65ac30009bf1485f",
+            "payload_sha256": "44474c4b5f36bc07ef482b60fded1e78883c0406164ef2f9e35dececa7520fee",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "unresolved",
+          "steps": 0,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "fresh",
+                "range": "fresh"
+              },
+              "coarsening_merges": 0,
+              "first_conflicting_packet": "example-range",
+              "hypotheses": [],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "interpretation": "data_or_model_inconsistent_not_absence_of_physical_state",
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 20,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 1,
+              "replayed_out_of_order": false,
+              "representation_cells": 0,
+              "retained_packet_identity": "bf3da591a4c276929c1d20237714a72cca139a2aa64e3ccd65ac30009bf1485f",
+              "retained_packets": 2,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "inconsistent_observations"
+          },
+          "uncertainty_sha256": "ea58384cda46bd7d623cc661cf6f927250806ff29828d131d1eb172f6a99c5dd"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "45f2bd7acd42e1dfe0cb45600da12ec562c3f5008f466452d9eae928fa3c34ac",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "44474c4b5f36bc07ef482b60fded1e78883c0406164ef2f9e35dececa7520fee",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "unresolved",
+        "transferable_authority": false
+      },
+      "warmup": true
+    },
+    {
+      "cpu_ns": 31152000,
+      "elapsed_ns": 31252667,
+      "expected_status_matched": true,
+      "name": "bounded_proposal",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": true,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "68204fe3a8b0ac2fbfe8a4bf3d12f9d4cc1e595325a6fdcbcdfc5122d9cd5526",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "1/50"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": true,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 35077000,
+      "elapsed_ns": 40495083,
+      "expected_status_matched": true,
+      "name": "zero_proposal",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "0"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "a1a81348e288e4989881ef286802f2b1331f92c0ebe64b1d487347c802f9891f",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "14f177f8a7b4ac7e78712c707861e72101c02f34b7e0e4250f025e42e8234ec6",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "a1a81348e288e4989881ef286802f2b1331f92c0ebe64b1d487347c802f9891f",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 31095000,
+      "elapsed_ns": 31310208,
+      "expected_status_matched": true,
+      "name": "late_check",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [
+            "late_or_pre_request"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "7e1766c9cb9b1d25a09ff9f05465b272cf0a1cdec9cc7663d7117f6920e39c7e",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "late",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 30800000,
+      "elapsed_ns": 30891542,
+      "expected_status_matched": true,
+      "name": "missed_window",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "3ddfe3fc925d407258c674441aafcba1d0a600390dc0e1db527ae089d4ace228",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 715,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "missed_application_window",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 2125000,
+      "elapsed_ns": 2125750,
+      "expected_status_matched": true,
+      "name": "unsupported_assumptions",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "No protection claim",
+        "request_sha256": "1503692277a75434d33134aa4c0e252129d1d3a56c77cc2e18b33241c9e4e71e",
+        "schema": "kri-assurance-result/1",
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "assumptions_unavailable",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 14599000,
+      "elapsed_ns": 14613958,
+      "expected_status_matched": true,
+      "name": "excess_authority",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "ValueError",
+        "request_sha256": "bf1d6b96de1d649318081ba0b644e7886a381ac370876165db45483846edf0b0",
+        "schema": "kri-assurance-result/1",
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "unsupported_input",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 7128000,
+      "elapsed_ns": 7132959,
+      "expected_status_matched": true,
+      "name": "unsafe_entry",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [
+            "initial_protection_unavailable",
+            "binding_scope_or_check_mismatch"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "26d4f2637c01e68c4db4dd3cb155504a00727d72af1d241bb265b9d1f4e9be23",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "0ce9d91e1f4ea2408fba4ab5590558fce3a6db71200adc1b31a509f53df23e7d",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "unresolved",
+          "steps": 0,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "1736947011/200000000000",
+                    "lo": "-8470235061/1000000000000"
+                  },
+                  {
+                    "hi": "-7464730642307/250000000000",
+                    "lo": "-29876077517287/1000000000000"
+                  },
+                  {
+                    "hi": "49111103/125000000000",
+                    "lo": "40263891/125000000000"
+                  },
+                  {
+                    "hi": "62508778131/250000000000",
+                    "lo": "31245551947/125000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-8470235061/1000000000000",
+                "-29876077517287/1000000000000",
+                "40263891/125000000000",
+                "31245551947/125000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "1736947011/200000000000",
+                "-7464730642307/250000000000",
+                "49111103/125000000000",
+                "62508778131/250000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "5e22a98ae306bc34bf4eec17a071dbd3797186c5cbde187693dfba60de51ae1b"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 0,
+          "initial_input_sha256": "9151c1f663e44a0c9afdbe68ffe25f535d750e0d9a066bc2d304ad180376bba5",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 3,
+          "valid": false
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "2380b48468d1b9e617be3fcb04f6e6914aef463b878fbd1ed61f4113a79ea0a6",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": false,
+          "expires_ms": 0,
+          "live_binding_sha256": "0ce9d91e1f4ea2408fba4ab5590558fce3a6db71200adc1b31a509f53df23e7d",
+          "mode": "uncredited_after_expiry_or_invalidation",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "uncredited_entry",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 2367000,
+      "elapsed_ns": 2367625,
+      "expected_status_matched": true,
+      "name": "incompatible_model",
+      "process_peak_rss_bytes": 29130752,
+      "repetition": 0,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "ValueError",
+        "schema": "kri-assurance-result/1",
+        "status": "unsupported_input",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 34465000,
+      "elapsed_ns": 34501500,
+      "expected_status_matched": true,
+      "name": "observation_conditioned",
+      "process_peak_rss_bytes": 29163520,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "01a50606b27e46e9288a371f5ed1655b9ff4a904d166c8675608d62ca2238a9b",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "c9e22d72af4069a2aa91ec16a07c066158c019a16c0f14e5520e37e9464679c9",
+            "payload_sha256": "061e60f76795215b333279d9defccac685839fbfe658ef508dbbdd5ffa9400b4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "45435134337/1000000000000",
+                    "lo": "-11358783573/250000000000"
+                  },
+                  {
+                    "hi": "-2249477342103/50000000000",
+                    "lo": "-45010425073627/1000000000000"
+                  },
+                  {
+                    "hi": "504060819/500000000000",
+                    "lo": "-504060819/500000000000"
+                  },
+                  {
+                    "hi": "1008010457/1000000000000",
+                    "lo": "-1008010457/1000000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "fresh",
+                "range": "fresh"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 31,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "c9e22d72af4069a2aa91ec16a07c066158c019a16c0f14e5520e37e9464679c9",
+              "retained_packets": 2,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "updated"
+          },
+          "uncertainty_sha256": "22abf0994b1e4c0a91a382bffacc941ffd94fc3bcb9e0a981e28ad75b23515a4"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": true,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "96d993ea703d9df35a241275071d1aeb5a6d0a2796130233e495f84652dee6b3",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "1/50"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": true,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "061e60f76795215b333279d9defccac685839fbfe658ef508dbbdd5ffa9400b4",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 18167000,
+      "elapsed_ns": 18188500,
+      "expected_status_matched": true,
+      "name": "inconsistent_observation",
+      "process_peak_rss_bytes": 29163520,
+      "repetition": 0,
+      "result": {
+        "admission": {
+          "reasons": [
+            "binding_scope_or_check_mismatch"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "96052f1afb2f319f70292452e2fb149250563cefca5710c6a17a4c2b4ec80145",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "bf3da591a4c276929c1d20237714a72cca139a2aa64e3ccd65ac30009bf1485f",
+            "payload_sha256": "44474c4b5f36bc07ef482b60fded1e78883c0406164ef2f9e35dececa7520fee",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "unresolved",
+          "steps": 0,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "fresh",
+                "range": "fresh"
+              },
+              "coarsening_merges": 0,
+              "first_conflicting_packet": "example-range",
+              "hypotheses": [],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "interpretation": "data_or_model_inconsistent_not_absence_of_physical_state",
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 20,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 1,
+              "replayed_out_of_order": false,
+              "representation_cells": 0,
+              "retained_packet_identity": "bf3da591a4c276929c1d20237714a72cca139a2aa64e3ccd65ac30009bf1485f",
+              "retained_packets": 2,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "inconsistent_observations"
+          },
+          "uncertainty_sha256": "ea58384cda46bd7d623cc661cf6f927250806ff29828d131d1eb172f6a99c5dd"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "45f2bd7acd42e1dfe0cb45600da12ec562c3f5008f466452d9eae928fa3c34ac",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "44474c4b5f36bc07ef482b60fded1e78883c0406164ef2f9e35dececa7520fee",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "unresolved",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 30126000,
+      "elapsed_ns": 30150250,
+      "expected_status_matched": true,
+      "name": "bounded_proposal",
+      "process_peak_rss_bytes": 29212672,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": true,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "68204fe3a8b0ac2fbfe8a4bf3d12f9d4cc1e595325a6fdcbcdfc5122d9cd5526",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "1/50"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": true,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 30782000,
+      "elapsed_ns": 30938750,
+      "expected_status_matched": true,
+      "name": "zero_proposal",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "0"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "a1a81348e288e4989881ef286802f2b1331f92c0ebe64b1d487347c802f9891f",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "14f177f8a7b4ac7e78712c707861e72101c02f34b7e0e4250f025e42e8234ec6",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "a1a81348e288e4989881ef286802f2b1331f92c0ebe64b1d487347c802f9891f",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 29865000,
+      "elapsed_ns": 29891250,
+      "expected_status_matched": true,
+      "name": "late_check",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [
+            "late_or_pre_request"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "7e1766c9cb9b1d25a09ff9f05465b272cf0a1cdec9cc7663d7117f6920e39c7e",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "late",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 35606000,
+      "elapsed_ns": 37220333,
+      "expected_status_matched": true,
+      "name": "missed_window",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "49fcc5a5d8c4849c1ac06a5166f7c579fdcf4dfe0ece9a193bb683491127472a",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "2027471081/40000000000",
+                    "lo": "-2027471081/40000000000"
+                  },
+                  {
+                    "hi": "-1404666039329/31250000000",
+                    "lo": "-1407833960671/31250000000"
+                  },
+                  {
+                    "hi": "1008129681/1000000000000",
+                    "lo": "-1008129681/1000000000000"
+                  },
+                  {
+                    "hi": "201602183/200000000000",
+                    "lo": "-201602183/200000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "97394bd077346b4a2f3e4506c2debe8d8cff90eaacee52b70de7ef7747ab2d33"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "3ddfe3fc925d407258c674441aafcba1d0a600390dc0e1db527ae089d4ace228",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 715,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "f9d45ef00b54d19a52c9a3ef775707807a39f8e89b98ad605170a1a71f8394d4",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "missed_application_window",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 2903000,
+      "elapsed_ns": 3086833,
+      "expected_status_matched": true,
+      "name": "unsupported_assumptions",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "No protection claim",
+        "request_sha256": "1503692277a75434d33134aa4c0e252129d1d3a56c77cc2e18b33241c9e4e71e",
+        "schema": "kri-assurance-result/1",
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "assumptions_unavailable",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 18347000,
+      "elapsed_ns": 19108958,
+      "expected_status_matched": true,
+      "name": "excess_authority",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "ValueError",
+        "request_sha256": "bf1d6b96de1d649318081ba0b644e7886a381ac370876165db45483846edf0b0",
+        "schema": "kri-assurance-result/1",
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "unsupported_input",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 8774000,
+      "elapsed_ns": 9081792,
+      "expected_status_matched": true,
+      "name": "unsafe_entry",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [
+            "initial_protection_unavailable",
+            "binding_scope_or_check_mismatch"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "26d4f2637c01e68c4db4dd3cb155504a00727d72af1d241bb265b9d1f4e9be23",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "payload_sha256": "0ce9d91e1f4ea2408fba4ab5590558fce3a6db71200adc1b31a509f53df23e7d",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "unresolved",
+          "steps": 0,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "1736947011/200000000000",
+                    "lo": "-8470235061/1000000000000"
+                  },
+                  {
+                    "hi": "-7464730642307/250000000000",
+                    "lo": "-29876077517287/1000000000000"
+                  },
+                  {
+                    "hi": "49111103/125000000000",
+                    "lo": "40263891/125000000000"
+                  },
+                  {
+                    "hi": "62508778131/250000000000",
+                    "lo": "31245551947/125000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "missing",
+                "range": "missing"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 26,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "retained_packets": 0,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-8470235061/1000000000000",
+                "-29876077517287/1000000000000",
+                "40263891/125000000000",
+                "31245551947/125000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "1736947011/200000000000",
+                "-7464730642307/250000000000",
+                "49111103/125000000000",
+                "62508778131/250000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "prediction_only_missing_or_stale"
+          },
+          "uncertainty_sha256": "5e22a98ae306bc34bf4eec17a071dbd3797186c5cbde187693dfba60de51ae1b"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 0,
+          "initial_input_sha256": "9151c1f663e44a0c9afdbe68ffe25f535d750e0d9a066bc2d304ad180376bba5",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 3,
+          "valid": false
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "2380b48468d1b9e617be3fcb04f6e6914aef463b878fbd1ed61f4113a79ea0a6",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": false,
+          "expires_ms": 0,
+          "live_binding_sha256": "0ce9d91e1f4ea2408fba4ab5590558fce3a6db71200adc1b31a509f53df23e7d",
+          "mode": "uncredited_after_expiry_or_invalidation",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "uncredited_entry",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 2365000,
+      "elapsed_ns": 2565666,
+      "expected_status_matched": true,
+      "name": "incompatible_model",
+      "process_peak_rss_bytes": 29245440,
+      "repetition": 1,
+      "result": {
+        "candidate_applied_in_simulation": false,
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "ValueError",
+        "schema": "kri-assurance-result/1",
+        "status": "unsupported_input",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 39233000,
+      "elapsed_ns": 40210834,
+      "expected_status_matched": true,
+      "name": "observation_conditioned",
+      "process_peak_rss_bytes": 29261824,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [],
+          "scheduled": true
+        },
+        "candidate_applied_in_simulation": true,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "01a50606b27e46e9288a371f5ed1655b9ff4a904d166c8675608d62ca2238a9b",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "c9e22d72af4069a2aa91ec16a07c066158c019a16c0f14e5520e37e9464679c9",
+            "payload_sha256": "061e60f76795215b333279d9defccac685839fbfe658ef508dbbdd5ffa9400b4",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "checked_window_prefix",
+          "steps": 72,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [
+              {
+                "bounds": [
+                  {
+                    "hi": "45435134337/1000000000000",
+                    "lo": "-11358783573/250000000000"
+                  },
+                  {
+                    "hi": "-2249477342103/50000000000",
+                    "lo": "-45010425073627/1000000000000"
+                  },
+                  {
+                    "hi": "504060819/500000000000",
+                    "lo": "-504060819/500000000000"
+                  },
+                  {
+                    "hi": "1008010457/1000000000000",
+                    "lo": "-1008010457/1000000000000"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  {
+                    "hi": "0",
+                    "lo": "0"
+                  }
+                ],
+                "hypothesis": "no_bias"
+              }
+            ],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "fresh",
+                "range": "fresh"
+              },
+              "coarsening_merges": 0,
+              "hypotheses": [
+                "no_bias"
+              ],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 31,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 0,
+              "replayed_out_of_order": false,
+              "representation_cells": 1,
+              "retained_packet_identity": "c9e22d72af4069a2aa91ec16a07c066158c019a16c0f14e5520e37e9464679c9",
+              "retained_packets": 2,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "updated"
+          },
+          "uncertainty_sha256": "22abf0994b1e4c0a91a382bffacc941ffd94fc3bcb9e0a981e28ad75b23515a4"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": true,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "96d993ea703d9df35a241275071d1aeb5a6d0a2796130233e495f84652dee6b3",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "1/50"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": true,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "061e60f76795215b333279d9defccac685839fbfe658ef508dbbdd5ffa9400b4",
+          "mode": "checked_action",
+          "newly_applied": true,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "supported_prefix",
+        "transferable_authority": false
+      },
+      "warmup": false
+    },
+    {
+      "cpu_ns": 18934000,
+      "elapsed_ns": 18987125,
+      "expected_status_matched": true,
+      "name": "inconsistent_observation",
+      "process_peak_rss_bytes": 29278208,
+      "repetition": 1,
+      "result": {
+        "admission": {
+          "reasons": [
+            "binding_scope_or_check_mismatch"
+          ],
+          "scheduled": false
+        },
+        "candidate_applied_in_simulation": false,
+        "checked": {
+          "binding": {
+            "action": [
+              "0",
+              "1/50"
+            ],
+            "application_window_ms": [
+              700,
+              710
+            ],
+            "at_ms": 650,
+            "command_end_ms": 1200,
+            "expires_ms": 4200,
+            "history_sha256": "f02aa715ab3375b72aa348dd1e7eff7f0dafa00eba188754a8925209bdc69ae5",
+            "input_sha256": "96052f1afb2f319f70292452e2fb149250563cefca5710c6a17a4c2b4ec80145",
+            "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+            "observations_sha256": "bf3da591a4c276929c1d20237714a72cca139a2aa64e3ccd65ac30009bf1485f",
+            "payload_sha256": "44474c4b5f36bc07ef482b60fded1e78883c0406164ef2f9e35dececa7520fee",
+            "sensors_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+          },
+          "full_recovery": false,
+          "physical_validation": false,
+          "schema": "iaa-action-check/4",
+          "scope": "HCW_variable_start_fixed_end_three_second_coast",
+          "status": "unresolved",
+          "steps": 0,
+          "uncertainty": {
+            "at_ms": 650,
+            "cells": [],
+            "diagnostics": {
+              "bearing_degeneracy": false,
+              "bounds_origin": "assumed_simulation_contract_not_sensor_calibration",
+              "channel_status": {
+                "bearing": "fresh",
+                "range": "fresh"
+              },
+              "coarsening_merges": 0,
+              "first_conflicting_packet": "example-range",
+              "hypotheses": [],
+              "ignored_future": 0,
+              "ignored_invalid": 0,
+              "interpretation": "data_or_model_inconsistent_not_absence_of_physical_state",
+              "negative_use": "unsupported_outer_enclosure",
+              "operations": 20,
+              "packet_capacity_exhausted": false,
+              "rejected_hypothesis_cells": 1,
+              "replayed_out_of_order": false,
+              "representation_cells": 0,
+              "retained_packet_identity": "bf3da591a4c276929c1d20237714a72cca139a2aa64e3ccd65ac30009bf1485f",
+              "retained_packets": 2,
+              "sensor_contract_sha256": "cf37e13f305e481fef564f9f3fd68970f8eab51a309dc232b4f0d3b90d655242"
+            },
+            "prior_at_decision": {
+              "frame": "chief-centred-radial-alongtrack/1",
+              "lower": [
+                "-2027471081/40000000000",
+                "-1407833960671/31250000000",
+                "-1008129681/1000000000000",
+                "-201602183/200000000000"
+              ],
+              "units": [
+                "m",
+                "m",
+                "m/s",
+                "m/s"
+              ],
+              "upper": [
+                "2027471081/40000000000",
+                "-1404666039329/31250000000",
+                "1008129681/1000000000000",
+                "201602183/200000000000"
+              ]
+            },
+            "schema": "iaa-observation-set/2",
+            "scope": "outer_observation_consistency_only",
+            "status": "inconsistent_observations"
+          },
+          "uncertainty_sha256": "ea58384cda46bd7d623cc661cf6f927250806ff29828d131d1eb172f6a99c5dd"
+        },
+        "component_version": "0.1.0",
+        "conformance_claim": false,
+        "effective_change_from_coast": false,
+        "external_validation": false,
+        "full_recovery": false,
+        "initial_protection": {
+          "expires_ms": 4200,
+          "initial_input_sha256": "77e792b618461ba105c305f0735335cce1e9a008b0a40bc55683be33baeaa2c4",
+          "model_sha256": "f82d1a8d5541900cb82323876f27cd5df9a48a50b2012f435b4532ba3e26068a",
+          "offline_simulation_initialization": true,
+          "schema": "iaa-prearm/4",
+          "steps": 85,
+          "valid": true
+        },
+        "physical_actuation": false,
+        "realtime_claim": false,
+        "reason": "Conditional finite-model assessment; not a physical command",
+        "request_sha256": "45f2bd7acd42e1dfe0cb45600da12ec562c3f5008f466452d9eae928fa3c34ac",
+        "schema": "kri-assurance-result/1",
+        "simulated_output": {
+          "action": [
+            "0",
+            "0"
+          ],
+          "at_ms": 700,
+          "changed_from_coast": false,
+          "credited": true,
+          "expires_ms": 4200,
+          "live_binding_sha256": "44474c4b5f36bc07ef482b60fded1e78883c0406164ef2f9e35dececa7520fee",
+          "mode": "preloaded_finite_coast",
+          "newly_applied": false,
+          "physical_actuation": false
+        },
+        "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+        "status": "unresolved",
+        "transferable_authority": false
+      },
+      "warmup": false
+    }
+  ],
+  "schema": "kri-assurance-host/1",
+  "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+  "target_validation": false,
+  "timings_are_WCET": false
+}

@@ -62,3 +62,13 @@ under any schedule. Request avoidance did not establish an overall candidate
 advantage or lower total modeled cost; timing failures and outside-assumption
 outcomes remain explicit. The separate full numerical audit supports the stated
 simulation-level conclusions, not physical or real-time validation.
+
+## Installable finite-assurance assessment
+
+[SA06](information-aware-assurance-v1/sa06/README.md) packages observation
+reconstruction and finite-command assessment behind a versioned, installable
+interface. Another controller can submit an action for offline checking without
+altering the assurance core. This is a research diagnostic, not an improved or
+flight-ready controller. The negative SA05 finding and target-deadline limits
+remain explicit. Internal installation and external validation have separate
+statuses; see the separate implementation note and evidence-maturity record.

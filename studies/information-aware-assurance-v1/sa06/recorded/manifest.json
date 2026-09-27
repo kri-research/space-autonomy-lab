@@ -1,0 +1,20 @@
+{
+  "external_replication": false,
+  "files": {
+    "host.json": {
+      "bytes": 135784,
+      "sha256": "81d7edd1a44fd9fdf358af242758e96757dd4362a75ec8c03376127622260e1d"
+    },
+    "integration.json": {
+      "bytes": 899,
+      "sha256": "bc24783b3311d79f5b800e94e57e73629e51578bb5ac62c0c8fb08cf34ebf8c2"
+    },
+    "package-inventory.json": {
+      "bytes": 13566,
+      "sha256": "bb0680e66cf04c95b0b733b443a22e31f52723ff897dfad20b2c2ee548d14351"
+    }
+  },
+  "physical_validation": false,
+  "schema": "kri-sa06-record/1",
+  "source_commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44"
+}

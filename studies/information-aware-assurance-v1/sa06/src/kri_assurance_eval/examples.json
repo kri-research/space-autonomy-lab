@@ -1,0 +1,2382 @@
+[
+  {
+    "expected_status": "supported_prefix",
+    "name": "bounded_proposal",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "supported_prefix",
+    "name": "zero_proposal",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "0"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "late",
+    "name": "late_check",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 701
+    }
+  },
+  {
+    "expected_status": "missed_application_window",
+    "name": "missed_window",
+    "request": {
+      "apply_ms": 715,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "assumptions_unavailable",
+    "name": "unsupported_assumptions",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": false,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "unsupported_input",
+    "name": "excess_authority",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "1",
+        "0"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "uncredited_entry",
+    "name": "unsafe_entry",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/100000",
+            "-3003001/100000",
+            "-1/100000",
+            "24999/100000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/100000",
+            "-3002999/100000",
+            "1/100000",
+            "25001/100000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/100000",
+            "-3003001/100000",
+            "-1/100000",
+            "24999/100000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/100000",
+            "-3002999/100000",
+            "1/100000",
+            "25001/100000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "unsupported_input",
+    "name": "incompatible_model",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "supported_prefix",
+    "name": "observation_conditioned",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [
+          {
+            "acquired_ms": 250,
+            "available_ms": 290,
+            "channel": "range",
+            "frame": "chief-centred-radial-alongtrack/1",
+            "packet_id": "example-range",
+            "schema": "iaa-observation/1",
+            "sequence": 1,
+            "timestamp_uncertainty_ms": 2,
+            "unit": "m",
+            "value": 45.0
+          },
+          {
+            "acquired_ms": 250,
+            "available_ms": 320,
+            "channel": "bearing",
+            "frame": "chief-centred-radial-alongtrack/1",
+            "packet_id": "example-bearing",
+            "schema": "iaa-observation/1",
+            "sequence": 2,
+            "timestamp_uncertainty_ms": 2,
+            "unit": "rad",
+            "value": -1.5707963267948966
+          }
+        ],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  },
+  {
+    "expected_status": "unresolved",
+    "name": "inconsistent_observation",
+    "request": {
+      "apply_ms": 700,
+      "assumptions_supported": true,
+      "contract": {
+        "bounds_origin": "declared_not_physically_calibrated",
+        "component_version": "0.1.0",
+        "mode": "offline_simulation_assessment",
+        "model": {
+          "application_window_ms": [
+            700,
+            710
+          ],
+          "authority_mps2": "1/50",
+          "clock": "single_host_monotonic_relative_epoch",
+          "command_end_ms": 1200,
+          "disturbance_mps2": "1/100000",
+          "effectiveness": [
+            "4/5",
+            "1"
+          ],
+          "expires_ms": 4200,
+          "frame": "chief-centred-radial-alongtrack/1",
+          "id": "sa04-HCW-window/1",
+          "mean_motion_rad_s": "11/10000",
+          "obligation": "continuous_prefix_hold_and_finite_coast",
+          "physical_io": false
+        },
+        "schema": "kri-assurance-assessment/1"
+      },
+      "current_input": {
+        "at_ms": 650,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 200,
+            "start_ms": 100
+          },
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 650,
+            "start_ms": 200
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [
+          {
+            "acquired_ms": 250,
+            "available_ms": 290,
+            "channel": "range",
+            "frame": "chief-centred-radial-alongtrack/1",
+            "packet_id": "example-range",
+            "schema": "iaa-observation/1",
+            "sequence": 1,
+            "timestamp_uncertainty_ms": 2,
+            "unit": "m",
+            "value": 400.0
+          },
+          {
+            "acquired_ms": 250,
+            "available_ms": 320,
+            "channel": "bearing",
+            "frame": "chief-centred-radial-alongtrack/1",
+            "packet_id": "example-bearing",
+            "schema": "iaa-observation/1",
+            "sequence": 2,
+            "timestamp_uncertainty_ms": 2,
+            "unit": "rad",
+            "value": -1.5707963267948966
+          }
+        ],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "initial_input": {
+        "at_ms": 100,
+        "history": [
+          {
+            "action": [
+              "0",
+              "0"
+            ],
+            "end_ms": 100,
+            "start_ms": 0
+          }
+        ],
+        "initial": {
+          "frame": "chief-centred-radial-alongtrack/1",
+          "lower": [
+            "-1/20",
+            "-901/20",
+            "-1/1000",
+            "-1/1000"
+          ],
+          "units": [
+            "m",
+            "m",
+            "m/s",
+            "m/s"
+          ],
+          "upper": [
+            "1/20",
+            "-899/20",
+            "1/1000",
+            "1/1000"
+          ]
+        },
+        "packets": [],
+        "queued_action": [
+          "0",
+          "0"
+        ],
+        "sensors": {
+          "bearing_error_rad": "1/1000",
+          "fresh_age_ms": 600,
+          "hypotheses": [
+            {
+              "active_window_ms": null,
+              "biases": [
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                },
+                {
+                  "hi": "0",
+                  "lo": "0"
+                }
+              ],
+              "label": "no_bias"
+            }
+          ],
+          "initial_splits": 0,
+          "max_cells": 16,
+          "max_horizon_ms": 30000,
+          "max_operations": 100000,
+          "max_packets": 128,
+          "max_timestamp_uncertainty_ms": 2,
+          "range_error_m": "1/100",
+          "schema": "iaa-sensor-contract/2"
+        },
+        "timing": {
+          "acquire_ms": 250,
+          "apply_ms": 700,
+          "bearing_delay_ms": 70,
+          "first_apply_ms": 200,
+          "hold_ms": 500,
+          "now_ms": 100,
+          "planner_model_ms": 50,
+          "processing_ms": 50,
+          "range_delay_ms": 40,
+          "request_lead_ms": 100,
+          "reserve_ms": 3000,
+          "timestamp_ms": 2
+        }
+      },
+      "proposed_action": [
+        "0",
+        "1/50"
+      ],
+      "ready_ms": 675
+    }
+  }
+]

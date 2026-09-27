@@ -1,0 +1,12 @@
+{
+  "schema": "kri-sa06-evidence-maturity/1",
+  "target_processor_measurements": "pending_verified_access_and_procedure",
+  "physical_trials": "pending_trial_permission_operator_rig_metrology",
+  "independent_external_integration": "pending_actual_team_and_received_report",
+  "calibrated_sensor_bounds": "not_supplied",
+  "electrical_energy_measurements": "not_performed",
+  "host_computer_scope": "originating_development_host_only",
+  "inspection_scope": "phase_records_connected_device_inventory_and_scoped_authorized_correspondence",
+  "external_result_provenance_verified": false,
+  "overall_stage_without_external_evidence": "partially_complete"
+}
