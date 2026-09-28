@@ -1,0 +1,377 @@
+{
+  "component_version": "0.1.1",
+  "correction_sources": {
+    ".github/workflows/post-audit-corrections.yml": {
+      "blob": "281750bfc8f90a79f068238580da460c03f17c54",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "e7b5129ba2c436b50e5fbba255d22ad54d6287e556e6ba6c9c00d7500a860a92"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/CORRECTIONS.md": {
+      "blob": "b6d6850d9c2384375fec657f68e7037fe91e20a9",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "3bf894af9feec8bc480cb7934ffd103ec99e71efd55dded87b5b14313a90e0f2"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/README.md": {
+      "blob": "32ce938b36633ab3b1a4e76693ea08fec6d7467e",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "e7927af91e82ab2af4ad4421871afa4aed84b0ff887d5b8f7b771d40533e1f8d"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/SOURCES.md": {
+      "blob": "fe3357418824f8172072488b735ae18bc3637669",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "1e6910c6784a50bd4e93eb5e520c8524028d4c168229111ada0b737cbaec86fa"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/__init__.py": {
+      "blob": "829774575c76060462f08914f85e0a985894a6b4",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "dc82fc0313452c5b3cfafe802c60ee2ca9e54f9b4d02455efb385811d07a71c2"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/assemble.py": {
+      "blob": "21c5531cd5b590ea02a9f4c065bab22f97d52c2b",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "e6b869ac5d210b53fedfc9eeea30bf09d9e943ba7e1fcfd46c847891e8ff41e1"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/numeric.py": {
+      "blob": "7753d4482e0bd80e657bd1059a9c0f692391daed",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "a6f4f5038369a1c4c274656b374dd70d9672444b1ea9747013540b08703c4042"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/patches.py": {
+      "blob": "be3a1a9b9287b2ae24e011dfd7b036ca4e37ce67",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "b0b0826870393180d58d9ce2d0dc151a1ca85c9549214201f1004395404cf6fc"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/probes.py": {
+      "blob": "7435cf25ee29a5eaecde085fcf377feb6dbafe29",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "eef26d4a1ef1947affd7ae2a64470d606223214dbceb99ceaf91a74771e673e7"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/tests/conftest.py": {
+      "blob": "41128653e0653ef1b16589cf8eb4bd07699ca45a",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "5001cb9d0b0c81b04730e92503bef32b2711ad38cbb6be19e48ca5ed459c2d31"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/tests/test_attainability.py": {
+      "blob": "b6225a7d8fffe56f9b48bdac05a2f677877abad9",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "d8124bf829ca313c209db87d452cb998df47084673883c383e690b90ab1b46e8"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/tests/test_availability_correction.py": {
+      "blob": "86dd8f5c4254f95e02628fb14f400dab000d974b",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "40b15f947b88cb4c8bb13a9b31305e37a1f9d69c7ca909346b75f57ce60216c2"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/tests/test_ci_correction.py": {
+      "blob": "d4bced4416876d0a4c1212c7005706191f432e51",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "e8c8a25c0c055b5da527e73380e4a37d6bdc7205085f079f6637804a907d5310"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/tests/test_evidence_correction.py": {
+      "blob": "5c29f1a681196099e2e0c5195e69f440f3810d0c",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "7b2ff7e5c96b02ea6091cac9c429383dcf8b39af08bccf5570e389b06cb10d6e"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/tests/test_numeric_correction.py": {
+      "blob": "060b765c3f30ed88abb3338e57092da523f99ac6",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "22c973d96a40184c33f478b0ac259c11f8af09f7ffac6358f72097d13f10cce6"
+    },
+    "studies/information-aware-assurance-v1/post_audit_v1/verify.py": {
+      "blob": "070b312657356f336cacdcdfffab7afc61ec2935",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "0170d0ad25d0ffbddf117dcd4370df49c634f0835a7e6be19f60fcbc6cba11de"
+    },
+    "studies/information-aware-assurance-v1/sa05/posthoc_attainability_v1/README.md": {
+      "blob": "2623a238e0279f648dfc52c67fa55f377d7346c1",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "90cd58cd8b64e95a0ee5aa672806f4a2992015b6aef8b47201b9612dc6feb3c3"
+    },
+    "studies/information-aware-assurance-v1/sa05/posthoc_attainability_v1/__init__.py": {
+      "blob": "de7eb1d0858f42e8d479c85dd12a4ab2688bab6e",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "e97f1dd6353643a84dcd1a4fb3ae9cc48524f74e8c2b65152199c1b7edf81487"
+    },
+    "studies/information-aware-assurance-v1/sa05/posthoc_attainability_v1/audit.py": {
+      "blob": "d830f028cb4634579a217bc71f1ba98c342af95c",
+      "commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+      "mode": "100644",
+      "sha256": "115919f8c6616e13d53458acd5dfacc2de0e054a3e1ace57b3e340516efe62bc"
+    }
+  },
+  "corrections": {
+    "__init__.py": {
+      "after": "92f5409255b948831426059c3f50febd8d899aadbf0563d650ac16974d289a1e",
+      "before": "b44eae845cf880de76094da5d87e644290902b1a0fbd600e3596e327f0db0abc"
+    },
+    "_numeric.py": {
+      "after": "a6f4f5038369a1c4c274656b374dd70d9672444b1ea9747013540b08703c4042",
+      "before": null
+    },
+    "_vendor/iaa/types.py": {
+      "after": "25283ee63ca840187d3ce02e180b250f5ed094ce2392aec7ee0ba0fd0afa6c14",
+      "before": "d731d3a237236a5840249b65b74af7439096039df6ba09b69df8069ab3c5b1ce"
+    },
+    "_vendor/sa02/estimator.py": {
+      "after": "f68e66470cb2b2585b031ed6fe373b813294f4e5e65c2430030bc1722d53c49a",
+      "before": "4779ace9af3117022ed2f27be11e6aead71e5d010ffc9cbc2bbff34d04d06d7a"
+    },
+    "api.py": {
+      "after": "429ff9efb52da6a449889f1d7e985ad0ffbde9fca6cbe5efcbaf03c015b075ee",
+      "before": "2577ddc9d99acf01ab07133e0603965cec091aad5c0dab78f16afd36ecded238"
+    },
+    "examples.json": {
+      "after": "254ef8ea40f2a76b648258f7dd117bce7f71d913d0784e6d4d0ffaf549cad6fb",
+      "before": "9a7da67bf3c7eeefd0b406959abb2a29a28e3a23c157543f0d3ad5ee40de09e7"
+    }
+  },
+  "development_build": false,
+  "external_replication": false,
+  "inherited_commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+  "inherited_component_source": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+  "new_scientific_campaign": false,
+  "package_files": {
+    "__init__.py": "92f5409255b948831426059c3f50febd8d899aadbf0563d650ac16974d289a1e",
+    "_numeric.py": "a6f4f5038369a1c4c274656b374dd70d9672444b1ea9747013540b08703c4042",
+    "_vendor/__init__.py": "359be910dfe46b831614c0b3283374c94986c3ca89c0ac57cf4bdfbe958faaf1",
+    "_vendor/iaa/__init__.py": "3f91ef18604833bfc97333835125b5c2faf42426dce1b1c6c1e0fc286a9dbcad",
+    "_vendor/iaa/assurance.py": "96308a29b9b3dc723e393a018ad16e9ca7ba74bf8e6294e9bbee224825972c34",
+    "_vendor/iaa/enclosure.py": "df58e5f6f772bd7e1d2affe68df375fc3b640919e09444a25d9dba5bd3c384a7",
+    "_vendor/iaa/types.py": "25283ee63ca840187d3ce02e180b250f5ed094ce2392aec7ee0ba0fd0afa6c14",
+    "_vendor/sa02/__init__.py": "ba13cbdee20bb8d745327e906c7bd045a99dc26eff99209bc0b0e80022d55660",
+    "_vendor/sa02/bridge.py": "31382898732734bb182973291d8cf2e87adaf17e6301edacf8c03de74434b609",
+    "_vendor/sa02/estimator.py": "f68e66470cb2b2585b031ed6fe373b813294f4e5e65c2430030bc1722d53c49a",
+    "_vendor/sa02/intervals.py": "3758d19fabf78644f21ee8ea807d2ca0d1b88395e08c01d33df437d18268d2dc",
+    "_vendor/sa02/model.py": "5774941838c3836ced544b8784c96ba49238367df99182d75ab1c91d720ee040",
+    "_vendor/sa03/__init__.py": "185a7d4aa802d54aa286ee1d605ad924ea03e88522f68c2c89beea70fd2fb0b2",
+    "_vendor/sa03/forecast.py": "524441ff6a2126340f853de573fe047648bd0486235fbaddf4c47b4cfbb83409",
+    "_vendor/sa03/model.py": "173424cf2379bc718f6481b4e6d7c2d0483104ffb6c797169ab9ef7e58dc3431",
+    "_vendor/sa03/policy.py": "1bf86e4e632cc23c9d30a6a12d931b27806c995895601c87df0f715c5a1dc2a6",
+    "_vendor/sa04/__init__.py": "d695914439212fd3b3b95d8446f4ab308c44a64a98273a470765d20d89ce06e4",
+    "_vendor/sa04/compute.py": "18d857573c21192fe43da39aa7878098354a3c2fbcc42d3767bbb669c2095670",
+    "_vendor/sa04/gate.py": "e5d7ab95d76e328172733cf2be476b335edde147da29a20e0393caf3578c6804",
+    "_vendor/sa04/legacy.py": "48f4f289bfa0ab2f6784da098a470655159cbe7a435af7cacc648b1242d2a5fb",
+    "_vendor/sa04/legacy_protocol.py": "487b6777a9f9e23ce39e7b8c428d162f752dec35548545c056897f64c683358c",
+    "_vendor/sa04/wire.py": "05434422bac69d3a88147287a572c0562a9f249f0068a3825c973ee438815397",
+    "api.py": "429ff9efb52da6a449889f1d7e985ad0ffbde9fca6cbe5efcbaf03c015b075ee",
+    "benchmark.py": "8fdac937aff6984d8ac08540c2f3054da80c62ca71c47ee3c40441bd40bc5b3a",
+    "cli.py": "06b149e41f5532300a13240ee0fc9e788acd621f453593a0a92876e4e52bbde2",
+    "examples.json": "254ef8ea40f2a76b648258f7dd117bce7f71d913d0784e6d4d0ffaf549cad6fb",
+    "examples.py": "f9fe370721b98200a488db41707f3472ab7c781ae3e08b77cf26b2154a7d5ec9",
+    "integrity.py": "e4565aaec9e5cabc64b9b767ebf478093d6c1151769b07d4814e7eb70c4ddeb6"
+  },
+  "physical_validation": false,
+  "reviewed_revision": "cc93a5ce725f7a736d4837b1178b5725962ff28f",
+  "schema": "kri-assurance-build/1",
+  "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+  "sources": {
+    "LICENSE": {
+      "blob": "fa126b3d727ba565fbdf1cecbd9565f54f299405",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "78a3dd6ebb589de657702510df20054afd8ed2182e98cd006fcac701d97aee28"
+    },
+    "studies/information-aware-assurance-v1/iaa/__init__.py": {
+      "blob": "96ba088db9fa3c35687f6dcd85122331bab75a85",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "22f4b7235499ff18083ef35ccb222ba9c7f1252ff2a217b687d760ccf856adc8"
+    },
+    "studies/information-aware-assurance-v1/iaa/assurance.py": {
+      "blob": "5b773434a2f755e94d4e9ab5c50edca5aa2c6977",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "b88f1c3f303f82170f7f55a31a6e5747583c0312aab8ea0a9ceeefab64117fda"
+    },
+    "studies/information-aware-assurance-v1/iaa/enclosure.py": {
+      "blob": "75805554b35dcf15ab6201664b141e71525b484f",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "32072a5fe74ce99682a0228363acc3d3320bb5700b2facc4659e3c57a0eecb24"
+    },
+    "studies/information-aware-assurance-v1/iaa/types.py": {
+      "blob": "1359d1a1e73191d1182573f00d71dfe6a13876ad",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "2894fd748b7386c350f111ac4bbb7944e4bb17e6579eceada27eea0a74dd89f5"
+    },
+    "studies/information-aware-assurance-v1/sa02/__init__.py": {
+      "blob": "f31d556fd211c7ecebccee3e25ba5974ce5ede2e",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "f0048c427c70f5796101930cdcf1beb928472b09ef5b14a4f7e7337d78cef167"
+    },
+    "studies/information-aware-assurance-v1/sa02/bridge.py": {
+      "blob": "ca8e728a33a5886394d9b0efe5fca835ae7f1feb",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "c9ed4128a4ec74568690fdf6ff618b857b5a1300abaf774a3e6c7ebf24d734c7"
+    },
+    "studies/information-aware-assurance-v1/sa02/estimator.py": {
+      "blob": "84a07ed26270431dbb3c1cc0c9ee503dfdd34389",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "89d31f86affcb13b5e23f33374988b25dfd15139605208559939cfa2f3f2be24"
+    },
+    "studies/information-aware-assurance-v1/sa02/intervals.py": {
+      "blob": "2e46c2df644ab24766c5b08fc986986a0c89a921",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "b5d6fd061615d451ae7b1808e7588eb3ad6522a1e8a25f6dfe665774929a1f33"
+    },
+    "studies/information-aware-assurance-v1/sa02/model.py": {
+      "blob": "be83fab38e5e29fa7e3d1650226d1f356c019207",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "29aacb8b99bc7aa4b86e4efc655cbec3a134fc3655b49167a067dbe55d639973"
+    },
+    "studies/information-aware-assurance-v1/sa03/__init__.py": {
+      "blob": "75d8c22214ae03c899a2471d25219a2e90929993",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "fcb7d3d15701033e225f74e53bc3bef6612a68aacec732f1db5a88d453f6d04e"
+    },
+    "studies/information-aware-assurance-v1/sa03/forecast.py": {
+      "blob": "cdfba0d2469d9aea27b5d98cb78f4926e5d435c9",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "57ee7c54c82e49e81c8858d3bbffcdcf32edee7adc100422224b1698a0ee34ee"
+    },
+    "studies/information-aware-assurance-v1/sa03/model.py": {
+      "blob": "9626caf696028c37e134a6374b87d3800dc8a710",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "1b210c18bc6ee1f0ff33a80cf99d9c5bf88beaad5c98259b906bd8351025e51c"
+    },
+    "studies/information-aware-assurance-v1/sa03/policy.py": {
+      "blob": "3782a87cb5e496875247448f30cd4b85b760fb04",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "17a09deff6e84d013f146e5ef7003162ac951b99f4c670dbd178650570a99123"
+    },
+    "studies/information-aware-assurance-v1/sa04/__init__.py": {
+      "blob": "f5a536180b6c7ecc68e14c379e81006d77554985",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "3b711a9fa2f7155c6701e2cdfb37d93f579b577968cdd22703c29c3279c5be0f"
+    },
+    "studies/information-aware-assurance-v1/sa04/compute.py": {
+      "blob": "21409cc835ff32817581d87c441d9d3ca33f35aa",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "c6c0c3104d90e75de610810cc4f4d3a4d2e916b41dbe91699f33c3de8f09d4f0"
+    },
+    "studies/information-aware-assurance-v1/sa04/gate.py": {
+      "blob": "252c486cfa4e68f324370276c6b1c73f55777355",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "78c75d46d4c57100c409c2b3e67c23b7e4b108a15b85e7c4612112ea7fc47613"
+    },
+    "studies/information-aware-assurance-v1/sa04/wire.py": {
+      "blob": "d2d2da98169990814885ceb47cbd35056dc6256c",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "8b2c0af85164df64be1fcee4d6c3e41a780d05f24af74c41285b695c1ef533f2"
+    },
+    "studies/information-aware-assurance-v1/sa06/EXTERNAL_VALIDATION.md": {
+      "blob": "cc86e381a68939db15c8e7800996b4ebcd12af8c",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "cbf7160e928afeceaaef9afe453bc647db174e21e61852712f1c82eb0f02d127"
+    },
+    "studies/information-aware-assurance-v1/sa06/IMPLEMENTATION_NOTE.md": {
+      "blob": "c410094ee6c5a1620a6b3774504082de2e97e2a8",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "8b8fb574bb04371f8f35ba6b0c3210dc0d0653a5436a5eef1fcae9655ec3c768"
+    },
+    "studies/information-aware-assurance-v1/sa06/INTERFACE.md": {
+      "blob": "9da02baa654daad3609789b0d56c4aaf2c41da9a",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "b52a793dedfaef97f4766fb260c77e4ba4af0ac676c4bd3c8e6faf9e6a8621cd"
+    },
+    "studies/information-aware-assurance-v1/sa06/README.md": {
+      "blob": "54f2ae5373fd57e95925e14f04ee7e03ceec3854",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "7286a1eeb30f599c0cb7892fe0840b4e97650ef6eb3138053951da196acbe6ed"
+    },
+    "studies/information-aware-assurance-v1/sa06/assemble.py": {
+      "blob": "ca261a06253de303e80d0de1316971b4aa1a14a9",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "6a7397fc9b6001cda431d66523566b54108839665b921bf0d353c5446cb9b29a"
+    },
+    "studies/information-aware-assurance-v1/sa06/examples/controller_adapter.py": {
+      "blob": "54d9fb78754c7ae5253934922f70113be9a95ad4",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "db06f93bc99de0ace4fd9087f1a0a03efa639621c7d31e1ab2c104037d2696fa"
+    },
+    "studies/information-aware-assurance-v1/sa06/external-evidence.json": {
+      "blob": "e794dacb61434fb19cc973f6b9c081050db2446d",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "09cb27d752b370fcd96826173ed61e9b3b980e2eab9559c29649a31c4817380e"
+    },
+    "studies/information-aware-assurance-v1/sa06/packaging.toml": {
+      "blob": "2a40052bef88ed477c0d819ee344548d3fdcf430",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "4e41e17bc62f2fbb7f231879f00d117ae7cbd3638bfc5d841298d5b3e3d91b16"
+    },
+    "studies/information-aware-assurance-v1/sa06/related-work.md": {
+      "blob": "43e524acf8a1433be296f270f78e6195c499d5c3",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "d092be1a9a133728ad6be7566b46566527f9024694e04b7f9ce7451b758428f6"
+    },
+    "studies/information-aware-assurance-v1/sa06/requirements-build.lock": {
+      "blob": "40b8185de66be871ec2960d379906d84a154c37e",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "a9df5ae05223aa6fdb0095125ad0af4ba28d5ba0312bd522a3918c99c22cf5cc"
+    },
+    "studies/information-aware-assurance-v1/sa06/source-map.json": {
+      "blob": "01a3814eb0f819f0cf2052afc357a4b9215e85e9",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "0b038ca907c50311c562c6c14f105b3c9a10f43531b539756b91de290e3dc1d6"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/__init__.py": {
+      "blob": "d502451d3f2ac46b912e7c126634e1757cf6ecc1",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "b44eae845cf880de76094da5d87e644290902b1a0fbd600e3596e327f0db0abc"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/api.py": {
+      "blob": "128b53ed9f981c4e006100289ffd0f4ee159e982",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "2577ddc9d99acf01ab07133e0603965cec091aad5c0dab78f16afd36ecded238"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/benchmark.py": {
+      "blob": "9e40e714a2055ef9f540a5b524aa280b1ffe3043",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "8fdac937aff6984d8ac08540c2f3054da80c62ca71c47ee3c40441bd40bc5b3a"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/cli.py": {
+      "blob": "96e1e0717e014bfbf4a979a771192b543fec46bb",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "06b149e41f5532300a13240ee0fc9e788acd621f453593a0a92876e4e52bbde2"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/examples.json": {
+      "blob": "f94a62a99d73d4d5d4071412a7d5798879468515",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "9a7da67bf3c7eeefd0b406959abb2a29a28e3a23c157543f0d3ad5ee40de09e7"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/examples.py": {
+      "blob": "9d22549d2439326146fe33862c9ad5d8ef570808",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "f9fe370721b98200a488db41707f3472ab7c781ae3e08b77cf26b2154a7d5ec9"
+    },
+    "studies/information-aware-assurance-v1/sa06/src/kri_assurance_eval/integrity.py": {
+      "blob": "ba2ac15f891218e7e3fe249e875f37b330be75ba",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "e4565aaec9e5cabc64b9b767ebf478093d6c1151769b07d4814e7eb70c4ddeb6"
+    },
+    "studies/information-aware-assurance-v1/sa06/vendor-sources.json": {
+      "blob": "589ed9251384db3e2d8efa5514df7a097652d0c4",
+      "commit": "50003cb0511265afbe7c2f368d9fb19100ee4d44",
+      "sha256": "b37e4b7d19bc2cfdcf32ca37a3d63a3d2984a65a6c1dd1f704e1f773d7a44293"
+    },
+    "studies/property-alignment-v1/execution_validation_v1/protocol.py": {
+      "blob": "fe88d42618f95d41516e6795cef20d9381cbb43a",
+      "commit": "16744cd7e14ae1a6c569231539635346a10b5e5b",
+      "sha256": "487b6777a9f9e23ce39e7b8c428d162f752dec35548545c056897f64c683358c"
+    }
+  },
+  "transformation": "Original namespace relocation plus A1/C1 corrections and version change"
+}

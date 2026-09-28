@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-28T08:09:10.756860+00:00",
+  "derived_sha256": "1f7a4a1eab87bbe84450dceb988adcdde9fe7f1f71e98a99ea1b30b0f8af8684",
+  "files": {
+    "integration.json": {
+      "bytes": 7596,
+      "sha256": "7ffeb389a6735e3448467421c6fef2506ec91c574e10c9ce266704d59d961825"
+    },
+    "package-inventory.json": {
+      "bytes": 20624,
+      "sha256": "fa31897cec33d236a01200ce59b4a353f45220333e3781c6eb72379b55754033"
+    },
+    "probes.json": {
+      "bytes": 114841,
+      "sha256": "3efda41d751709585901960eb28a2264ebe9eda1dc41ad94d214e55b6a769e2c"
+    }
+  },
+  "new_scientific_campaign": false,
+  "original_sa05_manifest_sha256": "634b3e3343f579802ddaff38c2c6cc9faba99999ff4e06b8ce294461959abee8",
+  "physical_validation": false,
+  "schema": "kri-post-audit-evidence/1",
+  "source_commit": "88888f7fb29e3784681832f450b15de92484a47d"
+}
