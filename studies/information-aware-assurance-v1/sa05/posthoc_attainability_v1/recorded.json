@@ -1,0 +1,2159 @@
+{
+  "analysis_date": "2026-09-28",
+  "checked_in_model_units": 96,
+  "checks": [
+    {
+      "coordinate_gaps_m": [
+        "994829/2000000",
+        "6885575573/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-2754097/3125000",
+          "-1694829/2000000"
+        ],
+        [
+          "-229673609/5000000",
+          "-57323075573/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "6885575573/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-000"
+    },
+    {
+      "coordinate_gaps_m": [
+        "6843/62500",
+        "619229/2500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "14359/31250",
+          "1301458367/2500000000"
+        ],
+        [
+          "-101681780013/2500000000",
+          "-101494229/2500000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "619229/2500000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-001"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "2846871567/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-56975859/1250000000",
+          "160743/5000000"
+        ],
+        [
+          "-207857801/5000000",
+          "-103721871567/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "2846871567/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-002"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1172211/25000000",
+          "51991/500000"
+        ],
+        [
+          "-403488327/10000000",
+          "-20152376917/500000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-003"
+    },
+    {
+      "coordinate_gaps_m": [
+        "292207/1000000",
+        "5262026213/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "642207/1000000",
+          "1748313913/2500000000"
+        ],
+        [
+          "-93862973787/2500000000",
+          "-187285991/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "5262026213/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-004"
+    },
+    {
+      "coordinate_gaps_m": [
+        "29087473/156250000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "83774973/156250000",
+          "88043497/156250000"
+        ],
+        [
+          "-99616590101/2500000000",
+          "-99548293717/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "29087473/156250000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-005"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "74343/1000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "11/200000",
+          "259328543/2500000000"
+        ],
+        [
+          "-101269801137/2500000000",
+          "-40424343/1000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "74343/1000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-006"
+    },
+    {
+      "coordinate_gaps_m": [
+        "4468653/5000000",
+        "35396361/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "6218653/5000000",
+          "1638775911/1250000000"
+        ],
+        [
+          "-361103639/10000000",
+          "-90153502629/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "35396361/10000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-007"
+    },
+    {
+      "coordinate_gaps_m": [
+        "2435824953/2500000000",
+        "51515351/39062500"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-3436953/2500000",
+          "-3310824953/2500000000"
+        ],
+        [
+          "-41750889/1000000",
+          "-813843613/19531250"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "51515351/39062500",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-008"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "276243493/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "685887/2000000",
+          "1080493003/2500000000"
+        ],
+        [
+          "-98848756507/2500000000",
+          "-197359163/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "276243493/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-009"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "2952689/10000000",
+          "180288531/500000000"
+        ],
+        [
+          "-99997419909/2500000000",
+          "-3997164941/100000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-010"
+    },
+    {
+      "coordinate_gaps_m": [
+        "141153/312500",
+        "119347539/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "62632/78125",
+          "2094093759/2500000000"
+        ],
+        [
+          "-101182391/2500000",
+          "-100994347539/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "141153/312500",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-011"
+    },
+    {
+      "coordinate_gaps_m": [
+        "2821947/5000000",
+        "2124792573/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1234851089/1250000000",
+          "-4571947/5000000"
+        ],
+        [
+          "-105362489/2500000",
+          "-52562292573/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "2124792573/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-012"
+    },
+    {
+      "coordinate_gaps_m": [
+        "115263/400000",
+        "85040651/312500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-345939439/500000000",
+          "-255263/400000"
+        ],
+        [
+          "-12305584349/312500000",
+          "-12297047301/312500000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "115263/400000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-013"
+    },
+    {
+      "coordinate_gaps_m": [
+        "545233/625000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1583713577/1250000000",
+          "-763983/625000"
+        ],
+        [
+          "-20041206417/500000000",
+          "-399914543/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "545233/625000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-014"
+    },
+    {
+      "coordinate_gaps_m": [
+        "3681994603/2500000000",
+        "2401845737/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "4556994603/2500000000",
+          "1912063/1000000"
+        ],
+        [
+          "-206710933/5000000",
+          "-103276845737/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "3681994603/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-015"
+    },
+    {
+      "coordinate_gaps_m": [
+        "2871896193/2500000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-3815192577/2500000000",
+          "-3746896193/2500000000"
+        ],
+        [
+          "-100299881309/2500000000",
+          "-40053101/1000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "2871896193/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-016"
+    },
+    {
+      "coordinate_gaps_m": [
+        "4446917/125000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-611043/1250000",
+          "-48196917/125000000"
+        ],
+        [
+          "-400918717/10000000",
+          "-25018398283/625000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "4446917/125000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-017"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "1326062513/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-140917/1000000",
+          "-28429483/625000000"
+        ],
+        [
+          "-51882129/1250000",
+          "-51763562513/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1326062513/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-018"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-2811147/10000000",
+          "-115329801/625000000"
+        ],
+        [
+          "-24929862419/625000000",
+          "-39787931/1000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-019"
+    },
+    {
+      "coordinate_gaps_m": [
+        "408051611/2500000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-559961/1000000",
+          "-1283051611/2500000000"
+        ],
+        [
+          "-793938729/20000000",
+          "-7932527/200000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "408051611/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-020"
+    },
+    {
+      "coordinate_gaps_m": [
+        "122210921/312500000",
+        "6407289/5000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1981073/2500000",
+          "-231585921/312500000"
+        ],
+        [
+          "-52134777231/1250000000",
+          "-208157289/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "6407289/5000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-021"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "9854691/500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-129681417/625000000",
+          "-112607321/625000000"
+        ],
+        [
+          "-19815145309/500000000",
+          "-99007430161/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "9854691/500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-022"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "22498661/125000000",
+          "355083/1250000"
+        ],
+        [
+          "-100263743/2500000",
+          "-50046725653/1250000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-023"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "583033/31250000",
+          "538151/5000000"
+        ],
+        [
+          "-399071407/10000000",
+          "-49816841599/1250000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-024"
+    },
+    {
+      "coordinate_gaps_m": [
+        "29043307/156250000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "83730807/156250000",
+          "311153/500000"
+        ],
+        [
+          "-100899734989/2500000000",
+          "-20166287721/500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "29043307/156250000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-025"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "432656991/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-196207887/625000000",
+          "-2301279/10000000"
+        ],
+        [
+          "-50904305183/1250000000",
+          "-50870156991/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "432656991/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-026"
+    },
+    {
+      "coordinate_gaps_m": [
+        "587648609/500000000",
+        "4335667/1000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "762648609/500000000",
+          "3881539429/2500000000"
+        ],
+        [
+          "-111842609947/2500000000",
+          "-44685667/1000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "4335667/1000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-027"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "164492821/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-155544629/2500000000",
+          "38659/5000000"
+        ],
+        [
+          "-98960507179/2500000000",
+          "-197444457/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "164492821/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-028"
+    },
+    {
+      "coordinate_gaps_m": [
+        "241580451/625000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "460330451/625000000",
+          "1020831/1250000"
+        ],
+        [
+          "-199186139/5000000",
+          "-19884326297/500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "241580451/625000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-029"
+    },
+    {
+      "coordinate_gaps_m": [
+        "151915741/2500000000",
+        "452517/1250000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-8761697/20000000",
+          "-1026915741/2500000000"
+        ],
+        [
+          "-49109983/1250000",
+          "-382870151/9765625"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "452517/1250000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-030"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1400369451/2500000000",
+        "1503003591/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-468733167/500000000",
+          "-2275369451/2500000000"
+        ],
+        [
+          "-410172449/10000000",
+          "-102378003591/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1503003591/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-031"
+    },
+    {
+      "coordinate_gaps_m": [
+        "436089/1000000",
+        "5843776921/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "786089/1000000",
+          "40928701/50000000"
+        ],
+        [
+          "-106855431/2500000",
+          "-106718776921/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "5843776921/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-032"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "1170644151/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-32688419/250000000",
+          "-272911/5000000"
+        ],
+        [
+          "-20422788107/500000000",
+          "-102045644151/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1170644151/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-033"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "949672211/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-11385697/2500000000",
+          "211613/5000000"
+        ],
+        [
+          "-51421320403/1250000000",
+          "-51387172211/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "949672211/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-034"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "4847677/1000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "13552621/2500000000",
+          "517043/5000000"
+        ],
+        [
+          "-28304814943/625000000",
+          "-45197677/1000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "4847677/1000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-035"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "452263/2500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1596923/5000000",
+          "-585092981/2500000000"
+        ],
+        [
+          "-50762736171/1250000000",
+          "-101327263/2500000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "452263/2500000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-036"
+    },
+    {
+      "coordinate_gaps_m": [
+        "97600361/312500000",
+        "624075261/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1864177/2500000",
+          "-206975361/312500000"
+        ],
+        [
+          "-101630923/2500000",
+          "-101499075261/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "97600361/312500000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-037"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "370503807/2500000000",
+          "878397/5000000"
+        ],
+        [
+          "-795970327/20000000",
+          "-99401333/2500000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-038"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "660883/5000000",
+          "453059667/2500000000"
+        ],
+        [
+          "-200950571/5000000",
+          "-100308174533/2500000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-039"
+    },
+    {
+      "coordinate_gaps_m": [
+        "3256287251/2500000000",
+        "10285139/5000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-17356653/10000000",
+          "-4131287251/2500000000"
+        ],
+        [
+          "-187964861/5000000",
+          "-93859785097/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "10285139/5000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-040"
+    },
+    {
+      "coordinate_gaps_m": [
+        "278657791/500000000",
+        "15121149/5000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "453657791/500000000",
+          "9484721/10000000"
+        ],
+        [
+          "-183128851/5000000",
+          "-3652735283/100000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "15121149/5000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-041"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "13169749/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-916883343/2500000000",
+          "-23882/78125"
+        ],
+        [
+          "-383330251/10000000",
+          "-47795215259/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "13169749/10000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-042"
+    },
+    {
+      "coordinate_gaps_m": [
+        "3382729/2500000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-3827287/10000000",
+          "-878382729/2500000000"
+        ],
+        [
+          "-10000012873/250000000",
+          "-199846459/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "3382729/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-043"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1258540053/2500000000",
+        "382083609/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-2289983/2500000",
+          "-2133540053/2500000000"
+        ],
+        [
+          "-101325379993/2500000000",
+          "-101257083609/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1258540053/2500000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-044"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1385310873/1250000000",
+        "5175623/5000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1822810873/1250000000",
+          "7776553/5000000"
+        ],
+        [
+          "-193074377/5000000",
+          "-96370608679/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1385310873/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-045"
+    },
+    {
+      "coordinate_gaps_m": [
+        "4023/1250000",
+        "2155722873/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1025346071/2500000000",
+          "-441523/1250000"
+        ],
+        [
+          "-47406777127/1250000000",
+          "-189254197/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "2155722873/1250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-046"
+    },
+    {
+      "coordinate_gaps_m": [
+        "5035033/10000000",
+        "146799027/250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-226800169/250000000",
+          "-8535033/10000000"
+        ],
+        [
+          "-9765700973/250000000",
+          "-195058427/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "146799027/250000000",
+      "stratum": "nominal",
+      "unit": "held_out-nominal-047"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "404347/5000000",
+          "384051703/2500000000"
+        ],
+        [
+          "-1988697613/50000000",
+          "-198617937/5000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-000"
+    },
+    {
+      "coordinate_gaps_m": [
+        "3676055681/2500000000",
+        "216924829/625000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-9568719/5000000",
+          "-4551055681/2500000000"
+        ],
+        [
+          "-25462573/625000",
+          "-25435674829/625000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "3676055681/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-001"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "8353/62500",
+          "418799607/2500000000"
+        ],
+        [
+          "-100291787/2500000",
+          "-100202740019/2500000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-002"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-61027/5000000",
+          "99091999/2500000000"
+        ],
+        [
+          "-49594751/1250000",
+          "-49501198051/1250000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-003"
+    },
+    {
+      "coordinate_gaps_m": [
+        "7149403/5000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "8899403/5000000",
+          "4524595771/2500000000"
+        ],
+        [
+          "-100628390797/2500000000",
+          "-401730157/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "7149403/5000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-004"
+    },
+    {
+      "coordinate_gaps_m": [
+        "696435957/1250000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1133935957/1250000000",
+          "1213569/1250000"
+        ],
+        [
+          "-100757969177/2500000000",
+          "-402601677/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "696435957/1250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-005"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "2786561/5000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "106719037/500000000",
+          "601891569/2500000000"
+        ],
+        [
+          "-195463439/5000000",
+          "-48806821259/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "2786561/5000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-006"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-30391993/78125000",
+          "-1465707/5000000"
+        ],
+        [
+          "-24833996969/625000000",
+          "-24816922873/625000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-007"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "3027801/10000000",
+          "924905929/2500000000"
+        ],
+        [
+          "-200797559/5000000",
+          "-100278268691/2500000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-008"
+    },
+    {
+      "coordinate_gaps_m": [
+        "5920139/10000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1271336183/1250000000",
+          "-9420139/10000000"
+        ],
+        [
+          "-40100797/1000000",
+          "-100080574329/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "5920139/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-009"
+    },
+    {
+      "coordinate_gaps_m": [
+        "179882933/500000000",
+        "76068761/625000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "354882933/500000000",
+          "159583/200000"
+        ],
+        [
+          "-25311892857/625000000",
+          "-25294818761/625000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "179882933/500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-010"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1241047/10000000",
+          "281232373/1250000000"
+        ],
+        [
+          "-99989787/2500000",
+          "-2495620569/62500000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-011"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "460851/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "374970667/1250000000",
+          "409118859/1250000000"
+        ],
+        [
+          "-396039149/10000000",
+          "-19752942189/500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "460851/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-012"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1121507/1250000",
+        "5028395401/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1559007/1250000",
+          "3359944041/2500000000"
+        ],
+        [
+          "-94096604599/2500000000",
+          "-187753277/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "5028395401/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-013"
+    },
+    {
+      "coordinate_gaps_m": [
+        "3277140547/2500000000",
+        "10417451/2500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "4152140547/2500000000",
+          "4220436931/2500000000"
+        ],
+        [
+          "-111472605349/2500000000",
+          "-111292451/2500000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "10417451/2500000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-014"
+    },
+    {
+      "coordinate_gaps_m": [
+        "3164803/5000000",
+        "118270667/312500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "4914803/5000000",
+          "2531870467/2500000000"
+        ],
+        [
+          "-12272354333/312500000",
+          "-48962019/1250000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "3164803/5000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-015"
+    },
+    {
+      "coordinate_gaps_m": [
+        "924461/10000000",
+        "220329/625000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "4424461/10000000",
+          "644593229/1250000000"
+        ],
+        [
+          "-24560921/625000",
+          "-98116755967/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "220329/625000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-016"
+    },
+    {
+      "coordinate_gaps_m": [
+        "29477659/2500000000",
+        "4299907/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "904477659/2500000000",
+          "972774043/2500000000"
+        ],
+        [
+          "-51072151139/1250000000",
+          "-407799907/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "4299907/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-017"
+    },
+    {
+      "coordinate_gaps_m": [
+        "199902483/500000000",
+        "797117801/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1942808799/2500000000",
+          "-374902483/500000000"
+        ],
+        [
+          "-98327882199/2500000000",
+          "-196356113/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "199902483/500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-018"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "283149/1000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "22981611/250000000",
+          "1321299/10000000"
+        ],
+        [
+          "-39366851/1000000",
+          "-49117025407/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "283149/1000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-019"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "229306539/312500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-734430823/2500000000",
+          "-51217/200000"
+        ],
+        [
+          "-12161318461/312500000",
+          "-194284997/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "229306539/312500000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-020"
+    },
+    {
+      "coordinate_gaps_m": [
+        "881153987/2500000000",
+        "13272827013/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1756153987/2500000000",
+          "7354917/10000000"
+        ],
+        [
+          "-114351797/2500000",
+          "-114147827013/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "13272827013/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-021"
+    },
+    {
+      "coordinate_gaps_m": [
+        "12416249/10000000",
+        "6554813589/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-4097464887/2500000000",
+          "-15916249/10000000"
+        ],
+        [
+          "-57026461781/1250000000",
+          "-56992313589/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "6554813589/1250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-022"
+    },
+    {
+      "coordinate_gaps_m": [
+        "2384757951/2500000000",
+        "1376693901/250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-13952433/10000000",
+          "-3259757951/2500000000"
+        ],
+        [
+          "-57355117697/1250000000",
+          "-11464193901/250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1376693901/250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-023"
+    },
+    {
+      "coordinate_gaps_m": [
+        "158258859/500000000",
+        "4106877/1000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1448701/2000000",
+          "-333258859/500000000"
+        ],
+        [
+          "-35543123/1000000",
+          "-11096319667/312500000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "4106877/1000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-024"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "6956269121/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-979152471/2500000000",
+          "-1489523/5000000"
+        ],
+        [
+          "-459929113/10000000",
+          "-57393769121/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "6956269121/1250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-025"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "21808543/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1552863/25000000",
+          "396017/2500000"
+        ],
+        [
+          "-374691457/10000000",
+          "-11683041481/312500000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "21808543/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-026"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "60592969/250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "168884327/500000000",
+          "2150373/5000000"
+        ],
+        [
+          "-9851907031/250000000",
+          "-49225386963/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "60592969/250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-027"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "113981427/250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "470729/5000000",
+          "455377239/2500000000"
+        ],
+        [
+          "-51041555327/1250000000",
+          "-10201481427/250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "113981427/250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-028"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "290881/5000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-3147903/10000000",
+          "-630857061/2500000000"
+        ],
+        [
+          "-197959119/5000000",
+          "-98855219547/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "290881/5000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-029"
+    },
+    {
+      "coordinate_gaps_m": [
+        "179302399/312500000",
+        "3523122407/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "288677399/312500000",
+          "297214447/312500000"
+        ],
+        [
+          "-95601877593/2500000000",
+          "-381758857/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "3523122407/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-030"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1245970661/1250000000",
+        "1044179/500000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-179827/125000",
+          "-1683470661/1250000000"
+        ],
+        [
+          "-18780821/500000",
+          "-4688176619/125000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1044179/500000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-031"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "14573/2500000",
+          "86245793/1250000000"
+        ],
+        [
+          "-99309412787/2500000000",
+          "-79331953/2000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-032"
+    },
+    {
+      "coordinate_gaps_m": [
+        "322852907/2500000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1197852907/2500000000",
+          "1266149291/2500000000"
+        ],
+        [
+          "-99824020961/2500000000",
+          "-199421137/5000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "322852907/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-033"
+    },
+    {
+      "coordinate_gaps_m": [
+        "713159/5000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1392132443/2500000000",
+          "-2463159/5000000"
+        ],
+        [
+          "-198688873/5000000",
+          "-49558180683/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "713159/5000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-034"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-444527/2500000",
+          "-298328441/2500000000"
+        ],
+        [
+          "-100479701369/2500000000",
+          "-40094557/1000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-035"
+    },
+    {
+      "coordinate_gaps_m": [
+        "4237159/5000000",
+        "14346129/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-3242247107/2500000000",
+          "-5987159/5000000"
+        ],
+        [
+          "-1046326313/25000000",
+          "-417846129/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "14346129/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-036"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1764171939/2500000000",
+        "9582038141/2500000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-5748901/5000000",
+          "-2639171939/2500000000"
+        ],
+        [
+          "-4421013381/100000000",
+          "-110457038141/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "9582038141/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-037"
+    },
+    {
+      "coordinate_gaps_m": [
+        "1861757/1000000",
+        "53695441/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-5732381177/2500000000",
+          "-2211757/1000000"
+        ],
+        [
+          "-114464731077/2500000000",
+          "-457195441/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "53695441/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-038"
+    },
+    {
+      "coordinate_gaps_m": [
+        "35127771/20000000",
+        "1779763011/625000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "42127771/20000000",
+          "10968231/5000000"
+        ],
+        [
+          "-432541153/10000000",
+          "-26998513011/625000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1779763011/625000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-039"
+    },
+    {
+      "coordinate_gaps_m": [
+        "358447/2500000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-280913929/500000000",
+          "-1233447/2500000"
+        ],
+        [
+          "-6207589569/156250000",
+          "-396897471/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "358447/2500000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-040"
+    },
+    {
+      "coordinate_gaps_m": [
+        "0",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-907056753/2500000000",
+          "-288683/1000000"
+        ],
+        [
+          "-100824387177/2500000000",
+          "-80472877/2000000"
+        ]
+      ],
+      "entry_excluded": false,
+      "initially_eligible_exact": true,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "0",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-041"
+    },
+    {
+      "coordinate_gaps_m": [
+        "148431901/500000000",
+        "1882553629/625000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "323431901/500000000",
+          "1685455889/2500000000"
+        ],
+        [
+          "-1084735109/25000000",
+          "-27101303629/625000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "1882553629/625000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-042"
+    },
+    {
+      "coordinate_gaps_m": [
+        "91449/500000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-1550404349/2500000000",
+          "-266449/500000"
+        ],
+        [
+          "-50131734471/1250000000",
+          "-50097586279/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "91449/500000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-043"
+    },
+    {
+      "coordinate_gaps_m": [
+        "166447221/1250000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "603947221/1250000000",
+          "5228411/10000000"
+        ],
+        [
+          "-100564381/2500000",
+          "-100390714913/2500000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "166447221/1250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-044"
+    },
+    {
+      "coordinate_gaps_m": [
+        "4841/50000",
+        "4783343287/1250000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "22341/50000",
+          "650640073/1250000000"
+        ],
+        [
+          "-44779156713/1250000000",
+          "-44745008521/1250000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "4783343287/1250000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-045"
+    },
+    {
+      "coordinate_gaps_m": [
+        "763424089/2500000000",
+        "0"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "-3715623/5000000",
+          "-1638424089/2500000000"
+        ],
+        [
+          "-397198073/10000000",
+          "-4957381513/125000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "763424089/2500000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-046"
+    },
+    {
+      "coordinate_gaps_m": [
+        "896007077/500000000",
+        "53978593/10000000"
+      ],
+      "coordinate_ranges_m": [
+        [
+          "1071007077/500000000",
+          "5423331769/2500000000"
+        ],
+        [
+          "-114599414733/2500000000",
+          "-457478593/10000000"
+        ]
+      ],
+      "entry_excluded": true,
+      "initially_eligible_exact": false,
+      "non_exclusion_establishes_feasibility": false,
+      "separating_gap_m": "53978593/10000000",
+      "stratum": "bounded_faults",
+      "unit": "held_out-bounded_faults-047"
+    }
+  ],
+  "constants": {
+    "authority_mps2": "1/50",
+    "drift_mps2": "1497/3125000",
+    "dwell_s": "2",
+    "extra_at_latest_entry_m": "1067131/78125000",
+    "horizon_s": "21/5",
+    "latest_entry_s": "11/5",
+    "mean_motion": "11/10000",
+    "pulse_end_s": "6/5",
+    "pulse_start_s": "7/10",
+    "velocity_bootstrap_mps": "2000187/15625000"
+  },
+  "excluded_initially_ineligible": 80,
+  "initially_ineligible": 81,
+  "input_commit": "9d921566a919ee81cc4fb2b5391069b545667ff2",
+  "input_sha256": "72b8c3ed9552804c48e23f825aea5d99e9f8bf23a6765e61cb1f9e2c7f39a6e0",
+  "minimum_exclusion_gap_m": "3382729/2500000000",
+  "new_experiment": false,
+  "not_analyzed_outside_assumption_units": 16,
+  "original_denominators_unchanged": true,
+  "original_outcomes_unchanged": true,
+  "physical_validation": false,
+  "post_hoc": true,
+  "schema": "kri-sa05-posthoc-attainability/1",
+  "scope": "Necessary contained-trajectory condition; non-exclusion does not prove feasibility",
+  "summary": {
+    "bounded_faults": {
+      "entry_excluded": 39,
+      "initially_eligible": 9,
+      "initially_ineligible_not_excluded": [],
+      "units": 48
+    },
+    "nominal": {
+      "entry_excluded": 41,
+      "initially_eligible": 6,
+      "initially_ineligible_not_excluded": [
+        "held_out-nominal-019"
+      ],
+      "units": 48
+    }
+  }
+}
