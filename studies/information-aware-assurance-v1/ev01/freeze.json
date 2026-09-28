@@ -1,0 +1,51 @@
+{
+  "component_commit": "0c360ecb158ad05a02a1deec50594796a0931a8d",
+  "component_version": "0.1.1",
+  "external_results_received_before_freeze": false,
+  "files": {
+    ".github/workflows/external-integration.yml": {
+      "blob": "8530c9eccab6dbed5e5aefba97244e5391b57d00",
+      "mode": "100644",
+      "sha256": "96d205980c62fb1327e687ea6f04494b8d1c4562539d8c9442ee08078ffa3b92"
+    },
+    "studies/information-aware-assurance-v1/ev01/README.md": {
+      "blob": "06f8255c4e7e9cf92ef68e4a7fe1096472ec9d14",
+      "mode": "100644",
+      "sha256": "5b7e9bf3e742f2b56d8607b085fc90480d1c551e665b2e38c2c71b3d8cab8500"
+    },
+    "studies/information-aware-assurance-v1/ev01/REPORT_TEMPLATE.md": {
+      "blob": "33ce3777b29474c15351332818addab27f66007d",
+      "mode": "100644",
+      "sha256": "f123d44f2e5e8f4ef2cda6b3b92d3b90d51090f6ed024eee5abac239b2dea3c6"
+    },
+    "studies/information-aware-assurance-v1/ev01/__init__.py": {
+      "blob": "d4bed30858201368ce27512d04c5aa00e166189e",
+      "mode": "100644",
+      "sha256": "7fc60f1d83668c0c1ab49db68ae950e507cb0c3b5121ce324ea558219918ceaf"
+    },
+    "studies/information-aware-assurance-v1/ev01/check.py": {
+      "blob": "6c847e5d436e43458e30343d9570ece88409c4b2",
+      "mode": "100644",
+      "sha256": "7c4d2c848b92e9a75e35223967e10f4922a1effce1c5d1fe67928b64810c6bbb"
+    },
+    "studies/information-aware-assurance-v1/ev01/protocol.json": {
+      "blob": "55553728599ac48cbe415e5acbeeca5e363eba5f",
+      "mode": "100644",
+      "sha256": "88b7f7802248a58aad8f39a921f973936254071db4784d4227a870c7c9c4a66d"
+    },
+    "studies/information-aware-assurance-v1/ev01/tests/test_ev01.py": {
+      "blob": "389022b8a6b9a961407a5c7bbd60764e1040568a",
+      "mode": "100644",
+      "sha256": "fb3132ed4900d71c34d6e08db1b82a387d62141ad63a72f7c83a775f1a018de8"
+    },
+    "studies/information-aware-assurance-v1/ev01/verify.py": {
+      "blob": "1af0a785792dfb976908ca15b0540084a6dd84d4",
+      "mode": "100644",
+      "sha256": "fab9784238c90067727860e4f71502f01f84fc2630329de2183bb2614f553359"
+    }
+  },
+  "prepared_utc": "2026-09-28T09:37:57.407535+00:00",
+  "purpose": "Prospective external software integration, not mission efficacy",
+  "schema": "kri-ev01-freeze/1",
+  "source_commit": "7089c63caf962004c8bf8eae8a2960411901a97c"
+}
