@@ -390,12 +390,12 @@
             "newly_applied": true,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "supported_prefix",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "35f7d9a7c347999b9d6a8488776470fa7c0db0e36fa2e6b6e6daae1def3ff4e9"
+        "sha256": "278c4b0e6fdbdbcac37b681f99d79807ace78a94f564e40e3077fbda57ca5c4f"
       }
     },
     {
@@ -787,12 +787,12 @@
             "newly_applied": true,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "supported_prefix",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "efa43e4a9180d56e4f830383b836711f355614949e39bd38e7a9e5b9e59fbe8b"
+        "sha256": "23b0728d0e954ffc44075bd8d616b30ae77d405cb7520b02dc7e1f4fb4bc72f3"
       }
     },
     {
@@ -1186,12 +1186,12 @@
             "newly_applied": false,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "late",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "42584163abf2b249561ea80cd7a2eb99f5184ff7ef18abf5b1160c31152ea34b"
+        "sha256": "b8da77c853ff3c07261eafc5fed54dffeb3cc96487524a85c036cd339d561a6d"
       }
     },
     {
@@ -1583,12 +1583,12 @@
             "newly_applied": false,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "missed_application_window",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "7a73d04074f2ca6d86e6dc5bbe5b6a2ada4957f995f0419405b6a4156506a1e3"
+        "sha256": "326e8ad9a7b75faa3c1b9d43dd12cc24aa2eda71fe841b161e3ce8003f4974b1"
       }
     },
     {
@@ -1835,12 +1835,12 @@
           "reason": "No protection claim",
           "request_sha256": "263e3419e6acc5bea138a05a0f6b22f388dee0e5bc09b3d81e822ef912cb8559",
           "schema": "kri-assurance-result/1",
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "assumptions_unavailable",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "1d04342336de211aaa568eb6972aa33e3196c65ef4b3ecd91371178240283ad0"
+        "sha256": "c6569cba68ce4e741b03c6c7905e064f37b6e2d1160f9d0f0e753b566f4cd2ed"
       }
     },
     {
@@ -2087,12 +2087,12 @@
           "reason": "ValueError",
           "request_sha256": "c99e5a33616a0c73df054b111cbb32de9a6cdf3e8804836aaaebb270864cb34c",
           "schema": "kri-assurance-result/1",
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "unsupported_input",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "b8cb1ac63ff4f2f6eb88f306dca6f61c70c8acccada5307b5e40716320710fab"
+        "sha256": "99e22314131cdf578ec16a06b1ef0109331bb4add28aa0fc9372f062ca6b3cfc"
       }
     },
     {
@@ -2487,12 +2487,12 @@
             "newly_applied": false,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "uncredited_entry",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "5ff65ba570a34d7ead1ce123d9c3d51971e684983c25d39cacf04943fc060ddf"
+        "sha256": "c696550a296ef4535222d25b2c536faf12a85418ad089ee3e1670f095439c94d"
       }
     },
     {
@@ -3159,12 +3159,12 @@
             "newly_applied": true,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "supported_prefix",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "40772150dda9c75feeb80d173637567e488897792be49b81907d14865190a442"
+        "sha256": "022ee56694b6eab88d43640b542d869bece8e31c939776f2410bfa90dc354850"
       }
     },
     {
@@ -3545,12 +3545,12 @@
             "newly_applied": false,
             "physical_actuation": false
           },
-          "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+          "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
           "status": "unresolved",
           "transferable_authority": false
         },
         "schema": "kri-assurance-replay/1",
-        "sha256": "6fdced4a2fc2cae5729efbe9c6fde703cbfbfb2a0c5916848d8e1b0db65a616d"
+        "sha256": "eb75b751b2d42dff5aa2968520dc36bb83471f2379cb67b8c6895f6dce6b266d"
       }
     }
   ],
@@ -3591,6 +3591,6 @@
   },
   "physical_validation": false,
   "schema": "kri-post-audit-probes/1",
-  "source_commit": "88888f7fb29e3784681832f450b15de92484a47d",
+  "source_commit": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
   "timing_claim": false
 }
