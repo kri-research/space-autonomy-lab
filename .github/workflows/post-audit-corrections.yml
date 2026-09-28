@@ -30,7 +30,8 @@ jobs:
           python tools/check_release_preservation.py
           python tools/verify_historical_snapshots.py
       - name: Install pinned correction tools
-        run: python -m pip install --require-hashes --only-binary=:all: -r studies/information-aware-assurance-v1/sa06/requirements-build.lock
+        run: |
+          python -m pip install --require-hashes --only-binary=:all: -r studies/information-aware-assurance-v1/sa06/requirements-build.lock
       - name: Verify corrections and derived evidence
         working-directory: studies/information-aware-assurance-v1
         env:
