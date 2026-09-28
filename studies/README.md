@@ -81,3 +81,11 @@ bounds observation parsing and corrects future-packet observer ordering. The ori
 The [dated post-hoc SA05 attainability screen](information-aware-assurance-v1/sa05/posthoc_attainability_v1/README.md)
 qualifies the acquisition comparison without changing any original case or result.
 Physical and external validation remain pending; no operational superiority is claimed.
+
+## External integration protocol
+
+[EV01](information-aware-assurance-v1/ev01/README.md) defines a prospective,
+bounded integration exercise for the unchanged corrected component 0.1.1.
+It separates internal installation checks from a participant's own-controller
+integration and preserves failures, support history and publication permissions.
+A prepared protocol or successful internal run is not external validation.
