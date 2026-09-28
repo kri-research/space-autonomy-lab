@@ -1,0 +1,36 @@
+{
+  "component_commit": "0c360ecb158ad05a02a1deec50594796a0931a8d",
+  "component_source": "87c92508dde68b4f89b4bb1f138fd11d7081a919",
+  "component_version": "0.1.1",
+  "controller_cases": [
+    "bounded_proposal",
+    "observation_conditioned"
+  ],
+  "effort_stop_minutes": 60,
+  "external_evidence_automatically_certified": false,
+  "hardware": false,
+  "maximum_initial_recipients": 8,
+  "mission_efficacy_experiment": false,
+  "per_step_stop_minutes": 5,
+  "platforms_tested_before_invitation": [
+    "macOS arm64",
+    "Ubuntu 24.04 x86_64 via CI"
+  ],
+  "prepared_date": "2026-09-28",
+  "protocol_id": "KRI-EV01-1",
+  "public_api": [
+    "contract",
+    "make_request",
+    "assess",
+    "estimate_snapshot",
+    "observation_packet",
+    "record",
+    "replay"
+  ],
+  "python": "3.13.5",
+  "reference_vectors_expected": 17,
+  "schema": "kri-external-integration-protocol/1",
+  "scope": "One finite offline assessment with stated sensor bounds, no physical driver",
+  "type": "external_software_integration_exercise",
+  "wheel_sha256": "925ae99decaea6b9ebbf3077e8de305cfa2edb26e7dcb4b441ef7d9a6d198cd8"
+}
