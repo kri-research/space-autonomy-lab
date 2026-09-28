@@ -14,6 +14,7 @@ TEST_FILES = (
     "tests/test_assurance_report.py",
     "tests/test_benchmark_documentation.py",
     "tests/test_release_metadata.py",
+    "tests/test_research_navigation.py",
     "tests/test_experiment_005_confirmatory_analysis.py",
     "tests/test_experiment_005_confirmatory_closeout.py",
     "tests/test_fault_suite.py",

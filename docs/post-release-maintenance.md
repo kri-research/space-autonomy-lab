@@ -167,9 +167,12 @@ commit. Cite the enclosing merged commit for its public availability.
 | Recovered E002b expected validation | `supplements/2026-09-09-evidence-reconciliation/e002b-validation-recovered.json` |
 
 Current bytes must match the designated historical identity, an exact reviewed release/PR #34
-maintenance snapshot, or the one path-specific approved README correction digest:
-`dafee53f8f0825c99011885ad69e92339ed5ab016525009373f96e1da530ac72`. This last binding permits precisely the reviewed correction; it does
-not allow arbitrary future README or CI changes and does not require an unretained PR-head commit
+maintenance snapshot, or the one path-specific approved current README digest:
+`5d7848ec817fb40f0e61f4d0b1cf6c17e176be2168d0d5bd1c5187b9a9de9cff`. This maintenance revision adds research navigation
+without changing the preceding README text or E005 correction. The previous README
+binding was `dafee53f8f0825c99011885ad69e92339ed5ab016525009373f96e1da530ac72`.
+The current binding permits only the reviewed bytes; it does not allow arbitrary
+future README or CI changes and does not require an unretained PR-head commit
 after squash merge. Git replacement objects are disabled during identity reads.
 
 The result distinguishes `MATCHED HISTORICAL SNAPSHOT`,
@@ -239,6 +242,24 @@ refer to the same advisory. No affected non-ASCII exclusion scenario or disclose
 found here; the build archives inspected contained only ASCII member names. The dependency pin is
 part of frozen provenance and has not been changed. Build-environment remediation needs a separate
 review that retains the original scientific environment.
+
+## Environment security review on 28 September 2026
+
+A fresh root and pinned-reproduction environment review queried PyPI vulnerability
+metadata for 36 distinct installed or build-tool versions. In addition to the
+setuptools advisory above, it found advisories for the pinned `pytest==9.0.2`
+([CVE-2025-71176](https://github.com/advisories/GHSA-6w46-j5rx-g56g)) and the
+`pip==25.1.1` bootstrapped in the fresh CPython 3.13.5 environment, including
+[CVE-2026-13346](https://github.com/advisories/GHSA-qwm4-qh6w-59xr).
+Repeated feed identifiers can describe the same vulnerability.
+
+This is an environment-risk inventory, not evidence of repository compromise or
+proof that the other dependencies are secure. Original dependency pins and
+scientific records remain unchanged. Use isolated environments, trusted package
+sources and trusted local code; do not process untrusted archives or use a shared
+writable temporary directory. Tool-version remediation needs a separately
+identified maintenance profile and revalidation, rather than rewriting the
+original reproduction requirements or reporting an untested substitution as exact.
 
 ## Retention decisions
 
