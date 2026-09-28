@@ -21,6 +21,19 @@ For current installation checks, file roles and known archive/verification limit
 > **Research software only.** This repository is not flight software, a simulator of record,
 > certification evidence, or proof of KRI-STD-001 conformance.
 
+## Research and reproduction
+
+Use the [research index](studies/README.md) to choose a study and the
+[reproduction guide](docs/research-reproduction.md) to select its source revision,
+environment and read-only checks. Later studies have separate version identities
+from the original `v0.1.0` release.
+
+| Research area | Entry point |
+| --- | --- |
+| Property-alignment studies | [Completed reproduction package](studies/property-alignment-v1/publication_v1/README.md) and [study index](studies/README.md) |
+| Information-aware assurance | [Reference loop](studies/information-aware-assurance-v1/README.md), [corrected component](studies/information-aware-assurance-v1/post_audit_v1/README.md) and [external integration protocol](studies/information-aware-assurance-v1/ev01/README.md) |
+| Original E001-E005 programme | [Maintained checks and historical limitations](docs/post-release-maintenance.md), [release notes](docs/release-v0.1.0.md) and [E005 correction](docs/e005-corrigendum-2026-09-09.md) |
+
 ## Current status
 
 The first Space Autonomy Lab experimental programme is complete through **Experiment 005**. The

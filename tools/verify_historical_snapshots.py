@@ -28,9 +28,10 @@ E002B_OBSERVED = "4168fa738e5023ef3d59b7b46f700e54ec4bf881e3144a63329be16b9a747a
 E002B_SUPPLEMENT_PATH = (
     "supplements/2026-09-09-evidence-reconciliation/e002b-validation-recovered.json"
 )
-# Exact, path-specific correction bytes; independent of squash-merge commit identities.
+# Exact, path-specific maintenance bytes; the E005 correction text is preserved.
+# The preceding README digest remains recorded in the maintenance guide.
 APPROVED_CURRENT_SHA256 = {
-    "README.md": "dafee53f8f0825c99011885ad69e92339ed5ab016525009373f96e1da530ac72"
+    "README.md": "5d7848ec817fb40f0e61f4d0b1cf6c17e176be2168d0d5bd1c5187b9a9de9cff"
 }
 RECOVERED = "MATCHED RECOVERED SUPPLEMENT"
 MATCHED = "MATCHED HISTORICAL SNAPSHOT"
@@ -277,7 +278,10 @@ def verify(
                         row["current_content_binding"] = {
                             "path": item.path,
                             "sha256": observed,
-                            "reason": "exact approved 9 September 2026 E005 README correction",
+                            "reason": (
+                                "exact approved research navigation; "
+                                "E005 correction preserved"
+                            ),
                         }
         except InspectionError as exc:
             row.update(status=ERROR, reason=str(exc))

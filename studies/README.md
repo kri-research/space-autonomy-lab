@@ -4,6 +4,11 @@ This index distinguishes the completed first experimental programme, the subsequ
 property-alignment studies, and the information-aware enhancement phase of the same
 KRI research programme. Historical sources and results remain unchanged.
 
+For installation profiles and recorded-result checks, start with the
+[reproduction guide](../docs/research-reproduction.md). The
+[completed property-alignment reproduction package](property-alignment-v1/publication_v1/README.md)
+provides the pinned setup and executable checks for that research phase.
+
 ## Evidence phases
 
 | Phase | Current evidence and entry point | Scope |
