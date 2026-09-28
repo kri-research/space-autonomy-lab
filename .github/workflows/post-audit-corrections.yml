@@ -1,0 +1,50 @@
+name: Post-audit corrections
+on:
+  pull_request:
+    paths:
+      - 'studies/information-aware-assurance-v1/**'
+      - 'studies/README.md'
+      - '.github/workflows/post-audit-corrections.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'studies/information-aware-assurance-v1/**'
+      - 'studies/README.md'
+      - '.github/workflows/post-audit-corrections.yml'
+permissions:
+  contents: read
+jobs:
+  post-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.13.5'
+      - name: Preserve historical release
+        run: |
+          python tools/check_release_preservation.py
+          python tools/verify_historical_snapshots.py
+      - name: Install pinned correction tools
+        run: python -m pip install --require-hashes --only-binary=:all: -r studies/information-aware-assurance-v1/sa06/requirements-build.lock
+      - name: Verify corrections and derived evidence
+        working-directory: studies/information-aware-assurance-v1
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python -m ruff check post_audit_v1 sa05/posthoc_attainability_v1
+          python -m ruff format --check post_audit_v1 sa05/posthoc_attainability_v1
+          python -m pytest -c pyproject.toml --confcutdir=. post_audit_v1/tests
+          python -m post_audit_v1.verify
+          python -m sa06.verify
+          python -m post_audit_v1.assemble --output "$RUNNER_TEMP/corrected-source"
+          SOURCE_DATE_EPOCH=$(cat "$RUNNER_TEMP/corrected-source/BUILD_EPOCH") python -m build --no-isolation "$RUNNER_TEMP/corrected-source" --outdir "$RUNNER_TEMP/corrected-dist"
+          python -m venv "$RUNNER_TEMP/consumer"
+          "$RUNNER_TEMP/consumer/bin/python" -m pip install --no-deps "$RUNNER_TEMP"/corrected-dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/consumer/bin/python" -I -m kri_assurance_eval.cli example
+          "$RUNNER_TEMP/consumer/bin/python" -I "$RUNNER_TEMP/corrected-source/examples/controller_adapter.py"

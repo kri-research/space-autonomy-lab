@@ -1,5 +1,19 @@
 # SA05 prospective comparison results
 
+## Post-audit qualification added 28 September 2026
+
+The [separate exact-rational attainability analysis](posthoc_attainability_v1/README.md)
+shows that 80 of 81 initially ineligible in-model inputs cannot enter the goal early
+enough for the frozen primary endpoint under its control and mathematical envelope.
+Only `held_out-nominal-019` is not excluded, and it is not proved feasible. Thus the
+acquisition comparison had extremely limited opportunity to discriminate sensing
+strategies, beyond the previously stated zero-event and power limitations.
+
+This is a post-hoc interpretation correction, not a replacement evaluation. All 112
+units, 448 method records, original denominators, endpoints and statistical results
+remain unchanged. Containment, timing, request-count and modeled-cost observations
+retain their separate scope. The original result account follows below.
+
 ## Primary result and scope
 
 No schedule demonstrated a new two-second goal acquisition under the numerical

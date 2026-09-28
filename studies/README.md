@@ -72,3 +72,12 @@ altering the assurance core. This is a research diagnostic, not an improved or
 flight-ready controller. The negative SA05 finding and target-deadline limits
 remain explicit. Internal installation and external validation have separate
 statuses; see the separate implementation note and evidence-maturity record.
+
+## Post-audit corrections
+
+[Current corrected research component 0.1.1](information-aware-assurance-v1/post_audit_v1/README.md)
+bounds observation parsing and corrects future-packet observer ordering. The original
+0.1.0 component remains frozen for reproduction, not the corrected interface.
+The [dated post-hoc SA05 attainability screen](information-aware-assurance-v1/sa05/posthoc_attainability_v1/README.md)
+qualifies the acquisition comparison without changing any original case or result.
+Physical and external validation remain pending; no operational superiority is claimed.
